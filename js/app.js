@@ -48,6 +48,7 @@ function show(id){
   const chatOk = ["lobby","board","podium"].includes(id) && !S.solo && S.room;
   $("#chatFab").classList.toggle("hidden", !chatOk);
   if (id !== "lobby") closeChat();
+  if (id === "home" || id === "profile" || id === "lobby") clearCategoryTheme();
 }
 function toast(t){
   const d = document.createElement("div");
@@ -55,6 +56,15 @@ function toast(t){
   $("#toasts").appendChild(d);
   setTimeout(() => d.remove(), 3200);
 }
+
+// Fondo temático según la categoría (punto 12). Agrega clase theme-<cat> al body.
+const THEME_CATS = ["disney","pixar","netflix","hbo","anime","cine","famosos","geek",
+  "banderas","historia","pop","trivia","curiosos","tecnologia","espacio","animales","futbol","deportes"];
+function applyCategoryTheme(cat){
+  THEME_CATS.forEach(c => document.body.classList.remove("theme-" + c));
+  if (cat) document.body.classList.add("theme-" + cat);
+}
+function clearCategoryTheme(){ THEME_CATS.forEach(c => document.body.classList.remove("theme-" + c)); }
 function modal(html, buttons){
   $("#modalBox").innerHTML = html;
   buttons.forEach(b => {
@@ -102,12 +112,19 @@ function openProfile(){
   renderAvatars([]);
   show("profile");
 }
+// Color de fondo por avatar (punto 11). Coincide 1:1 con AVATARS por índice.
+const AVATAR_COLORS = ["#FFB84D","#5BC0EB","#F76C6C","#9BC53D","#C3A0E8",
+  "#4ECDC4","#FF8FA3","#FFD23F","#7BDFF2","#B388EB",
+  "#F4A261","#63C7B2","#E56399","#FFCB77","#A0C4FF"];
+function avatarColor(a){ const i = AVATARS.indexOf(a); return i>=0 ? AVATAR_COLORS[i % AVATAR_COLORS.length] : "#EDE4D8"; }
+
 function renderAvatars(taken){
   $("#avatarGrid").innerHTML = "";
   AVATARS.forEach(a => {
     const d = document.createElement("div");
     d.className = "ava" + (taken.includes(a) ? " taken" : "");
     d.textContent = a;
+    d.style.background = avatarColor(a);
     d.onclick = () => { Sfx.pick(); $$(".ava").forEach(x=>x.classList.remove("sel")); d.classList.add("sel"); };
     $("#avatarGrid").appendChild(d);
   });
@@ -303,7 +320,7 @@ function renderPlayers(){
   S.players.forEach(p => {
     const d = document.createElement("div");
     d.className = "chip" + (p.connected ? "" : " off");
-    d.innerHTML = `<span class="em">${p.avatar}</span>${esc(p.name)}${p.is_host ? ' <span class="host-star">👑</span>' : ""}`;
+    d.innerHTML = `<span class="em" style="background:${avatarColor(p.avatar)}">${p.avatar}</span>${esc(p.name)}${p.is_host ? ' <span class="host-star">👑</span>' : ""}`;
     list.appendChild(d);
   });
 }
@@ -498,8 +515,20 @@ async function showQuestion(){
   const i = S.room.current_q;
   const bank = await loadBank(S.room.settings.cat);
   const q = bank.questions[S.room.settings.qids[i]];
+  applyCategoryTheme(S.room.settings.cat);
   $("#qIdx").textContent = `${i+1}/${S.room.settings.qids.length}`;
-  $("#qEmoji").textContent = q.e || bank.emoji;
+  // Imagen grande (punto 9): si la pregunta trae 'img', se muestra; si falla, cae al emoji
+  const imgEl = $("#qImg"), emoEl = $("#qEmoji");
+  if (q.img){
+    emoEl.classList.add("hidden");
+    imgEl.classList.remove("hidden");
+    imgEl.onerror = () => { imgEl.classList.add("hidden"); emoEl.classList.remove("hidden"); emoEl.textContent = q.e || bank.emoji; };
+    imgEl.src = q.img;
+  } else {
+    imgEl.classList.add("hidden"); imgEl.removeAttribute("src");
+    emoEl.classList.remove("hidden");
+    emoEl.textContent = q.e || bank.emoji;
+  }
   $("#qText").textContent = q.q;
   $("#qWait").textContent = "";
   const grid = $("#answerGrid"); grid.innerHTML = "";
