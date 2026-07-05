@@ -90,6 +90,15 @@
       <div class="seg" id="segScore">
         <button data-v="reset" class="on">Reinicia 🔄</button><button data-v="accum">Acumula 📈</button>
       </div>
+      <label class="lbl">Mini-juego sorpresa 🎁 (aparece 1 vez al azar)</label>
+      <div class="mini-grid" id="miniGrid">
+        <button data-v="none" class="on">Ninguno</button>
+        <button data-v="flash">🔢 NúmeroFlash</button>
+        <button data-v="color">🎨 Colorín</button>
+        <button data-v="preg">💡 Preguntón</button>
+        <button data-v="delator">🕵️ Delator</button>
+        <button data-v="random">🎲 Al azar</button>
+      </div>
     </div>
 
     <div class="panel">
@@ -119,6 +128,27 @@
     <h2 class="q-text" id="qText">…</h2>
     <div class="answers" id="answerGrid"></div>
     <p class="hint" id="qWait"></p>
+  </section>
+
+  <!-- ============ MINI-JUEGO: INTRO ============ -->
+  <section id="scr-mini-intro" class="screen center">
+    <div class="mini-intro">
+      <div class="big-emoji" id="miniIntroEmoji">🎁</div>
+      <h2 id="miniIntroTitle">¡Mini-juego!</h2>
+      <p id="miniIntroDesc">Prepárate…</p>
+      <div class="cd-num" id="miniIntroCd" style="font-size:80px"></div>
+    </div>
+  </section>
+
+  <!-- ============ MINI-JUEGO: NÚMEROFLASH ============ -->
+  <section id="scr-mini-flash" class="screen">
+    <div class="mini-head">
+      <span class="mini-target" id="flashTarget">Busca: 1</span>
+      <span class="mini-timer" id="flashTimer">30</span>
+    </div>
+    <p class="hint" id="flashInstr" style="margin-bottom:8px"></p>
+    <div id="flashGrid"></div>
+    <p class="hint" id="flashScore" style="margin-top:12px"></p>
   </section>
 
   <!-- ============ REVELACIÓN ============ -->
