@@ -172,6 +172,21 @@ h1,h2,.logo,.btn,.room-code,.cd-num{font-family:'Fredoka',sans-serif}
 .bronze{height:70px;background:linear-gradient(#E8A87C,#B45F2E)}
 .p1 .pod-ava{font-size:56px;animation:bob 2s ease-in-out infinite}
 
+/* ---------- Música de fondo ---------- */
+#musicFab{position:fixed;right:16px;bottom:calc(86px + env(safe-area-inset-bottom));z-index:8;width:50px;height:50px;
+  border-radius:50%;border:none;background:var(--yellow);font-size:22px;box-shadow:var(--shadow);cursor:pointer}
+#musicPanel{position:fixed;inset:auto 0 0 0;height:auto;background:var(--card);z-index:9;
+  border-radius:26px 26px 0 0;display:flex;flex-direction:column;box-shadow:0 -8px 30px rgba(0,0,0,.35)}
+.music-body{display:flex;flex-direction:column;gap:12px;padding:0 18px calc(18px + env(safe-area-inset-bottom))}
+.music-track-row{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.music-track-row button{border:none;background:#EDE4D8;border-radius:50%;width:38px;height:38px;font-size:16px;cursor:pointer;flex:none}
+.music-track-row button:disabled{opacity:.35;cursor:default}
+#musicTrackName{flex:1;text-align:center;font-weight:800;font-size:15px}
+.music-vol-row{display:flex;align-items:center;gap:10px}
+.music-vol-row button{border:none;background:#EDE4D8;border-radius:50%;width:38px;height:38px;font-size:16px;cursor:pointer;flex:none}
+.music-vol-row input[type=range]{flex:1}
+.switch-row{display:flex;align-items:center;gap:8px;font-weight:700;font-size:14px;margin-top:4px}
+
 /* ---------- Chat ---------- */
 #chatFab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:8;width:58px;height:58px;
   border-radius:50%;border:none;background:var(--purple);font-size:26px;box-shadow:var(--shadow);cursor:pointer}
