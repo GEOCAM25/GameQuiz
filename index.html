@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<title>GAME QUIZ 🎲</title>
+<meta name="theme-color" content="#5B2A86">
+<meta name="description" content="Trivia multijugador en tiempo real. Crea una sala, invita a tus amigos y demuestra quién sabe más.">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Fondo animado: cielo, nubes y juguetes flotantes -->
+<div id="sky">
+  <div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c3"></div>
+  <div class="cloud c4"></div><div class="cloud c5"></div>
+  <div class="toy t1">🎠</div><div class="toy t2">🪁</div><div class="toy t3">🎈</div>
+  <div class="toy t4">🧸</div><div class="toy t5">🪀</div><div class="toy t6">🎡</div>
+  <div class="stars"></div>
+</div>
+
+<div id="offlineBanner" class="hidden">📡 Sin conexión a internet — intentando reconectar…</div>
+<div id="toasts"></div>
+
+<main id="app">
+
+  <!-- ============ HOME ============ -->
+  <section id="scr-home" class="screen active">
+    <div class="logo-wrap">
+      <h1 class="logo"><span>G</span><span>A</span><span>M</span><span>E</span> <span>Q</span><span>U</span><span>I</span><span>Z</span></h1>
+      <p class="tagline">Trivia multijugador · hasta 15 jugadores</p>
+    </div>
+    <div class="home-card">
+      <button class="btn big btn-red" id="btnGoCreate">🎪 Crear sala</button>
+      <button class="btn big btn-blue" id="btnGoJoin">🚪 Entrar a una sala</button>
+    </div>
+    <p class="version">v1.0 · hecho para jugar en familia y con amigos</p>
+  </section>
+
+  <!-- ============ PERFIL (nombre + personaje) ============ -->
+  <section id="scr-profile" class="screen">
+    <h2 class="scr-title" id="profileTitle">Elige tu personaje</h2>
+    <input id="inpName" class="inp" maxlength="14" placeholder="Tu nombre o apodo">
+    <div id="avatarGrid" class="avatar-grid"></div>
+    <div id="joinCodeWrap" class="hidden">
+      <label class="lbl">Código de la sala</label>
+      <input id="inpCode" class="inp code" maxlength="4" placeholder="ABCD" autocapitalize="characters">
+    </div>
+    <button class="btn big btn-green" id="btnProfileGo">Continuar ➜</button>
+    <button class="btn ghost" data-back>← Volver</button>
+  </section>
+
+  <!-- ============ LOBBY ============ -->
+  <section id="scr-lobby" class="screen">
+    <div class="lobby-head">
+      <div>
+        <p class="lbl">Código de sala</p>
+        <p class="room-code" id="lobbyCode">····</p>
+      </div>
+      <button class="btn small btn-yellow" id="btnShare">Compartir 📤</button>
+    </div>
+
+    <div class="panel">
+      <p class="panel-title">Jugadores <span id="playerCount">0</span>/15</p>
+      <div id="playerList" class="player-list"></div>
+    </div>
+
+    <div class="panel" id="hostSettings">
+      <p class="panel-title">Ajustes de la partida 🎛️</p>
+      <label class="lbl">Preguntas</label>
+      <div class="seg" id="segCount">
+        <button data-v="10" class="on">10</button><button data-v="20">20</button><button data-v="30">30</button>
+      </div>
+      <label class="lbl">¿Quién elige la categoría?</label>
+      <div class="seg" id="segMode">
+        <button data-v="admin" class="on">Solo yo</button><button data-v="vote">Votación 🗳️</button>
+      </div>
+      <label class="lbl">Filtro de groserías en el chat</label>
+      <div class="seg" id="segFilter">
+        <button data-v="on" class="on">Activado 🧼</button><button data-v="off">Apagado</button>
+      </div>
+    </div>
+
+    <div class="panel">
+      <p class="panel-title" id="catTitle">Categoría 📚</p>
+      <div id="catGrid" class="cat-grid"></div>
+    </div>
+
+    <button class="btn big btn-green hidden" id="btnStart">🚀 Iniciar juego</button>
+    <p class="hint" id="lobbyHint">Esperando que el anfitrión inicie…</p>
+    <button class="btn ghost danger" id="btnLeave">Salir de la partida 🚪</button>
+  </section>
+
+  <!-- ============ CUENTA REGRESIVA ============ -->
+  <section id="scr-countdown" class="screen center">
+    <p class="cd-label">¡El juego está por comenzar!</p>
+    <div id="cdNum" class="cd-num">3</div>
+  </section>
+
+  <!-- ============ PREGUNTA ============ -->
+  <section id="scr-question" class="screen">
+    <div class="q-top">
+      <span class="q-idx" id="qIdx">1/10</span>
+      <div class="q-timer"><div id="qTimerBar"></div><span id="qTimerNum">40</span></div>
+    </div>
+    <div class="q-emoji" id="qEmoji">🎬</div>
+    <h2 class="q-text" id="qText">…</h2>
+    <div class="answers" id="answerGrid"></div>
+    <p class="hint" id="qWait"></p>
+  </section>
+
+  <!-- ============ REVELACIÓN ============ -->
+  <section id="scr-reveal" class="screen center">
+    <div id="revealIcon" class="reveal-icon">✅</div>
+    <h2 id="revealText" class="reveal-text">…</h2>
+    <p id="revealYou" class="reveal-you"></p>
+  </section>
+
+  <!-- ============ MARCADOR ============ -->
+  <section id="scr-board" class="screen">
+    <h2 class="scr-title">Marcador 🏁</h2>
+    <div id="boardList" class="board-list"></div>
+  </section>
+
+  <!-- ============ PODIO ============ -->
+  <section id="scr-podium" class="screen">
+    <canvas id="fx"></canvas>
+    <h2 class="scr-title">🏆 ¡Tenemos ganador!</h2>
+    <div class="podium">
+      <div class="pod p2"><div class="pod-ava" id="pod2a"></div><p id="pod2n"></p><div class="pod-bar silver">🥈</div></div>
+      <div class="pod p1"><div class="pod-ava" id="pod1a"></div><p id="pod1n"></p><div class="pod-bar gold">🥇</div></div>
+      <div class="pod p3"><div class="pod-ava" id="pod3a"></div><p id="pod3n"></p><div class="pod-bar bronze">🥉</div></div>
+    </div>
+    <div id="podiumRest" class="board-list"></div>
+    <button class="btn big btn-blue" id="btnAgain">Volver al inicio 🏠</button>
+  </section>
+
+</main>
+
+<!-- ============ CHAT ============ -->
+<button id="chatFab" class="hidden">💬<span id="chatBadge" class="hidden">0</span></button>
+<div id="chatPanel" class="hidden">
+  <div class="chat-head"><p>Chat de la sala 💬</p><button id="chatClose">✕</button></div>
+  <div id="chatMsgs"></div>
+  <div id="stickerTray" class="hidden"></div>
+  <div class="chat-inp">
+    <button id="btnStickers">😜</button>
+    <input id="chatText" maxlength="140" placeholder="Escribe un mensaje…">
+    <button id="btnSend">➤</button>
+  </div>
+</div>
+
+<div id="modal" class="hidden"><div id="modalBox"></div></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
