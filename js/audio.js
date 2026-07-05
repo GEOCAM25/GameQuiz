@@ -9,14 +9,14 @@ const Sfx = (() => {
     // instante, un <audio> HTML normal (no Web Audio) obliga a iOS a tratar la
     // sesión de audio de la página como "multimedia" en vez de "llamada/timbre",
     // y a partir de ahí también se escuchan los sonidos del juego con el
-    // celular en silencio. Por eso existe silentUnlock más abajo.
+    // celular en silencio.
     silentUnlock.play().catch(()=>{});
   };
   document.addEventListener("pointerdown", unlock, { once:true });
 
-  // WAV silencioso de 0.5s en loop: mantiene la sesión de audio de iOS activa
-  // como "multimedia" mientras dura la partida.
-  const silentUnlock = new Audio("data:audio/wav;base64,UklGRoQCAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQACAACAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA=");
+  // WAV silencioso en loop: mantiene la sesión de audio de iOS activa como
+  // "multimedia" mientras dura la partida.
+  const silentUnlock = new Audio("data:audio/wav;base64,UklGRoQCAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQACAACAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA=");
   silentUnlock.loop = true;
   silentUnlock.volume = 1; // el WAV en sí es silencio total (todo 0x80 = cero)
 
@@ -49,32 +49,140 @@ const Sfx = (() => {
   };
 })();
 
-// ===== Música de fondo (opcional) =====
-// Para poner tu propia canción:
-// 1) Sube tu archivo (mp3 o m4a) a una carpeta nueva llamada "music/" en el repo,
-//    por ejemplo: music/fondo.mp3
-// 2) Cambia la línea de abajo con el nombre de tu archivo.
-// 3) Se activa sola en cuanto alguien toca la pantalla (política de autoplay de iOS/Android).
+// ============================================================
+// Música de fondo: playlist propia, control INDIVIDUAL por celular
+// (cada quien puede pausar/cambiar canción/subir o silenciar el volumen
+// sin afectar a los demás) + un interruptor del ANFITRIÓN para sincronizar
+// a todos en la misma canción y en el mismo punto exacto.
+// ============================================================
 const Music = (() => {
   const el = new Audio();
   el.loop = true;
-  el.volume = 0.35; // 0 a 1
-  let src = "music/fondo.mp3"; // <-- pon aquí el nombre de tu archivo
-  let enabled = false;
+  el.preload = "auto";
 
-  function start(){
-    if (!src || enabled) return;
-    enabled = true;
-    el.src = src;
-    el.play().catch(()=>{}); // si falla (ej. no existe el archivo), no rompe el juego
+  const LS_TRACK = "gq_music_track";
+  const LS_VOL   = "gq_music_vol";
+  const LS_MUTED = "gq_music_muted";
+
+  let trackIdx = 0;
+  let userVol = parseFloat(localStorage.getItem(LS_VOL));
+  if (isNaN(userVol)) userVol = 0.25;         // 25% por defecto
+  let muted = localStorage.getItem(LS_MUTED) === "1";
+  let started = false;
+  let inGame = false;                          // true = baja a 10% (concentración)
+  let syncState = null;                        // último { on, trackId, startedAt } de la sala
+  let onUpdateUI = () => {};
+
+  const savedTrack = localStorage.getItem(LS_TRACK);
+  if (savedTrack){
+    const i = MUSIC_TRACKS.findIndex(t => t.id === savedTrack);
+    if (i >= 0) trackIdx = i;
   }
-  document.addEventListener("pointerdown", start, { once:true });
 
-  return {
-    setSource(url){ src = url; if (enabled){ el.src = url; el.play().catch(()=>{}); } },
-    setVolume(v){ el.volume = v; },
-    pause(){ el.pause(); },
-    resume(){ if (enabled) el.play().catch(()=>{}); },
-    stop(){ el.pause(); el.currentTime = 0; enabled = false; },
-  };
+  function effectiveVolume(){ return muted ? 0 : (inGame ? 0.10 : userVol); }
+  function applyVolume(){ el.volume = effectiveVolume(); onUpdateUI(); }
+  function currentTrack(){ return MUSIC_TRACKS[trackIdx]; }
+
+  function loadTrack(idx, playFrom){
+    trackIdx = ((idx % MUSIC_TRACKS.length) + MUSIC_TRACKS.length) % MUSIC_TRACKS.length;
+    const t = MUSIC_TRACKS[trackIdx];
+    el.src = t.file;
+    applyVolume();
+    localStorage.setItem(LS_TRACK, t.id);
+    if (started){
+      const go = () => { try{ el.currentTime = playFrom || 0; }catch(e){} el.play().catch(()=>{}); };
+      if (el.readyState >= 1) go(); else el.addEventListener("loadedmetadata", go, { once:true });
+    }
+    onUpdateUI();
+  }
+
+  // Arranca sola en cuanto el jugador crea su perfil / entra a una sala o partida.
+  function enterGame(){
+    if (started || !MUSIC_TRACKS.length) return;
+    started = true;
+    if (syncState && syncState.on) applySyncState(syncState);
+    else { loadTrack(trackIdx); el.play().catch(()=>{}); }
+  }
+
+  // Red de seguridad: en iOS/Android el primer play() puede ser bloqueado si
+  // no vino de un toque directo. Si eso pasa, el próximo toque en la pantalla
+  // lo reintenta solo (sin volver a mostrar nada raro al usuario).
+  document.addEventListener("pointerdown", () => { if (started && el.paused && !muted) el.play().catch(()=>{}); });
+
+  function play(){ if (!started) return enterGame(); el.play().catch(()=>{}); onUpdateUI(); }
+  function pause(){ el.pause(); onUpdateUI(); }
+  function togglePlay(){ el.paused ? play() : pause(); }
+  // Cambiar de canción manualmente solo tiene sentido en modo individual;
+  // si el anfitrión sincronizó, el celular sigue lo que él eligió.
+  function next(){ if (syncState && syncState.on) return; loadTrack(trackIdx + 1); }
+  function prev(){ if (syncState && syncState.on) return; loadTrack(trackIdx - 1); }
+
+  function setVolume(v){ userVol = Math.max(0, Math.min(1, v)); localStorage.setItem(LS_VOL, String(userVol)); if (muted && userVol>0){ muted=false; localStorage.setItem(LS_MUTED,"0"); } applyVolume(); }
+  function toggleMute(){ muted = !muted; localStorage.setItem(LS_MUTED, muted ? "1":"0"); applyVolume(); if(!muted) el.play().catch(()=>{}); }
+
+  // Se llama con cada cambio de estado de la sala (lobby/countdown/question/...).
+  // Al comenzar la partida, baja sola a 10% para no distraer; al volver al
+  // lobby o al podio, regresa al volumen que el jugador tenía elegido.
+  function setGamePhase(status){
+    const active = ["countdown","question","reveal","board","mini"].includes(status);
+    if (active === inGame) return;
+    inGame = active;
+    applyVolume();
+  }
+
+  // ---- Sincronía entre dispositivos (la activa el anfitrión) ----
+  // Se guarda en room.settings.musicSync = { on, trackId, startedAt(ms) }.
+  // Cada celular calcula su posición como (ahora - startedAt) % duración,
+  // así todos suenan exactamente igual y quien se reconecta cae en el mismo
+  // punto, sin desfase, sin importar cuándo entró.
+  function applySyncState(sync){
+    const idx = MUSIC_TRACKS.findIndex(t => t.id === sync.trackId);
+    if (idx < 0) return;
+    const t = MUSIC_TRACKS[idx];
+    trackIdx = idx;
+    el.src = t.file;
+    applyVolume();
+    const seek = () => {
+      const dur = el.duration && isFinite(el.duration) ? el.duration : (t.duration || 180);
+      const pos = ((Date.now() - sync.startedAt) / 1000) % dur;
+      try { el.currentTime = Math.max(0, pos); } catch(e){}
+      el.play().catch(()=>{});
+    };
+    if (el.readyState >= 1) seek(); else el.addEventListener("loadedmetadata", seek, { once:true });
+    onUpdateUI();
+  }
+
+  // Se llama cada vez que llega una actualización de la sala (Realtime, resync
+  // al reconectar, etc.)
+  function onRoomUpdate(room){
+    const sync = room?.settings?.musicSync || null;
+    const wasOn = !!(syncState && syncState.on);
+    const changed = !syncState || (sync?.trackId !== syncState.trackId) || (sync?.startedAt !== syncState.startedAt) || (!!sync?.on !== wasOn);
+    syncState = sync;
+    if (!started) return;
+    if (sync && sync.on){
+      if (changed) applySyncState(sync);
+    } else if (wasOn){
+      // El anfitrión apagó la sincronía: cada quien vuelve a su canción guardada.
+      loadTrack(trackIdx);
+      el.play().catch(()=>{});
+    }
+  }
+
+  // El anfitrión prende/apaga la sincronía para todos.
+  async function hostSetSync(on, room, sbClient){
+    const settings = { ...room.settings };
+    settings.musicSync = on
+      ? { on:true, trackId: currentTrack().id, startedAt: Date.now() }
+      : { on:false };
+    await sbClient.from("rooms").update({ settings }).eq("id", room.id);
+  }
+
+  function bindUI(cb){ onUpdateUI = cb; cb(); }
+  function state(){
+    return { track: currentTrack(), playing: !el.paused, volume: userVol, muted, synced: !!(syncState && syncState.on) };
+  }
+
+  return { enterGame, play, pause, togglePlay, next, prev, setVolume, toggleMute,
+           setGamePhase, onRoomUpdate, hostSetSync, bindUI, state };
 })();

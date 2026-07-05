@@ -60,6 +60,10 @@ function show(id){
   const tip = $("#tipFab");
   if (tip) tip.classList.toggle("hidden", !["home","podium"].includes(id));
   if (id !== "lobby") closeChat();
+  // Música: visible en toda la partida (sala + juego), no en home/perfil
+  const musicOk = (S.room || S.solo) && id !== "home" && id !== "profile";
+  $("#musicFab").classList.toggle("hidden", !musicOk);
+  closeMusicPanel();
   if (id === "home" || id === "profile" || id === "lobby") clearCategoryTheme();
 }
 function toast(t){
@@ -110,7 +114,7 @@ window.addEventListener("online", async () => {
 async function resync(){
   const { data: room } = await sb.from("rooms").select("*").eq("id", S.room.id).single();
   const { data: players } = await sb.from("players").select("*").eq("room_id", S.room.id).order("joined_at");
-  if (room){ S.room = room; S.players = players || []; handleRoomState(); renderPlayers(); }
+  if (room){ S.room = room; S.players = players || []; Music.onRoomUpdate(S.room); handleRoomState(); renderPlayers(); }
 }
 
 // ---------- HOME ----------
@@ -204,6 +208,8 @@ async function enterRoom(room, me){
   renderLobby();
   show("lobby");
   Sfx.join();
+  Music.onRoomUpdate(S.room);
+  Music.enterGame();
 }
 
 // ---------- Reconexión al abrir la app ----------
@@ -235,7 +241,7 @@ async function subscribeRoom(){
   const rid = S.room.id;
   S.channel = sb.channel("room-" + rid)
     .on("postgres_changes", { event:"UPDATE", schema:"public", table:"rooms", filter:`id=eq.${rid}` },
-      p => { S.room = p.new; handleRoomState(); })
+      p => { S.room = p.new; Music.onRoomUpdate(S.room); handleRoomState(); })
     .on("postgres_changes", { event:"*", schema:"public", table:"players", filter:`room_id=eq.${rid}` },
       p => {
         if (p.eventType === "INSERT"){ S.players.push(p.new); Sfx.join(); }
@@ -278,6 +284,7 @@ function renderLobby(){
   syncSeg("#segCount", String(st.count)); syncSeg("#segMode", st.mode); syncSeg("#segFilter", st.filter);
   syncSeg("#segScore", st.scoreMode || "reset");
   syncMinis(st.minis || (st.mini ? [st.mini] : ["none"]));
+  $("#chkMusicSync").checked = !!(st.musicSync && st.musicSync.on);
   renderCats(); renderPlayers(); refreshVotes();
 }
 function syncMinis(arr){ $$("#miniGrid button").forEach(b => b.classList.toggle("on", arr.includes(b.dataset.v))); }
@@ -550,6 +557,7 @@ const answersThisQ = new Set();
 
 async function handleRoomState(){
   const st = S.room.status;
+  Music.setGamePhase(st); // baja a 10% durante la partida, sube al volver a lobby/podio
   // El anfitrión mantiene el watchdog vivo durante toda la partida (bug 3,4,5)
   if (amHost() && ["countdown","question","reveal","board","mini"].includes(st)) startHostLoop();
   else if (st === "lobby" || st === "podium") stopHostLoop();
@@ -791,6 +799,31 @@ function fireworks(dur){
   setTimeout(()=>clearInterval(iv), dur);
 }
 
+// ---------- MÚSICA DE FONDO ----------
+$("#chkMusicSync").onchange = async (e) => {
+  if (!S.room || S.solo) return;
+  Sfx.click();
+  await Music.hostSetSync(e.target.checked, S.room, sb);
+};
+
+$("#musicFab").onclick = () => { $("#musicPanel").classList.remove("hidden"); };
+$("#musicClose").onclick = closeMusicPanel;
+function closeMusicPanel(){ $("#musicPanel")?.classList.add("hidden"); }
+$("#musicPrev").onclick = () => Music.prev();
+$("#musicNext").onclick = () => Music.next();
+$("#musicPlayPause").onclick = () => Music.togglePlay();
+$("#musicMute").onclick = () => Music.toggleMute();
+$("#musicVol").oninput = (e) => Music.setVolume(+e.target.value / 100);
+Music.bindUI(() => {
+  const s = Music.state();
+  $("#musicTrackName").textContent = s.track ? s.track.name : "—";
+  $("#musicPlayPause").textContent = s.playing ? "⏸ Pausar" : "▶️ Reanudar";
+  $("#musicMute").textContent = s.muted ? "🔇" : "🔊";
+  $("#musicVol").value = Math.round(s.volume * 100);
+  $("#musicPrev").disabled = s.synced; $("#musicNext").disabled = s.synced;
+  $("#musicSyncNote").classList.toggle("hidden", !s.synced);
+});
+
 // ---------- CHAT ----------
 $("#chatFab").onclick = () => { $("#chatPanel").classList.remove("hidden"); S.unread = 0; badge(); };
 $("#chatClose").onclick = closeChat;
@@ -862,6 +895,7 @@ async function startSolo(name, ava){
   S.solo = true;
   S.me = { id:"solo", name, avatar:ava, score:0, connected:true };
   S.players = [S.me];
+  Music.enterGame();
   modal(`<h3>🧪 Sala de prueba ZZZX</h3><p>Modo solitario para probar el juego. No se puede invitar a nadie.</p>
   <label class="lbl">Categoría</label><select id="soloCat" class="inp">${CATEGORIES.map(c=>`<option value="${c.id}">${c.emoji} ${c.name}</option>`).join("")}</select>
   <label class="lbl">Preguntas</label><select id="soloN" class="inp"><option>10</option><option>20</option><option>30</option></select>`, [
@@ -870,6 +904,7 @@ async function startSolo(name, ava){
         const bank = await loadBank(cat);
         S.soloState = { cat, i:0, qids: shuffle([...bank.questions.keys()]).slice(0, Math.min(n, bank.questions.length)) };
         S.room = { status:"countdown", settings:{ cat, qids:S.soloState.qids, filter:"off" }, current_q:-1, q_started_at:null };
+        Music.setGamePhase("countdown");
         runCountdown();
         setTimeout(() => soloQuestion(0), 3800);
     }},
@@ -906,6 +941,7 @@ async function soloFinish(ans){
   }, REVEAL_TIME*1000);
 }
 function showPodiumSolo(){
+  Music.setGamePhase("podium");
   $("#pod1a").textContent = S.me.avatar;
   $("#pod1n").textContent = `${S.me.name} · ${S.me.score}`;
   $("#pod2a").textContent = ""; $("#pod2n").textContent = "";

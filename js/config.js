@@ -41,6 +41,15 @@ const BAD_WORDS = ["ctm","csm","weon","weón","hueon","hueón","aweonao","conche
 "pico","raja","perkin","perra","imbecil","imbécil","idiota","estupido","estúpido","pendejo",
 "cabron","cabrón","verga","joder","coño","gilipollas","fuck","shit","bitch","asshole"];
 
+// Playlist de música de fondo. Para agregar una canción nueva:
+// 1) Sube el mp3 a la carpeta "music/" del repo
+// 2) Agrega una línea aquí abajo con un id único, el nombre y el nombre del archivo
+const MUSIC_TRACKS = [
+  { id:"gentio", name:"¡Que se arme el gentío!", file:"music/que-se-arme-el-gentio.mp3", duration:174 },
+  { id:"podio",  name:"El podio es mío",         file:"music/el-podio-es-mio.mp3",       duration:172 },
+  { id:"verdad", name:"La hora de la verdad",    file:"music/la-hora-de-la-verdad.mp3",  duration:177 },
+];
+
 const QUESTION_TIME = 40;      // segundos por pregunta
 const REVEAL_TIME = 4;         // segundos mostrando la respuesta
 const BOARD_TIME = 6;          // segundos mostrando el marcador
