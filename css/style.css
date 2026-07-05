@@ -229,3 +229,56 @@ body[class*="theme-"] #sky .toy{opacity:.5}
 .theme-animales {background:linear-gradient(180deg,#2E7D32 0%,#66BB6A 55%,#C5E1A5 100%)!important}
 .theme-futbol   {background:linear-gradient(180deg,#0B6E4F 0%,#1B9C6B 55%,#8FE388 100%)!important}
 .theme-deportes {background:linear-gradient(180deg,#C1121F 0%,#F97316 55%,#FFD166 100%)!important}
+
+/* ========== Botón de propina (punto 16) ========== */
+#tipFab{position:fixed;left:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:8;
+  width:52px;height:52px;border-radius:50%;border:none;background:linear-gradient(135deg,#FFD166,#F0A500);
+  font-size:24px;box-shadow:var(--shadow);cursor:pointer;transition:transform .1s}
+#tipFab:active{transform:translateY(3px)}
+/* Modal grande scrolleable para propina e historial */
+.modal-lg #modalBox,#modalBox.lg{max-width:420px;max-height:82dvh;overflow-y:auto;text-align:left}
+.tip-msg{font-weight:700;line-height:1.5;color:var(--ink2);font-size:14px}
+.tip-data{background:#F3EADF;border-radius:14px;padding:12px 14px;font-family:'Nunito';font-weight:800;
+  font-size:14px;line-height:1.7;white-space:pre-line;color:var(--ink)}
+.tip-field{width:100%;border:none;border-radius:14px;background:#fff;box-shadow:inset 0 0 0 2px #E3D7C6;
+  padding:12px;font-family:'Nunito';font-weight:600;font-size:14px;resize:vertical;min-height:70px;outline:none}
+.hist-game{background:#F3EADF;border-radius:14px;padding:10px 12px;margin-bottom:8px}
+.hist-game h4{font-family:'Fredoka';font-size:15px;margin-bottom:4px}
+.hist-row{display:flex;justify-content:space-between;font-weight:700;font-size:13px;padding:2px 0}
+.hist-row .r-em{margin-right:6px}
+
+/* ========== Mini-juegos ========== */
+.mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:6px 0 4px}
+.mini-grid button{padding:10px 8px;border:none;border-radius:14px;font-weight:800;font-family:'Nunito';
+  background:#EDE4D8;color:var(--ink2);cursor:pointer;font-size:13px}
+.mini-grid button.on{background:var(--purple);color:#fff}
+/* Banner de aparición del mini-juego */
+.mini-intro{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;text-align:center;min-height:70dvh}
+.mini-intro .big-emoji{font-size:80px;animation:pop .8s ease}
+.mini-intro h2{color:#fff;font-size:32px;text-shadow:0 3px 0 rgba(0,0,0,.25)}
+.mini-intro p{color:#fff;font-weight:800;font-size:17px;max-width:320px;line-height:1.4;opacity:.95}
+/* NúmeroFlash: grilla de celdas */
+#flashGrid{display:grid;gap:8px;width:100%;max-width:400px;margin:0 auto}
+.flash-cell{aspect-ratio:1;border:none;border-radius:14px;background:var(--card);color:var(--ink);
+  font-family:'Fredoka';font-size:clamp(18px,6vw,30px);font-weight:700;cursor:pointer;box-shadow:0 3px 0 rgba(0,0,0,.15);
+  display:flex;align-items:center;justify-content:center;transition:transform .1s}
+.flash-cell:active{transform:scale(.92)}
+.flash-cell.done{background:var(--green);color:#fff;pointer-events:none;opacity:.5}
+.flash-cell.wrong{animation:shake .4s}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-8px)}75%{transform:translateX(8px)}}
+.mini-head{display:flex;justify-content:space-between;align-items:center;width:100%;max-width:400px;margin:0 auto 8px}
+.mini-target{background:var(--gold);color:var(--ink);border-radius:30px;padding:8px 18px;font-family:'Fredoka';font-size:20px;font-weight:700}
+.mini-timer{background:var(--card);border-radius:30px;padding:8px 16px;font-family:'Fredoka';font-weight:700;font-size:18px}
+
+/* ========== Colorín (Stroop) ========== */
+.color-instr{color:#fff;text-align:center;font-weight:800;font-size:18px;margin:8px auto;max-width:340px;text-shadow:0 2px 0 rgba(0,0,0,.25)}
+.color-stim{text-align:center;font-family:'Fredoka';font-weight:700;font-size:clamp(44px,15vw,72px);
+  margin:16px auto;min-height:90px;display:flex;align-items:center;justify-content:center;
+  filter:drop-shadow(0 4px 6px rgba(0,0,0,.3))}
+.color-opts{display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:400px;margin:0 auto}
+.color-opt{border:none;border-radius:var(--r);min-height:70px;padding:12px;font-family:'Nunito';
+  font-weight:800;font-size:18px;color:#fff;cursor:pointer;box-shadow:var(--shadow);transition:transform .08s}
+.color-opt:active{transform:translateY(4px)}
+.color-opt.dim{opacity:.35;pointer-events:none}
+.color-opt.good{outline:5px solid var(--gold)}
+.color-opt.bad{outline:5px solid #fff;opacity:.6}
