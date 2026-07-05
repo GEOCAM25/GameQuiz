@@ -11,6 +11,7 @@ create table public.rooms (
   settings jsonb not null default '{}',
   current_q int not null default -1,
   q_started_at timestamptz,
+  phase_until bigint,   -- marca de tiempo (ms) para el watchdog del anfitrión
   created_at timestamptz not null default now()
 );
 
