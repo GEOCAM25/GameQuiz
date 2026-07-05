@@ -95,8 +95,12 @@
         <button data-v="none" class="on">Ninguno</button>
         <button data-v="flash">🔢 NúmeroFlash</button>
         <button data-v="color">🎨 Colorín</button>
-        <button data-v="preg" disabled title="Próximamente">💡 Preguntón (pronto)</button>
-        <button data-v="delator" disabled title="Próximamente">🕵️ Delator (pronto)</button>
+        <button data-v="memoria">🧠 Memoria</button>
+        <button data-v="punteria">🎯 Puntería</button>
+        <button data-v="reaccion">⚡ Reacción</button>
+        <button data-v="ritmo">🎵 Ritmo</button>
+        <button data-v="delator">🕵️ Delator</button>
+        <button data-v="preg">💡 Preguntón</button>
         <button data-v="random">🎲 Al azar</button>
       </div>
     </div>
@@ -161,6 +165,92 @@
     <div class="color-stim" id="colorStim">…</div>
     <div class="color-opts" id="colorOpts"></div>
     <p class="hint" id="colorScore" style="margin-top:10px"></p>
+  </section>
+
+  <!-- ============ MINI-JUEGO: MEMORIA RELÁMPAGO ============ -->
+  <section id="scr-mini-memoria" class="screen">
+    <div class="mini-head">
+      <span class="mini-target" id="memoRound">¡Memoriza!</span>
+      <span class="mini-timer" id="memoTimer">12</span>
+    </div>
+    <p class="color-instr" id="memoInstr">Fíjate en el orden…</p>
+    <div class="memo-board" id="memoBoard"></div>
+    <p class="hint" id="memoScore" style="margin-top:10px"></p>
+  </section>
+
+  <!-- ============ MINI-JUEGO: PUNTERÍA EXTREMA ============ -->
+  <section id="scr-mini-punteria" class="screen">
+    <div class="mini-head">
+      <span class="mini-target" id="puntScore">Aciertos: 0</span>
+      <span class="mini-timer" id="puntTimer">30</span>
+    </div>
+    <div class="punt-arena" id="puntArena"></div>
+  </section>
+
+  <!-- ============ MINI-JUEGO: REACCIÓN RÁPIDA ============ -->
+  <section id="scr-mini-reaccion" class="screen">
+    <div class="mini-head">
+      <span class="mini-target">⚡ Reacción</span>
+      <span class="mini-timer" id="reacTimer">16</span>
+    </div>
+    <button class="reac-pad waiting" id="reacPad">
+      <span class="reac-big" id="reacBig">Espera…</span>
+      <span class="reac-sub" id="reacSub">Prepárate</span>
+    </button>
+  </section>
+
+  <!-- ============ MINI-JUEGO: RITMO COPIADO ============ -->
+  <section id="scr-mini-ritmo" class="screen">
+    <div class="mini-head">
+      <span class="mini-target">🎵 Ritmo</span>
+      <span class="mini-timer" id="ritmoTimer">30</span>
+    </div>
+    <p class="color-instr" id="ritmoMsg">Observa…</p>
+    <div class="ritmo-pads" id="ritmoPads"></div>
+  </section>
+
+  <!-- ============ MINI-JUEGO: PREGUNTÓN ============ -->
+  <section id="scr-mini-preg" class="screen">
+    <div class="mini-head">
+      <span class="mini-target" id="pregCat">Categoría</span>
+      <span class="mini-timer" id="pregTimer">25</span>
+    </div>
+    <p class="preg-hint" id="pregHint">…</p>
+    <div class="preg-word" id="pregWord"></div>
+    <div class="preg-keys" id="pregKeys"></div>
+    <p class="hint" id="pregScore" style="margin-top:10px"></p>
+  </section>
+
+  <!-- ============ MINI-JUEGO: DELATOR ============ -->
+  <section id="scr-mini-delator-names" class="screen center">
+    <div class="mini-intro">
+      <div class="big-emoji">🕵️</div>
+      <h2>Delator</h2>
+      <p>Escribe tu <b>nombre real</b> para que el grupo sepa a quién vota. ¡Sé honesto y juega con buena onda!</p>
+      <input type="text" id="delatorNameInput" class="tip-field" style="text-align:center;max-width:300px" placeholder="Tu nombre real" maxlength="20">
+      <button class="btn big btn-green" id="delatorNameBtn" style="max-width:300px">Guardar ✅</button>
+      <p id="delatorNameMsg" style="color:#fff;font-weight:800"></p>
+      <p style="color:#fff;opacity:.85">⏳ <span id="delatorNamesTimer">20</span>s</p>
+    </div>
+  </section>
+
+  <section id="scr-mini-delator-vote" class="screen">
+    <div class="mini-head">
+      <span class="mini-target" id="delatorRound">Pregunta 1 de 5</span>
+      <span class="mini-timer" id="delatorVoteTimer">60</span>
+    </div>
+    <p class="delator-q" id="delatorQ">¿Quién es más probable que…?</p>
+    <div class="delator-opts" id="delatorOpts"></div>
+    <p class="hint" id="delatorVoteMsg" style="margin-top:10px"></p>
+  </section>
+
+  <section id="scr-mini-delator-result" class="screen center">
+    <div class="mini-intro" style="min-height:auto;padding-top:20px">
+      <div class="big-emoji" style="font-size:56px">🗳️</div>
+      <p class="delator-res-q" id="delatorResQ"></p>
+      <p id="delatorResTop" style="color:var(--gold);font-family:'Fredoka';font-size:22px"></p>
+      <div class="board-list" id="delatorResList" style="width:100%;max-width:400px"></div>
+    </div>
   </section>
 
   <!-- ============ REVELACIÓN ============ -->
