@@ -103,6 +103,8 @@
         <button data-v="preg">💡 Preguntón</button>
         <button data-v="random">🎲 Al azar</button>
       </div>
+      <label class="lbl">Música de fondo</label>
+      <label class="switch-row"><input type="checkbox" id="chkMusicSync"> Sincronizar para todos 🔗 (misma canción, al mismo tiempo)</label>
     </div>
 
     <div class="panel">
@@ -286,6 +288,25 @@
 
 <!-- Botón de propina fijo (punto 16) -->
 <button id="tipFab" title="Propina">💰</button>
+
+<!-- ============ MÚSICA DE FONDO ============ -->
+<button id="musicFab" class="hidden">🎵</button>
+<div id="musicPanel" class="hidden">
+  <div class="chat-head"><p>Música de fondo 🎵</p><button id="musicClose">✕</button></div>
+  <div class="music-body">
+    <div class="music-track-row">
+      <button id="musicPrev">⏮</button>
+      <div id="musicTrackName">—</div>
+      <button id="musicNext">⏭</button>
+    </div>
+    <p class="hint hidden" id="musicSyncNote">🔗 El anfitrión sincronizó esta canción para todos</p>
+    <button class="btn small btn-blue" id="musicPlayPause">⏸ Pausar</button>
+    <div class="music-vol-row">
+      <button id="musicMute">🔊</button>
+      <input id="musicVol" type="range" min="0" max="100" value="25">
+    </div>
+  </div>
+</div>
 
 <!-- ============ CHAT ============ -->
 <button id="chatFab" class="hidden">💬<span id="chatBadge" class="hidden">0</span></button>
