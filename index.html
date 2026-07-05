@@ -86,6 +86,10 @@
       <div class="seg" id="segFilter">
         <button data-v="on" class="on">Activado 🧼</button><button data-v="off">Apagado</button>
       </div>
+      <label class="lbl">Puntaje entre partidas</label>
+      <div class="seg" id="segScore">
+        <button data-v="reset" class="on">Reinicia 🔄</button><button data-v="accum">Acumula 📈</button>
+      </div>
     </div>
 
     <div class="panel">
@@ -111,6 +115,7 @@
       <div class="q-timer"><div id="qTimerBar"></div><span id="qTimerNum">40</span></div>
     </div>
     <div class="q-emoji" id="qEmoji">🎬</div>
+    <img id="qImg" class="q-img hidden" alt="" referrerpolicy="no-referrer">
     <h2 class="q-text" id="qText">…</h2>
     <div class="answers" id="answerGrid"></div>
     <p class="hint" id="qWait"></p>
@@ -140,10 +145,15 @@
     </div>
     <div id="podiumRest" class="board-list"></div>
     <button class="btn big btn-green hidden" id="btnPlayAgain">🔄 Jugar otra ronda</button>
+    <button class="btn big btn-yellow" id="btnShareResult">📤 Compartir mi resultado</button>
+    <button class="btn small btn-blue" id="btnHistory">📊 Ver historial de la sala</button>
     <button class="btn big btn-blue" id="btnAgain">Volver al inicio 🏠</button>
   </section>
 
 </main>
+
+<!-- Botón de propina fijo (punto 16) -->
+<button id="tipFab" title="Propina">💰</button>
 
 <!-- ============ CHAT ============ -->
 <button id="chatFab" class="hidden">💬<span id="chatBadge" class="hidden">0</span></button>
@@ -161,6 +171,8 @@
 <div id="modal" class="hidden"><div id="modalBox"></div></div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<!-- EmailJS para el botón de propina. Se activa cuando pongas tus llaves en app.js (EMAILJS_READY=true). -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script src="js/config.js"></script>
 <script src="js/audio.js"></script>
 <script src="js/app.js"></script>

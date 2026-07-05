@@ -21,6 +21,7 @@ create table public.players (
   name text not null,
   avatar text not null,
   score int not null default 0,
+  total_score int not null default 0,
   connected boolean not null default true,
   is_host boolean not null default false,
   joined_late boolean not null default false,
@@ -57,18 +58,28 @@ create table public.votes (
   primary key (room_id, player_id)
 );
 
+create table public.game_history (
+  id bigint generated always as identity primary key,
+  room_id uuid not null references public.rooms(id) on delete cascade,
+  game_number int not null,
+  results jsonb not null,
+  created_at timestamptz not null default now()
+);
+
 -- RLS abierto (juego casual con anon key)
 alter table public.rooms enable row level security;
 alter table public.players enable row level security;
 alter table public.answers enable row level security;
 alter table public.messages enable row level security;
 alter table public.votes enable row level security;
+alter table public.game_history enable row level security;
 
 create policy "open rooms" on public.rooms for all using (true) with check (true);
 create policy "open players" on public.players for all using (true) with check (true);
 create policy "open answers" on public.answers for all using (true) with check (true);
 create policy "open messages" on public.messages for all using (true) with check (true);
 create policy "open votes" on public.votes for all using (true) with check (true);
+create policy "open game_history" on public.game_history for all using (true) with check (true);
 
 -- Realtime
 alter publication supabase_realtime add table public.rooms;
@@ -76,6 +87,7 @@ alter publication supabase_realtime add table public.players;
 alter publication supabase_realtime add table public.answers;
 alter publication supabase_realtime add table public.messages;
 alter publication supabase_realtime add table public.votes;
+alter publication supabase_realtime add table public.game_history;
 
 -- Limpieza automática de salas viejas (opcional, requiere pg_cron activado)
 -- select cron.schedule('clean-rooms', '0 * * * *', $$delete from public.rooms where created_at < now() - interval '12 hours'$$);
