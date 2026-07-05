@@ -4,8 +4,8 @@
 // 2) Corre el archivo supabase-setup.sql en el SQL Editor
 // 3) Pega aquí tu URL y tu anon key (Settings → API)
 // ============================================================
-const SUPABASE_URL = "PEGA_AQUI_TU_URL";        // ej: https://abcd1234.supabase.co
-const SUPABASE_ANON_KEY = "PEGA_AQUI_TU_ANON_KEY";
+const SUPABASE_URL = "https://tfjjfhzejfonvqexnvym.supabase.co";
+const SUPABASE_ANON_KEY = "sb_publishable_AUlDI0HiCb8pFb6pLWA7Cw__T5QhScZ";
 
 // Categorías disponibles (id = nombre del archivo en /data)
 const CATEGORIES = [
