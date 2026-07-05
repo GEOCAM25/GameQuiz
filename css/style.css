@@ -7,8 +7,10 @@
   --purple:#8C52FF; --gold:#FFD166; --shadow:0 6px 0 rgba(0,0,0,.22);
   --r:22px;
 }
-*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
-html,body{height:100%}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+html,body{height:100%;touch-action:manipulation;-webkit-text-size-adjust:100%}
+/* Bloquea el zoom por doble toque en botones interactivos (iOS ignora user-scalable) */
+button,.cat,.ans,.ava,.seg button,.chip{touch-action:manipulation}
 body{
   font-family:'Nunito',sans-serif;color:var(--ink);
   background:linear-gradient(180deg,var(--sky1) 0%,var(--sky2) 55%,var(--sky3) 100%);
@@ -129,7 +131,7 @@ h1,h2,.logo,.btn,.room-code,.cd-num{font-family:'Fredoka',sans-serif}
 .ans{border:none;border-radius:var(--r);min-height:96px;padding:12px;color:#fff;font-family:'Nunito';
   font-weight:800;font-size:15px;cursor:pointer;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:6px;align-items:center;justify-content:center;transition:transform .08s}
 .ans:active{transform:translateY(4px)}
-.ans .shape{font-size:20px}
+.ans .shape{font-size:26px;line-height:1;display:inline-block}
 .ans.a0{background:var(--red)}.ans.a1{background:var(--blue)}.ans.a2{background:var(--yellow);color:var(--ink)}.ans.a3{background:var(--green)}
 .ans.picked{outline:5px solid #fff}
 .ans.dim{opacity:.35;pointer-events:none}
