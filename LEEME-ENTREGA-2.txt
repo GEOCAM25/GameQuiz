@@ -1,0 +1,69 @@
+========================================
+GAME QUIZ — ENTREGA 2: UI / UX
+========================================
+
+QUÉ INCLUYE (Sección 2 completa: puntos 9, 10, 11, 12)
+
+ 9. IMÁGENES GRANDES desde la web
+    - La pantalla de pregunta ahora puede mostrar una imagen grande.
+    - Es opcional por pregunta: si una pregunta tiene el campo "img" con una URL,
+      se muestra esa imagen; si no, se muestra el emoji como siempre.
+    - Si una imagen no carga (sin internet, URL rota), cae solo al emoji.
+    - Incluí 9 imágenes de EJEMPLO ya puestas (animales y espacio) para que veas
+      cómo se ve. Abajo te explico cómo agregar más tú mismo.
+
+10. CÍRCULO en las opciones
+    - Las 4 opciones ahora muestran su forma (círculo, rombo, triángulo, cuadrado)
+      dentro de un círculo claro bien visible, en vez del puntito chico.
+
+11. AVATARES CON COLORES distintos
+    - Cada uno de los 15 personajes tiene su propio color de fondo.
+    - El color acompaña al jugador en el lobby, marcador y podio.
+
+12. FONDO SEGÚN LA CATEGORÍA
+    - Al jugar, el fondo cambia con la categoría:
+      Espacio → azul oscuro estelar, Historia → tonos tierra/pergamino,
+      Anime → rosa/celeste, Netflix → rojo, Animales → verde, etc.
+    - Vuelve al fondo normal al salir al lobby o inicio.
+
+
+CÓMO INSTALARLO
+---------------
+Sube a GitHub reemplazando, respetando carpetas:
+  - index.html            (raíz)
+  - css/style.css         (carpeta css)
+  - js/app.js             (carpeta js)
+  - data/animales.json    (carpeta data)  ← traen las imágenes de ejemplo
+  - data/espacio.json     (carpeta data)
+  - data/cine.json        (carpeta data)
+
+NO necesitas tocar la base de datos en esta entrega.
+NO toques tu js/config.js.
+
+IMPORTANTE: si ya subiste la Entrega 1, esta la reemplaza sin problema
+(este app.js ya incluye TODO lo de la Entrega 1 + lo nuevo).
+
+
+CÓMO AGREGAR MÁS IMÁGENES TÚ MISMO
+----------------------------------
+Abre cualquier archivo de data/ y a la pregunta que quieras agrégale "img":
+
+  {"q":"¿Cuál es el animal más alto?","o":["La jirafa","..."],"c":0,"e":"🦒",
+   "img":"https://.../foto_jirafa.jpg"}
+
+Reglas de oro:
+  - La imagen NO debe delatar la respuesta. (Ej: para "¿capital de Francia?"
+    NO pongas la bandera francesa; mejor una foto de la Torre Eiffel.)
+  - Usa URLs estables. Recomiendo Wikimedia Commons: entra a
+    commons.wikimedia.org, busca la foto, ábrela, y copia el enlace directo
+    que termina en .jpg o .png.
+  - Si no pones "img", la pregunta funciona igual con su emoji. Es 100% opcional.
+
+
+PENDIENTE
+---------
+Próxima entrega sugerida (3): puntajes por sala (acumulado/reinicio) +
+compartir resultados + botón de propina.
+Para la propina necesitaré que crees una cuenta gratis en EmailJS (te paso el
+paso a paso cuando lleguemos). Y ya anoté para los mini-juegos: en "Delator"
+el votado pierde 15 puntos POR CADA voto recibido.
