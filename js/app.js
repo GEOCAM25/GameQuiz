@@ -5,7 +5,18 @@
 
 const $ = s => document.querySelector(s);
 const $$ = s => [...document.querySelectorAll(s)];
-const SHAPES = ["▲","◆","●","■"];
+const SHAPES = ["●","◆","▲","■"];
+
+// Anti doble-tap-zoom en iOS (Safari ignora user-scalable=no).
+// Si detecta dos toques a menos de 300ms, cancela el segundo.
+let _lastTouch = 0;
+document.addEventListener("touchend", e => {
+  const now = Date.now();
+  if (now - _lastTouch < 300) e.preventDefault();
+  _lastTouch = now;
+}, { passive: false });
+// Cancela el gesto de pellizco/zoom
+document.addEventListener("gesturestart", e => e.preventDefault());
 
 let sb = null;
 const hasBackend = !SUPABASE_URL.includes("PEGA_AQUI");
@@ -24,7 +35,7 @@ const S = {
   selCount: 10, selMode: "admin", selFilter: "on",
   answered: false,
   qTimer: null, qLeft: 40,
-  hostTimers: [],
+  hostTimers: [], hostLoop: null, syncLoop: null,
   blocked: JSON.parse(localStorage.getItem("gq_blocked") || "[]"),
   unread: 0,
   soloState: null,
@@ -139,6 +150,9 @@ async function joinRoom(code, name, ava){
   if (room.status !== "lobby") return toast("⛔ La partida ya comenzó");
   const { data: players } = await sb.from("players").select("*").eq("room_id", room.id);
   if (players.length >= MAX_PLAYERS) return toast("😅 La sala está llena (15 máx)");
+  // Nombre duplicado entre jugadores conectados (bug 2)
+  const nameTaken = players.some(p => p.connected && p.name.trim().toLowerCase() === name.trim().toLowerCase());
+  if (nameTaken) return toast("🙋 Ese nombre ya está en uso, elige otro");
   let avatar = ava;
   if (players.some(p => p.avatar === avatar)){
     avatar = AVATARS.find(a => !players.some(p => p.avatar === a)) || ava;
@@ -188,6 +202,7 @@ async function enterRoom(room, me){
 // ---------- Realtime ----------
 async function subscribeRoom(){
   if (S.channel) sb.removeChannel(S.channel);
+  clearInterval(S.syncLoop);
   const rid = S.room.id;
   S.channel = sb.channel("room-" + rid)
     .on("postgres_changes", { event:"UPDATE", schema:"public", table:"rooms", filter:`id=eq.${rid}` },
@@ -209,6 +224,16 @@ async function subscribeRoom(){
     .on("postgres_changes", { event:"*", schema:"public", table:"votes", filter:`room_id=eq.${rid}` },
       () => { refreshVotes(); })
     .subscribe();
+
+  // Watchdog del CLIENTE: si Realtime se cae en silencio, re-sincroniza
+  // solo cada 4s durante la partida. Nadie tiene que refrescar a mano (bug 4).
+  clearInterval(S.syncLoop);
+  S.syncLoop = setInterval(async () => {
+    if (!S.room || S.solo) return;
+    if (["question","reveal","board","countdown"].includes(S.room.status)) {
+      try { await resync(); } catch(e){}
+    }
+  }, 4000);
 }
 
 // ---------- LOBBY ----------
@@ -298,9 +323,20 @@ $("#btnLeave").onclick = () => {
 };
 async function leaveGame(){
   if (S.solo){ endSoloToHome(); return; }
+  // Si yo era el anfitrión, traspaso el mando a otro jugador conectado (bug 7)
+  if (amHost()){
+    const heir = S.players.find(p => p.connected && p.id !== S.me.id);
+    if (heir){
+      await sb.from("players").update({ is_host: true }).eq("id", heir.id);
+      await sb.from("rooms").update({ host_id: heir.id }).eq("id", S.room.id);
+      sysMsg(S.room.id, `👑 ${heir.avatar} ${heir.name} es el nuevo anfitrión`);
+    }
+  }
+  stopHostLoop();
   await sb.from("players").update({ connected:false }).eq("id", S.me.id);
   sysMsg(S.room.id, `${S.me.avatar} ${S.me.name} salió de la partida 👋`);
   if (S.channel) sb.removeChannel(S.channel);
+  clearInterval(S.syncLoop);
   localStorage.removeItem("gq_session");
   S.hostTimers.forEach(clearTimeout);
   S.room = null; S.me = null; S.players = [];
@@ -325,15 +361,69 @@ $("#btnStart").onclick = async () => {
   const count = Math.min(S.room.settings.count, bank.questions.length);
   const qids = shuffle([...bank.questions.keys()]).slice(0, count);
   const settings = { ...S.room.settings, cat, qids, count };
-  await sb.from("rooms").update({ settings, status:"countdown", current_q:-1 }).eq("id", S.room.id);
+  await sb.from("rooms").update({ settings, status:"countdown", current_q:-1, phase_until: Date.now()+3800 }).eq("id", S.room.id);
+  startHostLoop();
   hostSchedule(() => nextQuestion(0), 3800);
 };
 
 function hostSchedule(fn, ms){ S.hostTimers.push(setTimeout(fn, ms)); }
 
+// ============================================================
+// MOTOR ROBUSTO: en vez de un solo setTimeout frágil, cada fase
+// guarda un "phase_until" (marca de tiempo) en la BD. Un watchdog
+// que corre cada segundo en el ANFITRIÓN revisa si ya venció la
+// fase y avanza. Si al host se le corta internet, al volver el
+// watchdog retoma solo. Ningún jugador queda colgado.
+// ============================================================
+
 async function nextQuestion(i){
-  await sb.from("rooms").update({ status:"question", current_q:i, q_started_at:new Date().toISOString() }).eq("id", S.room.id);
-  hostSchedule(() => finishQuestion(i), QUESTION_TIME*1000 + 1500);
+  const until = Date.now() + QUESTION_TIME*1000;
+  await sb.from("rooms").update({
+    status:"question", current_q:i,
+    q_started_at:new Date().toISOString(),
+    phase_until: until
+  }).eq("id", S.room.id);
+}
+
+// Arranca el watchdog del anfitrión (idempotente: nunca duplica)
+function startHostLoop(){
+  if (S.hostLoop) return;
+  S.hostLoop = setInterval(hostTick, 1000);
+}
+function stopHostLoop(){ clearInterval(S.hostLoop); S.hostLoop = null; }
+
+let hostBusy = false;
+async function hostTick(){
+  if (!amHost() || hostBusy || !S.room) return;
+  const st = S.room.status;
+  if (!["question","reveal","board"].includes(st)) return;
+
+  // ¿Todos los conectados ya respondieron? → avanzar YA (bug 5)
+  if (st === "question"){
+    const aliveIds = S.players.filter(p => p.connected).map(p => p.id);
+    if (aliveIds.length > 0){
+      const { data: ans } = await sb.from("answers").select("player_id")
+        .eq("room_id", S.room.id).eq("q_index", S.room.current_q);
+      const answered = new Set((ans||[]).map(a => a.player_id));
+      const allDone = aliveIds.every(id => answered.has(id));
+      if (allDone){ hostBusy = true; try { await finishQuestion(S.room.current_q); } finally { hostBusy = false; } return; }
+    }
+  }
+
+  // ¿Venció el tiempo de la fase? → avanzar
+  const until = S.room.phase_until || 0;
+  if (Date.now() >= until){
+    hostBusy = true;
+    try {
+      if (st === "question") await finishQuestion(S.room.current_q);
+      else if (st === "reveal") await sb.from("rooms").update({ status:"board", phase_until: Date.now()+BOARD_TIME*1000 }).eq("id", S.room.id);
+      else if (st === "board"){
+        const last = S.room.current_q >= S.room.settings.qids.length - 1;
+        if (last) await sb.from("rooms").update({ status:"podium" }).eq("id", S.room.id);
+        else await nextQuestion(S.room.current_q + 1);
+      }
+    } finally { hostBusy = false; }
+  }
 }
 
 let finishing = false;
@@ -349,6 +439,7 @@ async function finishQuestion(i){
     let place = 0;
     for (const a of (answers||[])){
       if (a.answer !== q.c) continue;
+      if (a.points > 0) { place++; continue; } // ya puntuada (evita doble conteo)
       const secs = Math.max(0, QUESTION_TIME - Math.floor((new Date(a.answered_at).getTime() - t0)/1000));
       const pts = (PLACE[Math.min(place,3)]) + secs;
       place++;
@@ -356,27 +447,18 @@ async function finishQuestion(i){
       const pl = S.players.find(p => p.id === a.player_id);
       if (pl) await sb.from("players").update({ score: pl.score + pts }).eq("id", pl.id);
     }
-    await sb.from("rooms").update({ status:"reveal" }).eq("id", S.room.id);
-    hostSchedule(async () => {
-      await sb.from("rooms").update({ status:"board" }).eq("id", S.room.id);
-      hostSchedule(async () => {
-        const last = i >= S.room.settings.qids.length - 1;
-        if (last) await sb.from("rooms").update({ status:"podium" }).eq("id", S.room.id);
-        else nextQuestion(i + 1);
-      }, BOARD_TIME*1000);
-    }, REVEAL_TIME*1000);
+    await sb.from("rooms").update({ status:"reveal", phase_until: Date.now()+REVEAL_TIME*1000 }).eq("id", S.room.id);
   } finally { finishing = false; }
 }
 
 function onAnswerInsert(a){
-  if (S.room.status !== "question") return;
+  if (!S.room || S.room.status !== "question") return;
+  // Solo nos importa QUIÉN respondió, no QUÉ respondió (no revelar nada).
   const alive = S.players.filter(p => p.connected).length;
   answersThisQ.add(a.player_id);
   $("#qWait").textContent = `${answersThisQ.size}/${alive} han respondido ✋`;
-  if (amHost() && answersThisQ.size >= alive){
-    S.hostTimers.forEach(clearTimeout);
-    finishQuestion(S.room.current_q);
-  }
+  // El avance real lo decide el watchdog del host (hostTick), no aquí.
+  if (amHost() && answersThisQ.size >= alive) hostTick();
 }
 
 // ---------- Reacción al estado de la sala (todos) ----------
@@ -385,6 +467,10 @@ const answersThisQ = new Set();
 
 async function handleRoomState(){
   const st = S.room.status;
+  // El anfitrión mantiene el watchdog vivo durante toda la partida (bug 3,4,5)
+  if (amHost() && ["countdown","question","reveal","board"].includes(st)) startHostLoop();
+  else if (st === "lobby" || st === "podium") stopHostLoop();
+
   if (st === "lobby"){ renderLobby(); if (lastStatus !== "lobby") show("lobby"); }
   else if (st === "countdown" && lastStatus !== "countdown") runCountdown();
   else if (st === "question" && (lastStatus !== "question" || lastQ !== S.room.current_q)) showQuestion();
@@ -452,9 +538,11 @@ async function submitAnswer(idx, q){
   Sfx.pick();
   $$(".ans").forEach((b,k) => b.classList.toggle(k === idx ? "picked" : "dim", true));
   if (S.solo) return soloAnswer(idx, q);
+  // NO enviamos si es correcta: el host lo calcula al cerrar la pregunta.
+  // Así la respuesta correcta nunca viaja por Realtime antes del reveal (bug 1).
   await sb.from("answers").insert({
     room_id: S.room.id, q_index: S.room.current_q,
-    player_id: S.me.id, answer: idx, correct: idx === q.c,
+    player_id: S.me.id, answer: idx,
   });
 }
 
@@ -463,14 +551,19 @@ async function showReveal(){
   const i = S.room.current_q;
   const bank = await loadBank(S.room.settings.cat);
   const q = bank.questions[S.room.settings.qids[i]];
-  const { data: mine } = await sb.from("answers").select("*").eq("room_id", S.room.id)
-    .eq("q_index", i).eq("player_id", S.me.id).maybeSingle();
+  // Mostramos la pantalla de inmediato; si el query falla, no se cuelga.
+  show("reveal");
+  $("#revealText").textContent = `Respuesta correcta: ${q.o[q.c]}`;
+  let mine = null;
+  try {
+    const { data } = await sb.from("answers").select("*").eq("room_id", S.room.id)
+      .eq("q_index", i).eq("player_id", S.me.id).maybeSingle();
+    mine = data;
+  } catch(e){ mine = null; }
   const ok = mine && mine.answer === q.c;
   $("#revealIcon").textContent = ok ? "🎉" : mine ? "😵" : "⏰";
-  $("#revealText").textContent = `Respuesta correcta: ${q.o[q.c]}`;
-  $("#revealYou").textContent = ok ? `¡Correcto! +${mine.points} puntos` : mine ? "Incorrecto esta vez 😬" : "No alcanzaste a responder";
+  $("#revealYou").textContent = ok ? `¡Correcto! +${mine.points||0} puntos` : mine ? "Incorrecto esta vez 😬" : "No alcanzaste a responder";
   ok ? Sfx.correct() : Sfx.wrong();
-  show("reveal");
 }
 
 function renderBoardIfVisible(){ if (S.room && S.room.status === "board") showBoard(); }
@@ -508,16 +601,42 @@ function showPodium(){
   show("podium");
   Sfx.fanfare();
   fireworks(8000);
-  localStorage.removeItem("gq_session");
+  stopHostLoop();
+  // Mostrar/ocultar el botón "otra ronda" según seas anfitrión
+  const again = $("#btnPlayAgain");
+  if (again) again.classList.toggle("hidden", !amHost() || S.solo);
 }
 
-$("#btnAgain").onclick = () => {
+// Volver al inicio (cerrar todo)
+$("#btnAgain").onclick = async () => {
   Sfx.click();
+  if (!S.solo && S.me) {
+    await sb.from("players").update({ connected:false }).eq("id", S.me.id).catch?.(()=>{});
+  }
   if (S.channel) sb?.removeChannel(S.channel);
+  clearInterval(S.syncLoop);
+  stopHostLoop();
   S.hostTimers.forEach(clearTimeout);
+  localStorage.removeItem("gq_session");
   S.room = null; S.me = null; S.players = []; S.solo = false;
+  lastStatus = ""; lastQ = -2;
   show("home");
 };
+
+document.addEventListener("DOMContentLoaded", () => {
+  const b = $("#btnPlayAgain"); if (b) b.onclick = playAgain;
+});
+// Jugar otra ronda en la MISMA sala (solo anfitrión): resetea puntajes y vuelve al lobby (bug 6)
+async function playAgain(){
+  if (!amHost()) return;
+  Sfx.click();
+  // Reset de puntajes y limpieza de respuestas/votos de la ronda anterior
+  await sb.from("players").update({ score: 0 }).eq("room_id", S.room.id);
+  await sb.from("answers").delete().eq("room_id", S.room.id);
+  await sb.from("votes").delete().eq("room_id", S.room.id);
+  const settings = { ...S.room.settings, qids: [] };
+  await sb.from("rooms").update({ status:"lobby", current_q:-1, phase_until:null, settings }).eq("id", S.room.id);
+}
 
 function fireworks(dur){
   const cv = $("#fx"), ctx = cv.getContext("2d");
