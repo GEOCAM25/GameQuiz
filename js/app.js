@@ -39,6 +39,12 @@ const S = {
   miniIntroIv: null, miniPlayIv: null,
   flashNext: 0, flashScore: 0, flashDone: false,
   colorRound: 0, colorScore: 0, colorAnswered: false,
+  memoInput: [], memoDone: false, memoT0: 0, memoHideT: null,
+  puntHits: 0, puntDone: false, puntSpawnIv: null,
+  reacRound: 0, reacTotal: 0, reacFouls: 0, reacDone: false, reacReady: false, reacShownAt: 0, reacGoT: null,
+  ritmoLevel: 2, ritmoInput: [], ritmoScore: 0, ritmoDone: false, ritmoLocked: true,
+  pregT0: 0, pregDone: false, pregFilled: [],
+  delatorVoted: false,
   blocked: JSON.parse(localStorage.getItem("gq_blocked") || "[]"),
   unread: 0,
   soloState: null,
@@ -271,10 +277,10 @@ function renderLobby(){
   S.selCount = st.count; S.selMode = st.mode; S.selFilter = st.filter; S.selCat = st.cat;
   syncSeg("#segCount", String(st.count)); syncSeg("#segMode", st.mode); syncSeg("#segFilter", st.filter);
   syncSeg("#segScore", st.scoreMode || "reset");
-  syncMini(st.mini || "none");
+  syncMinis(st.minis || (st.mini ? [st.mini] : ["none"]));
   renderCats(); renderPlayers(); refreshVotes();
 }
-function syncMini(v){ $$("#miniGrid button").forEach(b => b.classList.toggle("on", b.dataset.v === v)); }
+function syncMinis(arr){ $$("#miniGrid button").forEach(b => b.classList.toggle("on", arr.includes(b.dataset.v))); }
 function syncSeg(sel, v){ $$(sel + " button").forEach(b => b.classList.toggle("on", b.dataset.v === v)); }
 
 function segHandler(sel, key){
@@ -288,11 +294,21 @@ function segHandler(sel, key){
 segHandler("#segCount", "count"); segHandler("#segMode", "mode"); segHandler("#segFilter", "filter");
 segHandler("#segScore", "scoreMode");
 
-// Selector de mini-juego (selección única, estilo propio)
+// Selector de mini-juegos (selección múltiple: puedes elegir varios a la vez)
 $$("#miniGrid button").forEach(b => b.onclick = async () => {
+  if (b.disabled) return;
   Sfx.click();
-  syncMini(b.dataset.v);
-  const settings = { ...S.room.settings, mini: b.dataset.v };
+  const v = b.dataset.v;
+  let cur = S.room.settings.minis || (S.room.settings.mini ? [S.room.settings.mini] : ["none"]);
+  if (v === "none" || v === "random"){
+    cur = [v]; // "Ninguno" y "Al azar" son excluyentes con el resto
+  } else {
+    cur = cur.filter(k => k !== "none" && k !== "random");
+    cur = cur.includes(v) ? cur.filter(k => k !== v) : [...cur, v];
+    if (cur.length === 0) cur = ["none"];
+  }
+  syncMinis(cur);
+  const settings = { ...S.room.settings, minis: cur };
   await sb.from("rooms").update({ settings }).eq("id", S.room.id);
 });
 
@@ -396,19 +412,30 @@ $("#btnStart").onclick = async () => {
   const count = Math.min(S.room.settings.count, bank.questions.length);
   const qids = shuffle([...bank.questions.keys()]).slice(0, count);
 
-  // Decidir mini-juego y en qué momento aparece (una sola vez, al azar)
-  let miniKind = S.room.settings.mini || "none";
-  if (miniKind === "random"){
-    const opts = ["flash","color","preg","delator"];
-    miniKind = opts[Math.floor(Math.random()*opts.length)];
+  // Decidir qué mini-juegos entran (pueden ser varios) y en qué momento aparece cada uno
+  const IMPLEMENTED_MINIS = ["flash","color","memoria","punteria","reaccion","ritmo","delator","preg"];
+  let chosen = S.room.settings.minis || (S.room.settings.mini ? [S.room.settings.mini] : ["none"]);
+  let minisToPlay = [];
+  if (chosen.includes("random")){
+    const howMany = 1 + Math.floor(Math.random() * IMPLEMENTED_MINIS.length); // 1 o 2
+    minisToPlay = shuffle([...IMPLEMENTED_MINIS]).slice(0, howMany);
+  } else if (!chosen.includes("none") && chosen.length){
+    minisToPlay = chosen.filter(k => IMPLEMENTED_MINIS.includes(k));
   }
-  // Aparece entre la pregunta 2 y la penúltima (nunca al inicio ni al final)
-  let miniAt = -1;
-  if (miniKind !== "none" && count >= 3){
-    miniAt = 1 + Math.floor(Math.random() * (count - 2)); // índice de pregunta tras la cual aparece
+  // Delator necesita al menos 3 jugadores para tener gracia; si no, se descarta
+  const connectedCount = S.players.filter(p => p.connected).length;
+  if (connectedCount < 3) minisToPlay = minisToPlay.filter(k => k !== "delator");
+
+  // Cada mini-juego aparece en un punto distinto (entre la pregunta 2 y la penúltima, nunca repetido)
+  let miniSchedule = [];
+  if (minisToPlay.length && count >= 3){
+    const totalSlots = count - 2;
+    minisToPlay = minisToPlay.slice(0, totalSlots); // por si hay más minis que espacio disponible
+    const slots = shuffle(Array.from({ length: totalSlots }, (_, i) => i + 1));
+    minisToPlay.forEach((kind, idx) => miniSchedule.push({ kind, at: slots[idx], done:false }));
   }
 
-  const settings = { ...S.room.settings, cat, qids, count, miniKind, miniAt, miniDone:false };
+  const settings = { ...S.room.settings, cat, qids, count, miniSchedule };
   await sb.from("rooms").update({ settings, mini_state:null, status:"countdown", current_q:-1, phase_until: Date.now()+3800 }).eq("id", S.room.id);
   startHostLoop();
   hostSchedule(() => nextQuestion(0), 3800);
@@ -468,9 +495,10 @@ async function hostTick(){
       else if (st === "board"){
         const s = S.room.settings;
         const last = S.room.current_q >= s.qids.length - 1;
-        // ¿Toca el mini-juego tras esta pregunta? (una sola vez)
-        if (!s.miniDone && s.miniKind && s.miniKind !== "none" && S.room.current_q === s.miniAt){
-          await startMiniGame();
+        // ¿Toca alguno de los mini-juegos programados tras esta pregunta?
+        const pending = (s.miniSchedule || []).find(m => !m.done && m.at === S.room.current_q);
+        if (pending){
+          await startMiniGame(pending);
         } else if (last){ await saveGameHistory(); await sb.from("rooms").update({ status:"podium" }).eq("id", S.room.id); }
         else await nextQuestion(S.room.current_q + 1);
       }
@@ -1012,23 +1040,43 @@ async function sendTipMsg(){
 const MINI_META = {
   flash:   { emoji:"🔢", title:"NúmeroFlash", desc:"Toca los números en orden lo más rápido que puedas. ¡30 segundos!" },
   color:   { emoji:"🎨", title:"Colorín",     desc:"Lee bien la instrucción… ¡y no te dejes engañar por los colores!" },
-  preg:    { emoji:"💡", title:"Preguntón",   desc:"Completa las palabras con las pistas. ¡Rápido!" },
+  memoria: { emoji:"🧠", title:"Memoria Relámpago", desc:"Memoriza el orden de los emojis… ¡y repítelo cuando desaparezcan!" },
+  punteria:{ emoji:"🎯", title:"Puntería Extrema", desc:"Toca los objetivos antes de que se achiquen y escapen. ¡30 segundos!" },
+  reaccion:{ emoji:"⚡", title:"Reacción Rápida", desc:"Espera el verde… ¡y toca lo más rápido que puedas! No te adelantes." },
+  ritmo:   { emoji:"🎵", title:"Ritmo Copiado", desc:"Mira la secuencia de colores y repítela igual. ¡Se pone más larga!" },
+  preg:    { emoji:"💡", title:"Preguntón",   desc:"Adivina rápido según la categoría. ¡El más veloz gana más!" },
   delator: { emoji:"🕵️", title:"Delator",     desc:"¿Quién es más probable que…? Vota (y cuídate)." },
 };
 
+// Mini-juegos cuyo puntaje se reparte por ORDEN DE LLEGADA (1°=100, 2°=90…)
+// en vez de sumar el score crudo que guardó cada jugador.
+const RANK_MINIS = { memoria:[100,90,80,70,60,50], preg:[100,90,80,70], reaccion:[100,90,80,70,60,50] };
+
 // ---------- El anfitrión arma el mini-juego ----------
-async function startMiniGame(){
+async function startMiniGame(entry){
   if (!amHost()) return;
-  const kind = S.room.settings.miniKind;
-  // Marcar como usado para que no se repita
-  const settings = { ...S.room.settings, miniDone:true };
+  const kind = entry.kind;
+  // Marcar este mini-juego (y solo este) como usado para que no se repita
+  const miniSchedule = (S.room.settings.miniSchedule || []).map(m =>
+    (m.kind === entry.kind && m.at === entry.at) ? { ...m, done:true } : m
+  );
+  const settings = { ...S.room.settings, miniSchedule };
   let mini = { kind, phase:"intro", round:0 };
 
   if (kind === "flash") mini.data = buildFlash();
   if (kind === "color") mini.data = buildColor();
-  // (color, preg, delator se agregan en sus propios sub-módulos)
+  if (kind === "memoria") mini.data = buildMemoria();
+  if (kind === "punteria") mini.data = buildPunteria();
+  if (kind === "reaccion") mini.data = buildReaccion();
+  if (kind === "ritmo") mini.data = buildRitmo();
+  if (kind === "preg") mini.data = await buildPreg();
+  if (kind === "delator"){
+    mini.data = buildDelator();
+    mini.phase = "names";        // fase extra: pedir nombre real
+    mini.dround = 0;             // ronda de delator actual
+  }
 
-  const introMs = 5000; // lectura de instrucciones + cuenta regresiva
+  const introMs = (kind === "delator") ? 20000 : 5000; // delator: 20s para escribir nombre real
   mini.until = Date.now() + introMs;
   await sb.from("mini_scores").delete().eq("room_id", S.room.id).eq("kind", kind);
   await sb.from("rooms").update({ settings, mini_state: mini, status:"mini", phase_until: Date.now()+introMs }).eq("id", S.room.id);
@@ -1052,10 +1100,117 @@ function buildFlash(){
   return { variant:v, seq, cells: cells.map(c=>c.val), n: seq.length };
 }
 
+// Construye Memoria Relámpago: una secuencia de emojis a memorizar (misma para todos)
+function buildMemoria(){
+  const POOL = ["🍎","🚗","🐶","⚽","🌟","🎈","🍕","🐱","🎸","🌈","🔑","🦋","🍦","🎁","🚀","🌻","🐢","⚡","🎩","🍄"];
+  const len = 6 + Math.floor(Math.random()*3); // 6, 7 u 8
+  const seq = shuffle([...POOL]).slice(0, len);
+  return { seq, n: len };
+}
+
+// Construye Puntería Extrema: objetivos que aparecerán en posiciones/tiempos.
+// El patrón NO necesita ser idéntico entre jugadores (cada quien toca lo que puede),
+// pero fijamos una semilla de tamaños para que sea parejo.
+function buildPunteria(){
+  return { total: 40, minSize: 42, maxSize: 96, life: 900 }; // objetivos van saliendo por JS local
+}
+
+// Reacción Rápida: 3 rondas, cada una con un tiempo de espera distinto antes del "¡YA!"
+function buildReaccion(){
+  const rounds = [];
+  for (let r=0; r<3; r++){
+    rounds.push({ waitMs: 1500 + Math.floor(Math.random()*3500) }); // entre 1.5s y 5s
+  }
+  return { rounds, n: 3 };
+}
+
+// Ritmo Copiado (Simón dice): una secuencia larga; cada ronda revela un paso más.
+function buildRitmo(){
+  const seq = Array.from({length:12}, () => Math.floor(Math.random()*4)); // colores 0..3
+  return { seq, n: seq.length };
+}
+
+// Delator: 5 preguntas "¿Quién es más probable que…?" (elegidas al azar del banco)
+const DELATOR_BANK = [
+  "se quede dormido en un viaje largo",
+  "llegue tarde a todos lados",
+  "se ría en el momento menos apropiado",
+  "revise el celular a cada rato",
+  "se coma la última papa sin preguntar",
+  "cante en la ducha a todo volumen",
+  "se pierda usando el GPS",
+  "gaste toda su plata en comida",
+  "hable con desconocidos en la calle",
+  "olvide dónde dejó las llaves",
+  "arme una fiesta de improviso",
+  "diga una talla mala y nadie se ría",
+  "se ponga a bailar sin música",
+  "mande un audio de 5 minutos",
+  "se coma algo del suelo (regla de los 3 segundos)",
+  "se quede pegado viendo videos hasta tarde",
+  "llore con una película animada",
+  "se meta a nadar con ropa",
+  "conteste 'ya voy' y no vaya",
+  "haga la tarea a última hora",
+];
+function buildDelator(){
+  const qs = shuffle([...DELATOR_BANK]).slice(0, 5);
+  return { questions: qs, n: 5, startPts: 500, penalty: 15 };
+}
+
+// Preguntón: elige una palabra, revela algunas letras como pista y arma un
+// teclado con las letras que faltan + señuelos. Todos reciben la MISMA palabra.
+async function buildPreg(){
+  const bank = await loadBank("palabras");
+  const item = bank.words[Math.floor(Math.random()*bank.words.length)];
+  const word = item.w.toUpperCase();
+  const letters = word.split("");
+  // Revelar ~30% de las posiciones (mínimo 1, nunca todas)
+  const nReveal = Math.max(1, Math.floor(letters.length * 0.3));
+  const revealIdx = shuffle([...letters.keys()]).slice(0, nReveal);
+  const shown = letters.map((ch,i) => revealIdx.includes(i) ? ch : null);
+  // Letras que el jugador debe colocar (las ocultas), en orden de aparición
+  const missing = letters.filter((_,i) => !revealIdx.includes(i));
+  // Teclado: letras faltantes (únicas) + señuelos hasta ~10 teclas
+  const uniqueMissing = [...new Set(missing)];
+  const ALFA = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ".split("");
+  const pool = ALFA.filter(l => !uniqueMissing.includes(l));
+  const decoys = shuffle(pool).slice(0, Math.max(0, 10 - uniqueMissing.length));
+  const keys = shuffle([...uniqueMissing, ...decoys]);
+  return { word, cat:item.c, hint:item.h, shown, keys, n: letters.length };
+}
+
 // ---------- Watchdog del mini-juego (host) ----------
 async function hostMiniTick(){
   const m = S.room.mini_state; if (!m) return;
   if (Date.now() < (m.until||0)) return;
+
+  // ----- Flujo especial de DELATOR -----
+  if (m.kind === "delator"){
+    if (m.phase === "names"){
+      // Pasar a la primera ronda de votación
+      const nm = { ...m, phase:"play", dround:0, until: Date.now()+60000 };
+      await sb.from("rooms").update({ mini_state:nm, phase_until: Date.now()+60000 }).eq("id", S.room.id);
+    } else if (m.phase === "play"){
+      // Cerrar la ronda actual: contar votos y penalizar, mostrar resultado de ronda
+      await delatorCloseRound(m);
+    } else if (m.phase === "dround-result"){
+      // Avanzar a la siguiente ronda o terminar
+      if (m.dround + 1 >= m.data.n){
+        await finishDelator(m);
+      } else {
+        const nm = { ...m, phase:"play", dround: m.dround+1, until: Date.now()+60000 };
+        await sb.from("rooms").update({ mini_state:nm, phase_until: Date.now()+60000 }).eq("id", S.room.id);
+      }
+    } else if (m.phase === "result"){
+      const last = S.room.current_q >= S.room.settings.qids.length - 1;
+      if (last){ await saveGameHistory(); await sb.from("rooms").update({ status:"podium" }).eq("id", S.room.id); }
+      else await nextQuestion(S.room.current_q + 1);
+    }
+    return;
+  }
+
+  // ----- Flujo normal del resto de mini-juegos -----
   if (m.phase === "intro"){
     const playMs = miniPlayMs(m.kind);
     const nm = { ...m, phase:"play", until: Date.now()+playMs };
@@ -1072,6 +1227,11 @@ async function hostMiniTick(){
 function miniPlayMs(kind){
   if (kind === "flash") return 30000;
   if (kind === "color") return 22000;
+  if (kind === "memoria") return 12000;   // tiempo para repetir la secuencia
+  if (kind === "punteria") return 30000;
+  if (kind === "reaccion") return 16000;   // varias rondas de espera+toque
+  if (kind === "ritmo") return 30000;      // secuencia que crece
+  if (kind === "preg") return 25000;       // completar la palabra con pistas
   return 15000;
 }
 
@@ -1081,9 +1241,24 @@ async function finishMini(){
   const m = S.room.mini_state;
   const { data: scores } = await sb.from("mini_scores").select("*")
     .eq("room_id", S.room.id).eq("kind", m.kind);
-  // Sumar el puntaje del mini al score de cada jugador
+
   const byPlayer = {};
-  (scores||[]).forEach(s => { byPlayer[s.player_id] = (byPlayer[s.player_id]||0) + s.score; });
+  const table = RANK_MINIS[m.kind];
+  if (table){
+    // Reparto por ORDEN DE LLEGADA. Solo puntúan quienes acertaron (payload.ok).
+    // Se ordena por tiempo de acierto (payload.t, menor = más rápido).
+    const finishers = (scores||[])
+      .filter(s => s.payload && s.payload.ok)
+      .sort((a,b) => (a.payload.t||0) - (b.payload.t||0));
+    finishers.forEach((s, idx) => {
+      byPlayer[s.player_id] = (byPlayer[s.player_id]||0) + (table[Math.min(idx, table.length-1)]);
+    });
+    // Quienes no acertaron quedan en 0 (no se agregan)
+  } else {
+    // Puntaje directo: se suma el score crudo que guardó cada jugador
+    (scores||[]).forEach(s => { byPlayer[s.player_id] = (byPlayer[s.player_id]||0) + s.score; });
+  }
+
   for (const [pid, pts] of Object.entries(byPlayer)){
     const pl = S.players.find(p => p.id === pid);
     if (pl) await sb.from("players").update({ score: pl.score + pts }).eq("id", pid);
@@ -1092,12 +1267,60 @@ async function finishMini(){
   await sb.from("rooms").update({ mini_state:nm, phase_until: Date.now()+6000 }).eq("id", S.room.id);
 }
 
-// ---------- Render del mini-juego (todos) ----------
-let miniLastPhase = "", miniLastKind = "";
+// ---------- DELATOR (host) ----------
+// Cierra la ronda actual: cuenta los votos recibidos y muestra el resultado de la ronda.
+async function delatorCloseRound(m){
+  if (!amHost()) return;
+  const { data: votes } = await sb.from("mini_scores").select("*")
+    .eq("room_id", S.room.id).eq("kind", "delator").eq("round", m.dround);
+  // Contar votos recibidos por jugador en esta ronda
+  const received = {};
+  (votes||[]).forEach(v => {
+    const target = v.payload && v.payload.votedFor;
+    if (target) received[target] = (received[target]||0) + 1;
+  });
+  const nm = { ...m, phase:"dround-result", until: Date.now()+7000, roundVotes: received };
+  await sb.from("rooms").update({ mini_state:nm, phase_until: Date.now()+7000 }).eq("id", S.room.id);
+}
+
+// Al terminar las 5 rondas: cada jugador parte con 500 y pierde 15 por cada voto recibido (total).
+async function finishDelator(m){
+  if (!amHost()) return;
+  const { data: votes } = await sb.from("mini_scores").select("*")
+    .eq("room_id", S.room.id).eq("kind", "delator");
+  const totalReceived = {};
+  (votes||[]).forEach(v => {
+    const target = v.payload && v.payload.votedFor;
+    if (target) totalReceived[target] = (totalReceived[target]||0) + 1;
+  });
+  const byPlayer = {};
+  const startPts = m.data.startPts, penalty = m.data.penalty;
+  for (const p of S.players){
+    const votesGot = totalReceived[p.id] || 0;
+    const final = Math.max(0, startPts - votesGot * penalty); // no baja de 0
+    byPlayer[p.id] = final;
+    await sb.from("players").update({ score: p.score + final }).eq("id", p.id);
+  }
+  const nm = { ...m, phase:"result", until: Date.now()+7000, results: byPlayer, totalReceived };
+  await sb.from("rooms").update({ mini_state:nm, phase_until: Date.now()+7000 }).eq("id", S.room.id);
+}
+
+let miniLastRound = -1;
 function handleMiniState(){
   const m = S.room.mini_state; if (!m) return;
-  const changed = (m.phase !== miniLastPhase) || (m.kind !== miniLastKind);
-  miniLastPhase = m.phase; miniLastKind = m.kind;
+  const changed = (m.phase !== miniLastPhase) || (m.kind !== miniLastKind) || ((m.dround??-1) !== miniLastRound);
+  miniLastPhase = m.phase; miniLastKind = m.kind; miniLastRound = (m.dround??-1);
+
+  // ----- Delator tiene sus propias fases -----
+  if (m.kind === "delator"){
+    if (m.phase === "names"){ if (changed) delatorShowNames(m); delatorUpdateNamesTimer(m); }
+    else if (m.phase === "play"){ if (changed) delatorShowVote(m); delatorUpdateVoteTimer(m); }
+    else if (m.phase === "dround-result"){ if (changed) delatorShowRoundResult(m); }
+    else if (m.phase === "result"){ if (changed) showMiniResult(m); }
+    return;
+  }
+
+  // ----- Resto de mini-juegos -----
   if (m.phase === "intro"){ if (changed) showMiniIntro(m); }
   else if (m.phase === "play"){ if (changed) startMiniPlay(m); updateMiniTimer(m); }
   else if (m.phase === "result"){ if (changed) showMiniResult(m); }
@@ -1121,9 +1344,17 @@ function showMiniIntro(m){
 
 function startMiniPlay(m){
   clearInterval(S.miniIntroIv);
-  flashSubmitted = false; colorSubmitted = false;
+  // Limpieza defensiva: apaga cualquier timer de un mini-juego anterior
+  clearInterval(S.puntSpawnIv); clearTimeout(S.reacGoT); clearTimeout(S.memoHideT);
+  flashSubmitted = false; colorSubmitted = false; memoriaSubmitted = false; punteriaSubmitted = false;
+  reaccionSubmitted = false; ritmoSubmitted = false; pregSubmitted = false;
   if (m.kind === "flash") flashStart(m);
   if (m.kind === "color") colorStart(m);
+  if (m.kind === "memoria") memoriaStart(m);
+  if (m.kind === "punteria") punteriaStart(m);
+  if (m.kind === "reaccion") reaccionStart(m);
+  if (m.kind === "ritmo") ritmoStart(m);
+  if (m.kind === "preg") pregStart(m);
   // Loop local para el cronómetro del mini-juego (no depende de eventos de red)
   clearInterval(S.miniPlayIv);
   S.miniPlayIv = setInterval(() => {
@@ -1141,20 +1372,44 @@ function updateMiniTimer(m){
     const left = Math.max(0, Math.ceil(((m.until||0)-Date.now())/1000));
     const el = $("#colorTimer"); if (el) el.textContent = left;
     if (left <= 0) colorOnTimeUp(m);
+  } else if (m.kind === "memoria"){
+    const left = Math.max(0, Math.ceil(((m.until||0)-Date.now())/1000));
+    const el = $("#memoTimer"); if (el) el.textContent = left;
+    if (left <= 0) memoriaOnTimeUp(m);
+  } else if (m.kind === "punteria"){
+    const left = Math.max(0, Math.ceil(((m.until||0)-Date.now())/1000));
+    const el = $("#puntTimer"); if (el) el.textContent = left;
+    if (left <= 0) punteriaOnTimeUp(m);
+  } else if (m.kind === "reaccion"){
+    const left = Math.max(0, Math.ceil(((m.until||0)-Date.now())/1000));
+    const el = $("#reacTimer"); if (el) el.textContent = left;
+    if (left <= 0) reaccionOnTimeUp(m);
+  } else if (m.kind === "ritmo"){
+    const left = Math.max(0, Math.ceil(((m.until||0)-Date.now())/1000));
+    const el = $("#ritmoTimer"); if (el) el.textContent = left;
+    if (left <= 0) ritmoOnTimeUp(m);
+  } else if (m.kind === "preg"){
+    const left = Math.max(0, Math.ceil(((m.until||0)-Date.now())/1000));
+    const el = $("#pregTimer"); if (el) el.textContent = left;
+    if (left <= 0) pregOnTimeUp(m);
   }
 }
 function showMiniResult(m){
   // Reutiliza la pantalla de marcador para mostrar resultados del mini
   const meta = MINI_META[m.kind];
   const results = m.results || {};
+  const isDelator = m.kind === "delator";
   const rows = S.players.map(p => ({ p, pts: results[p.id]||0 })).sort((a,b)=>b.pts-a.pts);
   const list = $("#boardList"); list.innerHTML = "";
-  const title = $("#scr-board .scr-title"); if (title) title.textContent = `${meta.emoji} ${meta.title} — resultados`;
+  const title = $("#scr-board .scr-title");
+  if (title) title.textContent = isDelator ? "🕵️ Delator — puntaje final" : `${meta.emoji} ${meta.title} — resultados`;
   rows.forEach((r,i) => {
     const d = document.createElement("div");
     d.className = "brow" + (r.p.id === S.me?.id ? " me" : "");
+    const nm = isDelator ? (r.p.real_name || r.p.name) : r.p.name;
+    const ptsLabel = isDelator ? `${r.pts} pts` : `+${r.pts}`;
     d.innerHTML = `<span class="pos">${i===0?"🥇":i+1+"º"}</span><span class="em" style="background:${avatarColor(r.p.avatar)}">${r.p.avatar}</span>
-      <span class="nm">${esc(r.p.name)}</span><span class="pts">+${r.pts}</span>`;
+      <span class="nm">${esc(nm)}</span><span class="pts">${ptsLabel}</span>`;
     list.appendChild(d);
   });
   show("board");
@@ -1367,6 +1622,500 @@ async function colorSubmit(m){
   } catch(e){}
 }
 function colorOnTimeUp(m){ if (!colorSubmitted) colorSubmit(m); }
+
+// ---------- MEMORIA RELÁMPAGO ----------
+// Fases internas: "show" (ver la secuencia 3s) → "input" (repetir tocando)
+let memoriaSubmitted = false;
+function memoriaStart(m){
+  S.memoInput = [];       // orden en que el jugador toca
+  S.memoDone = false;
+  S.memoT0 = 0;
+  const seq = m.data.seq;
+  // Mostrar la secuencia grande, en orden, por 3 segundos
+  $("#memoRound").textContent = "¡Memoriza!";
+  $("#memoScore").textContent = "";
+  const board = $("#memoBoard"); board.innerHTML = "";
+  seq.forEach((emo, i) => {
+    const d = document.createElement("div");
+    d.className = "memo-show-cell";
+    d.textContent = emo;
+    d.style.animationDelay = (i*0.12) + "s";
+    // numerito de orden para reforzar la memoria
+    const badge = document.createElement("span");
+    badge.className = "memo-num"; badge.textContent = i+1;
+    d.appendChild(badge);
+    board.appendChild(d);
+  });
+  $("#memoInstr").textContent = "Fíjate en el ORDEN…";
+  show("mini-memoria");
+  // Tras 3s, ocultar y pasar a input
+  clearTimeout(S.memoHideT);
+  S.memoHideT = setTimeout(() => memoriaInputPhase(m), 3000);
+}
+function memoriaInputPhase(m){
+  const seq = m.data.seq;
+  S.memoT0 = Date.now();
+  $("#memoRound").textContent = "¡Ahora tú!";
+  $("#memoInstr").textContent = "Tócalos en el MISMO orden";
+  const board = $("#memoBoard"); board.innerHTML = "";
+  // Botones barajados (para que tenga que recordar posición y orden)
+  shuffle([...seq]).forEach(emo => {
+    const b = document.createElement("button");
+    b.className = "memo-cell";
+    b.textContent = emo;
+    b.onclick = () => memoriaTap(b, emo, m);
+    board.appendChild(b);
+  });
+}
+async function memoriaTap(btn, emo, m){
+  if (S.memoDone) return;
+  const seq = m.data.seq;
+  const idx = S.memoInput.length;
+  if (emo === seq[idx]){
+    Sfx.pick();
+    btn.classList.add("ok");
+    btn.textContent = (idx+1) + "";
+    btn.style.pointerEvents = "none";
+    S.memoInput.push(emo);
+    if (S.memoInput.length === seq.length){
+      // ¡Completó la secuencia entera!
+      S.memoDone = true;
+      const t = Date.now() - S.memoT0;
+      $("#memoScore").textContent = "¡Perfecto! 🎉 Espera el resultado…";
+      Sfx.correct();
+      await memoriaSubmit(m, true, t);
+    }
+  } else {
+    // Falló: se marca error y queda fuera (no acertó la secuencia completa)
+    Sfx.wrong();
+    btn.classList.add("err");
+    S.memoDone = true;
+    $("#memoScore").textContent = "¡Uy! Fallaste el orden 😬";
+    $$("#memoBoard .memo-cell").forEach(b => b.style.pointerEvents = "none");
+    await memoriaSubmit(m, false, 0);
+  }
+}
+async function memoriaSubmit(m, ok, t){
+  if (memoriaSubmitted) return; memoriaSubmitted = true;
+  try {
+    await sb.from("mini_scores").insert({
+      room_id:S.room.id, player_id:S.me.id, kind:"memoria", round:m.round||0,
+      score:0, payload:{ ok, t: t||999999 }
+    });
+  } catch(e){}
+}
+function memoriaOnTimeUp(m){
+  clearTimeout(S.memoHideT);
+  if (!memoriaSubmitted) memoriaSubmit(m, false, 0);
+}
+
+// ---------- PUNTERÍA EXTREMA ----------
+let punteriaSubmitted = false;
+function punteriaStart(m){
+  S.puntHits = 0;
+  S.puntDone = false;
+  $("#puntScore").textContent = "Aciertos: 0";
+  const arena = $("#puntArena"); arena.innerHTML = "";
+  // Lanzar objetivos en bucle mientras dure la fase play
+  clearInterval(S.puntSpawnIv);
+  const spawn = () => {
+    const mm = S.room?.mini_state;
+    if (!mm || mm.phase !== "play"){ clearInterval(S.puntSpawnIv); return; }
+    spawnTarget(arena, m);
+  };
+  // Ritmo rápido: un objetivo nuevo cada ~450ms, varios a la vez → difícil
+  S.puntSpawnIv = setInterval(spawn, 450);
+  spawn();
+  show("mini-punteria");
+}
+function spawnTarget(arena, m){
+  const d = m.data;
+  const size = d.minSize + Math.random()*(d.maxSize - d.minSize);
+  const rect = arena.getBoundingClientRect();
+  const x = Math.random() * Math.max(10, rect.width - size);
+  const y = Math.random() * Math.max(10, rect.height - size);
+  const t = document.createElement("button");
+  t.className = "punt-target";
+  t.style.width = t.style.height = size + "px";
+  t.style.left = x + "px";
+  t.style.top = y + "px";
+  const hue = Math.floor(Math.random()*360);
+  t.style.background = `radial-gradient(circle at 35% 35%, hsl(${hue},90%,70%), hsl(${hue},85%,45%))`;
+  t.textContent = "🎯";
+  // Se achica y desaparece rápido (difícil)
+  t.style.animation = `puntShrink ${d.life}ms linear forwards`;
+  let hit = false;
+  t.onclick = () => {
+    if (hit || S.puntDone) return;
+    hit = true;
+    Sfx.pick();
+    S.puntHits++;
+    $("#puntScore").textContent = "Aciertos: " + S.puntHits;
+    t.classList.add("popped");
+    setTimeout(() => t.remove(), 120);
+  };
+  // Auto-remover al terminar su vida
+  setTimeout(() => { if (!hit) t.remove(); }, d.life);
+  arena.appendChild(t);
+}
+async function punteriaSubmit(m){
+  if (punteriaSubmitted) return; punteriaSubmitted = true;
+  clearInterval(S.puntSpawnIv);
+  const pts = S.puntHits * 10; // +10 por acierto, sin tope
+  try {
+    await sb.from("mini_scores").insert({
+      room_id:S.room.id, player_id:S.me.id, kind:"punteria", round:0, score:pts
+    });
+  } catch(e){}
+}
+function punteriaOnTimeUp(m){
+  S.puntDone = true;
+  if (!punteriaSubmitted) punteriaSubmit(m);
+}
+
+// ---------- REACCIÓN RÁPIDA ----------
+// 3 rondas. Cada ronda: "Espera…" → (tiempo random) → "¡YA!". Se mide la
+// reacción total sumada. Tocar antes del "¡YA!" penaliza esa ronda.
+let reaccionSubmitted = false;
+function reaccionStart(m){
+  S.reacRound = 0;
+  S.reacTotal = 0;      // suma de tiempos de reacción (ms); menor = mejor
+  S.reacFouls = 0;      // veces que se adelantó
+  S.reacDone = false;
+  const pad = $("#reacPad");
+  pad.onclick = () => reaccionTapPad(m);
+  show("mini-reaccion");
+  reaccionNextRound(m);
+}
+function reaccionNextRound(m){
+  if (S.reacRound >= m.data.rounds.length){ reaccionFinishLocal(m); return; }
+  const r = m.data.rounds[S.reacRound];
+  const pad = $("#reacPad");
+  pad.className = "reac-pad waiting";
+  $("#reacBig").textContent = "Espera…";
+  $("#reacSub").textContent = `Ronda ${S.reacRound+1} de ${m.data.rounds.length}`;
+  S.reacReady = false;
+  S.reacShownAt = 0;
+  clearTimeout(S.reacGoT);
+  // Tras el tiempo de espera, cambia a verde
+  S.reacGoT = setTimeout(() => {
+    if (S.reacDone) return;
+    S.reacReady = true;
+    S.reacShownAt = Date.now();
+    pad.className = "reac-pad go";
+    $("#reacBig").textContent = "¡YA! 🟢";
+    Sfx.go && Sfx.go();
+  }, r.waitMs);
+}
+function reaccionTapPad(m){
+  if (S.reacDone) return;
+  const pad = $("#reacPad");
+  if (!S.reacReady){
+    // Se adelantó → penalización de esta ronda
+    Sfx.wrong();
+    S.reacFouls++;
+    S.reacTotal += 2000; // castigo de 2s
+    clearTimeout(S.reacGoT);
+    pad.className = "reac-pad foul";
+    $("#reacBig").textContent = "¡Muy pronto! ✋";
+    $("#reacSub").textContent = "Espera el verde…";
+    setTimeout(() => { S.reacRound++; reaccionNextRound(m); }, 900);
+  } else {
+    // Reacción válida
+    const dt = Date.now() - S.reacShownAt;
+    S.reacTotal += dt;
+    Sfx.pick();
+    pad.className = "reac-pad hit";
+    $("#reacBig").textContent = dt + " ms";
+    $("#reacSub").textContent = "¡Buena!";
+    S.reacReady = false;
+    setTimeout(() => { S.reacRound++; reaccionNextRound(m); }, 800);
+  }
+}
+function reaccionFinishLocal(m){
+  if (S.reacDone) return;
+  S.reacDone = true;
+  $("#reacBig").textContent = "¡Listo! ⚡";
+  $("#reacSub").textContent = "Espera el resultado…";
+  // "ok" = al menos una reacción válida (no todas foul). t = tiempo total (menor gana).
+  const ok = S.reacFouls < m.data.rounds.length;
+  reaccionSubmit(m, ok, S.reacTotal);
+}
+async function reaccionSubmit(m, ok, t){
+  if (reaccionSubmitted) return; reaccionSubmitted = true;
+  try {
+    await sb.from("mini_scores").insert({
+      room_id:S.room.id, player_id:S.me.id, kind:"reaccion", round:0,
+      score:0, payload:{ ok, t: t||999999 }
+    });
+  } catch(e){}
+}
+function reaccionOnTimeUp(m){
+  clearTimeout(S.reacGoT);
+  if (!S.reacDone) reaccionFinishLocal(m);
+}
+
+// ---------- RITMO COPIADO (Simón dice) ----------
+// Se muestra una secuencia que crece (2,3,4,5…). El jugador la repite.
+// Puntos = cuántos pasos correctos en total logró (score directo × 10).
+const RITMO_COLORS = ["#FF5E5B","#38B6FF","#3ECF6E","#FFC145"];
+let ritmoSubmitted = false;
+function ritmoStart(m){
+  S.ritmoLevel = 2;      // empieza mostrando 2
+  S.ritmoInput = [];
+  S.ritmoScore = 0;      // pasos correctos acumulados
+  S.ritmoDone = false;
+  S.ritmoLocked = true;  // bloqueado mientras muestra
+  const pads = $("#ritmoPads");
+  pads.innerHTML = "";
+  RITMO_COLORS.forEach((c,i) => {
+    const b = document.createElement("button");
+    b.className = "ritmo-pad";
+    b.dataset.i = i;
+    b.style.background = c;
+    b.onclick = () => ritmoTap(i, m);
+    pads.appendChild(b);
+  });
+  show("mini-ritmo");
+  ritmoPlaySequence(m);
+}
+async function ritmoPlaySequence(m){
+  S.ritmoLocked = true;
+  S.ritmoInput = [];
+  $("#ritmoMsg").textContent = "Observa… 👀";
+  const seq = m.data.seq.slice(0, S.ritmoLevel);
+  await sleep(600);
+  for (const idx of seq){
+    if (S.ritmoDone) return;
+    await ritmoFlash(idx);
+    await sleep(220);
+  }
+  $("#ritmoMsg").textContent = "¡Tu turno! Repite la secuencia";
+  S.ritmoLocked = false;
+}
+function ritmoFlash(idx){
+  return new Promise(res => {
+    const pad = $$("#ritmoPads .ritmo-pad")[idx];
+    if (!pad){ res(); return; }
+    pad.classList.add("lit");
+    Sfx.pick && Sfx.pick();
+    setTimeout(() => { pad.classList.remove("lit"); res(); }, 420);
+  });
+}
+async function ritmoTap(idx, m){
+  if (S.ritmoLocked || S.ritmoDone) return;
+  const seq = m.data.seq.slice(0, S.ritmoLevel);
+  const pos = S.ritmoInput.length;
+  // Flash visual del toque
+  const pad = $$("#ritmoPads .ritmo-pad")[idx];
+  pad.classList.add("lit"); setTimeout(()=>pad.classList.remove("lit"), 180);
+  if (idx === seq[pos]){
+    Sfx.pick && Sfx.pick();
+    S.ritmoInput.push(idx);
+    S.ritmoScore++; // cada paso correcto suma
+    if (S.ritmoInput.length === seq.length){
+      // Completó el nivel → sube dificultad
+      S.ritmoLocked = true;
+      $("#ritmoMsg").textContent = "¡Bien! 🎉 Ahora más largo…";
+      S.ritmoLevel++;
+      if (S.ritmoLevel > m.data.seq.length){ ritmoFinishLocal(m); return; }
+      await sleep(800);
+      ritmoPlaySequence(m);
+    }
+  } else {
+    // Falló → termina su participación
+    Sfx.wrong();
+    pad.classList.add("err"); setTimeout(()=>pad.classList.remove("err"), 400);
+    $("#ritmoMsg").textContent = `¡Fallaste! Llegaste a ${S.ritmoScore} pasos`;
+    ritmoFinishLocal(m);
+  }
+}
+function ritmoFinishLocal(m){
+  if (S.ritmoDone) return;
+  S.ritmoDone = true;
+  S.ritmoLocked = true;
+  ritmoSubmit(m);
+}
+async function ritmoSubmit(m){
+  if (ritmoSubmitted) return; ritmoSubmitted = true;
+  const pts = S.ritmoScore * 10; // 10 por paso correcto
+  try {
+    await sb.from("mini_scores").insert({
+      room_id:S.room.id, player_id:S.me.id, kind:"ritmo", round:0, score:pts
+    });
+  } catch(e){}
+}
+function ritmoOnTimeUp(m){ if (!S.ritmoDone) ritmoFinishLocal(m); }
+
+function sleep(ms){ return new Promise(r => setTimeout(r, ms)); }
+
+// ---------- PREGUNTÓN (completar palabra con pistas) ----------
+let pregSubmitted = false;
+function pregStart(m){
+  const d = m.data;
+  S.pregT0 = Date.now();
+  S.pregDone = false;
+  S.pregFilled = d.shown.slice();     // copia: letras ya reveladas; el resto null
+  $("#pregCat").textContent = d.cat;
+  $("#pregHint").textContent = "💡 " + d.hint;
+  $("#pregScore").textContent = "";
+  pregRenderWord(m);
+  pregRenderKeys(m);
+  show("mini-preg");
+}
+function pregNextEmptyIndex(){
+  return S.pregFilled.findIndex(ch => ch === null);
+}
+function pregRenderWord(m){
+  const wrap = $("#pregWord"); wrap.innerHTML = "";
+  const next = pregNextEmptyIndex();
+  S.pregFilled.forEach((ch, i) => {
+    const slot = document.createElement("div");
+    slot.className = "preg-slot" + (ch ? " filled" : "") + (i===next ? " active" : "");
+    slot.textContent = ch || "";
+    wrap.appendChild(slot);
+  });
+}
+function pregRenderKeys(m){
+  const wrap = $("#pregKeys"); wrap.innerHTML = "";
+  m.data.keys.forEach(letter => {
+    const b = document.createElement("button");
+    b.className = "preg-key";
+    b.textContent = letter;
+    b.onclick = () => pregTapKey(letter, b, m);
+    wrap.appendChild(b);
+  });
+}
+async function pregTapKey(letter, btn, m){
+  if (S.pregDone) return;
+  const idx = pregNextEmptyIndex();
+  if (idx < 0) return;
+  const expected = m.data.word[idx];
+  if (letter === expected){
+    Sfx.pick();
+    S.pregFilled[idx] = letter;
+    pregRenderWord(m);
+    if (pregNextEmptyIndex() < 0){
+      // Palabra completa
+      S.pregDone = true;
+      const t = Date.now() - S.pregT0;
+      $("#pregScore").textContent = "¡Correcto! 🎉 Espera el resultado…";
+      Sfx.correct();
+      await pregSubmit(m, true, t);
+    }
+  } else {
+    // Letra incorrecta: parpadeo rojo, no avanza
+    Sfx.wrong();
+    btn.classList.add("wrong");
+    setTimeout(()=>btn.classList.remove("wrong"), 400);
+  }
+}
+async function pregSubmit(m, ok, t){
+  if (pregSubmitted) return; pregSubmitted = true;
+  try {
+    await sb.from("mini_scores").insert({
+      room_id:S.room.id, player_id:S.me.id, kind:"preg", round:0,
+      score:0, payload:{ ok, t: t||999999 }
+    });
+  } catch(e){}
+}
+function pregOnTimeUp(m){
+  if (!S.pregDone && !pregSubmitted) pregSubmit(m, false, 0);
+}
+
+// ---------- DELATOR (cliente) ----------
+// Fase 1: escribir nombre real
+function delatorShowNames(m){
+  S.delatorVoted = false;
+  show("mini-delator-names");
+  const saved = S.me?.real_name || "";
+  const inp = $("#delatorNameInput");
+  inp.value = saved; inp.disabled = false;
+  const btn = $("#delatorNameBtn");
+  btn.disabled = false;
+  btn.onclick = delatorSaveName;
+  $("#delatorNameMsg").textContent = "";
+}
+function delatorUpdateNamesTimer(m){
+  const left = Math.max(0, Math.ceil(((m.until||0)-Date.now())/1000));
+  const el = $("#delatorNamesTimer"); if (el) el.textContent = left;
+}
+async function delatorSaveName(){
+  const v = ($("#delatorNameInput").value || "").trim().slice(0,20);
+  if (!v){ $("#delatorNameMsg").textContent = "Escribe tu nombre real 🙈"; return; }
+  try {
+    await sb.from("players").update({ real_name: v }).eq("id", S.me.id);
+    if (S.me) S.me.real_name = v;
+    $("#delatorNameMsg").textContent = "¡Listo! Espera a los demás… ✅";
+    $("#delatorNameInput").disabled = true;
+    $("#delatorNameBtn").disabled = true;
+  } catch(e){ $("#delatorNameMsg").textContent = "No se pudo guardar, reintenta"; }
+}
+
+// Fase 2: votar (cada ronda)
+function delatorShowVote(m){
+  S.delatorVoted = false;
+  const q = m.data.questions[m.dround];
+  $("#delatorRound").textContent = `Pregunta ${m.dround+1} de ${m.data.n}`;
+  $("#delatorQ").textContent = `¿Quién es más probable que ${q}?`;
+  $("#delatorVoteMsg").textContent = "";
+  const grid = $("#delatorOpts"); grid.innerHTML = "";
+  // Opciones = todos los jugadores conectados MENOS uno mismo (no puedes votarte)
+  S.players.filter(p => p.connected && p.id !== S.me?.id).forEach(p => {
+    const b = document.createElement("button");
+    b.className = "delator-opt";
+    const nm = p.real_name || p.name;
+    b.innerHTML = `<span class="d-em" style="background:${avatarColor(p.avatar)}">${p.avatar}</span>${esc(nm)}`;
+    b.onclick = () => delatorVote(p.id, b, m);
+    grid.appendChild(b);
+  });
+  show("mini-delator-vote");
+}
+function delatorUpdateVoteTimer(m){
+  const left = Math.max(0, Math.ceil(((m.until||0)-Date.now())/1000));
+  const el = $("#delatorVoteTimer"); if (el) el.textContent = left;
+}
+async function delatorVote(targetId, btn, m){
+  if (S.delatorVoted) return;
+  S.delatorVoted = true;
+  $$("#delatorOpts .delator-opt").forEach(b => { if (b!==btn) b.classList.add("dim"); });
+  btn.classList.add("picked");
+  $("#delatorVoteMsg").textContent = "Voto enviado (anónimo) 🤫";
+  Sfx.pick();
+  try {
+    await sb.from("mini_scores").insert({
+      room_id:S.room.id, player_id:S.me.id, kind:"delator", round:m.dround,
+      score:0, payload:{ votedFor: targetId }
+    });
+  } catch(e){}
+}
+
+// Fase 3: resultado de cada ronda (quién recibió más votos)
+function delatorShowRoundResult(m){
+  const received = m.roundVotes || {};
+  const rows = Object.entries(received).map(([pid,cnt]) => {
+    const p = S.players.find(x=>x.id===pid);
+    return { p, cnt };
+  }).filter(r=>r.p).sort((a,b)=>b.cnt-a.cnt);
+  const q = m.data.questions[m.dround];
+  $("#delatorResQ").textContent = `¿Quién es más probable que ${q}?`;
+  const list = $("#delatorResList"); list.innerHTML = "";
+  if (!rows.length){
+    list.innerHTML = `<p class="hint">Nadie votó esta ronda 🤷</p>`;
+  } else {
+    const top = rows[0];
+    $("#delatorResTop").textContent = `🏆 ${(top.p.real_name||top.p.name)} con ${top.cnt} voto${top.cnt>1?"s":""}`;
+    rows.forEach(r => {
+      const d = document.createElement("div");
+      d.className = "brow";
+      d.innerHTML = `<span class="em" style="background:${avatarColor(r.p.avatar)}">${r.p.avatar}</span>
+        <span class="nm">${esc(r.p.real_name||r.p.name)}</span><span class="pts">${r.cnt} 🗳️ · −${r.cnt*15}</span>`;
+      list.appendChild(d);
+    });
+  }
+  show("mini-delator-result");
+  Sfx.board();
+}
 
 // ---------- PWA ----------
 if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});
