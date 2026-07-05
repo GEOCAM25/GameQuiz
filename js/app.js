@@ -36,6 +36,9 @@ const S = {
   answered: false,
   qTimer: null, qLeft: 40,
   hostTimers: [], hostLoop: null, syncLoop: null,
+  miniIntroIv: null, miniPlayIv: null,
+  flashNext: 0, flashScore: 0, flashDone: false,
+  colorRound: 0, colorScore: 0, colorAnswered: false,
   blocked: JSON.parse(localStorage.getItem("gq_blocked") || "[]"),
   unread: 0,
   soloState: null,
@@ -47,6 +50,9 @@ function show(id){
   $("#scr-" + id).classList.add("active");
   const chatOk = ["lobby","board","podium"].includes(id) && !S.solo && S.room;
   $("#chatFab").classList.toggle("hidden", !chatOk);
+  // Propina visible solo donde no estorba (no durante pregunta/cuenta regresiva)
+  const tip = $("#tipFab");
+  if (tip) tip.classList.toggle("hidden", !["home","podium"].includes(id));
   if (id !== "lobby") closeChat();
   if (id === "home" || id === "profile" || id === "lobby") clearCategoryTheme();
 }
@@ -71,7 +77,7 @@ function modal(html, buttons){
     const btn = document.createElement("button");
     btn.className = "btn " + (b.cls || "btn-blue");
     btn.textContent = b.t;
-    btn.onclick = () => { $("#modal").classList.add("hidden"); b.fn && b.fn(); };
+    btn.onclick = () => { if (!b.keep) $("#modal").classList.add("hidden"); b.fn && b.fn(); };
     $("#modalBox").appendChild(btn);
   });
   $("#modal").classList.remove("hidden");
@@ -152,7 +158,7 @@ function needBackend(){
 async function createRoom(name, ava){
   if (needBackend()) return;
   const code = roomCode();
-  const settings = { count:10, mode:"admin", filter:"on", cat:"disney", qids:[] };
+  const settings = { count:10, mode:"admin", filter:"on", cat:"disney", qids:[], scoreMode:"reset" };
   const { data: room, error } = await sb.from("rooms").insert({ code, settings }).select().single();
   if (error) return toast("⚠️ No se pudo crear la sala");
   const { data: me } = await sb.from("players").insert({ room_id: room.id, name, avatar: ava, is_host: true }).select().single();
@@ -247,7 +253,7 @@ async function subscribeRoom(){
   clearInterval(S.syncLoop);
   S.syncLoop = setInterval(async () => {
     if (!S.room || S.solo) return;
-    if (["question","reveal","board","countdown"].includes(S.room.status)) {
+    if (["question","reveal","board","countdown","mini"].includes(S.room.status)) {
       try { await resync(); } catch(e){}
     }
   }, 4000);
@@ -264,8 +270,11 @@ function renderLobby(){
   const st = S.room.settings;
   S.selCount = st.count; S.selMode = st.mode; S.selFilter = st.filter; S.selCat = st.cat;
   syncSeg("#segCount", String(st.count)); syncSeg("#segMode", st.mode); syncSeg("#segFilter", st.filter);
+  syncSeg("#segScore", st.scoreMode || "reset");
+  syncMini(st.mini || "none");
   renderCats(); renderPlayers(); refreshVotes();
 }
+function syncMini(v){ $$("#miniGrid button").forEach(b => b.classList.toggle("on", b.dataset.v === v)); }
 function syncSeg(sel, v){ $$(sel + " button").forEach(b => b.classList.toggle("on", b.dataset.v === v)); }
 
 function segHandler(sel, key){
@@ -277,6 +286,15 @@ function segHandler(sel, key){
   });
 }
 segHandler("#segCount", "count"); segHandler("#segMode", "mode"); segHandler("#segFilter", "filter");
+segHandler("#segScore", "scoreMode");
+
+// Selector de mini-juego (selección única, estilo propio)
+$$("#miniGrid button").forEach(b => b.onclick = async () => {
+  Sfx.click();
+  syncMini(b.dataset.v);
+  const settings = { ...S.room.settings, mini: b.dataset.v };
+  await sb.from("rooms").update({ settings }).eq("id", S.room.id);
+});
 
 function renderCats(){
   const grid = $("#catGrid"); grid.innerHTML = "";
@@ -377,8 +395,21 @@ $("#btnStart").onclick = async () => {
   const bank = await loadBank(cat);
   const count = Math.min(S.room.settings.count, bank.questions.length);
   const qids = shuffle([...bank.questions.keys()]).slice(0, count);
-  const settings = { ...S.room.settings, cat, qids, count };
-  await sb.from("rooms").update({ settings, status:"countdown", current_q:-1, phase_until: Date.now()+3800 }).eq("id", S.room.id);
+
+  // Decidir mini-juego y en qué momento aparece (una sola vez, al azar)
+  let miniKind = S.room.settings.mini || "none";
+  if (miniKind === "random"){
+    const opts = ["flash","color","preg","delator"];
+    miniKind = opts[Math.floor(Math.random()*opts.length)];
+  }
+  // Aparece entre la pregunta 2 y la penúltima (nunca al inicio ni al final)
+  let miniAt = -1;
+  if (miniKind !== "none" && count >= 3){
+    miniAt = 1 + Math.floor(Math.random() * (count - 2)); // índice de pregunta tras la cual aparece
+  }
+
+  const settings = { ...S.room.settings, cat, qids, count, miniKind, miniAt, miniDone:false };
+  await sb.from("rooms").update({ settings, mini_state:null, status:"countdown", current_q:-1, phase_until: Date.now()+3800 }).eq("id", S.room.id);
   startHostLoop();
   hostSchedule(() => nextQuestion(0), 3800);
 };
@@ -413,7 +444,7 @@ let hostBusy = false;
 async function hostTick(){
   if (!amHost() || hostBusy || !S.room) return;
   const st = S.room.status;
-  if (!["question","reveal","board"].includes(st)) return;
+  if (!["question","reveal","board","mini"].includes(st)) return;
 
   // ¿Todos los conectados ya respondieron? → avanzar YA (bug 5)
   if (st === "question"){
@@ -435,9 +466,16 @@ async function hostTick(){
       if (st === "question") await finishQuestion(S.room.current_q);
       else if (st === "reveal") await sb.from("rooms").update({ status:"board", phase_until: Date.now()+BOARD_TIME*1000 }).eq("id", S.room.id);
       else if (st === "board"){
-        const last = S.room.current_q >= S.room.settings.qids.length - 1;
-        if (last) await sb.from("rooms").update({ status:"podium" }).eq("id", S.room.id);
+        const s = S.room.settings;
+        const last = S.room.current_q >= s.qids.length - 1;
+        // ¿Toca el mini-juego tras esta pregunta? (una sola vez)
+        if (!s.miniDone && s.miniKind && s.miniKind !== "none" && S.room.current_q === s.miniAt){
+          await startMiniGame();
+        } else if (last){ await saveGameHistory(); await sb.from("rooms").update({ status:"podium" }).eq("id", S.room.id); }
         else await nextQuestion(S.room.current_q + 1);
+      }
+      else if (st === "mini"){
+        await hostMiniTick();
       }
     } finally { hostBusy = false; }
   }
@@ -485,7 +523,7 @@ const answersThisQ = new Set();
 async function handleRoomState(){
   const st = S.room.status;
   // El anfitrión mantiene el watchdog vivo durante toda la partida (bug 3,4,5)
-  if (amHost() && ["countdown","question","reveal","board"].includes(st)) startHostLoop();
+  if (amHost() && ["countdown","question","reveal","board","mini"].includes(st)) startHostLoop();
   else if (st === "lobby" || st === "podium") stopHostLoop();
 
   if (st === "lobby"){ renderLobby(); if (lastStatus !== "lobby") show("lobby"); }
@@ -493,12 +531,14 @@ async function handleRoomState(){
   else if (st === "question" && (lastStatus !== "question" || lastQ !== S.room.current_q)) showQuestion();
   else if (st === "reveal" && lastStatus !== "reveal") showReveal();
   else if (st === "board" && lastStatus !== "board") showBoard();
+  else if (st === "mini") handleMiniState();
   else if (st === "podium" && lastStatus !== "podium") showPodium();
   if (st === "lobby") renderCats();
   lastStatus = st; lastQ = S.room.current_q;
 }
 
 function runCountdown(){
+  S._podiumFx = false;
   show("countdown");
   let n = 3;
   $("#cdNum").textContent = n; Sfx.countdown();
@@ -595,7 +635,11 @@ async function showReveal(){
   ok ? Sfx.correct() : Sfx.wrong();
 }
 
-function renderBoardIfVisible(){ if (S.room && S.room.status === "board") showBoard(); }
+function renderBoardIfVisible(){
+  if (!S.room) return;
+  if (S.room.status === "board") showBoard();
+  else if (S.room.status === "podium") showPodium();
+}
 
 function showBoard(){
   const sorted = [...S.players].sort((a,b) => b.score - a.score);
@@ -611,25 +655,52 @@ function showBoard(){
   show("board");
 }
 
+// ---------- Historial de partidas por sala (punto 13) ----------
+async function saveGameHistory(){
+  if (!amHost()) return;
+  try {
+    // Número de partida = cuántas van + 1
+    const { data: prev } = await sb.from("game_history").select("game_number")
+      .eq("room_id", S.room.id).order("game_number", { ascending:false }).limit(1);
+    const gameNumber = (prev && prev[0] ? prev[0].game_number : 0) + 1;
+    const results = [...S.players].sort((a,b)=>b.score-a.score)
+      .map(p => ({ player_id:p.id, name:p.name, avatar:p.avatar, score:p.score }));
+    await sb.from("game_history").insert({ room_id:S.room.id, game_number:gameNumber, results });
+    // Sumar al acumulado de cada jugador
+    for (const p of S.players){
+      await sb.from("players").update({ total_score: (p.total_score||0) + p.score }).eq("id", p.id);
+    }
+  } catch(e){ /* si falla, el podio igual se muestra */ }
+}
+
 // ---------- PODIO + fuegos artificiales ----------
 function showPodium(){
-  const sorted = [...S.players].sort((a,b) => b.score - a.score);
+  const accum = S.room?.settings.scoreMode === "accum";
+  // En acumulativo, total_score YA incluye la partida actual (se sumó en saveGameHistory).
+  // Usamos total_score directo. Si un cliente aún no lo tiene actualizado, el syncLoop
+  // hará resync y el podio se re-renderiza con el valor correcto.
+  const scoreOf = p => accum ? (p.total_score||0) : p.score;
+  const sorted = [...S.players].sort((a,b) => scoreOf(b) - scoreOf(a));
   const [p1,p2,p3] = sorted;
   const set = (n, p) => {
     $(`#pod${n}a`).textContent = p ? p.avatar : "";
-    $(`#pod${n}n`).textContent = p ? `${p.name} · ${p.score}` : "";
+    $(`#pod${n}a`).style.background = p ? avatarColor(p.avatar) : "";
+    $(`#pod${n}n`).textContent = p ? `${p.name} · ${scoreOf(p)}` : "";
   };
   set(1,p1); set(2,p2); set(3,p3);
   const rest = $("#podiumRest"); rest.innerHTML = "";
   sorted.slice(3).forEach((p,i) => {
     const d = document.createElement("div");
     d.className = "brow" + (p.id === S.me?.id ? " me" : "");
-    d.innerHTML = `<span class="pos">${i+4}º</span><span class="em">${p.avatar}</span><span class="nm">${esc(p.name)}</span><span class="pts">${p.score} pts</span>`;
+    d.innerHTML = `<span class="pos">${i+4}º</span><span class="em" style="background:${avatarColor(p.avatar)}">${p.avatar}</span><span class="nm">${esc(p.name)}</span><span class="pts">${scoreOf(p)} pts</span>`;
     rest.appendChild(d);
   });
   show("podium");
-  Sfx.fanfare();
-  fireworks(8000);
+  if (!S._podiumFx){
+    S._podiumFx = true;
+    Sfx.fanfare();
+    fireworks(8000);
+  }
   stopHostLoop();
   // Mostrar/ocultar el botón "otra ronda" según seas anfitrión
   const again = $("#btnPlayAgain");
@@ -815,6 +886,487 @@ function showPodiumSolo(){
   show("podium"); Sfx.fanfare(); fireworks(6000);
 }
 function endSoloToHome(){ S.solo = false; S.room = null; S.soloState = null; show("home"); }
+
+// ============================================================
+// ENTREGA 3 — Compartir resultado, historial y propina
+// ============================================================
+
+// ---------- Compartir mi resultado (punto 15) ----------
+function myPodiumInfo(){
+  const accum = S.room?.settings.scoreMode === "accum";
+  const scoreOf = p => accum ? ((p.total_score||0) + p.score) : p.score;
+  const sorted = [...S.players].sort((a,b) => scoreOf(b) - scoreOf(a));
+  const pos = sorted.findIndex(p => p.id === S.me?.id) + 1;
+  const me = sorted.find(p => p.id === S.me?.id);
+  return { pos, total: sorted.length, score: me ? scoreOf(me) : 0 };
+}
+document.addEventListener("DOMContentLoaded", () => {
+  const bs = $("#btnShareResult");
+  if (bs) bs.onclick = async () => {
+    Sfx.click();
+    const { pos, total, score } = myPodiumInfo();
+    const medal = pos===1?"🥇":pos===2?"🥈":pos===3?"🥉":"🎮";
+    const text = `${medal} ¡Quedé ${pos}º de ${total} en GAME QUIZ con ${score} puntos! ¿Me ganas? 👉 ${location.origin + location.pathname}`;
+    try {
+      if (navigator.share) await navigator.share({ text });
+      else { await navigator.clipboard.writeText(text); toast("📋 Resultado copiado"); }
+    } catch(e){ /* usuario canceló */ }
+  };
+});
+
+// ---------- Historial de la sala (punto 13) ----------
+document.addEventListener("DOMContentLoaded", () => {
+  const bh = $("#btnHistory");
+  if (bh) bh.onclick = showHistory;
+});
+async function showHistory(){
+  Sfx.click();
+  let games = [];
+  try {
+    const { data } = await sb.from("game_history").select("*")
+      .eq("room_id", S.room.id).order("game_number");
+    games = data || [];
+  } catch(e){}
+  if (!games.length){
+    modal("<h3>📊 Historial de la sala</h3><p>Aún no hay partidas guardadas. Juega una ronda completa y aquí verás los resultados de cada partida.</p>", [{t:"Cerrar"}]);
+    return;
+  }
+  let html = "<h3>📊 Historial de la sala</h3>";
+  // Acumulado total por jugador
+  const totals = {};
+  games.forEach(g => g.results.forEach(r => { totals[r.name] = (totals[r.name]||0) + r.score; }));
+  const rank = Object.entries(totals).sort((a,b)=>b[1]-a[1]);
+  html += `<div class="hist-game"><h4>🏆 Acumulado total</h4>` +
+    rank.map(([n,s],i)=>`<div class="hist-row"><span>${i+1}º ${esc(n)}</span><span>${s} pts</span></div>`).join("") + `</div>`;
+  // Cada partida
+  games.slice().reverse().forEach(g => {
+    const rows = g.results.map(r =>
+      `<div class="hist-row"><span><span class="r-em">${r.avatar}</span>${esc(r.name)}</span><span>${r.score} pts</span></div>`
+    ).join("");
+    html += `<div class="hist-game"><h4>Partida ${g.game_number}</h4>${rows}</div>`;
+  });
+  $("#modalBox").className = "lg";
+  modal(html, [{t:"Cerrar", fn:()=>{ $("#modalBox").className=""; }}]);
+}
+
+// ---------- Propina (punto 16) ----------
+// >>> CUANDO CREES TU CUENTA EN EMAILJS, PON AQUÍ TUS 3 DATOS Y CAMBIA
+//     EMAILJS_READY A true. Mientras esté en false, el botón "Enviar"
+//     abre la app de correo con el mensaje ya escrito (fallback). <<<
+const EMAILJS_READY = false;
+const EMAILJS_PUBLIC_KEY = "PON_TU_PUBLIC_KEY";
+const EMAILJS_SERVICE_ID = "PON_TU_SERVICE_ID";
+const EMAILJS_TEMPLATE_ID = "PON_TU_TEMPLATE_ID";
+const TIP_EMAIL = "hielos9mm@gmail.com";
+const TIP_DATA = "Nombre: R Soto\nRUT: 19.228.747-2\nMercado Pago\nCuenta Vista\nNúmero de cuenta: 1092855622";
+if (EMAILJS_READY && window.emailjs){ try { emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY }); } catch(e){} }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const t = $("#tipFab"); if (t) t.onclick = openTip;
+});
+function openTip(){
+  Sfx.click();
+  const html = `
+    <h3>💛 Una propina, si quieres</h3>
+    <p class="tip-msg">Hola 👋 GAME QUIZ es y seguirá siendo gratis. Lo hago con harto cariño en mis ratos libres, probando cada detalle para que jueguen tranquilos con la familia y los amigos. Si te ha hecho pasar un buen rato y quieres tirar una moneda al sombrero, me ayudas a seguir mejorándolo y me sacas una sonrisa. Sin presión: que lo disfrutes ya es suficiente. ¡Gracias por estar aquí! 🎪</p>
+    <div class="tip-data" id="tipData">${TIP_DATA}</div>
+    <p class="tip-msg">¿Una sugerencia, idea o saludo? Escríbeme:</p>
+    <textarea class="tip-field" id="tipMsg" placeholder="Tu mensaje (opcional)…"></textarea>`;
+  $("#modalBox").className = "lg";
+  modal(html, [
+    { t:"📋 Copiar datos", cls:"btn-yellow", fn: copyTipData, keep:true },
+    { t:"✉️ Enviar mensaje", cls:"btn-green", fn: sendTipMsg, keep:true },
+    { t:"Cerrar", cls:"btn-blue", fn:()=>{ $("#modalBox").className=""; } },
+  ]);
+}
+function copyTipData(){
+  navigator.clipboard.writeText(TIP_DATA).then(
+    ()=>toast("📋 Datos copiados, ¡gracias!"),
+    ()=>toast("No se pudo copiar, cópialos a mano")
+  );
+}
+async function sendTipMsg(){
+  const msg = ($("#tipMsg")?.value || "").trim();
+  if (!msg){ toast("✏️ Escribe un mensaje primero"); return; }
+  if (EMAILJS_READY && window.emailjs){
+    try {
+      await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, { message: msg }, EMAILJS_PUBLIC_KEY);
+      toast("✅ ¡Mensaje enviado, gracias!");
+      $("#modal").classList.add("hidden"); $("#modalBox").className="";
+    } catch(e){ toast("⚠️ No se pudo enviar, intenta más tarde"); }
+  } else {
+    // Fallback: abre la app de correo con el mensaje listo
+    const subject = encodeURIComponent("Mensaje desde GAME QUIZ");
+    const body = encodeURIComponent(msg);
+    location.href = `mailto:${TIP_EMAIL}?subject=${subject}&body=${body}`;
+    $("#modal").classList.add("hidden"); $("#modalBox").className="";
+  }
+}
+
+// ============================================================
+// ENTREGA 4 — MINI-JUEGOS
+// Estado en rooms.mini_state = { kind, phase, until, round, data, ... }
+// phase: "intro" (lectura+cuenta) → "play" → "result"
+// ============================================================
+
+const MINI_META = {
+  flash:   { emoji:"🔢", title:"NúmeroFlash", desc:"Toca los números en orden lo más rápido que puedas. ¡30 segundos!" },
+  color:   { emoji:"🎨", title:"Colorín",     desc:"Lee bien la instrucción… ¡y no te dejes engañar por los colores!" },
+  preg:    { emoji:"💡", title:"Preguntón",   desc:"Completa las palabras con las pistas. ¡Rápido!" },
+  delator: { emoji:"🕵️", title:"Delator",     desc:"¿Quién es más probable que…? Vota (y cuídate)." },
+};
+
+// ---------- El anfitrión arma el mini-juego ----------
+async function startMiniGame(){
+  if (!amHost()) return;
+  const kind = S.room.settings.miniKind;
+  // Marcar como usado para que no se repita
+  const settings = { ...S.room.settings, miniDone:true };
+  let mini = { kind, phase:"intro", round:0 };
+
+  if (kind === "flash") mini.data = buildFlash();
+  if (kind === "color") mini.data = buildColor();
+  // (color, preg, delator se agregan en sus propios sub-módulos)
+
+  const introMs = 5000; // lectura de instrucciones + cuenta regresiva
+  mini.until = Date.now() + introMs;
+  await sb.from("mini_scores").delete().eq("room_id", S.room.id).eq("kind", kind);
+  await sb.from("rooms").update({ settings, mini_state: mini, status:"mini", phase_until: Date.now()+introMs }).eq("id", S.room.id);
+}
+
+// Construye el patrón de NúmeroFlash (mismo para todos)
+function buildFlash(){
+  const variants = ["1-30","A-S","Z-J","2en2","5en5","30-1"];
+  const v = variants[Math.floor(Math.random()*variants.length)];
+  let seq = [];
+  if (v === "1-30") seq = Array.from({length:30}, (_,i)=>String(i+1));
+  else if (v === "A-S") seq = "ABCDEFGHIJKLMNÑOPQRS".split("").slice(0,19);
+  else if (v === "Z-J") seq = "ZYXWVUTSRQPONMLKJ".split("");
+  else if (v === "2en2") seq = Array.from({length:30}, (_,i)=>String((i+1)*2));
+  else if (v === "5en5") seq = Array.from({length:24}, (_,i)=>String((i+1)*5));
+  else if (v === "30-1") seq = Array.from({length:30}, (_,i)=>String(30-i));
+  // Posiciones barajadas (mismo orden para todos)
+  const positions = shuffle([...seq.keys()]);
+  const cells = seq.map((val,i)=>({ val, pos: positions[i] }));
+  cells.sort((a,b)=>a.pos-b.pos); // orden visual
+  return { variant:v, seq, cells: cells.map(c=>c.val), n: seq.length };
+}
+
+// ---------- Watchdog del mini-juego (host) ----------
+async function hostMiniTick(){
+  const m = S.room.mini_state; if (!m) return;
+  if (Date.now() < (m.until||0)) return;
+  if (m.phase === "intro"){
+    const playMs = miniPlayMs(m.kind);
+    const nm = { ...m, phase:"play", until: Date.now()+playMs };
+    await sb.from("rooms").update({ mini_state:nm, phase_until: Date.now()+playMs }).eq("id", S.room.id);
+  } else if (m.phase === "play"){
+    await finishMini();
+  } else if (m.phase === "result"){
+    // Volver al quiz: siguiente pregunta o podio
+    const last = S.room.current_q >= S.room.settings.qids.length - 1;
+    if (last){ await saveGameHistory(); await sb.from("rooms").update({ status:"podium" }).eq("id", S.room.id); }
+    else await nextQuestion(S.room.current_q + 1);
+  }
+}
+function miniPlayMs(kind){
+  if (kind === "flash") return 30000;
+  if (kind === "color") return 22000;
+  return 15000;
+}
+
+// El host cierra el mini-juego, suma puntos al score del quiz
+async function finishMini(){
+  if (!amHost()) return;
+  const m = S.room.mini_state;
+  const { data: scores } = await sb.from("mini_scores").select("*")
+    .eq("room_id", S.room.id).eq("kind", m.kind);
+  // Sumar el puntaje del mini al score de cada jugador
+  const byPlayer = {};
+  (scores||[]).forEach(s => { byPlayer[s.player_id] = (byPlayer[s.player_id]||0) + s.score; });
+  for (const [pid, pts] of Object.entries(byPlayer)){
+    const pl = S.players.find(p => p.id === pid);
+    if (pl) await sb.from("players").update({ score: pl.score + pts }).eq("id", pid);
+  }
+  const nm = { ...m, phase:"result", until: Date.now()+6000, results: byPlayer };
+  await sb.from("rooms").update({ mini_state:nm, phase_until: Date.now()+6000 }).eq("id", S.room.id);
+}
+
+// ---------- Render del mini-juego (todos) ----------
+let miniLastPhase = "", miniLastKind = "";
+function handleMiniState(){
+  const m = S.room.mini_state; if (!m) return;
+  const changed = (m.phase !== miniLastPhase) || (m.kind !== miniLastKind);
+  miniLastPhase = m.phase; miniLastKind = m.kind;
+  if (m.phase === "intro"){ if (changed) showMiniIntro(m); }
+  else if (m.phase === "play"){ if (changed) startMiniPlay(m); updateMiniTimer(m); }
+  else if (m.phase === "result"){ if (changed) showMiniResult(m); }
+}
+
+function showMiniIntro(m){
+  const meta = MINI_META[m.kind];
+  $("#miniIntroEmoji").textContent = meta.emoji;
+  $("#miniIntroTitle").textContent = meta.title;
+  $("#miniIntroDesc").textContent = meta.desc;
+  show("mini-intro");
+  Sfx.go();
+  // Cuenta regresiva visual en los últimos 3s de la intro
+  clearInterval(S.miniIntroIv);
+  S.miniIntroIv = setInterval(() => {
+    const left = Math.ceil(((m.until||0) - Date.now())/1000);
+    $("#miniIntroCd").textContent = left <= 3 && left > 0 ? left : "";
+    if (left <= 0) clearInterval(S.miniIntroIv);
+  }, 200);
+}
+
+function startMiniPlay(m){
+  clearInterval(S.miniIntroIv);
+  flashSubmitted = false; colorSubmitted = false;
+  if (m.kind === "flash") flashStart(m);
+  if (m.kind === "color") colorStart(m);
+  // Loop local para el cronómetro del mini-juego (no depende de eventos de red)
+  clearInterval(S.miniPlayIv);
+  S.miniPlayIv = setInterval(() => {
+    const mm = S.room?.mini_state;
+    if (!mm || mm.phase !== "play"){ clearInterval(S.miniPlayIv); return; }
+    updateMiniTimer(mm);
+  }, 250);
+}
+function updateMiniTimer(m){
+  if (m.kind === "flash"){
+    const left = Math.max(0, Math.ceil(((m.until||0)-Date.now())/1000));
+    const el = $("#flashTimer"); if (el) el.textContent = left;
+    if (left <= 0) flashOnTimeUp(m);
+  } else if (m.kind === "color"){
+    const left = Math.max(0, Math.ceil(((m.until||0)-Date.now())/1000));
+    const el = $("#colorTimer"); if (el) el.textContent = left;
+    if (left <= 0) colorOnTimeUp(m);
+  }
+}
+function showMiniResult(m){
+  // Reutiliza la pantalla de marcador para mostrar resultados del mini
+  const meta = MINI_META[m.kind];
+  const results = m.results || {};
+  const rows = S.players.map(p => ({ p, pts: results[p.id]||0 })).sort((a,b)=>b.pts-a.pts);
+  const list = $("#boardList"); list.innerHTML = "";
+  const title = $("#scr-board .scr-title"); if (title) title.textContent = `${meta.emoji} ${meta.title} — resultados`;
+  rows.forEach((r,i) => {
+    const d = document.createElement("div");
+    d.className = "brow" + (r.p.id === S.me?.id ? " me" : "");
+    d.innerHTML = `<span class="pos">${i===0?"🥇":i+1+"º"}</span><span class="em" style="background:${avatarColor(r.p.avatar)}">${r.p.avatar}</span>
+      <span class="nm">${esc(r.p.name)}</span><span class="pts">+${r.pts}</span>`;
+    list.appendChild(d);
+  });
+  show("board");
+  Sfx.board();
+}
+
+// ---------- NÚMEROFLASH ----------
+function flashStart(m){
+  const d = m.data;
+  S.flashNext = 0; // índice del próximo valor a tocar (en m.data.seq)
+  S.flashScore = 0;
+  S.flashDone = false;
+  const instr = {
+    "1-30":"Toca del 1 al 30 en orden","A-S":"Toca de la A a la S en orden",
+    "Z-J":"Toca de la Z a la J (al revés)","2en2":"De 2 en 2: 2, 4, 6…",
+    "5en5":"De 5 en 5: 5, 10, 15…","30-1":"Del 30 al 1 (al revés)"
+  }[d.variant] || "Toca en orden";
+  $("#flashInstr").textContent = instr;
+  $("#flashScore").textContent = "";
+  // Grilla cuadrada
+  const cols = Math.ceil(Math.sqrt(d.n));
+  const grid = $("#flashGrid");
+  grid.style.gridTemplateColumns = `repeat(${cols},1fr)`;
+  grid.innerHTML = "";
+  d.cells.forEach((val) => {
+    const b = document.createElement("button");
+    b.className = "flash-cell";
+    b.textContent = val;
+    b.dataset.val = val;
+    b.onclick = () => flashTap(b, val, m);
+    grid.appendChild(b);
+  });
+  updateFlashTarget(m);
+  show("mini-flash");
+}
+function updateFlashTarget(m){
+  const seq = m.data.seq;
+  const t = $("#flashTarget");
+  if (S.flashNext < seq.length) t.textContent = "Busca: " + seq[S.flashNext];
+  else t.textContent = "¡Completo! 🎉";
+}
+async function flashTap(btn, val, m){
+  if (S.flashDone) return;
+  const seq = m.data.seq;
+  const expected = seq[S.flashNext];
+  if (val === expected){
+    Sfx.pick();
+    btn.classList.add("done");
+    S.flashNext++;
+    S.flashScore += 6;
+    updateFlashTarget(m);
+    $("#flashScore").textContent = `Tu puntaje: ${S.flashScore}`;
+    if (S.flashNext >= seq.length){
+      // Completó la secuencia entera → +60 extra
+      S.flashScore += 60;
+      S.flashDone = true;
+      $("#flashScore").textContent = `¡Secuencia completa! ${S.flashScore} pts 🎉`;
+      Sfx.correct();
+      await flashSubmit(m);
+    }
+  } else {
+    Sfx.wrong();
+    btn.classList.add("wrong");
+    setTimeout(()=>btn.classList.remove("wrong"), 400);
+  }
+}
+let flashSubmitted = false;
+async function flashSubmit(m){
+  if (flashSubmitted) return; flashSubmitted = true;
+  try {
+    await sb.from("mini_scores").insert({
+      room_id:S.room.id, player_id:S.me.id, kind:"flash", round:0, score:S.flashScore
+    });
+  } catch(e){}
+}
+// Si se acaba el tiempo sin completar, enviar el puntaje parcial
+function flashOnTimeUp(m){
+  if (!S.flashDone && !flashSubmitted) flashSubmit(m);
+}
+
+// ---------- COLORÍN (Stroop) ----------
+const COLORS = [
+  { name:"ROJO",    hex:"#FF5E5B" },
+  { name:"AZUL",    hex:"#38B6FF" },
+  { name:"VERDE",   hex:"#3ECF6E" },
+  { name:"AMARILLO",hex:"#FFC145" },
+  { name:"MORADO",  hex:"#8C52FF" },
+  { name:"NARANJO", hex:"#FF8A3D" },
+];
+const pick = arr => arr[Math.floor(Math.random()*arr.length)];
+
+// Genera 12 rondas (sobran; se juega hasta que se acabe el tiempo). Mismas para todos.
+function buildColor(){
+  const rounds = [];
+  for (let r=0; r<12; r++){
+    // 4 variantes de reto:
+    // 0: "¿De qué COLOR está pintada la palabra?"  (ignora el texto)
+    // 1: "¿Qué PALABRA dice?"                       (ignora el color)
+    // 2: "Toca el color VERDE" con opciones de texto pintado (Stroop puro)
+    // 3: "¿Cuántas palabras hay del color X?" — variante de conteo simple
+    const type = pick([0,0,1,2,2,3]); // más peso al Stroop
+    const word = pick(COLORS);
+    let inkColor = pick(COLORS);
+    // que a veces coincidan y a veces no
+    if (Math.random() < 0.5) inkColor = pick(COLORS.filter(c=>c.name!==word.name));
+
+    let instr, stimText, stimColor, correct, options;
+    if (type === 0){ // color de la tinta
+      instr = "¿De qué COLOR está pintada la palabra?";
+      stimText = word.name; stimColor = inkColor.hex;
+      correct = inkColor.name;
+      options = optionSet(inkColor.name);
+    } else if (type === 1){ // qué dice
+      instr = "¿Qué PALABRA dice?";
+      stimText = word.name; stimColor = inkColor.hex;
+      correct = word.name;
+      options = optionSet(word.name);
+    } else if (type === 2){ // toca el color X (nombre) pero botones pintados distinto
+      const target = pick(COLORS);
+      instr = `Toca el botón que DICE "${target.name}"`;
+      stimText = "🎨"; stimColor = "#fff";
+      correct = target.name;
+      options = optionSet(target.name).map(name => ({ name, hex: pick(COLORS).hex }));
+      rounds.push({ type, instr, stimText, stimColor, correct, options, painted:true });
+      continue;
+    } else { // conteo: "¿cuántas veces aparece VERDE?" simplificado a color dominante
+      const target = pick(COLORS);
+      const count = 1 + Math.floor(Math.random()*4);
+      instr = `¿Cuántas veces aparece el color ${target.name} abajo?`;
+      const dots = [];
+      for (let i=0;i<count;i++) dots.push(target.hex);
+      const others = 5 - count;
+      for (let i=0;i<others;i++) dots.push(pick(COLORS.filter(c=>c.name!==target.name)).hex);
+      stimText = shuffle(dots).map(()=>"⬤").join(" ");
+      // guardamos los colores para pintar cada punto
+      rounds.push({ type, instr, dots: shuffle(dots), correct:String(count),
+        options:[String(count), String(Math.max(0,count-1)), String(count+1), String(count+2)].filter((v,i,a)=>a.indexOf(v)===i).slice(0,4) });
+      continue;
+    }
+    rounds.push({ type, instr, stimText, stimColor, correct, options });
+  }
+  return { rounds, n: rounds.length };
+}
+// 4 opciones de nombres de color incluyendo el correcto
+function optionSet(correctName){
+  const others = shuffle(COLORS.filter(c=>c.name!==correctName)).slice(0,3).map(c=>c.name);
+  return shuffle([correctName, ...others]);
+}
+
+function colorStart(m){
+  S.colorRound = 0;
+  S.colorScore = 0;
+  S.colorAnswered = false;
+  renderColorRound(m);
+  show("mini-color");
+}
+function renderColorRound(m){
+  const rounds = m.data.rounds;
+  if (S.colorRound >= rounds.length){ $("#colorInstr").textContent = "¡Muy bien! Espera…"; return; }
+  const r = rounds[S.colorRound];
+  S.colorAnswered = false;
+  $("#colorRound").textContent = `Ronda ${S.colorRound+1}`;
+  $("#colorInstr").textContent = r.instr;
+  $("#colorScore").textContent = S.colorScore ? `Puntaje: ${S.colorScore}` : "";
+  const stim = $("#colorStim");
+  if (r.type === 3){ // puntos de colores
+    stim.innerHTML = r.dots.map(h=>`<span style="color:${h}">⬤</span>`).join(" ");
+    stim.style.color = "";
+  } else {
+    stim.textContent = r.stimText;
+    stim.style.color = r.stimColor || "#fff";
+  }
+  const opts = $("#colorOpts"); opts.innerHTML = "";
+  r.options.forEach(opt => {
+    const isObj = typeof opt === "object";
+    const label = isObj ? opt.name : opt;
+    const b = document.createElement("button");
+    b.className = "color-opt";
+    b.textContent = label;
+    // color del botón: pintado (variante 2), color propio (variantes de color) o neutro
+    if (r.painted && isObj) b.style.background = opt.hex;
+    else if (r.type === 3) b.style.background = "var(--purple)";
+    else {
+      const cobj = COLORS.find(c=>c.name===label);
+      b.style.background = cobj ? cobj.hex : "var(--purple)";
+      if (label === "AMARILLO") b.style.color = "var(--ink)";
+    }
+    b.onclick = () => colorPick(b, label, r, m);
+    opts.appendChild(b);
+  });
+}
+async function colorPick(btn, label, r, m){
+  if (S.colorAnswered) return;
+  S.colorAnswered = true;
+  const ok = label === r.correct;
+  if (ok){ Sfx.pick(); btn.classList.add("good"); S.colorScore += 12; }
+  else { Sfx.wrong(); btn.classList.add("bad"); }
+  $$("#colorOpts .color-opt").forEach(b => { if (b!==btn) b.classList.add("dim"); });
+  $("#colorScore").textContent = `Puntaje: ${S.colorScore}`;
+  // Siguiente ronda tras un respiro
+  setTimeout(() => { S.colorRound++; renderColorRound(m); }, 650);
+}
+let colorSubmitted = false;
+async function colorSubmit(m){
+  if (colorSubmitted) return; colorSubmitted = true;
+  try {
+    await sb.from("mini_scores").insert({
+      room_id:S.room.id, player_id:S.me.id, kind:"color", round:0, score:S.colorScore
+    });
+  } catch(e){}
+}
+function colorOnTimeUp(m){ if (!colorSubmitted) colorSubmit(m); }
 
 // ---------- PWA ----------
 if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});
