@@ -76,6 +76,9 @@ const WINNER_SOUNDS = [
 // Colores para los 3 botones ganadores (se eligen 3 al azar cada ronda)
 const WINNER_COLORS = ["#E74C3C","#2ECC71","#3498DB","#9B59B6","#F1C40F","#1ABC9C","#E67E22","#EC407A","#5C6BC0"];
 
+// Sonido que da la bienvenida cada vez que alguien entra a una sala (al crearla o unirse)
+const GAME_START_SOUND = "audio/inicio/Inicio_Juego.mp3";
+
 // Sonidos de acierto/error: al revelar la respuesta, se elige uno al azar
 // de la lista correspondiente y suena en el celular de cada jugador según
 // si ÉL acertó o falló (una vez por pregunta).

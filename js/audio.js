@@ -72,6 +72,12 @@ const Music = (() => {
   let inGame = false;                          // true = baja a 10% (concentración)
   let syncState = null;                        // último { on, trackId, startedAt } de la sala
   let onUpdateUI = () => {};
+  let hasError = false;
+
+  // Si el archivo no carga (nombre mal escrito, no se subió, etc.), se
+  // muestra un aviso claro en el panel en vez de fallar en silencio.
+  el.addEventListener("error", () => { hasError = true; onUpdateUI(); });
+  el.addEventListener("canplay", () => { hasError = false; onUpdateUI(); });
 
   const savedTrack = localStorage.getItem(LS_TRACK);
   if (savedTrack){
@@ -180,7 +186,8 @@ const Music = (() => {
 
   function bindUI(cb){ onUpdateUI = cb; cb(); }
   function state(){
-    return { track: currentTrack(), playing: !el.paused, volume: userVol, muted, synced: !!(syncState && syncState.on) };
+    return { track: currentTrack(), playing: !el.paused, volume: userVol, muted, synced: !!(syncState && syncState.on),
+      hasError, currentTime: el.currentTime||0, duration: el.duration||0 };
   }
 
   return { enterGame, play, pause, togglePlay, next, prev, setVolume, toggleMute,
@@ -244,6 +251,24 @@ const OutcomeFx = (() => {
     const file = pool[Math.floor(Math.random()*pool.length)];
     try {
       const a = get(file);
+      a.currentTime = 0;
+      a.volume = 1;
+      a.play().catch(()=>{});
+    } catch(e){}
+  }
+  return { play };
+})();
+
+// ============================================================
+// Sonido de bienvenida: suena una vez cada vez que alguien entra a una
+// sala (al crearla o al unirse), como el "¡Inicio de partida!" de un show.
+// ============================================================
+const StartFx = (() => {
+  let a = null;
+  function play(){
+    if (typeof GAME_START_SOUND === "undefined" || !GAME_START_SOUND) return;
+    try {
+      if (!a){ a = new Audio(GAME_START_SOUND); a.preload = "auto"; }
       a.currentTime = 0;
       a.volume = 1;
       a.play().catch(()=>{});

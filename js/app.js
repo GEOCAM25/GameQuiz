@@ -217,6 +217,7 @@ async function enterRoom(room, me){
   renderLobby();
   show("lobby");
   Sfx.join();
+  StartFx.play();
   Music.onRoomUpdate(S.room);
   Music.enterGame();
 }
@@ -989,7 +990,24 @@ Music.bindUI(() => {
   $("#musicPrev").disabled = s.synced; $("#musicNext").disabled = s.synced;
   $("#musicSyncNote").classList.toggle("hidden", !s.synced);
   $("#musicDisc")?.classList.toggle("spin", s.playing && !s.muted);
+  $("#musicError")?.classList.toggle("hidden", !s.hasError);
 });
+
+// Barra de progreso: se actualiza sola cada segundo mientras el panel de
+// música esté abierto (no vale la pena gastar ciclos si está cerrado).
+function fmtTime(sec){
+  if (!isFinite(sec) || sec < 0) sec = 0;
+  const m = Math.floor(sec/60), s = Math.floor(sec%60);
+  return `${m}:${String(s).padStart(2,"0")}`;
+}
+setInterval(() => {
+  if ($("#musicPanel").classList.contains("hidden")) return;
+  const s = Music.state();
+  const pct = s.duration ? Math.min(100, (s.currentTime/s.duration)*100) : 0;
+  $("#musicProgressFill").style.width = pct + "%";
+  $("#musicTimeCur").textContent = fmtTime(s.currentTime);
+  $("#musicTimeDur").textContent = fmtTime(s.duration || (s.track?.duration||0));
+}, 1000);
 
 // ---------- CHAT ----------
 $("#chatFab").onclick = () => { $("#chatPanel").classList.remove("hidden"); S.unread = 0; badge(); };
@@ -1089,6 +1107,17 @@ async function startSolo(name, ava){
         runCountdown();
         setTimeout(() => soloQuestion(0), 3800);
     }},
+    { t:"🎮 Solo el mini-juego (sin preguntas)", cls:"btn-yellow", fn: async () => {
+        let miniKind = $("#soloMini").value;
+        const SOLO_MINIS = ["flash","color","memoria","punteria","reaccion","ritmo","preg"];
+        if (miniKind === "random") miniKind = SOLO_MINIS[Math.floor(Math.random()*SOLO_MINIS.length)];
+        if (!miniKind || miniKind === "none"){ toast("🎁 Elige primero qué mini-juego probar"); return; }
+        S.room = { status:"mini", settings:{ qids:[0] }, current_q:0, mini_state:null };
+        soloRunMiniGame(miniKind, () => {
+          toast("✅ Prueba terminada — puedes elegir otro mini-juego");
+          startSolo(name, ava);
+        });
+    }},
     { t:"Volver", fn: () => { S.solo = false; show("home"); } },
   ]);
 }
@@ -1149,39 +1178,54 @@ function endSoloToHome(){ S.solo = false; S.room = null; S.soloState = null; sho
 // Delator no se ofrece aquí porque necesita votar a otros jugadores reales.
 // ============================================================
 async function soloRunMiniGame(kind, onDone){
-  S.soloMiniResult = null;
-  let data;
-  if (kind === "flash") data = buildFlash();
-  else if (kind === "color") data = buildColor();
-  else if (kind === "memoria") data = buildMemoria();
-  else if (kind === "punteria") data = buildPunteria();
-  else if (kind === "reaccion") data = buildReaccion();
-  else if (kind === "ritmo") data = buildRitmo();
-  else if (kind === "preg") data = await buildPreg();
-  else { onDone(); return; }
+  let finished = false;
+  const finish = () => { if (finished) return; finished = true; try { onDone(); } catch(e){ console.error("onDone falló:", e); } };
 
-  const introMs = 5000;
-  S.room.status = "mini";
-  S.room.mini_state = { kind, phase:"intro", round:0, data, until: Date.now()+introMs };
-  handleMiniState();
+  try {
+    S.soloMiniResult = null;
+    let data;
+    if (kind === "flash") data = buildFlash();
+    else if (kind === "color") data = buildColor();
+    else if (kind === "memoria") data = buildMemoria();
+    else if (kind === "punteria") data = buildPunteria();
+    else if (kind === "reaccion") data = buildReaccion();
+    else if (kind === "ritmo") data = buildRitmo();
+    else if (kind === "preg") data = await buildPreg();
+    if (!data){ finish(); return; }
 
-  setTimeout(() => {
-    const playMs = miniPlayMs(kind);
-    S.room.mini_state = { ...S.room.mini_state, phase:"play", until: Date.now()+playMs };
+    const introMs = 5000;
+    S.room.status = "mini";
+    S.room.mini_state = { kind, phase:"intro", round:0, data, until: Date.now()+introMs };
     handleMiniState();
 
     setTimeout(() => {
-      const table = RANK_MINIS[kind];
-      const r = S.soloMiniResult || {};
-      let pts = 0;
-      if (table) pts = r.ok ? table[0] : (("ok" in r) ? 10 : 0);
-      else pts = r.score || 0;
-      S.me.score += pts;
-      S.room.mini_state = { ...S.room.mini_state, phase:"result", until: Date.now()+6000, results:{ [S.me.id]: pts } };
-      handleMiniState();
-      setTimeout(onDone, 6000);
-    }, playMs + 400); // margen para que el reloj interno de cada mini alcance a registrar el resultado
-  }, introMs);
+      try {
+        const playMs = miniPlayMs(kind);
+        S.room.mini_state = { ...S.room.mini_state, phase:"play", until: Date.now()+playMs };
+        handleMiniState();
+
+        setTimeout(() => {
+          try {
+            const table = RANK_MINIS[kind];
+            const r = S.soloMiniResult || {};
+            let pts = 0;
+            if (table) pts = r.ok ? table[0] : (("ok" in r) ? 10 : 0);
+            else pts = r.score || 0;
+            S.me.score += pts;
+            S.room.mini_state = { ...S.room.mini_state, phase:"result", until: Date.now()+6000, results:{ [S.me.id]: pts } };
+            handleMiniState();
+            setTimeout(finish, 6000);
+          } catch(e){ console.error("Mini-juego solo (resultado) falló:", kind, e); finish(); }
+        }, playMs + 400); // margen para que el reloj interno de cada mini alcance a registrar el resultado
+      } catch(e){ console.error("Mini-juego solo (jugar) falló:", kind, e); finish(); }
+    }, introMs);
+  } catch(e){
+    // Red de seguridad: si CUALQUIER cosa falla al armar el mini-juego
+    // (ej. no cargó el banco de Preguntón), jamás nos quedamos pegados
+    // esperando para siempre — se salta y sigue el quiz.
+    console.error("Mini-juego solo falló al armarse:", kind, e);
+    finish();
+  }
 }
 
 // ============================================================
