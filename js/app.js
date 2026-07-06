@@ -1091,7 +1091,7 @@ async function startSolo(name, ava){
   <label class="lbl">Preguntas</label><select id="soloN" class="inp"><option>10</option><option>20</option><option>30</option></select>
   <label class="lbl">Probar un mini-juego 🎁</label>
   <select id="soloMini" class="inp">${miniOpts.map(([v,l])=>`<option value="${v}">${l}</option>`).join("")}</select>
-  <p class="hint">🕵️ Delator no está aquí porque necesita votar a OTROS jugadores reales — pruébalo en una sala con amigos.</p>`, [
+  <p class="hint-modal">🕵️ Delator no está aquí porque necesita votar a OTROS jugadores reales — pruébalo en una sala con amigos.</p>`, [
     { t:"¡Jugar! 🚀", cls:"btn-green", fn: async () => {
         const cat = $("#soloCat").value, n = +$("#soloN").value;
         const bank = await loadBank(cat);
@@ -1633,7 +1633,7 @@ async function finishDelator(m){
   await sb.from("rooms").update({ mini_state:nm, phase_until: Date.now()+7000 }).eq("id", S.room.id);
 }
 
-let miniLastRound = -1;
+let miniLastPhase = null, miniLastKind = null, miniLastRound = -1;
 function handleMiniState(){
   const m = S.room.mini_state; if (!m) return;
   const changed = (m.phase !== miniLastPhase) || (m.kind !== miniLastKind) || ((m.dround??-1) !== miniLastRound);
