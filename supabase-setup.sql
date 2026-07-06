@@ -84,6 +84,7 @@ create table if not exists public.mini_scores (
 -- ---------- Columnas agregadas por las migraciones (por si la tabla ya existía) ----------
 alter table public.rooms   add column if not exists phase_until bigint;
 alter table public.rooms   add column if not exists mini_state jsonb;
+alter table public.rooms   add column if not exists round_winner jsonb;
 alter table public.players add column if not exists total_score int not null default 0;
 alter table public.players add column if not exists real_name text;
 

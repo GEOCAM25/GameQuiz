@@ -40,7 +40,7 @@ Entra a la sala secreta **ZZZX** (modo solitario). Sirve para probar el juego so
 - Mínimo **2 jugadores** para iniciar (máx 15)
 - El anfitrión elige: cantidad de preguntas (10/20/30), quién elige categoría (solo él o votación 🗳️) y si el chat filtra groserías
 - 40 segundos por pregunta, 4 alternativas estilo Kahoot
-- **Puntos**: 1° en responder +120, 2° +115, 3° +110, 4° en adelante +100. Además se suman los segundos que sobraron
+- **Puntos**: 1° en responder +60, 2° +50, 3° +42, 4° en adelante +35 (más la mitad de los segundos que sobraron). Responder mal también da +15 de participación, para que los puntajes no queden tan separados
 - Podio final con 🥇🥈🥉 y fuegos artificiales
 
 ## ✨ Funciones incluidas

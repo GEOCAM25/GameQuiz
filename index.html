@@ -266,6 +266,10 @@
   <section id="scr-board" class="screen">
     <h2 class="scr-title">Marcador 🏁</h2>
     <div id="boardList" class="board-list"></div>
+    <div id="winnerButtons" class="winner-panel hidden">
+      <p class="winner-caption" id="winnerCaption"></p>
+      <div class="winner-row" id="winnerBtnsRow"></div>
+    </div>
   </section>
 
   <!-- ============ PODIO ============ -->
@@ -279,9 +283,10 @@
     </div>
     <div id="podiumRest" class="board-list"></div>
     <button class="btn big btn-green hidden" id="btnPlayAgain">🔄 Jugar otra ronda</button>
+    <p class="hint hidden" id="podiumWaitHint">🕹️ El anfitrión puede elegir jugar otra ronda en esta misma sala…</p>
     <button class="btn big btn-yellow" id="btnShareResult">📤 Compartir mi resultado</button>
     <button class="btn small btn-blue" id="btnHistory">📊 Ver historial de la sala</button>
-    <button class="btn big btn-blue" id="btnAgain">Volver al inicio 🏠</button>
+    <button class="btn big btn-blue" id="btnAgain">Salir de la sala 🚪</button>
   </section>
 
 </main>
@@ -292,17 +297,24 @@
 <!-- ============ MÚSICA DE FONDO ============ -->
 <button id="musicFab" class="hidden">🎵</button>
 <div id="musicPanel" class="hidden">
-  <div class="chat-head"><p>Música de fondo 🎵</p><button id="musicClose">✕</button></div>
+  <div class="music-head">
+    <div class="music-disc" id="musicDisc">🎵</div>
+    <p>Música de fondo</p>
+    <button id="musicClose">✕</button>
+  </div>
   <div class="music-body">
-    <div class="music-track-row">
-      <button id="musicPrev">⏮</button>
+    <div class="music-track-card">
       <div id="musicTrackName">—</div>
-      <button id="musicNext">⏭</button>
+      <p class="music-track-sub">Sube o baja el volumen a tu gusto 🎚️</p>
     </div>
-    <p class="hint hidden" id="musicSyncNote">🔗 El anfitrión sincronizó esta canción para todos</p>
-    <button class="btn small btn-blue" id="musicPlayPause">⏸ Pausar</button>
+    <p class="music-sync-note hidden" id="musicSyncNote">🔗 El anfitrión sincronizó esta canción para todos</p>
+    <div class="music-transport">
+      <button id="musicPrev" class="music-round">⏮</button>
+      <button id="musicPlayPause" class="music-play">⏸</button>
+      <button id="musicNext" class="music-round">⏭</button>
+    </div>
     <div class="music-vol-row">
-      <button id="musicMute">🔊</button>
+      <button id="musicMute" class="music-round small">🔊</button>
       <input id="musicVol" type="range" min="0" max="100" value="25">
     </div>
   </div>
