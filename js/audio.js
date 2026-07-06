@@ -74,6 +74,27 @@ const Music = (() => {
   let onUpdateUI = () => {};
   let hasError = false;
 
+  // ---- "Ducking": cuando suena un efecto (correcto/incorrecto/ganador/
+  // inicio), la música NO se pausa, solo baja de volumen un rato — como el
+  // aviso de Google Maps sobre la música, pero sin dejarla inaudible: baja
+  // solo hasta un 35% de lo que sonaba, no la silencia casi entera.
+  const DUCK_FACTOR = 0.35;
+  let duckCount = 0;         // puede haber varios efectos sonando casi juntos
+  let rampFrame = null;
+
+  function rampVolumeTo(target, ms){
+    if (rampFrame) cancelAnimationFrame(rampFrame);
+    const start = el.volume, t0 = performance.now();
+    if (ms <= 0){ el.volume = target; onUpdateUI(); return; }
+    const step = (now) => {
+      const p = Math.min(1, (now - t0) / ms);
+      el.volume = start + (target - start) * p;
+      if (p < 1) rampFrame = requestAnimationFrame(step);
+      else { rampFrame = null; onUpdateUI(); }
+    };
+    rampFrame = requestAnimationFrame(step);
+  }
+
   // Si el archivo no carga (nombre mal escrito, no se subió, etc.), se
   // muestra un aviso claro en el panel en vez de fallar en silencio.
   el.addEventListener("error", () => { hasError = true; onUpdateUI(); });
@@ -86,8 +107,20 @@ const Music = (() => {
   }
 
   function effectiveVolume(){ return muted ? 0 : (inGame ? 0.10 : userVol); }
-  function applyVolume(){ el.volume = effectiveVolume(); onUpdateUI(); }
+  function targetVolume(){ const v = effectiveVolume(); return duckCount > 0 ? v * DUCK_FACTOR : v; }
+  function applyVolume(){ el.volume = targetVolume(); onUpdateUI(); }
   function currentTrack(){ return MUSIC_TRACKS[trackIdx]; }
+
+  // Baja la música mientras suena un efecto (correcto/incorrecto/ganador/
+  // inicio) y la sube de nuevo sola cuando termina. No la pausa nunca.
+  function duck(){
+    duckCount++;
+    if (duckCount === 1) rampVolumeTo(targetVolume(), 90);   // baja rápido
+  }
+  function unduck(){
+    duckCount = Math.max(0, duckCount - 1);
+    if (duckCount === 0) rampVolumeTo(targetVolume(), 380);  // sube suave
+  }
 
   function loadTrack(idx, playFrom){
     trackIdx = ((idx % MUSIC_TRACKS.length) + MUSIC_TRACKS.length) % MUSIC_TRACKS.length;
@@ -118,10 +151,27 @@ const Music = (() => {
   function play(){ if (!started) return enterGame(); el.play().catch(()=>{}); onUpdateUI(); }
   function pause(){ el.pause(); onUpdateUI(); }
   function togglePlay(){ el.paused ? play() : pause(); }
+  // Elige un índice al azar DISTINTO al actual (si hay más de 1 canción).
+  function randomIdx(){
+    if (MUSIC_TRACKS.length <= 1) return trackIdx;
+    let i;
+    do { i = Math.floor(Math.random() * MUSIC_TRACKS.length); } while (i === trackIdx);
+    return i;
+  }
+  // ⏮/⏭ ahora son aleatorios (antes iban en orden fijo, que era el problema).
   // Cambiar de canción manualmente solo tiene sentido en modo individual;
-  // si el anfitrión sincronizó, el celular sigue lo que él eligió.
-  function next(){ if (syncState && syncState.on) return; loadTrack(trackIdx + 1); }
-  function prev(){ if (syncState && syncState.on) return; loadTrack(trackIdx - 1); }
+  // si el anfitrión sincronizó, el celular normal sigue lo que él eligió
+  // (el anfitrión sí puede saltar de canción estando sincronizado: ver
+  // hostChangeTrack más abajo, que además avisa a todos los conectados).
+  function next(){ if (syncState && syncState.on) return; loadTrack(randomIdx()); }
+  function prev(){ if (syncState && syncState.on) return; loadTrack(randomIdx()); }
+
+  // Adelantar/retroceder DENTRO de la canción actual (arrastrando la barra).
+  function seekTo(seconds){
+    const dur = el.duration && isFinite(el.duration) ? el.duration : (currentTrack()?.duration || 0);
+    try { el.currentTime = Math.max(0, Math.min(seconds, dur || seconds)); } catch(e){}
+    onUpdateUI();
+  }
 
   function setVolume(v){ userVol = Math.max(0, Math.min(1, v)); localStorage.setItem(LS_VOL, String(userVol)); if (muted && userVol>0){ muted=false; localStorage.setItem(LS_MUTED,"0"); } applyVolume(); }
   function toggleMute(){ muted = !muted; localStorage.setItem(LS_MUTED, muted ? "1":"0"); applyVolume(); if(!muted) el.play().catch(()=>{}); }
@@ -184,15 +234,49 @@ const Music = (() => {
     await sbClient.from("rooms").update({ settings }).eq("id", room.id);
   }
 
-  function bindUI(cb){ onUpdateUI = cb; cb(); }
-  function state(){
-    return { track: currentTrack(), playing: !el.paused, volume: userVol, muted, synced: !!(syncState && syncState.on),
-      hasError, currentTime: el.currentTime||0, duration: el.duration||0 };
+  // El anfitrión adelanta/retrocede la canción ESTANDO sincronizado: recalcula
+  // el "startedAt" para que la posición nueva quede igual en todos los
+  // celulares conectados (mismo truco que ya usa la sincronía normal).
+  async function hostSeek(seconds, room, sbClient){
+    if (!(syncState && syncState.on)) { seekTo(seconds); return; }
+    const settings = { ...room.settings };
+    settings.musicSync = { on:true, trackId: currentTrack().id, startedAt: Date.now() - seconds*1000 };
+    await sbClient.from("rooms").update({ settings }).eq("id", room.id);
   }
 
-  return { enterGame, play, pause, togglePlay, next, prev, setVolume, toggleMute,
-           setGamePhase, onRoomUpdate, hostSetSync, bindUI, state };
+  // El anfitrión salta a otra canción (al azar) ESTANDO sincronizado, y se
+  // avisa a todos los conectados al toque (vía Realtime, igual que hostSetSync).
+  async function hostChangeTrack(room, sbClient){
+    if (!(syncState && syncState.on)) { loadTrack(randomIdx()); return; }
+    const idx = randomIdx();
+    const t = MUSIC_TRACKS[idx];
+    const settings = { ...room.settings };
+    settings.musicSync = { on:true, trackId: t.id, startedAt: Date.now() };
+    await sbClient.from("rooms").update({ settings }).eq("id", room.id);
+  }
+
+  function bindUI(cb){ onUpdateUI = cb; cb(); }
+  function state(){
+    const t = currentTrack();
+    return { track: t, image: t?.image || null, playing: !el.paused, volume: userVol, muted,
+      synced: !!(syncState && syncState.on), hasError, currentTime: el.currentTime||0, duration: el.duration||0 };
+  }
+
+  return { enterGame, play, pause, togglePlay, next, prev, setVolume, toggleMute, seekTo,
+           setGamePhase, onRoomUpdate, hostSetSync, hostSeek, hostChangeTrack, duck, unduck, bindUI, state };
 })();
+
+// Baja la música mientras suena "a" (un efecto corto) y la vuelve a subir
+// sola al terminar. Nunca la pausa. Con seguro por si el navegador no
+// dispara "ended" (o el archivo falla): la sube igual a los pocos segundos.
+function duckWhilePlaying(a){
+  Music.duck();
+  let done = false;
+  const finish = () => { if (done) return; done = true; Music.unduck(); };
+  a.addEventListener("ended", finish, { once:true });
+  a.addEventListener("error", finish, { once:true });
+  setTimeout(finish, 8000);
+}
 
 // ============================================================
 // Sonidos "botón ganador": clips cortos (mp3) que solo el ganador de la
@@ -223,6 +307,7 @@ const WinnerFx = (() => {
       const a = get(s.file);
       a.currentTime = 0;
       a.volume = 1;
+      duckWhilePlaying(a);
       a.play().catch(()=>{});
     } catch(e){}
   }
@@ -253,6 +338,7 @@ const OutcomeFx = (() => {
       const a = get(file);
       a.currentTime = 0;
       a.volume = 1;
+      duckWhilePlaying(a);
       a.play().catch(()=>{});
     } catch(e){}
   }
@@ -271,6 +357,7 @@ const StartFx = (() => {
       if (!a){ a = new Audio(GAME_START_SOUND); a.preload = "auto"; }
       a.currentTime = 0;
       a.volume = 1;
+      duckWhilePlaying(a);
       a.play().catch(()=>{});
     } catch(e){}
   }

@@ -42,12 +42,18 @@ const BAD_WORDS = ["ctm","csm","weon","weón","hueon","hueón","aweonao","conche
 "cabron","cabrón","verga","joder","coño","gilipollas","fuck","shit","bitch","asshole"];
 
 // Playlist de música de fondo. Para agregar una canción nueva:
-// 1) Sube el mp3 a la carpeta "music/" del repo
-// 2) Agrega una línea aquí abajo con un id único, el nombre y el nombre del archivo
+// 1) Sube el mp3 a la carpeta "music/" del repo (nombre SIN espacios, SIN
+//    tildes y SIN "_" — usa guiones "-", igual que los que ya están abajo.
+//    Los "_" y las tildes son justo lo que rompía la carga antes).
+// 2) Si tiene portada, sube la imagen a "music/covers/" y agrégala como "image"
+// 3) Agrega una línea aquí abajo con un id único, el nombre, el archivo y (opcional) la imagen
 const MUSIC_TRACKS = [
-  { id:"gentio", name:"¡Que se arme el gentío!", file:"music/que-se-arme-el-gentio.mp3", duration:174 },
-  { id:"podio",  name:"El podio es mío",         file:"music/el-podio-es-mio.mp3",       duration:172 },
-  { id:"verdad", name:"La hora de la verdad",    file:"music/la-hora-de-la-verdad.mp3",  duration:177 },
+  { id:"gentio",     name:"¡Que se arme el gentío!", file:"music/que-se-arme-el-gentio.mp3",  duration:174 },
+  { id:"verdad",     name:"La hora de la verdad",    file:"music/la-hora-de-la-verdad.mp3",   duration:177 },
+  { id:"mentaledge", name:"The Mental Edge",         file:"music/the-mental-edge.mp3",        duration:149, image:"music/covers/the-mental-edge.jpg" },
+  { id:"mesa",       name:"La mesa está puesta",     file:"music/la-mesa-esta-puesta.mp3",    duration:152, image:"music/covers/the-mental-edge.jpg" },
+  { id:"podiobeso",  name:"Podio y beso",            file:"music/podio-y-beso.mp3",           duration:166, image:"music/covers/the-mental-edge.jpg" },
+  { id:"hierro",     name:"Mente de hierro",         file:"music/mente-de-hierro.mp3",        duration:148, image:"music/covers/the-mental-edge.jpg" },
 ];
 
 // Sonidos "botón ganador": cada vez que se muestra el marcador, aparecen 3 al azar
@@ -108,3 +114,10 @@ const REVEAL_TIME = 4;         // segundos mostrando la respuesta
 const BOARD_TIME = 6;          // segundos mostrando el marcador
 const MAX_PLAYERS = 15;
 const TEST_ROOM = "ZZZX";      // sala secreta de prueba (modo solo)
+
+// ---------- GIFs en el chat (GIPHY) ----------
+// Esta es la llave PÚBLICA de prueba de GIPHY. Funciona, pero tiene límite
+// compartido y GIPHY puede desactivarla cuando quiera. Si los GIFs dejan de
+// cargar, saca tu propia llave GRATIS en https://developers.giphy.com
+// (crear cuenta → Create an App → API) y pégala aquí.
+const GIPHY_KEY = "dc6zaTOxFJmzC";
