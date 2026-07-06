@@ -278,6 +278,11 @@ body[class*="theme-"] #sky .toy{opacity:.5}
   width:52px;height:52px;border-radius:50%;border:none;background:linear-gradient(135deg,#FFD166,#F0A500);
   font-size:24px;box-shadow:var(--shadow);cursor:pointer;transition:transform .1s}
 #tipFab:active{transform:translateY(3px)}
+/* Botón de salir durante la partida activa */
+#leaveFab{position:fixed;left:16px;bottom:calc(86px + env(safe-area-inset-bottom));z-index:8;
+  width:48px;height:48px;border-radius:50%;border:none;background:rgba(0,0,0,.35);color:#fff;
+  font-size:20px;box-shadow:var(--shadow);cursor:pointer;transition:transform .1s;backdrop-filter:blur(3px)}
+#leaveFab:active{transform:translateY(3px)}
 /* Modal grande scrolleable para propina e historial */
 .modal-lg #modalBox,#modalBox.lg{max-width:420px;max-height:82dvh;overflow-y:auto;text-align:left}
 .tip-msg{font-weight:700;line-height:1.5;color:var(--ink2);font-size:14px}
