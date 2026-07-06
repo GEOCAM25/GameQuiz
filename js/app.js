@@ -64,6 +64,11 @@ function show(id){
   const musicOk = (S.room || S.solo) && id !== "home" && id !== "profile";
   $("#musicFab").classList.toggle("hidden", !musicOk);
   closeMusicPanel();
+  // Salir: visible durante el juego activo (pregunta, revelación, marcador,
+  // mini-juegos, cuenta regresiva). El lobby y el podio ya tienen su propio botón.
+  const leaveOk = !!S.room && !["home","profile","lobby","podium"].includes(id);
+  const leaveBtn = $("#leaveFab");
+  if (leaveBtn) leaveBtn.classList.toggle("hidden", !leaveOk);
   if (id === "home" || id === "profile" || id === "lobby") clearCategoryTheme();
 }
 function toast(t){
@@ -387,6 +392,13 @@ $("#btnLeave").onclick = () => {
     { t:"Quedarme", cls:"btn-green" },
   ]);
 };
+$("#leaveFab").onclick = () => {
+  Sfx.click();
+  modal("<h3>🚪 ¿Salir de la partida?</h3><p>Podrás volver a entrar, pero perderás los puntos de las preguntas que te pierdas.</p>", [
+    { t:"Sí, salir", cls:"btn-red", fn: leaveGame },
+    { t:"Quedarme", cls:"btn-green" },
+  ]);
+};
 async function leaveGame(){
   if (S.solo){ endSoloToHome(); return; }
   // Si yo era el anfitrión, traspaso el mando a otro jugador conectado (bug 7)
@@ -492,7 +504,16 @@ async function computeRoundWinner(){
 }
 async function goToBoard(){
   const round_winner = await computeRoundWinner();
-  await sb.from("rooms").update({ status:"board", phase_until: Date.now()+BOARD_TIME*1000, round_winner }).eq("id", S.room.id);
+  try {
+    await sb.from("rooms").update({ status:"board", phase_until: Date.now()+BOARD_TIME*1000, round_winner })
+      .eq("id", S.room.id).throwOnError();
+  } catch(e){
+    // Si falla (ej. falta la columna round_winner porque no se corrió el SQL
+    // más nuevo), reintenta SIN ese campo para que el juego jamás quede
+    // pegado esperando una actualización que nunca llega.
+    console.error("goToBoard falló con round_winner, reintentando sin él:", e);
+    await sb.from("rooms").update({ status:"board", phase_until: Date.now()+BOARD_TIME*1000 }).eq("id", S.room.id);
+  }
 }
 
 // Arranca el watchdog del anfitrión (idempotente: nunca duplica)
@@ -503,31 +524,47 @@ function startHostLoop(){
 function stopHostLoop(){ clearInterval(S.hostLoop); S.hostLoop = null; }
 
 let hostBusy = false;
+let stuckSig = "", stuckCount = 0;
 async function hostTick(){
   if (!amHost() || hostBusy || !S.room) return;
   const st = S.room.status;
   if (!["question","reveal","board","mini"].includes(st)) return;
 
-  // ¿Todos los conectados ya respondieron? → avanzar YA (bug 5)
-  if (st === "question"){
-    const aliveIds = S.players.filter(p => p.connected).map(p => p.id);
-    if (aliveIds.length > 0){
-      const { data: ans } = await sb.from("answers").select("player_id")
-        .eq("room_id", S.room.id).eq("q_index", S.room.current_q);
-      const answered = new Set((ans||[]).map(a => a.player_id));
-      const allDone = aliveIds.every(id => answered.has(id));
-      if (allDone){ hostBusy = true; try { await finishQuestion(S.room.current_q); } finally { hostBusy = false; } return; }
+  try {
+    // ¿Todos los conectados ya respondieron? → avanzar YA (bug 5)
+    if (st === "question"){
+      const aliveIds = S.players.filter(p => p.connected).map(p => p.id);
+      if (aliveIds.length > 0){
+        const { data: ans } = await sb.from("answers").select("player_id")
+          .eq("room_id", S.room.id).eq("q_index", S.room.current_q);
+        const answered = new Set((ans||[]).map(a => a.player_id));
+        const allDone = aliveIds.every(id => answered.has(id));
+        if (allDone){ hostBusy = true; try { await finishQuestion(S.room.current_q); } finally { hostBusy = false; } return; }
+      }
     }
-  }
 
-  // ¿Venció el tiempo de la fase? → avanzar
-  const until = S.room.phase_until || 0;
-  if (Date.now() >= until){
-    hostBusy = true;
-    try {
-      if (st === "question") await finishQuestion(S.room.current_q);
-      else if (st === "reveal") await goToBoard();
-      else if (st === "board"){
+    // ¿Venció el tiempo de la fase? → avanzar
+    const until = S.room.phase_until || 0;
+    if (Date.now() >= until){
+      // Disyuntor de seguridad: si llevamos varios segundos intentando pasar
+      // esta MISMA fase sin éxito (algo falló silenciosamente), se fuerza un
+      // avance de emergencia en vez de quedar pegado para siempre.
+      const sig = `${st}:${S.room.current_q}:${until}`;
+      stuckCount = (sig === stuckSig) ? stuckCount + 1 : 0;
+      stuckSig = sig;
+      if (stuckCount >= 8){
+        console.error("Watchdog: fase pegada, forzando avance de emergencia:", sig);
+        stuckCount = 0;
+        hostBusy = true;
+        try { await forceAdvance(st); } finally { hostBusy = false; }
+        return;
+      }
+
+      hostBusy = true;
+      try {
+        if (st === "question") await finishQuestion(S.room.current_q);
+        else if (st === "reveal") await goToBoard();
+        else if (st === "board"){
         const s = S.room.settings;
         const last = S.room.current_q >= s.qids.length - 1;
         // ¿Toca alguno de los mini-juegos programados tras esta pregunta?
@@ -542,6 +579,29 @@ async function hostTick(){
       }
     } finally { hostBusy = false; }
   }
+  } catch(e){
+    // Red de seguridad final: cualquier error no previsto se registra en
+    // consola pero NUNCA deja la partida pegada en silencio.
+    console.error("hostTick: error inesperado", e);
+  }
+}
+
+// Último recurso del disyuntor: si una fase lleva ~8s sin poder avanzar
+// (algo falló en silencio), se fuerza el siguiente paso más razonable,
+// aunque eso signifique saltarse un mini-juego o una pregunta puntual.
+async function forceAdvance(st){
+  try {
+    const s = S.room.settings || {};
+    const last = S.room.current_q >= (s.qids?.length || 1) - 1;
+    if (st === "question"){
+      await sb.from("rooms").update({ status:"reveal", phase_until: Date.now()+REVEAL_TIME*1000 }).eq("id", S.room.id);
+    } else if (st === "reveal"){
+      await sb.from("rooms").update({ status:"board", phase_until: Date.now()+BOARD_TIME*1000 }).eq("id", S.room.id);
+    } else if (st === "board" || st === "mini"){
+      if (last){ await saveGameHistory().catch(()=>{}); await sb.from("rooms").update({ status:"podium" }).eq("id", S.room.id); }
+      else await nextQuestion(S.room.current_q + 1);
+    }
+  } catch(e){ console.error("forceAdvance también falló:", e); }
 }
 
 let finishing = false;
@@ -1272,23 +1332,35 @@ async function startMiniGame(entry){
   const settings = { ...S.room.settings, miniSchedule };
   let mini = { kind, phase:"intro", round:0 };
 
-  if (kind === "flash") mini.data = buildFlash();
-  if (kind === "color") mini.data = buildColor();
-  if (kind === "memoria") mini.data = buildMemoria();
-  if (kind === "punteria") mini.data = buildPunteria();
-  if (kind === "reaccion") mini.data = buildReaccion();
-  if (kind === "ritmo") mini.data = buildRitmo();
-  if (kind === "preg") mini.data = await buildPreg();
-  if (kind === "delator"){
-    mini.data = buildDelator();
-    mini.phase = "names";        // fase extra: pedir nombre real
-    mini.dround = 0;             // ronda de delator actual
-  }
+  try {
+    if (kind === "flash") mini.data = buildFlash();
+    if (kind === "color") mini.data = buildColor();
+    if (kind === "memoria") mini.data = buildMemoria();
+    if (kind === "punteria") mini.data = buildPunteria();
+    if (kind === "reaccion") mini.data = buildReaccion();
+    if (kind === "ritmo") mini.data = buildRitmo();
+    if (kind === "preg") mini.data = await buildPreg();
+    if (kind === "delator"){
+      mini.data = buildDelator();
+      mini.phase = "names";        // fase extra: pedir nombre real
+      mini.dround = 0;             // ronda de delator actual
+    }
+    if (!mini.data) throw new Error("mini sin datos");
 
-  const introMs = (kind === "delator") ? 20000 : 5000; // delator: 20s para escribir nombre real
-  mini.until = Date.now() + introMs;
-  await sb.from("mini_scores").delete().eq("room_id", S.room.id).eq("kind", kind);
-  await sb.from("rooms").update({ settings, mini_state: mini, status:"mini", phase_until: Date.now()+introMs }).eq("id", S.room.id);
+    const introMs = (kind === "delator") ? 20000 : 5000; // delator: 20s para escribir nombre real
+    mini.until = Date.now() + introMs;
+    await sb.from("mini_scores").delete().eq("room_id", S.room.id).eq("kind", kind);
+    await sb.from("rooms").update({ settings, mini_state: mini, status:"mini", phase_until: Date.now()+introMs }).eq("id", S.room.id);
+  } catch(e){
+    // Si algo falla al armar el mini-juego (ej. no cargó el banco de
+    // Preguntón), NUNCA nos quedamos pegados reintentando para siempre:
+    // se salta el mini-juego (queda marcado como hecho) y sigue el quiz.
+    console.error("Mini-juego falló, se salta:", kind, e);
+    const last = S.room.current_q >= S.room.settings.qids.length - 1;
+    await sb.from("rooms").update({ settings }).eq("id", S.room.id);
+    if (last){ await saveGameHistory(); await sb.from("rooms").update({ status:"podium" }).eq("id", S.room.id); }
+    else await nextQuestion(S.room.current_q + 1);
+  }
 }
 
 // Construye el patrón de NúmeroFlash (mismo para todos)
