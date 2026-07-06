@@ -301,14 +301,19 @@
 <button id="musicFab" class="hidden">🎵</button>
 <div id="musicPanel" class="hidden">
   <div class="music-head">
-    <div class="music-disc" id="musicDisc">🎵</div>
-    <p>Música de fondo</p>
+    <p>🎵 Música de fondo</p>
     <button id="musicClose">✕</button>
   </div>
   <div class="music-body">
-    <div class="music-track-card">
-      <div id="musicTrackName">—</div>
-      <p class="music-track-sub">Sube o baja el volumen a tu gusto 🎚️</p>
+    <div class="music-hero">
+      <div class="music-disc" id="musicDisc"><div class="music-disc-center">🎵</div></div>
+    </div>
+    <div id="musicTrackName" class="music-track-title">—</div>
+    <p class="music-error hidden" id="musicError">⚠️ No se pudo cargar esta canción — revisa que subiste el mp3</p>
+    <div class="music-progress-row">
+      <span id="musicTimeCur">0:00</span>
+      <div class="music-progress-track"><div class="music-progress-fill" id="musicProgressFill"></div></div>
+      <span id="musicTimeDur">0:00</span>
     </div>
     <p class="music-sync-note hidden" id="musicSyncNote">🔗 El anfitrión sincronizó esta canción para todos</p>
     <div class="music-transport">
