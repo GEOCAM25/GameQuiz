@@ -118,8 +118,11 @@ async function resync(){
 }
 
 // ---------- HOME ----------
-$("#btnGoCreate").onclick = () => { Sfx.click(); S.mode = "create"; openProfile(); };
-$("#btnGoJoin").onclick = () => { Sfx.click(); S.mode = "join"; openProfile(); };
+// Arranca la música YA, en el mismo toque, antes de cualquier "await" de red.
+// iOS solo permite reproducir audio si el play() ocurre pegado al toque; si se
+// llama después de esperar una respuesta del servidor, Safari ya lo bloqueó.
+$("#btnGoCreate").onclick = () => { Music.enterGame(); Sfx.click(); S.mode = "create"; openProfile(); };
+$("#btnGoJoin").onclick = () => { Music.enterGame(); Sfx.click(); S.mode = "join"; openProfile(); };
 $$("[data-back]").forEach(b => b.onclick = () => { Sfx.click(); show("home"); });
 
 function openProfile(){
@@ -146,6 +149,7 @@ function renderAvatars(taken){
   });
 }
 $("#btnProfileGo").onclick = async () => {
+  Music.enterGame(); // refuerzo: si por algún motivo no arrancó antes, lo intenta aquí también
   const name = $("#inpName").value.trim();
   const ava = $(".ava.sel")?.textContent;
   if (!name) return toast("✏️ Escribe tu nombre");
@@ -358,10 +362,14 @@ function renderPlayers(){
   list.innerHTML = "";
   const alive = S.players.filter(p => p.connected);
   $("#playerCount").textContent = alive.length;
+  const accum = S.room?.settings?.scoreMode === "accum";
+  const hasScores = S.players.some(p => (accum ? p.total_score : p.score) > 0);
   S.players.forEach(p => {
     const d = document.createElement("div");
     d.className = "chip" + (p.connected ? "" : " off");
-    d.innerHTML = `<span class="em" style="background:${avatarColor(p.avatar)}">${p.avatar}</span>${esc(p.name)}${p.is_host ? ' <span class="host-star">👑</span>' : ""}`;
+    const pts = accum ? (p.total_score||0) : (p.score||0);
+    const ptsHtml = hasScores ? `<span class="chip-pts">${pts} pts</span>` : "";
+    d.innerHTML = `<span class="em" style="background:${avatarColor(p.avatar)}">${p.avatar}</span>${esc(p.name)}${p.is_host ? ' <span class="host-star">👑</span>' : ""}${ptsHtml}`;
     list.appendChild(d);
   });
 }
@@ -463,8 +471,28 @@ async function nextQuestion(i){
   await sb.from("rooms").update({
     status:"question", current_q:i,
     q_started_at:new Date().toISOString(),
-    phase_until: until
+    phase_until: until,
+    round_winner: null
   }).eq("id", S.room.id);
+}
+
+// Botones ganadores: solo quien respondió correcto primero puede tocar uno.
+// Se eligen 3 sonidos y 3 colores al azar cada vez. Si nadie acertó, no hay botones.
+async function computeRoundWinner(){
+  if (typeof WINNER_SOUNDS === "undefined" || !WINNER_SOUNDS.length) return null;
+  try {
+    const { data } = await sb.from("answers").select("player_id,answered_at")
+      .eq("room_id", S.room.id).eq("q_index", S.room.current_q).eq("correct", true)
+      .order("answered_at", { ascending:true }).limit(1);
+    if (!data || !data.length) return null;
+    const soundIdx = shuffle(WINNER_SOUNDS.map((_,i)=>i)).slice(0,3);
+    const colors = shuffle([...WINNER_COLORS]).slice(0,3);
+    return { playerId: data[0].player_id, soundIdx, colors, playedIdx: null };
+  } catch(e){ return null; }
+}
+async function goToBoard(){
+  const round_winner = await computeRoundWinner();
+  await sb.from("rooms").update({ status:"board", phase_until: Date.now()+BOARD_TIME*1000, round_winner }).eq("id", S.room.id);
 }
 
 // Arranca el watchdog del anfitrión (idempotente: nunca duplica)
@@ -498,7 +526,7 @@ async function hostTick(){
     hostBusy = true;
     try {
       if (st === "question") await finishQuestion(S.room.current_q);
-      else if (st === "reveal") await sb.from("rooms").update({ status:"board", phase_until: Date.now()+BOARD_TIME*1000 }).eq("id", S.room.id);
+      else if (st === "reveal") await goToBoard();
       else if (st === "board"){
         const s = S.room.settings;
         const last = S.room.current_q >= s.qids.length - 1;
@@ -525,15 +553,25 @@ async function finishQuestion(i){
     const q = bank.questions[S.room.settings.qids[i]];
     const { data: answers } = await sb.from("answers").select("*").eq("room_id", S.room.id).eq("q_index", i).order("answered_at");
     const t0 = new Date(S.room.q_started_at).getTime();
-    const PLACE = [120,115,110,100];
+    // Sistema de puntos (ajustado para que los últimos lugares no queden tan
+    // lejos de los primeros): el bono por orden es más parejo, el bono de
+    // velocidad pesa la mitad, y responder mal ya no es cero — se gana un
+    // puntaje de participación por al menos intentarlo.
+    const PLACE = [60,50,42,35];
+    const INCORRECT_PTS = 15;
     let place = 0;
     for (const a of (answers||[])){
-      if (a.answer !== q.c) continue;
-      if (a.points > 0) { place++; continue; } // ya puntuada (evita doble conteo)
-      const secs = Math.max(0, QUESTION_TIME - Math.floor((new Date(a.answered_at).getTime() - t0)/1000));
-      const pts = (PLACE[Math.min(place,3)]) + secs;
-      place++;
-      await sb.from("answers").update({ points: pts, correct: true }).eq("id", a.id);
+      const isCorrect = a.answer === q.c;
+      if (a.points > 0){ if (isCorrect) place++; continue; } // ya puntuada (evita doble conteo)
+      let pts;
+      if (isCorrect){
+        const secs = Math.max(0, QUESTION_TIME - Math.floor((new Date(a.answered_at).getTime() - t0)/1000));
+        pts = PLACE[Math.min(place,3)] + Math.floor(secs / 2);
+        place++;
+      } else {
+        pts = INCORRECT_PTS;
+      }
+      await sb.from("answers").update({ points: pts, correct: isCorrect }).eq("id", a.id);
       const pl = S.players.find(p => p.id === a.player_id);
       if (pl) await sb.from("players").update({ score: pl.score + pts }).eq("id", pl.id);
     }
@@ -566,7 +604,7 @@ async function handleRoomState(){
   else if (st === "countdown" && lastStatus !== "countdown") runCountdown();
   else if (st === "question" && (lastStatus !== "question" || lastQ !== S.room.current_q)) showQuestion();
   else if (st === "reveal" && lastStatus !== "reveal") showReveal();
-  else if (st === "board" && lastStatus !== "board") showBoard();
+  else if (st === "board"){ if (lastStatus !== "board") showBoard(); else renderWinnerButtons(); }
   else if (st === "mini") handleMiniState();
   else if (st === "podium" && lastStatus !== "podium") showPodium();
   if (st === "lobby") renderCats();
@@ -668,7 +706,15 @@ async function showReveal(){
   const ok = mine && mine.answer === q.c;
   $("#revealIcon").textContent = ok ? "🎉" : mine ? "😵" : "⏰";
   $("#revealYou").textContent = ok ? `¡Correcto! +${mine.points||0} puntos` : mine ? "Incorrecto esta vez 😬" : "No alcanzaste a responder";
-  ok ? Sfx.correct() : Sfx.wrong();
+  playOutcomeSound(ok);
+}
+
+// Sonido de acierto/error: uno al azar de la lista correspondiente, una sola
+// vez por pregunta (showReveal ya está protegido para llamarse una vez).
+// Mantiene la vibración de siempre y solo cambia el audio.
+function playOutcomeSound(ok){
+  OutcomeFx.play(ok);
+  try { navigator.vibrate && navigator.vibrate(ok ? [50,30,50,30,120] : [200]); } catch(e){}
 }
 
 function renderBoardIfVisible(){
@@ -677,6 +723,7 @@ function renderBoardIfVisible(){
   else if (S.room.status === "podium") showPodium();
 }
 
+let lastWinnerKey = null;
 function showBoard(){
   const sorted = [...S.players].sort((a,b) => b.score - a.score);
   const list = $("#boardList"); list.innerHTML = "";
@@ -687,8 +734,65 @@ function showBoard(){
       <span class="nm">${esc(p.name)}${p.connected?"":" 💤"}</span><span class="pts">${p.score} pts</span>`;
     list.appendChild(d);
   });
+  renderWinnerButtons();
   Sfx.board();
   show("board");
+}
+
+// ---------- Botones ganadores (solo quien acertó primero puede tocar uno) ----------
+function renderWinnerButtons(){
+  const panel = $("#winnerButtons");
+  if (!panel) return;
+  const rw = !S.solo ? S.room?.round_winner : null;
+  if (!rw){ panel.classList.add("hidden"); return; }
+  panel.classList.remove("hidden");
+
+  const winner = S.players.find(p => p.id === rw.playerId);
+  const iAmWinner = S.me && rw.playerId === S.me.id;
+  const already = rw.playedIdx !== null && rw.playedIdx !== undefined;
+
+  $("#winnerCaption").textContent = already
+    ? `🔊 ${winner ? winner.name : "Alguien"} sonó: ${WINNER_SOUNDS[rw.soundIdx[rw.playedIdx]].label}`
+    : (iAmWinner ? "🏆 ¡Ganaste la ronda! Elige un sonido:" : `🏆 ${winner ? winner.name : "El ganador"} está eligiendo un sonido…`);
+
+  const wrap = $("#winnerBtnsRow"); wrap.innerHTML = "";
+  rw.soundIdx.forEach((sIdx, i) => {
+    const s = WINNER_SOUNDS[sIdx];
+    const btn = document.createElement("button");
+    btn.className = "winner-btn" + (already && rw.playedIdx === i ? " picked" : "") + (already && rw.playedIdx !== i ? " dim" : "");
+    btn.style.background = `radial-gradient(circle at 35% 30%, ${lighten(rw.colors[i])}, ${rw.colors[i]})`;
+    btn.disabled = !iAmWinner || already;
+    btn.innerHTML = `<span class="wb-dot"></span>`;
+    btn.onclick = () => pressWinnerButton(i);
+    const cap = document.createElement("p");
+    cap.className = "winner-btn-label";
+    cap.textContent = s.label;
+    const cell = document.createElement("div");
+    cell.className = "winner-btn-cell";
+    cell.appendChild(btn); cell.appendChild(cap);
+    wrap.appendChild(cell);
+  });
+
+  // Reproducir el sonido UNA sola vez por ronda, en TODOS los celulares, cuando
+  // el ganador presiona un botón (evita repetir el sonido en cada re-render).
+  const key = `${S.room.current_q}:${rw.playedIdx}`;
+  if (already && key !== lastWinnerKey){
+    lastWinnerKey = key;
+    WinnerFx.play(rw.soundIdx[rw.playedIdx]);
+  }
+}
+function lighten(hex){
+  const n = parseInt(hex.slice(1),16);
+  const r = Math.min(255,(n>>16)+60), g = Math.min(255,((n>>8)&255)+60), b = Math.min(255,(n&255)+60);
+  return `#${((1<<24)+(r<<16)+(g<<8)+b).toString(16).slice(1)}`;
+}
+async function pressWinnerButton(i){
+  const rw = S.room?.round_winner;
+  if (!rw || S.solo || !S.me || rw.playerId !== S.me.id) return;
+  if (rw.playedIdx !== null && rw.playedIdx !== undefined) return;
+  Sfx.click();
+  const round_winner = { ...rw, playedIdx: i };
+  await sb.from("rooms").update({ round_winner }).eq("id", S.room.id);
 }
 
 // ---------- Historial de partidas por sala (punto 13) ----------
@@ -741,6 +845,8 @@ function showPodium(){
   // Mostrar/ocultar el botón "otra ronda" según seas anfitrión
   const again = $("#btnPlayAgain");
   if (again) again.classList.toggle("hidden", !amHost() || S.solo);
+  const waitHint = $("#podiumWaitHint");
+  if (waitHint) waitHint.classList.toggle("hidden", amHost() || S.solo);
 }
 
 // Volver al inicio (cerrar todo)
@@ -817,11 +923,12 @@ $("#musicVol").oninput = (e) => Music.setVolume(+e.target.value / 100);
 Music.bindUI(() => {
   const s = Music.state();
   $("#musicTrackName").textContent = s.track ? s.track.name : "—";
-  $("#musicPlayPause").textContent = s.playing ? "⏸ Pausar" : "▶️ Reanudar";
+  $("#musicPlayPause").textContent = s.playing ? "⏸" : "▶️";
   $("#musicMute").textContent = s.muted ? "🔇" : "🔊";
   $("#musicVol").value = Math.round(s.volume * 100);
   $("#musicPrev").disabled = s.synced; $("#musicNext").disabled = s.synced;
   $("#musicSyncNote").classList.toggle("hidden", !s.synced);
+  $("#musicDisc")?.classList.toggle("spin", s.playing && !s.muted);
 });
 
 // ---------- CHAT ----------
@@ -896,13 +1003,27 @@ async function startSolo(name, ava){
   S.me = { id:"solo", name, avatar:ava, score:0, connected:true };
   S.players = [S.me];
   Music.enterGame();
+  const miniOpts = [
+    ["none","Ninguno"],["flash","🔢 NúmeroFlash"],["color","🎨 Colorín"],["memoria","🧠 Memoria"],
+    ["punteria","🎯 Puntería"],["reaccion","⚡ Reacción"],["ritmo","🎵 Ritmo"],["preg","💡 Preguntón"],
+    ["random","🎲 Al azar (de estos 7)"],
+  ];
   modal(`<h3>🧪 Sala de prueba ZZZX</h3><p>Modo solitario para probar el juego. No se puede invitar a nadie.</p>
   <label class="lbl">Categoría</label><select id="soloCat" class="inp">${CATEGORIES.map(c=>`<option value="${c.id}">${c.emoji} ${c.name}</option>`).join("")}</select>
-  <label class="lbl">Preguntas</label><select id="soloN" class="inp"><option>10</option><option>20</option><option>30</option></select>`, [
+  <label class="lbl">Preguntas</label><select id="soloN" class="inp"><option>10</option><option>20</option><option>30</option></select>
+  <label class="lbl">Probar un mini-juego 🎁</label>
+  <select id="soloMini" class="inp">${miniOpts.map(([v,l])=>`<option value="${v}">${l}</option>`).join("")}</select>
+  <p class="hint">🕵️ Delator no está aquí porque necesita votar a OTROS jugadores reales — pruébalo en una sala con amigos.</p>`, [
     { t:"¡Jugar! 🚀", cls:"btn-green", fn: async () => {
         const cat = $("#soloCat").value, n = +$("#soloN").value;
         const bank = await loadBank(cat);
-        S.soloState = { cat, i:0, qids: shuffle([...bank.questions.keys()]).slice(0, Math.min(n, bank.questions.length)) };
+        const qids = shuffle([...bank.questions.keys()]).slice(0, Math.min(n, bank.questions.length));
+        const SOLO_MINIS = ["flash","color","memoria","punteria","reaccion","ritmo","preg"];
+        let miniKind = $("#soloMini").value;
+        if (miniKind === "random") miniKind = SOLO_MINIS[Math.floor(Math.random()*SOLO_MINIS.length)];
+        const miniAt = (miniKind && miniKind !== "none" && qids.length >= 3)
+          ? 1 + Math.floor(Math.random() * (qids.length - 2)) : -1;
+        S.soloState = { cat, i:0, qids, miniKind, miniAt, miniDone:false };
         S.room = { status:"countdown", settings:{ cat, qids:S.soloState.qids, filter:"off" }, current_q:-1, q_started_at:null };
         Music.setGamePhase("countdown");
         runCountdown();
@@ -927,16 +1048,25 @@ async function soloFinish(ans){
   clearInterval(S.qTimer);
   const bank = await loadBank(S.soloState.cat);
   const q = bank.questions[S.soloState.qids[S.soloState.i]];
-  let pts = 0, ok = false;
-  if (ans && ans.idx === q.c){ ok = true; pts = 120 + S.qLeft; S.me.score += pts; }
+  let pts = 0, ok = false, answered = !!ans;
+  if (ans && ans.idx === q.c){ ok = true; pts = 60 + Math.floor(S.qLeft/2); S.me.score += pts; }
+  else if (answered){ pts = 15; S.me.score += pts; }
   $("#revealIcon").textContent = ok ? "🎉" : ans ? "😵" : "⏰";
   $("#revealText").textContent = `Respuesta correcta: ${q.o[q.c]}`;
-  $("#revealYou").textContent = ok ? `¡Correcto! +${pts} puntos · Total: ${S.me.score}` : ans ? "Incorrecto 😬" : "Se acabó el tiempo";
-  ok ? Sfx.correct() : Sfx.wrong();
+  $("#revealYou").textContent = ok ? `¡Correcto! +${pts} puntos · Total: ${S.me.score}` : ans ? `Incorrecto 😬 (+${pts} de participación)` : "Se acabó el tiempo";
+  playOutcomeSound(ok);
   show("reveal");
   setTimeout(() => {
     const last = S.soloState.i >= S.soloState.qids.length - 1;
-    if (last){ S.players = [S.me]; showPodiumSolo(); }
+    const miniPending = S.soloState.miniKind && S.soloState.miniKind !== "none" &&
+      !S.soloState.miniDone && S.soloState.i === S.soloState.miniAt;
+    if (miniPending){
+      S.soloState.miniDone = true;
+      soloRunMiniGame(S.soloState.miniKind, () => {
+        if (last){ S.players = [S.me]; showPodiumSolo(); }
+        else soloQuestion(S.soloState.i + 1);
+      });
+    } else if (last){ S.players = [S.me]; showPodiumSolo(); }
     else soloQuestion(S.soloState.i + 1);
   }, REVEAL_TIME*1000);
 }
@@ -950,6 +1080,49 @@ function showPodiumSolo(){
   show("podium"); Sfx.fanfare(); fireworks(6000);
 }
 function endSoloToHome(){ S.solo = false; S.room = null; S.soloState = null; show("home"); }
+
+// ============================================================
+// Mini-juegos en la sala de prueba ZZZX: reutiliza EXACTAMENTE las mismas
+// pantallas y lógica que en multijugador (buildX/showMiniIntro/startMiniPlay/
+// showMiniResult), pero con un reloj local (setTimeout) en vez del watchdog
+// de Supabase, y sin comparar contra otros jugadores (solo hay uno).
+// Delator no se ofrece aquí porque necesita votar a otros jugadores reales.
+// ============================================================
+async function soloRunMiniGame(kind, onDone){
+  S.soloMiniResult = null;
+  let data;
+  if (kind === "flash") data = buildFlash();
+  else if (kind === "color") data = buildColor();
+  else if (kind === "memoria") data = buildMemoria();
+  else if (kind === "punteria") data = buildPunteria();
+  else if (kind === "reaccion") data = buildReaccion();
+  else if (kind === "ritmo") data = buildRitmo();
+  else if (kind === "preg") data = await buildPreg();
+  else { onDone(); return; }
+
+  const introMs = 5000;
+  S.room.status = "mini";
+  S.room.mini_state = { kind, phase:"intro", round:0, data, until: Date.now()+introMs };
+  handleMiniState();
+
+  setTimeout(() => {
+    const playMs = miniPlayMs(kind);
+    S.room.mini_state = { ...S.room.mini_state, phase:"play", until: Date.now()+playMs };
+    handleMiniState();
+
+    setTimeout(() => {
+      const table = RANK_MINIS[kind];
+      const r = S.soloMiniResult || {};
+      let pts = 0;
+      if (table) pts = r.ok ? table[0] : (("ok" in r) ? 10 : 0);
+      else pts = r.score || 0;
+      S.me.score += pts;
+      S.room.mini_state = { ...S.room.mini_state, phase:"result", until: Date.now()+6000, results:{ [S.me.id]: pts } };
+      handleMiniState();
+      setTimeout(onDone, 6000);
+    }, playMs + 400); // margen para que el reloj interno de cada mini alcance a registrar el resultado
+  }, introMs);
+}
 
 // ============================================================
 // ENTREGA 3 — Compartir resultado, historial y propina
@@ -1086,7 +1259,7 @@ const MINI_META = {
 
 // Mini-juegos cuyo puntaje se reparte por ORDEN DE LLEGADA (1°=100, 2°=90…)
 // en vez de sumar el score crudo que guardó cada jugador.
-const RANK_MINIS = { memoria:[100,90,80,70,60,50], preg:[100,90,80,70], reaccion:[100,90,80,70,60,50] };
+const RANK_MINIS = { memoria:[58,50,44,39,35,32], preg:[58,50,44,39], reaccion:[58,50,44,39,35,32] };
 
 // ---------- El anfitrión arma el mini-juego ----------
 async function startMiniGame(entry){
@@ -1280,16 +1453,19 @@ async function finishMini(){
 
   const byPlayer = {};
   const table = RANK_MINIS[m.kind];
+  const MINI_TRY_PTS = 10; // participación: lo intentó pero no acertó a tiempo
   if (table){
-    // Reparto por ORDEN DE LLEGADA. Solo puntúan quienes acertaron (payload.ok).
-    // Se ordena por tiempo de acierto (payload.t, menor = más rápido).
-    const finishers = (scores||[])
-      .filter(s => s.payload && s.payload.ok)
-      .sort((a,b) => (a.payload.t||0) - (b.payload.t||0));
+    // Reparto por ORDEN DE LLEGADA. Quienes acertaron (payload.ok) según su
+    // tiempo (payload.t, menor = más rápido); quienes lo intentaron sin
+    // acertar reciben un puntaje chico de participación (no quedan en 0).
+    const rows = scores || [];
+    const finishers = rows.filter(s => s.payload && s.payload.ok).sort((a,b) => (a.payload.t||0) - (b.payload.t||0));
     finishers.forEach((s, idx) => {
       byPlayer[s.player_id] = (byPlayer[s.player_id]||0) + (table[Math.min(idx, table.length-1)]);
     });
-    // Quienes no acertaron quedan en 0 (no se agregan)
+    rows.filter(s => s.payload && !s.payload.ok).forEach(s => {
+      byPlayer[s.player_id] = (byPlayer[s.player_id]||0) + MINI_TRY_PTS;
+    });
   } else {
     // Puntaje directo: se suma el score crudo que guardó cada jugador
     (scores||[]).forEach(s => { byPlayer[s.player_id] = (byPlayer[s.player_id]||0) + s.score; });
@@ -1437,6 +1613,8 @@ function showMiniResult(m){
   const isDelator = m.kind === "delator";
   const rows = S.players.map(p => ({ p, pts: results[p.id]||0 })).sort((a,b)=>b.pts-a.pts);
   const list = $("#boardList"); list.innerHTML = "";
+  // Los botones ganadores son solo para preguntas normales, no para mini-juegos
+  $("#winnerButtons")?.classList.add("hidden");
   const title = $("#scr-board .scr-title");
   if (title) title.textContent = isDelator ? "🕵️ Delator — puntaje final" : `${meta.emoji} ${meta.title} — resultados`;
   rows.forEach((r,i) => {
@@ -1515,6 +1693,7 @@ async function flashTap(btn, val, m){
 let flashSubmitted = false;
 async function flashSubmit(m){
   if (flashSubmitted) return; flashSubmitted = true;
+  if (S.solo){ S.soloMiniResult = { score:S.flashScore }; return; }
   try {
     await sb.from("mini_scores").insert({
       room_id:S.room.id, player_id:S.me.id, kind:"flash", round:0, score:S.flashScore
@@ -1651,6 +1830,7 @@ async function colorPick(btn, label, r, m){
 let colorSubmitted = false;
 async function colorSubmit(m){
   if (colorSubmitted) return; colorSubmitted = true;
+  if (S.solo){ S.soloMiniResult = { score:S.colorScore }; return; }
   try {
     await sb.from("mini_scores").insert({
       room_id:S.room.id, player_id:S.me.id, kind:"color", round:0, score:S.colorScore
@@ -1733,6 +1913,7 @@ async function memoriaTap(btn, emo, m){
 }
 async function memoriaSubmit(m, ok, t){
   if (memoriaSubmitted) return; memoriaSubmitted = true;
+  if (S.solo){ S.soloMiniResult = { ok, t: t||999999 }; return; }
   try {
     await sb.from("mini_scores").insert({
       room_id:S.room.id, player_id:S.me.id, kind:"memoria", round:m.round||0,
@@ -1798,6 +1979,7 @@ async function punteriaSubmit(m){
   if (punteriaSubmitted) return; punteriaSubmitted = true;
   clearInterval(S.puntSpawnIv);
   const pts = S.puntHits * 10; // +10 por acierto, sin tope
+  if (S.solo){ S.soloMiniResult = { score:pts }; return; }
   try {
     await sb.from("mini_scores").insert({
       room_id:S.room.id, player_id:S.me.id, kind:"punteria", round:0, score:pts
@@ -1879,6 +2061,7 @@ function reaccionFinishLocal(m){
 }
 async function reaccionSubmit(m, ok, t){
   if (reaccionSubmitted) return; reaccionSubmitted = true;
+  if (S.solo){ S.soloMiniResult = { ok, t: t||999999 }; return; }
   try {
     await sb.from("mini_scores").insert({
       room_id:S.room.id, player_id:S.me.id, kind:"reaccion", round:0,
@@ -1975,6 +2158,7 @@ function ritmoFinishLocal(m){
 async function ritmoSubmit(m){
   if (ritmoSubmitted) return; ritmoSubmitted = true;
   const pts = S.ritmoScore * 10; // 10 por paso correcto
+  if (S.solo){ S.soloMiniResult = { score:pts }; return; }
   try {
     await sb.from("mini_scores").insert({
       room_id:S.room.id, player_id:S.me.id, kind:"ritmo", round:0, score:pts
@@ -2048,6 +2232,7 @@ async function pregTapKey(letter, btn, m){
 }
 async function pregSubmit(m, ok, t){
   if (pregSubmitted) return; pregSubmitted = true;
+  if (S.solo){ S.soloMiniResult = { ok, t: t||999999 }; return; }
   try {
     await sb.from("mini_scores").insert({
       room_id:S.room.id, player_id:S.me.id, kind:"preg", round:0,

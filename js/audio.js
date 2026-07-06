@@ -186,3 +186,68 @@ const Music = (() => {
   return { enterGame, play, pause, togglePlay, next, prev, setVolume, toggleMute,
            setGamePhase, onRoomUpdate, hostSetSync, bindUI, state };
 })();
+
+// ============================================================
+// Sonidos "botón ganador": clips cortos (mp3) que solo el ganador de la
+// ronda puede disparar. Se cachean como elementos <audio> reutilizables
+// para que suenen al instante, sin recargar el archivo cada vez.
+// ============================================================
+const WinnerFx = (() => {
+  const cache = {};
+  function get(file){
+    if (!cache[file]){
+      const a = new Audio(file);
+      a.preload = "auto";
+      cache[file] = a;
+    }
+    return cache[file];
+  }
+  // Precarga silenciosa en el primer toque de la pantalla, para que el
+  // audio ya esté "desbloqueado" en iOS cuando de verdad se necesite sonar.
+  function warmUp(){
+    (WINNER_SOUNDS || []).forEach(s => { try{ get(s.file); }catch(e){} });
+  }
+  document.addEventListener("pointerdown", warmUp, { once:true });
+
+  function play(idx){
+    const s = (WINNER_SOUNDS || [])[idx];
+    if (!s) return;
+    try {
+      const a = get(s.file);
+      a.currentTime = 0;
+      a.volume = 1;
+      a.play().catch(()=>{});
+    } catch(e){}
+  }
+  return { play };
+})();
+
+// ============================================================
+// Sonidos de acierto/error: uno al azar por pregunta, según si ese jugador
+// acertó o falló. Mismo patrón de caché que WinnerFx.
+// ============================================================
+const OutcomeFx = (() => {
+  const cache = {};
+  function get(file){
+    if (!cache[file]){ const a = new Audio(file); a.preload = "auto"; cache[file] = a; }
+    return cache[file];
+  }
+  function warmUp(){
+    (CORRECT_SOUNDS||[]).forEach(f => { try{ get(f); }catch(e){} });
+    (INCORRECT_SOUNDS||[]).forEach(f => { try{ get(f); }catch(e){} });
+  }
+  document.addEventListener("pointerdown", warmUp, { once:true });
+
+  function play(ok){
+    const pool = ok ? CORRECT_SOUNDS : INCORRECT_SOUNDS;
+    if (!pool || !pool.length) return;
+    const file = pool[Math.floor(Math.random()*pool.length)];
+    try {
+      const a = get(file);
+      a.currentTime = 0;
+      a.volume = 1;
+      a.play().catch(()=>{});
+    } catch(e){}
+  }
+  return { play };
+})();

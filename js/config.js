@@ -50,6 +50,47 @@ const MUSIC_TRACKS = [
   { id:"verdad", name:"La hora de la verdad",    file:"music/la-hora-de-la-verdad.mp3",  duration:177 },
 ];
 
+// Sonidos "botón ganador": cada vez que se muestra el marcador, aparecen 3 al azar
+// y solo quien ganó la ronda (primero en responder bien) puede tocar uno.
+// Para agregar un sonido nuevo:
+// 1) Sube el mp3 a la carpeta "audio/ganador/" del repo
+// 2) Agrega una línea aquí abajo con el nombre del archivo y la etiqueta a mostrar
+const WINNER_SOUNDS = [
+  { file:"audio/ganador/Fuera_depresio_n_GANADOR.mp3", label:"Fuera Depresión" },
+  { file:"audio/ganador/Ahh_Ganador.mp3",              label:"Ahh" },
+  { file:"audio/ganador/Perdedores_GANADOR.mp3",       label:"Perdedores" },
+  { file:"audio/ganador/Yupi_GANADOR.mp3",             label:"Yupi" },
+  { file:"audio/ganador/Nin_o_rata_GANADOR.mp3",       label:"Niño Rata" },
+  { file:"audio/ganador/Asadito_GANADOR.mp3",          label:"Asadito" },
+  { file:"audio/ganador/Gane_GANADOR.mp3",             label:"Gané" },
+  { file:"audio/ganador/Jackson_Ganador.mp3",          label:"Jackson" },
+  { file:"audio/ganador/Diarrea_extrema_GANADOR.mp3",  label:"Diarrea Extrema" },
+  { file:"audio/ganador/Magea_GANADOR.mp3",            label:"Magea" },
+  { file:"audio/ganador/Atento_Central_GANADOR.mp3",   label:"Atento Central" },
+  { file:"audio/ganador/Risa_GANADOR.mp3",             label:"Risa" },
+  { file:"audio/ganador/Uhh_GANADOR.mp3",              label:"Uhh" },
+];
+
+// Colores para los 3 botones ganadores (se eligen 3 al azar cada ronda)
+const WINNER_COLORS = ["#E74C3C","#2ECC71","#3498DB","#9B59B6","#F1C40F","#1ABC9C","#E67E22","#EC407A","#5C6BC0"];
+
+// Sonidos de acierto/error: al revelar la respuesta, se elige uno al azar
+// de la lista correspondiente y suena en el celular de cada jugador según
+// si ÉL acertó o falló (una vez por pregunta).
+// Para agregar más: sube el mp3 a audio/correcto/ o audio/incorrecto/ y
+// agrega el nombre de archivo aquí abajo.
+const CORRECT_SOUNDS = [
+  "audio/correcto/Correcto3.mp3","audio/correcto/Correcto4.mp3","audio/correcto/Correcto5.mp3",
+  "audio/correcto/Correcto6.mp3","audio/correcto/Correcto7.mp3","audio/correcto/Correcto8.mp3",
+  "audio/correcto/Correcto9.mp3","audio/correcto/Correcto10.mp3",
+];
+const INCORRECT_SOUNDS = [
+  "audio/incorrecto/Incorrecto1.mp3","audio/incorrecto/Incorrecto2.mp3","audio/incorrecto/Incorrecto3.mp3",
+  "audio/incorrecto/Incorrecto4.mp3","audio/incorrecto/Incorrecto5.mp3","audio/incorrecto/Incorrecto6.mp3",
+  "audio/incorrecto/Incorrecto7.mp3","audio/incorrecto/Incorrecto8.mp3","audio/incorrecto/Incorrecto9.mp3",
+  "audio/incorrecto/Incorrecto10.mp3",
+];
+
 const QUESTION_TIME = 40;      // segundos por pregunta
 const REVEAL_TIME = 4;         // segundos mostrando la respuesta
 const BOARD_TIME = 6;          // segundos mostrando el marcador
