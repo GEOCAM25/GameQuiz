@@ -858,3 +858,184 @@ body.hype #app{animation:hypeshake .9s ease infinite}
 .mini-scorebar.bump{animation:msbBump .4s ease}
 @keyframes msbBump{0%{transform:scale(1)}40%{transform:scale(1.05)}100%{transform:scale(1)}}
 .mini-scorebar.full .msb-fill{background:linear-gradient(90deg,var(--gold),#FF7A93,var(--gold))}
+
+/* ---------- Interruptor de sonidos del juego (panel de audio) ---------- */
+.sfx-toggle{width:100%;margin-top:4px;border:none;border-radius:16px;padding:12px;cursor:pointer;
+  font-family:'Nunito';font-weight:800;font-size:14px;color:#fff;
+  background:rgba(255,255,255,.14);transition:transform .08s, background .2s}
+.sfx-toggle:active{transform:scale(.97)}
+
+/* ============================================================
+   TANDA 2 — Juegos individuales: menú + Cruci-Quiz
+   ============================================================ */
+.solo-cards{display:flex;flex-direction:column;gap:14px;margin-top:10px}
+.solo-card{display:flex;align-items:center;gap:14px;border:none;border-radius:22px;padding:18px;cursor:pointer;
+  background:linear-gradient(180deg,#FFFDF7,var(--card) 40%,#F4EADA);
+  box-shadow:0 6px 0 rgba(70,40,90,.28), 0 14px 26px rgba(10,5,30,.28);transition:transform .1s}
+.solo-card:active{transform:translateY(4px)}
+.solo-card .sc-emoji{font-size:42px;flex-shrink:0;filter:drop-shadow(0 3px 3px rgba(0,0,0,.25))}
+.solo-card .sc-txt{flex:1;text-align:left;display:flex;flex-direction:column;gap:2px}
+.solo-card .sc-txt b{font-family:'Fredoka';font-size:19px;color:var(--ink)}
+.solo-card .sc-txt small{color:var(--ink2);font-weight:700;font-size:13px}
+.solo-card .sc-go{font-size:22px;color:var(--purple)}
+
+/* Cruci-Quiz */
+#cruciScreen{display:flex;flex-direction:column;gap:12px;height:100%}
+.cruci-head{display:flex;align-items:center;justify-content:space-between;color:#fff;gap:10px}
+.cruci-head h2{font-family:'Fredoka';font-size:20px;text-shadow:0 2px 0 rgba(0,0,0,.3);flex:1;text-align:center}
+.cruci-back{border:none;background:rgba(255,255,255,.2);color:#fff;width:40px;height:40px;border-radius:50%;
+  font-size:26px;font-weight:800;cursor:pointer;flex-shrink:0;line-height:1}
+.cruci-sub{color:#fff;font-weight:800;font-size:14px;background:rgba(0,0,0,.25);border-radius:20px;padding:4px 12px}
+.cruci-tagline{color:#fff;text-align:center;font-weight:700;opacity:.95;text-shadow:0 1px 4px rgba(0,0,0,.4);font-size:14px}
+.cruci-levels{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;overflow-y:auto;padding:4px}
+.cruci-lvl{aspect-ratio:1;border:none;border-radius:18px;cursor:pointer;position:relative;
+  background:linear-gradient(180deg,var(--purple2),var(--purple));color:#fff;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;
+  box-shadow:0 5px 0 var(--purple-e), 0 8px 14px rgba(0,0,0,.25);transition:transform .1s;padding:4px}
+.cruci-lvl:active{transform:translateY(3px)}
+.cruci-lvl .cl-n{font-family:'Fredoka';font-size:24px;font-weight:700}
+.cruci-lvl .cl-theme{font-size:9px;font-weight:800;text-align:center;line-height:1.1;opacity:.95}
+.cruci-lvl.locked{background:linear-gradient(180deg,#C9BFE0,#9E93C0);box-shadow:0 5px 0 #7c72a0;cursor:default}
+.cruci-lvl.done{background:linear-gradient(180deg,var(--green2),var(--green));box-shadow:0 5px 0 var(--green-e)}
+.cruci-lvl .cl-star{position:absolute;top:-6px;right:-6px;font-size:18px}
+.cruci-lvl .cl-lock{font-size:26px}
+
+.cruci-grid{display:flex;flex-direction:column;gap:4px;align-items:center;padding:8px;
+  background:rgba(0,0,0,.18);border-radius:18px;overflow-x:auto}
+.cruci-row{display:flex;gap:4px}
+.cruci-row.active .cruci-cell:not(.empty){box-shadow:inset 0 0 0 2px var(--gold)}
+.cruci-row.shake{animation:shake .4s}
+.cruci-cell{width:clamp(20px,7.5vw,32px);height:clamp(26px,9vw,38px);border-radius:7px;display:flex;align-items:center;justify-content:center;
+  font-family:'Fredoka';font-weight:700;font-size:clamp(14px,4.5vw,20px);color:var(--ink);flex-shrink:0;
+  background:linear-gradient(180deg,#fff,#F0E6D6);box-shadow:0 2px 0 rgba(20,10,40,.15)}
+.cruci-cell.empty{background:transparent;box-shadow:none}
+.cruci-cell.key{background:linear-gradient(180deg,var(--gold2),var(--gold));box-shadow:0 2px 0 var(--gold-e)}
+.cruci-cell.solved{background:linear-gradient(180deg,var(--green2),var(--green));color:#fff}
+.cruci-clue{color:#fff;text-align:center;font-weight:700;min-height:40px;display:flex;align-items:center;
+  justify-content:center;padding:6px 12px;background:rgba(0,0,0,.22);border-radius:14px;font-size:15px;line-height:1.3}
+.cruci-clue .cc-num{font-family:'Fredoka';color:var(--gold);margin-right:4px}
+.cruci-clue .cc-len{opacity:.7;font-size:12px;margin-left:4px}
+.cruci-keyboard{display:flex;flex-direction:column;gap:6px;margin-top:auto;padding-bottom:env(safe-area-inset-bottom)}
+.ckb-row{display:flex;gap:4px;justify-content:center}
+.ckb-key{flex:1;max-width:38px;height:46px;border:none;border-radius:8px;cursor:pointer;
+  font-family:'Fredoka';font-weight:700;font-size:18px;color:var(--ink);
+  background:linear-gradient(180deg,#fff,#E9DFCE);box-shadow:0 3px 0 rgba(20,10,40,.2);transition:transform .06s}
+.ckb-key:active{transform:translateY(3px);box-shadow:0 0 0 rgba(20,10,40,.2)}
+.ckb-key.ckb-del{background:linear-gradient(180deg,var(--red2),var(--red));color:#fff;box-shadow:0 3px 0 var(--red-e)}
+.ckb-hint{width:100%;border:none;border-radius:12px;padding:11px;cursor:pointer;
+  font-family:'Nunito';font-weight:800;font-size:14px;color:#fff;
+  background:linear-gradient(180deg,var(--blue2),var(--blue));box-shadow:0 3px 0 var(--blue-e)}
+.cruci-win{position:fixed;inset:0;z-index:26;display:flex;align-items:center;justify-content:center;padding:24px;
+  background:rgba(8,4,20,.7);backdrop-filter:blur(4px)}
+.cruci-win .cw-box{background:linear-gradient(180deg,#FFFDF7,var(--card) 30%,#F4EADA);border-radius:26px;padding:26px;
+  text-align:center;max-width:360px;width:100%;border-top:5px solid var(--gold);
+  box-shadow:0 10px 0 rgba(40,20,70,.35), 0 30px 60px rgba(0,0,0,.5);animation:modalPop .3s cubic-bezier(.34,1.4,.64,1)}
+.cw-emoji{font-size:60px;animation:bob 2s ease-in-out infinite}
+.cw-label{font-weight:800;color:var(--ink2);text-transform:uppercase;letter-spacing:1px;font-size:13px;margin-top:6px}
+.cw-key{display:flex;gap:6px;justify-content:center;margin:12px 0}
+.cw-key span{width:38px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;
+  font-family:'Fredoka';font-weight:700;font-size:24px;color:#fff;
+  background:linear-gradient(180deg,var(--gold2),var(--gold));box-shadow:0 3px 0 var(--gold-e);
+  animation:memoPop .4s ease backwards}
+.cw-msg{font-weight:800;color:var(--ink);margin:8px 0}
+.cw-btns{display:flex;flex-direction:column;gap:10px;margin-top:14px}
+
+/* ============================================================
+   TANDA 3 — Modo pantalla (Smart TV / Roku) + pausa
+   ============================================================ */
+body.tv-mode #app, body.tv-mode #chatFab, body.tv-mode #musicFab,
+body.tv-mode #tipFab, body.tv-mode #leaveFab, body.tv-mode #sky{ display:none !important; }
+body.tv-mode{ overflow:hidden; }
+#tvRoot{position:fixed;inset:0;z-index:50;display:flex;flex-direction:column;
+  background:radial-gradient(ellipse at 50% 0%,#3A1B70,#160B32 70%,#0B0620);color:#fff;
+  font-family:'Nunito',sans-serif;padding:2.5vh 3vw}
+.tv-topbar{display:flex;align-items:center;justify-content:space-between;gap:2vw}
+.tv-logo{font-family:'Fredoka';font-weight:700;font-size:3.2vw;letter-spacing:1px}
+.tv-logo span{color:var(--gold)}
+.tv-logo b{font-size:1.8vw;background:var(--red);padding:.2vw 1vw;border-radius:1vw;vertical-align:middle;margin-left:.5vw}
+.tv-code-box{font-family:'Fredoka';font-size:2vw;background:rgba(0,0,0,.35);border-radius:1vw;padding:.6vw 1.6vw}
+.tv-code-box span{color:var(--gold);letter-spacing:.4vw}
+.tv-players{display:flex;gap:1vw;flex-wrap:wrap;justify-content:flex-end;flex:1;max-width:40vw}
+.tvp{display:flex;flex-direction:column;align-items:center;font-size:2vw;line-height:1}
+.tvp small{font-size:.9vw;font-weight:800;margin-top:.2vw;opacity:.85}
+.tvp.big{font-size:3.4vw}.tvp.big small{font-size:1.2vw}
+.tv-body{flex:1;display:flex;align-items:center;justify-content:center;min-height:0}
+.tv-msg{font-size:2vw;font-weight:800;text-align:center}
+
+/* Lobby TV */
+.tv-lobby{display:flex;gap:5vw;align-items:center;width:100%;justify-content:center}
+.tv-join{text-align:center}
+.tv-join h1{font-family:'Fredoka';font-size:2.6vw;margin-bottom:1.5vw}
+.tv-qr{display:inline-block;background:#fff;border-radius:1.4vw;padding:1vw;box-shadow:0 1vw 3vw rgba(0,0,0,.5)}
+.tv-qr svg{width:16vw;height:16vw;display:block}
+.tv-or{margin-top:1.4vw;font-weight:800;opacity:.85;font-size:1.3vw}
+.tv-bigcode{font-family:'Fredoka';font-size:5vw;font-weight:700;letter-spacing:1vw;color:var(--gold);
+  text-shadow:0 .4vw 0 rgba(60,20,0,.6)}
+.tv-waiting{text-align:center;max-width:34vw}
+.tv-waiting h2{font-family:'Fredoka';font-size:2.4vw;margin-bottom:1.5vw}
+.tv-waitlist{display:flex;flex-wrap:wrap;gap:1.6vw;justify-content:center;max-height:44vh;overflow:hidden}
+.tv-hint{opacity:.8;font-weight:800;font-size:1.3vw;margin-top:1.5vw}
+
+/* Cuenta regresiva TV */
+.tv-count{text-align:center}
+.tv-count-num{font-family:'Fredoka';font-size:20vw;font-weight:700;line-height:1;color:var(--gold);
+  text-shadow:0 1vw 0 rgba(60,20,0,.6);animation:pop .9s ease infinite}
+.tv-count p{font-size:2.4vw;font-weight:800}
+
+/* Pregunta TV */
+.tv-q{width:100%;max-width:92vw;text-align:center}
+.tv-qbar{position:relative;height:2.6vh;background:rgba(0,0,0,.4);border-radius:2vw;overflow:hidden;margin-bottom:2vh}
+.tv-qbar-fill{position:absolute;inset:0;width:100%;background:linear-gradient(90deg,var(--green2),var(--green));
+  transition:width .2s linear}
+.tv-qbar span{position:absolute;right:1.5vw;top:50%;transform:translateY(-50%);font-family:'Fredoka';font-weight:700;font-size:1.6vw}
+.tv-qidx{font-weight:800;font-size:1.5vw;opacity:.9;margin-bottom:1vh;letter-spacing:.2vw}
+.tv-qemoji{font-size:9vw;line-height:1;margin:1vh 0}
+.tv-qimg{max-height:26vh;max-width:60vw;border-radius:1.5vw;background:#fff;padding:1vw;margin:1vh auto;display:block}
+.tv-qtext{font-family:'Fredoka';font-size:3.6vw;line-height:1.15;margin:1.5vh 0 3vh;font-weight:700}
+.tv-answers{display:grid;grid-template-columns:1fr 1fr;gap:2vh 2vw}
+.tv-ans{display:flex;align-items:center;gap:1.4vw;border-radius:1.6vw;padding:2.4vh 2vw;font-size:2.6vw;font-weight:800;
+  color:#fff;text-align:left;box-shadow:0 .8vw 0 rgba(0,0,0,.3);text-shadow:0 .2vw .3vw rgba(0,0,0,.3)}
+.tv-ans .tv-shape{font-size:2.6vw}
+.tv-ans.a0{background:linear-gradient(180deg,var(--red2),var(--red))}
+.tv-ans.a1{background:linear-gradient(180deg,var(--blue2),var(--blue))}
+.tv-ans.a2{background:linear-gradient(180deg,var(--yellow2),var(--yellow));color:var(--ink);text-shadow:none}
+.tv-ans.a3{background:linear-gradient(180deg,var(--green2),var(--green))}
+.tv-ans.faded{opacity:.32;filter:saturate(.5)}
+.tv-ans.correct{outline:.6vw solid var(--gold);box-shadow:0 0 3vw rgba(255,210,94,.9), 0 .8vw 0 rgba(0,0,0,.3)}
+.tv-check{margin-left:auto;font-size:2.8vw}
+
+/* Mini-juego (aviso en TV) */
+.tv-mini{text-align:center}
+.tv-mini-emoji{font-size:12vw;animation:bob 2s ease-in-out infinite}
+.tv-mini h1{font-family:'Fredoka';font-size:4vw;margin:1vh 0}
+.tv-mini p{font-size:2vw;font-weight:800;opacity:.9}
+
+/* Marcador / podio TV */
+.tv-scores{width:100%;max-width:80vw}
+.tv-scores h1{font-family:'Fredoka';font-size:3.4vw;text-align:center;margin-bottom:3vh}
+.tv-scorelist{display:flex;flex-direction:column;gap:1.4vh}
+.tv-srow{display:flex;align-items:center;gap:1.6vw;background:rgba(255,255,255,.08);border-radius:1.4vw;padding:1.4vh 2vw;font-size:2.2vw;font-weight:800}
+.tv-srow.lead{background:linear-gradient(90deg,rgba(255,210,94,.3),rgba(255,210,94,.08));outline:.3vw solid var(--gold)}
+.tv-pos{font-family:'Fredoka';width:4vw;text-align:center}
+.tv-em{font-size:2.6vw}
+.tv-nm{min-width:12vw}
+.tv-bar{flex:1;height:1.6vh;background:rgba(0,0,0,.35);border-radius:1vw;overflow:hidden}
+.tv-bar-fill{height:100%;background:linear-gradient(90deg,var(--purple),var(--gold));border-radius:1vw;transition:width .8s ease}
+.tv-pts{font-family:'Fredoka';color:var(--gold);min-width:5vw;text-align:right}
+
+.tv-qr-fallback{font-size:1.6vw;font-weight:800;text-align:center;line-height:1.5}
+.tv-qr-fallback b{font-family:'Fredoka';font-size:4vw;color:var(--gold)}
+
+/* Overlay de pausa (TV y teléfono) */
+.tv-pause-overlay{position:fixed;inset:0;z-index:60;display:flex;align-items:center;justify-content:center;
+  background:rgba(8,4,20,.82);backdrop-filter:blur(6px)}
+.tv-pause-overlay.hidden{display:none}
+.tv-pause-card{text-align:center;font-size:5vw;font-family:'Fredoka';display:flex;flex-direction:column;gap:1vh;color:#fff}
+.tv-pause-card small{font-size:1.6vw;font-family:'Nunito';font-weight:800;opacity:.85}
+#pauseOverlay{position:fixed;inset:0;z-index:24;display:flex;align-items:center;justify-content:center;
+  background:rgba(8,4,20,.7);backdrop-filter:blur(4px)}
+#pauseOverlay .pause-card{background:linear-gradient(180deg,#2A1C42,#171028);border:2px solid var(--purple);
+  border-radius:24px;padding:28px 34px;text-align:center;color:#fff;display:flex;flex-direction:column;gap:6px;
+  font-size:52px;box-shadow:0 20px 50px rgba(0,0,0,.6)}
+#pauseOverlay .pause-card b{font-family:'Fredoka';font-size:22px}
+#pauseOverlay .pause-card small{font-family:'Nunito';font-weight:800;font-size:14px;opacity:.85;max-width:240px}
