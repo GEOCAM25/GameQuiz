@@ -70,8 +70,6 @@ function show(id){
   const leaveBtn = $("#leaveFab");
   if (leaveBtn) leaveBtn.classList.toggle("hidden", !leaveOk);
   if (id === "home" || id === "profile" || id === "lobby") clearCategoryTheme();
-  // Escenario vivo: efecto especial en cuenta regresiva y celebración en el podio
-  if (typeof Scenes !== "undefined") Scenes.onScreen(id);
 }
 function toast(t){
   const d = document.createElement("div");
@@ -86,14 +84,8 @@ const THEME_CATS = ["disney","pixar","netflix","hbo","anime","cine","famosos","g
 function applyCategoryTheme(cat){
   THEME_CATS.forEach(c => document.body.classList.remove("theme-" + c));
   if (cat) document.body.classList.add("theme-" + cat);
-  // Escenario vivo por categoría (espacio, estadio, cine, sakura…)
-  if (typeof Scenes !== "undefined") Scenes.setCategory(cat);
 }
-function clearCategoryTheme(){
-  THEME_CATS.forEach(c => document.body.classList.remove("theme-" + c));
-  // Vuelve al ambiente rotativo del inicio/lobby (cambia solo cada 30 s)
-  if (typeof Scenes !== "undefined") Scenes.setAmbient();
-}
+function clearCategoryTheme(){ THEME_CATS.forEach(c => document.body.classList.remove("theme-" + c)); }
 function modal(html, buttons){
   $("#modalBox").innerHTML = html;
   buttons.forEach(b => {
@@ -984,64 +976,68 @@ $("#chkMusicSync").onchange = async (e) => {
 $("#musicFab").onclick = () => { $("#musicPanel").classList.remove("hidden"); };
 $("#musicClose").onclick = closeMusicPanel;
 function closeMusicPanel(){ $("#musicPanel")?.classList.add("hidden"); }
-
-// Si está sincronizado, solo el anfitrión puede saltar de canción o mover
-// la barra (y se avisa a todos los conectados); si no, cada uno manda en
-// su propio celular sin afectar a nadie más.
-function canControlMusic(){ return !Music.state().synced || amHost(); }
-
-$("#musicPrev").onclick = () => {
-  const s = Music.state();
-  if (s.synced && amHost()) Music.hostChangeTrack(S.room, sb);
-  else Music.prev();
-};
-$("#musicNext").onclick = () => {
-  const s = Music.state();
-  if (s.synced && amHost()) Music.hostChangeTrack(S.room, sb);
-  else Music.next();
-};
+$("#musicPrev").onclick = () => Music.prev();
+$("#musicNext").onclick = () => Music.next();
 $("#musicPlayPause").onclick = () => Music.togglePlay();
 $("#musicMute").onclick = () => Music.toggleMute();
 $("#musicVol").oninput = (e) => Music.setVolume(+e.target.value / 100);
-
 Music.bindUI(() => {
   const s = Music.state();
   $("#musicTrackName").textContent = s.track ? s.track.name : "—";
   $("#musicPlayPause").textContent = s.playing ? "⏸" : "▶️";
   $("#musicMute").textContent = s.muted ? "🔇" : "🔊";
   $("#musicVol").value = Math.round(s.volume * 100);
-  const canControl = canControlMusic();
-  $("#musicPrev").disabled = !canControl; $("#musicNext").disabled = !canControl;
-  $("#musicProgressTrack")?.classList.toggle("locked", !canControl);
   $("#musicSyncNote").classList.toggle("hidden", !s.synced);
-  $("#musicEq")?.classList.toggle("on", s.playing && !s.muted);
-  const disc = $("#musicDisc");
-  if (disc){
-    disc.classList.toggle("spin", s.playing && !s.muted);
-    disc.classList.toggle("has-image", !!s.image);
-    disc.style.backgroundImage = s.image ? `url("${s.image}")` : "";
-    const center = disc.querySelector(".music-disc-center");
-    if (center) center.textContent = s.image ? "" : "🎵";
-  }
-  const bg = $("#musicBg");
-  if (bg){
-    bg.style.backgroundImage = s.image ? `url("${s.image}")` : "";
-    bg.classList.toggle("show", !!s.image);
-  }
+  $("#musicDisc")?.classList.toggle("spin", s.playing && !s.muted);
   $("#musicError")?.classList.toggle("hidden", !s.hasError);
+
+  // Portada: gira dentro del disco y también se ve grande y difuminada de
+  // fondo. Si la imagen no carga (o la canción no tiene "cover" configurado),
+  // se cae de vuelta al disco genérico de siempre, sin romper nada.
+  const cover = s.track?.cover || null;
+  const img = $("#musicCoverImg"), center = $("#musicDiscCenter"), backdrop = $("#musicBackdrop");
+  if (cover){
+    if (img && img.dataset.src !== cover){
+      img.dataset.src = cover;
+      img.onerror = () => { img.classList.add("hidden"); center?.classList.remove("hidden"); backdrop?.classList.remove("show"); };
+      img.onload = () => {
+        img.classList.remove("hidden");
+        center?.classList.add("hidden");
+        if (backdrop){ backdrop.style.backgroundImage = `url("${cover}")`; backdrop.classList.add("show"); }
+      };
+      img.src = cover;
+    }
+  } else {
+    if (img){ img.classList.add("hidden"); img.removeAttribute("src"); delete img.dataset.src; }
+    center?.classList.remove("hidden");
+    backdrop?.classList.remove("show");
+  }
 });
 
+// Arrastrar/tocar la barra de progreso adelanta o retrocede la canción actual.
+(function(){
+  const hit = $("#musicProgressHit");
+  if (!hit) return;
+  let dragging = false;
+  const seekFromEvent = (e) => {
+    const rect = hit.getBoundingClientRect();
+    const x = (e.touches ? e.touches[0].clientX : e.clientX) - rect.left;
+    Music.seekTo(Math.max(0, Math.min(1, x / rect.width)));
+  };
+  hit.addEventListener("pointerdown", (e) => { dragging = true; seekFromEvent(e); });
+  window.addEventListener("pointermove", (e) => { if (dragging) seekFromEvent(e); });
+  window.addEventListener("pointerup", () => { dragging = false; });
+})();
+
 // Barra de progreso: se actualiza sola cada segundo mientras el panel de
-// música esté abierto (no vale la pena gastar ciclos si está cerrado), y
-// se puede arrastrar para adelantar o retroceder la canción.
+// música esté abierto (no vale la pena gastar ciclos si está cerrado).
 function fmtTime(sec){
   if (!isFinite(sec) || sec < 0) sec = 0;
   const m = Math.floor(sec/60), s = Math.floor(sec%60);
   return `${m}:${String(s).padStart(2,"0")}`;
 }
-let draggingProgress = false;
 setInterval(() => {
-  if ($("#musicPanel").classList.contains("hidden") || draggingProgress) return;
+  if ($("#musicPanel").classList.contains("hidden")) return;
   const s = Music.state();
   const pct = s.duration ? Math.min(100, (s.currentTime/s.duration)*100) : 0;
   $("#musicProgressFill").style.width = pct + "%";
@@ -1049,53 +1045,10 @@ setInterval(() => {
   $("#musicTimeDur").textContent = fmtTime(s.duration || (s.track?.duration||0));
 }, 1000);
 
-(() => {
-  const track = $("#musicProgressTrack");
-  if (!track) return;
-  function pctFromEvent(e){
-    const r = track.getBoundingClientRect();
-    const x = (e.touches ? e.touches[0].clientX : e.clientX) - r.left;
-    return Math.max(0, Math.min(1, x / r.width));
-  }
-  function seekFromEvent(e){
-    const s = Music.state();
-    const dur = s.duration || s.track?.duration || 0;
-    if (!dur) return;
-    const pct = pctFromEvent(e);
-    $("#musicProgressFill").style.width = (pct*100) + "%";
-    $("#musicTimeCur").textContent = fmtTime(pct*dur);
-    return pct * dur;
-  }
-  function onDown(e){
-    if (!canControlMusic()) return;
-    draggingProgress = true;
-    track.classList.add("dragging");
-    seekFromEvent(e);
-    e.preventDefault();
-  }
-  function onMove(e){ if (draggingProgress) seekFromEvent(e); }
-  function onUp(e){
-    if (!draggingProgress) return;
-    draggingProgress = false;
-    track.classList.remove("dragging");
-    const seconds = seekFromEvent(e);
-    if (seconds == null) return;
-    const s = Music.state();
-    if (s.synced && amHost()) Music.hostSeek(seconds, S.room, sb);
-    else Music.seekTo(seconds);
-  }
-  track.addEventListener("pointerdown", onDown);
-  track.addEventListener("pointermove", onMove);
-  window.addEventListener("pointerup", onUp);
-  track.addEventListener("touchstart", onDown, { passive:false });
-  track.addEventListener("touchmove", onMove, { passive:false });
-  window.addEventListener("touchend", onUp);
-})();
-
 // ---------- CHAT ----------
 $("#chatFab").onclick = () => { $("#chatPanel").classList.remove("hidden"); S.unread = 0; badge(); };
 $("#chatClose").onclick = closeChat;
-function closeChat(){ $("#chatPanel").classList.add("hidden"); $("#stickerTray").classList.add("hidden"); $("#gifTray").classList.add("hidden"); }
+function closeChat(){ $("#chatPanel").classList.add("hidden"); $("#stickerTray").classList.add("hidden"); }
 function badge(){
   $("#chatBadge").textContent = S.unread;
   $("#chatBadge").classList.toggle("hidden", S.unread === 0);
@@ -1107,48 +1060,8 @@ $("#btnStickers").onclick = () => {
     b.onclick = () => { sendMsg(null, s); t.classList.add("hidden"); };
     t.appendChild(b);
   });
-  $("#gifTray").classList.add("hidden");
   t.classList.toggle("hidden");
 };
-
-// ---------- GIFs de internet (búsqueda GIPHY) ----------
-// Solo se aceptan URLs de los CDN oficiales de GIPHY/Tenor al mostrar,
-// para que nadie pueda inyectar imágenes de otros sitios en el chat.
-const SAFE_GIF = /^https:\/\/(media\d?\.giphy\.com|i\.giphy\.com|media\.tenor\.com|c\.tenor\.com)\//;
-$("#btnGifs").onclick = () => {
-  $("#stickerTray").classList.add("hidden");
-  $("#gifTray").classList.toggle("hidden");
-  if (!$("#gifTray").classList.contains("hidden")) $("#gifQuery").focus();
-};
-$("#gifGo").onclick = searchGifs;
-$("#gifQuery").addEventListener("keydown", e => { if (e.key === "Enter") searchGifs(); });
-async function searchGifs(){
-  const q = $("#gifQuery").value.trim();
-  const box = $("#gifResults");
-  if (!q){ box.innerHTML = '<p class="gif-hint">Escribe algo y toca la lupa 🎬</p>'; return; }
-  box.innerHTML = '<p class="gif-hint">Buscando GIFs… 🔎</p>';
-  try {
-    const r = await fetch(`https://api.giphy.com/v1/gifs/search?api_key=${GIPHY_KEY}&q=${encodeURIComponent(q)}&limit=24&rating=pg-13&lang=es`);
-    const j = await r.json();
-    if (!j.data || !j.data.length){
-      box.innerHTML = '<p class="gif-hint">Sin resultados 😅 Prueba con otra palabra</p>'; return;
-    }
-    box.innerHTML = "";
-    j.data.forEach(g => {
-      const url = g.images && g.images.fixed_width && g.images.fixed_width.url;
-      if (!url || !SAFE_GIF.test(url)) return;
-      const img = document.createElement("img");
-      img.src = url; img.loading = "lazy"; img.alt = g.title || "GIF";
-      img.onclick = () => {
-        sendMsg(null, "gif:" + url);
-        $("#gifTray").classList.add("hidden");
-      };
-      box.appendChild(img);
-    });
-  } catch (e) {
-    box.innerHTML = '<p class="gif-hint">⚠️ No se pudo buscar. Revisa tu internet o la llave GIPHY_KEY en js/config.js</p>';
-  }
-}
 $("#btnSend").onclick = () => { const v = $("#chatText").value.trim(); if (v){ sendMsg(v, null); $("#chatText").value=""; } };
 $("#chatText").addEventListener("keydown", e => { if (e.key === "Enter") $("#btnSend").click(); });
 
@@ -1178,17 +1091,9 @@ function appendMsg(m){
   else {
     d.className = "msg" + (m.player_id === S.me.id ? " mine" : "");
     let text = m.content ? esc(S.room.settings.filter === "on" ? censor(m.content) : m.content) : "";
-    let inner;
-    if (m.sticker && m.sticker.startsWith("gif:")){
-      const u = m.sticker.slice(4);
-      inner = SAFE_GIF.test(u)
-        ? `<img class="gif-msg" src="${esc(u)}" loading="lazy" alt="GIF">`
-        : `<div>🎬 GIF</div>`;
-    } else if (m.sticker) inner = `<div class="stick">${m.sticker}</div>`;
-    else inner = `<div>${text}</div>`;
     d.innerHTML = `<div class="who">${m.avatar} ${esc(m.player_name)}
       ${m.player_id !== S.me.id ? `<button data-block="${m.player_id}">🚫</button>` : ""}</div>
-      ${inner}`;
+      ${m.sticker ? `<div class="stick">${m.sticker}</div>` : `<div>${text}</div>`}`;
     const bb = d.querySelector("[data-block]");
     if (bb) bb.onclick = () => blockPlayer(m.player_id, m.player_name);
   }
