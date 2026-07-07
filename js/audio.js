@@ -1,6 +1,9 @@
 // ===== Sonidos (WebAudio, sin archivos) + vibración =====
 const Sfx = (() => {
   let ctx = null;
+  // Interruptor global de EFECTOS del juego (tonos + acierto/ganador/inicio).
+  // Independiente de la música. Se guarda en el teléfono.
+  let sfxOn = localStorage.getItem("gq_sfx_off") !== "1";
   const ac = () => (ctx ||= new (window.AudioContext || window.webkitAudioContext)());
   const unlock = () => {
     try { ac().resume(); } catch(e){}
@@ -21,6 +24,7 @@ const Sfx = (() => {
   silentUnlock.volume = 1; // el WAV en sí es silencio total (todo 0x80 = cero)
 
   function tone(freq, dur=0.15, type="sine", vol=0.25, when=0){
+    if (!sfxOn) return;
     try{
       const a = ac(), o = a.createOscillator(), g = a.createGain();
       o.type = type; o.frequency.value = freq;
@@ -46,6 +50,8 @@ const Sfx = (() => {
     join(){ tone(659,0.1,"triangle",0.2); tone(880,0.15,"triangle",0.2,0.1); },
     leave(){ tone(440,0.12,"triangle",0.2); tone(330,0.2,"triangle",0.2,0.12); },
     fanfare(){ [523,659,784,1047,784,1047,1319].forEach((f,i)=>tone(f,0.22,"triangle",0.32,i*0.14)); vib([100,50,100,50,300]); },
+    setEnabled(on){ sfxOn = !!on; localStorage.setItem("gq_sfx_off", on ? "0" : "1"); },
+    isEnabled(){ return sfxOn; },
   };
 })();
 
@@ -66,7 +72,7 @@ const Music = (() => {
 
   let trackIdx = 0;
   let userVol = parseFloat(localStorage.getItem(LS_VOL));
-  if (isNaN(userVol)) userVol = 0.25;         // 25% por defecto
+  if (isNaN(userVol)) userVol = 0.15;         // 15% por defecto: música de fondo suave
   let muted = localStorage.getItem(LS_MUTED) === "1";
   let started = false;
   let userPaused = false;                      // true si el jugador pausó a propósito (no reintentar solo)
@@ -235,12 +241,14 @@ const Music = (() => {
     const wasOn = !!(syncState && syncState.on);
     const changed = !syncState || (sync?.trackId !== syncState.trackId) || (sync?.startedAt !== syncState.startedAt) || (!!sync?.on !== wasOn);
     syncState = sync;
-    if (!started) return;
     if (sync && sync.on){
+      // Si la sincronía está activa, la música arranca aunque en este
+      // celular nunca hubiera empezado (así todos suenan juntos).
+      if (!started) started = true;
       if (changed) applySyncState(sync);
     } else if (wasOn){
       // El anfitrión apagó la sincronía: cada quien vuelve a su canción guardada.
-      loadTrack(trackIdx);
+      if (started) loadTrack(trackIdx);
     }
   }
 
@@ -334,6 +342,7 @@ const WinnerFx = (() => {
   document.addEventListener("pointerdown", warmUp, { once:true });
 
   function play(idx){
+    if (!Sfx.isEnabled()) return;
     const s = (WINNER_SOUNDS || [])[idx];
     if (!s) return;
     try {
@@ -364,6 +373,7 @@ const OutcomeFx = (() => {
   document.addEventListener("pointerdown", warmUp, { once:true });
 
   function play(ok){
+    if (!Sfx.isEnabled()) return;
     const pool = ok ? CORRECT_SOUNDS : INCORRECT_SOUNDS;
     if (!pool || !pool.length) return;
     const file = pool[Math.floor(Math.random()*pool.length)];
@@ -393,6 +403,7 @@ const StartFx = (() => {
     try { primeAudio(get()); } catch(e){}
   }, { once:true });
   function play(){
+    if (!Sfx.isEnabled()) return;
     if (typeof GAME_START_SOUND === "undefined" || !GAME_START_SOUND) return;
     try {
       const el2 = get();

@@ -22,6 +22,14 @@ let sb = null;
 const hasBackend = !SUPABASE_URL.includes("PEGA_AQUI");
 if (hasBackend) sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
+// ---------- Modo PANTALLA (Smart TV / Roku) ----------
+// Si la URL trae ?tv=1, esta pestaña se comporta como la PANTALLA grande:
+// crea la sala, muestra el QR y renderiza todo para la TV. No usa la UI de
+// teléfono. Se corta aquí el arranque normal.
+if (typeof TV !== "undefined" && TV.isTVRequested()){
+  document.addEventListener("DOMContentLoaded", () => TV.start(sb));
+}
+
 // ---------- Estado ----------
 const S = {
   mode: null,          // 'create' | 'join'
@@ -170,6 +178,25 @@ async function resync(){
 // llama después de esperar una respuesta del servidor, Safari ya lo bloqueó.
 $("#btnGoCreate").onclick = () => { Music.enterGame(); Sfx.click(); S.mode = "create"; openProfile(); };
 $("#btnGoJoin").onclick = () => { Music.enterGame(); Sfx.click(); S.mode = "join"; openProfile(); };
+$("#btnSolo") && ($("#btnSolo").onclick = () => { Music.enterGame(); Sfx.click(); show("solo-menu"); });
+$("#soloBackHome") && ($("#soloBackHome").onclick = () => { Sfx.click(); show("home"); });
+$("#soloCruci") && ($("#soloCruci").onclick = () => {
+  Sfx.click();
+  if (typeof Cruci === "undefined") return toast("No se pudo cargar el juego");
+  Cruci.open(() => show("solo-menu")); // al salir del cruci, vuelve al menú
+});
+$("#soloMinis") && ($("#soloMinis").onclick = () => { Sfx.click(); startSoloMinis(); });
+$("#btnTV") && ($("#btnTV").onclick = () => {
+  Sfx.click();
+  modal(`<h3>📺 Modo pantalla</h3>
+    <div style="text-align:left;font-weight:700;line-height:1.6;color:var(--ink2)">
+      Abre <b>esta misma página en tu Smart TV</b> (o Roku con navegador) agregando <b>?tv=1</b> al final de la dirección.<br><br>
+      La TV mostrará un <b>código y un QR</b>; los jugadores lo escanean con el teléfono y usan el celular como control 🎮.<br><br>
+      Las preguntas se ven en la <b>TV</b> y los mini-juegos en el <b>teléfono</b>. El anfitrión puede <b>pausar</b> con el botón OK del control.
+    </div>`,
+    [{ t:"Abrir modo pantalla aquí 📺", cls:"btn-blue", fn: () => { location.href = location.pathname + "?tv=1"; } },
+     { t:"Cerrar" }]);
+});
 $("#btnHowTo") && ($("#btnHowTo").onclick = () => {
   Sfx.click();
   modal(`<h3>❓ Cómo se juega</h3>
@@ -291,6 +318,7 @@ function saveSession(){ localStorage.setItem("gq_session", JSON.stringify({ room
 
 async function enterRoom(room, me){
   S.room = room; S.me = me; S.solo = false;
+  lastSoundPing = (room.settings && room.settings.soundPing && room.settings.soundPing.t) || 0;
   saveSession();
   keepAwake();
   await subscribeRoom();
@@ -298,13 +326,31 @@ async function enterRoom(room, me){
   renderLobby();
   show("lobby");
   Sfx.join();
-  StartFx.play();
   Music.onRoomUpdate(S.room);
   Music.enterGame();
 }
 
 // ---------- Reconexión al abrir la app ----------
 (async function tryRejoin(){
+  // En modo pantalla (TV) no corre el flujo de teléfono.
+  if (typeof TV !== "undefined" && TV.isTVRequested()) return;
+  // Si llegó por un enlace compartido con ?sala=CÓDIGO, saltar directo a
+  // "entrar a la sala" con el código ya puesto (más fácil que buscarlo).
+  const salaParam = new URLSearchParams(location.search).get("sala");
+  if (salaParam && /^[A-Za-z0-9]{4}$/.test(salaParam)){
+    const raw0 = localStorage.getItem("gq_session");
+    if (!raw0){ // no reventar una reconexión en curso
+      Music.enterGame();
+      S.mode = "join";
+      openProfile();
+      const codeInput = $("#inpCode");
+      if (codeInput) codeInput.value = salaParam.toUpperCase();
+      toast("🎪 Entrando a la sala " + salaParam.toUpperCase());
+      // limpiar el parámetro para que un refresh no reintente
+      history.replaceState(null, "", location.pathname);
+      return;
+    }
+  }
   const raw = localStorage.getItem("gq_session");
   if (!raw || !hasBackend) return;
   const { roomId, playerId } = JSON.parse(raw);
@@ -430,16 +476,38 @@ function playMySound(idx, btn){
   setTimeout(() => btn.classList.remove("playing"), 700);
   WinnerFx.play(idx);
   showSoundToast(idx, S.me);
-  // Avisar a todos los demás por broadcast (efímero, sin tocar la base de datos)
-  if (S.channel && !S.solo){
+  if (S.solo) return;
+  // Avisar a todos: dos vías por seguridad —
+  //  1) broadcast (instantáneo, efímero)
+  //  2) un "soundPing" en la sala, que viaja por el mismo canal de Realtime
+  //     que ya funciona siempre para las actualizaciones de sala. Así, si el
+  //     broadcast se pierde, el ping igual llega.
+  if (S.channel){
     try {
       S.channel.send({ type:"broadcast", event:"sound",
-        payload:{ idx, by: S.me.name, avatar: S.me.avatar, from: S.me.id } });
+        payload:{ idx, by: S.me.name, avatar: S.me.avatar, from: S.me.id, t: Date.now() } });
     } catch(e){}
   }
+  try {
+    const settings = { ...S.room.settings,
+      soundPing: { idx, by: S.me.name, avatar: S.me.avatar, from: S.me.id, t: Date.now() } };
+    sb.from("rooms").update({ settings }).eq("id", S.room.id);
+  } catch(e){}
+}
+let lastSoundPing = 0;
+function handleSoundPing(){
+  const p = S.room && S.room.settings && S.room.settings.soundPing;
+  if (!p || p.t === lastSoundPing) return;
+  lastSoundPing = p.t;
+  if (p.from === (S.me && S.me.id)) return; // el mío ya sonó localmente
+  if (typeof WINNER_SOUNDS === "undefined" || !WINNER_SOUNDS[p.idx]) return;
+  WinnerFx.play(p.idx);
+  showSoundToast(p.idx, { name: p.by, avatar: p.avatar });
 }
 function onRemoteSound(p){
   if (!p || p.from === (S.me && S.me.id)) return; // el mío ya sonó localmente
+  if (p.t && p.t === lastSoundPing) return;       // ya sonó por el ping
+  if (p.t) lastSoundPing = p.t;
   if (typeof WINNER_SOUNDS === "undefined" || !WINNER_SOUNDS[p.idx]) return;
   WinnerFx.play(p.idx);
   showSoundToast(p.idx, { name: p.by, avatar: p.avatar });
@@ -550,8 +618,9 @@ function renderPlayers(){
 
 $("#btnShare").onclick = () => {
   Sfx.click();
-  const text = `🎲 ¡Juguemos GAME QUIZ! Entra con el código ${S.room.code} 👉 ${location.origin + location.pathname}`;
-  if (navigator.share) navigator.share({ text }).catch(()=>{});
+  const url = location.origin + location.pathname + "?sala=" + S.room.code;
+  const text = `🎲 ¡Juguemos GAME QUIZ! Toca aquí para entrar directo a mi sala (código ${S.room.code}) 👉 ${url}`;
+  if (navigator.share) navigator.share({ title:"GAME QUIZ", text, url }).catch(()=>{});
   else { navigator.clipboard.writeText(text); toast("📋 Invitación copiada"); }
 };
 
@@ -880,7 +949,7 @@ async function finishQuestion(i){
     //  · Responder mal da 15 de participación.
     //  · La ÚLTIMA pregunta vale DOBLE (remontadas de último minuto 🔥).
     const PLACE = [60,50,42,35];
-    const INCORRECT_PTS = 15;
+    const INCORRECT_PTS = 5;
     const isFinal = i >= S.room.settings.qids.length - 1;
     let place = 0;
     for (const a of (answers||[])){
@@ -920,10 +989,40 @@ function onAnswerInsert(a){
 let lastStatus = "", lastQ = -2;
 const answersThisQ = new Set();
 
+// Muestra/oculta el aviso de "juego en pausa" en el teléfono.
+function showPauseOverlay(on){
+  let ov = document.getElementById("pauseOverlay");
+  if (on){
+    if (!ov){
+      ov = document.createElement("div");
+      ov.id = "pauseOverlay";
+      ov.innerHTML = `<div class="pause-card">⏸<b>Juego en pausa</b><small>El anfitrión pausó desde la pantalla</small></div>`;
+      document.body.appendChild(ov);
+    }
+  } else if (ov){ ov.remove(); }
+}
+// Al REANUDAR, corre las marcas de tiempo hacia adelante por el rato pausado.
+async function resumeShiftDeadlines(pausedMs){
+  if (!amHost() || !S.room || pausedMs <= 0) return;
+  const upd = {};
+  if (S.room.phase_until) upd.phase_until = S.room.phase_until + pausedMs;
+  if (S.room.q_started_at) upd.q_started_at = new Date(new Date(S.room.q_started_at).getTime() + pausedMs).toISOString();
+  if (Object.keys(upd).length){ try { await sb.from("rooms").update(upd).eq("id", S.room.id); } catch(e){} }
+}
+
 async function handleRoomState(){
   // ¿Me expulsaron? El aviso llega dentro de settings.kick por Realtime.
   const k = S.room.settings && S.room.settings.kick;
   if (k && S.me && k.id === S.me.id) return kickedOut();
+  handleSoundPing(); // botón sorpresa de otro jugador (vía Realtime, respaldo del broadcast)
+  // ¿El anfitrión pausó desde la TV? Mostrar aviso y congelar: el watchdog
+  // no avanza mientras esté en pausa. Al reanudar se corren las marcas de
+  // tiempo para que no salte de fase.
+  const paused = !!(S.room.settings && S.room.settings.paused);
+  if (paused && !S._pausedAt) S._pausedAt = Date.now();
+  showPauseOverlay(paused);
+  if (paused){ stopHostLoop(); lastStatus = S.room.status; return; }
+  if (S._pausedAt){ const dur = Date.now() - S._pausedAt; S._pausedAt = 0; resumeShiftDeadlines(dur); }
   const st = S.room.status;
   Music.setGamePhase(st); // baja a 10% durante la partida, sube al volver a lobby/podio
   if (["countdown","question","reveal","board","mini"].includes(st)) keepAwake();
@@ -947,6 +1046,7 @@ function runCountdown(){
   S.myStreak = 0; // partida nueva, racha nueva
   boardAnimQ = null; boardDeltas = {};
   const bl = $("#boardList"); if (bl) bl.innerHTML = ""; // marcador limpio para la ronda nueva
+  StartFx.play(); // sonido "¡empieza el juego!" para TODOS los jugadores
   show("countdown");
   let n = 3;
   $("#cdNum").textContent = n; Sfx.countdown();
@@ -1403,6 +1503,18 @@ $("#chkMusicSync").onchange = async (e) => {
   Sfx.click();
   await Music.hostSetSync(e.target.checked, S.room, sb);
 };
+
+// Interruptor de sonidos del juego (efectos), separado de la música.
+function refreshSfxToggle(){
+  const b = $("#sfxToggle");
+  if (b) b.textContent = Sfx.isEnabled() ? "🎮 Sonidos del juego: activados" : "🔇 Sonidos del juego: apagados";
+}
+$("#sfxToggle") && ($("#sfxToggle").onclick = () => {
+  Sfx.setEnabled(!Sfx.isEnabled());
+  if (Sfx.isEnabled()) Sfx.click();
+  refreshSfxToggle();
+});
+refreshSfxToggle();
 
 $("#musicFab").onclick = () => { $("#musicPanel").classList.remove("hidden"); };
 $("#musicClose").onclick = closeMusicPanel;
@@ -1921,6 +2033,64 @@ const MINI_META = {
 const RANK_MINIS = { memoria:[58,50,44,39,35,32], preg:[58,50,44,39], reaccion:[58,50,44,39,35,32] };
 
 // ---------- El anfitrión arma el mini-juego ----------
+// ============================================================
+// MINI-JUEGOS SUELTOS (individuales, sin sala ni internet)
+// Reusa los constructores y renders de los minis del multijugador en un
+// envoltorio local: arma el mini, lo corre y al terminar muestra el
+// puntaje con opción de repetir. No toca la base de datos.
+// ============================================================
+const SOLO_MINIS = ["flash","color","memoria","punteria","reaccion","ritmo","preg"];
+const SOLO_MINI_NAMES = { flash:"NúmeroFlash 🔢", color:"Colorín 🎨", memoria:"Memoria 🧠",
+  punteria:"Puntería 🎯", reaccion:"Reacción ⚡", ritmo:"Ritmo 🎵", preg:"Preguntón 💡" };
+let soloMiniActive = null;
+
+async function startSoloMinis(kind){
+  S.solo = true; S.soloMini = true;
+  if (!S.me) S.me = { id:"solo", name:"Tú", avatar:"😎", score:0, connected:true };
+  const pick = kind || SOLO_MINIS[Math.floor(Math.random()*SOLO_MINIS.length)];
+  soloMiniActive = pick;
+  Music.enterGame();
+  let data;
+  try {
+    if (pick === "flash") data = buildFlash();
+    else if (pick === "color") data = buildColor();
+    else if (pick === "memoria") data = buildMemoria();
+    else if (pick === "punteria") data = buildPunteria();
+    else if (pick === "reaccion") data = buildReaccion();
+    else if (pick === "ritmo") data = buildRitmo();
+    else if (pick === "preg") data = await buildPreg();
+  } catch(e){ data = null; }
+  if (!data){ toast("No se pudo cargar el mini-juego"); return show("solo-menu"); }
+  const until = Date.now() + (pick === "punteria" || pick === "reaccion" ? 20000 : 35000);
+  const m = { kind:pick, phase:"play", round:0, data, until };
+  S.room = { status:"mini", mini_state:m, settings:{ filter:"off" }, current_q:0 };
+  startMiniPlay(m);
+}
+
+// Llamado por los minis cuando terminan, SOLO en modo mini-suelto.
+function soloMiniFinish(score){
+  if (!S.soloMini) return false;
+  clearInterval(S.miniPlayIv);
+  const card = document.createElement("div");
+  card.className = "cruci-win";
+  card.innerHTML = `
+    <div class="cw-box">
+      <div class="cw-emoji">🎉</div>
+      <p class="cw-label">${SOLO_MINI_NAMES[soloMiniActive] || "Mini-juego"}</p>
+      <div class="cw-key"><span>${score|0}</span></div>
+      <p class="cw-msg">puntos</p>
+      <div class="cw-btns">
+        <button class="btn big btn-green" id="smAgain">Otro mini-juego 🎲</button>
+        <button class="btn ghost" id="smExit">Salir al menú</button>
+      </div>
+    </div>`;
+  document.body.appendChild(card);
+  try { if (typeof Fun !== "undefined") Fun.confetti(50); } catch(e){}
+  card.querySelector("#smAgain").onclick = () => { card.remove(); startSoloMinis(); };
+  card.querySelector("#smExit").onclick = () => { card.remove(); S.soloMini = false; S.solo = false; S.room = null; show("solo-menu"); };
+  return true;
+}
+
 async function startMiniGame(entry){
   if (!amHost()) return;
   const kind = entry.kind;
@@ -2124,7 +2294,7 @@ async function finishMini(){
 
   const byPlayer = {};
   const table = RANK_MINIS[m.kind];
-  const MINI_TRY_PTS = 10; // participación: lo intentó pero no acertó a tiempo
+  const MINI_TRY_PTS = 5; // participación: lo intentó pero no acertó a tiempo
   if (table){
     // Reparto por ORDEN DE LLEGADA. Quienes acertaron (payload.ok) según su
     // tiempo (payload.t, menor = más rápido); quienes lo intentaron sin
@@ -2138,8 +2308,18 @@ async function finishMini(){
       byPlayer[s.player_id] = (byPlayer[s.player_id]||0) + MINI_TRY_PTS;
     });
   } else {
-    // Puntaje directo: se suma el score crudo que guardó cada jugador
-    (scores||[]).forEach(s => { byPlayer[s.player_id] = (byPlayer[s.player_id]||0) + s.score; });
+    // Puntaje directo (memoria, colorín, flash, ritmo, puntería…): cada quien
+    // conserva su score crudo, PERO además se ordena por score y se da un bono
+    // de podio, para que siempre haya 1º, 2º, 3º aunque varios acierten.
+    const rows = (scores || []);
+    rows.forEach(s => { byPlayer[s.player_id] = (byPlayer[s.player_id]||0) + (s.score||0); });
+    const PLACE_BONUS = [25, 15, 8]; // oro/plata/bronce
+    const ranked = Object.entries(byPlayer)
+      .filter(([,v]) => v > 0)
+      .sort((a,b) => b[1] - a[1]);
+    ranked.forEach(([pid], idx) => {
+      if (idx < PLACE_BONUS.length) byPlayer[pid] += PLACE_BONUS[idx];
+    });
   }
 
   for (const [pid, pts] of Object.entries(byPlayer)){
@@ -2396,7 +2576,7 @@ async function flashTap(btn, val, m){
 let flashSubmitted = false;
 async function flashSubmit(m){
   if (flashSubmitted) return; flashSubmitted = true;
-  if (S.solo){ S.soloMiniResult = { score:S.flashScore }; return; }
+  if (S.solo){ S.soloMiniResult = { score:S.flashScore }; if (soloMiniFinish(S.flashScore)) return; return; }
   try {
     await sb.from("mini_scores").insert({
       room_id:S.room.id, player_id:S.me.id, kind:"flash", round:0, score:S.flashScore
@@ -2535,7 +2715,7 @@ async function colorPick(btn, label, r, m){
 let colorSubmitted = false;
 async function colorSubmit(m){
   if (colorSubmitted) return; colorSubmitted = true;
-  if (S.solo){ S.soloMiniResult = { score:S.colorScore }; return; }
+  if (S.solo){ S.soloMiniResult = { score:S.colorScore }; if (soloMiniFinish(S.colorScore)) return; return; }
   try {
     await sb.from("mini_scores").insert({
       room_id:S.room.id, player_id:S.me.id, kind:"color", round:0, score:S.colorScore
@@ -2620,7 +2800,7 @@ async function memoriaTap(btn, emo, m){
 }
 async function memoriaSubmit(m, ok, t){
   if (memoriaSubmitted) return; memoriaSubmitted = true;
-  if (S.solo){ S.soloMiniResult = { ok, t: t||999999 }; return; }
+  if (S.solo){ S.soloMiniResult = { ok, t: t||999999 }; if (soloMiniFinish(ok?100:20)) return; return; }
   try {
     await sb.from("mini_scores").insert({
       room_id:S.room.id, player_id:S.me.id, kind:"memoria", round:m.round||0,
@@ -2688,7 +2868,7 @@ async function punteriaSubmit(m){
   if (punteriaSubmitted) return; punteriaSubmitted = true;
   clearInterval(S.puntSpawnIv);
   const pts = S.puntHits * 10; // +10 por acierto, sin tope
-  if (S.solo){ S.soloMiniResult = { score:pts }; return; }
+  if (S.solo){ S.soloMiniResult = { score:pts }; if (soloMiniFinish(pts)) return; return; }
   try {
     await sb.from("mini_scores").insert({
       room_id:S.room.id, player_id:S.me.id, kind:"punteria", round:0, score:pts
@@ -2772,7 +2952,7 @@ function reaccionFinishLocal(m){
 }
 async function reaccionSubmit(m, ok, t){
   if (reaccionSubmitted) return; reaccionSubmitted = true;
-  if (S.solo){ S.soloMiniResult = { ok, t: t||999999 }; return; }
+  if (S.solo){ S.soloMiniResult = { ok, t: t||999999 }; if (soloMiniFinish(ok?100:20)) return; return; }
   try {
     await sb.from("mini_scores").insert({
       room_id:S.room.id, player_id:S.me.id, kind:"reaccion", round:0,
@@ -2871,7 +3051,7 @@ function ritmoFinishLocal(m){
 async function ritmoSubmit(m){
   if (ritmoSubmitted) return; ritmoSubmitted = true;
   const pts = S.ritmoScore * 10; // 10 por paso correcto
-  if (S.solo){ S.soloMiniResult = { score:pts }; return; }
+  if (S.solo){ S.soloMiniResult = { score:pts }; if (soloMiniFinish(pts)) return; return; }
   try {
     await sb.from("mini_scores").insert({
       room_id:S.room.id, player_id:S.me.id, kind:"ritmo", round:0, score:pts
@@ -2948,7 +3128,7 @@ async function pregTapKey(letter, btn, m){
 }
 async function pregSubmit(m, ok, t){
   if (pregSubmitted) return; pregSubmitted = true;
-  if (S.solo){ S.soloMiniResult = { ok, t: t||999999 }; return; }
+  if (S.solo){ S.soloMiniResult = { ok, t: t||999999 }; if (soloMiniFinish(ok?100:20)) return; return; }
   try {
     await sb.from("mini_scores").insert({
       room_id:S.room.id, player_id:S.me.id, kind:"preg", round:0,
