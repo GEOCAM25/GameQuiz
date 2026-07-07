@@ -46,6 +46,22 @@ const Scenes = (() => {
     });
   }
 
+  // Bichos que cruzan la pantalla y SE ARRANCAN si los tocas (peces, naves…).
+  // La interacción la maneja Fun.bindCritters tras construir la escena.
+  function critters(list, n, o={}){
+    if (reduced) n = Math.min(n, 4);
+    for (let i=0;i<n;i++){
+      const c = el("critter " + (o.cls||""));
+      c.textContent = list[i % list.length];
+      c.style.top = rnd(o.y0??12, o.y1??82) + "%";
+      c.style.fontSize = rnd(o.s0??26, o.s1??44) + "px";
+      const dur = rnd(o.d0??10, o.d1??20);
+      c.style.animationDuration = dur + "s";
+      c.style.animationDelay = (-rnd(0, dur)) + "s";
+      if (Math.random() < 0.5) c.classList.add("rev"); // nada/vuela hacia el otro lado
+    }
+  }
+
   // Nubes con volumen y sombra proyectada (día) o nubes oscuras (noche)
   function clouds(n, dark){
     for (let i=0;i<n;i++){
@@ -69,11 +85,22 @@ const Scenes = (() => {
               floats(["🎈","🪁","🎡","🎠","🎪","🎢"]); }
     },
     aurora(){ el("fx-aur a1"); el("fx-aur a2"); el("fx-aur a3"); el("fx-moon");
-      parts("pt-star",30,{y1:80,d0:2,d1:5}); floats(["✨","⛰️","🦌","🌲"]); },
+      parts("pt-star",30,{y1:80,d0:2,d1:5}); critters(["🦅","🦉","🌠"],3,{y1:40,d0:16,d1:26});
+      floats(["✨","⛰️","🦌","🌲"]); },
     oceano(n){ el(n ? "fx-moon" : "fx-sun low"); el("fx-sea"); clouds(3, n);
       parts("pt-bubble",8,{y0:65,y1:100,d0:6,d1:12}); floats(["⛵","🐬","🏝️","🐚","🦀"]); },
     candy(){ el("fx-sun candy"); clouds(5); parts("pt-spark",8,{d0:3,d1:6});
+      critters(["🦄","🎈","🍬"],3,{y1:55,d0:14,d1:22});
       floats(["🍭","🍬","🍩","🧁","🍦","🌈"]); },
+
+    // NUEVO — Bajo el agua: peces que se arrancan si los tocas 🐠
+    submarino(){ el("fx-underwater"); parts("pt-bubble",16,{y0:20,y1:100,d0:5,d1:11});
+      critters(["🐠","🐟","🐡","🦈","🐢","🦑","🐙","🐬"],9,{y0:14,y1:78,d0:9,d1:18,cls:"swim"});
+      floats(["🪸","🐚","⚓","🌊"]); },
+    // NUEVO — Espacio nocturno: naves y ovnis que cruzan (tócalos y escapan) 🛸
+    galaxia(){ el("fx-moon"); parts("pt-star",40,{d0:2,d1:5}); el("fx-meteor m1"); el("fx-meteor m2");
+      critters(["🛸","🚀","🛰️","☄️","👽","⭐"],8,{y0:8,y1:70,d0:8,d1:16,cls:"fly"});
+      floats(["🪐","🌌","🌠","🌍"]); },
 
     // Escenas por categoría
     espacio(){ parts("pt-star",34,{d0:2,d1:5}); el("fx-planet"); el("fx-meteor m1"); el("fx-meteor m2");
@@ -123,7 +150,7 @@ const Scenes = (() => {
     tecnologia:"cyber", historia:"museo", animales:"selva", futbol:"estadio",
     deportes:"arena", trivia:"arcade", curiosos:"lab", banderas:"mundo",
   };
-  const AMBIENT = ["fiesta","aurora","oceano","candy"];
+  const AMBIENT = ["fiesta","galaxia","submarino","aurora","oceano","candy"];
   const ROTATE_MS = 30000;   // cada cuánto rota el ambiente del lobby/inicio
 
   let current = "", mode = "", ambIdx = 0, rotTimer = null;
@@ -138,6 +165,8 @@ const Scenes = (() => {
       document.body.dataset.scene = name;
       (B[name] || B.fiesta)(isNight());
       sky.classList.remove("fade");
+      // Hace tocables a los bichos recién creados (peces, naves…)
+      if (typeof Fun !== "undefined") Fun.bindCritters(sky);
     }, reduced ? 0 : 350);
   }
   function stopRot(){ if (rotTimer){ clearInterval(rotTimer); rotTimer = null; } }
@@ -163,5 +192,6 @@ const Scenes = (() => {
   }
 
   setAmbient(); // arranca apenas carga la página
-  return { setCategory, setAmbient, onScreen };
+  if (typeof Fun !== "undefined") Fun.startAmbient(() => current);
+  return { setCategory, setAmbient, onScreen, currentScene: () => current };
 })();

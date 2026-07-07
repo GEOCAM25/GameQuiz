@@ -48,6 +48,8 @@ const S = {
   blocked: JSON.parse(localStorage.getItem("gq_blocked") || "[]"),
   unread: 0,
   soloState: null,
+  rescueLoop: null,   // vigilante que rescata la partida si el anfitrión desaparece
+  myStreak: 0,        // racha personal de respuestas correctas seguidas
 };
 
 // ---------- Utilidades ----------
@@ -70,6 +72,8 @@ function show(id){
   const leaveBtn = $("#leaveFab");
   if (leaveBtn) leaveBtn.classList.toggle("hidden", !leaveOk);
   if (id === "home" || id === "profile" || id === "lobby") clearCategoryTheme();
+  // Escenario vivo: efecto especial en cuenta regresiva y celebración en el podio
+  if (typeof Scenes !== "undefined") Scenes.onScreen(id);
 }
 function toast(t){
   const d = document.createElement("div");
@@ -84,8 +88,14 @@ const THEME_CATS = ["disney","pixar","netflix","hbo","anime","cine","famosos","g
 function applyCategoryTheme(cat){
   THEME_CATS.forEach(c => document.body.classList.remove("theme-" + c));
   if (cat) document.body.classList.add("theme-" + cat);
+  // Escenario vivo por categoría (espacio, estadio, cine, sakura…)
+  if (typeof Scenes !== "undefined") Scenes.setCategory(cat);
 }
-function clearCategoryTheme(){ THEME_CATS.forEach(c => document.body.classList.remove("theme-" + c)); }
+function clearCategoryTheme(){
+  THEME_CATS.forEach(c => document.body.classList.remove("theme-" + c));
+  // Vuelve al ambiente rotativo del inicio/lobby (cambia solo cada 30 s)
+  if (typeof Scenes !== "undefined") Scenes.setAmbient();
+}
 function modal(html, buttons){
   $("#modalBox").innerHTML = html;
   buttons.forEach(b => {
@@ -98,6 +108,38 @@ function modal(html, buttons){
   $("#modal").classList.remove("hidden");
 }
 const shuffle = a => { for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];} return a; };
+
+// Tiempo por pregunta configurable por el anfitrión (15/25/40s). Si la sala
+// no trae el ajuste (salas viejas), se usa el clásico QUESTION_TIME.
+const qTime = () => (S.room && S.room.settings && +S.room.settings.qtime) || QUESTION_TIME;
+
+// ---------- Pantalla siempre encendida durante la partida ----------
+// En una trivia por turnos el teléfono pasa ratos sin toques y la pantalla
+// se apagaría a mitad de pregunta. El Wake Lock la mantiene despierta
+// mientras estás en una sala; se suelta al salir. Si el navegador no lo
+// soporta (o falla), no pasa nada: el juego sigue igual.
+let wakeLock = null;
+async function keepAwake(){
+  try {
+    if (!wakeLock && "wakeLock" in navigator){
+      wakeLock = await navigator.wakeLock.request("screen");
+      wakeLock.addEventListener("release", () => { wakeLock = null; });
+    }
+  } catch(e){ /* sin soporte o sin permiso: da lo mismo */ }
+}
+function releaseWake(){ try { wakeLock && wakeLock.release(); } catch(e){} wakeLock = null; }
+
+// Al volver a la app (cambiaste de app, se apagó la pantalla, etc.):
+// re-sincroniza AL TIRO en vez de esperar al ciclo de 4s, recupera el
+// Wake Lock (el sistema lo suelta al ocultar la página) y se auto-marca
+// conectado por si un rescate de anfitrión lo dio por desaparecido.
+document.addEventListener("visibilitychange", async () => {
+  if (document.visibilityState !== "visible") return;
+  if (S.room || S.solo) keepAwake();
+  if (!S.room || S.solo || !sb) return;
+  try { await sb.from("players").update({ connected:true }).eq("id", S.me.id); } catch(e){}
+  try { await resync(); } catch(e){}
+});
 const roomCode = () => { const L="ABCDEFGHJKLMNPQRSTUVWXYZ"; let c=""; for(let i=0;i<4;i++) c+=L[Math.floor(Math.random()*L.length)]; return c; };
 const censor = t => { let r=t; BAD_WORDS.forEach(w=>{ r = r.replace(new RegExp(`\\b${w}\\b`,"gi"),"***"); }); return r; };
 const esc = t => t.replace(/[<>&"]/g, c => ({"<":"&lt;",">":"&gt;","&":"&amp;",'"':"&quot;"}[c]));
@@ -128,12 +170,26 @@ async function resync(){
 // llama después de esperar una respuesta del servidor, Safari ya lo bloqueó.
 $("#btnGoCreate").onclick = () => { Music.enterGame(); Sfx.click(); S.mode = "create"; openProfile(); };
 $("#btnGoJoin").onclick = () => { Music.enterGame(); Sfx.click(); S.mode = "join"; openProfile(); };
+$("#btnHowTo") && ($("#btnHowTo").onclick = () => {
+  Sfx.click();
+  modal(`<h3>❓ Cómo se juega</h3>
+    <div style="text-align:left;font-weight:700;line-height:1.6;color:var(--ink2)">
+      🎪 <b>Crea una sala</b> y comparte el código de 4 letras, o <b>entra</b> con el código de un amigo.<br><br>
+      ⚡ Responde rápido: mientras antes aciertas, más puntos. Encadena aciertos para <b>rachas</b> 🔥 y ojo con la <b>pregunta final</b> que vale doble.<br><br>
+      🎁 Entre preguntas pueden salir <b>mini-juegos sorpresa</b>.<br><br>
+      🔊 En la sala, tu <b>botón sorpresa</b> hace sonar algo para todos. 🐠 Toca los peces y naves del fondo, ¡se arrancan!<br><br>
+      💬 Chatea, manda stickers y GIFs. ¡Que gane el mejor!
+    </div>`, [{ t:"¡A jugar! 🚀", cls:"btn-green" }]);
+});
 $$("[data-back]").forEach(b => b.onclick = () => { Sfx.click(); show("home"); });
 
 function openProfile(){
   $("#profileTitle").textContent = S.mode === "create" ? "Crea tu sala 🎪" : "Únete a una sala 🚪";
   $("#joinCodeWrap").classList.toggle("hidden", S.mode !== "join");
   renderAvatars([]);
+  // Al entrar se marca un personaje al azar automáticamente (punto pedido):
+  // el jugador puede cambiarlo, pero ya parte con uno elegido.
+  autoPickAvatar([]);
   show("profile");
 }
 // Color de fondo por avatar (punto 11). Coincide 1:1 con AVATARS por índice.
@@ -149,9 +205,30 @@ function renderAvatars(taken){
     d.className = "ava" + (taken.includes(a) ? " taken" : "");
     d.textContent = a;
     d.style.background = avatarColor(a);
-    d.onclick = () => { Sfx.pick(); $$(".ava").forEach(x=>x.classList.remove("sel")); d.classList.add("sel"); };
+    d.onclick = () => selectAvatar(d);
     $("#avatarGrid").appendChild(d);
   });
+}
+// Selección con animación: brinca y queda con un leve balanceo.
+function selectAvatar(node){
+  if (node.classList.contains("taken")) return;
+  Sfx.pick();
+  try { navigator.vibrate && navigator.vibrate(15); } catch(e){}
+  $$(".ava").forEach(x => { x.classList.remove("sel"); x.classList.remove("just-picked"); });
+  node.classList.add("sel", "just-picked");
+  // pequeño confeti de emojis saliendo del avatar elegido
+  try {
+    const r = node.getBoundingClientRect();
+    if (typeof Fun !== "undefined") Fun.floatUp(node.textContent, r.left + r.width/2, r.top + r.height/2, 5);
+  } catch(e){}
+}
+// Marca un avatar libre al azar. Si todos los de la primera opción están
+// tomados, elige entre los que queden desocupados.
+function autoPickAvatar(taken){
+  const free = AVATARS.filter(a => !taken.includes(a));
+  const pick = (free.length ? free : AVATARS)[Math.floor(Math.random() * (free.length ? free.length : AVATARS.length))];
+  const node = $$(".ava").find(x => x.textContent === pick);
+  if (node) selectAvatar(node);
 }
 $("#btnProfileGo").onclick = async () => {
   Music.enterGame(); // refuerzo: si por algún motivo no arrancó antes, lo intenta aquí también
@@ -177,7 +254,7 @@ function needBackend(){
 async function createRoom(name, ava){
   if (needBackend()) return;
   const code = roomCode();
-  const settings = { count:10, mode:"admin", filter:"on", cat:"disney", qids:[], scoreMode:"reset" };
+  const settings = { count:10, mode:"admin", filter:"on", cat:"disney", qids:[], scoreMode:"reset", qtime:40 };
   const { data: room, error } = await sb.from("rooms").insert({ code, settings }).select().single();
   if (error) return toast("⚠️ No se pudo crear la sala");
   const { data: me } = await sb.from("players").insert({ room_id: room.id, name, avatar: ava, is_host: true }).select().single();
@@ -190,6 +267,9 @@ async function joinRoom(code, name, ava){
   const { data: room } = await sb.from("rooms").select("*").eq("code", code).maybeSingle();
   if (!room) return toast("🔍 No existe una sala con ese código");
   if (room.status !== "lobby") return toast("⛔ La partida ya comenzó");
+  // Nombres expulsados por el anfitrión no pueden volver a entrar (soft-ban)
+  if ((room.settings.banned || []).includes(name.trim().toLowerCase()))
+    return toast("🚫 Ese nombre fue expulsado de esta sala");
   const { data: players } = await sb.from("players").select("*").eq("room_id", room.id);
   if (players.length >= MAX_PLAYERS) return toast("😅 La sala está llena (15 máx)");
   // Nombre duplicado entre jugadores conectados (bug 2)
@@ -212,6 +292,7 @@ function saveSession(){ localStorage.setItem("gq_session", JSON.stringify({ room
 async function enterRoom(room, me){
   S.room = room; S.me = me; S.solo = false;
   saveSession();
+  keepAwake();
   await subscribeRoom();
   await resync();
   renderLobby();
@@ -268,6 +349,7 @@ async function subscribeRoom(){
       p => { onMessage(p.new); })
     .on("postgres_changes", { event:"*", schema:"public", table:"votes", filter:`room_id=eq.${rid}` },
       () => { refreshVotes(); })
+    .on("broadcast", { event:"sound" }, ({ payload }) => onRemoteSound(payload))
     .subscribe();
 
   // Watchdog del CLIENTE: si Realtime se cae en silencio, re-sincroniza
@@ -279,6 +361,10 @@ async function subscribeRoom(){
       try { await resync(); } catch(e){}
     }
   }, 4000);
+
+  // Vigilante de rescate: corre en todos, por si el anfitrión desaparece
+  clearInterval(S.rescueLoop);
+  S.rescueLoop = setInterval(rescueTick, 2500);
 }
 
 // ---------- LOBBY ----------
@@ -293,23 +379,97 @@ function renderLobby(){
   S.selCount = st.count; S.selMode = st.mode; S.selFilter = st.filter; S.selCat = st.cat;
   syncSeg("#segCount", String(st.count)); syncSeg("#segMode", st.mode); syncSeg("#segFilter", st.filter);
   syncSeg("#segScore", st.scoreMode || "reset");
+  syncSeg("#segTime", String(st.qtime || 40));
   syncMinis(st.minis || (st.mini ? [st.mini] : ["none"]));
   $("#chkMusicSync").checked = !!(st.musicSync && st.musicSync.on);
-  renderCats(); renderPlayers(); refreshVotes();
+  renderCats(); renderPlayers(); refreshVotes(); renderSoundBoard();
 }
 function syncMinis(arr){ $$("#miniGrid button").forEach(b => b.classList.toggle("on", arr.includes(b.dataset.v))); }
 function syncSeg(sel, v){ $$(sel + " button").forEach(b => b.classList.toggle("on", b.dataset.v === v)); }
+
+// ---------- Botón sorpresa de sonido (uno por jugador) ----------
+// A cada jugador se le asigna un sonido de "ganador" al azar. Al tocarlo,
+// suena en SU celular y se avisa por broadcast para que suene en todos.
+// Se re-sortea cada vez que se vuelve al lobby tras una partida, usando el
+// número de ronda como semilla para que sea estable dentro del mismo lobby.
+const SB_COLORS = ["#FF4A6E","#1E9BFF","#16B364","#FFB821","#8C52FF","#4ECDC4","#E56399","#F4A261"];
+const SB_EMOJIS = ["📣","🎺","🔔","💥","🎉","🤪","🥁","📢","😜","🎪"];
+let sbCooldown = 0;
+function mySoundIndex(){
+  if (typeof WINNER_SOUNDS === "undefined" || !WINNER_SOUNDS.length || !S.me) return -1;
+  // Semilla: id del jugador + "generación" de sonido de la sala (sube cada partida).
+  const gen = (S.room && S.room.settings && S.room.settings.soundGen) || 0;
+  let h = gen * 2654435761;
+  const id = String(S.me.id);
+  for (let i = 0; i < id.length; i++) h = (h * 31 + id.charCodeAt(i)) >>> 0;
+  return h % WINNER_SOUNDS.length;
+}
+function renderSoundBoard(){
+  const box = $("#soundBoard");
+  if (!box) return;
+  const idx = mySoundIndex();
+  if (idx < 0){ box.innerHTML = ""; return; }
+  const s = WINNER_SOUNDS[idx];
+  const color = SB_COLORS[idx % SB_COLORS.length];
+  const emoji = SB_EMOJIS[idx % SB_EMOJIS.length];
+  box.innerHTML = "";
+  const btn = document.createElement("button");
+  btn.className = "sound-btn";
+  btn.style.background = `linear-gradient(180deg, ${lighten(color)}, ${color})`;
+  btn.style.boxShadow = `0 6px 0 ${shade(color)}, 0 14px 24px rgba(0,0,0,.35)`;
+  btn.innerHTML = `<span class="sb-emoji">${emoji}</span><span class="sb-name">${esc(s.label)}</span>
+    <span class="sb-wave"><i></i><i></i><i></i></span>`;
+  btn.onclick = () => playMySound(idx, btn);
+  box.appendChild(btn);
+}
+function playMySound(idx, btn){
+  const now = Date.now();
+  if (now < sbCooldown) return toast("⏳ Espera un poquito…");
+  sbCooldown = now + 1200; // anti-spam
+  btn.classList.add("playing");
+  setTimeout(() => btn.classList.remove("playing"), 700);
+  WinnerFx.play(idx);
+  showSoundToast(idx, S.me);
+  // Avisar a todos los demás por broadcast (efímero, sin tocar la base de datos)
+  if (S.channel && !S.solo){
+    try {
+      S.channel.send({ type:"broadcast", event:"sound",
+        payload:{ idx, by: S.me.name, avatar: S.me.avatar, from: S.me.id } });
+    } catch(e){}
+  }
+}
+function onRemoteSound(p){
+  if (!p || p.from === (S.me && S.me.id)) return; // el mío ya sonó localmente
+  if (typeof WINNER_SOUNDS === "undefined" || !WINNER_SOUNDS[p.idx]) return;
+  WinnerFx.play(p.idx);
+  showSoundToast(p.idx, { name: p.by, avatar: p.avatar });
+}
+function showSoundToast(idx, who){
+  const s = WINNER_SOUNDS[idx];
+  const t = document.createElement("div");
+  t.className = "sound-toast";
+  t.innerHTML = `<span class="st-emoji">🔊</span><span>${who && who.avatar ? who.avatar : ""} ${esc(who && who.name ? who.name : "Alguien")}: ${esc(s.label)}</span>`;
+  document.body.appendChild(t);
+  setTimeout(() => t.remove(), 1900);
+}
+function shade(hex){
+  const n = parseInt(hex.slice(1), 16);
+  const r = Math.max(0, (n>>16) - 60), g = Math.max(0, ((n>>8)&255) - 60), b = Math.max(0, (n&255) - 60);
+  return `rgb(${r},${g},${b})`;
+}
 
 function segHandler(sel, key){
   $$(sel + " button").forEach(b => b.onclick = async () => {
     Sfx.click();
     syncSeg(sel, b.dataset.v);
-    const settings = { ...S.room.settings, [key]: key === "count" ? +b.dataset.v : b.dataset.v };
+    const numeric = key === "count" || key === "qtime";
+    const settings = { ...S.room.settings, [key]: numeric ? +b.dataset.v : b.dataset.v };
     await sb.from("rooms").update({ settings }).eq("id", S.room.id);
   });
 }
 segHandler("#segCount", "count"); segHandler("#segMode", "mode"); segHandler("#segFilter", "filter");
 segHandler("#segScore", "scoreMode");
+segHandler("#segTime", "qtime");
 
 // Selector de mini-juegos (selección múltiple: puedes elegir varios a la vez)
 $$("#miniGrid button").forEach(b => b.onclick = async () => {
@@ -376,6 +536,14 @@ function renderPlayers(){
     const pts = accum ? (p.total_score||0) : (p.score||0);
     const ptsHtml = hasScores ? `<span class="chip-pts">${pts} pts</span>` : "";
     d.innerHTML = `<span class="em" style="background:${avatarColor(p.avatar)}">${p.avatar}</span>${esc(p.name)}${p.is_host ? ' <span class="host-star">👑</span>' : ""}${ptsHtml}`;
+    // El anfitrión puede expulsar tocando la ficha del jugador (solo en el lobby)
+    if (amHost() && p.id !== S.me.id && S.room.status === "lobby"){
+      d.style.cursor = "pointer";
+      d.onclick = () => modal(
+        `<h3>🚫 ¿Expulsar a ${esc(p.name)}?</h3><p>Saldrá de la sala y no podrá volver a entrar con ese nombre.</p>`,
+        [{ t:"Expulsar 🚫", cls:"btn-red", fn: () => kickPlayer(p) }, { t:"Cancelar" }]
+      );
+    }
     list.appendChild(d);
   });
 }
@@ -416,10 +584,75 @@ async function leaveGame(){
   sysMsg(S.room.id, `${S.me.avatar} ${S.me.name} salió de la partida 👋`);
   if (S.channel) sb.removeChannel(S.channel);
   clearInterval(S.syncLoop);
+  clearInterval(S.rescueLoop); S.rescueLoop = null;
   localStorage.removeItem("gq_session");
   S.hostTimers.forEach(clearTimeout);
+  releaseWake();
   S.room = null; S.me = null; S.players = [];
   show("home");
+}
+
+// ---------- Expulsar jugadores (anfitrión) ----------
+// El aviso viaja dentro de settings.kick; el cliente expulsado lo ve llegar
+// por Realtime y se saca solo de la sala. El nombre queda en settings.banned
+// para que no pueda volver a entrar tal cual (soft-ban de fiesta).
+async function kickPlayer(p){
+  const banned = [...(S.room.settings.banned || []), p.name.trim().toLowerCase()];
+  const settings = { ...S.room.settings, banned, kick: { id: p.id, t: Date.now() } };
+  await sb.from("rooms").update({ settings }).eq("id", S.room.id);
+  await sb.from("players").update({ connected:false }).eq("id", p.id);
+  sysMsg(S.room.id, `${p.avatar} ${p.name} fue expulsado de la sala 🚫`);
+}
+function kickedOut(){
+  stopHostLoop();
+  if (S.channel) sb.removeChannel(S.channel);
+  clearInterval(S.syncLoop);
+  clearInterval(S.rescueLoop); S.rescueLoop = null;
+  localStorage.removeItem("gq_session");
+  S.hostTimers.forEach(clearTimeout);
+  releaseWake();
+  S.room = null; S.me = null; S.players = [];
+  show("home");
+  modal("<h3>🚫 Te expulsaron de la sala</h3><p>El anfitrión decidió sacarte de esta partida.</p>", [{ t:"Entendido" }]);
+}
+
+// ---------- Rescate automático de anfitrión ----------
+// El único que avanza las fases es el anfitrión. Si se le apaga el teléfono
+// o pierde señal y NO vuelve, antes la partida quedaba pegada para siempre.
+// Este vigilante corre en TODOS los jugadores: si una fase lleva 12+ segundos
+// vencida sin que nadie la mueva, el siguiente jugador en la fila reclama el
+// mando. Cada candidato espera su turno (12s, 16s, 20s…) y el UPDATE
+// condicionado a host_id funciona como "compare-and-swap": aunque dos lo
+// intenten a la vez, la base de datos deja ganar a uno solo.
+let rescuing = false;
+async function rescueTick(){
+  if (!S.room || S.solo || !S.me || amHost() || rescuing) return;
+  const st = S.room.status;
+  if (!["countdown","question","reveal","board","mini"].includes(st)) return;
+  const until = S.room.phase_until || 0;
+  if (until <= 0) return;
+  const overdue = Date.now() - until;
+  const candidates = S.players
+    .filter(p => p.connected && p.id !== S.room.host_id)
+    .sort((a,b) => String(a.id).localeCompare(String(b.id)));
+  const rank = candidates.findIndex(p => p.id === S.me.id);
+  if (rank < 0 || overdue < 12000 + rank*4000) return;
+  rescuing = true;
+  try {
+    const oldHost = S.room.host_id;
+    const { data } = await sb.from("rooms").update({ host_id: S.me.id })
+      .eq("id", S.room.id).eq("host_id", oldHost).select().maybeSingle();
+    if (data){ // gané el relevo: desde ahora yo muevo la partida
+      S.room = data;
+      await sb.from("players").update({ is_host:false, connected:false }).eq("id", oldHost);
+      await sb.from("players").update({ is_host:true }).eq("id", S.me.id);
+      sysMsg(S.room.id, `👑 ${S.me.avatar} ${S.me.name} tomó el mando (el anfitrión se desconectó)`);
+      toast("👑 Ahora eres el anfitrión");
+      startHostLoop();
+      hostTick();
+    }
+  } catch(e){ console.error("Rescate de anfitrión falló:", e); }
+  finally { rescuing = false; }
 }
 
 // ---------- INICIO DEL JUEGO (anfitrión) ----------
@@ -438,7 +671,15 @@ $("#btnStart").onclick = async () => {
   }
   const bank = await loadBank(cat);
   const count = Math.min(S.room.settings.count, bank.questions.length);
-  const qids = shuffle([...bank.questions.keys()]).slice(0, count);
+  // Preguntas sin repetir entre rondas: se recuerdan las ya jugadas por
+  // categoría (dentro de settings, sin tocar la base de datos). Cuando el
+  // banco se agota, se reinicia el ciclo para esa categoría.
+  const usedAll = S.room.settings.usedQids || {};
+  let usedCat = usedAll[cat] || [];
+  let pool = [...bank.questions.keys()].filter(id => !usedCat.includes(id));
+  if (pool.length < count){ usedCat = []; pool = [...bank.questions.keys()]; }
+  const qids = shuffle(pool).slice(0, count);
+  const usedQids = { ...usedAll, [cat]: [...usedCat, ...qids] };
 
   // Decidir qué mini-juegos entran (pueden ser varios) y en qué momento aparece cada uno
   const IMPLEMENTED_MINIS = ["flash","color","memoria","punteria","reaccion","ritmo","delator","preg"];
@@ -463,7 +704,7 @@ $("#btnStart").onclick = async () => {
     minisToPlay.forEach((kind, idx) => miniSchedule.push({ kind, at: slots[idx], done:false }));
   }
 
-  const settings = { ...S.room.settings, cat, qids, count, miniSchedule };
+  const settings = { ...S.room.settings, cat, qids, count, miniSchedule, usedQids };
   await sb.from("rooms").update({ settings, mini_state:null, status:"countdown", current_q:-1, phase_until: Date.now()+3800 }).eq("id", S.room.id);
   startHostLoop();
   hostSchedule(() => nextQuestion(0), 3800);
@@ -480,7 +721,7 @@ function hostSchedule(fn, ms){ S.hostTimers.push(setTimeout(fn, ms)); }
 // ============================================================
 
 async function nextQuestion(i){
-  const until = Date.now() + QUESTION_TIME*1000;
+  const until = Date.now() + qTime()*1000;
   await sb.from("rooms").update({
     status:"question", current_q:i,
     q_started_at:new Date().toISOString(),
@@ -529,7 +770,7 @@ let stuckSig = "", stuckCount = 0;
 async function hostTick(){
   if (!amHost() || hostBusy || !S.room) return;
   const st = S.room.status;
-  if (!["question","reveal","board","mini"].includes(st)) return;
+  if (!["countdown","question","reveal","board","mini"].includes(st)) return;
 
   try {
     // ¿Todos los conectados ya respondieron? → avanzar YA (bug 5)
@@ -565,6 +806,12 @@ async function hostTick(){
       try {
         if (st === "question") await finishQuestion(S.room.current_q);
         else if (st === "reveal") await goToBoard();
+        else if (st === "countdown"){
+          // Respaldo: normalmente el setTimeout del inicio lanza la pregunta 1.
+          // Este camino corre si ese timer murió (pantalla bloqueada, o un
+          // anfitrión rescatado que retoma una partida pegada en countdown).
+          if (Date.now() >= until + 1500) await nextQuestion((S.room.current_q ?? -1) + 1);
+        }
         else if (st === "board"){
         const s = S.room.settings;
         const last = S.room.current_q >= s.qids.length - 1;
@@ -596,6 +843,8 @@ async function forceAdvance(st){
     const last = S.room.current_q >= (s.qids?.length || 1) - 1;
     if (st === "question"){
       await sb.from("rooms").update({ status:"reveal", phase_until: Date.now()+REVEAL_TIME*1000 }).eq("id", S.room.id);
+    } else if (st === "countdown"){
+      await nextQuestion((S.room.current_q ?? -1) + 1);
     } else if (st === "reveal"){
       await sb.from("rooms").update({ status:"board", phase_until: Date.now()+BOARD_TIME*1000 }).eq("id", S.room.id);
     } else if (st === "board" || st === "mini"){
@@ -614,24 +863,41 @@ async function finishQuestion(i){
     const q = bank.questions[S.room.settings.qids[i]];
     const { data: answers } = await sb.from("answers").select("*").eq("room_id", S.room.id).eq("q_index", i).order("answered_at");
     const t0 = new Date(S.room.q_started_at).getTime();
-    // Sistema de puntos (ajustado para que los últimos lugares no queden tan
-    // lejos de los primeros): el bono por orden es más parejo, el bono de
-    // velocidad pesa la mitad, y responder mal ya no es cero — se gana un
-    // puntaje de participación por al menos intentarlo.
+    // Historial de aciertos previos para calcular RACHAS. Se lee de la BD
+    // (no de memoria) para que el bono sobreviva a un cambio de anfitrión.
+    const hist = {};
+    try {
+      const { data: prev } = await sb.from("answers").select("player_id,q_index,correct")
+        .eq("room_id", S.room.id).lt("q_index", i);
+      (prev || []).forEach(a => { (hist[a.player_id] = hist[a.player_id] || {})[a.q_index] = !!a.correct; });
+    } catch(e){ /* sin historial no hay bono de racha, pero se puntúa igual */ }
+    const streakOf = pid => { let s = 0; for (let k = i-1; k >= 0; k--){ if (hist[pid] && hist[pid][k]) s++; else break; } return s; };
+    // Sistema de puntos v2:
+    //  · Bono por orden de llegada entre los que aciertan (60/50/42/35).
+    //  · Bono de velocidad proporcional al tiempo configurado (0–20 pts),
+    //    así 15s y 40s por pregunta premian igual de justo.
+    //  · Bono de RACHA: +6 por cada acierto seguido extra (tope +30).
+    //  · Responder mal da 15 de participación.
+    //  · La ÚLTIMA pregunta vale DOBLE (remontadas de último minuto 🔥).
     const PLACE = [60,50,42,35];
     const INCORRECT_PTS = 15;
+    const isFinal = i >= S.room.settings.qids.length - 1;
     let place = 0;
     for (const a of (answers||[])){
       const isCorrect = a.answer === q.c;
       if (a.points > 0){ if (isCorrect) place++; continue; } // ya puntuada (evita doble conteo)
       let pts;
       if (isCorrect){
-        const secs = Math.max(0, QUESTION_TIME - Math.floor((new Date(a.answered_at).getTime() - t0)/1000));
-        pts = PLACE[Math.min(place,3)] + Math.floor(secs / 2);
+        const secs = Math.max(0, qTime() - (new Date(a.answered_at).getTime() - t0)/1000);
+        const speed = Math.round((secs / qTime()) * 20);
+        const streak = streakOf(a.player_id) + 1;
+        const streakBonus = Math.min((streak - 1) * 6, 30);
+        pts = PLACE[Math.min(place,3)] + speed + streakBonus;
         place++;
       } else {
         pts = INCORRECT_PTS;
       }
+      if (isFinal) pts *= 2;
       await sb.from("answers").update({ points: pts, correct: isCorrect }).eq("id", a.id);
       const pl = S.players.find(p => p.id === a.player_id);
       if (pl) await sb.from("players").update({ score: pl.score + pts }).eq("id", pl.id);
@@ -655,8 +921,12 @@ let lastStatus = "", lastQ = -2;
 const answersThisQ = new Set();
 
 async function handleRoomState(){
+  // ¿Me expulsaron? El aviso llega dentro de settings.kick por Realtime.
+  const k = S.room.settings && S.room.settings.kick;
+  if (k && S.me && k.id === S.me.id) return kickedOut();
   const st = S.room.status;
   Music.setGamePhase(st); // baja a 10% durante la partida, sube al volver a lobby/podio
+  if (["countdown","question","reveal","board","mini"].includes(st)) keepAwake();
   // El anfitrión mantiene el watchdog vivo durante toda la partida (bug 3,4,5)
   if (amHost() && ["countdown","question","reveal","board","mini"].includes(st)) startHostLoop();
   else if (st === "lobby" || st === "podium") stopHostLoop();
@@ -665,7 +935,7 @@ async function handleRoomState(){
   else if (st === "countdown" && lastStatus !== "countdown") runCountdown();
   else if (st === "question" && (lastStatus !== "question" || lastQ !== S.room.current_q)) showQuestion();
   else if (st === "reveal" && lastStatus !== "reveal") showReveal();
-  else if (st === "board"){ if (lastStatus !== "board") showBoard(); else renderWinnerButtons(); }
+  else if (st === "board"){ if (lastStatus !== "board") enterBoard(); else renderWinnerButtons(); }
   else if (st === "mini") handleMiniState();
   else if (st === "podium" && lastStatus !== "podium") showPodium();
   if (st === "lobby") renderCats();
@@ -674,6 +944,9 @@ async function handleRoomState(){
 
 function runCountdown(){
   S._podiumFx = false;
+  S.myStreak = 0; // partida nueva, racha nueva
+  boardAnimQ = null; boardDeltas = {};
+  const bl = $("#boardList"); if (bl) bl.innerHTML = ""; // marcador limpio para la ronda nueva
   show("countdown");
   let n = 3;
   $("#cdNum").textContent = n; Sfx.countdown();
@@ -691,7 +964,13 @@ async function showQuestion(){
   const bank = await loadBank(S.room.settings.cat);
   const q = bank.questions[S.room.settings.qids[i]];
   applyCategoryTheme(S.room.settings.cat);
-  $("#qIdx").textContent = `${i+1}/${S.room.settings.qids.length}`;
+  const totalQ = S.room.settings.qids.length;
+  const isFinal = i >= totalQ - 1;
+  $("#qIdx").textContent = isFinal ? `Final ×2 · ${i+1}/${totalQ}` : `${i+1}/${totalQ}`;
+  if (isFinal && totalQ > 1) toast("🔥 ¡Pregunta final: puntos DOBLES!");
+  // Precarga la imagen de la próxima pregunta para que aparezca al tiro
+  const nq = bank.questions[S.room.settings.qids[i+1]];
+  if (nq && nq.img){ try { new Image().src = nq.img; } catch(e){} }
   // Imagen grande (punto 9): si la pregunta trae 'img', se muestra; si falla, cae al emoji
   const imgEl = $("#qImg"), emoEl = $("#qEmoji");
   if (q.img){
@@ -721,13 +1000,14 @@ async function showQuestion(){
 
 function startTimer(){
   clearInterval(S.qTimer);
+  const total = qTime();
   const t0 = new Date(S.room.q_started_at).getTime();
   const tick = () => {
     const elapsed = (Date.now() - t0)/1000;
-    S.qLeft = Math.max(0, Math.round(QUESTION_TIME - elapsed > QUESTION_TIME ? QUESTION_TIME : QUESTION_TIME - elapsed));
+    S.qLeft = Math.max(0, Math.round(Math.min(total, total - elapsed)));
     $("#qTimerNum").textContent = S.qLeft;
-    $("#qTimerBar").style.transform = `scaleX(${S.qLeft/QUESTION_TIME})`;
-    $("#qTimerBar").style.background = S.qLeft <= 10 ? "var(--red)" : S.qLeft <= 20 ? "var(--yellow)" : "var(--green)";
+    $("#qTimerBar").style.transform = `scaleX(${S.qLeft/total})`;
+    $("#qTimerBar").style.background = S.qLeft <= total*0.25 ? "var(--red)" : S.qLeft <= total*0.5 ? "var(--yellow)" : "var(--green)";
     if (S.qLeft <= 5 && S.qLeft > 0 && !S.answered) Sfx.urgent();
     else if (S.qLeft > 0 && !S.answered) Sfx.tick();
     if (S.qLeft <= 0) clearInterval(S.qTimer);
@@ -740,6 +1020,7 @@ async function submitAnswer(idx, q){
   if (S.answered || S.qLeft <= 0) return;
   S.answered = true;
   Sfx.pick();
+  try { navigator.vibrate && navigator.vibrate(18); } catch(e){}
   $$(".ans").forEach((b,k) => b.classList.toggle(k === idx ? "picked" : "dim", true));
   if (S.solo) return soloAnswer(idx, q);
   // NO enviamos si es correcta: el host lo calcula al cerrar la pregunta.
@@ -765,9 +1046,20 @@ async function showReveal(){
     mine = data;
   } catch(e){ mine = null; }
   const ok = mine && mine.answer === q.c;
+  S.myStreak = ok ? (S.myStreak || 0) + 1 : 0;
   $("#revealIcon").textContent = ok ? "🎉" : mine ? "😵" : "⏰";
-  $("#revealYou").textContent = ok ? `¡Correcto! +${mine.points||0} puntos` : mine ? "Incorrecto esta vez 😬" : "No alcanzaste a responder";
+  const streakTxt = ok && S.myStreak >= 2 ? ` · 🔥 racha ×${S.myStreak}` : "";
+  $("#revealYou").textContent = ok ? `¡Correcto! +${mine.points||0} puntos${streakTxt}` : mine ? "Incorrecto esta vez 😬" : "No alcanzaste a responder";
   playOutcomeSound(ok);
+  // Micro-celebración visual: emojis subiendo si acertaste, sacudida si fallaste.
+  try {
+    if (typeof Fun !== "undefined"){
+      if (ok){
+        const cx = window.innerWidth/2, cy = window.innerHeight*0.42;
+        Fun.floatUp(S.myStreak >= 3 ? "🔥" : "🎉", cx, cy, S.myStreak >= 3 ? 10 : 7);
+      } else if (mine){ Fun.shake(420); }
+    }
+  } catch(e){}
 }
 
 // Sonido de acierto/error: uno al azar de la lista correspondiente, una sola
@@ -784,20 +1076,158 @@ function renderBoardIfVisible(){
   else if (S.room.status === "podium") showPodium();
 }
 
+// Entra al marcador: primero carga cuántos puntos sumó cada quien en la
+// pregunta, y recién ahí anima las barras/números creciendo.
+async function enterBoard(){
+  await loadBoardDeltas();
+  showBoard();
+}
+
 let lastWinnerKey = null;
+let boardDeltas = {};      // { playerId: puntosGanadosEnEstaPregunta }
+let boardAnimQ = null;     // índice de pregunta ya animado (para no repetir)
+
+// Trae cuántos puntos sumó cada jugador en la pregunta actual, leyendo la
+// tabla de respuestas (cada fila guarda "points"). Con eso mostramos el "+X"
+// y animamos la barra creciendo desde el puntaje anterior.
+async function loadBoardDeltas(){
+  boardDeltas = {};
+  if (S.solo || !S.room) return;
+  try {
+    const { data } = await sb.from("answers").select("player_id,points")
+      .eq("room_id", S.room.id).eq("q_index", S.room.current_q);
+    (data || []).forEach(a => { boardDeltas[a.player_id] = (boardDeltas[a.player_id] || 0) + (a.points || 0); });
+  } catch(e){ boardDeltas = {}; }
+}
+
 function showBoard(){
+  const list = $("#boardList");
   const sorted = [...S.players].sort((a,b) => b.score - a.score);
-  const list = $("#boardList"); list.innerHTML = "";
+  const top = Math.max(1, sorted[0] ? sorted[0].score : 1);
+  const firstTime = boardAnimQ !== S.room.current_q;
+
+  // Medir posiciones actuales de las filas existentes (para animación FLIP:
+  // así las filas se DESLIZAN suavemente a su nuevo lugar cuando alguien
+  // adelanta a otro, en vez de saltar de golpe).
+  const prevRects = {};
+  $$("#boardList .brow").forEach(el => { prevRects[el.dataset.pid] = el.getBoundingClientRect().top; });
+
+  // Reconstruir/mantener filas
+  const seen = {};
   sorted.forEach((p, i) => {
-    const d = document.createElement("div");
-    d.className = "brow" + (p.id === S.me?.id ? " me" : "");
-    d.innerHTML = `<span class="pos">${i===0?"🥇":i+1+"º"}</span><span class="em">${p.avatar}</span>
-      <span class="nm">${esc(p.name)}${p.connected?"":" 💤"}</span><span class="pts">${p.score} pts</span>`;
-    list.appendChild(d);
+    let d = list.querySelector(`.brow[data-pid="${cssEsc(p.id)}"]`);
+    const delta = boardDeltas[p.id] || 0;
+    if (!d){
+      d = document.createElement("div");
+      d.className = "brow" + (p.id === S.me?.id ? " me" : "");
+      d.dataset.pid = p.id;
+      d.innerHTML = `
+        <span class="pos"></span>
+        <span class="em">${p.avatar}</span>
+        <div class="brow-main">
+          <div class="brow-top"><span class="nm"></span><span class="delta"></span></div>
+          <div class="brow-bar"><div class="brow-fill"></div></div>
+        </div>
+        <span class="pts"><span class="pts-num">0</span> pts</span>`;
+      list.appendChild(d);
+      d._shownScore = firstTime ? Math.max(0, p.score - delta) : p.score;
+    }
+    seen[p.id] = true;
+    d.style.order = i; // el reordenamiento visual lo hace flexbox con "order"
+    d.classList.remove("r0","r1","r2"); if (i < 3) d.classList.add("r" + i);
+    d.querySelector(".pos").textContent = i===0 ? "🥇" : i===1 ? "🥈" : i===2 ? "🥉" : (i+1)+"º";
+    d.querySelector(".nm").innerHTML = `${esc(p.name)}${p.connected?"":" 💤"}`;
+    d.classList.toggle("leader", i === 0);
+
+    const deltaEl = d.querySelector(".delta");
+    if (firstTime && delta > 0){
+      deltaEl.textContent = `+${delta}`;
+      deltaEl.classList.remove("hidden");
+      deltaEl.classList.remove("pop"); void deltaEl.offsetWidth; deltaEl.classList.add("pop");
+    } else {
+      deltaEl.classList.add("hidden");
+    }
   });
+
+  // Sacar filas de jugadores que ya no están
+  $$("#boardList .brow").forEach(el => { if (!seen[el.dataset.pid]) el.remove(); });
+
+  // FLIP: animar el desplazamiento desde la posición anterior a la nueva
+  requestAnimationFrame(() => {
+    $$("#boardList .brow").forEach(el => {
+      const prevTop = prevRects[el.dataset.pid];
+      if (prevTop == null) return;
+      const dy = prevTop - el.getBoundingClientRect().top;
+      if (Math.abs(dy) < 1) return;
+      el.style.transition = "none";
+      el.style.transform = `translateY(${dy}px)`;
+      requestAnimationFrame(() => {
+        el.style.transition = "transform .7s cubic-bezier(.34,1.2,.5,1)";
+        el.style.transform = "";
+      });
+    });
+  });
+
+  // Animar barras + números subiendo
+  if (firstTime){
+    boardAnimQ = S.room.current_q;
+    $$("#boardList .brow").forEach(el => {
+      const p = S.players.find(x => x.id === el.dataset.pid);
+      if (!p) return;
+      const from = el._shownScore ?? p.score;
+      animateCount(el.querySelector(".pts-num"), from, p.score, 900);
+      const fill = el.querySelector(".brow-fill");
+      const startPct = Math.max(0, Math.min(100, (from / top) * 100));
+      const endPct   = Math.max(0, Math.min(100, (p.score / top) * 100));
+      fill.style.transition = "none"; fill.style.width = startPct + "%";
+      requestAnimationFrame(() => {
+        fill.style.transition = "width .9s cubic-bezier(.34,1.1,.5,1)";
+        fill.style.width = endPct + "%";
+      });
+      el._shownScore = p.score;
+    });
+    // Chispas para quien haya sumado algo
+    setTimeout(() => {
+      sorted.forEach((p, i) => {
+        if ((boardDeltas[p.id]||0) > 0 && i < 3){
+          const el = list.querySelector(`.brow[data-pid="${cssEsc(p.id)}"]`);
+          if (el){ const r = el.getBoundingClientRect();
+            try { Fun.floatUp(i===0?"⭐":"✨", r.right-30, r.top+r.height/2, 4); } catch(e){} }
+        }
+      });
+    }, 500);
+  } else {
+    // Re-render sin animar (llega otra actualización mientras ya se ve el board)
+    $$("#boardList .brow").forEach(el => {
+      const p = S.players.find(x => x.id === el.dataset.pid);
+      if (!p) return;
+      el.querySelector(".pts-num").textContent = p.score;
+      el.querySelector(".brow-fill").style.width = Math.max(0, Math.min(100,(p.score/top)*100)) + "%";
+    });
+  }
+
   renderWinnerButtons();
   Sfx.board();
   show("board");
+}
+
+// Escapa un id para usarlo dentro de un selector [data-pid="..."]
+function cssEsc(v){ return String(v).replace(/["\\]/g, "\\$&"); }
+
+// Cuenta ascendente animada de un número (from → to) en "ms" milisegundos.
+function animateCount(node, from, to, ms){
+  if (!node) return;
+  from = Math.round(from); to = Math.round(to);
+  if (from === to){ node.textContent = to; return; }
+  const t0 = performance.now();
+  const step = (now) => {
+    const p = Math.min(1, (now - t0) / ms);
+    const eased = 1 - Math.pow(1 - p, 3); // easeOutCubic
+    node.textContent = Math.round(from + (to - from) * eased);
+    if (p < 1) requestAnimationFrame(step);
+    else node.textContent = to;
+  };
+  requestAnimationFrame(step);
 }
 
 // ---------- Botones ganadores (solo quien acertó primero puede tocar uno) ----------
@@ -901,6 +1331,7 @@ function showPodium(){
     S._podiumFx = true;
     Sfx.fanfare();
     fireworks(8000);
+    try { if (typeof Fun !== "undefined"){ Fun.confetti(120); Fun.burst(["🎉","🏆","🥳","👑","🎊","⭐"], 18); } } catch(e){}
   }
   stopHostLoop();
   // Mostrar/ocultar el botón "otra ronda" según seas anfitrión
@@ -937,7 +1368,7 @@ async function playAgain(){
   await sb.from("players").update({ score: 0 }).eq("room_id", S.room.id);
   await sb.from("answers").delete().eq("room_id", S.room.id);
   await sb.from("votes").delete().eq("room_id", S.room.id);
-  const settings = { ...S.room.settings, qids: [] };
+  const settings = { ...S.room.settings, qids: [], soundGen: ((S.room.settings.soundGen || 0) + 1) };
   await sb.from("rooms").update({ status:"lobby", current_q:-1, phase_until:null, settings }).eq("id", S.room.id);
 }
 
@@ -976,68 +1407,64 @@ $("#chkMusicSync").onchange = async (e) => {
 $("#musicFab").onclick = () => { $("#musicPanel").classList.remove("hidden"); };
 $("#musicClose").onclick = closeMusicPanel;
 function closeMusicPanel(){ $("#musicPanel")?.classList.add("hidden"); }
-$("#musicPrev").onclick = () => Music.prev();
-$("#musicNext").onclick = () => Music.next();
+
+// Si está sincronizado, solo el anfitrión puede saltar de canción o mover
+// la barra (y se avisa a todos los conectados); si no, cada uno manda en
+// su propio celular sin afectar a nadie más.
+function canControlMusic(){ return !Music.state().synced || amHost(); }
+
+$("#musicPrev").onclick = () => {
+  const s = Music.state();
+  if (s.synced && amHost()) Music.hostChangeTrack(S.room, sb);
+  else Music.prev();
+};
+$("#musicNext").onclick = () => {
+  const s = Music.state();
+  if (s.synced && amHost()) Music.hostChangeTrack(S.room, sb);
+  else Music.next();
+};
 $("#musicPlayPause").onclick = () => Music.togglePlay();
 $("#musicMute").onclick = () => Music.toggleMute();
 $("#musicVol").oninput = (e) => Music.setVolume(+e.target.value / 100);
+
 Music.bindUI(() => {
   const s = Music.state();
   $("#musicTrackName").textContent = s.track ? s.track.name : "—";
   $("#musicPlayPause").textContent = s.playing ? "⏸" : "▶️";
   $("#musicMute").textContent = s.muted ? "🔇" : "🔊";
   $("#musicVol").value = Math.round(s.volume * 100);
+  const canControl = canControlMusic();
+  $("#musicPrev").disabled = !canControl; $("#musicNext").disabled = !canControl;
+  $("#musicProgressTrack")?.classList.toggle("locked", !canControl);
   $("#musicSyncNote").classList.toggle("hidden", !s.synced);
-  $("#musicDisc")?.classList.toggle("spin", s.playing && !s.muted);
-  $("#musicError")?.classList.toggle("hidden", !s.hasError);
-
-  // Portada: gira dentro del disco y también se ve grande y difuminada de
-  // fondo. Si la imagen no carga (o la canción no tiene "cover" configurado),
-  // se cae de vuelta al disco genérico de siempre, sin romper nada.
-  const cover = s.track?.cover || null;
-  const img = $("#musicCoverImg"), center = $("#musicDiscCenter"), backdrop = $("#musicBackdrop");
-  if (cover){
-    if (img && img.dataset.src !== cover){
-      img.dataset.src = cover;
-      img.onerror = () => { img.classList.add("hidden"); center?.classList.remove("hidden"); backdrop?.classList.remove("show"); };
-      img.onload = () => {
-        img.classList.remove("hidden");
-        center?.classList.add("hidden");
-        if (backdrop){ backdrop.style.backgroundImage = `url("${cover}")`; backdrop.classList.add("show"); }
-      };
-      img.src = cover;
-    }
-  } else {
-    if (img){ img.classList.add("hidden"); img.removeAttribute("src"); delete img.dataset.src; }
-    center?.classList.remove("hidden");
-    backdrop?.classList.remove("show");
+  $("#musicEq")?.classList.toggle("on", s.playing && !s.muted);
+  const disc = $("#musicDisc");
+  if (disc){
+    disc.classList.toggle("spin", s.playing && !s.muted);
+    disc.classList.toggle("has-image", !!s.image);
+    disc.style.backgroundImage = s.image ? `url("${s.image}")` : "";
+    const center = disc.querySelector(".music-disc-center");
+    if (center) center.textContent = s.image ? "" : "🎵";
   }
+  const bg = $("#musicBg");
+  if (bg){
+    bg.style.backgroundImage = s.image ? `url("${s.image}")` : "";
+    bg.classList.toggle("show", !!s.image);
+  }
+  $("#musicError")?.classList.toggle("hidden", !s.hasError);
 });
 
-// Arrastrar/tocar la barra de progreso adelanta o retrocede la canción actual.
-(function(){
-  const hit = $("#musicProgressHit");
-  if (!hit) return;
-  let dragging = false;
-  const seekFromEvent = (e) => {
-    const rect = hit.getBoundingClientRect();
-    const x = (e.touches ? e.touches[0].clientX : e.clientX) - rect.left;
-    Music.seekTo(Math.max(0, Math.min(1, x / rect.width)));
-  };
-  hit.addEventListener("pointerdown", (e) => { dragging = true; seekFromEvent(e); });
-  window.addEventListener("pointermove", (e) => { if (dragging) seekFromEvent(e); });
-  window.addEventListener("pointerup", () => { dragging = false; });
-})();
-
 // Barra de progreso: se actualiza sola cada segundo mientras el panel de
-// música esté abierto (no vale la pena gastar ciclos si está cerrado).
+// música esté abierto (no vale la pena gastar ciclos si está cerrado), y
+// se puede arrastrar para adelantar o retroceder la canción.
 function fmtTime(sec){
   if (!isFinite(sec) || sec < 0) sec = 0;
   const m = Math.floor(sec/60), s = Math.floor(sec%60);
   return `${m}:${String(s).padStart(2,"0")}`;
 }
+let draggingProgress = false;
 setInterval(() => {
-  if ($("#musicPanel").classList.contains("hidden")) return;
+  if ($("#musicPanel").classList.contains("hidden") || draggingProgress) return;
   const s = Music.state();
   const pct = s.duration ? Math.min(100, (s.currentTime/s.duration)*100) : 0;
   $("#musicProgressFill").style.width = pct + "%";
@@ -1045,10 +1472,53 @@ setInterval(() => {
   $("#musicTimeDur").textContent = fmtTime(s.duration || (s.track?.duration||0));
 }, 1000);
 
+(() => {
+  const track = $("#musicProgressTrack");
+  if (!track) return;
+  function pctFromEvent(e){
+    const r = track.getBoundingClientRect();
+    const x = (e.touches ? e.touches[0].clientX : e.clientX) - r.left;
+    return Math.max(0, Math.min(1, x / r.width));
+  }
+  function seekFromEvent(e){
+    const s = Music.state();
+    const dur = s.duration || s.track?.duration || 0;
+    if (!dur) return;
+    const pct = pctFromEvent(e);
+    $("#musicProgressFill").style.width = (pct*100) + "%";
+    $("#musicTimeCur").textContent = fmtTime(pct*dur);
+    return pct * dur;
+  }
+  function onDown(e){
+    if (!canControlMusic()) return;
+    draggingProgress = true;
+    track.classList.add("dragging");
+    seekFromEvent(e);
+    e.preventDefault();
+  }
+  function onMove(e){ if (draggingProgress) seekFromEvent(e); }
+  function onUp(e){
+    if (!draggingProgress) return;
+    draggingProgress = false;
+    track.classList.remove("dragging");
+    const seconds = seekFromEvent(e);
+    if (seconds == null) return;
+    const s = Music.state();
+    if (s.synced && amHost()) Music.hostSeek(seconds, S.room, sb);
+    else Music.seekTo(seconds);
+  }
+  track.addEventListener("pointerdown", onDown);
+  track.addEventListener("pointermove", onMove);
+  window.addEventListener("pointerup", onUp);
+  track.addEventListener("touchstart", onDown, { passive:false });
+  track.addEventListener("touchmove", onMove, { passive:false });
+  window.addEventListener("touchend", onUp);
+})();
+
 // ---------- CHAT ----------
 $("#chatFab").onclick = () => { $("#chatPanel").classList.remove("hidden"); S.unread = 0; badge(); };
 $("#chatClose").onclick = closeChat;
-function closeChat(){ $("#chatPanel").classList.add("hidden"); $("#stickerTray").classList.add("hidden"); }
+function closeChat(){ $("#chatPanel").classList.add("hidden"); $("#stickerTray").classList.add("hidden"); $("#gifTray").classList.add("hidden"); }
 function badge(){
   $("#chatBadge").textContent = S.unread;
   $("#chatBadge").classList.toggle("hidden", S.unread === 0);
@@ -1060,8 +1530,48 @@ $("#btnStickers").onclick = () => {
     b.onclick = () => { sendMsg(null, s); t.classList.add("hidden"); };
     t.appendChild(b);
   });
+  $("#gifTray").classList.add("hidden");
   t.classList.toggle("hidden");
 };
+
+// ---------- GIFs de internet (búsqueda GIPHY) ----------
+// Solo se aceptan URLs de los CDN oficiales de GIPHY/Tenor al mostrar,
+// para que nadie pueda inyectar imágenes de otros sitios en el chat.
+const SAFE_GIF = /^https:\/\/(media\d?\.giphy\.com|i\.giphy\.com|media\.tenor\.com|c\.tenor\.com)\//;
+$("#btnGifs").onclick = () => {
+  $("#stickerTray").classList.add("hidden");
+  $("#gifTray").classList.toggle("hidden");
+  if (!$("#gifTray").classList.contains("hidden")) $("#gifQuery").focus();
+};
+$("#gifGo").onclick = searchGifs;
+$("#gifQuery").addEventListener("keydown", e => { if (e.key === "Enter") searchGifs(); });
+async function searchGifs(){
+  const q = $("#gifQuery").value.trim();
+  const box = $("#gifResults");
+  if (!q){ box.innerHTML = '<p class="gif-hint">Escribe algo y toca la lupa 🎬</p>'; return; }
+  box.innerHTML = '<p class="gif-hint">Buscando GIFs… 🔎</p>';
+  try {
+    const r = await fetch(`https://api.giphy.com/v1/gifs/search?api_key=${GIPHY_KEY}&q=${encodeURIComponent(q)}&limit=24&rating=pg-13&lang=es`);
+    const j = await r.json();
+    if (!j.data || !j.data.length){
+      box.innerHTML = '<p class="gif-hint">Sin resultados 😅 Prueba con otra palabra</p>'; return;
+    }
+    box.innerHTML = "";
+    j.data.forEach(g => {
+      const url = g.images && g.images.fixed_width && g.images.fixed_width.url;
+      if (!url || !SAFE_GIF.test(url)) return;
+      const img = document.createElement("img");
+      img.src = url; img.loading = "lazy"; img.alt = g.title || "GIF";
+      img.onclick = () => {
+        sendMsg(null, "gif:" + url);
+        $("#gifTray").classList.add("hidden");
+      };
+      box.appendChild(img);
+    });
+  } catch (e) {
+    box.innerHTML = '<p class="gif-hint">⚠️ No se pudo buscar. Revisa tu internet o la llave GIPHY_KEY en js/config.js</p>';
+  }
+}
 $("#btnSend").onclick = () => { const v = $("#chatText").value.trim(); if (v){ sendMsg(v, null); $("#chatText").value=""; } };
 $("#chatText").addEventListener("keydown", e => { if (e.key === "Enter") $("#btnSend").click(); });
 
@@ -1091,9 +1601,17 @@ function appendMsg(m){
   else {
     d.className = "msg" + (m.player_id === S.me.id ? " mine" : "");
     let text = m.content ? esc(S.room.settings.filter === "on" ? censor(m.content) : m.content) : "";
+    let inner;
+    if (m.sticker && m.sticker.startsWith("gif:")){
+      const u = m.sticker.slice(4);
+      inner = SAFE_GIF.test(u)
+        ? `<img class="gif-msg" src="${esc(u)}" loading="lazy" alt="GIF">`
+        : `<div>🎬 GIF</div>`;
+    } else if (m.sticker) inner = `<div class="stick">${m.sticker}</div>`;
+    else inner = `<div>${text}</div>`;
     d.innerHTML = `<div class="who">${m.avatar} ${esc(m.player_name)}
       ${m.player_id !== S.me.id ? `<button data-block="${m.player_id}">🚫</button>` : ""}</div>
-      ${m.sticker ? `<div class="stick">${m.sticker}</div>` : `<div>${text}</div>`}`;
+      ${inner}`;
     const bb = d.querySelector("[data-block]");
     if (bb) bb.onclick = () => blockPlayer(m.player_id, m.player_name);
   }
@@ -1114,6 +1632,7 @@ function blockPlayer(id, name){
 // ---------- MODO SOLO (sala ZZZX) ----------
 async function startSolo(name, ava){
   S.solo = true;
+  keepAwake();
   S.me = { id:"solo", name, avatar:ava, score:0, connected:true };
   S.players = [S.me];
   Music.enterGame();
@@ -1204,7 +1723,7 @@ function showPodiumSolo(){
   $("#podiumRest").innerHTML = "";
   show("podium"); Sfx.fanfare(); fireworks(6000);
 }
-function endSoloToHome(){ S.solo = false; S.room = null; S.soloState = null; show("home"); }
+function endSoloToHome(){ S.solo = false; S.room = null; S.soloState = null; releaseWake(); show("home"); }
 
 // ============================================================
 // Mini-juegos en la sala de prueba ZZZX: reutiliza EXACTAMENTE las mismas
@@ -1758,6 +2277,35 @@ function updateMiniTimer(m){
     if (left <= 0) pregOnTimeUp(m);
   }
 }
+// ---------- Barra de puntaje EN VIVO de los mini-juegos ----------
+// Cada mini llama a miniBar("#msbX", puntos, tope) cada vez que cambia su
+// puntaje. La barra se llena en proporción al "tope" (un puntaje bueno de
+// referencia) y el número sube contando. Al llenarse, brilla dorada.
+function miniBar(sel, pts, target, label){
+  const bar = $(sel);
+  if (!bar) return;
+  const fill = bar.querySelector(".msb-fill");
+  const num = bar.querySelector(".msb-num");
+  const pct = Math.max(0, Math.min(100, (pts / Math.max(1, target)) * 100));
+  if (fill) fill.style.width = pct + "%";
+  bar.classList.toggle("full", pct >= 100);
+  const prev = +(bar.dataset.pts || 0);
+  bar.dataset.pts = pts;
+  if (label != null){ if (num) num.textContent = label; }
+  else if (num) animateCount(num, prev, pts, 450);
+  if (pts > prev){ bar.classList.remove("bump"); void bar.offsetWidth; bar.classList.add("bump");
+    try { navigator.vibrate && navigator.vibrate(10); } catch(e){} }
+}
+// Reinicia una barra a 0 al empezar cada mini.
+function miniBarReset(sel){
+  const bar = $(sel);
+  if (!bar) return;
+  bar.dataset.pts = 0;
+  const fill = bar.querySelector(".msb-fill"); if (fill) fill.style.width = "0%";
+  const num = bar.querySelector(".msb-num"); if (num) num.textContent = "0";
+  bar.classList.remove("full");
+}
+
 function showMiniResult(m){
   // Reutiliza la pantalla de marcador para mostrar resultados del mini
   const meta = MINI_META[m.kind];
@@ -1795,6 +2343,7 @@ function flashStart(m){
   }[d.variant] || "Toca en orden";
   $("#flashInstr").textContent = instr;
   $("#flashScore").textContent = "";
+  miniBarReset("#msbFlash");
   // Grilla cuadrada
   const cols = Math.ceil(Math.sqrt(d.n));
   const grid = $("#flashGrid");
@@ -1828,11 +2377,13 @@ async function flashTap(btn, val, m){
     S.flashScore += 6;
     updateFlashTarget(m);
     $("#flashScore").textContent = `Tu puntaje: ${S.flashScore}`;
+    miniBar("#msbFlash", S.flashScore, (m.data.seq.length * 6) + 60);
     if (S.flashNext >= seq.length){
       // Completó la secuencia entera → +60 extra
       S.flashScore += 60;
       S.flashDone = true;
       $("#flashScore").textContent = `¡Secuencia completa! ${S.flashScore} pts 🎉`;
+      miniBar("#msbFlash", S.flashScore, (m.data.seq.length * 6) + 60);
       Sfx.correct();
       await flashSubmit(m);
     }
@@ -1930,6 +2481,7 @@ function colorStart(m){
   S.colorRound = 0;
   S.colorScore = 0;
   S.colorAnswered = false;
+  miniBarReset("#msbColor");
   renderColorRound(m);
   show("mini-color");
 }
@@ -1976,6 +2528,7 @@ async function colorPick(btn, label, r, m){
   else { Sfx.wrong(); btn.classList.add("bad"); }
   $$("#colorOpts .color-opt").forEach(b => { if (b!==btn) b.classList.add("dim"); });
   $("#colorScore").textContent = `Puntaje: ${S.colorScore}`;
+  miniBar("#msbColor", S.colorScore, (m.data.rounds.length * 12));
   // Siguiente ronda tras un respiro
   setTimeout(() => { S.colorRound++; renderColorRound(m); }, 650);
 }
@@ -2002,6 +2555,7 @@ function memoriaStart(m){
   // Mostrar la secuencia grande, en orden, por 3 segundos
   $("#memoRound").textContent = "¡Memoriza!";
   $("#memoScore").textContent = "";
+  miniBarReset("#msbMemo");
   const board = $("#memoBoard"); board.innerHTML = "";
   seq.forEach((emo, i) => {
     const d = document.createElement("div");
@@ -2045,6 +2599,7 @@ async function memoriaTap(btn, emo, m){
     btn.textContent = (idx+1) + "";
     btn.style.pointerEvents = "none";
     S.memoInput.push(emo);
+    miniBar("#msbMemo", S.memoInput.length * 20, seq.length * 20);
     if (S.memoInput.length === seq.length){
       // ¡Completó la secuencia entera!
       S.memoDone = true;
@@ -2084,6 +2639,7 @@ function punteriaStart(m){
   S.puntHits = 0;
   S.puntDone = false;
   $("#puntScore").textContent = "Aciertos: 0";
+  miniBarReset("#msbPunt");
   const arena = $("#puntArena"); arena.innerHTML = "";
   // Lanzar objetivos en bucle mientras dure la fase play
   clearInterval(S.puntSpawnIv);
@@ -2120,6 +2676,7 @@ function spawnTarget(arena, m){
     Sfx.pick();
     S.puntHits++;
     $("#puntScore").textContent = "Aciertos: " + S.puntHits;
+    miniBar("#msbPunt", S.puntHits * 10, 150);
     t.classList.add("popped");
     setTimeout(() => t.remove(), 120);
   };
@@ -2152,6 +2709,7 @@ function reaccionStart(m){
   S.reacTotal = 0;      // suma de tiempos de reacción (ms); menor = mejor
   S.reacFouls = 0;      // veces que se adelantó
   S.reacDone = false;
+  miniBarReset("#msbReac");
   const pad = $("#reacPad");
   pad.onclick = () => reaccionTapPad(m);
   show("mini-reaccion");
@@ -2159,6 +2717,7 @@ function reaccionStart(m){
 }
 function reaccionNextRound(m){
   if (S.reacRound >= m.data.rounds.length){ reaccionFinishLocal(m); return; }
+  miniBar("#msbReac", S.reacRound, m.data.rounds.length, `Ronda ${Math.min(S.reacRound+1, m.data.rounds.length)}/${m.data.rounds.length}`);
   const r = m.data.rounds[S.reacRound];
   const pad = $("#reacPad");
   pad.className = "reac-pad waiting";
@@ -2237,6 +2796,7 @@ function ritmoStart(m){
   S.ritmoScore = 0;      // pasos correctos acumulados
   S.ritmoDone = false;
   S.ritmoLocked = true;  // bloqueado mientras muestra
+  miniBarReset("#msbRitmo");
   const pads = $("#ritmoPads");
   pads.innerHTML = "";
   RITMO_COLORS.forEach((c,i) => {
@@ -2284,6 +2844,7 @@ async function ritmoTap(idx, m){
     Sfx.pick && Sfx.pick();
     S.ritmoInput.push(idx);
     S.ritmoScore++; // cada paso correcto suma
+    miniBar("#msbRitmo", S.ritmoScore * 10, 150);
     if (S.ritmoInput.length === seq.length){
       // Completó el nivel → sube dificultad
       S.ritmoLocked = true;
@@ -2331,6 +2892,7 @@ function pregStart(m){
   $("#pregCat").textContent = d.cat;
   $("#pregHint").textContent = "💡 " + d.hint;
   $("#pregScore").textContent = "";
+  miniBarReset("#msbPreg");
   pregRenderWord(m);
   pregRenderKeys(m);
   show("mini-preg");
@@ -2367,6 +2929,8 @@ async function pregTapKey(letter, btn, m){
     Sfx.pick();
     S.pregFilled[idx] = letter;
     pregRenderWord(m);
+    { const filled = S.pregFilled.filter(Boolean).length;
+      miniBar("#msbPreg", filled, S.pregFilled.length, `${filled}/${S.pregFilled.length} letras`); }
     if (pregNextEmptyIndex() < 0){
       // Palabra completa
       S.pregDone = true;
