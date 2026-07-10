@@ -900,33 +900,31 @@ body.hype #app{animation:hypeshake .9s ease infinite}
 .cruci-lvl .cl-star{position:absolute;top:-6px;right:-6px;font-size:18px}
 .cruci-lvl .cl-lock{font-size:26px}
 
-.cruci-board{display:flex;flex-direction:column;gap:12px;align-items:center;flex-grow:1;overflow:auto}
-.cruci-grid{display:grid;gap:2px;background:rgba(0,0,0,.35);padding:8px;border-radius:14px;
-  grid-template-columns:repeat(var(--cols),1fr);width:max-content;max-width:90vw;justify-self:center}
-.cruci-row{display:contents}
-.cruci-cell{width:clamp(32px,9vw,46px);height:clamp(32px,9vw,46px);display:flex;align-items:center;justify-content:center;
-  font-family:'Fredoka';font-weight:800;font-size:clamp(16px,5vw,22px);color:var(--ink);
-  background:linear-gradient(180deg,#fff,#F0E6D6);box-shadow:0 2px 0 rgba(20,10,40,.18);
-  position:relative;cursor:pointer;border-radius:6px}
-.cruci-cell:active{transform:scale(.95)}
-.cruci-cell.active-cell{box-shadow:inset 0 0 0 3px var(--purple),0 2px 0 rgba(20,10,40,.18)}
+.cruci-grid{display:flex;flex-direction:column;gap:4px;align-items:center;padding:8px;
+  background:rgba(0,0,0,.18);border-radius:18px;overflow-x:auto}
+.cruci-row{display:flex;gap:4px}
+.cruci-row.active .cruci-cell:not(.empty){box-shadow:inset 0 0 0 2px var(--gold)}
+.cruci-row.shake{animation:shake .4s}
+.cruci-cell{width:clamp(20px,7.5vw,32px);height:clamp(26px,9vw,38px);border-radius:7px;display:flex;align-items:center;justify-content:center;
+  font-family:'Fredoka';font-weight:700;font-size:clamp(14px,4.5vw,20px);color:var(--ink);flex-shrink:0;
+  background:linear-gradient(180deg,#fff,#F0E6D6);box-shadow:0 2px 0 rgba(20,10,40,.15)}
+.cruci-cell.empty{background:transparent;box-shadow:none}
 .cruci-cell.key{background:linear-gradient(180deg,var(--gold2),var(--gold));box-shadow:0 2px 0 var(--gold-e)}
-.cruci-cell.key.active-cell{box-shadow:inset 0 0 0 3px var(--purple),0 2px 0 var(--gold-e)}
-.cc-num{position:absolute;top:1px;left:2px;font-size:8px;font-family:'Nunito';font-weight:900;color:var(--ink);opacity:.8}
-.cruci-clue{color:#fff;text-align:center;font-weight:700;padding:10px 16px;background:rgba(0,0,0,.28);
-  border-radius:14px;font-size:14px;line-height:1.4;width:100%;max-width:85vw}
-.cruci-keyboard{display:flex;flex-direction:column;gap:5px;width:100%;max-width:95vw}
-.ckb-row{display:flex;gap:3px;justify-content:center;flex-wrap:wrap}
-.ckb-key{flex:0 1 calc(10% - 3px);min-width:30px;height:40px;border:none;border-radius:8px;cursor:pointer;
-  font-family:'Fredoka';font-weight:700;font-size:14px;color:var(--ink);
-  background:linear-gradient(180deg,#fff,#E9DFCE);box-shadow:0 2px 0 rgba(20,10,40,.18);transition:all .08s}
-.ckb-key:active{transform:translateY(2px);box-shadow:0 0 0 rgba(20,10,40,.18)}
-.ckb-key.ckb-del{background:linear-gradient(180deg,var(--red2),var(--red));color:#fff;box-shadow:0 2px 0 var(--red-e)}
-.ckb-hint{width:100%;border:none;border-radius:10px;padding:10px;cursor:pointer;
-  font-family:'Nunito';font-weight:800;font-size:13px;color:#fff;
-  background:linear-gradient(180deg,var(--blue2),var(--blue));box-shadow:0 2px 0 var(--blue-e)}
-.ckb-hint.disabled{background:linear-gradient(180deg,#9a929b,#7d768a);box-shadow:0 2px 0 #5e586b;cursor:default}
-.cw-space{width:10px}
+.cruci-cell.solved{background:linear-gradient(180deg,var(--green2),var(--green));color:#fff}
+.cruci-clue{color:#fff;text-align:center;font-weight:700;min-height:40px;display:flex;align-items:center;
+  justify-content:center;padding:6px 12px;background:rgba(0,0,0,.22);border-radius:14px;font-size:15px;line-height:1.3}
+.cruci-clue .cc-num{font-family:'Fredoka';color:var(--gold);margin-right:4px}
+.cruci-clue .cc-len{opacity:.7;font-size:12px;margin-left:4px}
+.cruci-keyboard{display:flex;flex-direction:column;gap:6px;margin-top:auto;padding-bottom:env(safe-area-inset-bottom)}
+.ckb-row{display:flex;gap:4px;justify-content:center}
+.ckb-key{flex:1;max-width:38px;height:46px;border:none;border-radius:8px;cursor:pointer;
+  font-family:'Fredoka';font-weight:700;font-size:18px;color:var(--ink);
+  background:linear-gradient(180deg,#fff,#E9DFCE);box-shadow:0 3px 0 rgba(20,10,40,.2);transition:transform .06s}
+.ckb-key:active{transform:translateY(3px);box-shadow:0 0 0 rgba(20,10,40,.2)}
+.ckb-key.ckb-del{background:linear-gradient(180deg,var(--red2),var(--red));color:#fff;box-shadow:0 3px 0 var(--red-e)}
+.ckb-hint{width:100%;border:none;border-radius:12px;padding:11px;cursor:pointer;
+  font-family:'Nunito';font-weight:800;font-size:14px;color:#fff;
+  background:linear-gradient(180deg,var(--blue2),var(--blue));box-shadow:0 3px 0 var(--blue-e)}
 .cruci-win{position:fixed;inset:0;z-index:26;display:flex;align-items:center;justify-content:center;padding:24px;
   background:rgba(8,4,20,.7);backdrop-filter:blur(4px)}
 .cruci-win .cw-box{background:linear-gradient(180deg,#FFFDF7,var(--card) 30%,#F4EADA);border-radius:26px;padding:26px;
@@ -957,6 +955,10 @@ body.tv-mode{ overflow:hidden; }
 .tv-logo b{font-size:1.8vw;background:var(--red);padding:.2vw 1vw;border-radius:1vw;vertical-align:middle;margin-left:.5vw}
 .tv-code-box{font-family:'Fredoka';font-size:2vw;background:rgba(0,0,0,.35);border-radius:1vw;padding:.6vw 1.6vw}
 .tv-code-box span{color:var(--gold);letter-spacing:.4vw}
+.tv-pause-btn{border:none;border-radius:1vw;padding:.8vw 1.6vw;font-family:'Fredoka';font-weight:700;
+  font-size:1.3vw;color:#fff;cursor:pointer;flex-shrink:0;
+  background:linear-gradient(180deg,var(--purple2),var(--purple));box-shadow:0 .4vw 0 var(--purple-e)}
+.tv-pause-btn:active{transform:translateY(.3vw)}
 .tv-players{display:flex;gap:1vw;flex-wrap:wrap;justify-content:flex-end;flex:1;max-width:40vw}
 .tvp{display:flex;flex-direction:column;align-items:center;font-size:2vw;line-height:1}
 .tvp small{font-size:.9vw;font-weight:800;margin-top:.2vw;opacity:.85}
@@ -1041,3 +1043,21 @@ body.tv-mode{ overflow:hidden; }
   font-size:52px;box-shadow:0 20px 50px rgba(0,0,0,.6)}
 #pauseOverlay .pause-card b{font-family:'Fredoka';font-size:22px}
 #pauseOverlay .pause-card small{font-family:'Nunito';font-weight:800;font-size:14px;opacity:.85;max-width:240px}
+
+/* ---------- Control remoto de TV/Roku (aparece en salas de pantalla) ---------- */
+.tv-remote{margin-top:4px}
+.remote-pad{display:grid;grid-template-columns:64px 64px 64px;grid-template-rows:64px 64px 64px;
+  gap:8px;justify-content:center;margin:10px auto}
+.remote-pad .up{grid-column:2;grid-row:1}
+.remote-pad .left{grid-column:1;grid-row:2}
+.remote-pad .ok{grid-column:2;grid-row:2}
+.remote-pad .right{grid-column:3;grid-row:2}
+.remote-pad .down{grid-column:2;grid-row:3}
+.rk{border:none;border-radius:16px;cursor:pointer;font-family:'Fredoka';font-weight:700;font-size:20px;
+  color:#fff;background:linear-gradient(180deg,var(--purple2),var(--purple));
+  box-shadow:0 4px 0 var(--purple-e);transition:transform .08s}
+.rk:active{transform:translateY(3px);box-shadow:0 1px 0 var(--purple-e)}
+.rk.ok{background:linear-gradient(180deg,var(--gold2),var(--gold));box-shadow:0 4px 0 var(--gold-e);font-size:16px}
+.remote-row{display:flex;gap:10px;margin-top:6px}
+.rk.wide{flex:1;height:48px;font-size:15px;background:linear-gradient(180deg,#4A4560,#302B44);
+  box-shadow:0 4px 0 #201C2E}
