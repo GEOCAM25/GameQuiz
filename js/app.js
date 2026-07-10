@@ -22,6 +22,25 @@ let sb = null;
 const hasBackend = !SUPABASE_URL.includes("PEGA_AQUI");
 if (hasBackend) sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
+// ---------- Sesión anónima (identidad para las políticas de seguridad) ----------
+// Cada celular obtiene, en silencio y sin pedir nada al usuario, una sesión
+// anónima verificada por Supabase. Esa identidad (window.myUid) es la que las
+// políticas de la base de datos (RLS) usan para saber "esta fila es tuya" y
+// dejarte editarla o no. Sin esto, cualquiera con la llave pública podría
+// editar salas y jugadores ajenos con una simple llamada a la API.
+window.myUid = null;
+window.authReady = hasBackend ? (async () => {
+  try {
+    const { data: { session } } = await sb.auth.getSession();
+    if (session && session.user){ window.myUid = session.user.id; return; }
+    const { data, error } = await sb.auth.signInAnonymously();
+    if (error) throw error;
+    window.myUid = data.user.id;
+  } catch(e){
+    console.error("No se pudo iniciar sesión anónima en Supabase:", e);
+  }
+})() : Promise.resolve();
+
 // ---------- Modo PANTALLA (Smart TV / Roku) ----------
 // Si la URL trae ?tv=1, esta pestaña se comporta como la PANTALLA grande:
 // crea la sala, muestra el QR y renderiza todo para la TV. No usa la UI de
@@ -92,7 +111,8 @@ function toast(t){
 
 // Fondo temático según la categoría (punto 12). Agrega clase theme-<cat> al body.
 const THEME_CATS = ["disney","pixar","netflix","hbo","anime","cine","famosos","geek",
-  "banderas","historia","pop","trivia","curiosos","tecnologia","espacio","animales","futbol","deportes"];
+  "banderas","historia","pop","trivia","curiosos","tecnologia","espacio","animales","futbol","deportes",
+  "greys","terror","histchile","farandula","marvel","dc","dragonball","starwars","lotr"];
 function applyCategoryTheme(cat){
   THEME_CATS.forEach(c => document.body.classList.remove("theme-" + c));
   if (cat) document.body.classList.add("theme-" + cat);
@@ -186,6 +206,7 @@ $("#soloCruci") && ($("#soloCruci").onclick = () => {
   Cruci.open(() => show("solo-menu")); // al salir del cruci, vuelve al menú
 });
 $("#soloMinis") && ($("#soloMinis").onclick = () => { Sfx.click(); startSoloMinis(); });
+$("#soloQuizTime") && ($("#soloQuizTime").onclick = () => { Sfx.click(); startSolo("Tú", "😎"); });
 $("#btnTV") && ($("#btnTV").onclick = () => {
   Sfx.click();
   modal(`<h3>📺 Modo pantalla</h3>
@@ -280,8 +301,9 @@ function needBackend(){
 // ---------- Crear / unirse ----------
 async function createRoom(name, ava){
   if (needBackend()) return;
+  await window.authReady;
   const code = roomCode();
-  const settings = { count:10, mode:"admin", filter:"on", cat:"disney", qids:[], scoreMode:"reset", qtime:40 };
+  const settings = { count:10, mode:"admin", filter:"on", cat: randomCategoryId(), qids:[], scoreMode:"reset", qtime:15, minis:["random"] };
   const { data: room, error } = await sb.from("rooms").insert({ code, settings }).select().single();
   if (error) return toast("⚠️ No se pudo crear la sala");
   const { data: me } = await sb.from("players").insert({ room_id: room.id, name, avatar: ava, is_host: true }).select().single();
@@ -291,6 +313,7 @@ async function createRoom(name, ava){
 }
 async function joinRoom(code, name, ava){
   if (needBackend()) return;
+  await window.authReady;
   const { data: room } = await sb.from("rooms").select("*").eq("code", code).maybeSingle();
   if (!room) return toast("🔍 No existe una sala con ese código");
   if (room.status !== "lobby") return toast("⛔ La partida ya comenzó");
@@ -308,8 +331,18 @@ async function joinRoom(code, name, ava){
     toast(`Ese personaje estaba ocupado, te tocó ${avatar}`);
   }
   const late = false;
-  const { data: me, error } = await sb.from("players").insert({ room_id: room.id, name, avatar, joined_late: late }).select().single();
+  // En una sala de PANTALLA (TV/Roku) nadie es anfitrión todavía, porque la
+  // TV crea la sala pero no es "jugador". El primer teléfono que entra pasa
+  // a ser el anfitrión automáticamente (si no, nadie podría iniciar el juego).
+  const needsHost = !!(room.settings && room.settings.tv) && !room.host_id;
+  const { data: me, error } = await sb.from("players")
+    .insert({ room_id: room.id, name, avatar, joined_late: late, is_host: needsHost })
+    .select().single();
   if (error) return toast("⚠️ No se pudo entrar");
+  if (needsHost){
+    await sb.from("rooms").update({ host_id: me.id, host_owner_id: window.myUid }).eq("id", room.id);
+    room.host_id = me.id;
+  }
   sysMsg(room.id, `${avatar} ${name} entró a la sala 👋`);
   enterRoom(room, me);
 }
@@ -415,9 +448,15 @@ async function subscribeRoom(){
 
 // ---------- LOBBY ----------
 const amHost = () => S.me && S.room && S.room.host_id === S.me.id;
+// Categoría inicial al azar (antes siempre quedaba Disney marcada por defecto)
+function randomCategoryId(){ return CATEGORIES[Math.floor(Math.random() * CATEGORIES.length)].id; }
 
 function renderLobby(){
   $("#lobbyCode").textContent = S.room.code;
+  // Control remoto de la TV/Roku desde el teléfono (solo en salas de pantalla)
+  const isTvRoom = !!(S.room.settings && S.room.settings.tv);
+  const rem = $("#tvRemote");
+  if (rem) rem.classList.toggle("hidden", !isTvRoom);
   $("#hostSettings").classList.toggle("hidden", !amHost());
   $("#btnStart").classList.toggle("hidden", !amHost());
   $("#lobbyHint").classList.toggle("hidden", amHost());
@@ -545,10 +584,10 @@ $$("#miniGrid button").forEach(b => b.onclick = async () => {
   Sfx.click();
   const v = b.dataset.v;
   let cur = S.room.settings.minis || (S.room.settings.mini ? [S.room.settings.mini] : ["none"]);
-  if (v === "none" || v === "random"){
-    cur = [v]; // "Ninguno" y "Al azar" son excluyentes con el resto
+  if (v === "none" || v === "random" || v === "all"){
+    cur = [v]; // "Ninguno", "Al azar" y "Todos" son excluyentes con el resto
   } else {
-    cur = cur.filter(k => k !== "none" && k !== "random");
+    cur = cur.filter(k => k !== "none" && k !== "random" && k !== "all");
     cur = cur.includes(v) ? cur.filter(k => k !== v) : [...cur, v];
     if (cur.length === 0) cur = ["none"];
   }
@@ -644,7 +683,7 @@ async function leaveGame(){
     const heir = S.players.find(p => p.connected && p.id !== S.me.id);
     if (heir){
       await sb.from("players").update({ is_host: true }).eq("id", heir.id);
-      await sb.from("rooms").update({ host_id: heir.id }).eq("id", S.room.id);
+      await sb.from("rooms").update({ host_id: heir.id, host_owner_id: heir.owner_id }).eq("id", S.room.id);
       sysMsg(S.room.id, `👑 ${heir.avatar} ${heir.name} es el nuevo anfitrión`);
     }
   }
@@ -709,7 +748,7 @@ async function rescueTick(){
   rescuing = true;
   try {
     const oldHost = S.room.host_id;
-    const { data } = await sb.from("rooms").update({ host_id: S.me.id })
+    const { data } = await sb.from("rooms").update({ host_id: S.me.id, host_owner_id: window.myUid })
       .eq("id", S.room.id).eq("host_id", oldHost).select().maybeSingle();
     if (data){ // gané el relevo: desde ahora yo muevo la partida
       S.room = data;
@@ -752,11 +791,12 @@ $("#btnStart").onclick = async () => {
 
   // Decidir qué mini-juegos entran (pueden ser varios) y en qué momento aparece cada uno
   const IMPLEMENTED_MINIS = ["flash","color","memoria","punteria","reaccion","ritmo","delator","preg"];
-  let chosen = S.room.settings.minis || (S.room.settings.mini ? [S.room.settings.mini] : ["none"]);
+  let chosen = S.room.settings.minis || (S.room.settings.mini ? [S.room.settings.mini] : ["random"]);
   let minisToPlay = [];
-  if (chosen.includes("random")){
-    const howMany = 1 + Math.floor(Math.random() * IMPLEMENTED_MINIS.length); // 1 o 2
-    minisToPlay = shuffle([...IMPLEMENTED_MINIS]).slice(0, howMany);
+  if (chosen.includes("all")){
+    minisToPlay = shuffle([...IMPLEMENTED_MINIS]);
+  } else if (chosen.includes("random")){
+    minisToPlay = shuffle([...IMPLEMENTED_MINIS]).slice(0, 2); // predeterminado: exactamente 2 al azar
   } else if (!chosen.includes("none") && chosen.length){
     minisToPlay = chosen.filter(k => IMPLEMENTED_MINIS.includes(k));
   }
@@ -1516,6 +1556,19 @@ $("#sfxToggle") && ($("#sfxToggle").onclick = () => {
 });
 refreshSfxToggle();
 
+// Control remoto de la TV/Roku: cada botón escribe settings.tvCmd en la sala;
+// el Roku lo lee y ejecuta la tecla (navegar menús, escribir, pausar).
+document.querySelectorAll("#tvRemote .rk").forEach(b => {
+  b.onclick = async () => {
+    if (!S.room) return;
+    Sfx.click();
+    try {
+      const settings = { ...S.room.settings, tvCmd: { key: b.dataset.k, t: Date.now() } };
+      await sb.from("rooms").update({ settings }).eq("id", S.room.id);
+    } catch(e){}
+  };
+});
+
 $("#musicFab").onclick = () => { $("#musicPanel").classList.remove("hidden"); };
 $("#musicClose").onclick = closeMusicPanel;
 function closeMusicPanel(){ $("#musicPanel")?.classList.add("hidden"); }
@@ -1753,7 +1806,7 @@ async function startSolo(name, ava){
     ["punteria","🎯 Puntería"],["reaccion","⚡ Reacción"],["ritmo","🎵 Ritmo"],["preg","💡 Preguntón"],
     ["random","🎲 Al azar (de estos 7)"],
   ];
-  modal(`<h3>🧪 Sala de prueba ZZZX</h3><p>Modo solitario para probar el juego. No se puede invitar a nadie.</p>
+  modal(`<h3>🧠 Quiz-Time</h3><p>Trivia en solitario: elige categoría, cuántas preguntas y si quieres probar un mini-juego en el camino.</p>
   <label class="lbl">Categoría</label><select id="soloCat" class="inp">${CATEGORIES.map(c=>`<option value="${c.id}">${c.emoji} ${c.name}</option>`).join("")}</select>
   <label class="lbl">Preguntas</label><select id="soloN" class="inp"><option>10</option><option>20</option><option>30</option></select>
   <label class="lbl">Probar un mini-juego 🎁</label>
@@ -1785,7 +1838,7 @@ async function startSolo(name, ava){
           startSolo(name, ava);
         });
     }},
-    { t:"Volver", fn: () => { S.solo = false; show("home"); } },
+    { t:"Volver", fn: () => { S.solo = false; show("solo-menu"); } },
   ]);
 }
 function soloQuestion(i){
@@ -2042,12 +2095,23 @@ const RANK_MINIS = { memoria:[58,50,44,39,35,32], preg:[58,50,44,39], reaccion:[
 const SOLO_MINIS = ["flash","color","memoria","punteria","reaccion","ritmo","preg"];
 const SOLO_MINI_NAMES = { flash:"NúmeroFlash 🔢", color:"Colorín 🎨", memoria:"Memoria 🧠",
   punteria:"Puntería 🎯", reaccion:"Reacción ⚡", ritmo:"Ritmo 🎵", preg:"Preguntón 💡" };
+const SOLO_MINI_STREAK = 5; // cuántos mini-juegos seguidos antes de preguntar si sigue
 let soloMiniActive = null;
 
-async function startSoloMinis(kind){
+// Arranca (o continúa) una tanda de mini-juegos sueltos. Se llama una vez
+// desde el menú; a partir de ahí, cada mini termina y encadena solo el
+// siguiente hasta completar la tanda de 5, sin preguntar nada entre medio.
+async function startSoloMinis(){
   S.solo = true; S.soloMini = true;
   if (!S.me) S.me = { id:"solo", name:"Tú", avatar:"😎", score:0, connected:true };
-  const pick = kind || SOLO_MINIS[Math.floor(Math.random()*SOLO_MINIS.length)];
+  S.soloMiniRound = 0;
+  S.soloMiniTotal = 0;
+  soloMiniAdvance();
+}
+
+async function soloMiniAdvance(){
+  S.soloMiniRound++;
+  const pick = SOLO_MINIS[Math.floor(Math.random()*SOLO_MINIS.length)];
   soloMiniActive = pick;
   Music.enterGame();
   let data;
@@ -2060,34 +2124,48 @@ async function startSoloMinis(kind){
     else if (pick === "ritmo") data = buildRitmo();
     else if (pick === "preg") data = await buildPreg();
   } catch(e){ data = null; }
-  if (!data){ toast("No se pudo cargar el mini-juego"); return show("solo-menu"); }
+  if (!data){
+    toast("No se pudo cargar el mini-juego");
+    S.soloMini = false; S.solo = false; S.room = null;
+    return show("solo-menu");
+  }
   const until = Date.now() + (pick === "punteria" || pick === "reaccion" ? 20000 : 35000);
   const m = { kind:pick, phase:"play", round:0, data, until };
   S.room = { status:"mini", mini_state:m, settings:{ filter:"off" }, current_q:0 };
   startMiniPlay(m);
 }
 
-// Llamado por los minis cuando terminan, SOLO en modo mini-suelto.
+// Llamado por los minis cuando terminan, SOLO en modo mini-suelto. Encadena
+// el siguiente automáticamente hasta llegar a los 5; ahí recién pregunta.
 function soloMiniFinish(score){
   if (!S.soloMini) return false;
   clearInterval(S.miniPlayIv);
+  S.soloMiniTotal += (score|0);
+  const isLast = S.soloMiniRound >= SOLO_MINI_STREAK;
   const card = document.createElement("div");
   card.className = "cruci-win";
   card.innerHTML = `
     <div class="cw-box">
-      <div class="cw-emoji">🎉</div>
-      <p class="cw-label">${SOLO_MINI_NAMES[soloMiniActive] || "Mini-juego"}</p>
+      <div class="cw-emoji">${isLast ? "🏁" : "🎉"}</div>
+      <p class="cw-label">${SOLO_MINI_NAMES[soloMiniActive] || "Mini-juego"} · ${S.soloMiniRound}/${SOLO_MINI_STREAK}</p>
       <div class="cw-key"><span>${score|0}</span></div>
-      <p class="cw-msg">puntos</p>
-      <div class="cw-btns">
-        <button class="btn big btn-green" id="smAgain">Otro mini-juego 🎲</button>
-        <button class="btn ghost" id="smExit">Salir al menú</button>
-      </div>
+      <p class="cw-msg">puntos${isLast ? ` · ${S.soloMiniTotal} en total` : ""}</p>
     </div>`;
   document.body.appendChild(card);
-  try { if (typeof Fun !== "undefined") Fun.confetti(50); } catch(e){}
-  card.querySelector("#smAgain").onclick = () => { card.remove(); startSoloMinis(); };
-  card.querySelector("#smExit").onclick = () => { card.remove(); S.soloMini = false; S.solo = false; S.room = null; show("solo-menu"); };
+  try { if (typeof Fun !== "undefined") Fun.confetti(isLast ? 90 : 40); } catch(e){}
+  if (isLast){
+    // Recién acá se pregunta si sigue, después de los 5 seguidos.
+    const btns = document.createElement("div");
+    btns.className = "cw-btns";
+    btns.innerHTML = `<button class="btn big btn-green" id="smAgain">Jugar 5 más 🎲</button>
+      <button class="btn ghost" id="smExit">Salir al menú</button>`;
+    card.querySelector(".cw-box").appendChild(btns);
+    card.querySelector("#smAgain").onclick = () => { card.remove(); startSoloMinis(); };
+    card.querySelector("#smExit").onclick = () => { card.remove(); S.soloMini = false; S.solo = false; S.room = null; show("solo-menu"); };
+  } else {
+    // Sigue solo a la siguiente ronda tras un respiro breve.
+    setTimeout(() => { card.remove(); soloMiniAdvance(); }, 1400);
+  }
   return true;
 }
 
@@ -2176,7 +2254,7 @@ function buildReaccion(){
 
 // Ritmo Copiado (Simón dice): una secuencia larga; cada ronda revela un paso más.
 function buildRitmo(){
-  const seq = Array.from({length:12}, () => Math.floor(Math.random()*4)); // colores 0..3
+  const seq = Array.from({length:9}, () => Math.floor(Math.random()*4)); // colores 0..3, 9 niveles (antes 12, imposible de completar)
   return { seq, n: seq.length };
 }
 
@@ -2280,7 +2358,7 @@ function miniPlayMs(kind){
   if (kind === "memoria") return 12000;   // tiempo para repetir la secuencia
   if (kind === "punteria") return 30000;
   if (kind === "reaccion") return 16000;   // varias rondas de espera+toque
-  if (kind === "ritmo") return 30000;      // secuencia que crece
+  if (kind === "ritmo") return 42000;      // secuencia que crece (9 niveles, ahora sí alcanza)
   if (kind === "preg") return 25000;       // completar la palabra con pistas
   return 15000;
 }
@@ -2995,11 +3073,11 @@ async function ritmoPlaySequence(m){
   S.ritmoInput = [];
   $("#ritmoMsg").textContent = "Observa… 👀";
   const seq = m.data.seq.slice(0, S.ritmoLevel);
-  await sleep(600);
+  await sleep(450);
   for (const idx of seq){
     if (S.ritmoDone) return;
     await ritmoFlash(idx);
-    await sleep(220);
+    await sleep(140);
   }
   $("#ritmoMsg").textContent = "¡Tu turno! Repite la secuencia";
   S.ritmoLocked = false;
@@ -3010,7 +3088,7 @@ function ritmoFlash(idx){
     if (!pad){ res(); return; }
     pad.classList.add("lit");
     Sfx.pick && Sfx.pick();
-    setTimeout(() => { pad.classList.remove("lit"); res(); }, 420);
+    setTimeout(() => { pad.classList.remove("lit"); res(); }, 340);
   });
 }
 async function ritmoTap(idx, m){
@@ -3024,14 +3102,14 @@ async function ritmoTap(idx, m){
     Sfx.pick && Sfx.pick();
     S.ritmoInput.push(idx);
     S.ritmoScore++; // cada paso correcto suma
-    miniBar("#msbRitmo", S.ritmoScore * 10, 150);
+    miniBar("#msbRitmo", S.ritmoScore * 10, 250);
     if (S.ritmoInput.length === seq.length){
       // Completó el nivel → sube dificultad
       S.ritmoLocked = true;
       $("#ritmoMsg").textContent = "¡Bien! 🎉 Ahora más largo…";
       S.ritmoLevel++;
       if (S.ritmoLevel > m.data.seq.length){ ritmoFinishLocal(m); return; }
-      await sleep(800);
+      await sleep(550);
       ritmoPlaySequence(m);
     }
   } else {

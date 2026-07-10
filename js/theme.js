@@ -149,6 +149,8 @@ const Scenes = (() => {
     pixar:"salto", anime:"sakura", famosos:"alfombra", pop:"neon", geek:"comic",
     tecnologia:"cyber", historia:"museo", animales:"selva", futbol:"estadio",
     deportes:"arena", trivia:"arcade", curiosos:"lab", banderas:"mundo",
+    greys:"series", terror:"galaxia", histchile:"museo", farandula:"alfombra",
+    marvel:"comic", dc:"neon", dragonball:"sakura", starwars:"espacio", lotr:"tronos",
   };
   const AMBIENT = ["fiesta","galaxia","submarino","aurora","oceano","candy"];
   const ROTATE_MS = 30000;   // cada cuánto rota el ambiente del lobby/inicio

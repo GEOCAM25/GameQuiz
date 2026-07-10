@@ -401,7 +401,18 @@ const StartFx = (() => {
   document.addEventListener("pointerdown", () => {
     if (typeof GAME_START_SOUND === "undefined" || !GAME_START_SOUND) return;
     try { primeAudio(get()); } catch(e){}
+    playOnceToday();
   }, { once:true });
+  // Suena una vez cada día, la primera vez que la persona abre la app
+  // (además de sonar en cada inicio de partida, como ya hacía).
+  function playOnceToday(){
+    try {
+      const today = new Date().toISOString().slice(0, 10); // AAAA-MM-DD
+      if (localStorage.getItem("gq_start_sound_day") === today) return;
+      localStorage.setItem("gq_start_sound_day", today);
+      setTimeout(play, 400); // pequeño respiro tras el desbloqueo mudo de iOS
+    } catch(e){}
+  }
   function play(){
     if (!Sfx.isEnabled()) return;
     if (typeof GAME_START_SOUND === "undefined" || !GAME_START_SOUND) return;

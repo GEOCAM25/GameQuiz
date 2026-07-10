@@ -62,6 +62,11 @@
         <span class="sc-txt"><b>Mini-juegos sueltos</b><small>Reacción, memoria, puntería y más</small></span>
         <span class="sc-go">▶</span>
       </button>
+      <button class="solo-card" id="soloQuizTime">
+        <span class="sc-emoji">🧠</span>
+        <span class="sc-txt"><b>Quiz-Time</b><small>Trivia solo, elige categoría y cantidad de preguntas</small></span>
+        <span class="sc-go">▶</span>
+      </button>
     </div>
   </section>
 
@@ -104,6 +109,22 @@
       <div id="soundBoard"></div>
     </div>
 
+    <div id="tvRemote" class="panel tv-remote hidden">
+      <p class="soundboard-title">📺 Control de la TV</p>
+      <p class="soundboard-sub">Mueve los menús del Roku desde aquí</p>
+      <div class="remote-pad">
+        <button class="rk up" data-k="up">▲</button>
+        <button class="rk left" data-k="left">◀</button>
+        <button class="rk ok" data-k="OK">OK</button>
+        <button class="rk right" data-k="right">▶</button>
+        <button class="rk down" data-k="down">▼</button>
+      </div>
+      <div class="remote-row">
+        <button class="rk wide" data-k="rewind">⌫ Borrar</button>
+        <button class="rk wide" data-k="back">← Atrás</button>
+      </div>
+    </div>
+
     <div class="panel" id="hostSettings">
       <p class="panel-title">Ajustes de la partida 🎛️</p>
       <label class="lbl">Preguntas</label>
@@ -112,7 +133,7 @@
       </div>
       <label class="lbl">Tiempo por pregunta</label>
       <div class="seg" id="segTime">
-        <button data-v="15">⚡ 15s</button><button data-v="25">25s</button><button data-v="40" class="on">40s</button>
+        <button data-v="15" class="on">⚡ 15s</button><button data-v="25">25s</button><button data-v="40">40s</button>
       </div>
       <label class="lbl">¿Quién elige la categoría?</label>
       <div class="seg" id="segMode">
@@ -128,7 +149,7 @@
       </div>
       <label class="lbl">Mini-juegos sorpresa 🎁 (elige uno o varios; cada uno aparece 1 vez)</label>
       <div class="mini-grid" id="miniGrid">
-        <button data-v="none" class="on">Ninguno</button>
+        <button data-v="none">Ninguno</button>
         <button data-v="flash">🔢 NúmeroFlash</button>
         <button data-v="color">🎨 Colorín</button>
         <button data-v="memoria">🧠 Memoria</button>
@@ -137,7 +158,8 @@
         <button data-v="ritmo">🎵 Ritmo</button>
         <button data-v="delator">🕵️ Delator</button>
         <button data-v="preg">💡 Preguntón</button>
-        <button data-v="random">🎲 Al azar</button>
+        <button data-v="random" class="on">🎲 Al azar (2)</button>
+        <button data-v="all">🎁 Todos</button>
       </div>
       <label class="lbl">Música de fondo</label>
       <label class="switch-row"><input type="checkbox" id="chkMusicSync"> Sincronizar para todos 🔗 (misma canción, al mismo tiempo)</label>

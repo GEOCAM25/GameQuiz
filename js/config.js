@@ -17,9 +17,13 @@ const CATEGORIES = [
   { id:"cine",       name:"Cine",               emoji:"🎬", group:"TV y Streaming" },
   { id:"famosos",    name:"Famosos",            emoji:"⭐", group:"TV y Streaming" },
   { id:"geek",       name:"Cultura Geek",       emoji:"🦸", group:"TV y Streaming" },
+  { id:"greys",      name:"Anatomía de Grey",   emoji:"🏥", group:"TV y Streaming" },
+  { id:"terror",     name:"Terror",             emoji:"👻", group:"TV y Streaming" },
   { id:"banderas",   name:"Banderas y Capitales",emoji:"🌍", group:"Cultura" },
   { id:"historia",   name:"Historia",           emoji:"🏛️", group:"Cultura" },
+  { id:"histchile",  name:"Historia de Chile",  emoji:"🇨🇱", group:"Cultura" },
   { id:"pop",        name:"Cultura Pop",        emoji:"🎤", group:"Cultura" },
+  { id:"farandula",  name:"Farándula",          emoji:"🎤", group:"Cultura" },
   { id:"trivia",     name:"Trivia General",     emoji:"🧠", group:"Cultura" },
   { id:"curiosos",   name:"Datos Curiosos",     emoji:"🤯", group:"Cultura" },
   { id:"tecnologia", name:"Tecnología",         emoji:"💻", group:"Cultura" },
@@ -27,6 +31,11 @@ const CATEGORIES = [
   { id:"animales",   name:"Animales",           emoji:"🦁", group:"Cultura" },
   { id:"futbol",     name:"Fútbol",             emoji:"⚽", group:"Deportes" },
   { id:"deportes",   name:"Deportes",           emoji:"🏅", group:"Deportes" },
+  { id:"marvel",     name:"Marvel",             emoji:"🦸", group:"Fandoms" },
+  { id:"dc",         name:"DC Cómic",           emoji:"🦇", group:"Fandoms" },
+  { id:"dragonball", name:"Dragón Ball",        emoji:"🐉", group:"Fandoms" },
+  { id:"starwars",   name:"Star Wars",          emoji:"⭐", group:"Fandoms" },
+  { id:"lotr",       name:"El Señor de los Anillos", emoji:"💍", group:"Fandoms" },
 ];
 
 // Personajes (máx 15 jugadores, uno por personaje)

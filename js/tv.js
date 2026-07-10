@@ -37,20 +37,24 @@ const TV = (() => {
         <div class="tv-logo">GAME <span>QUIZ</span> <b>TV</b></div>
         <div class="tv-code-box">Sala <span id="tvCode">····</span></div>
         <div class="tv-players" id="tvPlayers"></div>
+        <button class="tv-pause-btn" id="tvPauseBtn">⏸ Pausar</button>
       </div>
       <div class="tv-body" id="tvBody"></div>
       <div class="tv-pause-overlay hidden" id="tvPause">
         <div class="tv-pause-card">⏸ <b>Juego en pausa</b><small>El anfitrión pausó la partida</small></div>
       </div>`;
+    $("#tvPauseBtn").onclick = () => togglePause();
   }
 
   async function createRoom(){
+    if (window.authReady) await window.authReady;
     // Código NUMÉRICO para la TV (más fácil de dictar/teclear en teléfonos)
     code = String(Math.floor(1000 + Math.random() * 9000));
-    const settings = { count:10, mode:"admin", filter:"on", cat:"disney", qids:[], scoreMode:"reset", qtime:40, tv:true };
+    const settings = { count:10, mode:"admin", filter:"on", cat: CATEGORIES[Math.floor(Math.random()*CATEGORIES.length)].id, qids:[], scoreMode:"reset", qtime:15, minis:["random"], tv:true };
     const { data, error } = await sb.from("rooms").insert({ code, settings, status:"lobby" }).select().single();
     if (error){ $("#tvBody").innerHTML = `<p class="tv-msg">No se pudo crear la sala 😕</p>`; return; }
     room = data;
+    lastCmdT = (room.settings && room.settings.tvCmd && room.settings.tvCmd.t) || 0;
     $("#tvCode").textContent = code;
     renderLobby();
   }
@@ -84,10 +88,19 @@ const TV = (() => {
   }
 
   // ---- Reacción a cada cambio de estado de la sala ----
-  let lastStatus = null, lastQ = null;
+  let lastStatus = null, lastQ = null, lastCmdT = 0;
   function onRoom(){
+    // Comando del teléfono (mismo mecanismo que usa el canal Roku): por
+    // ahora solo el botón OK (pausar/reanudar) tiene efecto en modo web.
+    const cmd = room.settings && room.settings.tvCmd;
+    if (cmd && cmd.t && cmd.t !== lastCmdT){
+      lastCmdT = cmd.t;
+      if (cmd.key === "OK") togglePause();
+    }
     const paused = room.settings && room.settings.paused;
     $("#tvPause").classList.toggle("hidden", !paused);
+    const pb = $("#tvPauseBtn");
+    if (pb) pb.textContent = paused ? "▶ Reanudar" : "⏸ Pausar";
     const st = room.status;
     if (st === "lobby" && lastStatus !== "lobby") renderLobby();
     else if (st === "countdown" && lastStatus !== "countdown") renderCountdown();
