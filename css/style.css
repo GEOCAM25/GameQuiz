@@ -1083,3 +1083,70 @@ body.tv-mode{ overflow:hidden; }
 .remote-row{display:flex;gap:10px;margin-top:6px}
 .rk.wide{flex:1;height:48px;font-size:15px;background:linear-gradient(180deg,#4A4560,#302B44);
   box-shadow:0 4px 0 #201C2E}
+
+/* ============================================================
+   KARAOKE 🎤 — escenario de discoteca
+   ============================================================ */
+.btn-purple{background:linear-gradient(180deg,#B06CF0,#8A3FD6);color:#fff;box-shadow:0 4px 0 #6A2BB0}
+#karaokeScreen{height:100%}
+.kar-loading{color:#fff;font-weight:800;text-align:center;margin:auto;font-size:17px;line-height:1.5;
+  display:flex;align-items:center;justify-content:center;height:100%;padding:20px;text-shadow:0 1px 6px rgba(0,0,0,.5)}
+.kar-stage{position:relative;height:100%;display:flex;flex-direction:column;gap:10px;padding:8px;overflow:hidden;
+  background:radial-gradient(120% 90% at 50% 0%,#3a1560 0%,#1a0a33 55%,#0a0418 100%)}
+/* luces de disco de fondo */
+.kar-lights{position:absolute;inset:0;pointer-events:none;opacity:.5;z-index:0;
+  background:
+    radial-gradient(closest-side,rgba(255,0,140,.45),transparent 70%) -10% 10%/40% 40% no-repeat,
+    radial-gradient(closest-side,rgba(0,200,255,.45),transparent 70%) 110% 20%/45% 45% no-repeat,
+    radial-gradient(closest-side,rgba(255,220,0,.4),transparent 70%) 20% 120%/50% 50% no-repeat,
+    radial-gradient(closest-side,rgba(120,0,255,.4),transparent 70%) 90% 110%/45% 45% no-repeat;
+  animation:karLights 6s ease-in-out infinite alternate}
+@keyframes karLights{0%{filter:hue-rotate(0deg)}100%{filter:hue-rotate(120deg)}}
+.kar-stage>*{position:relative;z-index:1}
+.kar-topbar{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.kar-close{border:none;background:rgba(255,255,255,.16);color:#fff;width:38px;height:38px;border-radius:50%;
+  font-size:18px;font-weight:800;cursor:pointer;flex-shrink:0}
+.kar-title{display:flex;align-items:center;gap:8px;flex:1;justify-content:center}
+.kar-neon{font-family:'Fredoka';font-weight:700;font-size:clamp(22px,7vw,40px);letter-spacing:2px;
+  color:#fff;text-shadow:0 0 6px #ff3dcb,0 0 14px #ff3dcb,0 0 26px #b64dff;animation:karGlow 1.6s ease-in-out infinite alternate}
+@keyframes karGlow{0%{text-shadow:0 0 6px #ff3dcb,0 0 14px #ff3dcb,0 0 26px #b64dff}
+  100%{text-shadow:0 0 10px #00e0ff,0 0 22px #00e0ff,0 0 34px #35a0ff}}
+.kar-mic{font-size:clamp(20px,6vw,32px)}
+.kar-mic.left{transform:rotate(-18deg)}
+.kar-mic.right{transform:rotate(18deg) scaleX(-1)}
+.kar-disco{font-size:26px;flex-shrink:0;animation:karSpin 3s linear infinite;filter:drop-shadow(0 0 8px rgba(255,255,255,.6))}
+@keyframes karSpin{to{transform:rotate(360deg)}}
+/* pantalla del video, casi a pantalla completa */
+.kar-videowrap{flex:1;min-height:0;display:flex;align-items:center;justify-content:center}
+.kar-screenframe{position:relative;width:100%;max-width:min(100%,calc((100vh - 220px) * 1.777));aspect-ratio:16/9;
+  border-radius:14px;overflow:hidden;background:#000;
+  box-shadow:0 0 0 3px rgba(255,255,255,.15),0 0 28px rgba(180,80,255,.6),0 10px 30px rgba(0,0,0,.6)}
+.kar-screenframe #ytHolder,.kar-screenframe iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.kar-msg{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;color:#fff;font-weight:700;padding:22px;background:rgba(10,4,24,.9);font-size:15px;line-height:1.5;z-index:3}
+.kar-msg code{background:rgba(255,255,255,.15);padding:1px 6px;border-radius:6px;font-size:13px}
+.kar-controls{display:flex;align-items:center;justify-content:center;gap:16px}
+.kar-ctrl{border:none;border-radius:50%;width:52px;height:52px;font-size:20px;cursor:pointer;color:#fff;
+  background:linear-gradient(180deg,rgba(255,255,255,.22),rgba(255,255,255,.08));box-shadow:0 3px 0 rgba(0,0,0,.35);transition:transform .08s}
+.kar-ctrl:active{transform:translateY(3px);box-shadow:0 0 0}
+.kar-ctrl.kar-play{width:64px;height:64px;font-size:26px;background:linear-gradient(180deg,#ff5bd0,#c22ea6);box-shadow:0 4px 0 #8e1f79}
+/* selector de categorías (playlists) */
+.kar-cats{display:flex;gap:8px;overflow-x:auto;padding:4px 2px 6px;scrollbar-width:thin}
+.kar-chip{flex:0 0 auto;width:118px;border:2px solid rgba(255,255,255,.18);border-radius:14px;cursor:pointer;
+  background:rgba(255,255,255,.08);color:#fff;padding:8px 6px;display:flex;flex-direction:column;align-items:center;gap:2px;
+  text-align:center;transition:transform .08s}
+.kar-chip:active{transform:scale(.96)}
+.kar-chip.on{border-color:#ff5bd0;background:linear-gradient(180deg,rgba(255,91,208,.35),rgba(138,63,214,.35));
+  box-shadow:0 0 14px rgba(255,91,208,.5)}
+.kar-chip.main .kc-name::after{content:" ⭐"}
+.kar-chip .kc-emoji{font-size:22px}
+.kar-chip .kc-name{font-weight:800;font-size:12px;line-height:1.1}
+.kar-chip .kc-desc{font-size:10px;opacity:.8;line-height:1.1}
+.kar-note{color:rgba(255,255,255,.7);font-size:11px;text-align:center;font-weight:600}
+/* En pantallas anchas (TV) el video se agranda y las decoraciones crecen */
+@media(min-width:900px){
+  .kar-neon{font-size:48px}
+  .kar-chip{width:150px}
+  .kar-ctrl{width:64px;height:64px;font-size:26px}
+  .kar-ctrl.kar-play{width:80px;height:80px;font-size:34px}
+}

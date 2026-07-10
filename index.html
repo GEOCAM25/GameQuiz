@@ -37,6 +37,7 @@
       <button class="btn big btn-red" id="btnGoCreate">🎪 Crear sala</button>
       <button class="btn big btn-blue" id="btnGoJoin">🚪 Entrar a una sala</button>
       <button class="btn big btn-yellow" id="btnSolo">🎮 Juegos individuales</button>
+      <button class="btn ghost" id="btnKaraoke">🎤 Karaoke</button>
       <button class="btn ghost" id="btnTV">📺 Modo pantalla (TV / Roku)</button>
       <button class="btn ghost" id="btnHowTo">❓ Cómo se juega</button>
     </div>
@@ -75,6 +76,11 @@
     <div id="cruciScreen"></div>
   </section>
 
+  <!-- ============ KARAOKE ============ -->
+  <section id="scr-karaoke" class="screen">
+    <div id="karaokeScreen"></div>
+  </section>
+
   <!-- ============ PERFIL (nombre + personaje) ============ -->
   <section id="scr-profile" class="screen">
     <h2 class="scr-title" id="profileTitle">Elige tu personaje</h2>
@@ -108,6 +114,8 @@
       <p class="soundboard-sub">Tócalo y todos en la sala lo escuchan. ¡Cambia cada partida!</p>
       <div id="soundBoard"></div>
     </div>
+
+    <button class="btn small btn-purple" id="btnKaraokeLobby">🎤 Abrir Karaoke</button>
 
     <div id="tvRemote" class="panel tv-remote hidden">
       <p class="soundboard-title">📺 Control de la TV</p>
@@ -461,6 +469,7 @@
 <script src="js/audio.js"></script>
 <script src="js/fun.js"></script>
 <script src="js/crossword.js"></script>
+<script src="js/karaoke.js"></script>
 <script src="js/tv.js"></script>
 <script src="js/theme.js"></script>
 <script src="js/app.js"></script>

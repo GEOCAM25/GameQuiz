@@ -207,6 +207,16 @@ $("#soloCruci") && ($("#soloCruci").onclick = () => {
 });
 $("#soloMinis") && ($("#soloMinis").onclick = () => { Sfx.click(); startSoloMinis(); });
 $("#soloQuizTime") && ($("#soloQuizTime").onclick = () => { Sfx.click(); startSolo("Tú", "😎"); });
+$("#btnKaraoke") && ($("#btnKaraoke").onclick = () => {
+  Sfx.click();
+  if (typeof Karaoke === "undefined") return toast("No se pudo cargar el karaoke");
+  Karaoke.open(() => show("home"));
+});
+$("#btnKaraokeLobby") && ($("#btnKaraokeLobby").onclick = () => {
+  Sfx.click();
+  if (typeof Karaoke === "undefined") return toast("No se pudo cargar el karaoke");
+  Karaoke.open(() => show("lobby"));
+});
 $("#btnTV") && ($("#btnTV").onclick = () => {
   Sfx.click();
   modal(`<h3>📺 Modo pantalla</h3>
