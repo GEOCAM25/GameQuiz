@@ -313,7 +313,7 @@ async function createRoom(name, ava){
   if (needBackend()) return;
   await window.authReady;
   const code = roomCode();
-  const settings = { count:10, mode:"admin", filter:"on", cat: randomCategoryId(), qids:[], scoreMode:"reset", qtime:15, minis:["random"] };
+  const settings = { count:10, mode:"admin", filter:"on", cat: "disney", qids:[], scoreMode:"reset", qtime:15, minis:["random"] };
   const { data: room, error } = await sb.from("rooms").insert({ code, settings }).select().single();
   if (error) return toast("⚠️ No se pudo crear la sala");
   const { data: me } = await sb.from("players").insert({ room_id: room.id, name, avatar: ava, is_host: true }).select().single();
@@ -609,14 +609,20 @@ $$("#miniGrid button").forEach(b => b.onclick = async () => {
 function renderCats(){
   const grid = $("#catGrid"); grid.innerHTML = "";
   const voteMode = S.room?.settings.mode === "vote";
-  $("#catTitle").textContent = voteMode ? "Vota por una categoría 🗳️" : "Categoría 📚" + (amHost() ? "" : " (la elige el anfitrión)");
+  const randomMode = S.room?.settings.mode === "random";
+  $("#catTitle").textContent = voteMode ? "Vota por una categoría 🗳️"
+    : randomMode ? "Categoría al azar 🎲 (se sortea al iniciar)"
+    : "Categoría 📚" + (amHost() ? "" : " (la elige el anfitrión)");
   CATEGORIES.forEach(c => {
     const b = document.createElement("button");
-    b.className = "cat" + (S.room.settings.cat === c.id && !voteMode ? " sel" : "");
+    // En modo aleatorio no se marca ninguna (se decide al iniciar)
+    b.className = "cat" + (S.room.settings.cat === c.id && !voteMode && !randomMode ? " sel" : "");
     b.innerHTML = `<span class="ce">${c.emoji}</span>${c.name}<span class="votes hidden" id="v-${c.id}">0</span>`;
     b.onclick = async () => {
       Sfx.pick();
-      if (voteMode){
+      if (randomMode){
+        toast("🎲 En modo aleatorio la categoría se sortea al iniciar");
+      } else if (voteMode){
         await sb.from("votes").upsert({ room_id:S.room.id, player_id:S.me.id, category:c.id });
         toast(`Votaste por ${c.name} ${c.emoji}`);
       } else if (amHost()){
@@ -786,6 +792,8 @@ $("#btnStart").onclick = async () => {
     const max = Math.max(0, ...Object.values(counts));
     const top = Object.keys(counts).filter(k => counts[k] === max);
     if (top.length) cat = top[Math.floor(Math.random()*top.length)];
+  } else if (S.room.settings.mode === "random"){
+    cat = randomCategoryId();
   }
   const bank = await loadBank(cat);
   const count = Math.min(S.room.settings.count, bank.questions.length);
