@@ -1150,3 +1150,8 @@ body.tv-mode{ overflow:hidden; }
   .kar-ctrl{width:64px;height:64px;font-size:26px}
   .kar-ctrl.kar-play{width:80px;height:80px;font-size:34px}
 }
+
+/* Grilla de categorías dentro del modal de Trivia-Quiz (solo) */
+.solo-cat-grid{max-height:38vh;overflow-y:auto;padding:4px;margin-bottom:4px}
+.solo-cat-grid .cat{font-size:12px;padding:8px 4px}
+.solo-cat-grid .cat .ce{font-size:20px}

@@ -674,8 +674,8 @@ function renderPlayers(){
 $("#btnShare").onclick = () => {
   Sfx.click();
   const url = location.origin + location.pathname + "?sala=" + S.room.code;
-  const text = `🎲 ¡Juguemos GAME QUIZ! Toca aquí para entrar directo a mi sala (código ${S.room.code}) 👉 ${url}`;
-  if (navigator.share) navigator.share({ title:"GAME QUIZ", text, url }).catch(()=>{});
+  const text = `🎲 ¡Juguemos Súper Trivia! Toca aquí para entrar directo a mi sala (código ${S.room.code}) 👉 ${url}`;
+  if (navigator.share) navigator.share({ title:"Súper Trivia", text, url }).catch(()=>{});
   else { navigator.clipboard.writeText(text); toast("📋 Invitación copiada"); }
 };
 
@@ -1104,6 +1104,8 @@ function runCountdown(){
   S.myStreak = 0; // partida nueva, racha nueva
   boardAnimQ = null; boardDeltas = {};
   const bl = $("#boardList"); if (bl) bl.innerHTML = ""; // marcador limpio para la ronda nueva
+  const cl = $("#scr-countdown .cd-label");
+  if (cl) cl.textContent = S.solo ? "¡Trivia-Quiz está por comenzar!" : "¡Súper Trivia está por comenzar!";
   StartFx.play(); // sonido "¡empieza el juego!" para TODOS los jugadores
   show("countdown");
   let n = 3;
@@ -1819,45 +1821,45 @@ async function startSolo(name, ava){
   S.me = { id:"solo", name, avatar:ava, score:0, connected:true };
   S.players = [S.me];
   Music.enterGame();
-  const miniOpts = [
-    ["none","Ninguno"],["flash","🔢 NúmeroFlash"],["color","🎨 Colorín"],["memoria","🧠 Memoria"],
-    ["punteria","🎯 Puntería"],["reaccion","⚡ Reacción"],["ritmo","🎵 Ritmo"],["preg","💡 Preguntón"],
-    ["random","🎲 Al azar (de estos 7)"],
-  ];
-  modal(`<h3>🧠 Quiz-Time</h3><p>Trivia en solitario: elige categoría, cuántas preguntas y si quieres probar un mini-juego en el camino.</p>
-  <label class="lbl">Categoría</label><select id="soloCat" class="inp">${CATEGORIES.map(c=>`<option value="${c.id}">${c.emoji} ${c.name}</option>`).join("")}</select>
-  <label class="lbl">Preguntas</label><select id="soloN" class="inp"><option>10</option><option>20</option><option>30</option></select>
-  <label class="lbl">Probar un mini-juego 🎁</label>
-  <select id="soloMini" class="inp">${miniOpts.map(([v,l])=>`<option value="${v}">${l}</option>`).join("")}</select>
-  <p class="hint-modal">🕵️ Delator no está aquí porque necesita votar a OTROS jugadores reales — pruébalo en una sala con amigos.</p>`, [
+  let solCat = "disney";   // Disney marcada por defecto, igual que en multijugador
+  const catBtns = CATEGORIES.map(c =>
+    `<button type="button" class="cat${c.id===solCat?" sel":""}" data-cat="${c.id}"><span class="ce">${c.emoji}</span>${c.name}</button>`).join("");
+  modal(`<h3>🧠 Trivia-Quiz</h3><p>Trivia en solitario: elige categoría y cuántas preguntas. ¡Incluye 2 mini-juegos sorpresa al azar en el camino! 🎁</p>
+  <label class="lbl">Categoría</label>
+  <div id="soloCatGrid" class="cat-grid solo-cat-grid">${catBtns}</div>
+  <label class="lbl">Preguntas</label>
+  <select id="soloN" class="inp"><option>10</option><option>20</option><option>30</option></select>
+  <label class="lbl">Tiempo por pregunta</label>
+  <select id="soloT" class="inp">
+    <option value="15">15 segundos</option>
+    <option value="20" selected>20 segundos</option>
+    <option value="25">25 segundos</option>
+    <option value="40">40 segundos</option>
+  </select>`, [
     { t:"¡Jugar! 🚀", cls:"btn-green", fn: async () => {
-        const cat = $("#soloCat").value, n = +$("#soloN").value;
+        const cat = solCat, n = +$("#soloN").value, qtime = +$("#soloT").value || 20;
         const bank = await loadBank(cat);
         const qids = shuffle([...bank.questions.keys()]).slice(0, Math.min(n, bank.questions.length));
-        const SOLO_MINIS = ["flash","color","memoria","punteria","reaccion","ritmo","preg"];
-        let miniKind = $("#soloMini").value;
-        if (miniKind === "random") miniKind = SOLO_MINIS[Math.floor(Math.random()*SOLO_MINIS.length)];
-        const miniAt = (miniKind && miniKind !== "none" && qids.length >= 3)
-          ? 1 + Math.floor(Math.random() * (qids.length - 2)) : -1;
-        S.soloState = { cat, i:0, qids, miniKind, miniAt, miniDone:false };
-        S.room = { status:"countdown", settings:{ cat, qids:S.soloState.qids, filter:"off" }, current_q:-1, q_started_at:null };
+        S.soloState = { cat, i:0, qids, qtime, miniSchedule: buildSoloMiniSchedule(qids.length) };
+        S.room = { status:"countdown", settings:{ cat, qids, filter:"off", qtime }, current_q:-1, q_started_at:null };
         Music.setGamePhase("countdown");
         runCountdown();
         setTimeout(() => soloQuestion(0), 3800);
     }},
-    { t:"🎮 Solo el mini-juego (sin preguntas)", cls:"btn-yellow", fn: async () => {
-        let miniKind = $("#soloMini").value;
-        const SOLO_MINIS = ["flash","color","memoria","punteria","reaccion","ritmo","preg"];
-        if (miniKind === "random") miniKind = SOLO_MINIS[Math.floor(Math.random()*SOLO_MINIS.length)];
-        if (!miniKind || miniKind === "none"){ toast("🎁 Elige primero qué mini-juego probar"); return; }
-        S.room = { status:"mini", settings:{ qids:[0] }, current_q:0, mini_state:null };
-        soloRunMiniGame(miniKind, () => {
-          toast("✅ Prueba terminada — puedes elegir otro mini-juego");
-          startSolo(name, ava);
-        });
-    }},
     { t:"Volver", fn: () => { S.solo = false; show("solo-menu"); } },
   ]);
+  // Grilla de categorías tipo multijugador (marcar la elegida)
+  $$("#soloCatGrid .cat").forEach(b => b.onclick = () => {
+    solCat = b.dataset.cat; Sfx.pick();
+    $$("#soloCatGrid .cat").forEach(x => x.classList.toggle("sel", x === b));
+  });
+}
+// 2 mini-juegos al azar, en 2 momentos distintos de la partida
+function buildSoloMiniSchedule(n){
+  const SOLO_MINIS = ["flash","color","memoria","punteria","reaccion","ritmo","preg"];
+  const slots = shuffle(Array.from({ length: Math.max(0, n - 2) }, (_, i) => i + 1)).slice(0, 2);
+  const kinds = shuffle([...SOLO_MINIS]).slice(0, 2);
+  return slots.map((at, idx) => ({ kind: kinds[idx], at, done:false }));
 }
 function soloQuestion(i){
   S.soloState.i = i;
@@ -1865,7 +1867,7 @@ function soloQuestion(i){
   S.room.q_started_at = new Date().toISOString();
   S.room.status = "question";
   showQuestion();
-  S.soloTimeout = setTimeout(() => soloFinish(null), QUESTION_TIME*1000 + 400);
+  S.soloTimeout = setTimeout(() => soloFinish(null), qTime()*1000 + 400);
 }
 async function soloAnswer(idx, q){
   clearTimeout(S.soloTimeout);
@@ -1885,11 +1887,11 @@ async function soloFinish(ans){
   show("reveal");
   setTimeout(() => {
     const last = S.soloState.i >= S.soloState.qids.length - 1;
-    const miniPending = S.soloState.miniKind && S.soloState.miniKind !== "none" &&
-      !S.soloState.miniDone && S.soloState.i === S.soloState.miniAt;
-    if (miniPending){
-      S.soloState.miniDone = true;
-      soloRunMiniGame(S.soloState.miniKind, () => {
+    const sched = S.soloState.miniSchedule || [];
+    const pending = sched.find(m => !m.done && m.at === S.soloState.i);
+    if (pending){
+      pending.done = true;
+      soloRunMiniGame(pending.kind, () => {
         if (last){ S.players = [S.me]; showPodiumSolo(); }
         else soloQuestion(S.soloState.i + 1);
       });
