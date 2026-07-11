@@ -832,7 +832,7 @@ $("#btnStart").onclick = async () => {
   const usedQids = { ...usedAll, [cat]: [...usedCat, ...qids] };
 
   // Decidir qué mini-juegos entran (pueden ser varios) y en qué momento aparece cada uno
-  const IMPLEMENTED_MINIS = ["flash","color","memoria","punteria","reaccion","ritmo","delator","preg"];
+  const IMPLEMENTED_MINIS = ["flash","color","memoria","punteria","reaccion","ritmo","delator","preg","vf","bomba"];
   let chosen = S.room.settings.minis || (S.room.settings.mini ? [S.room.settings.mini] : ["random"]);
   let minisToPlay = [];
   if (chosen.includes("all")){
@@ -1955,6 +1955,8 @@ async function soloRunMiniGame(kind, onDone){
     else if (kind === "reaccion") data = buildReaccion();
     else if (kind === "ritmo") data = buildRitmo();
     else if (kind === "preg") data = await buildPreg();
+    else if (kind === "vf") data = buildVf();
+    else if (kind === "bomba") data = buildBomba();
     if (!data){ finish(); return; }
 
     const introMs = 5000;
@@ -2123,6 +2125,8 @@ const MINI_META = {
   ritmo:   { emoji:"🎵", title:"Ritmo Copiado", desc:"Mira la secuencia de colores y repítela igual. ¡Se pone más larga!" },
   preg:    { emoji:"💡", title:"Preguntón",   desc:"Adivina rápido según la categoría. ¡El más veloz gana más!" },
   delator: { emoji:"🕵️", title:"Delator",     desc:"¿Quién es más probable que…? Vota (y cuídate)." },
+  vf:      { emoji:"⚡", title:"Verdadero o Falso", desc:"Aparecen afirmaciones. Toca ✅ o ❌ lo más rápido y acertado que puedas." },
+  bomba:   { emoji:"💣", title:"Palabra Bomba", desc:"Escribe palabras de la categoría… ¡antes de que explote la bomba! 💥" },
 };
 
 // Mini-juegos cuyo puntaje se reparte por ORDEN DE LLEGADA (1°=100, 2°=90…)
@@ -2136,9 +2140,10 @@ const RANK_MINIS = { memoria:[58,50,44,39,35,32], preg:[58,50,44,39], reaccion:[
 // envoltorio local: arma el mini, lo corre y al terminar muestra el
 // puntaje con opción de repetir. No toca la base de datos.
 // ============================================================
-const SOLO_MINIS = ["flash","color","memoria","punteria","reaccion","ritmo","preg"];
+const SOLO_MINIS = ["flash","color","memoria","punteria","reaccion","ritmo","preg","vf","bomba"];
 const SOLO_MINI_NAMES = { flash:"NúmeroFlash 🔢", color:"Colorín 🎨", memoria:"Memoria 🧠",
-  punteria:"Puntería 🎯", reaccion:"Reacción ⚡", ritmo:"Ritmo 🎵", preg:"Preguntón 💡" };
+  punteria:"Puntería 🎯", reaccion:"Reacción ⚡", ritmo:"Ritmo 🎵", preg:"Preguntón 💡",
+  vf:"Verdadero o Falso ⚡", bomba:"Palabra Bomba 💣" };
 const SOLO_MINI_STREAK = 5; // cuántos mini-juegos seguidos antes de preguntar si sigue
 let soloMiniActive = null;
 
@@ -2167,6 +2172,8 @@ async function soloMiniAdvance(){
     else if (pick === "reaccion") data = buildReaccion();
     else if (pick === "ritmo") data = buildRitmo();
     else if (pick === "preg") data = await buildPreg();
+    else if (pick === "vf") data = buildVf();
+    else if (pick === "bomba") data = buildBomba();
   } catch(e){ data = null; }
   if (!data){
     toast("No se pudo cargar el mini-juego");
@@ -2231,6 +2238,8 @@ async function startMiniGame(entry){
     if (kind === "reaccion") mini.data = buildReaccion();
     if (kind === "ritmo") mini.data = buildRitmo();
     if (kind === "preg") mini.data = await buildPreg();
+    if (kind === "vf") mini.data = buildVf();
+    if (kind === "bomba") mini.data = buildBomba();
     if (kind === "delator"){
       mini.data = buildDelator();
       mini.phase = "names";        // fase extra: pedir nombre real
@@ -2404,6 +2413,8 @@ function miniPlayMs(kind){
   if (kind === "reaccion") return 16000;   // varias rondas de espera+toque
   if (kind === "ritmo") return 42000;      // secuencia que crece (9 niveles, ahora sí alcanza)
   if (kind === "preg") return 25000;       // completar la palabra con pistas
+  if (kind === "vf") return 26000;         // 8 afirmaciones a buen ritmo
+  if (kind === "bomba") return 22000;      // escribir palabras antes de que explote
   return 15000;
 }
 
@@ -2539,6 +2550,7 @@ function startMiniPlay(m){
   clearInterval(S.puntSpawnIv); clearTimeout(S.reacGoT); clearTimeout(S.memoHideT);
   flashSubmitted = false; colorSubmitted = false; memoriaSubmitted = false; punteriaSubmitted = false;
   reaccionSubmitted = false; ritmoSubmitted = false; pregSubmitted = false;
+  vfSubmitted = false; bombaSubmitted = false;
   if (m.kind === "flash") flashStart(m);
   if (m.kind === "color") colorStart(m);
   if (m.kind === "memoria") memoriaStart(m);
@@ -2546,6 +2558,8 @@ function startMiniPlay(m){
   if (m.kind === "reaccion") reaccionStart(m);
   if (m.kind === "ritmo") ritmoStart(m);
   if (m.kind === "preg") pregStart(m);
+  if (m.kind === "vf") vfStart(m);
+  if (m.kind === "bomba") bombaStart(m);
   // Loop local para el cronómetro del mini-juego (no depende de eventos de red)
   clearInterval(S.miniPlayIv);
   S.miniPlayIv = setInterval(() => {
@@ -2583,6 +2597,15 @@ function updateMiniTimer(m){
     const left = Math.max(0, Math.ceil(((m.until||0)-Date.now())/1000));
     const el = $("#pregTimer"); if (el) el.textContent = left;
     if (left <= 0) pregOnTimeUp(m);
+  } else if (m.kind === "vf"){
+    const left = Math.max(0, Math.ceil(((m.until||0)-Date.now())/1000));
+    const el = $("#vfTimer"); if (el) el.textContent = left;
+    if (left <= 0) vfOnTimeUp(m);
+  } else if (m.kind === "bomba"){
+    const left = Math.max(0, Math.ceil(((m.until||0)-Date.now())/1000));
+    const el = $("#bombaTimer"); if (el) el.textContent = left;
+    const fuse = $("#bombaFuse"); if (fuse){ const tot = miniPlayMs("bomba"); fuse.style.width = Math.max(0, Math.min(100, ((m.until-Date.now())/tot)*100)) + "%"; }
+    if (left <= 0) bombaOnTimeUp(m);
   }
 }
 // ---------- Barra de puntaje EN VIVO de los mini-juegos ----------
@@ -2851,6 +2874,126 @@ async function colorSubmit(m){
   } catch(e){}
 }
 function colorOnTimeUp(m){ if (!colorSubmitted) colorSubmit(m); }
+
+// ============================================================
+// ⚡ VERDADERO O FALSO — aparecen afirmaciones, tocas ✅ o ❌
+// ============================================================
+function buildVf(){
+  const POOL = [
+    { t:"El Sol es una estrella.", a:true },
+    { t:"Los murciélagos son ciegos.", a:false },
+    { t:"Un año en Marte dura más que en la Tierra.", a:true },
+    { t:"La Gran Muralla China se ve a simple vista desde la Luna.", a:false },
+    { t:"Los pulpos tienen tres corazones.", a:true },
+    { t:"El oro es más pesado que el plomo.", a:true },
+    { t:"Los tomates son una verdura.", a:false },
+    { t:"El agua hierve a 100 °C a nivel del mar.", a:true },
+    { t:"Los tiburones son mamíferos.", a:false },
+    { t:"La miel nunca se echa a perder.", a:true },
+    { t:"Saturno es el planeta con más anillos visibles.", a:true },
+    { t:"El corazón humano tiene cuatro cavidades.", a:true },
+    { t:"Los camaleones cambian de color solo para camuflarse.", a:false },
+    { t:"La Torre Eiffel está en Roma.", a:false },
+    { t:"El diamante está hecho de carbono.", a:true },
+    { t:"Los seres humanos usan solo el 10% del cerebro.", a:false },
+    { t:"El plátano es técnicamente una baya.", a:true },
+    { t:"Napoleón era extremadamente bajo de estatura.", a:false },
+    { t:"El cuerpo humano tiene 206 huesos en la adultez.", a:true },
+    { t:"La sangre es azul dentro de las venas.", a:false },
+    { t:"Australia es a la vez un país y un continente.", a:true },
+    { t:"Los delfines duermen con medio cerebro despierto.", a:true },
+    { t:"El Everest es la montaña más alta del mundo.", a:true },
+    { t:"Las jirafas no tienen cuerdas vocales.", a:false },
+    { t:"El vidrio es un líquido que fluye muy lento.", a:false },
+    { t:"Marte es conocido como el planeta rojo.", a:true },
+    { t:"Los pingüinos viven en el Polo Norte.", a:false },
+    { t:"El chocolate puede ser tóxico para los perros.", a:true },
+  ];
+  return { items: shuffle([...POOL]).slice(0, 8) };
+}
+function vfStart(m){
+  S.vfIdx = 0; S.vfScore = 0; S.vfItems = m.data.items || [];
+  miniBarReset("#msbVf");
+  const t = $("#vfTrue"), f = $("#vfFalse");
+  if (t) t.onclick = () => vfAnswer(true);
+  if (f) f.onclick = () => vfAnswer(false);
+  show("mini-vf");
+  vfRender();
+}
+function vfRender(){
+  const items = S.vfItems, i = S.vfIdx;
+  const prog = $("#vfProgress"); if (prog) prog.textContent = `${Math.min(i+1, items.length)}/${items.length}`;
+  const stim = $("#vfStim"); if (stim) stim.textContent = items[i] ? items[i].t : "";
+  const fb = $("#vfFeedback"); if (fb){ fb.textContent = ""; fb.className = "vf-feedback"; }
+  $$("#scr-mini-vf .vf-btn").forEach(b => b.disabled = false);
+}
+function vfAnswer(val){
+  const items = S.vfItems, i = S.vfIdx;
+  if (!items || i >= items.length) return;
+  const t = $("#vfTrue"); if (!t || t.disabled) return;   // ya respondió esta afirmación
+  $$("#scr-mini-vf .vf-btn").forEach(b => b.disabled = true);
+  const ok = (val === items[i].a);
+  if (ok){ S.vfScore += 15; try { Sfx.correct(); } catch(e){} } else { try { Sfx.wrong(); } catch(e){} }
+  miniBar("#msbVf", S.vfScore, items.length*15);
+  const fb = $("#vfFeedback");
+  if (fb){ fb.textContent = ok ? "¡Correcto! ✅" : `Era ${items[i].a ? "Verdadero ✅" : "Falso ❌"}`; fb.className = "vf-feedback " + (ok ? "good" : "bad"); }
+  setTimeout(() => {
+    S.vfIdx++;
+    if (S.vfIdx >= items.length) vfSubmit(S.room?.mini_state);
+    else vfRender();
+  }, 720);
+}
+let vfSubmitted = false;
+async function vfSubmit(m){
+  if (vfSubmitted) return; vfSubmitted = true;
+  const score = S.vfScore || 0;
+  if (S.solo){ S.soloMiniResult = { score }; if (soloMiniFinish(score)) return; return; }
+  try { await sb.from("mini_scores").insert({ room_id:S.room.id, player_id:S.me.id, kind:"vf", round:0, score }); } catch(e){}
+}
+function vfOnTimeUp(m){ if (!vfSubmitted) vfSubmit(m); }
+
+// ============================================================
+// 💣 PALABRA BOMBA — escribe palabras de la categoría antes de que explote
+// ============================================================
+function buildBomba(){
+  const CATS = ["Frutas 🍓","Países 🌍","Animales 🦁","Marcas de autos 🚗","Cosas de la cocina 🍳",
+    "Partes del cuerpo 🫀","Deportes ⚽","Colores 🎨","Nombres de persona 🙋","Cosas del colegio 🎒",
+    "Ropa 👕","Instrumentos musicales 🎸","Profesiones 👷","Bebidas 🥤","Cosas que vuelan ✈️"];
+  return { cat: CATS[Math.floor(Math.random()*CATS.length)] };
+}
+function bombaStart(m){
+  S.bombaWords = []; S.bombaScore = 0;
+  miniBarReset("#msbBomba");
+  const c = $("#bombaCat"); if (c) c.textContent = m.data.cat || "";
+  const list = $("#bombaList"); if (list) list.innerHTML = "";
+  const inp = $("#bombaInput"); if (inp) inp.value = "";
+  const add = $("#bombaAdd"); if (add) add.onclick = bombaAddWord;
+  if (inp) inp.onkeydown = (e) => { if (e.key === "Enter") bombaAddWord(); };
+  show("mini-bomba");
+  setTimeout(() => { try { $("#bombaInput")?.focus(); } catch(e){} }, 200);
+}
+function bombaAddWord(){
+  const inp = $("#bombaInput"); if (!inp) return;
+  const w = inp.value.trim(); inp.value = "";
+  if (w.length < 3){ inp.focus(); return; }
+  if (S.bombaWords.some(x => x.toLowerCase() === w.toLowerCase())){ toast("Ya la escribiste 😅"); inp.focus(); return; }
+  S.bombaWords.push(w);
+  S.bombaScore = S.bombaWords.length * 12;
+  try { Sfx.pick(); } catch(e){}
+  miniBar("#msbBomba", S.bombaScore, 6*12);
+  const list = $("#bombaList");
+  if (list){ const chip = document.createElement("span"); chip.className = "bomba-chip"; chip.textContent = w; list.appendChild(chip); }
+  inp.focus();
+}
+let bombaSubmitted = false;
+async function bombaSubmit(m){
+  if (bombaSubmitted) return; bombaSubmitted = true;
+  const score = S.bombaScore || 0;
+  try { if (typeof Fun !== "undefined" && Fun.burst) Fun.burst(["💥","🔥","💣"], 10); } catch(e){}
+  if (S.solo){ S.soloMiniResult = { score }; if (soloMiniFinish(score)) return; return; }
+  try { await sb.from("mini_scores").insert({ room_id:S.room.id, player_id:S.me.id, kind:"bomba", round:0, score }); } catch(e){}
+}
+function bombaOnTimeUp(m){ if (!bombaSubmitted) bombaSubmit(m); }
 
 // ---------- MEMORIA RELÁMPAGO ----------
 // Fases internas: "show" (ver la secuencia 3s) → "input" (repetir tocando)
