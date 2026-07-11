@@ -1,6 +1,6 @@
 // GAME QUIZ service worker — cache estático, red para Supabase
-const CACHE = "gamequiz-v39";
-const ASSETS = ["./","./index.html","./css/style.css","./js/config.js","./js/audio.js","./js/fun.js","./js/crossword.js","./js/karsync.js","./js/karaoke.js","./js/impostor.js","./js/tv.js","./js/theme.js","./js/app.js","./manifest.json"];
+const CACHE = "gamequiz-v40";
+const ASSETS = ["./","./index.html","./css/style.css","./js/config.js","./js/audio.js","./js/fun.js","./js/crossword.js","./js/karsync.js","./js/karaoke.js","./js/impostor.js","./js/draw.js","./js/tv.js","./js/theme.js","./js/app.js","./manifest.json"];
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)));
   self.skipWaiting();
