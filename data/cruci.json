@@ -5,85 +5,424 @@
       "tema": "Animales 🦁",
       "secreta": "ELEFANTE",
       "palabras": [
-        { "w": "TIGRE",     "p": "Felino naranja con rayas negras" },
-        { "w": "LEON",      "p": "El rey de la selva" },
-        { "w": "BALLENA",   "p": "El mamífero más grande del mar" },
-        { "w": "DELFIN",    "p": "Mamífero marino muy inteligente y juguetón" },
-        { "w": "CABALLO",   "p": "Se monta y relincha" },
-        { "w": "CANGURO",   "p": "Salta y lleva su cría en una bolsa" },
-        { "w": "TORTUGA",   "p": "Lenta y con caparazón" },
-        { "w": "SERPIENTE", "p": "Reptil largo que se arrastra" }
+        {
+          "w": "TIGRE",
+          "p": "Felino naranja con rayas negras"
+        },
+        {
+          "w": "LEON",
+          "p": "El rey de la selva"
+        },
+        {
+          "w": "BALLENA",
+          "p": "El mamífero más grande del mar"
+        },
+        {
+          "w": "DELFIN",
+          "p": "Mamífero marino muy inteligente y juguetón"
+        },
+        {
+          "w": "CABALLO",
+          "p": "Se monta y relincha"
+        },
+        {
+          "w": "CANGURO",
+          "p": "Salta y lleva su cría en una bolsa"
+        },
+        {
+          "w": "TORTUGA",
+          "p": "Lenta y con caparazón"
+        },
+        {
+          "w": "SERPIENTE",
+          "p": "Reptil largo que se arrastra"
+        }
       ]
     },
     {
       "tema": "Comida 🍔",
       "secreta": "ENSALADA",
       "palabras": [
-        { "w": "HELADO",   "p": "Postre frío que se derrite" },
-        { "w": "PAN",      "p": "Se hace con harina y va con casi todo" },
-        { "w": "SOPA",     "p": "Plato caliente que se toma con cuchara" },
-        { "w": "ASADO",    "p": "Carne a la parrilla, típica del domingo" },
-        { "w": "POLLO",    "p": "Ave de corral muy común en la mesa" },
-        { "w": "PIZZA",    "p": "Redonda, italiana, con queso" },
-        { "w": "EMPANADA", "p": "Masa rellena, de pino o queso" },
-        { "w": "TACOS",    "p": "Tortilla mexicana enrollada con relleno" }
+        {
+          "w": "HELADO",
+          "p": "Postre frío que se derrite"
+        },
+        {
+          "w": "PAN",
+          "p": "Se hace con harina y va con casi todo"
+        },
+        {
+          "w": "SOPA",
+          "p": "Plato caliente que se toma con cuchara"
+        },
+        {
+          "w": "ASADO",
+          "p": "Carne a la parrilla, típica del domingo"
+        },
+        {
+          "w": "POLLO",
+          "p": "Ave de corral muy común en la mesa"
+        },
+        {
+          "w": "PIZZA",
+          "p": "Redonda, italiana, con queso"
+        },
+        {
+          "w": "EMPANADA",
+          "p": "Masa rellena, de pino o queso"
+        },
+        {
+          "w": "TACOS",
+          "p": "Tortilla mexicana enrollada con relleno"
+        }
       ]
     },
     {
       "tema": "Países 🌍",
       "secreta": "ARGENTINA",
       "palabras": [
-        { "w": "CANADA",   "p": "País de la hoja de arce" },
-        { "w": "BRASIL",   "p": "País del carnaval y la samba" },
-        { "w": "PORTUGAL", "p": "Vecino de España, capital Lisboa" },
-        { "w": "SUECIA",   "p": "País nórdico, capital Estocolmo" },
-        { "w": "CHINA",    "p": "El país más poblado de Asia" },
-        { "w": "ITALIA",   "p": "Con forma de bota, capital Roma" },
-        { "w": "INDIA",    "p": "País del Taj Mahal" },
-        { "w": "FRANCIA",  "p": "País de la Torre Eiffel" },
-        { "w": "ESPAÑA",   "p": "País del flamenco, capital Madrid" }
+        {
+          "w": "CANADA",
+          "p": "País de la hoja de arce"
+        },
+        {
+          "w": "BRASIL",
+          "p": "País del carnaval y la samba"
+        },
+        {
+          "w": "PORTUGAL",
+          "p": "Vecino de España, capital Lisboa"
+        },
+        {
+          "w": "SUECIA",
+          "p": "País nórdico, capital Estocolmo"
+        },
+        {
+          "w": "CHINA",
+          "p": "El país más poblado de Asia"
+        },
+        {
+          "w": "ITALIA",
+          "p": "Con forma de bota, capital Roma"
+        },
+        {
+          "w": "INDIA",
+          "p": "País del Taj Mahal"
+        },
+        {
+          "w": "FRANCIA",
+          "p": "País de la Torre Eiffel"
+        },
+        {
+          "w": "ESPAÑA",
+          "p": "País del flamenco, capital Madrid"
+        }
       ]
     },
     {
       "tema": "Deportes ⚽",
       "secreta": "NATACION",
       "palabras": [
-        { "w": "TENIS",     "p": "Raqueta, red y pelota amarilla" },
-        { "w": "KARATE",    "p": "Arte marcial de golpes y katas" },
-        { "w": "ATLETISMO", "p": "Correr, saltar y lanzar en pista" },
-        { "w": "GIMNASIA",  "p": "Saltos, giros y equilibrio" },
-        { "w": "CICLISMO",  "p": "Deporte sobre dos ruedas a pedal" },
-        { "w": "ESGRIMA",   "p": "Duelo con espadas o floretes" },
-        { "w": "REMO",      "p": "Se avanza en bote con dos palas" },
-        { "w": "BADMINTON", "p": "Como el tenis pero con un 'gallito'" }
+        {
+          "w": "TENIS",
+          "p": "Raqueta, red y pelota amarilla"
+        },
+        {
+          "w": "KARATE",
+          "p": "Arte marcial de golpes y katas"
+        },
+        {
+          "w": "ATLETISMO",
+          "p": "Correr, saltar y lanzar en pista"
+        },
+        {
+          "w": "GIMNASIA",
+          "p": "Saltos, giros y equilibrio"
+        },
+        {
+          "w": "CICLISMO",
+          "p": "Deporte sobre dos ruedas a pedal"
+        },
+        {
+          "w": "ESGRIMA",
+          "p": "Duelo con espadas o floretes"
+        },
+        {
+          "w": "REMO",
+          "p": "Se avanza en bote con dos palas"
+        },
+        {
+          "w": "BADMINTON",
+          "p": "Como el tenis pero con un 'gallito'"
+        }
       ]
     },
     {
       "tema": "Colores 🎨",
       "secreta": "AMARILLO",
       "palabras": [
-        { "w": "NARANJA",  "p": "Color de la fruta del mismo nombre" },
-        { "w": "MORADO",   "p": "Mezcla de azul y rojo" },
-        { "w": "PLATEADO", "p": "Color del metal plata" },
-        { "w": "ROJO",     "p": "Color de la sangre y del fuego" },
-        { "w": "VIOLETA",  "p": "Tono entre el azul y el morado" },
-        { "w": "AZUL",     "p": "Color del cielo despejado" },
-        { "w": "BLANCO",   "p": "Color de la nieve" },
-        { "w": "DORADO",   "p": "Color del oro" }
+        {
+          "w": "NARANJA",
+          "p": "Color de la fruta del mismo nombre"
+        },
+        {
+          "w": "MORADO",
+          "p": "Mezcla de azul y rojo"
+        },
+        {
+          "w": "PLATEADO",
+          "p": "Color del metal plata"
+        },
+        {
+          "w": "ROJO",
+          "p": "Color de la sangre y del fuego"
+        },
+        {
+          "w": "VIOLETA",
+          "p": "Tono entre el azul y el morado"
+        },
+        {
+          "w": "AZUL",
+          "p": "Color del cielo despejado"
+        },
+        {
+          "w": "BLANCO",
+          "p": "Color de la nieve"
+        },
+        {
+          "w": "DORADO",
+          "p": "Color del oro"
+        }
       ]
     },
     {
       "tema": "Instrumentos 🎸",
       "secreta": "TROMPETA",
       "palabras": [
-        { "w": "FLAUTA",    "p": "Instrumento de viento con agujeros" },
-        { "w": "GUITARRA",  "p": "Seis cuerdas y caja de madera" },
-        { "w": "VIOLIN",    "p": "Se toca con arco, apoyado en el hombro" },
-        { "w": "TAMBOR",    "p": "Se golpea con baquetas, marca el ritmo" },
-        { "w": "PIANO",     "p": "Teclas blancas y negras" },
-        { "w": "BATERIA",   "p": "Conjunto de tambores y platillos" },
-        { "w": "CLARINETE", "p": "Viento de madera, negro y alargado" },
-        { "w": "ARPA",      "p": "Grande, de muchas cuerdas verticales" }
+        {
+          "w": "FLAUTA",
+          "p": "Instrumento de viento con agujeros"
+        },
+        {
+          "w": "GUITARRA",
+          "p": "Seis cuerdas y caja de madera"
+        },
+        {
+          "w": "VIOLIN",
+          "p": "Se toca con arco, apoyado en el hombro"
+        },
+        {
+          "w": "TAMBOR",
+          "p": "Se golpea con baquetas, marca el ritmo"
+        },
+        {
+          "w": "PIANO",
+          "p": "Teclas blancas y negras"
+        },
+        {
+          "w": "BATERIA",
+          "p": "Conjunto de tambores y platillos"
+        },
+        {
+          "w": "CLARINETE",
+          "p": "Viento de madera, negro y alargado"
+        },
+        {
+          "w": "ARPA",
+          "p": "Grande, de muchas cuerdas verticales"
+        }
+      ]
+    },
+    {
+      "tema": "Cocina 🍳",
+      "secreta": "CUCHARA",
+      "palabras": [
+        {
+          "w": "CACEROLA",
+          "p": "Olla ancha para guisos"
+        },
+        {
+          "w": "AZUCAR",
+          "p": "Endulza el café y los postres"
+        },
+        {
+          "w": "CUCHILLO",
+          "p": "Cubierto que corta"
+        },
+        {
+          "w": "HORNO",
+          "p": "Aquí se hornea el pan y las pizzas"
+        },
+        {
+          "w": "SARTEN",
+          "p": "Para freír huevos y panqueques"
+        },
+        {
+          "w": "PARRILLA",
+          "p": "Sobre ella se hace el asado"
+        },
+        {
+          "w": "TETERA",
+          "p": "Hierve el agua para el té"
+        }
+      ]
+    },
+    {
+      "tema": "Cuerpo 🫀",
+      "secreta": "CEREBRO",
+      "palabras": [
+        {
+          "w": "CORAZON",
+          "p": "Bombea la sangre"
+        },
+        {
+          "w": "PIERNA",
+          "p": "Sirve para caminar y patear"
+        },
+        {
+          "w": "RODILLA",
+          "p": "Articulación para agacharse"
+        },
+        {
+          "w": "MUELA",
+          "p": "Diente grande de atrás"
+        },
+        {
+          "w": "CABEZA",
+          "p": "Aquí van los ojos y el pelo"
+        },
+        {
+          "w": "BRAZO",
+          "p": "Une el hombro con la mano"
+        },
+        {
+          "w": "HOMBRO",
+          "p": "Sobre él se cargan las mochilas"
+        }
+      ]
+    },
+    {
+      "tema": "Naturaleza 🌳",
+      "secreta": "SELVA",
+      "palabras": [
+        {
+          "w": "PASTO",
+          "p": "Alfombra verde del parque"
+        },
+        {
+          "w": "DESIERTO",
+          "p": "Lugar seco lleno de arena"
+        },
+        {
+          "w": "LAGO",
+          "p": "Agua dulce rodeada de tierra"
+        },
+        {
+          "w": "VOLCAN",
+          "p": "Montaña que escupe lava"
+        },
+        {
+          "w": "MONTAÑA",
+          "p": "Se escala hasta la cumbre"
+        }
+      ]
+    },
+    {
+      "tema": "Tecnología 💻",
+      "secreta": "INTERNET",
+      "palabras": [
+        {
+          "w": "WIFI",
+          "p": "Conexión sin cables"
+        },
+        {
+          "w": "PANTALLA",
+          "p": "Aquí se ve todo lo digital"
+        },
+        {
+          "w": "TECLADO",
+          "p": "Tiene letras y números para escribir"
+        },
+        {
+          "w": "PARLANTE",
+          "p": "Por aquí sale el sonido"
+        },
+        {
+          "w": "ROBOT",
+          "p": "Máquina que hace tareas sola"
+        },
+        {
+          "w": "CONSOLA",
+          "p": "Sirve para jugar videojuegos"
+        },
+        {
+          "w": "CELULAR",
+          "p": "Teléfono que llevas en el bolsillo"
+        },
+        {
+          "w": "TABLET",
+          "p": "Pantalla táctil más grande que el teléfono"
+        }
+      ]
+    },
+    {
+      "tema": "Fiesta 🎉",
+      "secreta": "PIÑATA",
+      "palabras": [
+        {
+          "w": "PASTEL",
+          "p": "Se sopla la vela encima de él"
+        },
+        {
+          "w": "INVITADO",
+          "p": "Persona que llega a la celebración"
+        },
+        {
+          "w": "CUMPLEAÑOS",
+          "p": "Se celebra una vez al año"
+        },
+        {
+          "w": "GUIRNALDA",
+          "p": "Adorno colgante de papel"
+        },
+        {
+          "w": "TORTA",
+          "p": "Dulce grande que se reparte en pedazos"
+        },
+        {
+          "w": "MUSICA",
+          "p": "Sin ella no hay baile"
+        }
+      ]
+    },
+    {
+      "tema": "Océano 🌊",
+      "secreta": "DELFIN",
+      "palabras": [
+        {
+          "w": "MEDUSA",
+          "p": "Transparente y puede picar"
+        },
+        {
+          "w": "BALLENA",
+          "p": "El animal más grande del mar"
+        },
+        {
+          "w": "CARACOLA",
+          "p": "Se escucha el mar al acercarla al oído"
+        },
+        {
+          "w": "FOCA",
+          "p": "Aplaude con sus aletas"
+        },
+        {
+          "w": "TIBURON",
+          "p": "Depredador de aleta temida"
+        },
+        {
+          "w": "ANCLA",
+          "p": "Detiene al barco en su lugar"
+        }
       ]
     }
   ]
