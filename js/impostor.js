@@ -85,8 +85,8 @@ const Impostor = (() => {
       <div class="imp-wrap">
         <button class="cruci-back" id="impBack">‹</button>
         <div class="imp-logo">🕵️</div>
-        <h2 class="imp-title">Palabra Secreta</h2>
-        <p class="imp-tag">Todos saben la palabra… menos el impostor. ¿Quién miente?</p>
+        <h2 class="imp-title">Incógnito</h2>
+        <p class="imp-tag">Todos saben la palabra… menos el infiltrado. ¿Quién miente?</p>
         <input id="impName" class="imp-input" maxlength="14" placeholder="Tu nombre" value="${esc(savedName)}" />
         <button class="btn big btn-green" id="impCreate">🎪 Crear sala</button>
         <div class="imp-or">o</div>
@@ -267,7 +267,7 @@ const Impostor = (() => {
       <div class="imp-wrap imp-center">
         <p class="imp-round">Ronda ${p.round} · ${esc(p.category||"")}</p>
         <div class="imp-card ${isImp?"imp-card-bad":"imp-card-good"}">
-          ${isImp ? `<div class="imp-card-emoji">🕵️</div><div class="imp-card-role">Eres el IMPOSTOR</div><div class="imp-card-hint">No sabes la palabra. ¡Disimula y da una pista creíble!</div>`
+          ${isImp ? `<div class="imp-card-emoji">🕵️</div><div class="imp-card-role">Eres el INFILTRADO</div><div class="imp-card-hint">No sabes la palabra. ¡Disimula y da una pista creíble!</div>`
                   : `<div class="imp-card-emoji">🔑</div><div class="imp-card-role">La palabra es</div><div class="imp-card-word">${esc(c?c.word:"…")}</div>`}
         </div>
         <p class="imp-hint">Memorízala… la carta desaparece pronto</p>
@@ -326,8 +326,8 @@ const Impostor = (() => {
         ${topBar(p, "Resultado")}
         <div class="imp-reveal ${r.caught?"good":"bad"}">
           <div class="imp-card-emoji">${r.caught?"✅":"🕵️"}</div>
-          <p class="imp-reveal-msg">${r.caught?"¡Atraparon al impostor!":"¡El impostor se salió con la suya!"}</p>
-          <p class="imp-reveal-imp">El impostor era <b>${esc(impName)}</b></p>
+          <p class="imp-reveal-msg">${r.caught?"¡Atraparon al infiltrado!":"¡El infiltrado se salió con la suya!"}</p>
+          <p class="imp-reveal-imp">El infiltrado era <b>${esc(impName)}</b></p>
           <p class="imp-reveal-word">La palabra era <b>${esc(r.word||"")}</b></p>
         </div>
         <div class="imp-board">

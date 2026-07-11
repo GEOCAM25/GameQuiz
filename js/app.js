@@ -321,11 +321,16 @@ $("#btnProfileGo").onclick = async () => {
   const label = btn.textContent;
   _joining = true; btn.disabled = true; btn.classList.add("loading"); btn.textContent = "Entrando… ⏳";
   const release = () => { _joining = false; btn.disabled = false; btn.classList.remove("loading"); btn.textContent = label; };
+  // Timeout de seguridad: si la red/autenticación se cuelga, el botón se
+  // libera con aviso en vez de quedarse "pegado" para siempre.
+  const timeout = new Promise((_, rej) => setTimeout(() => rej(new Error("timeout")), 12000));
   try {
-    if (S.mode === "create") await createRoom(name, ava);
-    else if (code === TEST_ROOM) await startSolo(name, ava);
-    else await joinRoom(code, name, ava);
-  } catch(e){ toast("⚠️ No se pudo entrar, intenta otra vez"); }
+    let task;
+    if (S.mode === "create") task = createRoom(name, ava);
+    else if (code === TEST_ROOM) task = startSolo(name, ava);
+    else task = joinRoom(code, name, ava);
+    await Promise.race([task, timeout]);
+  } catch(e){ toast(e && e.message === "timeout" ? "⌛ La conexión tardó demasiado, intenta otra vez" : "⚠️ No se pudo entrar, intenta otra vez"); }
   release();
 };
 
