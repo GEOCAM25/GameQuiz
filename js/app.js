@@ -228,6 +228,11 @@ $("#btnKaraokeLobby") && ($("#btnKaraokeLobby").onclick = () => {
   if (typeof Karaoke === "undefined") return toast("No se pudo cargar el karaoke");
   Karaoke.open(() => show("lobby"));
 });
+$("#btnImpostor") && ($("#btnImpostor").onclick = () => {
+  Sfx.click();
+  if (typeof Impostor === "undefined") return toast("No se pudo cargar el juego");
+  Impostor.open(() => show("home"));
+});
 $("#btnTV") && ($("#btnTV").onclick = () => {
   Sfx.click();
   modal(`<h3>📺 Modo pantalla</h3>
