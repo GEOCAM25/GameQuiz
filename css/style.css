@@ -1344,3 +1344,40 @@ body.tv-mode{ overflow:hidden; }
   .draw-wrap{max-width:1200px}
   .draw-feed{max-height:16vh}
 }
+
+/* ============================================================
+   KARAOKE — rediseño moderno (v2)
+   ============================================================ */
+.kar-stage{background:
+  radial-gradient(90% 60% at 50% -10%, rgba(255,60,200,.28), transparent 60%),
+  radial-gradient(80% 60% at 100% 110%, rgba(0,200,255,.22), transparent 60%),
+  linear-gradient(180deg,#160a2e 0%,#0b0620 60%,#070312 100%);
+  gap:12px;padding:12px}
+.kar-topbar{padding:2px}
+.kar-close{background:rgba(255,255,255,.10);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.15)}
+.kar-neon{background:linear-gradient(90deg,#ff4fd8,#a06bff,#4fd2ff,#ff4fd8);background-size:300% 100%;
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;
+  text-shadow:none;filter:drop-shadow(0 0 10px rgba(255,79,216,.55));animation:karFlow 6s linear infinite}
+@keyframes karFlow{to{background-position:300% 0}}
+.kar-disco{filter:drop-shadow(0 0 12px rgba(255,255,255,.7))}
+/* Pantalla del video: borde con degradado y glow suave */
+.kar-screenframe{border-radius:18px;padding:3px;background:linear-gradient(135deg,#ff4fd8,#8a3fd6,#4fd2ff);
+  box-shadow:0 0 30px rgba(160,80,255,.5),0 16px 40px rgba(0,0,0,.6)}
+.kar-screenframe #ytHolder,.kar-screenframe iframe{border-radius:15px}
+.kar-msg{border-radius:15px}
+/* Barra de controles tipo "glass" */
+.kar-controls{gap:14px;padding:8px 14px;margin:0 auto;width:max-content;max-width:100%;
+  background:rgba(255,255,255,.07);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.12);border-radius:999px}
+.kar-ctrl{background:rgba(255,255,255,.10);box-shadow:none;border:1px solid rgba(255,255,255,.14)}
+.kar-ctrl.kar-play{background:linear-gradient(135deg,#ff5bd0,#a23be0);box-shadow:0 0 20px rgba(255,91,208,.6);border:none}
+/* Píldoras de categoría */
+.kar-chip{border-radius:16px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);backdrop-filter:blur(6px)}
+.kar-chip.on{border-color:#ff5bd0;background:linear-gradient(180deg,rgba(255,91,208,.30),rgba(138,63,214,.30));
+  box-shadow:0 0 18px rgba(255,91,208,.55)}
+/* En TV / tablet horizontal: el video abarca casi todo y los controles flotan */
+@media (orientation:landscape) and (min-width:760px){
+  .kar-stage{padding:10px 16px}
+  .kar-screenframe{max-width:min(100%, calc((100vh - 120px) * 1.777))}
+  .kar-note{display:none}
+  .kar-cats{max-width:900px;margin:0 auto}
+}
