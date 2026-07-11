@@ -141,4 +141,4 @@ const GIPHY_KEY = "dc6zaTOxFJmzC";
 //   4) Pégala aquí abajo entre las comillas.
 // Si lo dejas vacío, el karaoke igual funciona: se agregan canciones PEGANDO
 // el link de YouTube (solo no aparece la caja de búsqueda).
-const YOUTUBE_API_KEY = "";
+const YOUTUBE_API_KEY = "AIzaSyD25gCng_KwHivEIUqTE884dCIoE3cApK8";
