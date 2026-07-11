@@ -246,7 +246,13 @@ const Karaoke = (() => {
   }
   // Busca en YouTube SOLO videos que permiten incrustarse (videoEmbeddable=true),
   // así nunca sale el error de "no se puede reproducir". Se actualiza solo.
+  const searchCache = {};   // resultados por categoría (evita gastar cuota al volver a una categoría)
   async function searchAndLoad(cat){
+    // Si ya buscamos esta categoría en la sesión, reusamos (no gasta cuota)
+    if (searchCache[cat.id] && searchCache[cat.id].length){
+      if (cat.id !== cur) return;
+      hideMsg(); needShuffle = true; player.loadPlaylist(searchCache[cat.id]); return;
+    }
     showMsg("🔎 Buscando karaokes…");
     try {
       const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&videoEmbeddable=true&videoSyndicated=true&maxResults=25&q=${encodeURIComponent(cat.buscar)}&key=${YOUTUBE_API_KEY}`;
@@ -255,6 +261,7 @@ const Karaoke = (() => {
       if (j.error) throw new Error(j.error.message || "error");
       const ids = (j.items || []).filter(it => it.id && it.id.videoId).map(it => it.id.videoId);
       if (!ids.length) throw new Error("sin resultados");
+      searchCache[cat.id] = ids;
       if (cat.id !== cur) return;   // el usuario ya cambió de categoría
       hideMsg(); needShuffle = true;
       player.loadPlaylist(ids);
