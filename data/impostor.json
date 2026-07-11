@@ -8,6 +8,12 @@
     "Profesiones 👷": ["Bombero", "Doctor", "Piloto", "Chef", "Profesor", "Policía", "Astronauta", "Payaso", "Peluquero", "Futbolista", "Cartero", "Veterinario"],
     "Películas y series 🎬": ["Titanic", "Shrek", "Frozen", "Avatar", "Batman", "Toy Story", "Harry Potter", "Los Simpson", "Rápido y Furioso", "El Rey León", "Spider-Man", "Stranger Things"],
     "Deportes ⚽": ["Fútbol", "Tenis", "Natación", "Básquetbol", "Boxeo", "Ciclismo", "Golf", "Surf", "Esquí", "Atletismo", "Vóleibol", "Karate"],
-    "En la casa 🏠": ["Refrigerador", "Televisor", "Ducha", "Microondas", "Sillón", "Ventilador", "Lavadora", "Cortina", "Enchufe", "Alfombra", "Balcón", "Despertador"]
+    "En la casa 🏠": ["Refrigerador", "Televisor", "Ducha", "Microondas", "Sillón", "Ventilador", "Lavadora", "Cortina", "Enchufe", "Alfombra", "Balcón", "Despertador"],
+    "Frutas y verduras 🥑": ["Manzana", "Palta", "Sandía", "Zanahoria", "Frutilla", "Choclo", "Plátano", "Tomate", "Uva", "Lechuga", "Piña", "Zapallo"],
+    "Superhéroes 🦸": ["Superman", "Batman", "Spider-Man", "Hulk", "Iron Man", "Thor", "Flash", "Mujer Maravilla", "Capitán América", "Aquaman", "Pantera Negra", "Wolverine"],
+    "Instrumentos 🎸": ["Guitarra", "Piano", "Batería", "Violín", "Trompeta", "Saxofón", "Flauta", "Arpa", "Acordeón", "Bajo", "Tambor", "Ukelele"],
+    "Transportes 🚗": ["Auto", "Avión", "Bicicleta", "Barco", "Helicóptero", "Metro", "Camión", "Moto", "Tren", "Globo", "Submarino", "Patineta"],
+    "Ropa 👕": ["Polera", "Zapatos", "Chaqueta", "Gorro", "Bufanda", "Calcetines", "Vestido", "Pantalón", "Guantes", "Pijama", "Corbata", "Cinturón"],
+    "Chile 🇨🇱": ["Empanada", "Cordillera", "Terremoto", "Copihue", "Mote con huesillo", "Cueca", "Desierto", "Volcán", "Asado", "Micro", "Pisco", "Marraqueta"]
   }
 }
