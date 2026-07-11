@@ -299,18 +299,29 @@ function autoPickAvatar(taken){
   const node = $$(".ava").find(x => x.textContent === pick);
   if (node) selectAvatar(node);
 }
+let _joining = false;   // evita doble toque y el "pegado" del botón
 $("#btnProfileGo").onclick = async () => {
+  if (_joining) return;
   Music.enterGame(); // refuerzo: si por algún motivo no arrancó antes, lo intenta aquí también
   const name = $("#inpName").value.trim();
   const ava = $(".ava.sel")?.textContent;
   if (!name) return toast("✏️ Escribe tu nombre");
   if (!ava) return toast("🐼 Elige un personaje");
+  const code = (S.mode === "create") ? "" : $("#inpCode").value.trim().toUpperCase();
+  if (S.mode !== "create" && code.length !== 4) return toast("El código tiene 4 letras");
   Sfx.click();
-  if (S.mode === "create") return createRoom(name, ava);
-  const code = $("#inpCode").value.trim().toUpperCase();
-  if (code.length !== 4) return toast("El código tiene 4 letras");
-  if (code === TEST_ROOM) return startSolo(name, ava);
-  joinRoom(code, name, ava);
+  // Feedback inmediato: el botón se bloquea y muestra "Entrando…" (antes se
+  // quedaba "pegado" sin avisar mientras esperaba la red).
+  const btn = $("#btnProfileGo");
+  const label = btn.textContent;
+  _joining = true; btn.disabled = true; btn.classList.add("loading"); btn.textContent = "Entrando… ⏳";
+  const release = () => { _joining = false; btn.disabled = false; btn.classList.remove("loading"); btn.textContent = label; };
+  try {
+    if (S.mode === "create") await createRoom(name, ava);
+    else if (code === TEST_ROOM) await startSolo(name, ava);
+    else await joinRoom(code, name, ava);
+  } catch(e){ toast("⚠️ No se pudo entrar, intenta otra vez"); }
+  release();
 };
 
 function needBackend(){
@@ -2405,7 +2416,7 @@ async function finishMini(){
 
   const byPlayer = {};
   const table = RANK_MINIS[m.kind];
-  const MINI_TRY_PTS = 5; // participación: lo intentó pero no acertó a tiempo
+  const MINI_TRY_PTS = 10; // participación: lo intentó pero no acertó a tiempo
   if (table){
     // Reparto por ORDEN DE LLEGADA. Quienes acertaron (payload.ok) según su
     // tiempo (payload.t, menor = más rápido); quienes lo intentaron sin
@@ -2432,6 +2443,12 @@ async function finishMini(){
       if (idx < PLACE_BONUS.length) byPlayer[pid] += PLACE_BONUS[idx];
     });
   }
+
+  // Piso de participación: TODOS los conectados reciben puntos, aunque no
+  // hayan alcanzado a enviar su resultado (antes quedaban en 0 y parecía que
+  // solo el primer lugar puntuaba).
+  const FLOOR = 10;
+  S.players.filter(p => p.connected).forEach(p => { if (!(byPlayer[p.id] > 0)) byPlayer[p.id] = FLOOR; });
 
   for (const [pid, pts] of Object.entries(byPlayer)){
     const pl = S.players.find(p => p.id === pid);

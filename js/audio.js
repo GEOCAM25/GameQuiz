@@ -72,7 +72,13 @@ const Music = (() => {
 
   let trackIdx = 0;
   let userVol = parseFloat(localStorage.getItem(LS_VOL));
-  if (isNaN(userVol)) userVol = 0.15;         // 15% por defecto: música de fondo suave
+  if (isNaN(userVol)) userVol = 0.08;         // 8% por defecto: música de fondo bien suave
+  // Migración única: baja a 8% a quien ya tenía un volumen más alto guardado
+  if (localStorage.getItem("gq_vol_v2") !== "1"){
+    userVol = Math.min(userVol, 0.08);
+    localStorage.setItem(LS_VOL, String(userVol));
+    localStorage.setItem("gq_vol_v2", "1");
+  }
   let muted = localStorage.getItem(LS_MUTED) === "1";
   let started = false;
   let userPaused = false;                      // true si el jugador pausó a propósito (no reintentar solo)
@@ -113,7 +119,7 @@ const Music = (() => {
     if (i >= 0) trackIdx = i;
   }
 
-  function effectiveVolume(){ return muted ? 0 : (inGame ? 0.10 : userVol); }
+  function effectiveVolume(){ return muted ? 0 : (inGame ? 0.06 : userVol); }
   function targetVolume(){ const v = effectiveVolume(); return duckCount > 0 ? v * DUCK_FACTOR : v; }
   function applyVolume(){ el.volume = targetVolume(); onUpdateUI(); }
   function currentTrack(){ return MUSIC_TRACKS[trackIdx]; }
