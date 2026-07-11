@@ -1218,3 +1218,35 @@ body.tv-mode{ overflow:hidden; }
 .krem-qbtns button:disabled{opacity:.3}
 .krem-catchip{border:none;border-radius:12px;padding:8px 10px;margin:3px 3px 0 0;cursor:pointer;font-weight:700;font-size:12px;
   background:rgba(255,255,255,.12);color:#fff}
+
+/* ============================================================
+   MINI-JUEGOS NUEVOS — Verdadero o Falso ⚡ y Palabra Bomba 💣
+   ============================================================ */
+/* Verdadero o Falso */
+.vf-stim{flex:1;display:flex;align-items:center;justify-content:center;text-align:center;
+  font-family:'Fredoka';font-weight:700;font-size:clamp(22px,6.5vw,34px);color:#fff;line-height:1.3;
+  padding:18px;margin:10px 0;background:rgba(0,0,0,.22);border-radius:20px;text-shadow:0 2px 6px rgba(0,0,0,.4)}
+.vf-feedback{text-align:center;font-weight:800;font-size:16px;min-height:22px;margin:2px 0}
+.vf-feedback.good{color:#2ECC71} .vf-feedback.bad{color:#FF5B6E}
+.vf-opts{display:flex;gap:12px;padding-bottom:env(safe-area-inset-bottom)}
+.vf-btn{flex:1;border:none;border-radius:20px;padding:20px 8px;cursor:pointer;color:#fff;
+  font-family:'Fredoka';font-weight:700;font-size:20px;display:flex;flex-direction:column;align-items:center;gap:4px;
+  transition:transform .08s}
+.vf-btn span{font-size:15px}
+.vf-btn:active{transform:translateY(4px)}
+.vf-btn:disabled{opacity:.55}
+.vf-true{background:linear-gradient(180deg,var(--green2),var(--green));box-shadow:0 6px 0 var(--green-e)}
+.vf-false{background:linear-gradient(180deg,var(--red2),var(--red));box-shadow:0 6px 0 var(--red-e)}
+/* Palabra Bomba */
+.bomba-fusewrap{height:12px;background:rgba(0,0,0,.25);border-radius:8px;overflow:hidden;margin:8px 0}
+.bomba-fuse{height:100%;width:100%;border-radius:8px;background:linear-gradient(90deg,#FFD75E,#FF7A00,#E23B2E);
+  transition:width .25s linear}
+.bomba-instr{color:#fff;text-align:center;font-weight:700;opacity:.95;margin:6px 0;text-shadow:0 1px 4px rgba(0,0,0,.4)}
+.bomba-inrow{display:flex;gap:8px;margin-top:6px}
+.bomba-input{flex:1;border:none;border-radius:14px;padding:14px;font-size:16px;font-weight:700;font-family:'Nunito'}
+.bomba-add{border:none;border-radius:14px;padding:0 18px;cursor:pointer;color:#fff;font-weight:800;font-size:15px;
+  background:linear-gradient(180deg,var(--red2),var(--red));box-shadow:0 4px 0 var(--red-e)}
+.bomba-add:active{transform:translateY(3px)}
+.bomba-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;overflow-y:auto;align-content:flex-start}
+.bomba-chip{background:linear-gradient(180deg,#fff,#EFE4D2);color:var(--ink);font-weight:800;font-size:14px;
+  padding:8px 12px;border-radius:12px;box-shadow:0 2px 0 rgba(20,10,40,.15);animation:memoPop .3s ease}

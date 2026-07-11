@@ -171,6 +171,8 @@
         <button data-v="ritmo">🎵 Ritmo</button>
         <button data-v="delator">🕵️ Delator</button>
         <button data-v="preg">💡 Preguntón</button>
+        <button data-v="vf">⚡ Verdadero o Falso</button>
+        <button data-v="bomba">💣 Palabra Bomba</button>
         <button data-v="random" class="on">🎲 Al azar (2)</button>
         <button data-v="all">🎁 Todos</button>
       </div>
@@ -331,6 +333,43 @@
     <div class="preg-word" id="pregWord"></div>
     <div class="preg-keys" id="pregKeys"></div>
     <p class="hint" id="pregScore" style="margin-top:10px"></p>
+  </section>
+
+  <!-- ============ MINI-JUEGO: VERDADERO O FALSO ============ -->
+  <section id="scr-mini-vf" class="screen">
+    <div class="mini-head">
+      <span class="mini-target" id="vfProgress">1/8</span>
+      <span class="mini-timer" id="vfTimer">26</span>
+    </div>
+    <div class="mini-scorebar" id="msbVf">
+      <div class="msb-fill"></div>
+      <span class="msb-num">0</span>
+    </div>
+    <div class="vf-stim" id="vfStim">…</div>
+    <p class="vf-feedback" id="vfFeedback"></p>
+    <div class="vf-opts">
+      <button class="vf-btn vf-true" id="vfTrue">✅<span>Verdadero</span></button>
+      <button class="vf-btn vf-false" id="vfFalse">❌<span>Falso</span></button>
+    </div>
+  </section>
+
+  <!-- ============ MINI-JUEGO: PALABRA BOMBA ============ -->
+  <section id="scr-mini-bomba" class="screen">
+    <div class="mini-head">
+      <span class="mini-target">💣 <b id="bombaCat">Categoría</b></span>
+      <span class="mini-timer" id="bombaTimer">22</span>
+    </div>
+    <div class="mini-scorebar" id="msbBomba">
+      <div class="msb-fill"></div>
+      <span class="msb-num">0</span>
+    </div>
+    <div class="bomba-fusewrap"><div class="bomba-fuse" id="bombaFuse"></div></div>
+    <p class="bomba-instr">Escribe palabras de la categoría antes de que explote 💥</p>
+    <div class="bomba-inrow">
+      <input id="bombaInput" class="bomba-input" placeholder="Escribe una palabra…" autocomplete="off" />
+      <button id="bombaAdd" class="bomba-add">Agregar</button>
+    </div>
+    <div class="bomba-list" id="bombaList"></div>
   </section>
 
   <!-- ============ MINI-JUEGO: DELATOR ============ -->
