@@ -1414,3 +1414,21 @@ body.tv-mode{ overflow:hidden; }
   .kar-chip{width:auto}
   .kar-note{display:none}
 }
+
+/* ===== Karaoke v4: 'reproduciendo ahora' + ecualizador + arreglo del mensaje ===== */
+.kar-msg[hidden]{display:none !important}   /* que el aviso NO tape el video al ocultarse */
+.kar-disco{animation:karSpin 3.5s linear infinite}
+.kar-neon{animation:karFlow 6s linear infinite}
+/* Barra "reproduciendo ahora" */
+.kar-now{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:9px 12px;backdrop-filter:blur(6px)}
+.kar-nowtitle{color:#fff;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1}
+.kar-eq{display:flex;align-items:flex-end;gap:3px;height:20px;flex-shrink:0}
+.kar-eq i{width:4px;height:5px;background:linear-gradient(180deg,#ff5bd0,#4fd2ff);border-radius:2px}
+.kar-now.playing .kar-eq i{animation:karEq .9s ease-in-out infinite}
+.kar-now.playing .kar-eq i:nth-child(2){animation-delay:.18s}
+.kar-now.playing .kar-eq i:nth-child(3){animation-delay:.36s}
+.kar-now.playing .kar-eq i:nth-child(4){animation-delay:.54s}
+@keyframes karEq{0%,100%{height:4px}50%{height:20px}}
+/* Video un poco más limpio y grande */
+.kar-screenframe{box-shadow:0 0 34px rgba(160,80,255,.55),0 14px 36px rgba(0,0,0,.6)}
