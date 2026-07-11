@@ -1,0 +1,91 @@
+{
+  "_info": "Niveles de Cruci-Quiz. Para AGREGAR un nivel nuevo: copia un bloque de 'niveles' y complétalo. Reglas: (1) 'secreta' es la palabra secreta que se revela al terminar el nivel. (2) Debe tener la MISMA cantidad de letras que palabras haya en 'palabras'. (3) La palabra numero i de la lista DEBE contener la letra numero i de 'secreta' (esa es la letra que aporta a la palabra secreta). (4) Usa solo MAYUSCULAS, sin tildes ni espacios. El crucigrama se arma solo. El contador de niveles se actualiza solo.",
+  "niveles": [
+    {
+      "tema": "Frutas 🍓",
+      "secreta": "MELON",
+      "palabras": [
+        { "w": "MANZANA", "p": "Roja o verde, la mordió Blancanieves" },
+        { "w": "FRESA",   "p": "Roja con pepitas, también llamada frutilla" },
+        { "w": "CIRUELA", "p": "Morada; seca es una pasa" },
+        { "w": "DURAZNO", "p": "Naranja, aterciopelado y con carozo" },
+        { "w": "BANANA",  "p": "Amarilla y alargada, favorita del mono" }
+      ]
+    },
+    {
+      "tema": "Animales 🦁",
+      "secreta": "TIGRE",
+      "palabras": [
+        { "w": "GATO",     "p": "Ronronea y cae de pie" },
+        { "w": "DELFIN",   "p": "Mamífero marino juguetón" },
+        { "w": "CANGURO",  "p": "Salta y lleva a su cría en la bolsa" },
+        { "w": "PERRO",    "p": "El mejor amigo del humano" },
+        { "w": "ELEFANTE", "p": "El más grande de tierra, con trompa" }
+      ]
+    },
+    {
+      "tema": "Colores 🎨",
+      "secreta": "VERDE",
+      "palabras": [
+        { "w": "VIOLETA", "p": "Mezcla de azul y rojo" },
+        { "w": "CELESTE", "p": "Azul clarito como el cielo" },
+        { "w": "MARRON",  "p": "Color del chocolate" },
+        { "w": "DORADO",  "p": "Color del oro" },
+        { "w": "BEIGE",   "p": "Tono claro entre crema y café" }
+      ]
+    },
+    {
+      "tema": "Países 🌍",
+      "secreta": "CHILE",
+      "palabras": [
+        { "w": "CANADA",  "p": "País de la hoja de arce" },
+        { "w": "CHINA",   "p": "El más poblado de Asia" },
+        { "w": "ITALIA",  "p": "País con forma de bota" },
+        { "w": "POLONIA", "p": "Europeo, capital Varsovia" },
+        { "w": "GRECIA",  "p": "Cuna de la democracia" }
+      ]
+    },
+    {
+      "tema": "Espacio 🚀",
+      "secreta": "LUNA",
+      "palabras": [
+        { "w": "ESTRELLA", "p": "Punto brillante en la noche" },
+        { "w": "PLUTON",   "p": "Planeta enano y helado" },
+        { "w": "SATURNO",  "p": "El planeta de los anillos" },
+        { "w": "MARTE",    "p": "El planeta rojo" }
+      ]
+    },
+    {
+      "tema": "Música 🎵",
+      "secreta": "PIANO",
+      "palabras": [
+        { "w": "TROMPETA", "p": "Viento dorado y brillante" },
+        { "w": "BATERIA",  "p": "Tambores y platillos" },
+        { "w": "GUITARRA", "p": "Seis cuerdas y caja de madera" },
+        { "w": "VIOLIN",   "p": "Se toca con arco y cuerdas" },
+        { "w": "SAXOFON",  "p": "Viento curvo del jazz" }
+      ]
+    },
+    {
+      "tema": "Deportes ⚽",
+      "secreta": "REMO",
+      "palabras": [
+        { "w": "KARATE",   "p": "Arte marcial de katas" },
+        { "w": "TENIS",    "p": "Raqueta y pelota amarilla" },
+        { "w": "GIMNASIA", "p": "Saltos, giros y equilibrio" },
+        { "w": "NATACION", "p": "Deporte dentro del agua" }
+      ]
+    },
+    {
+      "tema": "Cine 🎬",
+      "secreta": "ACTOR",
+      "palabras": [
+        { "w": "CAMARA",   "p": "Graba las escenas" },
+        { "w": "ESCENA",   "p": "Cada parte de una película" },
+        { "w": "PANTALLA", "p": "Donde se proyecta el film" },
+        { "w": "GUION",    "p": "El texto que dicen los actores" },
+        { "w": "ESTRENO",  "p": "La primera función" }
+      ]
+    }
+  ]
+}

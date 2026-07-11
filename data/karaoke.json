@@ -1,0 +1,78 @@
+{
+  "_info": "Playlists de KARAOKE. Cada categoría reproduce videos de YouTube al azar. COMO LLENARLO: en el campo 'playlist' de cada categoría pega UNA de estas opciones: (A) el ID o link de una playlist de YouTube (ej: 'PLxxxxxxxx' o 'https://www.youtube.com/playlist?list=PLxxxxxxxx'); o (B) una lista de links/IDs de videos separados por coma (ej: 'dQw4w9WgXcQ, https://youtu.be/otroID'). Si lo dejas vacío, esa categoría mostrará un aviso de que falta configurarla. CONSEJO: usa playlists de canales OFICIALES de karaoke para que aparezcan menos anuncios (no se pueden bloquear del todo). La categoría con 'principal': true es la que se abre por defecto.",
+  "categorias": [
+    {
+      "id": "rompecorazones",
+      "nombre": "Las Rompecorazones",
+      "emoji": "💔",
+      "desc": "Bachata & R&B Latino",
+      "artistas": "Romeo Santos, Aventura, Prince Royce, Juan Luis Guerra, Mon Laferte",
+      "playlist": ""
+    },
+    {
+      "id": "calentamiento",
+      "nombre": "El Calentamiento",
+      "emoji": "🔥",
+      "desc": "Cumbia & Cuarteto",
+      "artistas": "Américo, Noche de Brujas, Ke Personajes, Los Auténticos Decadentes, Gilda, Rodrigo",
+      "playlist": ""
+    },
+    {
+      "id": "saboryazucar",
+      "nombre": "Sabor y Azúcar",
+      "emoji": "🍬",
+      "desc": "Salsa & Merengue",
+      "artistas": "Marc Anthony, Celia Cruz, Juan Luis Guerra, Elvis Crespo, Oscar D'León",
+      "playlist": ""
+    },
+    {
+      "id": "placeresculpables",
+      "nombre": "Placeres Culpables",
+      "emoji": "😎",
+      "desc": "Pop de los 90s y 2000s",
+      "artistas": "Shakira, Luis Miguel, Chayanne, Ricky Martin, Paulina Rubio, Cristian Castro",
+      "playlist": ""
+    },
+    {
+      "id": "urbanoldschool",
+      "nombre": "Urban & Reggaeton Old School",
+      "emoji": "🎤",
+      "desc": "El Perreo de Culto",
+      "artistas": "Daddy Yankee, Don Omar, Wisin & Yandel, Ivy Queen, Bad Bunny",
+      "playlist": ""
+    },
+    {
+      "id": "rocklatino",
+      "nombre": "Rock Latino & Fogata",
+      "emoji": "🎸",
+      "desc": "Clásicos para corear",
+      "artistas": "Los Prisioneros, Soda Stereo, Enanitos Verdes, Fabulosos Cadillacs, Maná, La Ley",
+      "playlist": ""
+    },
+    {
+      "id": "cortavenas",
+      "nombre": "Los Himnos Corta-Venas",
+      "emoji": "💘",
+      "desc": "Baladas AM del recuerdo",
+      "artistas": "Camilo Sesto, Juan Gabriel, Luis Miguel, Yuri, Myriam Hernández, Zalo Reyes",
+      "playlist": ""
+    },
+    {
+      "id": "hitsingles",
+      "nombre": "Hits en Inglés",
+      "emoji": "🌎",
+      "desc": "Los que cantamos en Spanglish",
+      "artistas": "Queen, Backstreet Boys, Britney Spears, Bon Jovi, ABBA, Dua Lipa",
+      "playlist": ""
+    },
+    {
+      "id": "tombola",
+      "nombre": "La Tómbola Loca",
+      "emoji": "🎲",
+      "desc": "Multigénero · Random Extremo",
+      "artistas": "Openings de anime, teleseries, Disney, King África, Raffaella Carrà y más",
+      "playlist": "",
+      "principal": true
+    }
+  ]
+}

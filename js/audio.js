@@ -419,7 +419,7 @@ const StartFx = (() => {
     try {
       const el2 = get();
       el2.currentTime = 0;
-      el2.volume = 1;
+      el2.volume = 0.4;   // sonido de inicio suave (no a todo volumen)
       duckWhilePlaying(el2);
       el2.play().catch(()=>{});
     } catch(e){}
