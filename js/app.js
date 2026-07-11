@@ -457,6 +457,7 @@ async function enterRoom(room, me){
   }
   const raw = localStorage.getItem("gq_session");
   if (!raw || !hasBackend) return;
+  await window.authReady;   // esperar el login anónimo antes de tocar la base
   const { roomId, playerId } = JSON.parse(raw);
   const { data: room } = await sb.from("rooms").select("*").eq("id", roomId).maybeSingle();
   if (!room || room.status === "podium"){ localStorage.removeItem("gq_session"); return; }
