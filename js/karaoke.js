@@ -17,7 +17,7 @@ const Karaoke = (() => {
   const $  = s => document.querySelector(s);
   const $$ = s => Array.from(document.querySelectorAll(s));
 
-  let CATS = null, cur = null, player = null, onExit = null, needShuffle = false;
+  let CATS = null, cur = null, player = null, onExit = null, needShuffle = false, stage = null;
 
   // ---------- datos ----------
   async function ensureCats(){
@@ -85,6 +85,7 @@ const Karaoke = (() => {
     if (!CATS.length){ host.innerHTML = `<div class="kar-loading">Aún no hay categorías.</div>`; return; }
     cur = defaultCat();
     render();
+    setupStage();     // sesión en red + QR para los teléfonos
     await loadYT();
     if (!(window.YT && window.YT.Player)){
       showMsg("⚠️ No se pudo cargar el reproductor de YouTube. Revisa tu conexión.");
@@ -94,6 +95,7 @@ const Karaoke = (() => {
   }
 
   function close(){
+    try { if (stage && stage.destroy) stage.destroy(); } catch(e){} stage = null;
     try { if (player && player.destroy) player.destroy(); } catch(e){}
     player = null;
     if (onExit) onExit(); else showFallbackHome();
@@ -127,13 +129,49 @@ const Karaoke = (() => {
         </div>
         <div class="kar-cats" id="karCats"></div>
         <p class="kar-note">💡 Consejo: usa playlists de canales oficiales de karaoke para menos anuncios.</p>
+        <div class="kar-qr" id="karQR"></div>
       </div>`;
     $("#karClose").onclick = () => { try { Sfx.click(); } catch(e){} close(); };
-    $("#karPrev").onclick  = () => { try { if (player) player.previousVideo(); } catch(e){} };
-    $("#karNext").onclick  = () => { try { if (player) player.nextVideo(); } catch(e){} };
-    $("#karPlay").onclick  = togglePlay;
+    $("#karPrev").onclick  = () => { if (stage) stage.dispatchLocal({ t:"prev" }); else if (player) { try { player.previousVideo(); } catch(e){} } };
+    $("#karNext").onclick  = () => { if (stage) stage.dispatchLocal({ t:"skip" }); else if (player) { try { player.nextVideo(); } catch(e){} } };
+    $("#karPlay").onclick  = () => { if (stage){ const st = stage.getState(); stage.dispatchLocal({ t: st.playing ? "pause" : "play" }); } else togglePlay(); };
     drawCats();
     showScreen();
+  }
+
+  // ---------- sesión en red (escenario) + QR ----------
+  function setupStage(){
+    if (typeof KarSync === "undefined") return;
+    if (typeof sb === "undefined" || !sb) return;   // sin backend no hay control remoto (el karaoke igual funciona)
+    try { if (stage && stage.destroy) stage.destroy(); } catch(e){}
+    stage = KarSync.startStage({ category: cur, onFx: applyFx });
+    renderQR();
+  }
+  function renderQR(){
+    const box = $("#karQR"); if (!box || !stage) return;
+    box.innerHTML = `<div class="kar-qr-inner">${qrSVG(stage.joinURL(), 112)}</div>
+      <div class="kar-qr-cap">📱 Escanea para<br>cantar y controlar<br><b>${stage.code}</b></div>`;
+  }
+  // Aplica al reproductor de YouTube los efectos que decide el estado en red
+  function applyFx(fx){
+    if (!fx) return;
+    try {
+      if (fx.type === "load"){ hideMsg(); needShuffle = false; if (player && player.loadVideoById) player.loadVideoById(fx.vid); }
+      else if (fx.type === "playlist"){ cur = fx.cat || cur; drawCats(); loadCur(); }
+      else if (fx.type === "play"){ if (player && player.playVideo) player.playVideo(); }
+      else if (fx.type === "pause"){ if (player && player.pauseVideo) player.pauseVideo(); }
+      else if (fx.type === "songVol"){ if (player && player.setVolume) player.setVolume(fx.v); }
+    } catch(e){}
+  }
+  function qrSVG(text, size){
+    try {
+      if (typeof qrcode === "undefined") throw new Error("qr");
+      const qr = qrcode(0, "M"); qr.addData(text); qr.make();
+      const n = qr.getModuleCount(), cell = size / n; let rects = "";
+      for (let y = 0; y < n; y++) for (let x = 0; x < n; x++)
+        if (qr.isDark(y, x)) rects += `<rect x="${(x*cell).toFixed(2)}" y="${(y*cell).toFixed(2)}" width="${cell.toFixed(2)}" height="${cell.toFixed(2)}"/>`;
+      return `<svg viewBox="0 0 ${size} ${size}" width="${size}" height="${size}" xmlns="http://www.w3.org/2000/svg"><rect width="${size}" height="${size}" fill="#fff"/><g fill="#111">${rects}</g></svg>`;
+    } catch(e){ return `<div class="kar-qr-cap">Código: <b>${stage ? stage.code : ""}</b></div>`; }
   }
 
   function drawCats(){
@@ -149,11 +187,11 @@ const Karaoke = (() => {
   }
 
   function pickCat(id){
-    if (id === cur && player) { loadCur(); return; }
     cur = id;
     try { Sfx.click(); } catch(e){}
     drawCats();
-    if (player) loadCur();
+    if (stage) stage.setCategory(id);   // el escenario decide y avisa a los controles
+    else if (player) loadCur();
   }
 
   function currentCat(){ return CATS.find(c => c.id === cur) || {}; }
@@ -174,7 +212,7 @@ const Karaoke = (() => {
       host: "https://www.youtube-nocookie.com",
       playerVars: { rel: 0, modestbranding: 1, playsinline: 1, iv_load_policy: 3, fs: 1, origin: location.origin },
       events: {
-        onReady: () => loadCur(),
+        onReady: () => { try { if (player && player.setVolume) player.setVolume(stage ? stage.getState().songVol : 60); } catch(e){} loadCur(); },
         onError: onError,
         onStateChange: onState
       }
@@ -202,6 +240,12 @@ const Karaoke = (() => {
   }
 
   function onState(ev){
+    // Si terminó una canción DE LA COLA (0 = ENDED), avanzar a la siguiente.
+    // En modo playlist (now=null) dejamos que YouTube avance solo.
+    if (ev.data === 0 && stage){
+      const st = stage.getState();
+      if (st.now){ stage.dispatchLocal({ t:"skip" }); return; }
+    }
     // 1 = reproduciendo, 5 = en cola: aplicar orden aleatorio una vez por carga
     if (needShuffle && (ev.data === 1 || ev.data === 5)){
       needShuffle = false;
@@ -235,5 +279,9 @@ const Karaoke = (() => {
     const scr = $("#scr-karaoke"); if (scr) scr.classList.add("active");
   }
 
-  return { open, _parsePlaylist: parsePlaylist };   // _parsePlaylist expuesto solo para pruebas
+  return {
+    open,
+    categories: () => (CATS || []).map(c => ({ id:c.id, nombre:c.nombre, emoji:c.emoji })),
+    _parsePlaylist: parsePlaylist,   // expuesto solo para pruebas
+  };
 })();

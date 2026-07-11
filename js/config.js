@@ -130,3 +130,15 @@ const TEST_ROOM = "ZZZX";      // sala secreta de prueba (modo solo)
 // cargar, saca tu propia llave GRATIS en https://developers.giphy.com
 // (crear cuenta → Create an App → API) y pégala aquí.
 const GIPHY_KEY = "dc6zaTOxFJmzC";
+
+// ---------- Buscador de canciones del Karaoke (YouTube Data API v3) ----------
+// Para que funcione la CAJA DE BÚSQUEDA del karaoke (buscar canciones por
+// nombre) necesitas una clave gratuita de YouTube Data API v3:
+//   1) Entra a https://console.cloud.google.com/  (con tu cuenta de Google)
+//   2) Crea un proyecto → "APIs y servicios" → "Habilitar API" → busca
+//      "YouTube Data API v3" → Habilitar
+//   3) "Credenciales" → "Crear credenciales" → "Clave de API" → cópiala
+//   4) Pégala aquí abajo entre las comillas.
+// Si lo dejas vacío, el karaoke igual funciona: se agregan canciones PEGANDO
+// el link de YouTube (solo no aparece la caja de búsqueda).
+const YOUTUBE_API_KEY = "";

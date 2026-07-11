@@ -49,6 +49,17 @@ if (typeof TV !== "undefined" && TV.isTVRequested()){
   document.addEventListener("DOMContentLoaded", () => TV.start(sb));
 }
 
+// ---------- Karaoke: CONTROL remoto (teléfono que escaneó el QR) ----------
+// Si la URL trae ?karsync=CÓDIGO, esta pestaña es el control del karaoke:
+// se conecta a la sesión y muestra la pantalla de control (no el juego).
+const KAR_REMOTE = new URLSearchParams(location.search).get("karsync");
+if (KAR_REMOTE && /^[A-Za-z0-9]{4}$/.test(KAR_REMOTE)){
+  document.addEventListener("DOMContentLoaded", () => {
+    try { if (typeof KarSync !== "undefined") KarSync.startRemote(KAR_REMOTE.toUpperCase()); }
+    catch(e){ console.warn("karsync remote", e); }
+  });
+}
+
 // ---------- Estado ----------
 const S = {
   mode: null,          // 'create' | 'join'
@@ -377,6 +388,8 @@ async function enterRoom(room, me){
 (async function tryRejoin(){
   // En modo pantalla (TV) no corre el flujo de teléfono.
   if (typeof TV !== "undefined" && TV.isTVRequested()) return;
+  // Si es el control remoto del karaoke, tampoco corre el flujo normal.
+  if (KAR_REMOTE) return;
   // Si llegó por un enlace compartido con ?sala=CÓDIGO, saltar directo a
   // "entrar a la sala" con el código ya puesto (más fácil que buscarlo).
   const salaParam = new URLSearchParams(location.search).get("sala");
