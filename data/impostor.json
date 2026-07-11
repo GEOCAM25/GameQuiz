@@ -1,0 +1,13 @@
+{
+  "_info": "Palabras para el juego 'Palabra Secreta / Impostor'. Todos reciben la palabra menos el impostor. Para agregar más: añade palabras a una categoría o crea una categoría nueva. Usa palabras concretas y conocidas.",
+  "categorias": {
+    "Animales 🦁": ["León", "Elefante", "Pingüino", "Tiburón", "Jirafa", "Canguro", "Delfín", "Águila", "Tortuga", "Lobo", "Caballo", "Murciélago"],
+    "Comida 🍔": ["Pizza", "Sushi", "Hamburguesa", "Helado", "Empanada", "Tacos", "Asado", "Completo", "Sopaipilla", "Chocolate", "Ensalada", "Panqueque"],
+    "Lugares 🌍": ["Playa", "Aeropuerto", "Hospital", "Estadio", "Cine", "Supermercado", "Colegio", "Cárcel", "Museo", "Gimnasio", "Iglesia", "Circo"],
+    "Objetos 🧳": ["Paraguas", "Teléfono", "Almohada", "Bicicleta", "Reloj", "Linterna", "Escoba", "Guitarra", "Espejo", "Maleta", "Tijeras", "Cargador"],
+    "Profesiones 👷": ["Bombero", "Doctor", "Piloto", "Chef", "Profesor", "Policía", "Astronauta", "Payaso", "Peluquero", "Futbolista", "Cartero", "Veterinario"],
+    "Películas y series 🎬": ["Titanic", "Shrek", "Frozen", "Avatar", "Batman", "Toy Story", "Harry Potter", "Los Simpson", "Rápido y Furioso", "El Rey León", "Spider-Man", "Stranger Things"],
+    "Deportes ⚽": ["Fútbol", "Tenis", "Natación", "Básquetbol", "Boxeo", "Ciclismo", "Golf", "Surf", "Esquí", "Atletismo", "Vóleibol", "Karate"],
+    "En la casa 🏠": ["Refrigerador", "Televisor", "Ducha", "Microondas", "Sillón", "Ventilador", "Lavadora", "Cortina", "Enchufe", "Alfombra", "Balcón", "Despertador"]
+  }
+}

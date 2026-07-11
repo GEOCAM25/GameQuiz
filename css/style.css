@@ -1250,3 +1250,54 @@ body.tv-mode{ overflow:hidden; }
 .bomba-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;overflow-y:auto;align-content:flex-start}
 .bomba-chip{background:linear-gradient(180deg,#fff,#EFE4D2);color:var(--ink);font-weight:800;font-size:14px;
   padding:8px 12px;border-radius:12px;box-shadow:0 2px 0 rgba(20,10,40,.15);animation:memoPop .3s ease}
+
+/* ============================================================
+   PALABRA SECRETA / IMPOSTOR 🕵️
+   ============================================================ */
+#scr-impostor{background:radial-gradient(120% 90% at 50% 0%,#2b2f55,#0e1020)}
+#impostorScreen{height:100%;overflow-y:auto;color:#fff}
+.imp-wrap{display:flex;flex-direction:column;gap:12px;padding:16px;max-width:520px;margin:0 auto;min-height:100%}
+.imp-wrap.imp-center{justify-content:center;align-items:center;text-align:center}
+.imp-top{display:flex;align-items:center;gap:10px}
+.imp-code{font-family:'Fredoka';font-weight:700;background:rgba(255,255,255,.14);border-radius:10px;padding:4px 12px;letter-spacing:2px;color:#ffd75e;flex:1}
+.imp-sub{font-weight:700;opacity:.85;font-size:13px}
+.imp-logo{font-size:56px;text-align:center}
+.imp-title{font-family:'Fredoka';font-weight:700;font-size:26px;text-align:center}
+.imp-tag{text-align:center;font-weight:700;opacity:.92;line-height:1.4}
+.imp-hint{text-align:center;opacity:.75;font-weight:600;font-size:13px}
+.imp-round{font-weight:800;opacity:.85}
+.imp-input{border:none;border-radius:14px;padding:14px;font-size:16px;font-weight:700;font-family:'Nunito';width:100%}
+.imp-or{text-align:center;opacity:.6;font-weight:800}
+.imp-joinrow{display:flex;gap:8px}
+.imp-joinrow .imp-input{flex:1}
+.imp-players{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.imp-chip{background:rgba(255,255,255,.12);border-radius:12px;padding:8px 12px;font-weight:800;font-size:14px}
+/* Carta de rol */
+.imp-card{border-radius:24px;padding:28px 22px;width:100%;max-width:340px;box-shadow:0 12px 30px rgba(0,0,0,.5);animation:modalPop .35s cubic-bezier(.34,1.4,.64,1)}
+.imp-card-good{background:linear-gradient(180deg,#2ECC71,#178f4e)}
+.imp-card-bad{background:linear-gradient(180deg,#E8455e,#a5203a)}
+.imp-card-emoji{font-size:56px}
+.imp-card-role{font-weight:800;text-transform:uppercase;letter-spacing:1px;opacity:.95;margin-top:6px}
+.imp-card-word{font-family:'Fredoka';font-weight:700;font-size:38px;margin-top:6px}
+.imp-card-hint{font-weight:600;font-size:14px;opacity:.95;margin-top:8px}
+/* Pistas */
+.imp-clues{display:flex;flex-direction:column;gap:6px}
+.imp-clue-row{display:flex;justify-content:space-between;gap:10px;background:rgba(0,0,0,.22);border-radius:12px;padding:10px 14px;font-weight:700}
+.imp-clue-row b{color:#ffd75e}
+/* Votación */
+.imp-votegrid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.imp-vbtn{border:none;border-radius:16px;padding:16px 8px;cursor:pointer;font-weight:800;font-size:16px;color:#fff;
+  background:linear-gradient(180deg,#5b6bff,#3a45c2);box-shadow:0 5px 0 #262c8e}
+.imp-vbtn:active{transform:translateY(3px);box-shadow:0 2px 0 #262c8e}
+.imp-vbtn.on{background:linear-gradient(180deg,#ffb821,#e08a00);box-shadow:0 5px 0 #a56000}
+/* Resultado */
+.imp-reveal{border-radius:22px;padding:22px;text-align:center;box-shadow:0 10px 26px rgba(0,0,0,.5)}
+.imp-reveal.good{background:linear-gradient(180deg,#2ECC71,#178f4e)}
+.imp-reveal.bad{background:linear-gradient(180deg,#E8455e,#a5203a)}
+.imp-reveal-msg{font-family:'Fredoka';font-weight:700;font-size:22px;margin:6px 0}
+.imp-reveal-imp,.imp-reveal-word{font-weight:700;margin:2px 0}
+.imp-reveal-word b{color:#ffe }
+.imp-board{display:flex;flex-direction:column;gap:5px}
+.imp-brow{display:flex;align-items:center;gap:10px;background:rgba(0,0,0,.22);border-radius:12px;padding:10px 14px;font-weight:800}
+.imp-brow.me{outline:2px solid #ffd75e}
+.imp-brow .imp-bnm{flex:1}
