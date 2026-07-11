@@ -233,6 +233,11 @@ $("#btnImpostor") && ($("#btnImpostor").onclick = () => {
   if (typeof Impostor === "undefined") return toast("No se pudo cargar el juego");
   Impostor.open(() => show("home"));
 });
+$("#btnDraw") && ($("#btnDraw").onclick = () => {
+  Sfx.click();
+  if (typeof Draw === "undefined") return toast("🎨 Dibuja y Adivina llega pronto");
+  Draw.open(() => show("home"));
+});
 $("#btnTV") && ($("#btnTV").onclick = () => {
   Sfx.click();
   modal(`<h3>📺 Modo pantalla</h3>

@@ -1,0 +1,10 @@
+{
+  "_info": "Palabras para 'Dibuja y Adivina'. El que dibuja recibe una al azar de la categoría elegida. Usa palabras fáciles de dibujar.",
+  "palabras": {
+    "Fácil 🟢": ["Casa", "Sol", "Árbol", "Gato", "Pez", "Estrella", "Flor", "Auto", "Pelota", "Corazón", "Luna", "Nube", "Barco", "Globo"],
+    "Animales 🦁": ["Elefante", "Jirafa", "Pingüino", "Tortuga", "Serpiente", "Cangrejo", "Búho", "Caballo", "Rana", "Pulpo", "Abeja", "Caracol"],
+    "Objetos 🧳": ["Paraguas", "Reloj", "Guitarra", "Lentes", "Bicicleta", "Teléfono", "Silla", "Llave", "Tijeras", "Escoba", "Martillo", "Vela"],
+    "Comida 🍔": ["Pizza", "Helado", "Plátano", "Hamburguesa", "Torta", "Huevo", "Manzana", "Completo", "Piña", "Zanahoria", "Dona", "Sandía"],
+    "Acciones 🏃": ["Correr", "Dormir", "Nadar", "Bailar", "Llorar", "Saltar", "Cocinar", "Pescar", "Volar", "Cantar", "Reír", "Pintar"]
+  }
+}
