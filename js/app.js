@@ -238,6 +238,28 @@ $("#btnDraw") && ($("#btnDraw").onclick = () => {
   if (typeof Draw === "undefined") return toast("🎨 Dibuja y Adivina llega pronto");
   Draw.open(() => show("home"));
 });
+
+// ---------- Lanzar otros juegos DENTRO de la sala (mismo código/jugadores) ----------
+// El anfitrión toca un juego → se avisa a todos por el canal de la sala y
+// TODOS lo abren conectados a la misma sesión (código = código de la sala).
+function openRoomGame(game, code, name, isLeader){
+  const back = () => show("lobby");
+  if (game === "impostor" && typeof Impostor !== "undefined") Impostor.openShared(code, name, isLeader, back);
+  else if (game === "draw" && typeof Draw !== "undefined") Draw.openShared(code, name, isLeader, back);
+}
+function launchRoomGame(game){
+  if (!S.room || !S.me) return;
+  Sfx.click();
+  const code = S.room.code, name = S.me.name;
+  try { S.channel && S.channel.send({ type:"broadcast", event:"launchgame", payload:{ game, code, by: S.me.id } }); } catch(e){}
+  openRoomGame(game, code, name, true);   // el anfitrión es el líder
+}
+function onLaunchGame(p){
+  if (!p || !S.me || p.by === S.me.id) return;   // quien lo lanzó ya lo abrió como líder
+  openRoomGame(p.game, p.code, S.me.name, false);
+}
+$("#btnRoomImpostor") && ($("#btnRoomImpostor").onclick = () => launchRoomGame("impostor"));
+$("#btnRoomDraw") && ($("#btnRoomDraw").onclick = () => launchRoomGame("draw"));
 $("#btnTV") && ($("#btnTV").onclick = () => {
   Sfx.click();
   modal(`<h3>📺 Modo pantalla</h3>
@@ -478,6 +500,7 @@ async function subscribeRoom(){
     .on("postgres_changes", { event:"*", schema:"public", table:"votes", filter:`room_id=eq.${rid}` },
       () => { refreshVotes(); })
     .on("broadcast", { event:"sound" }, ({ payload }) => onRemoteSound(payload))
+    .on("broadcast", { event:"launchgame" }, ({ payload }) => onLaunchGame(payload))
     .subscribe();
 
   // Watchdog del CLIENTE: si Realtime se cae en silencio, re-sincroniza
@@ -507,6 +530,7 @@ function renderLobby(){
   const rem = $("#tvRemote");
   if (rem) rem.classList.toggle("hidden", !isTvRoom);
   $("#hostSettings").classList.toggle("hidden", !amHost());
+  $("#roomGames") && $("#roomGames").classList.toggle("hidden", !amHost());
   $("#btnStart").classList.toggle("hidden", !amHost());
   $("#lobbyHint").classList.toggle("hidden", amHost());
   const st = S.room.settings;
