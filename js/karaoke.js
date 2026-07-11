@@ -224,21 +224,45 @@ const Karaoke = (() => {
 
   function loadCur(){
     const cat = currentCat();
-    const p = parsePlaylist(cat.playlist);
-    if (!p){
-      showMsg(`<b>${cat.emoji || "🎤"} ${cat.nombre}</b><br><br>Esta categoría todavía no tiene playlist.<br>
-        Pega el link o ID de tu playlist de YouTube en <code>data/karaoke.json</code>
-        (campo <code>playlist</code>).`);
-      try { if (player && player.stopVideo) player.stopVideo(); } catch(e){}
-      return;
+    // 1) Búsqueda automática de karaokes INCRUSTABLES (si hay clave de API y query)
+    if (cat.buscar && typeof YOUTUBE_API_KEY !== "undefined" && YOUTUBE_API_KEY){
+      searchAndLoad(cat); return;
     }
-    hideMsg();
-    needShuffle = true;
+    // 2) Playlist / lista de videos fija
+    const p = parsePlaylist(cat.playlist);
+    if (p){ loadFromParsed(p); return; }
+    // 3) Nada configurado todavía
+    showMsg(`<b>${cat.emoji || "🎤"} ${cat.nombre}</b><br><br>Esta categoría aún no tiene canciones.<br>
+      Pega tu <b>clave de YouTube</b> en <code>js/config.js</code> (búsqueda automática de karaokes)
+      o un link de playlist en <code>data/karaoke.json</code>.`);
+    try { if (player && player.stopVideo) player.stopVideo(); } catch(e){}
+  }
+  function loadFromParsed(p){
+    hideMsg(); needShuffle = true;
     try {
       if (p.type === "playlist") player.loadPlaylist({ list: p.id, listType: "playlist", index: 0 });
       else player.loadPlaylist(p.ids);
+    } catch(e){ showMsg("⚠️ No se pudo cargar la playlist. Revisa el link en data/karaoke.json."); }
+  }
+  // Busca en YouTube SOLO videos que permiten incrustarse (videoEmbeddable=true),
+  // así nunca sale el error de "no se puede reproducir". Se actualiza solo.
+  async function searchAndLoad(cat){
+    showMsg("🔎 Buscando karaokes…");
+    try {
+      const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&videoEmbeddable=true&videoSyndicated=true&maxResults=25&q=${encodeURIComponent(cat.buscar)}&key=${YOUTUBE_API_KEY}`;
+      const r = await fetch(url);
+      const j = await r.json();
+      if (j.error) throw new Error(j.error.message || "error");
+      const ids = (j.items || []).filter(it => it.id && it.id.videoId).map(it => it.id.videoId);
+      if (!ids.length) throw new Error("sin resultados");
+      if (cat.id !== cur) return;   // el usuario ya cambió de categoría
+      hideMsg(); needShuffle = true;
+      player.loadPlaylist(ids);
     } catch(e){
-      showMsg("⚠️ No se pudo cargar la playlist. Revisa el ID/link en data/karaoke.json.");
+      // Respaldo: si hay playlist fija, úsala; si no, avisa
+      const p = parsePlaylist(cat.playlist);
+      if (p) loadFromParsed(p);
+      else showMsg("⚠️ No se pudieron buscar karaokes. Revisa tu clave de YouTube en <code>js/config.js</code>.");
     }
   }
 
