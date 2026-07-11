@@ -124,6 +124,10 @@ const Karaoke = (() => {
             </div>
           </div>
           <div class="kar-panel">
+            <div class="kar-now" id="karNow">
+              <span class="kar-eq"><i></i><i></i><i></i><i></i></span>
+              <span class="kar-nowtitle" id="karNowTitle">Elige una categoría 🎶</span>
+            </div>
             <div class="kar-controls">
               <button class="kar-ctrl" id="karPrev" title="Anterior">⏮</button>
               <button class="kar-ctrl kar-play" id="karPlay" title="Reproducir/Pausar">⏸</button>
@@ -202,10 +206,10 @@ const Karaoke = (() => {
   function showMsg(txt){
     const m = $("#karMsg");
     if (!m) return;
-    m.hidden = false;
+    m.hidden = false; m.style.display = "flex";   // inline gana al display:flex de la clase
     m.innerHTML = txt;
   }
-  function hideMsg(){ const m = $("#karMsg"); if (m) m.hidden = true; }
+  function hideMsg(){ const m = $("#karMsg"); if (m){ m.hidden = true; m.style.display = "none"; } }
 
   // ---------- reproductor ----------
   function createPlayer(){
@@ -289,12 +293,23 @@ const Karaoke = (() => {
         if (list && list.length > 1) player.playVideoAt(Math.floor(Math.random() * list.length));
       } catch(e){}
     }
+    if (ev.data === 1) hideMsg();   // ya está sonando → quitar cualquier aviso que tape el video
     updatePlayBtn();
+    updateNowPlaying();
   }
   function updatePlayBtn(){
     const btn = $("#karPlay"); if (!btn || !player || !player.getPlayerState) return;
     let st; try { st = player.getPlayerState(); } catch(e){ return; }
     btn.textContent = (st === 1) ? "⏸" : "▶";
+  }
+  // Muestra el título de la canción actual + anima el ecualizador si suena
+  function updateNowPlaying(){
+    const now = $("#karNow"); if (!now || !player) return;
+    let title = "", playing = false;
+    try { title = (player.getVideoData && player.getVideoData().title) || ""; } catch(e){}
+    try { playing = player.getPlayerState && player.getPlayerState() === 1; } catch(e){}
+    const t = $("#karNowTitle"); if (t) t.textContent = title || "Karaoke 🎤";
+    now.classList.toggle("playing", playing);
   }
   function togglePlay(){
     if (!player) return;
