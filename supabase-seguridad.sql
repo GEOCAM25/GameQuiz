@@ -7,12 +7,18 @@
 -- puedan leer/escribir, y pone límites de tamaño anti-abuso en
 -- nombres y mensajes del chat.
 --
--- CÓMO USARLO (2 minutos):
---   1) Entra a supabase.com → tu proyecto → SQL Editor
---   2) Pega TODO este archivo y presiona RUN
---   3) Verifica: Authentication → Sign In / Up → "Anonymous sign-ins"
---      debe estar ACTIVADO (el juego ya lo usa).
---   4) Prueba crear una sala y entrar con otro teléfono.
+-- ⚠️⚠️ ORDEN OBLIGATORIO — SI TE LO SALTAS, EL JUEGO DEJA DE FUNCIONAR ⚠️⚠️
+--
+--   PASO 1 (PRIMERO, OBLIGATORIO): activa los inicios anónimos.
+--       supabase.com → tu proyecto → Authentication → Sign In / Up
+--       → "Allow anonymous sign-ins" → ACTIVADO → Save.
+--       (Hoy está DESACTIVADO en tu proyecto — se verificó el 2026-07-11.
+--        Sin esto, ningún jugador podrá entrar después de correr este SQL.)
+--
+--   PASO 2: recién entonces ve a SQL Editor, pega TODO este archivo y RUN.
+--
+--   PASO 3: prueba crear una sala y entrar con otro teléfono. Si algo
+--       falla, corre supabase-setup.sql para volver a las reglas abiertas.
 --
 -- Se puede correr las veces que quieras (es idempotente).
 -- Si algo saliera mal, puedes volver atrás corriendo de nuevo el
