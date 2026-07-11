@@ -1,5 +1,5 @@
 {
-  "_info": "Playlists de KARAOKE. Cada categoría reproduce videos de YouTube al azar. COMO LLENARLO: en el campo 'playlist' de cada categoría pega UNA de estas opciones: (A) el ID o link de una playlist de YouTube (ej: 'PLxxxxxxxx' o 'https://www.youtube.com/playlist?list=PLxxxxxxxx'); o (B) una lista de links/IDs de videos separados por coma (ej: 'dQw4w9WgXcQ, https://youtu.be/otroID'). Si lo dejas vacío, esa categoría mostrará un aviso de que falta configurarla. CONSEJO: usa playlists de canales OFICIALES de karaoke para que aparezcan menos anuncios (no se pueden bloquear del todo). La categoría con 'principal': true es la que se abre por defecto.",
+  "_info": "Karaoke. Cada categoría puede llenarse de 2 formas: (A) 'buscar' = una búsqueda de YouTube; si pegaste tu clave de YouTube Data API v3 en js/config.js, el juego trae SOLO videos que se pueden incrustar (videoEmbeddable=true), así nunca sale el error de 'no se puede reproducir' y se actualiza solo. (B) 'playlist' = un link/ID de playlist o una lista de links de videos, que se usa si NO hay clave de API. La categoría con 'principal': true se abre por defecto.",
   "categorias": [
     {
       "id": "rompecorazones",
@@ -7,6 +7,7 @@
       "emoji": "💔",
       "desc": "Bachata & R&B Latino",
       "artistas": "Romeo Santos, Aventura, Prince Royce, Juan Luis Guerra, Mon Laferte",
+      "buscar": "karaoke bachata romantica en español letra",
       "playlist": ""
     },
     {
@@ -15,6 +16,7 @@
       "emoji": "🔥",
       "desc": "Cumbia & Cuarteto",
       "artistas": "Américo, Noche de Brujas, Ke Personajes, Los Auténticos Decadentes, Gilda, Rodrigo",
+      "buscar": "karaoke cumbia en español letra",
       "playlist": ""
     },
     {
@@ -23,6 +25,7 @@
       "emoji": "🍬",
       "desc": "Salsa & Merengue",
       "artistas": "Marc Anthony, Celia Cruz, Juan Luis Guerra, Elvis Crespo, Oscar D'León",
+      "buscar": "karaoke salsa merengue en español letra",
       "playlist": ""
     },
     {
@@ -31,6 +34,7 @@
       "emoji": "😎",
       "desc": "Pop de los 90s y 2000s",
       "artistas": "Shakira, Luis Miguel, Chayanne, Ricky Martin, Paulina Rubio, Cristian Castro",
+      "buscar": "karaoke pop en español años 2000 letra",
       "playlist": ""
     },
     {
@@ -39,6 +43,7 @@
       "emoji": "🎤",
       "desc": "El Perreo de Culto",
       "artistas": "Daddy Yankee, Don Omar, Wisin & Yandel, Ivy Queen, Bad Bunny",
+      "buscar": "karaoke reggaeton old school letra",
       "playlist": ""
     },
     {
@@ -47,6 +52,7 @@
       "emoji": "🎸",
       "desc": "Clásicos para corear",
       "artistas": "Los Prisioneros, Soda Stereo, Enanitos Verdes, Fabulosos Cadillacs, Maná, La Ley",
+      "buscar": "karaoke rock en español letra",
       "playlist": ""
     },
     {
@@ -55,6 +61,7 @@
       "emoji": "💘",
       "desc": "Baladas AM del recuerdo",
       "artistas": "Camilo Sesto, Juan Gabriel, Luis Miguel, Yuri, Myriam Hernández, Zalo Reyes",
+      "buscar": "karaoke baladas romanticas en español letra",
       "playlist": ""
     },
     {
@@ -63,6 +70,7 @@
       "emoji": "🌎",
       "desc": "Los que cantamos en Spanglish",
       "artistas": "Queen, Backstreet Boys, Britney Spears, Bon Jovi, ABBA, Dua Lipa",
+      "buscar": "karaoke popular english songs lyrics",
       "playlist": ""
     },
     {
@@ -71,6 +79,7 @@
       "emoji": "🎲",
       "desc": "Multigénero · Random Extremo",
       "artistas": "Openings de anime, teleseries, Disney, King África, Raffaella Carrà y más",
+      "buscar": "karaoke exitos en español letra",
       "playlist": "https://youtube.com/playlist?list=PLGQ6vN685oSM",
       "principal": true
     }
