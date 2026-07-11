@@ -1301,3 +1301,16 @@ body.tv-mode{ overflow:hidden; }
 .imp-brow{display:flex;align-items:center;gap:10px;background:rgba(0,0,0,.22);border-radius:12px;padding:10px 14px;font-weight:800}
 .imp-brow.me{outline:2px solid #ffd75e}
 .imp-brow .imp-bnm{flex:1}
+
+/* ===== Cruci-Quiz v3 (CodyCross denso): todo más grande ===== */
+.cruci-xgrid{gap:4px}
+.xc{font-size:calc(var(--cs,40px)*.5);border-radius:8px}
+.xc.secret{background:linear-gradient(180deg,#FFE27A,#FFC93C);box-shadow:0 3px 0 var(--gold-e)}
+.cruci-gridwrap{padding:8px}
+.cruci-clue{font-size:16px;min-height:46px;font-weight:800}
+.cs-box{width:28px;height:34px;font-size:19px}
+.cruci-keyboard{gap:8px}
+.ckb-row{gap:6px}
+.ckb-key{max-width:46px;height:54px;font-size:22px;border-radius:10px}
+.ckb-key.ckb-del{max-width:60px}
+.cruci-reveal{padding:14px;font-size:16px}

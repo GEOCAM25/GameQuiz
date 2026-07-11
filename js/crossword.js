@@ -1,49 +1,33 @@
 // ============================================================
-// GAME QUIZ — CRUCI-QUIZ (juego individual estilo CodyCross)
-// Crucigrama de verdad: las palabras se ENTRELAZAN (unas en
-// horizontal, otras en vertical) y llenan la pantalla como en
-// CodyCross. En cada nivel hay una PALABRA SECRETA que se va
-// revelando: cada palabra aporta una letra resaltada (dorada).
-//
-// Los niveles se cargan desde data/cruci.json — para agregar más
-// niveles NO se toca este archivo, solo se llena el JSON. El
-// contador de niveles se actualiza solo.
-//
-// Extras:
-//  - Al resolver una palabra ganas "letras de pista" que se
-//    guardan y pre-rellenan casillas en los niveles siguientes.
-//  - Botón "Revelar palabra" con 3 usos; al agotarlos hay que
-//    esperar 30 minutos para recuperar los 3.
-// El avance se guarda en el teléfono (localStorage).
+// GAME QUIZ — CRUCI-QUIZ (estilo CodyCross)
+// Tablero DENSO: cada pista es una palabra HORIZONTAL en su propia
+// fila, apiladas sin huecos. Una letra de cada palabra (dorada) arma
+// la PALABRA SECRETA hacia abajo. Al completar una palabra, se
+// revelan 2–4 letras al azar en otras para ayudar. Botón "Revelar 1
+// letra" (al azar) con 3 usos y recarga a los 30 min. Teclado grande
+// con vibración. Niveles desde data/cruci.json (agregar = llenar).
 // ============================================================
 const Cruci = (() => {
   const $  = s => document.querySelector(s);
   const $$ = s => Array.from(document.querySelectorAll(s));
+  const vibrate = ms => { try { navigator.vibrate && navigator.vibrate(ms); } catch(e){} };
 
-  let LEVELS = null;          // se cargan desde el JSON (una vez)
-  let level = 0, board = null, curWord = 0, lastKey = null, onExit = null;
+  let LEVELS = null, level = 0, board = null, activeRow = 0, onExit = null;
 
   // ---------- persistencia ----------
   function unlockedMax(){ return +(localStorage.getItem("gq_cruci_max") || 0); }
   function setUnlocked(n){ localStorage.setItem("gq_cruci_max", String(Math.max(unlockedMax(), n))); }
-  function hintBank(){ return +(localStorage.getItem("gq_cruci_hints") || 0); }
-  function setHintBank(n){ localStorage.setItem("gq_cruci_hints", String(Math.max(0, n))); }
 
-  // ---------- Revelar palabra: 3 usos, recarga a los 30 min ----------
+  // ---------- Revelar 1 letra: 3 usos, recarga a los 30 min ----------
   const REVEAL_MAX = 3, REVEAL_COOLDOWN = 30 * 60 * 1000;
   function revealState(){
-    let s;
-    try { s = JSON.parse(localStorage.getItem("gq_cruci_reveal") || "null"); } catch(e){ s = null; }
+    let s; try { s = JSON.parse(localStorage.getItem("gq_cruci_reveal") || "null"); } catch(e){ s = null; }
     if (!s || typeof s.left !== "number") s = { left: REVEAL_MAX, ts: 0 };
     if (s.left <= 0 && Date.now() - s.ts >= REVEAL_COOLDOWN) s = { left: REVEAL_MAX, ts: 0 };
     return s;
   }
   function saveReveal(s){ localStorage.setItem("gq_cruci_reveal", JSON.stringify(s)); }
-  function revealCooldownLeft(){
-    const s = revealState();
-    if (s.left > 0) return 0;
-    return Math.max(0, REVEAL_COOLDOWN - (Date.now() - s.ts));
-  }
+  function revealCooldownMin(){ const s = revealState(); return s.left > 0 ? 0 : Math.max(1, Math.ceil((REVEAL_COOLDOWN - (Date.now() - s.ts)) / 60000)); }
 
   // ---------- carga de niveles ----------
   async function ensureLevels(){
@@ -53,128 +37,24 @@ const Cruci = (() => {
     LEVELS = (j.niveles || []).map(normalizeLevel).filter(Boolean);
     return LEVELS;
   }
-  // Deja cada nivel listo: mayúsculas y el índice de la letra secreta
-  // dentro de cada palabra (la que coincide con la letra i de "secreta").
   function normalizeLevel(lv){
     const secreta = String(lv.secreta || "").toUpperCase();
     const palabras = (lv.palabras || []).map((it, i) => {
       const w = String(it.w || "").toUpperCase().replace(/[^A-ZÑ]/g, "");
-      const target = secreta[i] || w[0];
-      let hi = w.indexOf(target);
-      if (hi < 0) hi = 0;
+      let hi = w.indexOf(secreta[i] || w[0]); if (hi < 0) hi = 0;
       return { w, p: it.p || "", hi };
     }).filter(x => x.w.length > 1);
     if (!palabras.length) return null;
     return { tema: lv.tema || "Nivel", secreta: secreta.slice(0, palabras.length), palabras };
   }
 
-  // ============================================================
-  //  GENERADOR DE CRUCIGRAMA (entrelaza las palabras)
-  // ============================================================
-  function buildCrossword(entries){
-    const grid = new Map();          // "r,c" -> letra
-    const placements = [];           // { w, p, hi, r, c, dir }
-    const K = (r, c) => r + "," + c;
-    const at = (r, c) => grid.get(K(r, c));
-
-    // ¿Cabe la palabra en (r,c) con dirección dir? Devuelve nº de cruces o -1.
-    function fits(word, r, c, dir){
-      const [dr, dc] = dir === "H" ? [0, 1] : [1, 0];
-      let cross = 0;
-      if (at(r - dr, c - dc)) return -1;                       // casilla previa ocupada
-      if (at(r + dr * word.length, c + dc * word.length)) return -1; // casilla posterior ocupada
-      for (let j = 0; j < word.length; j++){
-        const rr = r + dr * j, cc = c + dc * j, cell = at(rr, cc);
-        if (cell){
-          if (cell !== word[j]) return -1;                     // choca con otra letra
-          cross++;
-        } else {
-          // casilla vacía: sus vecinas perpendiculares deben estar vacías
-          if (dir === "H"){ if (at(rr - 1, cc) || at(rr + 1, cc)) return -1; }
-          else            { if (at(rr, cc - 1) || at(rr, cc + 1)) return -1; }
-        }
-      }
-      return cross;
-    }
-    function put(e, r, c, dir){
-      const [dr, dc] = dir === "H" ? [0, 1] : [1, 0];
-      for (let j = 0; j < e.w.length; j++) grid.set(K(r + dr * j, c + dc * j), e.w[j]);
-      placements.push({ w: e.w, p: e.p, hi: e.hi, r, c, dir });
-    }
-
-    // primera palabra: horizontal en el origen
-    put(entries[0], 0, 0, "H");
-    for (let i = 1; i < entries.length; i++){
-      const e = entries[i];
-      let best = null;
-      for (const [k, ch] of grid){
-        const [pr, pc] = k.split(",").map(Number);
-        for (let j = 0; j < e.w.length; j++){
-          if (e.w[j] !== ch) continue;
-          for (const dir of ["H", "V"]){
-            const [dr, dc] = dir === "H" ? [0, 1] : [1, 0];
-            const r = pr - dr * j, c = pc - dc * j;
-            const sc = fits(e.w, r, c, dir);
-            if (sc >= 1 && (!best || sc > best.sc)) best = { r, c, dir, sc };
-          }
-        }
-      }
-      if (best) put(e, best.r, best.c, best.dir);
-      else {
-        // sin cruce posible: la dejamos debajo de todo, en horizontal
-        let maxR = 0; for (const k of grid.keys()) maxR = Math.max(maxR, +k.split(",")[0]);
-        put(e, maxR + 2, 0, "H");
-      }
-    }
-
-    // normalizar a (0,0)
-    let minR = Infinity, minC = Infinity, maxR = -Infinity, maxC = -Infinity;
-    for (const k of grid.keys()){
-      const [r, c] = k.split(",").map(Number);
-      minR = Math.min(minR, r); minC = Math.min(minC, c);
-      maxR = Math.max(maxR, r); maxC = Math.max(maxC, c);
-    }
-    placements.forEach(pl => { pl.r -= minR; pl.c -= minC; });
-    const H = maxR - minR + 1, W = maxC - minC + 1;
-
-    // mapa de casillas: letra correcta, palabras que la cruzan y si es secreta
-    const cells = new Map();         // "r,c" -> { ch, ids:[], secret:idx|undefined }
-    placements.forEach((pl, pi) => {
-      const [dr, dc] = pl.dir === "H" ? [0, 1] : [1, 0];
-      for (let j = 0; j < pl.w.length; j++){
-        const kk = K(pl.r + dr * j, pl.c + dc * j);
-        let cm = cells.get(kk);
-        if (!cm){ cm = { ch: pl.w[j], ids: [] }; cells.set(kk, cm); }
-        cm.ids.push(pi);
-        if (j === pl.hi) cm.secret = pi;   // esta casilla aporta la letra pi de la secreta
-      }
-    });
-
-    return { placements, cells, W, H, K,
-             typed: new Map(),      // letras escritas por el jugador
-             given: new Set(),      // casillas pre-reveladas como pista
-             solved: new Set() };   // índices de palabras resueltas
-  }
-
-  // ---------- helpers de estado del tablero ----------
-  function cellLocked(kk){
-    const cm = board.cells.get(kk);
-    return cm && cm.ids.some(id => board.solved.has(id));
-  }
-  function effLetter(kk){
-    if (cellLocked(kk)) return board.cells.get(kk).ch;   // fijada por una palabra ya resuelta
-    return board.typed.get(kk) || "";
-  }
-  function wordKeys(pi){
-    const pl = board.placements[pi];
-    const [dr, dc] = pl.dir === "H" ? [0, 1] : [1, 0];
-    const out = [];
-    for (let j = 0; j < pl.w.length; j++) out.push(board.K(pl.r + dr * j, pl.c + dc * j));
-    return out;
-  }
-  function firstUnsolved(){
-    const i = board.placements.findIndex((_, pi) => !board.solved.has(pi));
-    return i < 0 ? 0 : i;
+  // ---------- tablero (filas apiladas, alineadas a la izquierda) ----------
+  function buildBoard(lv){
+    const rows = lv.palabras.map(it => ({
+      w: it.w, clue: it.p, hi: it.hi,
+      filled: Array(it.w.length).fill(""), given: Array(it.w.length).fill(false), solved: false,
+    }));
+    return { secreta: lv.secreta, rows, width: Math.max(...rows.map(r => r.w.length)), height: rows.length };
   }
 
   // ============================================================
@@ -186,12 +66,11 @@ const Cruci = (() => {
     host.innerHTML = `<div class="cruci-loading">Cargando… 🧩</div>`;
     showScreen();
     try { await ensureLevels(); }
-    catch(e){ host.innerHTML = `<div class="cruci-loading">No se pudieron cargar los niveles.<br>Revisa data/cruci.json</div>`; return; }
+    catch(e){ host.innerHTML = `<div class="cruci-loading">No se pudieron cargar los niveles.</div>`; return; }
     if (!LEVELS.length){ host.innerHTML = `<div class="cruci-loading">Aún no hay niveles.</div>`; return; }
     renderLevelSelect();
   }
 
-  // ---------- Selector de niveles ----------
   function renderLevelSelect(){
     const host = $("#cruciScreen");
     const maxU = unlockedMax();
@@ -201,16 +80,15 @@ const Cruci = (() => {
         <h2>CRUCI-QUIZ 🧩</h2>
         <span class="cruci-sub">${Math.min(maxU + 1, LEVELS.length)}/${LEVELS.length}</span>
       </div>
-      <p class="cruci-tagline">Crucigrama con palabras cruzadas. Descubre la palabra secreta de cada nivel.</p>
+      <p class="cruci-tagline">Completa las palabras y descubre la palabra secreta.</p>
       <div class="cruci-levels" id="cruciLevels"></div>`;
     const grid = host.querySelector("#cruciLevels");
     LEVELS.forEach((lv, i) => {
       const locked = i > maxU, done = i < maxU;
       const b = document.createElement("button");
       b.className = "cruci-lvl" + (locked ? " locked" : "") + (done ? " done" : "");
-      b.innerHTML = locked
-        ? `<span class="cl-lock">🔒</span><span class="cl-n">${i + 1}</span>`
-        : `<span class="cl-n">${i + 1}</span><span class="cl-theme">${lv.tema}</span>${done ? '<span class="cl-star">⭐</span>' : ""}`;
+      b.innerHTML = locked ? `<span class="cl-lock">🔒</span><span class="cl-n">${i+1}</span>`
+        : `<span class="cl-n">${i+1}</span><span class="cl-theme">${lv.tema}</span>${done?'<span class="cl-star">⭐</span>':''}`;
       if (!locked) b.onclick = () => startLevel(i);
       grid.appendChild(b);
     });
@@ -220,257 +98,186 @@ const Cruci = (() => {
 
   function startLevel(i){
     level = i;
-    board = buildCrossword(LEVELS[i].palabras);
-    applyStartHints();
-    curWord = firstUnsolved();
-    lastKey = null;
+    board = buildBoard(LEVELS[i]);
+    activeRow = 0;
     renderBoard();
   }
 
-  // Gasta parte del banco de pistas pre-revelando algunas casillas.
-  function applyStartHints(){
-    let bank = hintBank();
-    if (bank <= 0) return;
-    const total = board.cells.size;
-    let n = Math.min(bank, Math.max(1, Math.round(total * 0.12)), 5);
-    const keys = Array.from(board.cells.keys());
-    let guard = 0;
-    while (n > 0 && guard++ < 200){
-      const kk = keys[Math.floor(Math.random() * keys.length)];
-      if (board.given.has(kk) || board.typed.get(kk)) continue;
-      board.typed.set(kk, board.cells.get(kk).ch);
-      board.given.add(kk);
-      bank--; n--;
-    }
-    setHintBank(bank);
-  }
-
-  // ---------- Tablero ----------
   function renderBoard(){
     const host = $("#cruciScreen");
     const lv = LEVELS[level];
     host.innerHTML = `
       <div class="cruci-head">
         <button class="cruci-back" id="cruciBackSel">‹</button>
-        <h2>Nivel ${level + 1} · ${lv.tema}</h2>
+        <h2>Nivel ${level+1} · ${lv.tema}</h2>
         <span class="cruci-sub">🔑 ${lv.secreta.length}</span>
       </div>
       <div class="cruci-secret" id="cruciSecret"></div>
       <div class="cruci-gridwrap"><div class="cruci-xgrid" id="cruciGrid"></div></div>
       <div class="cruci-clue" id="cruciClue"></div>
-      <div class="cruci-actions">
-        <button class="cruci-reveal" id="cruciReveal"></button>
-      </div>
+      <div class="cruci-actions"><button class="cruci-reveal" id="cruciReveal"></button></div>
       <div class="cruci-keyboard" id="cruciKb"></div>`;
     host.querySelector("#cruciBackSel").onclick = () => renderLevelSelect();
-    host.querySelector("#cruciReveal").onclick = revealWord;
-    drawSecret();
-    drawGrid();
-    drawKeyboard();
-    updateReveal();
-    selectWord(curWord, true);
+    host.querySelector("#cruciReveal").onclick = revealOne;
+    drawSecret(); drawGrid(); drawKeyboard(); updateReveal();
+    selectRow(firstUnsolved(), true);
     showScreen();
   }
 
+  function firstUnsolved(){ const i = board.rows.findIndex(r => !r.solved); return i < 0 ? 0 : i; }
+
   function drawGrid(){
     const g = $("#cruciGrid");
-    g.style.setProperty("--cols", board.W);
-    g.style.setProperty("--rows", board.H);
-    // tamaño de casilla para llenar la pantalla sin desbordar
+    g.style.setProperty("--cols", board.width);
     const wrap = g.parentElement.getBoundingClientRect();
-    const availW = (wrap.width || window.innerWidth) - 6;
-    const availH = (wrap.height || window.innerHeight * 0.4) - 6;
-    const cs = Math.max(16, Math.min(44, Math.floor(availW / board.W), Math.floor(availH / board.H)));
+    const availW = (wrap.width || window.innerWidth) - 8;
+    const availH = (wrap.height || window.innerHeight * 0.45) - 8;
+    const cs = Math.max(26, Math.min(54, Math.floor(availW / board.width) - 4, Math.floor(availH / board.height) - 4));
     g.style.setProperty("--cs", cs + "px");
     g.innerHTML = "";
-    for (let r = 0; r < board.H; r++){
-      for (let c = 0; c < board.W; c++){
-        const kk = board.K(r, c), cm = board.cells.get(kk);
+    board.rows.forEach((r, ri) => {
+      for (let c = 0; c < board.width; c++){
+        if (c >= r.w.length){ const b = document.createElement("div"); b.className = "xc-blank"; g.appendChild(b); continue; }
         const cell = document.createElement("div");
-        if (!cm){ cell.className = "xc-blank"; g.appendChild(cell); continue; }
         cell.className = "xc";
-        if (cm.secret !== undefined) cell.classList.add("secret");
-        if (cellLocked(kk)) cell.classList.add("solved");
-        if (board.given.has(kk) && !cellLocked(kk)) cell.classList.add("given");
-        cell.textContent = effLetter(kk);
-        cell.dataset.k = kk;
-        cell.onclick = () => onCellClick(kk);
+        if (c === r.hi) cell.classList.add("secret");
+        if (r.solved) cell.classList.add("solved");
+        else if (r.given[c]) cell.classList.add("given");
+        if (ri === activeRow) cell.classList.add("active");
+        cell.textContent = r.filled[c] || "";
+        cell.onclick = () => selectRow(ri);
         g.appendChild(cell);
       }
-    }
-    highlightActive();
-  }
-
-  function onCellClick(kk){
-    const cm = board.cells.get(kk);
-    const opts = cm.ids.filter(id => !board.solved.has(id));
-    if (!opts.length) return;               // casilla ya resuelta por todos lados
-    let pick;
-    if (kk === lastKey){                     // segundo clic: alterna entre las palabras del cruce
-      const cur = opts.indexOf(curWord);
-      pick = opts[(cur + 1) % opts.length];
-    } else {
-      pick = opts.includes(curWord) ? curWord : opts[0];
-    }
-    lastKey = kk;
-    selectWord(pick);
-  }
-
-  function selectWord(pi, resetKey){
-    if (board.solved.has(pi)){ pi = firstUnsolved(); }
-    curWord = pi;
-    if (resetKey) lastKey = null;
-    const pl = board.placements[pi];
-    const dirTxt = pl.dir === "H" ? "➡️ horizontal" : "⬇️ vertical";
-    $("#cruciClue").innerHTML =
-      `<span class="cc-num">${pi + 1}.</span> ${pl.p} <span class="cc-len">(${pl.w.length} · ${dirTxt})</span>`;
-    highlightActive();
-  }
-
-  function highlightActive(){
-    $$(".xc").forEach(el => el.classList.remove("active"));
-    wordKeys(curWord).forEach(kk => {
-      const el = $(`.xc[data-k="${kk}"]`);
-      if (el) el.classList.add("active");
     });
+  }
+
+  function selectRow(ri, force){
+    if (board.rows[ri].solved && !force){ ri = firstUnsolved(); }
+    activeRow = ri;
+    const r = board.rows[ri];
+    $("#cruciClue").innerHTML = `<span class="cc-num">${ri+1}.</span> ${r.clue} <span class="cc-len">(${r.w.length})</span>`;
+    drawGrid();
   }
 
   function drawSecret(){
     const bar = $("#cruciSecret");
-    const sec = LEVELS[level].secreta;
-    bar.innerHTML = `<span class="cs-label">🔑</span>` + sec.split("").map((ch, i) =>
-      `<span class="cs-box" data-i="${i}">${board.solved.has(i) ? ch : ""}</span>`).join("");
+    bar.innerHTML = `<span class="cs-label">🔑</span>` + board.secreta.split("").map((ch, i) =>
+      `<span class="cs-box" data-i="${i}">${board.rows[i] && board.rows[i].solved ? ch : ""}</span>`).join("");
   }
   function updateSecret(){
-    const sec = LEVELS[level].secreta;
-    sec.split("").forEach((ch, i) => {
+    board.secreta.split("").forEach((ch, i) => {
       const el = $(`.cs-box[data-i="${i}"]`);
-      if (el && board.solved.has(i) && el.textContent !== ch){
-        el.textContent = ch; el.classList.add("pop");
-      }
+      if (el && board.rows[i] && board.rows[i].solved && el.textContent !== ch){ el.textContent = ch; el.classList.add("pop"); }
     });
   }
 
   function drawKeyboard(){
-    const kb = $("#cruciKb");
-    kb.innerHTML = "";
+    const kb = $("#cruciKb"); kb.innerHTML = "";
     ["QWERTYUIOP", "ASDFGHJKLÑ", "ZXCVBNM"].forEach((line, idx) => {
-      const row = document.createElement("div");
-      row.className = "ckb-row";
+      const row = document.createElement("div"); row.className = "ckb-row";
       line.split("").forEach(letter => {
-        const b = document.createElement("button");
-        b.className = "ckb-key"; b.textContent = letter;
+        const b = document.createElement("button"); b.className = "ckb-key"; b.textContent = letter;
         b.onclick = () => typeLetter(letter);
         row.appendChild(b);
       });
-      if (idx === 2){
-        const del = document.createElement("button");
-        del.className = "ckb-key ckb-del"; del.textContent = "⌫";
-        del.onclick = backspace;
-        row.appendChild(del);
-      }
+      if (idx === 2){ const del = document.createElement("button"); del.className = "ckb-key ckb-del"; del.textContent = "⌫"; del.onclick = backspace; row.appendChild(del); }
       kb.appendChild(row);
     });
   }
 
-  function nextEmptyKey(pi){
-    return wordKeys(pi).find(kk => !effLetter(kk)) || null;
-  }
+  function nextEmpty(r){ return r.filled.findIndex(x => !x); }
   function typeLetter(letter){
-    if (board.solved.has(curWord)) return;
-    const kk = nextEmptyKey(curWord);
-    if (!kk) return;
-    board.typed.set(kk, letter);
-    try { Sfx.pick(); } catch(e){}
-    refreshCells();
-    if (!nextEmptyKey(curWord)) checkWord(curWord);
+    const r = board.rows[activeRow];
+    if (r.solved) return;
+    const i = nextEmpty(r); if (i < 0) return;
+    r.filled[i] = letter;
+    vibrate(12); try { Sfx.pick(); } catch(e){}
+    drawGrid();
+    if (nextEmpty(r) < 0) checkWord(activeRow);
   }
   function backspace(){
-    if (board.solved.has(curWord)) return;
-    const keys = wordKeys(curWord);
-    for (let i = keys.length - 1; i >= 0; i--){
-      const kk = keys[i];
-      if (cellLocked(kk) || board.given.has(kk)) continue;   // no se borran letras fijas/pista
-      if (board.typed.get(kk)){ board.typed.delete(kk); break; }
-    }
-    refreshCells();
+    const r = board.rows[activeRow]; if (r.solved) return;
+    for (let i = r.filled.length - 1; i >= 0; i--){ if (r.given[i]) continue; if (r.filled[i]){ r.filled[i] = ""; break; } }
+    vibrate(10); drawGrid();
   }
 
-  // Re-pinta solo las letras (más liviano que redibujar toda la grilla)
-  function refreshCells(){
-    wordKeys(curWord).forEach(kk => {
-      const el = $(`.xc[data-k="${kk}"]`);
-      if (el) el.textContent = effLetter(kk);
+  function checkWord(ri){
+    const r = board.rows[ri];
+    if (r.filled.join("") === r.w){
+      solveRow(ri);
+      // Regalo: 2–4 letras al azar en otras palabras sin resolver
+      giveHintLetters(ri, 2 + Math.floor(Math.random() * 3));
+      checkAllSolved();
+      if (board.rows.every(x => x.solved)) return setTimeout(levelComplete, 450);
+      setTimeout(() => selectRow(firstUnsolved(), true), 350);
+    } else {
+      try { Sfx.wrong(); } catch(e){} vibrate([30, 20, 30]);
+      const g = $("#cruciGrid");
+      const cells = $$(".cruci-xgrid .xc").filter((_, idx) => true); // marcar la fila activa
+      // sacudir la fila activa
+      const rowCells = rowCellEls(ri); rowCells.forEach(el => { el.classList.add("shake"); setTimeout(() => el.classList.remove("shake"), 400); });
+      setTimeout(() => { r.filled = r.filled.map((ch, i) => r.given[i] ? ch : ""); drawGrid(); }, 450);
+    }
+  }
+  function rowCellEls(ri){
+    // devuelve los elementos .xc/.xc-blank de la fila ri (incluye blanks)
+    const all = $$("#cruciGrid > div");
+    return all.slice(ri * board.width, ri * board.width + board.rows[ri].w.length);
+  }
+  function solveRow(ri){
+    const r = board.rows[ri]; if (r.solved) return;
+    r.solved = true;
+    try { Sfx.correct(); } catch(e){} vibrate([40, 20, 60]);
+    try { if (typeof Fun !== "undefined"){ const gg = $("#cruciGrid").getBoundingClientRect(); Fun.floatUp("✨", gg.left + gg.width/2, gg.top + 30, 4); } } catch(e){}
+    updateSecret();
+  }
+  function checkAllSolved(){
+    board.rows.forEach((r, ri) => { if (!r.solved && r.filled.join("") === r.w) solveRow(ri); });
+    updateSecret();
+  }
+  // Revela n celdas vacías al azar repartidas en palabras sin resolver (distintas a exceptRow)
+  function giveHintLetters(exceptRow, n){
+    const spots = [];
+    board.rows.forEach((r, ri) => {
+      if (ri === exceptRow || r.solved) return;
+      r.filled.forEach((ch, ci) => { if (!ch) spots.push([ri, ci]); });
     });
-  }
-
-  function checkWord(pi){
-    const pl = board.placements[pi];
-    const guess = wordKeys(pi).map(effLetter).join("");
-    if (guess === pl.w){
-      board.solved.add(pi);
-      setHintBank(hintBank() + 1);           // ganas una letra de pista para más adelante
-      try { Sfx.correct(); } catch(e){}
-      try {
-        if (typeof Fun !== "undefined"){
-          const g = $("#cruciGrid").getBoundingClientRect();
-          Fun.floatUp("✨", g.left + g.width / 2, g.top + 30, 5);
-        }
-      } catch(e){}
-      drawGrid(); updateSecret();
-      if (board.placements.every((_, k) => board.solved.has(k))) setTimeout(levelComplete, 450);
-      else setTimeout(() => selectWord(firstUnsolved(), true), 350);
-    } else {
-      try { Sfx.wrong(); } catch(e){}
-      wordKeys(pi).forEach(kk => {
-        const el = $(`.xc[data-k="${kk}"]`);
-        if (el){ el.classList.add("shake"); setTimeout(() => el.classList.remove("shake"), 400); }
-      });
-      // borra lo escrito (deja intactas casillas fijas y de pista)
-      setTimeout(() => {
-        wordKeys(pi).forEach(kk => { if (!cellLocked(kk) && !board.given.has(kk)) board.typed.delete(kk); });
-        refreshCells();
-      }, 450);
+    for (let k = 0; k < n && spots.length; k++){
+      const idx = Math.floor(Math.random() * spots.length);
+      const [ri, ci] = spots.splice(idx, 1)[0];
+      board.rows[ri].filled[ci] = board.rows[ri].w[ci];
+      board.rows[ri].given[ci] = true;
+      // quitar de spots los que sean la misma celda (ya cubierto por splice)
     }
+    drawGrid();
   }
 
-  // ---------- Revelar palabra (3 usos / 30 min) ----------
-  function revealWord(){
-    if (board.solved.has(curWord)){ selectWord(firstUnsolved(), true); return; }
+  function revealOne(){
     const s = revealState();
-    if (s.left <= 0){
-      const mins = Math.ceil(revealCooldownLeft() / 60000);
-      try { toast(`Sin revelaciones. Vuelven en ${mins} min ⏳`); } catch(e){}
-      return;
-    }
-    // resuelve la palabra actual completa
-    const pl = board.placements[curWord];
-    wordKeys(curWord).forEach((kk, j) => board.typed.set(kk, pl.w[j]));
-    s.left--;
-    if (s.left <= 0) s.ts = Date.now();
-    saveReveal(s);
-    updateReveal();
-    checkWord(curWord);
+    if (s.left <= 0){ try { toast(`Sin revelaciones. Vuelven en ${revealCooldownMin()} min ⏳`); } catch(e){} return; }
+    // buscar una celda vacía: primero en la fila activa, si no en cualquiera sin resolver
+    let r = board.rows[activeRow], i = r.solved ? -1 : nextRandomEmpty(r);
+    if (i < 0){ const ri = board.rows.findIndex(x => !x.solved && x.filled.includes("")); if (ri < 0) return; r = board.rows[ri]; activeRow = ri; i = nextRandomEmpty(r); }
+    if (i < 0) return;
+    r.filled[i] = r.w[i]; r.given[i] = true;
+    vibrate(20); try { Sfx.pick(); } catch(e){}
+    s.left--; if (s.left <= 0) s.ts = Date.now(); saveReveal(s); updateReveal();
+    drawGrid();
+    if (nextEmpty(r) < 0) checkWord(activeRow);
+    else { checkAllSolved(); if (board.rows.every(x => x.solved)) setTimeout(levelComplete, 400); }
   }
+  function nextRandomEmpty(r){ const empties = r.filled.map((c, i) => c ? -1 : i).filter(i => i >= 0); return empties.length ? empties[Math.floor(Math.random() * empties.length)] : -1; }
+
   function updateReveal(){
-    const btn = $("#cruciReveal");
-    if (!btn) return;
+    const btn = $("#cruciReveal"); if (!btn) return;
     const s = revealState();
-    if (s.left > 0){
-      btn.disabled = false;
-      btn.classList.remove("cooling");
-      btn.innerHTML = `🔓 Revelar palabra <span class="cr-n">${s.left}/${REVEAL_MAX}</span>`;
-    } else {
-      btn.disabled = true;
-      btn.classList.add("cooling");
-      const mins = Math.max(1, Math.ceil(revealCooldownLeft() / 60000));
-      btn.innerHTML = `⏳ Vuelven en ${mins} min`;
-    }
+    if (s.left > 0){ btn.disabled = false; btn.classList.remove("cooling"); btn.innerHTML = `💡 Revelar 1 letra <span class="cr-n">${s.left}/${REVEAL_MAX}</span>`; }
+    else { btn.disabled = true; btn.classList.add("cooling"); btn.innerHTML = `⏳ Vuelven en ${revealCooldownMin()} min`; }
   }
 
   function levelComplete(){
     try { Sfx.fanfare(); } catch(e){}
-    try { if (typeof Fun !== "undefined"){ Fun.confetti(80); Fun.burst(["🎉","🧩","⭐","🔑"], 12); } } catch(e){}
+    try { if (typeof Fun !== "undefined"){ Fun.confetti(90); Fun.burst(["🎉","🧩","⭐","🔑"], 12); } } catch(e){}
     setUnlocked(level + 1);
     const host = $("#cruciScreen");
     const sec = LEVELS[level].secreta;
@@ -482,26 +289,19 @@ const Cruci = (() => {
         <div class="cw-emoji">🔑</div>
         <p class="cw-label">Palabra secreta</p>
         <div class="cw-key">${sec.split("").map(c => `<span>${c}</span>`).join("")}</div>
-        <p class="cw-msg">¡Nivel ${level + 1} completado! 🎉</p>
-        <p class="cw-hint">Ganaste letras de pista para los próximos niveles 💡</p>
+        <p class="cw-msg">¡Nivel ${level+1} completado! 🎉</p>
         <div class="cw-btns">
           ${isLast ? "" : `<button class="btn big btn-green" id="cwNext">Siguiente nivel ▶</button>`}
           <button class="btn ghost" id="cwSelect">Elegir nivel</button>
         </div>
-        ${isLast ? '<p class="cw-msg">¡Terminaste todos los niveles disponibles! Pronto habrá más 🚀</p>' : ""}
+        ${isLast ? '<p class="cw-msg">¡Terminaste todos los niveles! Pronto habrá más 🚀</p>' : ""}
       </div>`;
     host.appendChild(card);
-    const nx = card.querySelector("#cwNext");
-    if (nx) nx.onclick = () => startLevel(level + 1);
+    const nx = card.querySelector("#cwNext"); if (nx) nx.onclick = () => startLevel(level + 1);
     card.querySelector("#cwSelect").onclick = () => renderLevelSelect();
   }
 
-  function showScreen(){
-    document.querySelectorAll(".screen").forEach(s => s.classList.remove("active"));
-    $("#scr-cruci").classList.add("active");
-  }
-
-  // redibuja la grilla si cambia el tamaño de la pantalla
+  function showScreen(){ document.querySelectorAll(".screen").forEach(s => s.classList.remove("active")); $("#scr-cruci").classList.add("active"); }
   window.addEventListener("resize", () => { if (board && $("#cruciGrid")) drawGrid(); });
 
   return { open };
