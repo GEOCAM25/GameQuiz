@@ -111,6 +111,10 @@ const Karaoke = (() => {
     host.innerHTML = `
       <div class="kar-stage">
         <div class="kar-lights"></div>
+        <div class="kar-beams"></div>
+        <div class="kar-floor"></div>
+        <div class="kar-notes"><i>🎵</i><i>🎶</i><i>🎵</i><i>🎶</i></div>
+        <div class="kar-ball"><div class="kb-cord"></div><div class="kb-sphere"></div><div class="kb-spark"></div></div>
         <div class="kar-topbar">
           <button class="kar-close" id="karClose">✕</button>
           <div class="kar-title"><span class="kar-mic">🎤</span><span class="kar-neon">KARAOKE</span><span class="kar-disco">🪩</span></div>
@@ -216,7 +220,10 @@ const Karaoke = (() => {
     try { if (player && player.destroy) player.destroy(); } catch(e){}
     player = new YT.Player("ytHolder", {
       width: "100%", height: "100%",
-      host: "https://www.youtube-nocookie.com",
+      // www.youtube.com (no el modo nocookie): así el reproductor usa la sesión
+      // de YouTube del navegador — si el usuario tiene Premium y está logueado,
+      // NO le aparecen anuncios.
+      host: "https://www.youtube.com",
       playerVars: { rel: 0, modestbranding: 1, playsinline: 1, iv_load_policy: 3, fs: 1, origin: location.origin },
       events: {
         onReady: () => { try { if (player && player.setVolume) player.setVolume(stage ? stage.getState().songVol : 60); } catch(e){} loadCur(); },

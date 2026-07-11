@@ -1432,3 +1432,78 @@ body.tv-mode{ overflow:hidden; }
 @keyframes karEq{0%,100%{height:4px}50%{height:20px}}
 /* Video un poco más limpio y grande */
 .kar-screenframe{box-shadow:0 0 34px rgba(160,80,255,.55),0 14px 36px rgba(0,0,0,.6)}
+
+/* ============================================================
+   KARAOKE v5 — PANTALLA COMPLETA + escenario animado de discoteca
+   ============================================================ */
+/* El karaoke (y Dibuja) ocupan TODA la pantalla: sin columna de 520px ni cielo alrededor */
+body:has(#scr-karaoke.active) #app,
+body:has(#scr-draw.active) #app,
+body:has(#scr-karremote.active) #app{max-width:none;padding:0}
+body:has(#scr-karaoke.active) #tipFab, body:has(#scr-karaoke.active) #musicFab, body:has(#scr-karaoke.active) #chatFab,
+body:has(#scr-draw.active) #tipFab,    body:has(#scr-draw.active) #musicFab,
+body:has(#scr-impostor.active) #tipFab,body:has(#scr-karremote.active) #tipFab{display:none !important}
+#scr-karaoke.screen{min-height:100dvh;gap:0}
+.kar-stage{min-height:100dvh;border-radius:0;padding:calc(10px + env(safe-area-inset-top)) 12px calc(12px + env(safe-area-inset-bottom))}
+
+/* --- Bola de disco DIBUJADA (facetas + brillo) colgando y balanceándose --- */
+.kar-ball{position:absolute;top:-6px;left:50%;z-index:0;pointer-events:none;transform-origin:top center;
+  animation:karSwing 5s ease-in-out infinite}
+.kar-ball .kb-cord{width:2px;height:34px;margin:0 auto;background:linear-gradient(180deg,rgba(255,255,255,.0),rgba(255,255,255,.6))}
+.kar-ball .kb-sphere{width:64px;height:64px;border-radius:50%;margin-left:-31px;position:relative;
+  background:
+    radial-gradient(circle at 32% 28%, rgba(255,255,255,.95), rgba(255,255,255,0) 28%),
+    repeating-linear-gradient(0deg, rgba(255,255,255,.28) 0 6px, rgba(120,120,160,.20) 6px 12px),
+    repeating-linear-gradient(90deg, rgba(255,255,255,.30) 0 6px, rgba(140,140,180,.22) 6px 12px),
+    radial-gradient(circle, #cfd4ea 0%, #8f96b8 60%, #5a6080 100%);
+  box-shadow:0 0 24px rgba(255,255,255,.55), 0 0 60px rgba(160,120,255,.5);
+  animation:karBallShine 2.4s linear infinite}
+@keyframes karSwing{0%,100%{transform:translateX(-50%) rotate(-7deg)}50%{transform:translateX(-50%) rotate(7deg)}}
+@keyframes karBallShine{0%,100%{filter:brightness(1)}50%{filter:brightness(1.35)}}
+/* Destellos que giran alrededor de la bola */
+.kar-ball .kb-spark{position:absolute;top:26px;left:0;width:64px;height:64px;margin-left:-31px;border-radius:50%;
+  background:
+    radial-gradient(circle 3px at 15% 30%, #fff 40%, transparent 60%),
+    radial-gradient(circle 2px at 80% 20%, #ffd1f4 40%, transparent 60%),
+    radial-gradient(circle 2px at 65% 85%, #c9f2ff 40%, transparent 60%),
+    radial-gradient(circle 3px at 25% 75%, #fff 40%, transparent 60%);
+  animation:karSpin 3s linear infinite}
+
+/* --- Haces de luz de discoteca cruzando el escenario --- */
+.kar-beams{position:absolute;inset:-20% -30%;z-index:0;pointer-events:none;opacity:.5;mix-blend-mode:screen;
+  background:
+    conic-gradient(from 200deg at 20% 0%, transparent 0 8deg, rgba(255,80,220,.35) 8deg 14deg, transparent 14deg 360deg),
+    conic-gradient(from 140deg at 80% 0%, transparent 0 8deg, rgba(80,210,255,.35) 8deg 14deg, transparent 14deg 360deg),
+    conic-gradient(from 170deg at 50% -5%, transparent 0 6deg, rgba(255,220,90,.28) 6deg 11deg, transparent 11deg 360deg);
+  animation:karBeams 7s ease-in-out infinite alternate}
+@keyframes karBeams{0%{transform:rotate(-6deg) scale(1.05)}100%{transform:rotate(6deg) scale(1.1)}}
+
+/* --- Pista de baile animada al pie del escenario --- */
+.kar-floor{position:absolute;left:0;right:0;bottom:0;height:120px;z-index:0;pointer-events:none;opacity:.55;
+  transform:perspective(300px) rotateX(55deg);transform-origin:bottom center;
+  background:repeating-conic-gradient(from 0deg at 50% 50%, #ff4fd8 0 25%, #3b1a66 0 50%, #4fd2ff 0 75%, #2a1150 0 100%);
+  background-size:56px 56px;
+  animation:karFloor 2.2s steps(4) infinite, karHue 8s linear infinite;
+  -webkit-mask-image:linear-gradient(180deg,transparent,#000 40%);mask-image:linear-gradient(180deg,transparent,#000 40%)}
+@keyframes karFloor{to{background-position:56px 0}}
+@keyframes karHue{to{filter:hue-rotate(360deg)}}
+
+/* Notas musicales flotando */
+.kar-notes{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.kar-notes i{position:absolute;bottom:-30px;font-style:normal;font-size:22px;opacity:0;animation:karNote 6s linear infinite}
+.kar-notes i:nth-child(1){left:8%;animation-delay:0s}
+.kar-notes i:nth-child(2){left:28%;animation-delay:1.6s;font-size:18px}
+.kar-notes i:nth-child(3){left:66%;animation-delay:3s}
+.kar-notes i:nth-child(4){left:86%;animation-delay:4.4s;font-size:26px}
+@keyframes karNote{0%{transform:translateY(0) rotate(-10deg);opacity:0}10%{opacity:.8}
+  90%{opacity:.5}100%{transform:translateY(-80vh) rotate(14deg);opacity:0}}
+
+/* --- Video: 16:9 garantizado también en horizontal (sin recortes raros) --- */
+@media (orientation:landscape){
+  #scr-karaoke.screen{min-height:100dvh}
+  .kar-stage{padding:8px 14px}
+  .kar-videowrap{display:grid;place-items:center}
+  .kar-screenframe{width:min(100%, calc((100dvh - 96px) * 1.7778));height:auto;max-height:none}
+  .kar-panel{width:min(36%,330px)}
+  .kar-ball{display:none}  /* en TV el video manda; las luces y la pista quedan */
+}
