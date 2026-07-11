@@ -248,5 +248,12 @@ const Draw = (() => {
   function destroy(){ try{clearInterval(S.tick);}catch(e){} try{clearTimeout(S.full&&S.full.timer);}catch(e){} try{ if(S.ch) sbClient().removeChannel(S.ch); }catch(e){} S={onExit:S.onExit}; }
   window.addEventListener("resize", () => { if (S && S._fit && $("#drwCanvas")) S._fit(); });
 
-  return { open, _logic: DrawLogic };
+  // Abrir DENTRO de una sala existente (código compartido + nombre del jugador)
+  async function openShared(code, name, isLeader, exitCb){
+    S = { onExit: exitCb || null };
+    try { await ensureWords(); } catch(e){}
+    startSession(String(code).toUpperCase(), name || "Jugador", !!isLeader);
+  }
+
+  return { open, openShared, _logic: DrawLogic };
 })();

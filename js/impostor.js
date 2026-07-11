@@ -349,5 +349,13 @@ const Impostor = (() => {
   function backHome(){ document.querySelectorAll(".screen").forEach(s => s.classList.remove("active")); const h = $("#scr-home"); if (h) h.classList.add("active"); }
   function destroy(){ try { clearTimeout(S.timer); } catch(e){} try { if (S.ch) sbClient().removeChannel(S.ch); } catch(e){} S = { onExit:S.onExit }; }
 
-  return { open, _logic: ImpLogic };
+  // Abrir DENTRO de una sala existente: usa el código de la sala como sesión
+  // compartida y el nombre del jugador; el anfitrión entra como líder.
+  async function openShared(code, name, isLeader, exitCb){
+    S = { onExit: exitCb || null };
+    try { await ensureWords(); } catch(e){}
+    startSession(String(code).toUpperCase(), name || "Jugador", !!isLeader);
+  }
+
+  return { open, openShared, _logic: ImpLogic };
 })();
