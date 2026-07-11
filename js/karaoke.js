@@ -113,23 +113,26 @@ const Karaoke = (() => {
         <div class="kar-lights"></div>
         <div class="kar-topbar">
           <button class="kar-close" id="karClose">✕</button>
-          <div class="kar-title"><span class="kar-mic left">🎤</span><span class="kar-neon">KARAOKE</span><span class="kar-mic right">🎤</span></div>
-          <div class="kar-disco">🪩</div>
+          <div class="kar-title"><span class="kar-mic">🎤</span><span class="kar-neon">KARAOKE</span><span class="kar-disco">🪩</span></div>
+          <span class="kar-spacer"></span>
         </div>
-        <div class="kar-videowrap">
-          <div class="kar-screenframe">
-            <div id="ytHolder"></div>
-            <div class="kar-msg" id="karMsg" hidden></div>
+        <div class="kar-body">
+          <div class="kar-videowrap">
+            <div class="kar-screenframe">
+              <div id="ytHolder"></div>
+              <div class="kar-msg" id="karMsg" hidden></div>
+            </div>
+          </div>
+          <div class="kar-panel">
+            <div class="kar-controls">
+              <button class="kar-ctrl" id="karPrev" title="Anterior">⏮</button>
+              <button class="kar-ctrl kar-play" id="karPlay" title="Reproducir/Pausar">⏸</button>
+              <button class="kar-ctrl" id="karNext" title="Siguiente">⏭</button>
+            </div>
+            <div class="kar-cats" id="karCats"></div>
+            <div class="kar-qr" id="karQR"></div>
           </div>
         </div>
-        <div class="kar-controls">
-          <button class="kar-ctrl" id="karPrev" title="Anterior">⏮</button>
-          <button class="kar-ctrl kar-play" id="karPlay" title="Reproducir/Pausar">⏸</button>
-          <button class="kar-ctrl" id="karNext" title="Siguiente">⏭</button>
-        </div>
-        <div class="kar-cats" id="karCats"></div>
-        <p class="kar-note">💡 Consejo: usa playlists de canales oficiales de karaoke para menos anuncios.</p>
-        <div class="kar-qr" id="karQR"></div>
       </div>`;
     $("#karClose").onclick = () => { try { Sfx.click(); } catch(e){} close(); };
     $("#karPrev").onclick  = () => { if (stage) stage.dispatchLocal({ t:"prev" }); else if (player) { try { player.previousVideo(); } catch(e){} } };
@@ -149,8 +152,8 @@ const Karaoke = (() => {
   }
   function renderQR(){
     const box = $("#karQR"); if (!box || !stage) return;
-    box.innerHTML = `<div class="kar-qr-inner">${qrSVG(stage.joinURL(), 112)}</div>
-      <div class="kar-qr-cap">📱 Escanea para<br>cantar y controlar<br><b>${stage.code}</b></div>`;
+    box.innerHTML = `<div class="kar-qr-inner">${qrSVG(stage.joinURL(), 92)}</div>
+      <div class="kar-qr-cap">📱 Escanea para cantar y controlar<b>${stage.code}</b></div>`;
   }
   // Aplica al reproductor de YouTube los efectos que decide el estado en red
   function applyFx(fx){
@@ -270,8 +273,8 @@ const Karaoke = (() => {
     } catch(e){}
   }
   function onError(){
-    showMsg("⚠️ Este video no se pudo reproducir (puede estar bloqueado o no permite incrustarse).<br>Saltando al siguiente…");
-    setTimeout(() => { try { if (player) player.nextVideo(); hideMsg(); } catch(e){} }, 1800);
+    showMsg("⏭️ Saltando a la siguiente canción…");
+    setTimeout(() => { try { if (player) player.nextVideo(); hideMsg(); } catch(e){} }, 1200);
   }
 
   function showScreen(){
