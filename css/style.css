@@ -1302,6 +1302,29 @@ body.tv-mode{ overflow:hidden; }
 .imp-brow.me{outline:2px solid #ffd75e}
 .imp-brow .imp-bnm{flex:1}
 
+/* ===== Mójate 💦 (¿Quién es más probable?) ===== */
+.btn-pink{background:linear-gradient(180deg,#ff6fae,#e83d86);color:#fff;box-shadow:0 6px 0 #b41f60}
+.btn-pink:active{transform:translateY(3px);box-shadow:0 3px 0 #b41f60}
+.moj-q{background:linear-gradient(180deg,#ff8bc0,#e83d86);color:#fff;border-radius:22px;padding:22px 18px;
+  text-align:center;font-size:20px;font-weight:800;line-height:1.35;box-shadow:0 8px 22px rgba(0,0,0,.4);margin:6px 0 14px}
+.moj-q b{font-family:'Fredoka';font-weight:700}
+.moj-q.small{font-size:16px;padding:14px;opacity:.95}
+.moj-winner{background:linear-gradient(180deg,#3aa0ff,#1668d6);border-radius:24px;padding:20px;text-align:center;
+  box-shadow:0 10px 26px rgba(0,0,0,.5);margin-bottom:14px;position:relative;overflow:hidden}
+.moj-splash{font-size:60px;animation:mojDrop .8s ease}
+@keyframes mojDrop{0%{transform:translateY(-40px) scale(.4);opacity:0}60%{transform:translateY(6px) scale(1.15)}100%{transform:translateY(0) scale(1);opacity:1}}
+.moj-wname{font-family:'Fredoka';font-weight:700;font-size:30px;color:#fff;margin:4px 0}
+.moj-wsub{font-weight:800;color:#eaf4ff;opacity:.95}
+.moj-breakdown{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}
+.moj-brow{display:flex;align-items:center;gap:10px;background:rgba(0,0,0,.22);border-radius:12px;padding:9px 14px;font-weight:700}
+.moj-bn{font-weight:800;min-width:70px}
+.moj-bc{color:#ffd75e;font-weight:800}
+.moj-bv{flex:1;text-align:right;font-size:13px;opacity:.85}
+.moj-rank{margin:8px 0 4px;background:rgba(0,0,0,.18);border-radius:14px;padding:6px 12px}
+.moj-rank summary{cursor:pointer;font-weight:800;padding:6px 0;list-style:none}
+.moj-rank summary::-webkit-details-marker{display:none}
+.moj-rank .imp-brow{margin-top:5px}
+
 /* ===== Cruci-Quiz v3 (CodyCross denso): todo más grande ===== */
 .cruci-xgrid{gap:4px}
 .xc{font-size:calc(var(--cs,40px)*.5);border-radius:8px}

@@ -238,6 +238,11 @@ $("#btnDraw") && ($("#btnDraw").onclick = () => {
   if (typeof Draw === "undefined") return toast("🎨 Dibuja y Adivina llega pronto");
   Draw.open(() => show("home"));
 });
+$("#btnMojate") && ($("#btnMojate").onclick = () => {
+  Sfx.click();
+  if (typeof Mojate === "undefined") return toast("💦 Mójate llega pronto");
+  Mojate.open(() => show("home"));
+});
 
 // ---------- Lanzar otros juegos DENTRO de la sala (mismo código/jugadores) ----------
 // El anfitrión toca un juego → se avisa a todos por el canal de la sala y
@@ -246,6 +251,7 @@ function openRoomGame(game, code, name, isLeader){
   const back = () => show("lobby");
   if (game === "impostor" && typeof Impostor !== "undefined") Impostor.openShared(code, name, isLeader, back);
   else if (game === "draw" && typeof Draw !== "undefined") Draw.openShared(code, name, isLeader, back);
+  else if (game === "mojate" && typeof Mojate !== "undefined") Mojate.openShared(code, name, isLeader, back);
 }
 function launchRoomGame(game){
   if (!S.room || !S.me) return;
@@ -260,6 +266,7 @@ function onLaunchGame(p){
 }
 $("#btnRoomImpostor") && ($("#btnRoomImpostor").onclick = () => launchRoomGame("impostor"));
 $("#btnRoomDraw") && ($("#btnRoomDraw").onclick = () => launchRoomGame("draw"));
+$("#btnRoomMojate") && ($("#btnRoomMojate").onclick = () => launchRoomGame("mojate"));
 $("#btnTV") && ($("#btnTV").onclick = () => {
   Sfx.click();
   modal(`<h3>📺 Modo pantalla</h3>
