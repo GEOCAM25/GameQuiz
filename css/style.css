@@ -1507,3 +1507,37 @@ body:has(#scr-impostor.active) #tipFab,body:has(#scr-karremote.active) #tipFab{d
   .kar-panel{width:min(36%,330px)}
   .kar-ball{display:none}  /* en TV el video manda; las luces y la pista quedan */
 }
+
+/* ============================================================
+   MINI-JUEGOS — rediseño visual (marco común más moderno)
+   ============================================================ */
+/* Ambiente: brillo suave animado detrás de cada mini-juego */
+section[id^="scr-mini-"]{position:relative}
+section[id^="scr-mini-"]::before{content:"";position:absolute;inset:-10% -20%;z-index:-1;pointer-events:none;
+  background:
+    radial-gradient(45% 30% at 20% 12%, rgba(255,184,33,.20), transparent 70%),
+    radial-gradient(45% 30% at 80% 8%,  rgba(91,107,255,.22), transparent 70%),
+    radial-gradient(50% 35% at 50% 100%, rgba(255,79,216,.14), transparent 70%);
+  animation:miniAmb 9s ease-in-out infinite alternate}
+@keyframes miniAmb{0%{transform:translateY(0) scale(1)}100%{transform:translateY(2%) scale(1.06)}}
+/* Cabecera tipo vidrio, más grande y prolija */
+.mini-head{max-width:440px;gap:10px;background:rgba(0,0,0,.22);border:1px solid rgba(255,255,255,.14);
+  border-radius:40px;padding:6px;backdrop-filter:blur(8px)}
+.mini-target{font-size:17px;padding:9px 16px;border-radius:30px;flex:1;text-align:center;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;box-shadow:inset 0 -2px 0 var(--gold-e)}
+/* Cronómetro: medalla que late */
+.mini-timer{min-width:56px;text-align:center;font-size:21px;padding:9px 14px;border-radius:30px;
+  background:linear-gradient(180deg,#fff,#EFE6D7);
+  box-shadow:0 0 0 3px rgba(255,255,255,.22), 0 0 16px rgba(255,215,94,.45), 0 3px 0 rgba(20,10,40,.2);
+  animation:miniTick 1s ease-in-out infinite}
+@keyframes miniTick{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+/* Barra de puntaje: más alta, con brillo que la recorre */
+.mini-scorebar{max-width:440px;height:30px;border:1px solid rgba(255,255,255,.16);overflow:hidden}
+.mini-scorebar .msb-fill{background:linear-gradient(90deg,#5b6bff,#a06bff,#ff5bd0);
+  box-shadow:0 0 14px rgba(160,107,255,.55)}
+.mini-scorebar .msb-fill::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.45) 50%,transparent 70%);
+  background-size:220% 100%;animation:msbShine 2.2s linear infinite}
+@keyframes msbShine{to{background-position:-220% 0}}
+.mini-scorebar .msb-num{font-size:15px;text-shadow:0 1px 4px rgba(0,0,0,.6)}
+.mini-scorebar.full{box-shadow:0 0 22px rgba(255,215,94,.65)}
