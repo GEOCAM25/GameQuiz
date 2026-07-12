@@ -1324,6 +1324,11 @@ body.tv-mode{ overflow:hidden; }
 .moj-rank summary{cursor:pointer;font-weight:800;padding:6px 0;list-style:none}
 .moj-rank summary::-webkit-details-marker{display:none}
 .moj-rank .imp-brow{margin-top:5px}
+.moj-final{background:linear-gradient(180deg,#7a3ff0,#4a1fb0);border-radius:22px;padding:18px;text-align:center;
+  box-shadow:0 10px 26px rgba(0,0,0,.5);margin:6px 0 12px}
+.moj-final-t{font-family:'Fredoka';font-weight:700;font-size:26px;color:#fff;margin-bottom:4px}
+.moj-final-champ{font-weight:800;color:#ffe27a;margin-bottom:12px}
+.moj-final-board{display:flex;flex-direction:column;gap:5px}
 
 /* ===== Cruci-Quiz v3 (CodyCross denso): todo más grande ===== */
 .cruci-xgrid{gap:4px}
