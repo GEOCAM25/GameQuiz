@@ -447,8 +447,24 @@ async function enterRoom(room, me){
   if (KAR_REMOTE) return;
   // Si llegó por un enlace compartido con ?sala=CÓDIGO, saltar directo a
   // "entrar a la sala" con el código ya puesto (más fácil que buscarlo).
-  const salaParam = new URLSearchParams(location.search).get("sala");
+  const _p = new URLSearchParams(location.search);
+  const salaParam = _p.get("sala");
+  const jParam = (_p.get("j") || "").toLowerCase();
   if (salaParam && /^[A-Za-z0-9]{4}$/.test(salaParam)){
+    const code = salaParam.toUpperCase();
+    // Enlace de un juego autónomo (Incógnito / Dibuja / ¿Quién será?):
+    // entrar DIRECTO a esa sala, sin escribir el código.
+    const AUTOG = {
+      impostor: (typeof Impostor !== "undefined") ? Impostor : null,
+      draw:     (typeof Draw     !== "undefined") ? Draw     : null,
+      mojate:   (typeof Mojate   !== "undefined") ? Mojate   : null,
+    };
+    if (jParam && AUTOG[jParam] && AUTOG[jParam].join){
+      history.replaceState(null, "", location.pathname);
+      Music.enterGame();
+      AUTOG[jParam].join(code, () => show("home"));
+      return;
+    }
     const raw0 = localStorage.getItem("gq_session");
     if (!raw0){ // no reventar una reconexión en curso
       Music.enterGame();
@@ -748,6 +764,17 @@ $("#btnShare").onclick = () => {
   const text = `🎲 ¡Juguemos Súper Trivia! Toca aquí para entrar directo a mi sala (código ${S.room.code}) 👉 ${url}`;
   if (navigator.share) navigator.share({ title:"Súper Trivia", text, url }).catch(()=>{});
   else { navigator.clipboard.writeText(text); toast("📋 Invitación copiada"); }
+};
+
+// Compartir sala de los juegos autónomos (Incógnito / Dibuja / ¿Quién será?).
+// Genera un enlace ?sala=CÓDIGO&j=JUEGO; quien lo abra entra DIRECTO a la sala.
+window.shareGameRoom = function(code, gameKey, gameName){
+  try { Sfx.click(); } catch(e){}
+  const url = location.origin + location.pathname + "?sala=" + code + "&j=" + gameKey;
+  const text = `🎮 ¡Juguemos ${gameName}! Toca aquí para entrar directo a mi sala (código ${code}) 👉 ${url}`;
+  if (navigator.share) navigator.share({ title: gameName, text, url }).catch(()=>{});
+  else if (navigator.clipboard) navigator.clipboard.writeText(text).then(()=>toast("📋 Invitación copiada"), ()=>toast("Código de sala: "+code));
+  else toast("Código de sala: "+code);
 };
 
 $("#btnLeave").onclick = () => {

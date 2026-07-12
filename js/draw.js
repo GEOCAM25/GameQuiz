@@ -141,13 +141,15 @@ const Draw = (() => {
     host.innerHTML = `
       <div class="imp-wrap">
         <div class="imp-top"><button class="cruci-back" id="drwLeave">‹</button><span class="imp-code">🎨 ${esc(p.code)}</span><span class="imp-sub">${p.order.length} jug.</span></div>
-        <p class="imp-tag">Comparte el código <b>${esc(p.code)}</b> (mínimo 2).</p>
+        <p class="imp-tag">Comparte el código <b>${esc(p.code)}</b> o el enlace (mínimo 2).</p>
         <div class="imp-players">${p.order.map(id=>`<div class="imp-chip">${esc(p.players[id]?.name||"?")}${id===p.leader?" 👑":""}</div>`).join("")}</div>
+        <button class="btn btn-blue" id="drwShare">🔗 Compartir sala</button>
         ${amLeader ? `<label class="lbl" style="color:#fff">Categoría</label>
           <select id="drwCat" class="imp-input">${(S.catList||[]).map(c=>`<option ${c===p.category?"selected":""}>${esc(c)}</option>`).join("")}</select>
           <button class="btn big btn-green" id="drwStart" ${p.order.length<2?"disabled":""}>▶ Empezar</button>` : `<p class="imp-hint">Esperando al anfitrión… 👑</p>`}
       </div>`;
     bindLeave("drwLeave");
+    const sh=$("#drwShare"); if(sh) sh.onclick=()=>window.shareGameRoom(p.code, "draw", "Dibuja y Adivina");
     if(amLeader){ $("#drwCat").onchange=e=>send0({t:"setCategory",cat:e.target.value}); $("#drwStart").onclick=()=>send0({t:"start"}); }
   }
 
@@ -255,5 +257,14 @@ const Draw = (() => {
     startSession(String(code).toUpperCase(), name || "Jugador", !!isLeader);
   }
 
-  return { open, openShared, _logic: DrawLogic };
+  // Entrar por enlace compartido (con nombre guardado entra directo).
+  async function join(code, exitCb){
+    S = { onExit: exitCb || null };
+    try { await ensureWords(); } catch(e){}
+    const nm = (localStorage.getItem("gq_name")||"").trim();
+    if (nm){ startSession(String(code).toUpperCase(), nm, false); }
+    else { renderStart(); showScreen(); const ci=$("#drwCode"); if(ci) ci.value=String(code).toUpperCase(); const ni=$("#drwName"); if(ni) ni.focus(); }
+  }
+
+  return { open, openShared, join, _logic: DrawLogic };
 })();

@@ -243,8 +243,9 @@ const Impostor = (() => {
     host.innerHTML = `
       <div class="imp-wrap">
         ${topBar(p, `${p.order.length} jugador${p.order.length===1?"":"es"}`)}
-        <p class="imp-tag">Comparte el código <b>${esc(p.code)}</b> para que se unan (mínimo 3).</p>
+        <p class="imp-tag">Comparte el código <b>${esc(p.code)}</b> o el enlace para que se unan (mínimo 3).</p>
         <div class="imp-players">${p.order.map(id => `<div class="imp-chip">${esc(p.players[id]?.name||"?")}${id===p.leader?" 👑":""}</div>`).join("")}</div>
+        <button class="btn btn-blue" id="impShare">🔗 Compartir sala</button>
         ${amLeader ? `
           <label class="lbl" style="color:#fff">Categoría</label>
           <select id="impCat" class="imp-input">${(S.catList||[]).map(c => `<option ${c===p.category?"selected":""}>${esc(c)}</option>`).join("")}</select>
@@ -253,6 +254,7 @@ const Impostor = (() => {
         ` : `<p class="imp-hint">Esperando que el anfitrión inicie… 👑</p>`}
       </div>`;
     bindLeave();
+    const sh = $("#impShare"); if (sh) sh.onclick = () => window.shareGameRoom(p.code, "impostor", "Incógnito");
     if (amLeader){
       $("#impCat").onchange = e => send0({ t:"setCategory", cat:e.target.value });
       $("#impStart").onclick = () => send0({ t:"start" });
@@ -357,5 +359,15 @@ const Impostor = (() => {
     startSession(String(code).toUpperCase(), name || "Jugador", !!isLeader);
   }
 
-  return { open, openShared, _logic: ImpLogic };
+  // Entrar por enlace compartido: si ya hay nombre guardado, se une directo;
+  // si no, muestra el inicio con el código ya puesto para que solo escriba su nombre.
+  async function join(code, exitCb){
+    S = { onExit: exitCb || null };
+    try { await ensureWords(); } catch(e){}
+    const nm = (localStorage.getItem("gq_name")||"").trim();
+    if (nm){ startSession(String(code).toUpperCase(), nm, false); }
+    else { renderStart(); showScreen(); const ci=$("#impCode"); if(ci) ci.value=String(code).toUpperCase(); const ni=$("#impName"); if(ni) ni.focus(); }
+  }
+
+  return { open, openShared, join, _logic: ImpLogic };
 })();
