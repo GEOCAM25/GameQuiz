@@ -1329,6 +1329,7 @@ body.tv-mode{ overflow:hidden; }
 .moj-final-t{font-family:'Fredoka';font-weight:700;font-size:26px;color:#fff;margin-bottom:4px}
 .moj-final-champ{font-weight:800;color:#ffe27a;margin-bottom:12px}
 .moj-final-board{display:flex;flex-direction:column;gap:5px}
+.moj-loser{background:linear-gradient(180deg,#E8455e,#a5203a)!important;outline:2px solid #ffd75e}
 
 /* ===== Cruci-Quiz v3 (CodyCross denso): todo más grande ===== */
 .cruci-xgrid{gap:4px}

@@ -240,7 +240,7 @@ $("#btnDraw") && ($("#btnDraw").onclick = () => {
 });
 $("#btnMojate") && ($("#btnMojate").onclick = () => {
   Sfx.click();
-  if (typeof Mojate === "undefined") return toast("💦 Mójate llega pronto");
+  if (typeof Mojate === "undefined") return toast("🫵 ¿Quién será? llega pronto");
   Mojate.open(() => show("home"));
 });
 
