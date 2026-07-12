@@ -2171,7 +2171,12 @@ const MINI_META = {
 
 // Mini-juegos cuyo puntaje se reparte por ORDEN DE LLEGADA (1°=100, 2°=90…)
 // en vez de sumar el score crudo que guardó cada jugador.
-const RANK_MINIS = { memoria:[58,50,44,39,35,32], preg:[58,50,44,39], reaccion:[58,50,44,39,35,32] };
+// Tablas largas: hay premio decreciente para TODOS los que terminan (no solo el podio)
+const RANK_MINIS = {
+  memoria:[60,52,46,41,37,34,31,29,27,25,23,21,20,19,18],
+  preg:[60,52,46,41,37,34,31,29,27,25,23,21,20,19,18],
+  reaccion:[60,52,46,41,37,34,31,29,27,25,23,21,20,19,18],
+};
 
 // ---------- El anfitrión arma el mini-juego ----------
 // ============================================================
@@ -2467,11 +2472,10 @@ async function finishMini(){
 
   const byPlayer = {};
   const table = RANK_MINIS[m.kind];
-  const MINI_TRY_PTS = 10; // participación: lo intentó pero no acertó a tiempo
+  const MINI_TRY_PTS = 15; // participación: lo intentó pero no acertó a tiempo
   if (table){
-    // Reparto por ORDEN DE LLEGADA. Quienes acertaron (payload.ok) según su
-    // tiempo (payload.t, menor = más rápido); quienes lo intentaron sin
-    // acertar reciben un puntaje chico de participación (no quedan en 0).
+    // Reparto por ORDEN DE LLEGADA con tabla larga: TODOS los que terminan
+    // reciben premio decreciente; quienes lo intentaron, participación.
     const rows = scores || [];
     const finishers = rows.filter(s => s.payload && s.payload.ok).sort((a,b) => (a.payload.t||0) - (b.payload.t||0));
     finishers.forEach((s, idx) => {
@@ -2481,24 +2485,25 @@ async function finishMini(){
       byPlayer[s.player_id] = (byPlayer[s.player_id]||0) + MINI_TRY_PTS;
     });
   } else {
-    // Puntaje directo (memoria, colorín, flash, ritmo, puntería…): cada quien
-    // conserva su score crudo, PERO además se ordena por score y se da un bono
-    // de podio, para que siempre haya 1º, 2º, 3º aunque varios acierten.
-    const rows = (scores || []);
-    rows.forEach(s => { byPlayer[s.player_id] = (byPlayer[s.player_id]||0) + (s.score||0); });
-    const PLACE_BONUS = [25, 15, 8]; // oro/plata/bronce
-    const ranked = Object.entries(byPlayer)
-      .filter(([,v]) => v > 0)
-      .sort((a,b) => b[1] - a[1]);
-    ranked.forEach(([pid], idx) => {
-      if (idx < PLACE_BONUS.length) byPlayer[pid] += PLACE_BONUS[idx];
+    // Puntaje NORMALIZADO (flash, colorín, ritmo, puntería, V/F, bomba…):
+    // antes se sumaba el score crudo y el primero podía sacar 200+ mientras
+    // el resto quedaba a años luz. Ahora el mejor marca 60 y los demás
+    // reciben proporcional entre 15 y 60 — todos avanzan, el orden se respeta.
+    const raw = {};
+    (scores || []).forEach(s => { raw[s.player_id] = (raw[s.player_id]||0) + (s.score||0); });
+    const best = Math.max(0, ...Object.values(raw));
+    Object.entries(raw).forEach(([pid, v]) => {
+      byPlayer[pid] = best > 0 ? Math.round(15 + 45 * (v / best)) : 15;
+    });
+    const PLACE_BONUS = [12, 8, 5]; // oro/plata/bronce (chico: premia sin disparar la brecha)
+    Object.entries(raw).sort((a,b) => b[1] - a[1]).forEach(([pid], idx) => {
+      if (idx < PLACE_BONUS.length && raw[pid] > 0) byPlayer[pid] += PLACE_BONUS[idx];
     });
   }
 
   // Piso de participación: TODOS los conectados reciben puntos, aunque no
-  // hayan alcanzado a enviar su resultado (antes quedaban en 0 y parecía que
-  // solo el primer lugar puntuaba).
-  const FLOOR = 10;
+  // hayan alcanzado a enviar su resultado.
+  const FLOOR = 15;
   S.players.filter(p => p.connected).forEach(p => { if (!(byPlayer[p.id] > 0)) byPlayer[p.id] = FLOOR; });
 
   for (const [pid, pts] of Object.entries(byPlayer)){
@@ -2620,6 +2625,9 @@ function updateMiniTimer(m){
   } else if (m.kind === "memoria"){
     const left = Math.max(0, Math.ceil(((m.until||0)-Date.now())/1000));
     const el = $("#memoTimer"); if (el) el.textContent = left;
+    // Rescate: si el timer de "ocultar y pasar a responder" murió, forzarlo
+    if (!S.memoDone && !S.memoT0 && S.memoShownAt && Date.now() - S.memoShownAt > 3600)
+      memoriaInputPhase(m);
     if (left <= 0) memoriaOnTimeUp(m);
   } else if (m.kind === "punteria"){
     const left = Math.max(0, Math.ceil(((m.until||0)-Date.now())/1000));
@@ -2628,10 +2636,21 @@ function updateMiniTimer(m){
   } else if (m.kind === "reaccion"){
     const left = Math.max(0, Math.ceil(((m.until||0)-Date.now())/1000));
     const el = $("#reacTimer"); if (el) el.textContent = left;
+    // Rescate: si el timer del "verde" murió, ponerlo verde igual
+    if (!S.reacDone && !S.reacReady && S.reacWaitUntil && Date.now() > S.reacWaitUntil + 900){
+      S.reacReady = true; S.reacShownAt = Date.now(); S.reacWaitUntil = 0;
+      const pad = $("#reacPad"); if (pad) pad.className = "reac-pad go";
+      const b = $("#reacBig"); if (b) b.textContent = "¡YA! 🟢";
+    }
     if (left <= 0) reaccionOnTimeUp(m);
   } else if (m.kind === "ritmo"){
     const left = Math.max(0, Math.ceil(((m.until||0)-Date.now())/1000));
     const el = $("#ritmoTimer"); if (el) el.textContent = left;
+    // Rescate: si la animación de la secuencia murió, desbloquear igual
+    if (S.ritmoLocked && !S.ritmoDone && S.ritmoUnlockBy && Date.now() > S.ritmoUnlockBy){
+      S.ritmoLocked = false; S.ritmoUnlockBy = 0;
+      const msg = $("#ritmoMsg"); if (msg) msg.textContent = "¡Tu turno! Repite la secuencia";
+    }
     if (left <= 0) ritmoOnTimeUp(m);
   } else if (m.kind === "preg"){
     const left = Math.max(0, Math.ceil(((m.until||0)-Date.now())/1000));
@@ -3042,6 +3061,7 @@ function memoriaStart(m){
   S.memoInput = [];       // orden en que el jugador toca
   S.memoDone = false;
   S.memoT0 = 0;
+  S.memoShownAt = Date.now();   // para el rescate si el timer de 3s muere
   const seq = m.data.seq;
   // Mostrar la secuencia grande, en orden, por 3 segundos
   $("#memoRound").textContent = "¡Memoriza!";
@@ -3066,6 +3086,7 @@ function memoriaStart(m){
   S.memoHideT = setTimeout(() => memoriaInputPhase(m), 3000);
 }
 function memoriaInputPhase(m){
+  if (S.memoT0 || S.memoDone) return;   // ya está en fase de input (evita doble entrada)
   const seq = m.data.seq;
   S.memoT0 = Date.now();
   $("#memoRound").textContent = "¡Ahora tú!";
@@ -3216,12 +3237,14 @@ function reaccionNextRound(m){
   $("#reacSub").textContent = `Ronda ${S.reacRound+1} de ${m.data.rounds.length}`;
   S.reacReady = false;
   S.reacShownAt = 0;
+  S.reacWaitUntil = Date.now() + r.waitMs;   // para el rescate si el timer muere
   clearTimeout(S.reacGoT);
   // Tras el tiempo de espera, cambia a verde
   S.reacGoT = setTimeout(() => {
     if (S.reacDone) return;
     S.reacReady = true;
     S.reacShownAt = Date.now();
+    S.reacWaitUntil = 0;
     pad.className = "reac-pad go";
     $("#reacBig").textContent = "¡YA! 🟢";
     Sfx.go && Sfx.go();
@@ -3302,18 +3325,28 @@ function ritmoStart(m){
   ritmoPlaySequence(m);
 }
 async function ritmoPlaySequence(m){
+  // Token de ejecución: si arranca una secuencia nueva, la vieja se aborta
+  const run = (S.ritmoRun = (S.ritmoRun || 0) + 1);
   S.ritmoLocked = true;
   S.ritmoInput = [];
-  $("#ritmoMsg").textContent = "Observa… 👀";
   const seq = m.data.seq.slice(0, S.ritmoLevel);
-  await sleep(450);
-  for (const idx of seq){
-    if (S.ritmoDone) return;
-    await ritmoFlash(idx);
-    await sleep(140);
-  }
-  $("#ritmoMsg").textContent = "¡Tu turno! Repite la secuencia";
+  // Red de seguridad: si los timers se congelan (cambio de app, lag), el
+  // bucle de 250ms desbloquea igual pasado el tiempo esperado (bug: jugadores
+  // que quedaban pegados en "Observa…" sin poder tocar)
+  S.ritmoUnlockBy = Date.now() + 450 + seq.length * 480 + 1500;
+  try {
+    const msg = $("#ritmoMsg"); if (msg) msg.textContent = "Observa… 👀";
+    await sleep(450);
+    for (const idx of seq){
+      if (S.ritmoDone || run !== S.ritmoRun) return;
+      await ritmoFlash(idx);
+      await sleep(140);
+    }
+  } catch(e){ console.warn("ritmo seq", e); }
+  if (S.ritmoDone || run !== S.ritmoRun) return;
+  const msg2 = $("#ritmoMsg"); if (msg2) msg2.textContent = "¡Tu turno! Repite la secuencia";
   S.ritmoLocked = false;
+  S.ritmoUnlockBy = 0;
 }
 function ritmoFlash(idx){
   return new Promise(res => {
