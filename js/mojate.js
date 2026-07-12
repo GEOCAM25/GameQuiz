@@ -42,6 +42,8 @@ const Mojate = (() => {
   async function open(exitCb){ S = { onExit: exitCb || null }; try { await ensureBank(); } catch(e){} renderStart(); showScreen(); }
   // Abrir dentro de una sala existente (código y nombre compartidos)
   async function openShared(code, name, isLeader, exitCb){ S = { onExit: exitCb || null }; try { await ensureBank(); } catch(e){} startSession(String(code).toUpperCase(), name || "Jugador", !!isLeader); }
+  // Entrar por enlace compartido (con nombre guardado entra directo).
+  async function join(code, exitCb){ S = { onExit: exitCb || null }; try { await ensureBank(); } catch(e){} const nm=(localStorage.getItem("gq_name")||"").trim(); if(nm){ startSession(String(code).toUpperCase(), nm, false); } else { renderStart(); showScreen(); const ci=$("#mojCode"); if(ci) ci.value=String(code).toUpperCase(); const ni=$("#mojName"); if(ni) ni.focus(); } }
 
   function renderStart(){
     const host = $("#mojateScreen");
@@ -144,8 +146,9 @@ const Mojate = (() => {
     host.innerHTML = `
       <div class="imp-wrap">
         ${top(p, `${p.order.length} jug.`)}
-        <p class="imp-tag">Comparte el código <b>${esc(p.code)}</b> (mínimo 3).</p>
+        <p class="imp-tag">Comparte el código <b>${esc(p.code)}</b> o el enlace (mínimo 3).</p>
         <div class="imp-players">${p.order.map(id=>`<div class="imp-chip">${esc(p.players[id]?.name||"?")}${id===p.leader?" 👑":""}</div>`).join("")}</div>
+        <button class="btn btn-blue" id="mojShare">🔗 Compartir sala</button>
         ${amLeader ? `
           <label class="lbl" style="color:#fff">Modo</label>
           <div class="seg" id="mojSeg">
@@ -167,6 +170,7 @@ const Mojate = (() => {
           ${p.order.length<3?'<p class="imp-hint">Faltan jugadores</p>':''}` : `<p class="imp-hint">Esperando al anfitrión… 👑 (${p.mode==="atrevido"?"🔥 Atrevido":"😇 Familiar"} · ${p.total} preguntas · ${p.anon?"🙈 votos anónimos":"👁️ votos a la vista"})</p>`}
       </div>`;
     bindLeave();
+    const sh=$("#mojShare"); if(sh) sh.onclick=()=>window.shareGameRoom(p.code, "mojate", "¿Quién será?");
     if(amLeader){
       $$("#mojSeg button").forEach(b=>b.onclick=()=>send0({t:"setMode",mode:b.dataset.m}));
       $$("#mojRounds button").forEach(b=>b.onclick=()=>send0({t:"setRounds",n:+b.dataset.n}));
@@ -246,5 +250,5 @@ const Mojate = (() => {
   function backHome(){ document.querySelectorAll(".screen").forEach(s=>s.classList.remove("active")); const h=$("#scr-home"); if(h) h.classList.add("active"); }
   function destroy(){ try{clearTimeout(S.full&&S.full.timer);}catch(e){} try{ if(S.ch) sbClient().removeChannel(S.ch); }catch(e){} S={onExit:S.onExit}; }
 
-  return { open, openShared, _logic: Logic };
+  return { open, openShared, join, _logic: Logic };
 })();
