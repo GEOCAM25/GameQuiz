@@ -1,0 +1,20 @@
+{
+  "_info": "Configuración del canal de TV (Roku). El canal lee este archivo al abrir, así el menú se actualiza solo cuando agregas juegos aquí, sin recompilar. 'kind': trivia = trivia nativa en la TV; companion = se juega en el teléfono (muestra QR); cruci/minis = juegos individuales nativos en la TV. Colores en formato Roku 0xRRGGBBAA.",
+  "title": "GAME QUIZ",
+  "subtitle": "Trivia y juegos en tu TV · el teléfono es el control",
+  "webAppUrl": "https://geocam25.github.io/GameQuiz/",
+  "menus": {
+    "multi": [
+      { "title": "Súper Trivia",        "emoji": "🎲", "color": "0xE8455EFF", "kind": "trivia",    "cat": "disney" },
+      { "title": "Karaoke",             "emoji": "🎤", "color": "0x17A99BFF", "kind": "companion", "j": "" },
+      { "title": "Incógnito",           "emoji": "🕵️", "color": "0x8C52FFFF", "kind": "companion", "j": "impostor" },
+      { "title": "Dibuja y Adivina",    "emoji": "🎨", "color": "0x1E9BFFFF", "kind": "companion", "j": "draw" },
+      { "title": "¿Quién será?",        "emoji": "🫵", "color": "0xE83D86FF", "kind": "companion", "j": "mojate" }
+    ],
+    "solo": [
+      { "title": "Trivia - Quiz",       "emoji": "🧠", "color": "0x1E9BFFFF", "kind": "companion", "j": "" },
+      { "title": "Cruci-Quiz",          "emoji": "🧩", "color": "0x8C52FFFF", "kind": "cruci" },
+      { "title": "Mini-juegos",         "emoji": "🎯", "color": "0x16B364FF", "kind": "minis" }
+    ]
+  }
+}

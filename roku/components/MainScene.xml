@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- ======================================================================
+     Escena principal del canal GAME QUIZ para Roku.
+     Menú de dos niveles: (1) Multijugador / Un jugador, (2) lista de juegos.
+     Diseño alineado con la app web (morado profundo + dorado + tarjetas de
+     color). El teléfono es el control; la TV muestra sala, preguntas y
+     marcador. El menú se arma en vivo desde data/tv.json.
+     ====================================================================== -->
+<component name="MainScene" extends="Scene">
+  <interface>
+    <field id="launchArgs" type="assocarray" />
+  </interface>
+
+  <script type="text/brightscript" uri="pkg:/source/config.brs" />
+  <script type="text/brightscript" uri="pkg:/components/MainScene.brs" />
+  <script type="text/brightscript" uri="pkg:/components/SoloGames.brs" />
+
+  <children>
+    <!-- Fondo morado profundo (como la web) -->
+    <Rectangle id="bg" width="1920" height="1080" color="0x160B32FF" />
+    <Rectangle id="bgBand" width="1920" height="360" color="0x241A4EFF" opacity="0.6" />
+    <Poster id="bgGradient" width="1920" height="1080" opacity="0.5" />
+
+    <!-- ============ HOME · elegir modo (Multijugador / Un jugador) ============ -->
+    <Group id="homeView" visible="true">
+      <Label id="homeLogo" text="GAME QUIZ" translation="[0,110]" width="1920" horizAlign="center" color="0xFFD25EFF">
+        <Font role="font" uri="font:BoldSystemFontFile" size="104" />
+      </Label>
+      <Label id="homeSub" text="" translation="[0,250]" width="1920" horizAlign="center" color="0xFFFFFFCC">
+        <Font role="font" uri="font:SystemFontFile" size="36" />
+      </Label>
+      <LayoutGroup id="modeMenu" translation="[640,420]" itemSpacings="[34]">
+        <Rectangle id="modeMulti" width="640" height="170" color="0xE8455EFF">
+          <Label text="🎮   Multijugador" translation="[44,36]" color="0xFFFFFFFF">
+            <Font role="font" uri="font:BoldSystemFontFile" size="52" />
+          </Label>
+          <Label text="Todos juegan juntos · trivia y juegos de grupo" translation="[46,116]" color="0xFFFFFFCC">
+            <Font role="font" uri="font:SystemFontFile" size="30" />
+          </Label>
+        </Rectangle>
+        <Rectangle id="modeSolo" width="640" height="170" color="0x16B364FF">
+          <Label text="🎯   Un jugador" translation="[44,36]" color="0xFFFFFFFF">
+            <Font role="font" uri="font:BoldSystemFontFile" size="52" />
+          </Label>
+          <Label text="Juega tú solo · crucigrama y mini-juegos" translation="[46,116]" color="0xFFFFFFCC">
+            <Font role="font" uri="font:SystemFontFile" size="30" />
+          </Label>
+        </Rectangle>
+      </LayoutGroup>
+      <Label id="homeHint" text="Usa ▲▼ y OK en el control del Roku" translation="[0,900]" width="1920" horizAlign="center" color="0xFFFFFF99">
+        <Font role="font" uri="font:SystemFontFile" size="30" />
+      </Label>
+    </Group>
+
+    <!-- ============ MENÚ de juegos (lista dinámica) ============ -->
+    <Group id="menuView" visible="false">
+      <Label id="menuBack" text="‹ Volver   ·   atrás para salir" translation="[80,64]" color="0xFFFFFF99">
+        <Font role="font" uri="font:SystemFontFile" size="30" />
+      </Label>
+      <Label id="menuTitle" text="" translation="[0,120]" width="1920" horizAlign="center" color="0xFFD25EFF">
+        <Font role="font" uri="font:BoldSystemFontFile" size="72" />
+      </Label>
+      <LayoutGroup id="menuList" translation="[660,300]" itemSpacings="[22]" />
+      <Label id="menuHint" text="▲▼ para elegir · OK para abrir" translation="[0,980]" width="1920" horizAlign="center" color="0xFFFFFF99">
+        <Font role="font" uri="font:SystemFontFile" size="28" />
+      </Label>
+    </Group>
+
+    <!-- ============ COMPAÑERO (se juega en el teléfono → QR) ============ -->
+    <Group id="companionView" visible="false">
+      <Label id="compTitle" text="" translation="[0,110]" width="1920" horizAlign="center" color="0xFFD25EFF">
+        <Font role="font" uri="font:BoldSystemFontFile" size="72" />
+      </Label>
+      <Rectangle id="compQrBg" translation="[690,280]" width="540" height="540" color="0xFFFFFFFF" />
+      <Poster id="compQR" translation="[720,310]" width="480" height="480" loadDisplayMode="scaleToFit" />
+      <Label id="compSub" text="Escanea con tu teléfono para jugar" translation="[0,850]" width="1920" horizAlign="center" color="0xFFFFFFFF">
+        <Font role="font" uri="font:BoldSystemFontFile" size="42" />
+      </Label>
+      <Label id="compHint" text="‹ atrás para volver" translation="[0,930]" width="1920" horizAlign="center" color="0xFFFFFF99">
+        <Font role="font" uri="font:SystemFontFile" size="28" />
+      </Label>
+    </Group>
+
+    <!-- ============ LOBBY TV (QR + código) ============ -->
+    <Group id="lobbyView" visible="false">
+      <Label id="lobbyTitle" text="Escanea para jugar" translation="[200,120]" color="0xFFFFFFFF">
+        <Font role="font" uri="font:BoldSystemFontFile" size="64" />
+      </Label>
+      <Rectangle id="qrBg" translation="[184,224]" width="452" height="452" color="0xFFFFFFFF" />
+      <Poster id="qrPoster" translation="[200,240]" width="420" height="420" loadDisplayMode="scaleToFit" />
+      <Label id="lobbyOr" text="o entra en la app con el código" translation="[200,700]" color="0xFFFFFFCC">
+        <Font role="font" uri="font:SystemFontFile" size="34" />
+      </Label>
+      <Label id="lobbyCode" text="····" translation="[200,748]" color="0xFFD25EFF">
+        <Font role="font" uri="font:BoldSystemFontFile" size="120" />
+      </Label>
+      <Label id="lobbyPlayersTitle" text="Jugadores" translation="[820,240]" color="0xFFFFFFFF">
+        <Font role="font" uri="font:BoldSystemFontFile" size="48" />
+      </Label>
+      <LayoutGroup id="lobbyPlayers" translation="[820,320]" itemSpacings="[16]" />
+      <Label id="lobbyStartHint" text="El anfitrión inicia desde su teléfono 🎮" translation="[820,900]" color="0xFFFFFF99">
+        <Font role="font" uri="font:SystemFontFile" size="30" />
+      </Label>
+    </Group>
+
+    <!-- ============ PREGUNTA ============ -->
+    <Group id="questionView" visible="false">
+      <Rectangle id="qTimerBg" translation="[160,80]" width="1600" height="40" color="0x00000066" />
+      <Rectangle id="qTimerFill" translation="[160,80]" width="1600" height="40" color="0x16B364FF" />
+      <Label id="qIdx" translation="[160,150]" text="" color="0xFFFFFFCC">
+        <Font role="font" uri="font:SystemFontFile" size="34" />
+      </Label>
+      <Label id="qEmoji" translation="[900,210]" text="" width="120" horizAlign="center">
+        <Font role="font" uri="font:BoldSystemFontFile" size="110" />
+      </Label>
+      <Label id="qText" translation="[260,360]" width="1400" height="160" text="" horizAlign="center" wrap="true" color="0xFFFFFFFF">
+        <Font role="font" uri="font:BoldSystemFontFile" size="60" />
+      </Label>
+      <LayoutGroup id="qAnswers" translation="[260,560]" layoutDirection="vert" itemSpacings="[20]">
+        <Rectangle id="ans0" width="1400" height="96" color="0xFF4A6EFF">
+          <Label id="ans0t" translation="[40,26]" text="" color="0xFFFFFFFF"><Font role="font" uri="font:BoldSystemFontFile" size="44" /></Label>
+        </Rectangle>
+        <Rectangle id="ans1" width="1400" height="96" color="0x1E9BFFFF">
+          <Label id="ans1t" translation="[40,26]" text="" color="0xFFFFFFFF"><Font role="font" uri="font:BoldSystemFontFile" size="44" /></Label>
+        </Rectangle>
+        <Rectangle id="ans2" width="1400" height="96" color="0xFFB821FF">
+          <Label id="ans2t" translation="[40,26]" text="" color="0x241A33FF"><Font role="font" uri="font:BoldSystemFontFile" size="44" /></Label>
+        </Rectangle>
+        <Rectangle id="ans3" width="1400" height="96" color="0x16B364FF">
+          <Label id="ans3t" translation="[40,26]" text="" color="0xFFFFFFFF"><Font role="font" uri="font:BoldSystemFontFile" size="44" /></Label>
+        </Rectangle>
+      </LayoutGroup>
+    </Group>
+
+    <!-- ============ MINI-JUEGO (aviso) ============ -->
+    <Group id="miniView" visible="false">
+      <Label id="miniEmoji" text="📱" translation="[880,300]" width="160" horizAlign="center">
+        <Font role="font" uri="font:BoldSystemFontFile" size="160" />
+      </Label>
+      <Label id="miniTitle" text="¡Mini-juego sorpresa!" translation="[460,520]" width="1000" horizAlign="center" color="0xFFFFFFFF">
+        <Font role="font" uri="font:BoldSystemFontFile" size="70" />
+      </Label>
+      <Label id="miniSub" text="Atento a tu teléfono 👀" translation="[460,620]" width="1000" horizAlign="center" color="0xFFFFFFCC">
+        <Font role="font" uri="font:SystemFontFile" size="40" />
+      </Label>
+    </Group>
+
+    <!-- ============ MARCADOR / PODIO ============ -->
+    <Group id="scoresView" visible="false">
+      <Label id="scoresTitle" text="Marcador" translation="[200,80]" width="1520" horizAlign="center" color="0xFFFFFFFF">
+        <Font role="font" uri="font:BoldSystemFontFile" size="70" />
+      </Label>
+      <LayoutGroup id="scoresList" translation="[400,220]" itemSpacings="[18]" />
+    </Group>
+
+    <!-- ============ JUEGOS INDIVIDUALES (crucigrama / minis en pantalla) ============ -->
+    <Group id="soloView" visible="false">
+      <Label id="soloTitle" text="" translation="[160,70]" color="0xFFD25EFF">
+        <Font role="font" uri="font:BoldSystemFontFile" size="56" />
+      </Label>
+      <Group id="cruciBoard" translation="[160,180]" />
+      <Label id="cruciClue" text="" translation="[160,760]" width="1600" wrap="true" horizAlign="center" color="0xFFFFFFFF">
+        <Font role="font" uri="font:SystemFontFile" size="40" />
+      </Label>
+      <Group id="cruciKeyboard" translation="[260,870]" />
+      <Label id="soloHint" text="Escribe con el control o con tu teléfono. ← salir" translation="[160,1010]" color="0xFFFFFF99">
+        <Font role="font" uri="font:SystemFontFile" size="28" />
+      </Label>
+    </Group>
+
+    <!-- ============ PAUSA ============ -->
+    <Group id="pauseView" visible="false">
+      <Rectangle width="1920" height="1080" color="0x000000CC" />
+      <Label text="⏸" translation="[900,380]" color="0xFFFFFFFF">
+        <Font role="font" uri="font:BoldSystemFontFile" size="140" />
+      </Label>
+      <Label text="Juego en pausa" translation="[610,560]" width="700" horizAlign="center" color="0xFFFFFFFF">
+        <Font role="font" uri="font:BoldSystemFontFile" size="64" />
+      </Label>
+      <Label text="El anfitrión pausó — presiona OK para continuar" translation="[510,660]" width="900" horizAlign="center" color="0xFFFFFFCC">
+        <Font role="font" uri="font:SystemFontFile" size="34" />
+      </Label>
+    </Group>
+
+    <!-- Tareas de red -->
+    <ConfigTask id="cfgNet" />
+    <SupabaseTask id="net" />
+    <BankTask id="bankNet" />
+  </children>
+</component>
