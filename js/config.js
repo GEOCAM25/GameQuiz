@@ -140,5 +140,10 @@ const GIPHY_KEY = "dc6zaTOxFJmzC";
 //   3) "Credenciales" → "Crear credenciales" → "Clave de API" → cópiala
 //   4) Pégala aquí abajo entre las comillas.
 // Si lo dejas vacío, el karaoke igual funciona: se agregan canciones PEGANDO
-// el link de YouTube (solo no aparece la caja de búsqueda).
-const YOUTUBE_API_KEY = "AIzaSyD25gCng_KwHivEIUqTE884dCIoE3cApK8";
+// el link de YouTube (solo no aparece la búsqueda automática).
+// ⚠️ SEGURIDAD: cualquier clave que pongas aquí queda VISIBLE en la web (es
+// código de navegador). Antes de usarla, restríngela en Google Cloud:
+//   · Restricción de API  → solo "YouTube Data API v3"
+//   · Restricción de app  → Sitios web (HTTP referrer) → https://geocam25.github.io/*
+// Así la clave solo sirve desde tu juego y nadie más puede gastarla.
+const YOUTUBE_API_KEY = "";
