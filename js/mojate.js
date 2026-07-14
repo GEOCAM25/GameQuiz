@@ -71,7 +71,7 @@ const Mojate = (() => {
     const client = sbClient(); if (!client){ toast("Necesita conexión (Supabase)"); return; }
     const myId = rid();
     S = { ...S, code, myId, name, isLeader, ch:null, pub:null,
-          full: isLeader ? { code, leader:myId, phase:"lobby", mode:"familiar", total:15, anon:false, players:{}, order:[], round:0, used:[], question:null, votes:{}, result:null, timer:null } : null };
+          full: isLeader ? { code, leader:myId, phase:"lobby", mode:"familiar", total:15, anon:true, players:{}, order:[], round:0, used:[], question:null, votes:{}, result:null, timer:null } : null };
     S.ch = client.channel("moj-"+code, { config:{ broadcast:{ self:false }, presence:{ key:myId } } });
     S.ch.on("broadcast", { event:"pub" }, ({payload}) => { S.pub = payload; render(); })
         .on("broadcast", { event:"cmd" }, ({payload}) => { if (S.isLeader) hostDispatch(payload); })
@@ -163,8 +163,8 @@ const Mojate = (() => {
           </div>
           <label class="lbl" style="color:#fff">Votos</label>
           <div class="seg" id="mojAnon">
-            <button data-v="0" class="${!p.anon?"on":""}">👁️ Se sabe quién votó</button>
             <button data-v="1" class="${p.anon?"on":""}">🙈 Anónimos</button>
+            <button data-v="0" class="${!p.anon?"on":""}">👁️ Se sabe quién votó</button>
           </div>
           <button class="btn big btn-green" id="mojStart" ${p.order.length<3?"disabled":""}>▶ Empezar</button>
           ${p.order.length<3?'<p class="imp-hint">Faltan jugadores</p>':''}` : `<p class="imp-hint">Esperando al anfitrión… 👑 (${p.mode==="atrevido"?"🔥 Atrevido":"😇 Familiar"} · ${p.total} preguntas · ${p.anon?"🙈 votos anónimos":"👁️ votos a la vista"})</p>`}
