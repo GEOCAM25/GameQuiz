@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- ======================================================================
+     Tarea de red: habla con Supabase por REST (PostgREST).
+     Roku exige que las peticiones HTTP se hagan en un hilo aparte (Task).
+     La escena le pide una "acción" (op) con sus parámetros y recibe la
+     respuesta en el campo "result".
+     ====================================================================== -->
+<component name="SupabaseTask" extends="Task">
+  <interface>
+    <field id="op" type="string" />          <!-- createRoom | getRoom | getPlayers | updateRoom -->
+    <field id="params" type="assocarray" />   <!-- parámetros de la operación -->
+    <field id="result" type="assocarray" />   <!-- respuesta -->
+    <field id="done" type="boolean" alwaysNotify="true" />
+  </interface>
+  <script type="text/brightscript" uri="pkg:/source/config.brs" />
+  <script type="text/brightscript"><![CDATA[
+    sub init()
+      m.top.functionName = "run"
+    end sub
+
+    function headers(cfg as object) as object
+      return {
+        "apikey": cfg.supabaseKey,
+        "Authorization": "Bearer " + cfg.supabaseKey,
+        "Content-Type": "application/json",
+        "Prefer": "return=representation"
+      }
+    end function
+
+    ' Petición HTTP genérica. Devuelve { ok, code, json }
+    function httpRequest(method as string, url as string, body as string, hdrs as object) as object
+      port = CreateObject("roMessagePort")
+      xfer = CreateObject("roUrlTransfer")
+      xfer.setMessagePort(port)
+      xfer.setCertificatesFile("common:/certs/ca-bundle.crt")
+      xfer.initClientCertificates()
+      xfer.setUrl(url)
+      for each k in hdrs
+        xfer.addHeader(k, hdrs[k])
+      end for
+      xfer.retainBodyOnError(true)
+
+      started = false
+      if method = "GET" then
+        started = xfer.asyncGetToString()
+      else if method = "POST" then
+        xfer.setRequest("POST")
+        started = xfer.asyncPostFromString(body)
+      else if method = "PATCH" then
+        xfer.setRequest("PATCH")
+        started = xfer.asyncPostFromString(body)
+      end if
+
+      result = { ok: false, code: 0, json: invalid, raw: "" }
+      if not started then return result
+
+      ev = wait(15000, port)  ' timeout 15s
+      if type(ev) = "roUrlEvent" then
+        result.code = ev.getResponseCode()
+        result.raw = ev.getString()
+        result.ok = (result.code >= 200 and result.code < 300)
+        if result.raw <> invalid and Len(result.raw) > 0 then
+          parsed = ParseJson(result.raw)
+          if parsed <> invalid then result.json = parsed
+        end if
+      end if
+      return result
+    end function
+
+    sub run()
+      cfg = GQConfig()
+      op = m.top.op
+      p = m.top.params
+      if p = invalid then p = {}
+      hdrs = headers(cfg)
+      base = cfg.supabaseUrl + "/rest/v1/"
+      out = { op: op, ok: false }
+
+      if op = "createRoom" then
+        url = base + "rooms"
+        body = FormatJson({ code: p.code, status: "lobby", settings: p.settings })
+        r = httpRequest("POST", url, body, hdrs)
+        out.ok = r.ok
+        if r.ok and r.json <> invalid and r.json.Count() > 0 then out.room = r.json[0]
+
+      else if op = "getRoom" then
+        url = base + "rooms?id=eq." + p.id + "&select=*"
+        r = httpRequest("GET", url, "", hdrs)
+        out.ok = r.ok
+        if r.ok and r.json <> invalid and r.json.Count() > 0 then out.room = r.json[0]
+
+      else if op = "getPlayers" then
+        url = base + "players?room_id=eq." + p.roomId + "&select=*&order=score.desc"
+        r = httpRequest("GET", url, "", hdrs)
+        out.ok = r.ok
+        if r.ok then out.players = r.json
+
+      else if op = "updateRoom" then
+        url = base + "rooms?id=eq." + p.id
+        body = FormatJson(p.patch)
+        r = httpRequest("PATCH", url, body, hdrs)
+        out.ok = r.ok
+        if r.ok and r.json <> invalid and r.json.Count() > 0 then out.room = r.json[0]
+      end if
+
+      m.top.result = out
+      m.top.done = true
+    end sub
+  ]]></script>
+</component>

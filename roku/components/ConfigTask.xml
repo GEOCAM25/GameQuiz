@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- ======================================================================
+     Descarga data/tv.json de la app web: título, subtítulo, URL y el menú
+     de juegos (Multijugador / Un jugador). Al leerse en vivo, el canal se
+     actualiza solo cuando agregas juegos en la web, sin reinstalar nada.
+     ====================================================================== -->
+<component name="ConfigTask" extends="Task">
+  <interface>
+    <field id="result" type="assocarray" />
+    <field id="done" type="boolean" alwaysNotify="true" />
+  </interface>
+  <script type="text/brightscript" uri="pkg:/source/config.brs" />
+  <script type="text/brightscript"><![CDATA[
+    sub init()
+      m.top.functionName = "run"
+    end sub
+
+    sub run()
+      cfg = GQConfig()
+      url = cfg.webAppUrl
+      if Right(url, 1) <> "/" then url = url + "/"
+      url = url + "data/tv.json"
+
+      port = CreateObject("roMessagePort")
+      xfer = CreateObject("roUrlTransfer")
+      xfer.setMessagePort(port)
+      xfer.setCertificatesFile("common:/certs/ca-bundle.crt")
+      xfer.initClientCertificates()
+      xfer.setUrl(url)
+
+      out = { ok: false }
+      if xfer.asyncGetToString() then
+        ev = wait(12000, port)
+        if type(ev) = "roUrlEvent" and ev.getResponseCode() = 200 then
+          parsed = ParseJson(ev.getString())
+          if parsed <> invalid and parsed.menus <> invalid then
+            out.ok = true
+            out.data = parsed
+          end if
+        end if
+      end if
+      m.top.result = out
+      m.top.done = true
+    end sub
+  ]]></script>
+</component>
