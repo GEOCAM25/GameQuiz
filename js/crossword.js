@@ -48,13 +48,19 @@ const Cruci = (() => {
     return { tema: lv.tema || "Nivel", secreta: secreta.slice(0, palabras.length), palabras };
   }
 
-  // ---------- tablero (filas apiladas, alineadas a la izquierda) ----------
+  // ---------- tablero estilo CodyCross ----------
+  // Cada pista es una palabra HORIZONTAL. Se DESPLAZAN para que la letra
+  // secreta de cada una caiga en la MISMA columna: así la palabra secreta
+  // forma una línea VERTICAL que cruza todas las horizontales (como el
+  // crucigrama de CodyCross), no letras sueltas y dispersas.
   function buildBoard(lv){
+    const secretCol = Math.max(...lv.palabras.map(it => it.hi));   // columna común del secreto
     const rows = lv.palabras.map(it => ({
-      w: it.w, clue: it.p, hi: it.hi,
+      w: it.w, clue: it.p, hi: it.hi, offset: secretCol - it.hi,
       filled: Array(it.w.length).fill(""), given: Array(it.w.length).fill(false), solved: false,
     }));
-    return { secreta: lv.secreta, rows, width: Math.max(...rows.map(r => r.w.length)), height: rows.length };
+    const width = Math.max(...rows.map(r => r.offset + r.w.length));
+    return { secreta: lv.secreta, secretCol, rows, width, height: rows.length };
   }
 
   // ============================================================
@@ -114,11 +120,17 @@ const Cruci = (() => {
       </div>
       <div class="cruci-secret" id="cruciSecret"></div>
       <div class="cruci-gridwrap"><div class="cruci-xgrid" id="cruciGrid"></div></div>
-      <div class="cruci-clue" id="cruciClue"></div>
+      <div class="cruci-nav">
+        <button class="cruci-navbtn" id="cruciUp" aria-label="Palabra anterior">▲</button>
+        <div class="cruci-clue" id="cruciClue"></div>
+        <button class="cruci-navbtn" id="cruciDown" aria-label="Palabra siguiente">▼</button>
+      </div>
       <div class="cruci-actions"><button class="cruci-reveal" id="cruciReveal"></button></div>
       <div class="cruci-keyboard" id="cruciKb"></div>`;
     host.querySelector("#cruciBackSel").onclick = () => renderLevelSelect();
     host.querySelector("#cruciReveal").onclick = revealOne;
+    host.querySelector("#cruciUp").onclick = () => moveRow(-1);
+    host.querySelector("#cruciDown").onclick = () => moveRow(1);
     drawSecret(); drawGrid(); drawKeyboard(); updateReveal();
     selectRow(firstUnsolved(), true);
     showScreen();
@@ -132,19 +144,21 @@ const Cruci = (() => {
     const wrap = g.parentElement.getBoundingClientRect();
     const availW = (wrap.width || window.innerWidth) - 8;
     const availH = (wrap.height || window.innerHeight * 0.45) - 8;
-    const cs = Math.max(26, Math.min(54, Math.floor(availW / board.width) - 4, Math.floor(availH / board.height) - 4));
+    // Cuadros grandes (como CodyCross): entre 34 y 66 px según el espacio.
+    const cs = Math.max(34, Math.min(66, Math.floor(availW / board.width) - 3, Math.floor(availH / board.height) - 3));
     g.style.setProperty("--cs", cs + "px");
     g.innerHTML = "";
     board.rows.forEach((r, ri) => {
       for (let c = 0; c < board.width; c++){
-        if (c >= r.w.length){ const b = document.createElement("div"); b.className = "xc-blank"; g.appendChild(b); continue; }
+        const li = c - r.offset;   // índice de la letra dentro de la palabra
+        if (li < 0 || li >= r.w.length){ const b = document.createElement("div"); b.className = "xc-blank"; g.appendChild(b); continue; }
         const cell = document.createElement("div");
         cell.className = "xc";
-        if (c === r.hi) cell.classList.add("secret");
+        if (c === board.secretCol) cell.classList.add("secret");   // columna secreta VERTICAL
         if (r.solved) cell.classList.add("solved");
-        else if (r.given[c]) cell.classList.add("given");
+        else if (r.given[li]) cell.classList.add("given");
         if (ri === activeRow) cell.classList.add("active");
-        cell.textContent = r.filled[c] || "";
+        cell.textContent = r.filled[li] || "";
         cell.onclick = () => selectRow(ri);
         g.appendChild(cell);
       }
@@ -157,6 +171,19 @@ const Cruci = (() => {
     const r = board.rows[ri];
     $("#cruciClue").innerHTML = `<span class="cc-num">${ri+1}.</span> ${r.clue} <span class="cc-len">(${r.w.length})</span>`;
     drawGrid();
+  }
+
+  // Moverse SOLO de arriba hacia abajo entre las palabras (salta las ya
+  // resueltas; si todas están resueltas, se queda donde está).
+  function moveRow(dir){
+    if (!board) return;
+    let ri = activeRow;
+    for (let k = 0; k < board.rows.length; k++){
+      ri = (ri + dir + board.rows.length) % board.rows.length;
+      if (!board.rows[ri].solved) break;
+    }
+    try { Sfx.click(); } catch(e){}
+    selectRow(ri, true);
   }
 
   function drawSecret(){
@@ -220,9 +247,10 @@ const Cruci = (() => {
     }
   }
   function rowCellEls(ri){
-    // devuelve los elementos .xc/.xc-blank de la fila ri (incluye blanks)
+    // devuelve solo las celdas con letra (.xc) de la fila ri; cada fila ocupa
+    // exactamente board.width celdas (blancos incluidos) por el desplazamiento.
     const all = $$("#cruciGrid > div");
-    return all.slice(ri * board.width, ri * board.width + board.rows[ri].w.length);
+    return all.slice(ri * board.width, ri * board.width + board.width).filter(el => el.classList.contains("xc"));
   }
   function solveRow(ri){
     const r = board.rows[ri]; if (r.solved) return;

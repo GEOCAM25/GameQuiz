@@ -63,7 +63,7 @@ const Sfx = (() => {
 // ============================================================
 const Music = (() => {
   const el = new Audio();
-  el.loop = true;
+  el.loop = false;   // NO repetir la misma canción: al terminar, salta a otra al azar
   el.preload = "auto";
 
   const LS_TRACK = "gq_music_track";
@@ -72,14 +72,16 @@ const Music = (() => {
 
   let trackIdx = 0;
   let userVol = parseFloat(localStorage.getItem(LS_VOL));
-  if (isNaN(userVol)) userVol = 0.08;         // 8% por defecto: música de fondo bien suave
-  // Migración única: baja a 8% a quien ya tenía un volumen más alto guardado
-  if (localStorage.getItem("gq_vol_v2") !== "1"){
-    userVol = Math.min(userVol, 0.08);
+  if (isNaN(userVol)) userVol = 0.10;         // 10% por defecto: música de fondo suave
+  // Migración: fija el volumen base en 10% (antes quedaba muy fuerte para algunos)
+  if (localStorage.getItem("gq_vol_v3") !== "1"){
+    userVol = 0.10;
     localStorage.setItem(LS_VOL, String(userVol));
-    localStorage.setItem("gq_vol_v2", "1");
+    localStorage.setItem("gq_vol_v3", "1");
   }
-  let muted = localStorage.getItem(LS_MUTED) === "1";
+  // La música arranca APAGADA: solo suena si el jugador toca el ícono de música.
+  // (por defecto muted=true salvo que la haya encendido explícitamente antes)
+  let muted = localStorage.getItem(LS_MUTED) !== "0";
   let started = false;
   let userPaused = false;                      // true si el jugador pausó a propósito (no reintentar solo)
   let inGame = false;                          // true = baja a 10% (concentración)
@@ -113,11 +115,15 @@ const Music = (() => {
   el.addEventListener("error", () => { hasError = true; onUpdateUI(); });
   el.addEventListener("canplay", () => { hasError = false; onUpdateUI(); });
 
-  const savedTrack = localStorage.getItem(LS_TRACK);
-  if (savedTrack){
-    const i = MUSIC_TRACKS.findIndex(t => t.id === savedTrack);
-    if (i >= 0) trackIdx = i;
-  }
+  // Empezamos en una canción AL AZAR (no siempre la primera de la lista).
+  if (MUSIC_TRACKS.length) trackIdx = Math.floor(Math.random() * MUSIC_TRACKS.length);
+
+  // Al terminar una canción, saltar a otra AL AZAR sin repetir (si no está
+  // sincronizada por el anfitrión, que en ese caso maneja él el cambio).
+  el.addEventListener("ended", () => {
+    if (syncState && syncState.on) return;
+    loadTrack(randomIdx());
+  });
 
   function effectiveVolume(){ return muted ? 0 : (inGame ? 0.06 : userVol); }
   function targetVolume(){ const v = effectiveVolume(); return duckCount > 0 ? v * DUCK_FACTOR : v; }
@@ -140,7 +146,7 @@ const Music = (() => {
     const t = MUSIC_TRACKS[trackIdx];
     el.src = t.file;
     localStorage.setItem(LS_TRACK, t.id);
-    if (started){
+    if (started && !muted){
       const go = () => { try{ el.currentTime = playFrom || 0; }catch(e){} fadeInPlay(); };
       if (el.readyState >= 1) go(); else el.addEventListener("loadedmetadata", go, { once:true });
     } else {
@@ -162,7 +168,7 @@ const Music = (() => {
     if (started || !MUSIC_TRACKS.length) return;
     started = true;
     if (syncState && syncState.on) applySyncState(syncState);
-    else { loadTrack(trackIdx); fadeInPlay(); }
+    else { loadTrack(randomIdx()); }   // canción al azar; solo suena si NO está muteada (icono encendido)
   }
 
   // Red de seguridad: en iOS/Android el primer play() puede ser bloqueado si
@@ -203,8 +209,12 @@ const Music = (() => {
   function toggleMute(){
     muted = !muted;
     localStorage.setItem(LS_MUTED, muted ? "1":"0");
-    if (!muted && started){ userPaused = false; if (el.paused) fadeInPlay(); else rampVolumeTo(targetVolume(), 300); }
-    else applyVolume();
+    if (!muted){
+      userPaused = false;
+      if (!started){ enterGame(); }               // encender el ícono arranca la música (si nunca empezó)
+      else if (el.paused){ loadTrack(randomIdx()); } // al encender, una canción al azar
+      else rampVolumeTo(targetVolume(), 300);
+    } else applyVolume();
   }
 
   // Se llama con cada cambio de estado de la sala (lobby/countdown/question/...).
@@ -404,21 +414,14 @@ const StartFx = (() => {
     if (!a){ a = new Audio(GAME_START_SOUND); a.preload = "auto"; }
     return a;
   }
+  // Solo preparamos el audio para que suene AL INSTANTE cuando de verdad
+  // empiece una partida. Ya NO suena solo al abrir la app (eso confundía:
+  // parecía "otro sonido" al iniciar). El inicio de partida lo dispara
+  // StartFx.play() desde el juego cuando corresponde.
   document.addEventListener("pointerdown", () => {
     if (typeof GAME_START_SOUND === "undefined" || !GAME_START_SOUND) return;
     try { primeAudio(get()); } catch(e){}
-    playOnceToday();
   }, { once:true });
-  // Suena una vez cada día, la primera vez que la persona abre la app
-  // (además de sonar en cada inicio de partida, como ya hacía).
-  function playOnceToday(){
-    try {
-      const today = new Date().toISOString().slice(0, 10); // AAAA-MM-DD
-      if (localStorage.getItem("gq_start_sound_day") === today) return;
-      localStorage.setItem("gq_start_sound_day", today);
-      setTimeout(play, 400); // pequeño respiro tras el desbloqueo mudo de iOS
-    } catch(e){}
-  }
   function play(){
     if (!Sfx.isEnabled()) return;
     if (typeof GAME_START_SOUND === "undefined" || !GAME_START_SOUND) return;
