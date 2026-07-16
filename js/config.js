@@ -36,6 +36,9 @@ const CATEGORIES = [
   { id:"dragonball", name:"Dragón Ball",        emoji:"🐉", group:"Fandoms" },
   { id:"starwars",   name:"Star Wars",          emoji:"🌌", group:"Fandoms" },
   { id:"lotr",       name:"El Señor de los Anillos", emoji:"💍", group:"Fandoms" },
+  { id:"batman",     name:"Batman",             emoji:"🦇", group:"Fandoms" },
+  { id:"spiderman",  name:"Spider-Man",         emoji:"🕸️", group:"Fandoms" },
+  { id:"shrek",      name:"Shrek",              emoji:"👹", group:"Fandoms" },
 ];
 
 // Personajes (máx 15 jugadores, uno por personaje)
