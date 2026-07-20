@@ -9,7 +9,8 @@
       { "title": "Karaoke",             "emoji": "🎤", "color": "0x17A99BFF", "kind": "companion", "j": "" },
       { "title": "Incógnito",           "emoji": "🕵️", "color": "0x8C52FFFF", "kind": "companion", "j": "impostor" },
       { "title": "Dibuja y Adivina",    "emoji": "🎨", "color": "0x1E9BFFFF", "kind": "companion", "j": "draw" },
-      { "title": "¿Quién será?",        "emoji": "🫵", "color": "0xE83D86FF", "kind": "companion", "j": "mojate" }
+      { "title": "¿Quién será?",        "emoji": "🫵", "color": "0xE83D86FF", "kind": "companion", "j": "mojate" },
+      { "title": "Mundo Quiz (3D)",     "emoji": "⛏️", "color": "0xFFB821FF", "kind": "companion", "j": "" }
     ],
     "solo": [
       { "title": "Trivia - Quiz",       "emoji": "🧠", "color": "0x1E9BFFFF", "kind": "companion", "j": "" },

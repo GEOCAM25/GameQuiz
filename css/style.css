@@ -1339,6 +1339,33 @@ body.tv-mode{ overflow:hidden; }
 .moj-final-board{display:flex;flex-direction:column;gap:5px}
 .moj-loser{background:linear-gradient(180deg,#E8455e,#a5203a)!important;outline:2px solid #ffd75e}
 
+/* ===== Mundo Quiz ⛏️ (sandbox voxel 3D) ===== */
+#scr-mundo{padding:0}
+#mundoScreen{position:fixed;inset:0;background:#0b1030;overflow:hidden;touch-action:none}
+#mundoScreen canvas{display:block;width:100%;height:100%}
+.mun-hud{position:absolute;inset:0;pointer-events:none;z-index:5}
+.mun-hud button{pointer-events:auto}
+.mun-top{position:absolute;top:calc(8px + env(safe-area-inset-top));left:10px;right:10px;display:flex;justify-content:space-between;align-items:center}
+.mun-btn{border:none;border-radius:12px;padding:8px 14px;font-weight:800;color:#fff;cursor:pointer;
+  background:rgba(0,0,0,.45);backdrop-filter:blur(4px)}
+.mun-info{background:rgba(0,0,0,.45);color:#fff;font-weight:800;border-radius:12px;padding:8px 12px}
+.mun-cross{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;font-size:22px;
+  font-weight:800;text-shadow:0 1px 3px rgba(0,0,0,.8);opacity:.9}
+.mun-hotbar{position:absolute;top:calc(52px + env(safe-area-inset-top));left:50%;transform:translateX(-50%);
+  display:flex;gap:6px;background:rgba(0,0,0,.35);padding:6px;border-radius:12px}
+.mun-slot{width:34px;height:34px;border:2px solid rgba(255,255,255,.35);border-radius:8px;cursor:pointer}
+.mun-slot.on{border-color:#ffd75e;transform:scale(1.12);box-shadow:0 0 8px rgba(255,215,94,.7)}
+.mun-stick{position:absolute;left:22px;bottom:calc(26px + env(safe-area-inset-bottom));width:110px;height:110px;
+  border-radius:50%;background:rgba(255,255,255,.12);border:2px solid rgba(255,255,255,.25);pointer-events:auto}
+.mun-knob{position:absolute;top:50%;left:50%;width:48px;height:48px;margin:-24px 0 0 -24px;border-radius:50%;
+  background:rgba(255,255,255,.55)}
+.mun-acts{position:absolute;right:16px;bottom:calc(22px + env(safe-area-inset-bottom));display:grid;
+  grid-template-columns:repeat(2,58px);gap:10px}
+.mun-act{width:58px;height:58px;border:none;border-radius:50%;font-size:24px;cursor:pointer;
+  background:rgba(0,0,0,.45);color:#fff}
+.mun-act:active{background:rgba(255,215,94,.55)}
+.mun-help{position:absolute;bottom:14px;left:0;right:0;text-align:center;color:#fff;opacity:.75;font-size:13px;font-weight:700}
+
 /* ===== Cruci-Quiz v3 (CodyCross denso): todo más grande ===== */
 .cruci-xgrid{gap:4px}
 .xc{font-size:calc(var(--cs,40px)*.5);border-radius:8px}
