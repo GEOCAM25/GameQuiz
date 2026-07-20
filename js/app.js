@@ -210,6 +210,15 @@ async function resync(){
 $("#btnGoCreate").onclick = () => { Music.enterGame(); Sfx.click(); S.mode = "create"; openProfile(); };
 $("#btnGoJoin").onclick = () => { Music.enterGame(); Sfx.click(); S.mode = "join"; openProfile(); };
 $("#btnSolo") && ($("#btnSolo").onclick = () => { Music.enterGame(); Sfx.click(); show("solo-menu"); });
+// Inicio de dos niveles: el home solo ofrece Multijugador / Un jugador
+$("#btnModeMulti") && ($("#btnModeMulti").onclick = () => { Music.enterGame(); Sfx.click(); show("multi-menu"); });
+$("#btnModeSolo") && ($("#btnModeSolo").onclick = () => { Music.enterGame(); Sfx.click(); show("solo-menu"); });
+$("#multiBackHome") && ($("#multiBackHome").onclick = () => { Sfx.click(); show("home"); });
+$("#btnMundo") && ($("#btnMundo").onclick = () => {
+  Sfx.click();
+  if (typeof Mundo === "undefined") return toast("⛏️ Mundo Quiz llega pronto");
+  Mundo.open(() => show("multi-menu"));
+});
 $("#soloBackHome") && ($("#soloBackHome").onclick = () => { Sfx.click(); show("home"); });
 $("#soloCruci") && ($("#soloCruci").onclick = () => {
   Sfx.click();
@@ -221,7 +230,7 @@ $("#soloQuizTime") && ($("#soloQuizTime").onclick = () => { Sfx.click(); startSo
 $("#btnKaraoke") && ($("#btnKaraoke").onclick = () => {
   Sfx.click();
   if (typeof Karaoke === "undefined") return toast("No se pudo cargar el karaoke");
-  Karaoke.open(() => show("home"));
+  Karaoke.open(() => show("multi-menu"));
 });
 $("#btnKaraokeLobby") && ($("#btnKaraokeLobby").onclick = () => {
   Sfx.click();
@@ -231,17 +240,17 @@ $("#btnKaraokeLobby") && ($("#btnKaraokeLobby").onclick = () => {
 $("#btnImpostor") && ($("#btnImpostor").onclick = () => {
   Sfx.click();
   if (typeof Impostor === "undefined") return toast("No se pudo cargar el juego");
-  Impostor.open(() => show("home"));
+  Impostor.open(() => show("multi-menu"));
 });
 $("#btnDraw") && ($("#btnDraw").onclick = () => {
   Sfx.click();
   if (typeof Draw === "undefined") return toast("🎨 Dibuja y Adivina llega pronto");
-  Draw.open(() => show("home"));
+  Draw.open(() => show("multi-menu"));
 });
 $("#btnMojate") && ($("#btnMojate").onclick = () => {
   Sfx.click();
   if (typeof Mojate === "undefined") return toast("🫵 ¿Quién será? llega pronto");
-  Mojate.open(() => show("home"));
+  Mojate.open(() => show("multi-menu"));
 });
 
 // ---------- Lanzar otros juegos DENTRO de la sala (mismo código/jugadores) ----------
