@@ -1,0 +1,321 @@
+{
+  "id": "tronos",
+  "groups": [
+    {
+      "stems": [
+        "¿Quién interpreta a {x} en las series de HBO?",
+        "¿Qué casa o procedencia identifica a {x}?",
+        "¿Qué hecho corresponde a {x} en la adaptación televisiva?"
+      ],
+      "rows": [
+        [
+          "Ned Stark",
+          "Sean Bean",
+          "Stark",
+          "Es ejecutado tras ser acusado de traición en Desembarco del Rey"
+        ],
+        [
+          "Catelyn Stark",
+          "Michelle Fairley",
+          "Tully por nacimiento",
+          "Muere en la Boda Roja"
+        ],
+        [
+          "Robb Stark",
+          "Richard Madden",
+          "Stark",
+          "Es proclamado Rey en el Norte"
+        ],
+        [
+          "Sansa Stark",
+          "Sophie Turner",
+          "Stark",
+          "Termina coronada Reina en el Norte"
+        ],
+        [
+          "Arya Stark",
+          "Maisie Williams",
+          "Stark",
+          "Entrena con los Hombres sin Rostro"
+        ],
+        [
+          "Bran Stark",
+          "Isaac Hempstead Wright",
+          "Stark",
+          "Se convierte en el Cuervo de Tres Ojos"
+        ],
+        [
+          "Jon Snow",
+          "Kit Harington",
+          "Criado por los Stark",
+          "Es hijo de Lyanna Stark y Rhaegar Targaryen"
+        ],
+        [
+          "Daenerys Targaryen",
+          "Emilia Clarke",
+          "Targaryen",
+          "Es madre de tres dragones nacidos de huevos petrificados"
+        ],
+        [
+          "Viserys Targaryen de Juego de Tronos",
+          "Harry Lloyd",
+          "Targaryen",
+          "Es hermano mayor de Daenerys"
+        ],
+        [
+          "Tyrion Lannister",
+          "Peter Dinklage",
+          "Lannister",
+          "Sirve como Mano de Daenerys"
+        ],
+        [
+          "Cersei Lannister",
+          "Lena Headey",
+          "Lannister",
+          "Es madre de Joffrey, Myrcella y Tommen"
+        ],
+        [
+          "Jaime Lannister",
+          "Nikolaj Coster-Waldau",
+          "Lannister",
+          "Pierde la mano derecha"
+        ],
+        [
+          "Tywin Lannister",
+          "Charles Dance",
+          "Lannister",
+          "Es padre de Cersei, Jaime y Tyrion"
+        ],
+        [
+          "Robert Baratheon",
+          "Mark Addy",
+          "Baratheon",
+          "Fue rey antes de la guerra entre sus sucesores"
+        ],
+        [
+          "Stannis Baratheon",
+          "Stephen Dillane",
+          "Baratheon",
+          "Reclama el trono apoyándose en su derecho sucesorio"
+        ],
+        [
+          "Renly Baratheon",
+          "Gethin Anthony",
+          "Baratheon",
+          "Es el hermano menor de Robert y Stannis"
+        ],
+        [
+          "Joffrey Baratheon",
+          "Jack Gleeson",
+          "Criado como Baratheon",
+          "Muere envenenado durante su boda"
+        ],
+        [
+          "Margaery Tyrell",
+          "Natalie Dormer",
+          "Tyrell",
+          "Se casa con Renly, Joffrey y Tommen"
+        ],
+        [
+          "Olenna Tyrell",
+          "Diana Rigg",
+          "Redwyne por nacimiento",
+          "Es conocida como la Reina de las Espinas"
+        ],
+        [
+          "Loras Tyrell",
+          "Finn Jones",
+          "Tyrell",
+          "Es conocido como el Caballero de las Flores"
+        ],
+        [
+          "Theon Greyjoy",
+          "Alfie Allen",
+          "Greyjoy",
+          "Fue pupilo de Ned Stark"
+        ],
+        [
+          "Yara Greyjoy",
+          "Gemma Whelan",
+          "Greyjoy",
+          "Es hermana de Theon"
+        ],
+        [
+          "Euron Greyjoy",
+          "Pilou Asbæk",
+          "Greyjoy",
+          "Es tío de Theon y Yara"
+        ],
+        [
+          "Brienne de Tarth",
+          "Gwendoline Christie",
+          "Tarth",
+          "Se compromete a proteger a las hijas de Catelyn"
+        ],
+        [
+          "Davos Seaworth",
+          "Liam Cunningham",
+          "Seaworth",
+          "Recibe el apodo de Caballero de la Cebolla"
+        ],
+        [
+          "Samwell Tarly",
+          "John Bradley",
+          "Tarly",
+          "Se forma en la Ciudadela"
+        ],
+        [
+          "Jorah Mormont",
+          "Iain Glen",
+          "Mormont",
+          "Sirve a Daenerys y padece psoriagris"
+        ],
+        [
+          "Sandor Clegane",
+          "Rory McCann",
+          "Clegane",
+          "Es conocido como el Perro"
+        ],
+        [
+          "Petyr Baelish",
+          "Aidan Gillen",
+          "Baelish",
+          "Es conocido como Meñique"
+        ],
+        [
+          "Oberyn Martell",
+          "Pedro Pascal",
+          "Martell",
+          "Combate contra la Montaña en un juicio por combate"
+        ],
+        [
+          "Rhaenyra Targaryen adulta",
+          "Emma D’Arcy",
+          "Targaryen",
+          "Monta a Syrax"
+        ],
+        [
+          "Daemon Targaryen",
+          "Matt Smith",
+          "Targaryen",
+          "Monta a Caraxes"
+        ],
+        [
+          "Viserys I Targaryen",
+          "Paddy Considine",
+          "Targaryen",
+          "Nombra heredera a Rhaenyra"
+        ],
+        [
+          "Alicent Hightower adulta",
+          "Olivia Cooke",
+          "Hightower",
+          "Es hija de Otto"
+        ],
+        [
+          "Otto Hightower",
+          "Rhys Ifans",
+          "Hightower",
+          "Sirve como Mano del Rey Viserys I"
+        ],
+        [
+          "Corlys Velaryon",
+          "Steve Toussaint",
+          "Velaryon",
+          "Es conocido como la Serpiente Marina"
+        ],
+        [
+          "Rhaenys Targaryen",
+          "Eve Best",
+          "Targaryen",
+          "Monta a Meleys"
+        ],
+        [
+          "Aegon II Targaryen adulto",
+          "Tom Glynn-Carney",
+          "Targaryen",
+          "Monta a Sunfyre"
+        ],
+        [
+          "Aemond Targaryen adulto",
+          "Ewan Mitchell",
+          "Targaryen",
+          "Monta a Vhagar"
+        ],
+        [
+          "Helaena Targaryen adulta",
+          "Phia Saban",
+          "Targaryen",
+          "Monta a Dreamfyre"
+        ],
+        [
+          "Criston Cole",
+          "Fabien Frankel",
+          "Cole",
+          "Se incorpora a la Guardia Real"
+        ],
+        [
+          "Mysaria",
+          "Sonoya Mizuno",
+          "Origen extranjero en Poniente",
+          "Es conocida como el Gusano Blanco"
+        ],
+        [
+          "Larys Strong",
+          "Matthew Needham",
+          "Strong",
+          "Es hermano de Harwin"
+        ],
+        [
+          "Harwin Strong",
+          "Ryan Corr",
+          "Strong",
+          "Es conocido como Rompehuesos"
+        ],
+        [
+          "Lyonel Strong",
+          "Gavin Spokes",
+          "Strong",
+          "Es padre de Harwin y Larys"
+        ],
+        [
+          "Jacaerys Velaryon adolescente",
+          "Harry Collett",
+          "Velaryon por nombre oficial",
+          "Monta a Vermax"
+        ],
+        [
+          "Lucerys Velaryon adolescente",
+          "Elliot Grihault",
+          "Velaryon por nombre oficial",
+          "Monta a Arrax"
+        ],
+        [
+          "Baela Targaryen adolescente",
+          "Bethany Antonia",
+          "Targaryen",
+          "Monta a Moondancer"
+        ],
+        [
+          "Aemma Arryn",
+          "Sian Brooke",
+          "Arryn",
+          "Es madre de Rhaenyra"
+        ],
+        [
+          "Laenor Velaryon adulto",
+          "John Macmillan",
+          "Velaryon",
+          "Monta a Seasmoke"
+        ]
+      ],
+      "context": "Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales."
+    }
+  ],
+  "sources": [
+    "https://www.hbo.com/game-of-thrones/cast-and-crew",
+    "https://www.hbo.com/house-of-the-dragon/cast-and-crew",
+    "https://en.wikipedia.org/wiki/House_of_the_Dragon"
+  ],
+  "questions": []
+}

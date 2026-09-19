@@ -1,0 +1,421 @@
+{
+  "id": "prehistoria",
+  "groups": [
+    {
+      "stems": [
+        "¿En qué período vivió {x}?",
+        "¿Qué territorio es una referencia paleontológica reconocida para {x}?",
+        "¿Qué rasgo o grupo describe a {x}?"
+      ],
+      "rows": [
+        [
+          "Tyrannosaurus rex",
+          "Cretácico tardío",
+          "Estados Unidos",
+          "Terópodo de gran cráneo y dos dedos en cada mano"
+        ],
+        [
+          "Triceratops",
+          "Cretácico tardío",
+          "Estados Unidos",
+          "Ceratopsio con tres cuernos faciales y gola"
+        ],
+        [
+          "Stegosaurus",
+          "Jurásico tardío",
+          "Estados Unidos",
+          "Dinosaurio con placas dorsales y púas caudales"
+        ],
+        [
+          "Brachiosaurus",
+          "Jurásico tardío",
+          "Estados Unidos",
+          "Saurópodo de patas delanteras muy largas"
+        ],
+        [
+          "Diplodocus",
+          "Jurásico tardío",
+          "Estados Unidos",
+          "Saurópodo con larga cola semejante a un látigo"
+        ],
+        [
+          "Apatosaurus",
+          "Jurásico tardío",
+          "Estados Unidos",
+          "Saurópodo robusto de cuello largo"
+        ],
+        [
+          "Allosaurus",
+          "Jurásico tardío",
+          "Estados Unidos",
+          "Gran terópodo jurásico con tres dedos manuales"
+        ],
+        [
+          "Velociraptor",
+          "Cretácico tardío",
+          "Mongolia",
+          "Dromeosáurido pequeño con garra curva en el segundo dedo del pie"
+        ],
+        [
+          "Deinonychus",
+          "Cretácico temprano",
+          "Estados Unidos",
+          "Dromeosáurido cuya anatomía ayudó a replantear la actividad de los dinosaurios"
+        ],
+        [
+          "Ankylosaurus",
+          "Cretácico tardío",
+          "Estados Unidos",
+          "Dinosaurio acorazado con maza caudal"
+        ],
+        [
+          "Parasaurolophus",
+          "Cretácico tardío",
+          "Canadá",
+          "Hadrosaurio con larga cresta tubular"
+        ],
+        [
+          "Corythosaurus",
+          "Cretácico tardío",
+          "Canadá",
+          "Hadrosaurio con cresta semejante a un casco"
+        ],
+        [
+          "Edmontosaurus",
+          "Cretácico tardío",
+          "Canadá",
+          "Hadrosaurio sin gran cresta ósea hueca"
+        ],
+        [
+          "Iguanodon",
+          "Cretácico temprano",
+          "Bélgica",
+          "Ornitópodo con espolón en el pulgar"
+        ],
+        [
+          "Spinosaurus",
+          "Cretácico tardío",
+          "Egipto",
+          "Terópodo con altas espinas dorsales y hocico alargado"
+        ],
+        [
+          "Baryonyx",
+          "Cretácico temprano",
+          "Reino Unido",
+          "Espinosáurido con gran garra en la mano"
+        ],
+        [
+          "Carnotaurus",
+          "Cretácico tardío",
+          "Argentina",
+          "Abelisáurido con dos cuernos sobre los ojos"
+        ],
+        [
+          "Giganotosaurus",
+          "Cretácico tardío",
+          "Argentina",
+          "Enorme terópodo descubierto en Argentina"
+        ],
+        [
+          "Argentinosaurus",
+          "Cretácico tardío",
+          "Argentina",
+          "Titanosaurio gigante conocido por restos incompletos"
+        ],
+        [
+          "Dreadnoughtus",
+          "Cretácico tardío",
+          "Argentina",
+          "Titanosaurio descrito a partir de fósiles patagónicos"
+        ],
+        [
+          "Patagotitan",
+          "Cretácico temprano",
+          "Argentina",
+          "Titanosaurio gigante de la Patagonia argentina"
+        ],
+        [
+          "Saltasaurus",
+          "Cretácico tardío",
+          "Argentina",
+          "Titanosaurio con osteodermos en la piel"
+        ],
+        [
+          "Amargasaurus",
+          "Cretácico temprano",
+          "Argentina",
+          "Saurópodo con altas espinas bifurcadas en el cuello"
+        ],
+        [
+          "Dicraeosaurus",
+          "Jurásico tardío",
+          "Tanzania",
+          "Saurópodo de cuello relativamente corto"
+        ],
+        [
+          "Camarasaurus",
+          "Jurásico tardío",
+          "Estados Unidos",
+          "Saurópodo de cráneo alto y dientes robustos"
+        ],
+        [
+          "Coelophysis",
+          "Triásico tardío",
+          "Estados Unidos",
+          "Terópodo temprano de cuerpo esbelto"
+        ],
+        [
+          "Herrerasaurus",
+          "Triásico tardío",
+          "Argentina",
+          "Dinosaurio depredador temprano de Argentina"
+        ],
+        [
+          "Plateosaurus",
+          "Triásico tardío",
+          "Alemania",
+          "Sauropodomorfo temprano de cuello alargado"
+        ],
+        [
+          "Dilophosaurus",
+          "Jurásico temprano",
+          "Estados Unidos",
+          "Terópodo con dos crestas craneales"
+        ],
+        [
+          "Cryolophosaurus",
+          "Jurásico temprano",
+          "Antártida",
+          "Terópodo antártico con cresta transversal"
+        ],
+        [
+          "Ceratosaurus",
+          "Jurásico tardío",
+          "Estados Unidos",
+          "Terópodo con un cuerno nasal prominente"
+        ],
+        [
+          "Compsognathus",
+          "Jurásico tardío",
+          "Alemania",
+          "Pequeño terópodo europeo de cuerpo ligero"
+        ],
+        [
+          "Microraptor",
+          "Cretácico temprano",
+          "China",
+          "Dromeosáurido con largas plumas en brazos y patas"
+        ],
+        [
+          "Sinosauropteryx",
+          "Cretácico temprano",
+          "China",
+          "Terópodo con filamentos corporales y cola anillada"
+        ],
+        [
+          "Psittacosaurus",
+          "Cretácico temprano",
+          "China",
+          "Ceratopsio temprano con pico parecido al de un loro"
+        ],
+        [
+          "Protoceratops",
+          "Cretácico tardío",
+          "Mongolia",
+          "Ceratopsio pequeño con gola y sin grandes cuernos frontales"
+        ],
+        [
+          "Pachycephalosaurus",
+          "Cretácico tardío",
+          "Estados Unidos",
+          "Dinosaurio de bóveda craneal muy engrosada"
+        ],
+        [
+          "Therizinosaurus",
+          "Cretácico tardío",
+          "Mongolia",
+          "Terópodo con enormes garras manuales"
+        ],
+        [
+          "Chilesaurus",
+          "Jurásico tardío",
+          "Chile",
+          "Dinosaurio chileno con combinación inusual de rasgos anatómicos"
+        ],
+        [
+          "Stegouros",
+          "Cretácico tardío",
+          "Chile",
+          "Dinosaurio acorazado chileno con arma caudal aplanada"
+        ],
+        [
+          "Dimetrodon",
+          "Pérmico temprano",
+          "Estados Unidos",
+          "Sinápsido con vela dorsal; no era dinosaurio"
+        ],
+        [
+          "Lystrosaurus",
+          "Pérmico tardío y Triásico temprano",
+          "Sudáfrica",
+          "Sinápsido dicinodonte con pico y colmillos"
+        ],
+        [
+          "Pteranodon",
+          "Cretácico tardío",
+          "Estados Unidos",
+          "Pterosaurio volador sin dientes; no era dinosaurio"
+        ],
+        [
+          "Rhamphorhynchus",
+          "Jurásico tardío",
+          "Alemania",
+          "Pterosaurio de larga cola"
+        ],
+        [
+          "Mosasaurus",
+          "Cretácico tardío",
+          "Países Bajos",
+          "Reptil marino escamoso; no era dinosaurio"
+        ],
+        [
+          "Ichthyosaurus",
+          "Jurásico temprano",
+          "Reino Unido",
+          "Reptil marino de cuerpo parecido al de un delfín"
+        ],
+        [
+          "Smilodon fatalis",
+          "Pleistoceno",
+          "Estados Unidos",
+          "Felino con enormes caninos superiores"
+        ],
+        [
+          "mamut lanudo",
+          "Pleistoceno y Holoceno temprano",
+          "Siberia (Rusia)",
+          "Proboscídeo adaptado al frío con pelaje espeso"
+        ],
+        [
+          "Megatherium americanum",
+          "Pleistoceno",
+          "Argentina",
+          "Perezoso terrestre gigante sudamericano"
+        ],
+        [
+          "Dunkleosteus",
+          "Devónico tardío",
+          "Estados Unidos",
+          "Pez placodermo con placas óseas en la cabeza"
+        ]
+      ],
+      "context": "Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "excludeOptionsByRow": {
+        "Tyrannosaurus rex": {
+          "1": [
+            "Canadá"
+          ]
+        },
+        "Triceratops": {
+          "1": [
+            "Canadá"
+          ]
+        },
+        "Ankylosaurus": {
+          "1": [
+            "Canadá"
+          ]
+        },
+        "Parasaurolophus": {
+          "1": [
+            "Estados Unidos"
+          ]
+        },
+        "Corythosaurus": {
+          "1": [
+            "Estados Unidos"
+          ]
+        },
+        "Edmontosaurus": {
+          "1": [
+            "Estados Unidos"
+          ]
+        },
+        "Iguanodon": {
+          "1": [
+            "Reino Unido"
+          ]
+        },
+        "Velociraptor": {
+          "1": [
+            "China"
+          ]
+        },
+        "Psittacosaurus": {
+          "1": [
+            "Mongolia",
+            "Rusia",
+            "Siberia (Rusia)"
+          ]
+        },
+        "Protoceratops": {
+          "1": [
+            "China"
+          ]
+        },
+        "Dimetrodon": {
+          "1": [
+            "Alemania"
+          ]
+        },
+        "mamut lanudo": {
+          "1": [
+            "Estados Unidos",
+            "Canadá",
+            "Reino Unido",
+            "Alemania",
+            "China",
+            "Países Bajos"
+          ]
+        },
+        "Lystrosaurus": {
+          "1": [
+            "China",
+            "Antártida",
+            "Rusia",
+            "Siberia (Rusia)"
+          ]
+        },
+        "Pteranodon": {
+          "1": [
+            "Canadá"
+          ]
+        },
+        "Smilodon fatalis": {
+          "1": [
+            "Canadá"
+          ]
+        },
+        "Mosasaurus": {
+          "1": [
+            "Estados Unidos",
+            "Canadá",
+            "Reino Unido"
+          ]
+        },
+        "Ichthyosaurus": {
+          "1": [
+            "Alemania",
+            "Bélgica"
+          ]
+        }
+      }
+    }
+  ],
+  "sources": [
+    "https://www.nhm.ac.uk/discover/dino-directory.html",
+    "https://ucmp.berkeley.edu/diapsids/dinosaur.html",
+    "https://www.uchile.cl/noticias/182035/stegouros-el-dinosaurio-acorazado-que-habito-chile"
+  ],
+  "questions": []
+}

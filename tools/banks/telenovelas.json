@@ -1,0 +1,322 @@
+{
+  "id": "telenovelas",
+  "groups": [
+    {
+      "stems": [
+        "¿En qué país se produjo originalmente {x}?",
+        "¿En qué año se estrenó originalmente {x}?",
+        "¿Qué personaje o intérprete se asocia con {x}?"
+      ],
+      "rows": [
+        [
+          "La madrastra (versión de 1981)",
+          "Chile",
+          "1981",
+          "Marcia Espínola, interpretada por Jael Unger"
+        ],
+        [
+          "Amanda",
+          "Chile",
+          "2016",
+          "Daniela Ramírez como Amanda"
+        ],
+        [
+          "Ángel malo (versión chilena)",
+          "Chile",
+          "1986",
+          "Carolina Arregui como Nice"
+        ],
+        [
+          "Los títeres",
+          "Chile",
+          "1984",
+          "Claudia Di Girolamo como Artemisa"
+        ],
+        [
+          "Señores papis (versión chilena)",
+          "Chile",
+          "2016",
+          "Jorge Zabaleta como Ignacio Moreno"
+        ],
+        [
+          "Somos los Carmona",
+          "Chile",
+          "2013",
+          "Álvaro Rudolphy como José Carmona"
+        ],
+        [
+          "Trampas y caretas",
+          "Chile",
+          "1992",
+          "Francisco Reyes y Bastián Bodenhöfer en su elenco"
+        ],
+        [
+          "Amores de mercado",
+          "Chile",
+          "2001",
+          "Álvaro Rudolphy como Pelluco y Rodolfo"
+        ],
+        [
+          "Romané",
+          "Chile",
+          "2000",
+          "Claudia Di Girolamo como Jovanka"
+        ],
+        [
+          "Pampa Ilusión",
+          "Chile",
+          "2001",
+          "Claudia Di Girolamo como Inés Clark"
+        ],
+        [
+          "Sucupira",
+          "Chile",
+          "1996",
+          "Héctor Noguera como Federico Valdivieso"
+        ],
+        [
+          "La fiera",
+          "Chile",
+          "1999",
+          "Claudia Di Girolamo como Catalina Chamorro"
+        ],
+        [
+          "Iorana",
+          "Chile",
+          "1998",
+          "Francisco Reyes como Fernando y Ariki"
+        ],
+        [
+          "Oro verde",
+          "Chile",
+          "1997",
+          "Claudia Di Girolamo como Natalia Sotomayor"
+        ],
+        [
+          "Estúpido cupido",
+          "Chile",
+          "1995",
+          "Claudia Di Girolamo como sor Angélica"
+        ],
+        [
+          "Aquelarre",
+          "Chile",
+          "1999",
+          "Sigrid Alegría como Emilia"
+        ],
+        [
+          "Machos",
+          "Chile",
+          "2003",
+          "Héctor Noguera como Ángel Mercader"
+        ],
+        [
+          "Brujas",
+          "Chile",
+          "2005",
+          "Carolina Arregui como Beatriz"
+        ],
+        [
+          "Los Pincheira",
+          "Chile",
+          "2004",
+          "Francisco Reyes como Miguel Molina"
+        ],
+        [
+          "El señor de la Querencia (versión de TVN)",
+          "Chile",
+          "2008",
+          "Julio Milostich como José Luis Echeñique"
+        ],
+        [
+          "¿Dónde está Elisa?",
+          "Chile",
+          "2009",
+          "Francisco Melo como Raimundo Domínguez"
+        ],
+        [
+          "Alguien te mira (versión chilena)",
+          "Chile",
+          "2007",
+          "Álvaro Rudolphy como Julián García"
+        ],
+        [
+          "Pituca sin lucas",
+          "Chile",
+          "2014",
+          "Paola Volpato como Tichi Achondo"
+        ],
+        [
+          "Perdona nuestros pecados",
+          "Chile",
+          "2017",
+          "Álvaro Rudolphy como Armando Quiroga"
+        ],
+        [
+          "Verdades ocultas",
+          "Chile",
+          "2017",
+          "Camila Hirane como Rocío Verdugo"
+        ],
+        [
+          "Avenida Brasil",
+          "Brasil",
+          "2012",
+          "Adriana Esteves como Carminha"
+        ],
+        [
+          "El clon",
+          "Brasil",
+          "2001",
+          "Giovanna Antonelli como Jade"
+        ],
+        [
+          "Terra Nostra",
+          "Brasil",
+          "1999",
+          "Ana Paula Arósio como Giuliana"
+        ],
+        [
+          "Xica da Silva",
+          "Brasil",
+          "1996",
+          "Taís Araújo como Xica"
+        ],
+        [
+          "La esclava Isaura (versión de 1976)",
+          "Brasil",
+          "1976",
+          "Lucélia Santos como Isaura"
+        ],
+        [
+          "Pantanal (versión de 1990)",
+          "Brasil",
+          "1990",
+          "Cristiana Oliveira como Juma"
+        ],
+        [
+          "Por amor",
+          "Brasil",
+          "1997",
+          "Regina Duarte como Helena"
+        ],
+        [
+          "Chocolate con pimienta",
+          "Brasil",
+          "2003",
+          "Mariana Ximenes como Ana Francisca"
+        ],
+        [
+          "Yo soy Betty, la fea",
+          "Colombia",
+          "1999",
+          "Ana María Orozco como Beatriz Pinzón"
+        ],
+        [
+          "Pasión de gavilanes (primera temporada)",
+          "Colombia",
+          "2003",
+          "Mario Cimarro como Juan Reyes"
+        ],
+        [
+          "Café, con aroma de mujer (versión de 1994)",
+          "Colombia",
+          "1994",
+          "Margarita Rosa de Francisco como Gaviota"
+        ],
+        [
+          "Pedro el escamoso",
+          "Colombia",
+          "2001",
+          "Miguel Varoni como Pedro Coral"
+        ],
+        [
+          "La usurpadora (versión de 1998)",
+          "México",
+          "1998",
+          "Gabriela Spanic como Paola y Paulina"
+        ],
+        [
+          "María la del barrio",
+          "México",
+          "1995",
+          "Thalía como María Hernández"
+        ],
+        [
+          "Marimar",
+          "México",
+          "1994",
+          "Thalía como Marimar Pérez"
+        ],
+        [
+          "Los ricos también lloran (versión de 1979)",
+          "México",
+          "1979",
+          "Verónica Castro como Mariana Villarreal"
+        ],
+        [
+          "Cuna de lobos (versión de 1986)",
+          "México",
+          "1986",
+          "María Rubio como Catalina Creel"
+        ],
+        [
+          "Rebelde (versión mexicana)",
+          "México",
+          "2004",
+          "Anahí como Mía Colucci"
+        ],
+        [
+          "Muñeca brava",
+          "Argentina",
+          "1998",
+          "Natalia Oreiro como Milagros"
+        ],
+        [
+          "Casi ángeles",
+          "Argentina",
+          "2007",
+          "Emilia Attias como Cielo"
+        ],
+        [
+          "Rosa de lejos",
+          "Argentina",
+          "1980",
+          "Leonor Benedetto como Rosa"
+        ],
+        [
+          "Kassandra",
+          "Venezuela",
+          "1992",
+          "Coraima Torres como Kassandra"
+        ],
+        [
+          "Las mil y una noches",
+          "Turquía",
+          "2006",
+          "Bergüzar Korel como Sherezade"
+        ],
+        [
+          "¿Qué culpa tiene Fatmagül?",
+          "Turquía",
+          "2010",
+          "Beren Saat como Fatmagül"
+        ],
+        [
+          "El sultán",
+          "Turquía",
+          "2011",
+          "Halit Ergenç como Solimán"
+        ]
+      ],
+      "context": "Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales."
+    }
+  ],
+  "sources": [
+    "https://www.tvn.cl/teleseries",
+    "https://www.13.cl/programas/teleseries",
+    "https://www.mega.cl/teleseries/",
+    "https://memoriaglobo.globo.com/entretenimento/novelas/"
+  ],
+  "questions": []
+}

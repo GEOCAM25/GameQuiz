@@ -1,0 +1,321 @@
+{
+  "id": "memes",
+  "groups": [
+    {
+      "stems": [
+        "¿Qué elemento reconoce el meme o referencia «{x}»?",
+        "¿De qué entorno proviene «{x}»?",
+        "¿Qué situación suele ilustrar «{x}»?"
+      ],
+      "rows": [
+        [
+          "Chimuelo",
+          "Un pájaro y una despedida interrumpida por un perro",
+          "Video viral chileno",
+          "Un homenaje que sale inesperadamente mal"
+        ],
+        [
+          "El Tarro",
+          "Un salto en bicicleta que termina en caída",
+          "Video viral chileno",
+          "Un intento demasiado confiado que fracasa"
+        ],
+        [
+          "Mario Hugo y sus perros",
+          "Un reportero rodeado de perros",
+          "31 minutos",
+          "Una distracción que se vuelve el centro de la escena"
+        ],
+        [
+          "Fiu",
+          "Un pájaro de siete colores",
+          "Santiago 2023",
+          "Celebrar logros deportivos con ternura"
+        ],
+        [
+          "Tulio Triviño",
+          "Un conductor de noticiero de títeres",
+          "31 minutos",
+          "Una seguridad exagerada frente a la cámara"
+        ],
+        [
+          "Juan Carlos Bodoque",
+          "Un conejo rojo periodista",
+          "31 minutos",
+          "Una reacción irónica o cansada"
+        ],
+        [
+          "Patana Tufillo",
+          "Una reportera joven de títeres",
+          "31 minutos",
+          "Entusiasmo e iniciativa"
+        ],
+        [
+          "Juanín Juan Harry",
+          "Un productor de noticiero de títeres",
+          "31 minutos",
+          "Tener que resolver el caos de los demás"
+        ],
+        [
+          "Calcetín con Rombos Man",
+          "Un superhéroe hecho de un calcetín",
+          "31 minutos",
+          "Defender derechos de la infancia"
+        ],
+        [
+          "Guaripolo",
+          "Un títere autoproclamado favorito",
+          "31 minutos",
+          "Un personaje que exige protagonismo"
+        ],
+        [
+          "Policarpo Avendaño",
+          "Un comentarista del ranking musical",
+          "31 minutos",
+          "Presentar canciones con solemnidad cómica"
+        ],
+        [
+          "Dinosaurio Anacleto",
+          "Un dinosaurio de una canción infantil",
+          "Ranking musical de 31 minutos",
+          "Recordar canciones absurdas y pegajosas"
+        ],
+        [
+          "Profesor Rossa",
+          "Un profesor de peluca rosada",
+          "Televisión chilena",
+          "Contrastar una apariencia educativa con humor inesperado"
+        ],
+        [
+          "Guru Guru",
+          "Un pájaro de traje blanco",
+          "El mundo del Profesor Rossa",
+          "Interrumpir con humor una explicación"
+        ],
+        [
+          "Don Carter",
+          "Un cartero de televisión",
+          "El mundo del Profesor Rossa",
+          "Un remate de humor coloquial"
+        ],
+        [
+          "Señor Manguera",
+          "El dueño autoritario del canal ficticio",
+          "31 minutos",
+          "Un jefe que da órdenes extravagantes"
+        ],
+        [
+          "Popín",
+          "Un payaso paródico",
+          "Humor televisivo chileno",
+          "Una escena de humor exagerado e incómodo"
+        ],
+        [
+          "Contralorito",
+          "Una mascota con forma de ave",
+          "Comunicación institucional chilena",
+          "Explicar trámites o fiscalización con humor"
+        ],
+        [
+          "Condorito y el ¡Plop!",
+          "Una caída hacia atrás ante un remate",
+          "Historieta chilena",
+          "Sorpresa o desconcierto por un chiste"
+        ],
+        [
+          "Pobre cosita fea",
+          "Una reacción de una villana de teleserie",
+          "María la del barrio",
+          "Fingir compasión de manera sarcástica"
+        ],
+        [
+          "Soraya Montenegro mirando con desprecio",
+          "Una villana interpretada por Itatí Cantoral",
+          "Telenovela mexicana",
+          "Reaccionar con dramatismo y superioridad"
+        ],
+        [
+          "Se tenía que decir y se dijo",
+          "Un pollito golpeando una mesa",
+          "Meme de internet en español",
+          "Afirmar una opinión con énfasis"
+        ],
+        [
+          "El baile del Chavo",
+          "Personajes de una vecindad moviéndose rítmicamente",
+          "El Chavo del 8",
+          "Celebrar de forma juguetona"
+        ],
+        [
+          "No contaban con mi astucia",
+          "Un superhéroe de antenitas",
+          "El Chapulín Colorado",
+          "Resolver algo con picardía"
+        ],
+        [
+          "Fue sin querer queriendo",
+          "Un niño de una vecindad",
+          "El Chavo del 8",
+          "Excusar una travesura o accidente"
+        ],
+        [
+          "Doge",
+          "Un perro shiba inu con texto de colores",
+          "Fotografía viral japonesa",
+          "Expresar sorpresa con lenguaje deliberadamente simplificado"
+        ],
+        [
+          "Cheems",
+          "Un shiba inu sentado",
+          "Fotografía viral de Hong Kong",
+          "Mostrar inseguridad o tristeza tierna"
+        ],
+        [
+          "This is fine",
+          "Un perro sentado en una habitación en llamas",
+          "Webcómic Gunshow",
+          "Negar que una situación sea desastrosa"
+        ],
+        [
+          "Rickroll",
+          "Un enlace que lleva a Rick Astley",
+          "Broma musical de internet",
+          "Sorprender con una canción en lugar del contenido esperado"
+        ],
+        [
+          "Distracted Boyfriend",
+          "Un hombre mirando a otra mujer junto a su pareja",
+          "Fotografía de stock",
+          "Elegir una tentación nueva y descuidar lo anterior"
+        ],
+        [
+          "Woman Yelling at a Cat",
+          "Una mujer enfadada junto a un gato en una mesa",
+          "Montaje de televisión y fotografía",
+          "Un malentendido o discusión absurda"
+        ],
+        [
+          "Drake Hotline Bling",
+          "Un rapero rechazando una opción y aprobando otra",
+          "Videoclip musical",
+          "Comparar lo que se rechaza con lo que se prefiere"
+        ],
+        [
+          "Success Kid",
+          "Un niño con el puño cerrado",
+          "Fotografía familiar viral",
+          "Celebrar un pequeño éxito"
+        ],
+        [
+          "Disaster Girl",
+          "Una niña sonriendo frente a un incendio",
+          "Fotografía viral",
+          "Una satisfacción traviesa ante el caos"
+        ],
+        [
+          "Hide the Pain Harold",
+          "Un hombre mayor con sonrisa contenida",
+          "Fotografía de stock",
+          "Ocultar incomodidad detrás de una sonrisa"
+        ],
+        [
+          "Expanding Brain",
+          "Imágenes de cerebros cada vez más iluminados",
+          "Plantilla visual de internet",
+          "Escalar ideas de forma irónica"
+        ],
+        [
+          "Galaxy Brain",
+          "Un cerebro en un entorno cósmico",
+          "Plantilla visual de internet",
+          "Exagerar una supuesta idea brillante"
+        ],
+        [
+          "Two Buttons",
+          "Una persona sudando ante dos botones",
+          "Viñeta de internet",
+          "No poder elegir entre dos opciones incompatibles"
+        ],
+        [
+          "Is This a Pigeon?",
+          "Un personaje señalando una mariposa",
+          "Anime The Brave Fighter of Sun Fighbird",
+          "Confundir de manera evidente una cosa con otra"
+        ],
+        [
+          "Surprised Pikachu",
+          "Pikachu con la boca abierta",
+          "Anime Pokémon",
+          "Sorprenderse por una consecuencia previsible"
+        ],
+        [
+          "Mocking SpongeBob",
+          "Bob Esponja imitando la postura de un ave",
+          "Serie animada Bob Esponja",
+          "Burlarse de una frase repitiéndola con mayúsculas alternadas"
+        ],
+        [
+          "Homer desapareciendo en los arbustos",
+          "Homero retrocediendo hasta ocultarse",
+          "Los Simpsons",
+          "Retirarse de una situación incómoda"
+        ],
+        [
+          "Principal Skinner fuera de onda",
+          "Skinner preguntándose si el problema es él",
+          "Los Simpsons",
+          "Culpar a los demás en vez de reconsiderar una idea"
+        ],
+        [
+          "Viejo grita a una nube",
+          "Abraham Simpson en un recorte de periódico",
+          "Los Simpsons",
+          "Quejarse airadamente de cambios cotidianos"
+        ],
+        [
+          "Spiderman señalándose",
+          "Dos hombres con traje de Spider-Man apuntándose",
+          "Serie animada de Spider-Man de 1967",
+          "Mostrar dos cosas sorprendentemente iguales"
+        ],
+        [
+          "Leonardo DiCaprio brindando",
+          "Un hombre alzando una copa",
+          "El gran Gatsby (película de 2013)",
+          "Felicitar o brindar con elegancia irónica"
+        ],
+        [
+          "Leonardo DiCaprio señalando la televisión",
+          "Un hombre que reconoce algo en pantalla",
+          "Érase una vez en Hollywood",
+          "Reconocer una referencia conocida"
+        ],
+        [
+          "Wednesday bailando",
+          "Una joven bailando con movimientos poco convencionales",
+          "Serie Wednesday de Netflix",
+          "Recrear una coreografía viral"
+        ],
+        [
+          "Coffin Dance",
+          "Porteadores bailando con un ataúd",
+          "Video de un funeral en Ghana",
+          "Anticipar un fracaso o desenlace desafortunado"
+        ],
+        [
+          "Nyan Cat",
+          "Un gato de cuerpo de dulce dejando un arcoíris",
+          "Animación viral de internet",
+          "Representar un bucle alegre y absurdo"
+        ]
+      ],
+      "context": "Las interpretaciones son usos habituales, no significados exclusivos. Selección de referencias chilenas, latinoamericanas y globales conocidas en Chile."
+    }
+  ],
+  "sources": [
+    "https://31minutos.cl/",
+    "https://www.santiago2023.org/",
+    "https://knowyourmeme.com/"
+  ],
+  "questions": []
+}

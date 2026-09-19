@@ -1,0 +1,320 @@
+{
+  "id": "onepiece",
+  "groups": [
+    {
+      "stems": [
+        "En One Piece, ¿qué afiliación identifica a {x}?",
+        "¿Qué habilidad o arma distingue a {x}?",
+        "¿Qué rasgo de la historia corresponde a {x}?"
+      ],
+      "rows": [
+        [
+          "Monkey D. Luffy",
+          "Piratas de Sombrero de Paja",
+          "Cuerpo con propiedades elásticas",
+          "Sueña con ser el Rey de los Piratas"
+        ],
+        [
+          "Roronoa Zoro",
+          "Piratas de Sombrero de Paja",
+          "Estilo de tres espadas",
+          "Busca ser el mejor espadachín del mundo"
+        ],
+        [
+          "Nami",
+          "Piratas de Sombrero de Paja",
+          "Clima-Tact",
+          "Sueña con dibujar un mapa del mundo"
+        ],
+        [
+          "Usopp",
+          "Piratas de Sombrero de Paja",
+          "Tirachinas y puntería",
+          "Es hijo de Yasopp"
+        ],
+        [
+          "Sanji",
+          "Piratas de Sombrero de Paja",
+          "Combate basado en patadas",
+          "Busca el All Blue"
+        ],
+        [
+          "Tony Tony Chopper",
+          "Piratas de Sombrero de Paja",
+          "Hito Hito no Mi",
+          "Es un reno que ejerce de médico"
+        ],
+        [
+          "Nico Robin",
+          "Piratas de Sombrero de Paja",
+          "Hana Hana no Mi",
+          "Puede leer los poneglyphs"
+        ],
+        [
+          "Franky",
+          "Piratas de Sombrero de Paja",
+          "Cuerpo de cíborg",
+          "Construyó el Thousand Sunny"
+        ],
+        [
+          "Brook",
+          "Piratas de Sombrero de Paja",
+          "Yomi Yomi no Mi",
+          "Prometió reencontrarse con Laboon"
+        ],
+        [
+          "Jinbe",
+          "Piratas de Sombrero de Paja",
+          "Karate gyojin",
+          "Es un gyojin tiburón ballena"
+        ],
+        [
+          "Shanks",
+          "Piratas del Pelirrojo",
+          "Haki del conquistador muy poderoso",
+          "Le confió un sombrero de paja a Luffy"
+        ],
+        [
+          "Benn Beckman",
+          "Piratas del Pelirrojo",
+          "Rifle",
+          "Es el primer oficial de Shanks"
+        ],
+        [
+          "Yasopp",
+          "Piratas del Pelirrojo",
+          "Gran puntería como francotirador",
+          "Es el padre de Usopp"
+        ],
+        [
+          "Buggy",
+          "Piratas de Buggy / Cross Guild",
+          "Bara Bara no Mi",
+          "Fue aprendiz en la tripulación de Roger"
+        ],
+        [
+          "Dracule Mihawk",
+          "Cross Guild",
+          "Espada negra Yoru",
+          "Es conocido como Ojos de Halcón"
+        ],
+        [
+          "Crocodile",
+          "Baroque Works / Cross Guild",
+          "Suna Suna no Mi",
+          "Fue el jefe secreto Mr. 0"
+        ],
+        [
+          "Portgas D. Ace",
+          "Piratas de Barbablanca",
+          "Mera Mera no Mi",
+          "Fue criado como hermano de Luffy"
+        ],
+        [
+          "Marco",
+          "Piratas de Barbablanca",
+          "Zoan mitológica del fénix",
+          "Era comandante de la primera división"
+        ],
+        [
+          "Edward Newgate",
+          "Piratas de Barbablanca",
+          "Gura Gura no Mi",
+          "Recibía el apodo de Barbablanca"
+        ],
+        [
+          "Marshall D. Teach",
+          "Piratas de Barbanegra",
+          "Yami Yami no Mi",
+          "Recibe el apodo de Barbanegra"
+        ],
+        [
+          "Trafalgar Law",
+          "Piratas Heart",
+          "Ope Ope no Mi",
+          "Es conocido como Cirujano de la Muerte"
+        ],
+        [
+          "Eustass Kid",
+          "Piratas Kid",
+          "Jiki Jiki no Mi",
+          "Usa poderes magnéticos"
+        ],
+        [
+          "Killer",
+          "Piratas Kid",
+          "Hojas curvas giratorias",
+          "Combate habitualmente con una máscara"
+        ],
+        [
+          "Boa Hancock",
+          "Piratas Kuja",
+          "Mero Mero no Mi",
+          "Gobierna Amazon Lily"
+        ],
+        [
+          "Donquixote Doflamingo",
+          "Piratas Donquixote",
+          "Ito Ito no Mi",
+          "Usaba el alias Joker"
+        ],
+        [
+          "Kaido",
+          "Piratas de las Bestias",
+          "Zoan mitológica de dragón azul",
+          "Su base de operaciones estuvo en Onigashima"
+        ],
+        [
+          "King",
+          "Piratas de las Bestias",
+          "Zoan de pteranodón",
+          "Pertenece al pueblo lunaria"
+        ],
+        [
+          "Queen",
+          "Piratas de las Bestias",
+          "Zoan de braquiosaurio",
+          "Tiene conocimientos científicos y cuerpo modificado"
+        ],
+        [
+          "Jack",
+          "Piratas de las Bestias",
+          "Zoan de mamut",
+          "Es conocido como la Sequía"
+        ],
+        [
+          "Charlotte Linlin",
+          "Piratas de Big Mom",
+          "Soru Soru no Mi",
+          "Dirige la familia Charlotte"
+        ],
+        [
+          "Charlotte Katakuri",
+          "Piratas de Big Mom",
+          "Mochi Mochi no Mi",
+          "Su haki de observación le permite ver brevemente el futuro"
+        ],
+        [
+          "Charlotte Cracker",
+          "Piratas de Big Mom",
+          "Bisu Bisu no Mi",
+          "Crea soldados de galleta"
+        ],
+        [
+          "Charlotte Perospero",
+          "Piratas de Big Mom",
+          "Pero Pero no Mi",
+          "Es el hijo mayor de Big Mom"
+        ],
+        [
+          "Rob Lucci",
+          "CP9 / CP0",
+          "Zoan de leopardo",
+          "Trabajó encubierto en Galley-La"
+        ],
+        [
+          "Kaku",
+          "CP9 / CP0",
+          "Zoan de jirafa",
+          "Se infiltró como carpintero en Water 7"
+        ],
+        [
+          "Kalifa",
+          "CP9",
+          "Awa Awa no Mi",
+          "Fue secretaria de Iceburg"
+        ],
+        [
+          "Smoker",
+          "Marina",
+          "Moku Moku no Mi",
+          "Usa una jitte con punta de kairoseki"
+        ],
+        [
+          "Sakazuki",
+          "Marina",
+          "Magu Magu no Mi",
+          "Su alias es Akainu"
+        ],
+        [
+          "Borsalino",
+          "Marina",
+          "Pika Pika no Mi",
+          "Su alias es Kizaru"
+        ],
+        [
+          "Issho",
+          "Marina",
+          "Zushi Zushi no Mi",
+          "Su alias es Fujitora"
+        ],
+        [
+          "Sengoku",
+          "Marina",
+          "Zoan mitológica de Buda",
+          "Fue almirante de flota antes de Sakazuki"
+        ],
+        [
+          "Garp",
+          "Marina",
+          "Puños reforzados con haki",
+          "Es el abuelo de Luffy"
+        ],
+        [
+          "Koby",
+          "Marina",
+          "Entrenamiento físico y haki",
+          "Comenzó la historia bajo el mando de Alvida"
+        ],
+        [
+          "Sabo",
+          "Ejército Revolucionario",
+          "Mera Mera no Mi",
+          "Es el jefe de Estado Mayor revolucionario"
+        ],
+        [
+          "Emporio Ivankov",
+          "Ejército Revolucionario",
+          "Horu Horu no Mi",
+          "Es una figura principal de Kamabakka"
+        ],
+        [
+          "Bartholomew Kuma",
+          "Ejército Revolucionario",
+          "Nikyu Nikyu no Mi",
+          "Fue convertido en un arma humana"
+        ],
+        [
+          "Belo Betty",
+          "Ejército Revolucionario",
+          "Kobu Kobu no Mi",
+          "Comanda el Ejército del Este"
+        ],
+        [
+          "Enel",
+          "Seguidores de Enel",
+          "Goro Goro no Mi",
+          "Gobernó Skypiea como un supuesto dios"
+        ],
+        [
+          "Gecko Moria",
+          "Piratas de Thriller Bark",
+          "Kage Kage no Mi",
+          "Reunía un ejército de zombis"
+        ],
+        [
+          "Perona",
+          "Piratas de Thriller Bark",
+          "Horo Horo no Mi",
+          "Puede crear fantasmas negativos"
+        ]
+      ],
+      "context": "Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores."
+    }
+  ],
+  "sources": [
+    "https://one-piece.com/character/",
+    "https://www.onepiece-movie.jp/"
+  ],
+  "questions": []
+}

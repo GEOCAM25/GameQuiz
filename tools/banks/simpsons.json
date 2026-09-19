@@ -1,0 +1,320 @@
+{
+  "id": "simpsons",
+  "groups": [
+    {
+      "stems": [
+        "¿Qué ocupación o papel identifica a {x} en Los Simpsons?",
+        "¿Qué vínculo o entorno corresponde a {x}?",
+        "¿Qué rasgo identifica a {x}?"
+      ],
+      "rows": [
+        [
+          "Homero Simpson",
+          "Inspector de seguridad nuclear",
+          "Es esposo de Marge",
+          "Su expresión característica es D’oh"
+        ],
+        [
+          "Marge Simpson",
+          "Madre de la familia Simpson",
+          "Es hermana de Patty y Selma",
+          "Lleva un peinado azul muy alto"
+        ],
+        [
+          "Bart Simpson",
+          "Alumno de cuarto grado",
+          "Es hijo de Homero y Marge",
+          "Suele andar en patineta"
+        ],
+        [
+          "Lisa Simpson",
+          "Alumna y saxofonista",
+          "Es hermana de Bart y Maggie",
+          "Defiende el vegetarianismo"
+        ],
+        [
+          "Maggie Simpson",
+          "Bebé de la familia Simpson",
+          "Es la hija menor de Homero y Marge",
+          "Usa habitualmente un chupete"
+        ],
+        [
+          "Abraham Simpson",
+          "Jubilado",
+          "Es padre de Homero",
+          "Vive en el asilo de Springfield"
+        ],
+        [
+          "Mona Simpson",
+          "Activista fugitiva",
+          "Es madre de Homero",
+          "Su ausencia marcó la infancia de Homero"
+        ],
+        [
+          "Ned Flanders",
+          "Comerciante",
+          "Es vecino de los Simpson",
+          "Abrió una tienda para zurdos"
+        ],
+        [
+          "Maude Flanders",
+          "Esposa de Ned durante las primeras temporadas",
+          "Es madre de Rod y Todd",
+          "Muere tras caer de una tribuna"
+        ],
+        [
+          "Rod Flanders",
+          "Niño de la familia Flanders",
+          "Es hermano de Todd",
+          "Es uno de los hijos de Ned"
+        ],
+        [
+          "Patty Bouvier",
+          "Empleada del departamento de vehículos",
+          "Es hermana gemela de Selma",
+          "Fuma con frecuencia"
+        ],
+        [
+          "Selma Bouvier",
+          "Empleada del departamento de vehículos",
+          "Es madre adoptiva de Ling",
+          "Tiene una iguana llamada Jub-Jub"
+        ],
+        [
+          "Charles Montgomery Burns",
+          "Dueño de la central nuclear",
+          "Es jefe de Smithers",
+          "Suele juntar las yemas de los dedos al decir Excelente"
+        ],
+        [
+          "Waylon Smithers",
+          "Asistente ejecutivo",
+          "Trabaja directamente para Burns",
+          "Colecciona muñecas Stacy Malibu"
+        ],
+        [
+          "Lenny Leonard",
+          "Trabajador de la central nuclear",
+          "Es amigo cercano de Carl",
+          "Suele aparecer con Homero en la taberna"
+        ],
+        [
+          "Carl Carlson",
+          "Trabajador de la central nuclear",
+          "Es amigo cercano de Lenny",
+          "Su familia adoptiva vivió en Islandia"
+        ],
+        [
+          "Moe Szyslak",
+          "Tabernero",
+          "Es dueño de la taberna de Moe",
+          "Recibe bromas telefónicas de Bart"
+        ],
+        [
+          "Barney Gumble",
+          "Cliente habitual de la taberna",
+          "Es amigo de Homero",
+          "Ganó un concurso de cortometrajes en Springfield"
+        ],
+        [
+          "Apu Nahasapeemapetilon",
+          "Comerciante",
+          "Trabaja en el Kwik-E-Mart",
+          "Tiene octillizos con Manjula"
+        ],
+        [
+          "Manjula",
+          "Madre de octillizos",
+          "Es esposa de Apu",
+          "Su matrimonio con Apu fue concertado por sus familias"
+        ],
+        [
+          "Seymour Skinner",
+          "Director de escuela",
+          "Trabaja con Edna Krabappel",
+          "Vive bajo la fuerte influencia de Agnes"
+        ],
+        [
+          "Agnes Skinner",
+          "Madre del director Skinner",
+          "Vive con Seymour",
+          "Es muy dominante con su hijo"
+        ],
+        [
+          "Edna Krabappel",
+          "Profesora de cuarto grado",
+          "Es maestra de Bart en numerosas temporadas",
+          "Tiene una risa sarcástica característica"
+        ],
+        [
+          "Willie",
+          "Encargado de mantenimiento escolar",
+          "Trabaja en la primaria de Springfield",
+          "Es de origen escocés"
+        ],
+        [
+          "Otto Mann",
+          "Conductor de autobús escolar",
+          "Transporta a los alumnos de Springfield",
+          "Es aficionado al rock"
+        ],
+        [
+          "Milhouse Van Houten",
+          "Alumno de primaria",
+          "Es el mejor amigo de Bart",
+          "Usa lentes rojos"
+        ],
+        [
+          "Nelson Muntz",
+          "Alumno de primaria",
+          "Forma parte de los abusones escolares",
+          "Se burla con un ja-ja característico"
+        ],
+        [
+          "Ralph Wiggum",
+          "Alumno de primaria",
+          "Es hijo del jefe Wiggum",
+          "Suele hacer comentarios ilógicos e inocentes"
+        ],
+        [
+          "Martin Prince",
+          "Alumno destacado",
+          "Es compañero de Bart",
+          "Obtiene excelentes resultados académicos"
+        ],
+        [
+          "Jimbo Jones",
+          "Alumno mayor",
+          "Forma parte del grupo de abusones",
+          "Usa un gorro tejido"
+        ],
+        [
+          "Kearney Zzyzwicz",
+          "Alumno y abusón",
+          "Suele acompañar a Jimbo y Dolph",
+          "Tiene la cabeza rapada y un hijo"
+        ],
+        [
+          "Dolph Starbeam",
+          "Alumno y abusón",
+          "Suele acompañar a Jimbo y Kearney",
+          "Lleva cabello que tapa parte de su rostro"
+        ],
+        [
+          "Clancy Wiggum",
+          "Jefe de policía",
+          "Es padre de Ralph",
+          "Dirige la policía de Springfield"
+        ],
+        [
+          "Lou",
+          "Policía",
+          "Trabaja con Wiggum y Eddie",
+          "Suele advertir los errores del jefe"
+        ],
+        [
+          "Joe Quimby",
+          "Alcalde",
+          "Gobierna Springfield",
+          "Su manera de hablar parodia a la familia Kennedy"
+        ],
+        [
+          "Kent Brockman",
+          "Presentador de noticias",
+          "Trabaja en el Canal 6",
+          "Conduce noticieros de Springfield"
+        ],
+        [
+          "Krusty",
+          "Payaso de televisión",
+          "Presenta un programa infantil",
+          "Su nombre es Herschel Krustofsky"
+        ],
+        [
+          "Bob Patiño",
+          "Actor y antiguo ayudante televisivo",
+          "Fue ayudante de Krusty",
+          "Busca vengarse de Bart"
+        ],
+        [
+          "Mel Patiño",
+          "Ayudante televisivo",
+          "Trabaja en el programa de Krusty",
+          "Lleva un hueso en el cabello"
+        ],
+        [
+          "Troy McClure",
+          "Actor y presentador",
+          "Aparece en películas educativas",
+          "Suele presentarse recordando sus trabajos anteriores"
+        ],
+        [
+          "Lionel Hutz",
+          "Abogado",
+          "Ofrece servicios legales en Springfield",
+          "Es un abogado poco competente"
+        ],
+        [
+          "Nick Riviera",
+          "Médico",
+          "Atiende pacientes en Springfield",
+          "Saluda con un entusiasta Hola a todos"
+        ],
+        [
+          "Julius Hibbert",
+          "Médico",
+          "Es médico habitual de la familia Simpson",
+          "Ríe incluso en momentos poco oportunos"
+        ],
+        [
+          "Profesor Frink",
+          "Científico e inventor",
+          "Presenta inventos en Springfield",
+          "Parodia el estereotipo del científico excéntrico"
+        ],
+        [
+          "Jeff Albertson",
+          "Vendedor de cómics",
+          "Atiende la tienda El Calabozo del Androide",
+          "Es conocido como el sujeto de las historietas"
+        ],
+        [
+          "Hombre Abejorro",
+          "Actor de televisión",
+          "Aparece en programación en español",
+          "Viste un disfraz de abejorro"
+        ],
+        [
+          "Disco Stu",
+          "Aficionado a la música disco",
+          "Es una figura recurrente de Springfield",
+          "Habla de sí mismo en tercera persona"
+        ],
+        [
+          "Capitán McCallister",
+          "Capitán y restaurador",
+          "Se asocia con el restaurante The Frying Dutchman",
+          "Tiene barba y pipa"
+        ],
+        [
+          "Luigi Risotto",
+          "Restaurador",
+          "Dirige un restaurante italiano",
+          "Lleva gorro de cocinero"
+        ],
+        [
+          "Tony el Gordo",
+          "Jefe de la mafia local",
+          "Se relaciona con mafiosos de Springfield",
+          "Dirige actividades criminales con modales tranquilos"
+        ]
+      ],
+      "context": "Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas."
+    }
+  ],
+  "sources": [
+    "https://www.fox.com/the-simpsons/",
+    "https://www.disneyplus.com/series/the-simpsons/3ZoBZ52QHb4x"
+  ],
+  "questions": []
+}

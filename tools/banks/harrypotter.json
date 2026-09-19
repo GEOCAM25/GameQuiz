@@ -1,0 +1,320 @@
+{
+  "id": "harrypotter",
+  "groups": [
+    {
+      "stems": [
+        "¿Qué papel o afiliación corresponde a {x} en Harry Potter?",
+        "¿Qué vínculo u objeto se asocia con {x}?",
+        "¿Qué hecho identifica a {x}?"
+      ],
+      "rows": [
+        [
+          "Harry Potter",
+          "Alumno de Gryffindor",
+          "Su lechuza se llama Hedwig",
+          "Sobrevivió de bebé a la maldición de Voldemort"
+        ],
+        [
+          "Hermione Granger",
+          "Alumna de Gryffindor",
+          "Su gato se llama Crookshanks",
+          "Sus padres son dentistas muggles"
+        ],
+        [
+          "Ron Weasley",
+          "Alumno de Gryffindor",
+          "Es hijo de Molly y Arthur",
+          "Es especialmente hábil en ajedrez mágico"
+        ],
+        [
+          "Ginny Weasley",
+          "Alumna de Gryffindor",
+          "Es la hermana menor de Ron",
+          "Fue poseída mediante el diario de Tom Riddle"
+        ],
+        [
+          "Fred Weasley",
+          "Alumno de Gryffindor",
+          "Es gemelo de George",
+          "Muere durante la batalla de Hogwarts"
+        ],
+        [
+          "George Weasley",
+          "Alumno de Gryffindor",
+          "Es gemelo de Fred",
+          "Pierde una oreja antes de la batalla final"
+        ],
+        [
+          "Percy Weasley",
+          "Funcionario del Ministerio",
+          "Es hermano de Bill y Charlie",
+          "Fue prefecto de Gryffindor"
+        ],
+        [
+          "Bill Weasley",
+          "Rompedor de maldiciones",
+          "Se casa con Fleur Delacour",
+          "Trabaja para Gringotts"
+        ],
+        [
+          "Charlie Weasley",
+          "Especialista en dragones",
+          "Es hermano de Bill y Percy",
+          "Trabaja con dragones en Rumania"
+        ],
+        [
+          "Molly Weasley",
+          "Miembro de la Orden del Fénix",
+          "Es madre de siete hijos",
+          "Derrota a Bellatrix Lestrange"
+        ],
+        [
+          "Arthur Weasley",
+          "Funcionario del Ministerio",
+          "Es esposo de Molly",
+          "Siente fascinación por los objetos muggles"
+        ],
+        [
+          "Albus Dumbledore",
+          "Director de Hogwarts",
+          "Su fénix se llama Fawkes",
+          "Fue propietario de la Varita de Saúco"
+        ],
+        [
+          "Minerva McGonagall",
+          "Profesora de Transformaciones",
+          "Dirige la casa Gryffindor",
+          "Puede transformarse en gato"
+        ],
+        [
+          "Severus Snape",
+          "Profesor de Pociones",
+          "Su Patronus tiene forma de cierva",
+          "Fue llamado el Príncipe Mestizo"
+        ],
+        [
+          "Rubeus Hagrid",
+          "Guardabosques de Hogwarts",
+          "Su perro se llama Fang",
+          "Es medio gigante"
+        ],
+        [
+          "Neville Longbottom",
+          "Alumno de Gryffindor",
+          "Su sapo se llama Trevor",
+          "Destruye a Nagini con la espada de Gryffindor"
+        ],
+        [
+          "Luna Lovegood",
+          "Alumna de Ravenclaw",
+          "Es hija de Xenophilius",
+          "Puede ver thestrals"
+        ],
+        [
+          "Draco Malfoy",
+          "Alumno de Slytherin",
+          "Es hijo de Lucius y Narcissa",
+          "Desarma a Dumbledore en la torre de Astronomía"
+        ],
+        [
+          "Lucius Malfoy",
+          "Mortífago",
+          "Es padre de Draco",
+          "Tenía a Dobby como elfo doméstico"
+        ],
+        [
+          "Narcissa Malfoy",
+          "Miembro de la familia Black por nacimiento",
+          "Es madre de Draco",
+          "Miente a Voldemort sobre la muerte de Harry"
+        ],
+        [
+          "Bellatrix Lestrange",
+          "Mortífaga",
+          "Es hermana de Narcissa",
+          "Es una seguidora fanática de Voldemort"
+        ],
+        [
+          "Sirius Black",
+          "Miembro de la Orden del Fénix",
+          "Es padrino de Harry",
+          "Su forma de animago es un perro negro"
+        ],
+        [
+          "Remus Lupin",
+          "Profesor de Defensa contra las Artes Oscuras",
+          "Fue amigo de James Potter",
+          "Es un hombre lobo"
+        ],
+        [
+          "James Potter",
+          "Miembro de la Orden del Fénix",
+          "Es padre de Harry",
+          "Su forma de animago era un ciervo"
+        ],
+        [
+          "Lily Potter",
+          "Miembro de la Orden del Fénix",
+          "Es madre de Harry",
+          "Su sacrificio protegió a su hijo"
+        ],
+        [
+          "Peter Pettigrew",
+          "Mortífago",
+          "Vivió disfrazado de la rata Scabbers",
+          "Traicionó el escondite de los Potter"
+        ],
+        [
+          "Lord Voldemort",
+          "Líder de los mortífagos",
+          "Su nombre original es Tom Riddle",
+          "Creó varios horrocruxes"
+        ],
+        [
+          "Alastor Moody",
+          "Auror",
+          "Tiene un ojo mágico",
+          "Su apodo es Ojoloco"
+        ],
+        [
+          "Nymphadora Tonks",
+          "Aurora",
+          "Es esposa de Remus Lupin",
+          "Es metamorfomaga"
+        ],
+        [
+          "Kingsley Shacklebolt",
+          "Auror",
+          "Participa en la Orden del Fénix",
+          "Trabajó protegiendo al primer ministro muggle"
+        ],
+        [
+          "Cedric Diggory",
+          "Alumno de Hufflepuff",
+          "Representa a Hogwarts en el Torneo de los Tres Magos",
+          "Muere en el cementerio de Little Hangleton"
+        ],
+        [
+          "Cho Chang",
+          "Alumna de Ravenclaw",
+          "Fue novia de Cedric",
+          "Juega como buscadora en quidditch"
+        ],
+        [
+          "Fleur Delacour",
+          "Alumna de Beauxbatons",
+          "Se casa con Bill Weasley",
+          "Representa a Beauxbatons en el Torneo de los Tres Magos"
+        ],
+        [
+          "Viktor Krum",
+          "Alumno de Durmstrang",
+          "Juega para la selección búlgara",
+          "Es buscador de quidditch"
+        ],
+        [
+          "Dolores Umbridge",
+          "Funcionaria del Ministerio",
+          "Utiliza una pluma que deja heridas",
+          "Impone decretos autoritarios en Hogwarts"
+        ],
+        [
+          "Cornelius Fudge",
+          "Ministro de Magia durante varios libros",
+          "Se relaciona con el Ministerio británico",
+          "Se niega inicialmente a aceptar el regreso de Voldemort"
+        ],
+        [
+          "Rufus Scrimgeour",
+          "Ministro de Magia durante la guerra",
+          "Antes dirigía la Oficina de Aurores",
+          "Intenta conseguir el apoyo público de Harry"
+        ],
+        [
+          "Gilderoy Lockhart",
+          "Profesor de Defensa contra las Artes Oscuras",
+          "Es autor de libros sobre supuestas hazañas",
+          "Robaba méritos modificando recuerdos ajenos"
+        ],
+        [
+          "Quirinus Quirrell",
+          "Profesor de Defensa contra las Artes Oscuras",
+          "Usa un turbante",
+          "Oculta a Voldemort detrás de su cabeza"
+        ],
+        [
+          "Horace Slughorn",
+          "Profesor de Pociones",
+          "Organiza el Club de las Eminencias",
+          "Conserva un recuerdo clave sobre Tom Riddle"
+        ],
+        [
+          "Sybill Trelawney",
+          "Profesora de Adivinación",
+          "Enseña en una torre de Hogwarts",
+          "Pronunció la profecía sobre Harry y Voldemort"
+        ],
+        [
+          "Pomona Sprout",
+          "Profesora de Herbología",
+          "Dirige la casa Hufflepuff",
+          "Cultiva mandrágoras para una cura"
+        ],
+        [
+          "Filius Flitwick",
+          "Profesor de Encantamientos",
+          "Dirige la casa Ravenclaw",
+          "Enseña el encantamiento de levitación"
+        ],
+        [
+          "Argus Filch",
+          "Celador de Hogwarts",
+          "Su gata se llama Señora Norris",
+          "Es un squib"
+        ],
+        [
+          "Dobby",
+          "Elfo doméstico",
+          "Harry lo libera mediante un calcetín",
+          "Ayuda a escapar de la mansión Malfoy"
+        ],
+        [
+          "Kreacher",
+          "Elfo doméstico",
+          "Servía a la familia Black",
+          "Conservó el guardapelo relacionado con Regulus"
+        ],
+        [
+          "Hedwig",
+          "Lechuza de Harry",
+          "Fue un regalo de Hagrid",
+          "Lleva correspondencia de Harry"
+        ],
+        [
+          "Garrick Ollivander",
+          "Fabricante de varitas",
+          "Su tienda está en el Callejón Diagon",
+          "Sostiene que la varita elige al mago"
+        ],
+        [
+          "Gellert Grindelwald",
+          "Mago oscuro",
+          "Tuvo una relación cercana con Dumbledore",
+          "Fue derrotado por Dumbledore en 1945"
+        ],
+        [
+          "Regulus Black",
+          "Mortífago que se rebeló contra Voldemort",
+          "Es hermano de Sirius",
+          "Intentó destruir el horrocrux del guardapelo"
+        ]
+      ],
+      "context": "Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia."
+    }
+  ],
+  "sources": [
+    "https://www.harrypotter.com/fact-file/characters-and-pets/hermione-granger",
+    "https://www.harrypotter.com/fact-file"
+  ],
+  "questions": []
+}

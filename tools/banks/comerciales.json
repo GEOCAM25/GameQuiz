@@ -1,0 +1,981 @@
+{
+  "id": "comerciales",
+  "groups": [
+    {
+      "stems": [
+        "En la publicidad vista en Chile, ¿qué producto o servicio identifica a {x}?",
+        "¿Qué rasgo reconoce a {x}?",
+        "¿Qué elemento corresponde a la comunicación o presentación de {x}?"
+      ],
+      "rows": [
+        [
+          "Super 8",
+          "Oblea bañada en chocolate",
+          "Capas crujientes de oblea",
+          "Formato de barra individual"
+        ],
+        [
+          "Chocman",
+          "Bizcocho relleno bañado",
+          "Relleno asociado al manjar",
+          "Presentación individual de colación dulce"
+        ],
+        [
+          "Manjarate",
+          "Postre refrigerado",
+          "Mousse de manjar con chocolate",
+          "Un punto de chocolate en el fondo del envase clásico"
+        ],
+        [
+          "Tritón",
+          "Galletas sándwich",
+          "Dos galletas con relleno",
+          "El contraste entre galleta oscura y crema clara"
+        ],
+        [
+          "Sahne-Nuss",
+          "Chocolate",
+          "Almendras enteras",
+          "El envoltorio rojo del chocolate con almendras"
+        ],
+        [
+          "Mantecol",
+          "Dulce a base de maní",
+          "Textura quebradiza",
+          "Bloques o barras de dulce de maní"
+        ],
+        [
+          "Negrita / Chokita",
+          "Galleta bañada en chocolate",
+          "Galleta con relleno de crema",
+          "Cambió su nombre comercial a Chokita"
+        ],
+        [
+          "Frugelé",
+          "Gomitas",
+          "Sabores frutales",
+          "Piezas pequeñas de colores"
+        ],
+        [
+          "Ambrosoli",
+          "Confites",
+          "Marca de caramelos y chocolates",
+          "El nombre de una familia de origen italiano"
+        ],
+        [
+          "Costa",
+          "Galletas y chocolates",
+          "Marca histórica de confitería en Chile",
+          "Productos dulces de múltiples formatos"
+        ],
+        [
+          "Calaf",
+          "Confites",
+          "Marca vinculada históricamente a Talca",
+          "Caramelos y otros dulces"
+        ],
+        [
+          "Dos en Uno",
+          "Confites y chicles",
+          "Nombre formado por números",
+          "Marca chilena de golosinas"
+        ],
+        [
+          "Savory",
+          "Helados",
+          "Marca de helados de Nestlé en Chile",
+          "Productos congelados de palito y pote"
+        ],
+        [
+          "Bresler",
+          "Helados",
+          "Marca tradicional de helados",
+          "Venta de helados en formatos familiares e individuales"
+        ],
+        [
+          "Trendy",
+          "Helados",
+          "Marca chilena de productos congelados",
+          "Paletas y postres helados"
+        ],
+        [
+          "Soprole",
+          "Lácteos",
+          "Leche, yogures y postres",
+          "Marca cuyo nombre se vincula a una sociedad de productores de leche"
+        ],
+        [
+          "Colun",
+          "Lácteos",
+          "Cooperativa con base en La Unión",
+          "Identidad vinculada al sur de Chile"
+        ],
+        [
+          "Surlat",
+          "Lácteos",
+          "Nombre que alude al sur",
+          "Leches y yogures"
+        ],
+        [
+          "Loncoleche",
+          "Lácteos",
+          "Marca tradicional de leche",
+          "Envases para productos de origen lácteo"
+        ],
+        [
+          "Chambourcy",
+          "Lácteos",
+          "Marca histórica de yogures y postres",
+          "Publicidad chilena recordada de décadas pasadas"
+        ],
+        [
+          "Cachantun",
+          "Agua mineral",
+          "Agua embotellada",
+          "Versiones con y sin gas"
+        ],
+        [
+          "Benedictino",
+          "Agua envasada",
+          "Marca de agua purificada",
+          "Botellas de distintos tamaños"
+        ],
+        [
+          "Vital",
+          "Agua mineral",
+          "Agua embotellada",
+          "Identidad de marca asociada al agua"
+        ],
+        [
+          "Bilz y Pap",
+          "Bebidas gaseosas",
+          "Dos bebidas identificadas juntas",
+          "La combinación publicitaria de rojo y amarillo"
+        ],
+        [
+          "Kem Piña",
+          "Bebida gaseosa",
+          "Sabor piña",
+          "Identidad visual amarilla"
+        ],
+        [
+          "Kem Xtreme",
+          "Bebida gaseosa",
+          "Variante de Kem orientada a un sabor intenso",
+          "Uso destacado de la palabra Xtreme"
+        ],
+        [
+          "Kem Zero",
+          "Bebida gaseosa",
+          "Variante sin azúcar de Kem",
+          "Uso de la palabra Zero en el nombre"
+        ],
+        [
+          "Canada Dry Ginger Ale",
+          "Bebida gaseosa",
+          "Sabor jengibre",
+          "El nombre Ginger Ale en el envase"
+        ],
+        [
+          "Sprite",
+          "Bebida gaseosa",
+          "Sabor lima-limón",
+          "Identidad visual asociada al verde"
+        ],
+        [
+          "Fanta Naranja",
+          "Bebida gaseosa",
+          "Sabor naranja",
+          "Identidad visual asociada al naranja"
+        ],
+        [
+          "Fruna",
+          "Confites y alimentos dulces",
+          "Marca chilena popular de golosinas",
+          "Amplia presencia en almacenes y quioscos"
+        ],
+        [
+          "Tapsin",
+          "Medicamento de venta comercial",
+          "Marca asociada al alivio de síntomas",
+          "Avisos con información y advertencias del producto"
+        ]
+      ],
+      "context": "Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "excludeOptionsByRow": {
+        "Super 8": {
+          "1": [],
+          "2": []
+        },
+        "Chocman": {
+          "1": [],
+          "2": []
+        },
+        "Manjarate": {
+          "1": [],
+          "2": []
+        },
+        "Tritón": {
+          "1": [],
+          "2": []
+        },
+        "Sahne-Nuss": {
+          "1": [],
+          "2": []
+        },
+        "Mantecol": {
+          "1": [],
+          "2": []
+        },
+        "Negrita / Chokita": {
+          "1": [],
+          "2": []
+        },
+        "Frugelé": {
+          "1": [],
+          "2": []
+        },
+        "Ambrosoli": {
+          "1": [
+            "Capas crujientes de oblea",
+            "Relleno asociado al manjar",
+            "Mousse de manjar con chocolate",
+            "Dos galletas con relleno",
+            "Almendras enteras",
+            "Textura quebradiza",
+            "Galleta con relleno de crema",
+            "Sabores frutales",
+            "Marca histórica de confitería en Chile",
+            "Marca vinculada históricamente a Talca",
+            "Nombre formado por números",
+            "Marca de helados de Nestlé en Chile",
+            "Marca tradicional de helados",
+            "Marca chilena de productos congelados",
+            "Leche, yogures y postres",
+            "Cooperativa con base en La Unión",
+            "Nombre que alude al sur",
+            "Marca tradicional de leche",
+            "Marca histórica de yogures y postres",
+            "Marca chilena popular de golosinas"
+          ],
+          "2": [
+            "Formato de barra individual",
+            "Presentación individual de colación dulce",
+            "Un punto de chocolate en el fondo del envase clásico",
+            "El contraste entre galleta oscura y crema clara",
+            "El envoltorio rojo del chocolate con almendras",
+            "Bloques o barras de dulce de maní",
+            "Cambió su nombre comercial a Chokita",
+            "Piezas pequeñas de colores",
+            "Productos dulces de múltiples formatos",
+            "Caramelos y otros dulces",
+            "Marca chilena de golosinas",
+            "Productos congelados de palito y pote",
+            "Venta de helados en formatos familiares e individuales",
+            "Paletas y postres helados",
+            "Marca cuyo nombre se vincula a una sociedad de productores de leche",
+            "Identidad vinculada al sur de Chile",
+            "Leches y yogures",
+            "Envases para productos de origen lácteo",
+            "Publicidad chilena recordada de décadas pasadas",
+            "Amplia presencia en almacenes y quioscos"
+          ]
+        },
+        "Costa": {
+          "1": [
+            "Capas crujientes de oblea",
+            "Relleno asociado al manjar",
+            "Mousse de manjar con chocolate",
+            "Dos galletas con relleno",
+            "Almendras enteras",
+            "Textura quebradiza",
+            "Galleta con relleno de crema",
+            "Sabores frutales",
+            "Marca de caramelos y chocolates",
+            "Marca vinculada históricamente a Talca",
+            "Nombre formado por números",
+            "Marca de helados de Nestlé en Chile",
+            "Marca tradicional de helados",
+            "Marca chilena de productos congelados",
+            "Leche, yogures y postres",
+            "Cooperativa con base en La Unión",
+            "Nombre que alude al sur",
+            "Marca tradicional de leche",
+            "Marca histórica de yogures y postres",
+            "Marca chilena popular de golosinas"
+          ],
+          "2": [
+            "Formato de barra individual",
+            "Presentación individual de colación dulce",
+            "Un punto de chocolate en el fondo del envase clásico",
+            "El contraste entre galleta oscura y crema clara",
+            "El envoltorio rojo del chocolate con almendras",
+            "Bloques o barras de dulce de maní",
+            "Cambió su nombre comercial a Chokita",
+            "Piezas pequeñas de colores",
+            "El nombre de una familia de origen italiano",
+            "Caramelos y otros dulces",
+            "Marca chilena de golosinas",
+            "Productos congelados de palito y pote",
+            "Venta de helados en formatos familiares e individuales",
+            "Paletas y postres helados",
+            "Marca cuyo nombre se vincula a una sociedad de productores de leche",
+            "Identidad vinculada al sur de Chile",
+            "Leches y yogures",
+            "Envases para productos de origen lácteo",
+            "Publicidad chilena recordada de décadas pasadas",
+            "Amplia presencia en almacenes y quioscos"
+          ]
+        },
+        "Calaf": {
+          "1": [
+            "Capas crujientes de oblea",
+            "Relleno asociado al manjar",
+            "Mousse de manjar con chocolate",
+            "Dos galletas con relleno",
+            "Almendras enteras",
+            "Textura quebradiza",
+            "Galleta con relleno de crema",
+            "Sabores frutales",
+            "Marca de caramelos y chocolates",
+            "Marca histórica de confitería en Chile",
+            "Nombre formado por números",
+            "Marca de helados de Nestlé en Chile",
+            "Marca tradicional de helados",
+            "Marca chilena de productos congelados",
+            "Leche, yogures y postres",
+            "Cooperativa con base en La Unión",
+            "Nombre que alude al sur",
+            "Marca tradicional de leche",
+            "Marca histórica de yogures y postres",
+            "Marca chilena popular de golosinas"
+          ],
+          "2": [
+            "Formato de barra individual",
+            "Presentación individual de colación dulce",
+            "Un punto de chocolate en el fondo del envase clásico",
+            "El contraste entre galleta oscura y crema clara",
+            "El envoltorio rojo del chocolate con almendras",
+            "Bloques o barras de dulce de maní",
+            "Cambió su nombre comercial a Chokita",
+            "Piezas pequeñas de colores",
+            "El nombre de una familia de origen italiano",
+            "Productos dulces de múltiples formatos",
+            "Marca chilena de golosinas",
+            "Productos congelados de palito y pote",
+            "Venta de helados en formatos familiares e individuales",
+            "Paletas y postres helados",
+            "Marca cuyo nombre se vincula a una sociedad de productores de leche",
+            "Identidad vinculada al sur de Chile",
+            "Leches y yogures",
+            "Envases para productos de origen lácteo",
+            "Publicidad chilena recordada de décadas pasadas",
+            "Amplia presencia en almacenes y quioscos"
+          ]
+        },
+        "Dos en Uno": {
+          "1": [
+            "Capas crujientes de oblea",
+            "Relleno asociado al manjar",
+            "Mousse de manjar con chocolate",
+            "Dos galletas con relleno",
+            "Almendras enteras",
+            "Textura quebradiza",
+            "Galleta con relleno de crema",
+            "Sabores frutales",
+            "Marca de caramelos y chocolates",
+            "Marca histórica de confitería en Chile",
+            "Marca vinculada históricamente a Talca",
+            "Marca de helados de Nestlé en Chile",
+            "Marca tradicional de helados",
+            "Marca chilena de productos congelados",
+            "Leche, yogures y postres",
+            "Cooperativa con base en La Unión",
+            "Nombre que alude al sur",
+            "Marca tradicional de leche",
+            "Marca histórica de yogures y postres",
+            "Marca chilena popular de golosinas"
+          ],
+          "2": [
+            "Formato de barra individual",
+            "Presentación individual de colación dulce",
+            "Un punto de chocolate en el fondo del envase clásico",
+            "El contraste entre galleta oscura y crema clara",
+            "El envoltorio rojo del chocolate con almendras",
+            "Bloques o barras de dulce de maní",
+            "Cambió su nombre comercial a Chokita",
+            "Piezas pequeñas de colores",
+            "El nombre de una familia de origen italiano",
+            "Productos dulces de múltiples formatos",
+            "Caramelos y otros dulces",
+            "Productos congelados de palito y pote",
+            "Venta de helados en formatos familiares e individuales",
+            "Paletas y postres helados",
+            "Marca cuyo nombre se vincula a una sociedad de productores de leche",
+            "Identidad vinculada al sur de Chile",
+            "Leches y yogures",
+            "Envases para productos de origen lácteo",
+            "Publicidad chilena recordada de décadas pasadas",
+            "Amplia presencia en almacenes y quioscos"
+          ]
+        },
+        "Savory": {
+          "1": [
+            "Marca tradicional de helados",
+            "Marca chilena de productos congelados"
+          ],
+          "2": [
+            "Venta de helados en formatos familiares e individuales",
+            "Paletas y postres helados"
+          ]
+        },
+        "Bresler": {
+          "1": [
+            "Marca de helados de Nestlé en Chile",
+            "Marca chilena de productos congelados"
+          ],
+          "2": [
+            "Productos congelados de palito y pote",
+            "Paletas y postres helados"
+          ]
+        },
+        "Trendy": {
+          "1": [
+            "Marca de helados de Nestlé en Chile",
+            "Marca tradicional de helados"
+          ],
+          "2": [
+            "Productos congelados de palito y pote",
+            "Venta de helados en formatos familiares e individuales"
+          ]
+        },
+        "Soprole": {
+          "1": [
+            "Cooperativa con base en La Unión",
+            "Nombre que alude al sur",
+            "Marca tradicional de leche",
+            "Marca histórica de yogures y postres"
+          ],
+          "2": [
+            "Identidad vinculada al sur de Chile",
+            "Leches y yogures",
+            "Envases para productos de origen lácteo",
+            "Publicidad chilena recordada de décadas pasadas"
+          ]
+        },
+        "Colun": {
+          "1": [
+            "Leche, yogures y postres",
+            "Nombre que alude al sur",
+            "Marca tradicional de leche",
+            "Marca histórica de yogures y postres"
+          ],
+          "2": [
+            "Marca cuyo nombre se vincula a una sociedad de productores de leche",
+            "Leches y yogures",
+            "Envases para productos de origen lácteo",
+            "Publicidad chilena recordada de décadas pasadas"
+          ]
+        },
+        "Surlat": {
+          "1": [
+            "Leche, yogures y postres",
+            "Cooperativa con base en La Unión",
+            "Marca tradicional de leche",
+            "Marca histórica de yogures y postres"
+          ],
+          "2": [
+            "Marca cuyo nombre se vincula a una sociedad de productores de leche",
+            "Identidad vinculada al sur de Chile",
+            "Envases para productos de origen lácteo",
+            "Publicidad chilena recordada de décadas pasadas"
+          ]
+        },
+        "Loncoleche": {
+          "1": [
+            "Leche, yogures y postres",
+            "Cooperativa con base en La Unión",
+            "Nombre que alude al sur",
+            "Marca histórica de yogures y postres"
+          ],
+          "2": [
+            "Marca cuyo nombre se vincula a una sociedad de productores de leche",
+            "Identidad vinculada al sur de Chile",
+            "Leches y yogures",
+            "Publicidad chilena recordada de décadas pasadas"
+          ]
+        },
+        "Chambourcy": {
+          "1": [
+            "Leche, yogures y postres",
+            "Cooperativa con base en La Unión",
+            "Nombre que alude al sur",
+            "Marca tradicional de leche"
+          ],
+          "2": [
+            "Marca cuyo nombre se vincula a una sociedad de productores de leche",
+            "Identidad vinculada al sur de Chile",
+            "Leches y yogures",
+            "Envases para productos de origen lácteo"
+          ]
+        },
+        "Cachantun": {
+          "1": [
+            "Agua embotellada"
+          ],
+          "2": [
+            "Identidad de marca asociada al agua"
+          ]
+        },
+        "Benedictino": {
+          "1": [],
+          "2": []
+        },
+        "Vital": {
+          "1": [
+            "Agua embotellada"
+          ],
+          "2": [
+            "Versiones con y sin gas"
+          ]
+        },
+        "Bilz y Pap": {
+          "1": [],
+          "2": []
+        },
+        "Kem Piña": {
+          "1": [
+            "Variante de Kem orientada a un sabor intenso",
+            "Variante sin azúcar de Kem",
+            "Sabor jengibre",
+            "Sabor lima-limón",
+            "Sabor naranja"
+          ],
+          "2": [
+            "Uso destacado de la palabra Xtreme",
+            "Uso de la palabra Zero en el nombre",
+            "El nombre Ginger Ale en el envase",
+            "Identidad visual asociada al verde",
+            "Identidad visual asociada al naranja"
+          ]
+        },
+        "Kem Xtreme": {
+          "1": [
+            "Sabor piña",
+            "Variante sin azúcar de Kem",
+            "Sabor jengibre",
+            "Sabor lima-limón",
+            "Sabor naranja"
+          ],
+          "2": [
+            "Identidad visual amarilla",
+            "Uso de la palabra Zero en el nombre",
+            "El nombre Ginger Ale en el envase",
+            "Identidad visual asociada al verde",
+            "Identidad visual asociada al naranja"
+          ]
+        },
+        "Kem Zero": {
+          "1": [
+            "Sabor piña",
+            "Variante de Kem orientada a un sabor intenso",
+            "Sabor jengibre",
+            "Sabor lima-limón",
+            "Sabor naranja"
+          ],
+          "2": [
+            "Identidad visual amarilla",
+            "Uso destacado de la palabra Xtreme",
+            "El nombre Ginger Ale en el envase",
+            "Identidad visual asociada al verde",
+            "Identidad visual asociada al naranja"
+          ]
+        },
+        "Canada Dry Ginger Ale": {
+          "1": [
+            "Sabor piña",
+            "Variante de Kem orientada a un sabor intenso",
+            "Variante sin azúcar de Kem",
+            "Sabor lima-limón",
+            "Sabor naranja"
+          ],
+          "2": [
+            "Identidad visual amarilla",
+            "Uso destacado de la palabra Xtreme",
+            "Uso de la palabra Zero en el nombre",
+            "Identidad visual asociada al verde",
+            "Identidad visual asociada al naranja"
+          ]
+        },
+        "Sprite": {
+          "1": [
+            "Sabor piña",
+            "Variante de Kem orientada a un sabor intenso",
+            "Variante sin azúcar de Kem",
+            "Sabor jengibre",
+            "Sabor naranja"
+          ],
+          "2": [
+            "Identidad visual amarilla",
+            "Uso destacado de la palabra Xtreme",
+            "Uso de la palabra Zero en el nombre",
+            "El nombre Ginger Ale en el envase",
+            "Identidad visual asociada al naranja"
+          ]
+        },
+        "Fanta Naranja": {
+          "1": [
+            "Sabor piña",
+            "Variante de Kem orientada a un sabor intenso",
+            "Variante sin azúcar de Kem",
+            "Sabor jengibre",
+            "Sabor lima-limón"
+          ],
+          "2": [
+            "Identidad visual amarilla",
+            "Uso destacado de la palabra Xtreme",
+            "Uso de la palabra Zero en el nombre",
+            "El nombre Ginger Ale en el envase",
+            "Identidad visual asociada al verde"
+          ]
+        },
+        "Fruna": {
+          "1": [
+            "Capas crujientes de oblea",
+            "Relleno asociado al manjar",
+            "Mousse de manjar con chocolate",
+            "Dos galletas con relleno",
+            "Almendras enteras",
+            "Textura quebradiza",
+            "Galleta con relleno de crema",
+            "Sabores frutales",
+            "Marca de caramelos y chocolates",
+            "Marca histórica de confitería en Chile",
+            "Marca vinculada históricamente a Talca",
+            "Nombre formado por números",
+            "Marca de helados de Nestlé en Chile",
+            "Marca tradicional de helados",
+            "Marca chilena de productos congelados",
+            "Leche, yogures y postres",
+            "Cooperativa con base en La Unión",
+            "Nombre que alude al sur",
+            "Marca tradicional de leche",
+            "Marca histórica de yogures y postres"
+          ],
+          "2": [
+            "Formato de barra individual",
+            "Presentación individual de colación dulce",
+            "Un punto de chocolate en el fondo del envase clásico",
+            "El contraste entre galleta oscura y crema clara",
+            "El envoltorio rojo del chocolate con almendras",
+            "Bloques o barras de dulce de maní",
+            "Cambió su nombre comercial a Chokita",
+            "Piezas pequeñas de colores",
+            "El nombre de una familia de origen italiano",
+            "Productos dulces de múltiples formatos",
+            "Caramelos y otros dulces",
+            "Marca chilena de golosinas",
+            "Productos congelados de palito y pote",
+            "Venta de helados en formatos familiares e individuales",
+            "Paletas y postres helados",
+            "Marca cuyo nombre se vincula a una sociedad de productores de leche",
+            "Identidad vinculada al sur de Chile",
+            "Leches y yogures",
+            "Envases para productos de origen lácteo",
+            "Publicidad chilena recordada de décadas pasadas"
+          ]
+        },
+        "Tapsin": {
+          "1": [
+            "Marca conocida por analgésicos"
+          ],
+          "2": [
+            "Publicidad histórica de productos farmacéuticos"
+          ]
+        },
+        "Mentholatum": {
+          "1": [],
+          "2": []
+        },
+        "Geniol": {
+          "1": [
+            "Marca asociada al alivio de síntomas"
+          ],
+          "2": [
+            "Avisos con información y advertencias del producto"
+          ]
+        },
+        "Omo": {
+          "1": [
+            "Lavado de ropa",
+            "Lavado de ropa"
+          ],
+          "2": [
+            "Envases para detergente en polvo o líquido",
+            "Marca tradicional del rubro de lavandería"
+          ]
+        },
+        "Drive": {
+          "1": [
+            "Lavado de ropa",
+            "Lavado de ropa"
+          ],
+          "2": [
+            "Demostraciones de limpieza de manchas",
+            "Marca tradicional del rubro de lavandería"
+          ]
+        },
+        "Rinso": {
+          "1": [
+            "Lavado de ropa",
+            "Lavado de ropa"
+          ],
+          "2": [
+            "Demostraciones de limpieza de manchas",
+            "Envases para detergente en polvo o líquido"
+          ]
+        },
+        "Quix": {
+          "1": [],
+          "2": []
+        },
+        "Virutex": {
+          "1": [],
+          "2": []
+        },
+        "Cif": {
+          "1": [],
+          "2": []
+        },
+        "Homecenter Sodimac": {
+          "1": [
+            "Artículos de construcción y decoración"
+          ],
+          "2": [
+            "Catálogos para equipar y renovar el hogar"
+          ]
+        },
+        "Easy": {
+          "1": [
+            "Materiales y herramientas"
+          ],
+          "2": [
+            "Avisos de proyectos y arreglos de la casa"
+          ]
+        },
+        "Almacenes París": {
+          "1": [
+            "Multitienda fundada en Chile",
+            "Multitienda fundada en Chile"
+          ],
+          "2": [
+            "Venta de vestuario y artículos para el hogar",
+            "Campañas de moda y ofertas por temporada"
+          ]
+        },
+        "Falabella": {
+          "1": [
+            "Nombre histórico de una multitienda",
+            "Multitienda fundada en Chile"
+          ],
+          "2": [
+            "Posterior identidad comercial París",
+            "Campañas de moda y ofertas por temporada"
+          ]
+        },
+        "Ripley": {
+          "1": [
+            "Nombre histórico de una multitienda",
+            "Multitienda fundada en Chile"
+          ],
+          "2": [
+            "Posterior identidad comercial París",
+            "Venta de vestuario y artículos para el hogar"
+          ]
+        },
+        "ABC / Abcdin": {
+          "1": [],
+          "2": []
+        },
+        "Entel": {
+          "1": [
+            "Telefonía y conectividad",
+            "Telefonía móvil"
+          ],
+          "2": [
+            "Logo con una letra M estilizada",
+            "Uso destacado del color morado"
+          ]
+        },
+        "Movistar": {
+          "1": [
+            "Telefonía y conectividad",
+            "Telefonía móvil"
+          ],
+          "2": [
+            "Marca asociada a una torre emblemática de Santiago",
+            "Uso destacado del color morado"
+          ]
+        },
+        "WOM": {
+          "1": [
+            "Telefonía y conectividad",
+            "Telefonía y conectividad"
+          ],
+          "2": [
+            "Marca asociada a una torre emblemática de Santiago",
+            "Logo con una letra M estilizada"
+          ]
+        },
+        "Metro de Santiago": {
+          "1": [],
+          "2": []
+        }
+      }
+    },
+    {
+      "stems": [
+        "¿Qué marca protagoniza el comercial chileno «{x}»?",
+        "Según la colección del Museo de la Publicidad UDP, ¿qué año corresponde a «{x}»?",
+        "¿Qué tipo de producto o servicio anuncia «{x}»?"
+      ],
+      "rows": [
+        [
+          "Oso Ambrosoli",
+          "Ambrosoli",
+          "2000",
+          "Confites"
+        ],
+        [
+          "Chao Jefe",
+          "Kino / Lotería",
+          "2011",
+          "Juego de lotería"
+        ],
+        [
+          "Nuevo y mucho más económico",
+          "Sutil",
+          "1980",
+          "Limpieza e higiene"
+        ],
+        [
+          "Buenas señales",
+          "Entel",
+          "2020",
+          "Telecomunicaciones"
+        ],
+        [
+          "Esa niña tiene Pep",
+          "Pepsodent",
+          "1984",
+          "Higiene dental"
+        ],
+        [
+          "Refrescante y Natural",
+          "Cachantún",
+          "1987",
+          "Agua embotellada"
+        ],
+        [
+          "Camaleón",
+          "Doko",
+          "1998",
+          "Alimento para mascotas"
+        ],
+        [
+          "Enchula tu celular",
+          "Marinela",
+          "2009",
+          "Alimentos dulces"
+        ],
+        [
+          "Súbete a una Oxford",
+          "Oxford",
+          "1979",
+          "Bicicletas"
+        ],
+        [
+          "Le saco la sal",
+          "Tapsin",
+          "2000",
+          "Productos farmacéuticos"
+        ],
+        [
+          "El arte de vivir (spot de multitienda)",
+          "Falabella",
+          "2000",
+          "Tienda por departamentos"
+        ],
+        [
+          "Un café a toda prueba",
+          "Monterrey",
+          "1990",
+          "Café"
+        ],
+        [
+          "Primavera – Verano (spot de multitienda de 2000)",
+          "Falabella",
+          "2000",
+          "Tienda por departamentos"
+        ],
+        [
+          "La calidad va por dentro",
+          "Clos de Pirque",
+          "1988",
+          "Vino"
+        ],
+        [
+          "Tonino, a mangiare",
+          "D’Ampezzo",
+          "1993",
+          "Salsa de tomate"
+        ],
+        [
+          "Tengo susto (spot de galletas)",
+          "McKay",
+          "1989",
+          "Galletas"
+        ],
+        [
+          "Si camino no hablar",
+          "Firestone",
+          "1986",
+          "Neumáticos"
+        ],
+        [
+          "Milo te hace grande",
+          "Milo / Nestlé",
+          "1978",
+          "Bebida de cacao y malta"
+        ]
+      ],
+      "context": "Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza."
+    }
+  ],
+  "sources": [
+    "https://www.memoriachilena.gob.cl/",
+    "https://www.carozzi.cl/",
+    "https://www.nestle.cl/brands",
+    "https://www.colun.cl/",
+    "https://museopublicidad.udp.cl/coleccion/comerciales-chilenos/",
+    "https://museopublicidad.udp.cl/coleccion/comerciales-chilenos/page/2/",
+    "https://museopublicidad.udp.cl/pieza/le-saco-la-sal/",
+    "https://museopublicidad.udp.cl/pieza/oso-ambrosoli/",
+    "https://museopublicidad.udp.cl/pieza/chao-jefe/",
+    "https://museopublicidad.udp.cl/pieza/buenas-senales/",
+    "https://museopublicidad.udp.cl/pieza/camaleon/",
+    "https://museopublicidad.udp.cl/pieza/nuevo-y-mucho-mas-economico/",
+    "https://museopublicidad.udp.cl/pieza/esa-nina-tiene-pep/",
+    "https://museopublicidad.udp.cl/pieza/refrescante-y-natural/",
+    "https://museopublicidad.udp.cl/pieza/enchula-tu-celular/",
+    "https://museopublicidad.udp.cl/pieza/subete-a-una-oxford/",
+    "https://museopublicidad.udp.cl/pieza/monterrey-un-cafe-a-toda-prueba/",
+    "https://museopublicidad.udp.cl/pieza/falabella-primavera-verano/",
+    "https://museopublicidad.udp.cl/pieza/clos-de-pirque-la-calidad-va-por-dentro/",
+    "https://museopublicidad.udp.cl/pieza/salsa-dampezzo-tonino-a-mangiare/",
+    "https://museopublicidad.udp.cl/pieza/mckay-tengo-susto/",
+    "https://museopublicidad.udp.cl/pieza/firestone-si-camino-no-hablar/",
+    "https://museopublicidad.udp.cl/pieza/milo-te-hace-grande/"
+  ],
+  "questions": []
+}

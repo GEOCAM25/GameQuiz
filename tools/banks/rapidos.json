@@ -1,0 +1,320 @@
+{
+  "id": "rapidos",
+  "groups": [
+    {
+      "stems": [
+        "¿Qué intérprete encarna a {x} en Rápido y Furioso?",
+        "¿Qué vínculo o función corresponde a {x}?",
+        "¿Qué hecho identifica a {x} en la saga?"
+      ],
+      "rows": [
+        [
+          "Dominic Toretto",
+          "Vin Diesel",
+          "Es hermano de Mia",
+          "Considera a su equipo una familia"
+        ],
+        [
+          "Brian O’Conner",
+          "Paul Walker",
+          "Forma pareja con Mia",
+          "Empieza como policía encubierto"
+        ],
+        [
+          "Letty Ortiz",
+          "Michelle Rodriguez",
+          "Es pareja de Dominic",
+          "Reaparece con amnesia"
+        ],
+        [
+          "Mia Toretto",
+          "Jordana Brewster",
+          "Es hermana de Dominic",
+          "Forma una familia con Brian"
+        ],
+        [
+          "Roman Pearce",
+          "Tyrese Gibson",
+          "Es amigo de infancia de Brian",
+          "Se suma a la misión de Miami en la segunda película"
+        ],
+        [
+          "Tej Parker",
+          "Ludacris",
+          "Es especialista técnico del equipo",
+          "Organiza carreras en Miami en la segunda película"
+        ],
+        [
+          "Han Lue",
+          "Sung Kang",
+          "Es mentor de Sean",
+          "Se le asocia con las carreras de derrape en Tokio"
+        ],
+        [
+          "Gisele Yashar",
+          "Gal Gadot",
+          "Se vincula sentimentalmente con Han",
+          "Ayuda al equipo tras trabajar para Braga"
+        ],
+        [
+          "Luke Hobbs",
+          "Dwayne Johnson",
+          "Es agente del DSS",
+          "Persigue al equipo en Río antes de colaborar"
+        ],
+        [
+          "Deckard Shaw",
+          "Jason Statham",
+          "Es hermano de Owen",
+          "Busca vengar lo ocurrido a su hermano"
+        ],
+        [
+          "Owen Shaw",
+          "Luke Evans",
+          "Es hermano de Deckard",
+          "Lidera el equipo antagonista de la sexta película"
+        ],
+        [
+          "Hattie Shaw",
+          "Vanessa Kirby",
+          "Es hermana de Deckard",
+          "Es una agente perseguida por Brixton"
+        ],
+        [
+          "Brixton Lore",
+          "Idris Elba",
+          "Trabaja para Eteon",
+          "Tiene mejoras cibernéticas"
+        ],
+        [
+          "Cipher",
+          "Charlize Theron",
+          "Es una ciberterrorista",
+          "Chantajea a Dominic en la octava película"
+        ],
+        [
+          "Jakob Toretto",
+          "John Cena",
+          "Es hermano de Dominic y Mia",
+          "Se enfrenta a Dominic en F9"
+        ],
+        [
+          "Ramsey",
+          "Nathalie Emmanuel",
+          "Es una hacker",
+          "Creó el programa Ojo de Dios"
+        ],
+        [
+          "Mr. Nobody",
+          "Kurt Russell",
+          "Es un agente gubernamental",
+          "Recluta al equipo para recuperar Ojo de Dios"
+        ],
+        [
+          "Little Nobody",
+          "Scott Eastwood",
+          "Es ayudante de Mr. Nobody",
+          "Aparece en la octava película"
+        ],
+        [
+          "Elena Neves",
+          "Elsa Pataky",
+          "Es policía en Brasil",
+          "Es madre del hijo de Dominic"
+        ],
+        [
+          "Vince",
+          "Matt Schulze",
+          "Es amigo de Dominic",
+          "Participa en el grupo original de Los Ángeles"
+        ],
+        [
+          "Jesse",
+          "Chad Lindberg",
+          "Es mecánico del grupo original",
+          "Pierde una carrera contra Johnny Tran"
+        ],
+        [
+          "Leon",
+          "Johnny Strong",
+          "Es integrante del grupo original",
+          "Participa en los robos de camiones de la primera película"
+        ],
+        [
+          "Johnny Tran",
+          "Rick Yune",
+          "Es rival de Dominic en Los Ángeles",
+          "Compite contra Jesse en Race Wars"
+        ],
+        [
+          "Hector",
+          "Noel Gugliemi",
+          "Es corredor de Los Ángeles",
+          "Aparece en la primera película organizando autos para competir"
+        ],
+        [
+          "Monica Fuentes",
+          "Eva Mendes",
+          "Es agente de aduanas encubierta",
+          "Colabora en la investigación contra Carter Verone"
+        ],
+        [
+          "Carter Verone",
+          "Cole Hauser",
+          "Es el antagonista de la segunda película",
+          "Opera desde Miami"
+        ],
+        [
+          "Suki",
+          "Devon Aoki",
+          "Es corredora de Miami",
+          "Conduce un Honda S2000 rosa"
+        ],
+        [
+          "Sean Boswell",
+          "Lucas Black",
+          "Es alumno y corredor en Tokio",
+          "Aprende a hacer drift con Han"
+        ],
+        [
+          "Twinkie",
+          "Bow Wow",
+          "Es amigo de Sean",
+          "Conduce una Volkswagen Touran modificada"
+        ],
+        [
+          "Neela",
+          "Nathalie Kelley",
+          "Se relaciona con Sean y Takashi",
+          "Vive en Tokio en Tokyo Drift"
+        ],
+        [
+          "Takashi",
+          "Brian Tee",
+          "Es sobrino de un jefe yakuza",
+          "Su apodo es DK"
+        ],
+        [
+          "Kamata",
+          "Sonny Chiba",
+          "Es tío de Takashi",
+          "Representa a la yakuza en Tokyo Drift"
+        ],
+        [
+          "Arturo Braga",
+          "John Ortiz",
+          "Es un narcotraficante",
+          "Oculta su identidad bajo el nombre de Ramón Campos"
+        ],
+        [
+          "Fenix Calderon",
+          "Laz Alonso",
+          "Trabaja para Braga",
+          "Es un antagonista de la cuarta película"
+        ],
+        [
+          "Tego Leo",
+          "Tego Calderón",
+          "Es compañero de Rico Santos",
+          "Forma parte del equipo del golpe de Río"
+        ],
+        [
+          "Rico Santos",
+          "Don Omar",
+          "Es compañero de Tego Leo",
+          "Aparece en el equipo que roba combustible al inicio de la cuarta película"
+        ],
+        [
+          "Hernán Reyes",
+          "Joaquim de Almeida",
+          "Es un poderoso criminal de Río",
+          "Guarda su dinero en una caja fuerte policial"
+        ],
+        [
+          "Zizi",
+          "Michael Irby",
+          "Trabaja para Hernán Reyes",
+          "Es su principal hombre armado"
+        ],
+        [
+          "Riley Hicks",
+          "Gina Carano",
+          "Trabaja con Hobbs al inicio de la sexta película",
+          "Se revela su alianza con Owen Shaw"
+        ],
+        [
+          "Mose Jakande",
+          "Djimon Hounsou",
+          "Es un mercenario",
+          "Persigue a Ramsey y el Ojo de Dios"
+        ],
+        [
+          "Kiet",
+          "Tony Jaa",
+          "Trabaja con los mercenarios de Jakande",
+          "Se enfrenta a Brian en la séptima película"
+        ],
+        [
+          "Kara",
+          "Ronda Rousey",
+          "Es jefa de seguridad",
+          "Combate con Letty en Abu Dabi"
+        ],
+        [
+          "Magdalene Shaw",
+          "Helen Mirren",
+          "Es madre de Deckard y Owen",
+          "Es conocida como Queenie"
+        ],
+        [
+          "Raldo",
+          "Celestino Cornielle",
+          "Es corredor en Cuba",
+          "Compite contra Dominic en La Habana"
+        ],
+        [
+          "Dante Reyes",
+          "Jason Momoa",
+          "Es hijo de Hernán Reyes",
+          "Busca vengarse del equipo en Fast X"
+        ],
+        [
+          "Aimes",
+          "Alan Ritchson",
+          "Dirige la Agencia durante Fast X",
+          "Persigue a Dominic y su equipo"
+        ],
+        [
+          "Tess",
+          "Brie Larson",
+          "Es hija de Mr. Nobody",
+          "Ayuda al equipo en Fast X"
+        ],
+        [
+          "Isabel Neves",
+          "Daniela Melchior",
+          "Es hermana de Elena",
+          "Conoce a Dominic en Brasil en Fast X"
+        ],
+        [
+          "Abuelita Toretto",
+          "Rita Moreno",
+          "Es abuela de la familia Toretto",
+          "Aparece en la reunión familiar de Fast X"
+        ],
+        [
+          "Agent Bilkins",
+          "Thom Barry",
+          "Es un agente que supervisa a Brian",
+          "Aparece en la primera y la segunda película"
+        ]
+      ],
+      "context": "La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores."
+    }
+  ],
+  "sources": [
+    "https://www.universalpictures.com/movies/fast-x",
+    "https://www.fastxmovie.com/"
+  ],
+  "questions": []
+}

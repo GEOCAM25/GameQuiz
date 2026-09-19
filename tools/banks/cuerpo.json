@@ -1,0 +1,319 @@
+{
+  "id": "cuerpo",
+  "groups": [
+    {
+      "stems": [
+        "¿A qué sistema pertenece principalmente {x}?",
+        "¿Dónde se encuentra {x}?",
+        "¿Cuál es una función de {x}?"
+      ],
+      "rows": [
+        [
+          "corazón",
+          "Cardiovascular",
+          "Tórax, entre los pulmones",
+          "Impulsar sangre por el cuerpo"
+        ],
+        [
+          "arteria aorta",
+          "Cardiovascular",
+          "Sale del ventrículo izquierdo",
+          "Distribuir sangre hacia la circulación sistémica"
+        ],
+        [
+          "vena cava superior",
+          "Cardiovascular",
+          "Tórax, desembocando en la aurícula derecha",
+          "Llevar al corazón sangre de la parte superior del cuerpo"
+        ],
+        [
+          "capilar sanguíneo",
+          "Cardiovascular",
+          "Entre arteriolas y vénulas en los tejidos",
+          "Permitir el intercambio de sustancias con los tejidos"
+        ],
+        [
+          "pulmón",
+          "Respiratorio",
+          "Cavidad torácica",
+          "Intercambiar gases con el aire"
+        ],
+        [
+          "tráquea",
+          "Respiratorio",
+          "Entre la laringe y los bronquios",
+          "Conducir aire hacia los bronquios"
+        ],
+        [
+          "alvéolo",
+          "Respiratorio",
+          "Dentro de los pulmones",
+          "Intercambiar oxígeno y dióxido de carbono con los capilares"
+        ],
+        [
+          "laringe",
+          "Respiratorio",
+          "Cuello, sobre la tráquea",
+          "Producir sonidos mediante las cuerdas vocales"
+        ],
+        [
+          "bronquio",
+          "Respiratorio",
+          "Entre la tráquea y el interior del pulmón",
+          "Conducir aire hacia cada pulmón"
+        ],
+        [
+          "diafragma",
+          "Muscular",
+          "Debajo de los pulmones",
+          "Contraerse para facilitar la inspiración"
+        ],
+        [
+          "esófago",
+          "Digestivo",
+          "Entre la faringe y el estómago",
+          "Transportar el alimento por peristaltismo"
+        ],
+        [
+          "estómago",
+          "Digestivo",
+          "Parte superior del abdomen",
+          "Mezclar alimento con ácido y enzimas"
+        ],
+        [
+          "intestino delgado",
+          "Digestivo",
+          "Entre el estómago y el intestino grueso",
+          "Absorber la mayoría de los nutrientes digeridos"
+        ],
+        [
+          "intestino grueso",
+          "Digestivo",
+          "Alrededor de gran parte del intestino delgado",
+          "Absorber agua y formar las heces"
+        ],
+        [
+          "hígado",
+          "Digestivo",
+          "Parte superior derecha del abdomen",
+          "Producir bilis"
+        ],
+        [
+          "vesícula biliar",
+          "Digestivo",
+          "Debajo del hígado",
+          "Almacenar y concentrar bilis"
+        ],
+        [
+          "glándula salival parótida",
+          "Digestivo",
+          "Delante y debajo de cada oreja",
+          "Producir saliva"
+        ],
+        [
+          "recto",
+          "Digestivo",
+          "Tramo final del intestino grueso",
+          "Almacenar heces antes de expulsarlas"
+        ],
+        [
+          "riñón",
+          "Urinario",
+          "A ambos lados de la columna, detrás del peritoneo",
+          "Filtrar sangre y formar orina"
+        ],
+        [
+          "uréter",
+          "Urinario",
+          "Entre cada riñón y la vejiga",
+          "Transportar orina hacia la vejiga"
+        ],
+        [
+          "vejiga urinaria",
+          "Urinario",
+          "Pelvis",
+          "Almacenar temporalmente la orina"
+        ],
+        [
+          "uretra",
+          "Urinario",
+          "Desde la vejiga hacia el exterior",
+          "Permitir la salida de la orina"
+        ],
+        [
+          "cerebelo",
+          "Nervioso",
+          "Parte posterior e inferior del encéfalo",
+          "Coordinar movimientos y equilibrio"
+        ],
+        [
+          "médula espinal",
+          "Nervioso",
+          "Canal vertebral",
+          "Comunicar encéfalo y cuerpo y participar en reflejos"
+        ],
+        [
+          "hipocampo",
+          "Nervioso",
+          "Región medial del lóbulo temporal",
+          "Participar en la formación de recuerdos"
+        ],
+        [
+          "retina",
+          "Sensorial",
+          "Superficie interna del fondo del ojo",
+          "Convertir luz en señales nerviosas"
+        ],
+        [
+          "cóclea",
+          "Sensorial",
+          "Oído interno",
+          "Transformar vibraciones en señales auditivas"
+        ],
+        [
+          "iris",
+          "Sensorial",
+          "Parte anterior del ojo, alrededor de la pupila",
+          "Regular cuánta luz entra al ojo"
+        ],
+        [
+          "cristalino",
+          "Sensorial",
+          "Detrás del iris",
+          "Enfocar la luz sobre la retina"
+        ],
+        [
+          "córnea",
+          "Sensorial",
+          "Superficie transparente delantera del ojo",
+          "Refractar la luz al entrar al ojo"
+        ],
+        [
+          "tímpano",
+          "Sensorial",
+          "Entre el conducto auditivo y el oído medio",
+          "Vibrar ante las ondas sonoras"
+        ],
+        [
+          "hipófisis",
+          "Endocrino",
+          "Base del encéfalo, en la silla turca",
+          "Secretar hormonas que regulan otras glándulas"
+        ],
+        [
+          "tiroides",
+          "Endocrino",
+          "Cuello, delante de la tráquea",
+          "Producir hormonas que regulan el metabolismo"
+        ],
+        [
+          "glándula suprarrenal",
+          "Endocrino",
+          "Encima de cada riñón",
+          "Producir hormonas como cortisol y adrenalina"
+        ],
+        [
+          "ovario",
+          "Reproductor",
+          "Pelvis, a cada lado del útero",
+          "Producir ovocitos y hormonas sexuales"
+        ],
+        [
+          "testículo",
+          "Reproductor",
+          "Escroto",
+          "Producir espermatozoides y testosterona"
+        ],
+        [
+          "útero",
+          "Reproductor",
+          "Pelvis, entre la vejiga y el recto",
+          "Permitir el desarrollo del embrión y el feto"
+        ],
+        [
+          "trompa uterina",
+          "Reproductor",
+          "Entre el entorno del ovario y el útero",
+          "Transportar el ovocito hacia el útero"
+        ],
+        [
+          "bazo",
+          "Linfático e inmunitario",
+          "Parte superior izquierda del abdomen",
+          "Filtrar sangre y participar en la respuesta inmunitaria"
+        ],
+        [
+          "ganglio linfático",
+          "Linfático e inmunitario",
+          "A lo largo de los vasos linfáticos",
+          "Filtrar linfa y facilitar respuestas inmunitarias"
+        ],
+        [
+          "timo",
+          "Linfático e inmunitario",
+          "Detrás del esternón",
+          "Permitir la maduración de linfocitos T"
+        ],
+        [
+          "fémur",
+          "Esquelético",
+          "Muslo",
+          "Soportar peso y articular cadera con rodilla"
+        ],
+        [
+          "rótula",
+          "Esquelético",
+          "Parte anterior de la rodilla",
+          "Proteger la rodilla y mejorar la acción del cuádriceps"
+        ],
+        [
+          "húmero",
+          "Esquelético",
+          "Brazo, entre hombro y codo",
+          "Participar en las articulaciones del hombro y codo"
+        ],
+        [
+          "radio",
+          "Esquelético",
+          "Antebrazo, del lado del pulgar en posición anatómica",
+          "Participar en la rotación del antebrazo"
+        ],
+        [
+          "calcáneo",
+          "Esquelético",
+          "Talón",
+          "Soportar carga en el apoyo del pie"
+        ],
+        [
+          "bíceps braquial",
+          "Muscular",
+          "Cara anterior del brazo",
+          "Flexionar el codo y ayudar a supinar el antebrazo"
+        ],
+        [
+          "cuádriceps femoral",
+          "Muscular",
+          "Cara anterior del muslo",
+          "Extender la rodilla"
+        ],
+        [
+          "epidermis",
+          "Tegumentario",
+          "Capa más superficial de la piel",
+          "Actuar como barrera protectora externa"
+        ],
+        [
+          "glándula sudorípara",
+          "Tegumentario",
+          "En la piel",
+          "Producir sudor para ayudar a regular la temperatura"
+        ]
+      ],
+      "context": "Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica."
+    }
+  ],
+  "sources": [
+    "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+  ],
+  "questions": []
+}

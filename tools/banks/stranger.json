@@ -1,0 +1,330 @@
+{
+  "id": "stranger",
+  "groups": [
+    {
+      "stems": [
+        "¿Quién interpreta a {x} en Stranger Things (temporadas 1–4)?",
+        "¿Qué vínculo o función identifica a {x}?",
+        "¿Qué hecho se asocia con {x} hasta la temporada 4?"
+      ],
+      "rows": [
+        [
+          "Eleven / Once",
+          "Millie Bobby Brown",
+          "Es hija de Terry Ives",
+          "Tiene poderes de telequinesis"
+        ],
+        [
+          "Mike Wheeler",
+          "Finn Wolfhard",
+          "Es hermano de Nancy",
+          "Forma parte del grupo original de amigos de Will"
+        ],
+        [
+          "Dustin Henderson",
+          "Gaten Matarazzo",
+          "Es amigo de Steve",
+          "Adopta temporalmente a una criatura llamada Dart"
+        ],
+        [
+          "Lucas Sinclair",
+          "Caleb McLaughlin",
+          "Es hermano de Erica",
+          "Se incorpora al equipo de básquetbol escolar"
+        ],
+        [
+          "Will Byers",
+          "Noah Schnapp",
+          "Es hermano de Jonathan",
+          "Su desaparición desencadena la primera temporada"
+        ],
+        [
+          "Max Mayfield",
+          "Sadie Sink",
+          "Es hermanastra de Billy",
+          "La música ayuda a rescatarla de Vecna"
+        ],
+        [
+          "Nancy Wheeler",
+          "Natalia Dyer",
+          "Es hermana de Mike",
+          "Investiga la desaparición de Barb"
+        ],
+        [
+          "Jonathan Byers",
+          "Charlie Heaton",
+          "Es hijo de Joyce",
+          "Es aficionado a la fotografía"
+        ],
+        [
+          "Steve Harrington",
+          "Joe Keery",
+          "Trabaja con Robin",
+          "Es recordado por usar un bate con clavos"
+        ],
+        [
+          "Robin Buckley",
+          "Maya Hawke",
+          "Trabaja en Scoops Ahoy",
+          "Ayuda a descifrar una transmisión rusa"
+        ],
+        [
+          "Jim Hopper",
+          "David Harbour",
+          "Es jefe de policía de Hawkins",
+          "Se convierte en figura paterna para Eleven"
+        ],
+        [
+          "Joyce Byers",
+          "Winona Ryder",
+          "Es madre de Will y Jonathan",
+          "Usa luces de Navidad para comunicarse con Will"
+        ],
+        [
+          "Eddie Munson",
+          "Joseph Quinn",
+          "Dirige el Hellfire Club",
+          "Toca guitarra en el Mundo del Revés"
+        ],
+        [
+          "Billy Hargrove",
+          "Dacre Montgomery",
+          "Es hermanastro de Max",
+          "Trabaja como salvavidas en la tercera temporada"
+        ],
+        [
+          "Erica Sinclair",
+          "Priah Ferguson",
+          "Es hermana de Lucas",
+          "Participa en la operación bajo el centro comercial"
+        ],
+        [
+          "Murray Bauman",
+          "Brett Gelman",
+          "Es investigador y teórico de conspiraciones",
+          "Habla ruso"
+        ],
+        [
+          "Martin Brenner",
+          "Matthew Modine",
+          "Dirige experimentos en el laboratorio",
+          "Los niños del laboratorio lo llaman Papá"
+        ],
+        [
+          "Sam Owens",
+          "Paul Reiser",
+          "Es científico vinculado al laboratorio",
+          "Ayuda a proteger a Eleven"
+        ],
+        [
+          "Bob Newby",
+          "Sean Astin",
+          "Es pareja de Joyce",
+          "Trabaja en RadioShack"
+        ],
+        [
+          "Barbara Holland",
+          "Shannon Purser",
+          "Es amiga de Nancy",
+          "Desaparece tras una fiesta en casa de Steve"
+        ],
+        [
+          "Karen Wheeler",
+          "Cara Buono",
+          "Es madre de Mike, Nancy y Holly",
+          "Vive en la casa de los Wheeler"
+        ],
+        [
+          "Ted Wheeler",
+          "Joe Chrest",
+          "Es padre de Mike, Nancy y Holly",
+          "Es esposo de Karen"
+        ],
+        [
+          "Scott Clarke",
+          "Randy Havens",
+          "Es profesor de ciencias",
+          "Explica a los chicos ideas sobre otras dimensiones"
+        ],
+        [
+          "Benny Hammond",
+          "Chris Sullivan",
+          "Es dueño de una cafetería",
+          "Ayuda a Eleven al inicio de la serie"
+        ],
+        [
+          "Argyle",
+          "Eduardo Franco",
+          "Es amigo de Jonathan en California",
+          "Trabaja para Surfer Boy Pizza"
+        ],
+        [
+          "Suzie",
+          "Gabriella Pizzolo",
+          "Es novia de Dustin",
+          "Vive en Salt Lake City"
+        ],
+        [
+          "Jason Carver",
+          "Mason Dye",
+          "Es capitán del equipo de básquetbol",
+          "Sospecha injustamente del Hellfire Club"
+        ],
+        [
+          "Chrissy Cunningham",
+          "Grace Van Dien",
+          "Es animadora de Hawkins High",
+          "Es una víctima de Vecna en la cuarta temporada"
+        ],
+        [
+          "Henry Creel / Vecna",
+          "Jamie Campbell Bower",
+          "Fue el sujeto 001 del laboratorio",
+          "Se convierte en el antagonista llamado Vecna"
+        ],
+        [
+          "Dmitri Antonov",
+          "Tom Wlaschiha",
+          "Es guardia de prisión en la Unión Soviética",
+          "Usa el nombre de Enzo al contactar con Joyce"
+        ]
+      ],
+      "context": "Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores."
+    },
+    {
+      "stems": [
+        "¿Qué clase de elemento es {x} en Stranger Things?",
+        "¿Qué detalle corresponde a {x}?",
+        "¿En qué contexto destaca {x}?"
+      ],
+      "rows": [
+        [
+          "Hawkins",
+          "Localidad ficticia",
+          "Está en Indiana",
+          "Es el centro de los sucesos de las primeras temporadas"
+        ],
+        [
+          "Mundo del Revés",
+          "Dimensión paralela",
+          "Refleja una versión oscura de Hawkins",
+          "Will queda atrapado allí en la primera temporada"
+        ],
+        [
+          "Demogorgon",
+          "Criatura",
+          "Su cabeza se abre como una flor",
+          "Es la principal amenaza física de la primera temporada"
+        ],
+        [
+          "Azotamentes / Mind Flayer",
+          "Entidad del Mundo del Revés",
+          "Se representa como una enorme figura de humo con forma arácnida",
+          "Posee a Will en la segunda temporada"
+        ],
+        [
+          "Dart",
+          "Criatura",
+          "Empieza pareciendo un pequeño anfibio",
+          "Dustin lo esconde antes de descubrir su naturaleza"
+        ],
+        [
+          "Starcourt",
+          "Centro comercial",
+          "Alberga una base rusa secreta bajo tierra",
+          "Es un escenario central de la tercera temporada"
+        ],
+        [
+          "Scoops Ahoy",
+          "Heladería",
+          "Sus empleados llevan uniformes de marinero",
+          "Allí trabajan Steve y Robin"
+        ],
+        [
+          "Hellfire Club",
+          "Club escolar",
+          "Se dedica a Dungeons & Dragons",
+          "Eddie dirige sus partidas en la cuarta temporada"
+        ],
+        [
+          "Palace Arcade",
+          "Salón de videojuegos",
+          "Tiene máquinas como Dig Dug",
+          "Max destaca en los récords de sus máquinas"
+        ],
+        [
+          "Laboratorio de Hawkins",
+          "Instalación científica",
+          "Está asociado a experimentos con niños",
+          "Eleven escapa de allí al comienzo de la historia"
+        ],
+        [
+          "Castillo Byers",
+          "Refugio infantil",
+          "Es una construcción en el bosque",
+          "Está asociado a Will y su infancia"
+        ],
+        [
+          "Casa Creel",
+          "Vivienda",
+          "Tiene un reloj de pie relevante",
+          "Es investigada por el grupo durante la cuarta temporada"
+        ],
+        [
+          "Cerebro",
+          "Antena de radio",
+          "Fue construida por Dustin",
+          "Permite comunicarse con Suzie"
+        ],
+        [
+          "NINA",
+          "Proyecto de investigación",
+          "Utiliza experiencias y recuerdos de Eleven",
+          "Busca que Eleven recupere sus poderes"
+        ],
+        [
+          "Lenora Hills",
+          "Localidad ficticia",
+          "Se encuentra en California",
+          "Los Byers y Eleven viven allí en la cuarta temporada"
+        ],
+        [
+          "Surfer Boy Pizza",
+          "Pizzería",
+          "Su vehículo de reparto es una furgoneta",
+          "Argyle conduce para esta empresa"
+        ],
+        [
+          "Rink-O-Mania",
+          "Pista de patinaje",
+          "Es un lugar de ocio en California",
+          "Eleven vive un conflicto con Angela allí"
+        ],
+        [
+          "Familia Ives",
+          "Familia",
+          "Terry es la madre biológica de Eleven",
+          "El pasado de Eleven conduce a investigar a Terry"
+        ],
+        [
+          "Snow Ball",
+          "Baile escolar",
+          "Se celebra en la escuela de Hawkins",
+          "Cierra la segunda temporada con una reunión de los chicos"
+        ],
+        [
+          "Dungeons & Dragons",
+          "Juego de rol",
+          "Se juega con personajes, dados y un director de partida",
+          "Da nombres que los chicos usan para describir las amenazas"
+        ]
+      ],
+      "context": "Se describen elementos de ficción de las temporadas 1–4."
+    }
+  ],
+  "sources": [
+    "https://www.netflix.com/tudum/stranger-things",
+    "https://www.netflix.com/tudum/articles/stranger-things-season-4-recap"
+  ],
+  "questions": []
+}

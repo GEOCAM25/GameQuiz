@@ -1,0 +1,331 @@
+{
+  "id": "chile",
+  "groups": [
+    {
+      "stems": [
+        "¿Cuál es la capital regional de {x}?",
+        "¿Qué número romano o sigla se asoció tradicionalmente a {x}?",
+        "¿Qué lugar o rasgo está en {x}?"
+      ],
+      "rows": [
+        [
+          "Arica y Parinacota",
+          "Arica",
+          "XV",
+          "Lago Chungará"
+        ],
+        [
+          "Tarapacá",
+          "Iquique",
+          "I",
+          "Humberstone"
+        ],
+        [
+          "Antofagasta",
+          "Antofagasta",
+          "II",
+          "Valle de la Luna de San Pedro"
+        ],
+        [
+          "Atacama",
+          "Copiapó",
+          "III",
+          "Bahía Inglesa"
+        ],
+        [
+          "Coquimbo",
+          "La Serena",
+          "IV",
+          "Valle del Elqui"
+        ],
+        [
+          "Valparaíso",
+          "Valparaíso",
+          "V",
+          "Rapa Nui"
+        ],
+        [
+          "Metropolitana de Santiago",
+          "Santiago",
+          "RM",
+          "Cajón del Maipo"
+        ],
+        [
+          "Libertador General Bernardo O'Higgins",
+          "Rancagua",
+          "VI",
+          "Sewell"
+        ],
+        [
+          "Maule",
+          "Talca",
+          "VII",
+          "Reserva Nacional Radal Siete Tazas"
+        ],
+        [
+          "Ñuble",
+          "Chillán",
+          "XVI",
+          "Nevados de Chillán"
+        ],
+        [
+          "Biobío",
+          "Concepción",
+          "VIII",
+          "Desembocadura del río Biobío"
+        ],
+        [
+          "La Araucanía",
+          "Temuco",
+          "IX",
+          "Parque Nacional Conguillío"
+        ],
+        [
+          "Los Ríos",
+          "Valdivia",
+          "XIV",
+          "Lago Ranco"
+        ],
+        [
+          "Los Lagos",
+          "Puerto Montt",
+          "X",
+          "Archipiélago de Chiloé"
+        ],
+        [
+          "Aysén del General Carlos Ibáñez del Campo",
+          "Coyhaique",
+          "XI",
+          "Laguna San Rafael"
+        ],
+        [
+          "Magallanes y de la Antártica Chilena",
+          "Punta Arenas",
+          "XII",
+          "Torres del Paine"
+        ]
+      ],
+      "context": "La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones."
+    },
+    {
+      "stems": [
+        "¿Qué ámbito se asocia especialmente con {x}?",
+        "¿Qué dato identifica a {x}?",
+        "¿Qué otro dato corresponde a {x}?"
+      ],
+      "rows": [
+        [
+          "Gabriela Mistral",
+          "Poesía",
+          "Premio Nobel de Literatura de 1945",
+          "Se llamaba Lucila Godoy Alcayaga"
+        ],
+        [
+          "Pablo Neruda",
+          "Poesía",
+          "Premio Nobel de Literatura de 1971",
+          "Autor de Canto general"
+        ],
+        [
+          "Violeta Parra",
+          "Música y artes visuales",
+          "Autora de Gracias a la vida",
+          "Desarrolló la recopilación del folclore chileno"
+        ],
+        [
+          "Víctor Jara",
+          "Música y teatro",
+          "Autor de Te recuerdo Amanda",
+          "Fue director teatral"
+        ],
+        [
+          "Nicanor Parra",
+          "Poesía",
+          "Autor de Poemas y antipoemas",
+          "Desarrolló la antipoesía"
+        ],
+        [
+          "Isabel Allende",
+          "Literatura narrativa",
+          "Autora de La casa de los espíritus",
+          "Publicó Eva Luna"
+        ],
+        [
+          "Roberto Matta",
+          "Pintura",
+          "Figura vinculada al surrealismo",
+          "Nació en Santiago en 1911"
+        ],
+        [
+          "Claudio Arrau",
+          "Música clásica",
+          "Pianista nacido en Chillán",
+          "Destacó interpretando a Beethoven"
+        ],
+        [
+          "Margot Loyola",
+          "Folclore",
+          "Investigadora y maestra de danzas tradicionales",
+          "Recibió el Premio Nacional de Artes Musicales en 1994"
+        ],
+        [
+          "Arturo Prat",
+          "Historia naval",
+          "Capitán de la Esmeralda en 1879",
+          "Murió en el combate naval de Iquique"
+        ],
+        [
+          "Bernardo O'Higgins",
+          "Independencia",
+          "Fue Director Supremo de Chile",
+          "Su padre fue Ambrosio O'Higgins"
+        ],
+        [
+          "José Miguel Carrera",
+          "Independencia",
+          "Gobernó durante la Patria Vieja",
+          "Se asocia con la primera bandera nacional"
+        ],
+        [
+          "Manuel Rodríguez",
+          "Independencia",
+          "Destacó como guerrillero y organizador",
+          "Murió en Tiltil en 1818"
+        ],
+        [
+          "Pedro de Valdivia",
+          "Conquista española",
+          "Fundó Santiago en 1541",
+          "Murió tras la batalla de Tucapel"
+        ],
+        [
+          "Lautaro",
+          "Historia mapuche",
+          "Lideró fuerzas mapuches contra los españoles",
+          "Se asocia con la victoria de Tucapel"
+        ],
+        [
+          "Diego Portales",
+          "Historia política",
+          "Ministro influyente en la década de 1830",
+          "Murió durante el motín de Quillota"
+        ],
+        [
+          "Andrés Bello",
+          "Educación y derecho",
+          "Primer rector de la Universidad de Chile",
+          "Participó en la redacción del Código Civil chileno"
+        ],
+        [
+          "Ignacio Domeyko",
+          "Ciencia y educación",
+          "Mineralogista de origen polaco",
+          "Fue rector de la Universidad de Chile"
+        ],
+        [
+          "Eloísa Díaz",
+          "Medicina",
+          "Primera médica titulada de Chile",
+          "Obtuvo su título en 1887"
+        ],
+        [
+          "Amanda Labarca",
+          "Educación",
+          "Educadora y defensora de derechos de las mujeres",
+          "Fundó el Círculo de Lectura de Señoras"
+        ],
+        [
+          "Luis Alberto Heiremans",
+          "Teatro y medicina",
+          "Autor de El tony chico",
+          "Fue médico además de dramaturgo"
+        ],
+        [
+          "Alejandro Jodorowsky",
+          "Cine y artes escénicas",
+          "Dirigió La montaña sagrada",
+          "Nació en Tocopilla"
+        ],
+        [
+          "Raúl Ruiz",
+          "Cine",
+          "Dirigió Tres tristes tigres",
+          "Desarrolló buena parte de su carrera en Francia"
+        ],
+        [
+          "Patricio Guzmán",
+          "Cine documental",
+          "Dirigió La batalla de Chile",
+          "Dirigió Nostalgia de la luz"
+        ],
+        [
+          "Elisa Zulueta",
+          "Teatro",
+          "Escribió y dirigió Gladys",
+          "Es actriz y dramaturga"
+        ],
+        [
+          "Marcelo Ríos",
+          "Tenis",
+          "Fue número uno del ranking ATP en 1998",
+          "Recibió el apodo de Chino"
+        ],
+        [
+          "Nicolás Massú",
+          "Tenis",
+          "Ganó dos oros olímpicos en Atenas 2004",
+          "Nació en Viña del Mar"
+        ],
+        [
+          "Fernando González",
+          "Tenis",
+          "Ganó plata individual en Pekín 2008",
+          "Ganó oro de dobles con Massú en 2004"
+        ],
+        [
+          "Marlene Ahrens",
+          "Atletismo",
+          "Ganó plata olímpica en Melbourne 1956",
+          "Compitió en lanzamiento de jabalina"
+        ],
+        [
+          "Tomás González",
+          "Gimnasia artística",
+          "Fue finalista olímpico en Londres 2012",
+          "Destacó en suelo y salto"
+        ],
+        [
+          "Christiane Endler",
+          "Fútbol",
+          "Es arquera",
+          "Ganó The Best de porteras de 2021"
+        ],
+        [
+          "Alexis Sánchez",
+          "Fútbol",
+          "Nació en Tocopilla",
+          "Anotó el penal decisivo de la Copa América 2015"
+        ],
+        [
+          "Alberto Hurtado",
+          "Acción social",
+          "Fundó el Hogar de Cristo",
+          "Fue sacerdote jesuita"
+        ],
+        [
+          "Manuel Rojas",
+          "Literatura narrativa",
+          "Autor de Hijo de ladrón",
+          "Recibió el Premio Nacional de Literatura en 1957"
+        ]
+      ],
+      "context": "Se incluyen hitos históricos y culturales; no cargos ni rankings actuales."
+    }
+  ],
+  "sources": [
+    "https://www.bcn.cl/siit/nuestropais/",
+    "https://www.memoriachilena.gob.cl/",
+    "https://www.nobelprize.org/prizes/literature/1945/mistral/facts/"
+  ],
+  "questions": []
+}

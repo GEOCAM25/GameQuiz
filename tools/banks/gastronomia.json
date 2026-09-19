@@ -1,0 +1,348 @@
+{
+  "id": "gastronomia",
+  "groups": [
+    {
+      "stems": [
+        "¿Con qué tradición culinaria se asocia especialmente {x}?",
+        "¿Qué ingrediente es característico de {x}?",
+        "¿Qué técnica o presentación caracteriza a {x}?"
+      ],
+      "rows": [
+        [
+          "empanada de pino chilena",
+          "Chile",
+          "Carne y cebolla",
+          "Masa rellena y horneada o frita"
+        ],
+        [
+          "pastel de choclo",
+          "Chile",
+          "Maíz tierno",
+          "Cubierta de maíz gratinada sobre un relleno"
+        ],
+        [
+          "humita chilena",
+          "Chile",
+          "Choclo molido",
+          "Pasta de maíz cocida dentro de sus hojas"
+        ],
+        [
+          "curanto chilote",
+          "Chile",
+          "Mariscos, carnes y papas",
+          "Cocción tradicional en hoyo con piedras calientes"
+        ],
+        [
+          "porotos granados",
+          "Chile",
+          "Porotos frescos y zapallo",
+          "Guiso de legumbres de verano"
+        ],
+        [
+          "charquicán chileno",
+          "Chile",
+          "Papas y zapallo",
+          "Guiso de verduras parcialmente molidas"
+        ],
+        [
+          "mote con huesillos",
+          "Chile",
+          "Trigo mote y duraznos deshidratados",
+          "Bebida dulce fría con granos y fruta"
+        ],
+        [
+          "sopaipilla chilena con zapallo",
+          "Chile",
+          "Zapallo en la masa",
+          "Disco de masa frito"
+        ],
+        [
+          "cazuela de vacuno chilena",
+          "Chile",
+          "Vacuno y verduras",
+          "Sopa con trozos grandes de carne y vegetales"
+        ],
+        [
+          "completo italiano",
+          "Chile",
+          "Palta, tomate y mayonesa",
+          "Pan alargado con vienesa y coberturas"
+        ],
+        [
+          "ceviche peruano",
+          "Perú",
+          "Pescado y cítricos",
+          "Pescado crudo marinado en jugo ácido"
+        ],
+        [
+          "lomo saltado",
+          "Perú",
+          "Vacuno, cebolla y tomate",
+          "Salteado a fuego fuerte"
+        ],
+        [
+          "causa limeña",
+          "Perú",
+          "Papa amarilla y ají amarillo",
+          "Capas frías de papa y relleno"
+        ],
+        [
+          "ají de gallina",
+          "Perú",
+          "Ave y ají amarillo",
+          "Ave deshilachada en una salsa cremosa"
+        ],
+        [
+          "feijoada brasileña",
+          "Brasil",
+          "Porotos negros y cerdo",
+          "Guiso prolongado de legumbres y carnes"
+        ],
+        [
+          "pão de queijo",
+          "Brasil",
+          "Almidón de mandioca y queso",
+          "Pequeños panes horneados"
+        ],
+        [
+          "acarajé",
+          "Brasil",
+          "Poroto carita",
+          "Buñuelo frito tradicionalmente en aceite de dendê"
+        ],
+        [
+          "asado rioplatense",
+          "Argentina y Uruguay",
+          "Carne de vacuno",
+          "Cocción lenta sobre brasas"
+        ],
+        [
+          "chivito uruguayo",
+          "Uruguay",
+          "Filete de vacuno",
+          "Sándwich abundante con carne y acompañamientos"
+        ],
+        [
+          "arepa",
+          "Venezuela y Colombia",
+          "Harina de maíz",
+          "Disco de masa asado o frito"
+        ],
+        [
+          "bandeja paisa",
+          "Colombia",
+          "Porotos, arroz y chicharrón",
+          "Plato abundante con varios componentes separados"
+        ],
+        [
+          "taco al pastor",
+          "México",
+          "Cerdo marinado",
+          "Carne de un trompo servida en tortilla"
+        ],
+        [
+          "guacamole",
+          "México",
+          "Palta o aguacate",
+          "Preparación molida y mezclada en frío"
+        ],
+        [
+          "tamal mexicano",
+          "México",
+          "Masa de maíz",
+          "Relleno envuelto y cocido al vapor"
+        ],
+        [
+          "mole poblano",
+          "México",
+          "Chiles y especias",
+          "Salsa compleja molida y cocida"
+        ],
+        [
+          "paella valenciana tradicional",
+          "España",
+          "Arroz, conejo y pollo",
+          "Cocción del arroz en recipiente ancho y poco profundo"
+        ],
+        [
+          "gazpacho andaluz",
+          "España",
+          "Tomate y otras hortalizas",
+          "Sopa fría triturada"
+        ],
+        [
+          "tortilla española clásica",
+          "España",
+          "Papa y huevo",
+          "Mezcla cuajada en sartén"
+        ],
+        [
+          "risotto",
+          "Italia",
+          "Arroz y caldo",
+          "Adición gradual de caldo durante la cocción"
+        ],
+        [
+          "pizza napolitana",
+          "Italia",
+          "Masa, tomate y mozzarella",
+          "Masa horneada a temperatura muy alta"
+        ],
+        [
+          "pesto genovés",
+          "Italia",
+          "Albahaca y piñones",
+          "Salsa triturada sin cocción prolongada"
+        ],
+        [
+          "tiramisú",
+          "Italia",
+          "Mascarpone y café",
+          "Postre en capas refrigerado"
+        ],
+        [
+          "ratatouille",
+          "Francia",
+          "Berenjena y zapallito italiano",
+          "Verduras cocinadas en un guiso"
+        ],
+        [
+          "crème brûlée",
+          "Francia",
+          "Crema y yemas",
+          "Crema cocida con superficie de azúcar caramelizada"
+        ],
+        [
+          "quiche lorraine",
+          "Francia",
+          "Huevo, crema y tocino",
+          "Tarta salada horneada"
+        ],
+        [
+          "fondue de queso",
+          "Suiza",
+          "Quesos fundidos",
+          "Alimentos sumergidos en una mezcla caliente"
+        ],
+        [
+          "schnitzel vienés tradicional",
+          "Austria",
+          "Carne de ternera",
+          "Escalopa apanada y frita"
+        ],
+        [
+          "sushi",
+          "Japón",
+          "Arroz aliñado con vinagre",
+          "Arroz combinado con distintas coberturas o rellenos"
+        ],
+        [
+          "tempura",
+          "Japón",
+          "Verduras o mariscos",
+          "Rebozado ligero y fritura rápida"
+        ],
+        [
+          "ramen",
+          "Japón",
+          "Fideos de trigo",
+          "Sopa con fideos y coberturas"
+        ],
+        [
+          "kimchi de col",
+          "Corea",
+          "Col y ají",
+          "Fermentación de hortalizas"
+        ],
+        [
+          "bibimbap",
+          "Corea",
+          "Arroz y verduras",
+          "Ingredientes dispuestos sobre arroz y mezclados al comer"
+        ],
+        [
+          "pato pekinés",
+          "China",
+          "Pato",
+          "Asado con piel crujiente"
+        ],
+        [
+          "dim sum",
+          "China",
+          "Masas y rellenos variados",
+          "Pequeñas porciones, muchas cocidas al vapor"
+        ],
+        [
+          "pad thai",
+          "Tailandia",
+          "Fideos de arroz",
+          "Salteado con salsa y acompañamientos"
+        ],
+        [
+          "pho",
+          "Vietnam",
+          "Fideos de arroz y caldo",
+          "Sopa aromática servida con hierbas"
+        ],
+        [
+          "dal",
+          "India",
+          "Lentejas u otras legumbres partidas",
+          "Legumbres cocidas con especias"
+        ],
+        [
+          "naan",
+          "India y Asia central",
+          "Harina de trigo",
+          "Pan plano, tradicionalmente cocido en tandoor"
+        ],
+        [
+          "hummus",
+          "Levante mediterráneo",
+          "Garbanzos y tahini",
+          "Puré condimentado servido como dip"
+        ],
+        [
+          "falafel",
+          "Oriente Medio",
+          "Garbanzos o habas",
+          "Bolitas o croquetas fritas de legumbres"
+        ]
+      ],
+      "context": "Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "excludeOptionsByRow": {
+        "arepa": {
+          "0": [
+            "Colombia"
+          ]
+        },
+        "bandeja paisa": {
+          "0": [
+            "Venezuela y Colombia"
+          ]
+        },
+        "chivito uruguayo": {
+          "0": [
+            "Argentina y Uruguay"
+          ]
+        },
+        "dal": {
+          "0": [
+            "India y Asia central"
+          ]
+        },
+        "naan": {
+          "0": [
+            "India"
+          ]
+        }
+      }
+    }
+  ],
+  "sources": [
+    "https://chile.travel/blog/",
+    "https://www.peru.travel/es/gastronomia",
+    "https://ich.unesco.org/en/RL/art-of-neapolitan-pizzaiuolo-00722"
+  ],
+  "questions": []
+}
