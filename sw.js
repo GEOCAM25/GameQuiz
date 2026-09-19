@@ -1,20 +1,11 @@
-// GAME QUIZ service worker — cache estático, red para Supabase
-const CACHE = "gamequiz-v62";
-const ASSETS = ["./","./index.html","./css/style.css","./js/config.js","./js/audio.js","./js/fun.js","./js/crossword.js","./js/karsync.js","./js/karaoke.js","./js/impostor.js","./js/draw.js","./js/mojate.js","./js/mundo.js","./js/vendor/three.min.js","./js/tv.js","./js/theme.js","./js/app.js","./manifest.json"];
-self.addEventListener("install", e => {
-  e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)));
-  self.skipWaiting();
-});
-self.addEventListener("activate", e => {
-  e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== CACHE).map(k => caches.delete(k)))));
-  self.clients.claim();
-});
-self.addEventListener("fetch", e => {
-  const u = new URL(e.request.url);
-  if (u.origin !== location.origin) return;            // Supabase y fuentes: directo a la red
-  if (u.pathname.includes("/data/")) {                  // preguntas: red primero, cache de respaldo
-    e.respondWith(fetch(e.request).then(r => { const cl = r.clone(); caches.open(CACHE).then(c => c.put(e.request, cl)); return r; }).catch(() => caches.match(e.request)));
-    return;
-  }
-  e.respondWith(caches.match(e.request).then(r => r || fetch(e.request)));
+// V4: same-origin assets only; room APIs and external media always use the network.
+const CACHE='gamequiz-party-v4-20260919';
+const ASSETS=["./", "./index.html", "./classic.html", "./manifest.json", "arcade/app.mjs", "arcade/audio.mjs", "arcade/catalog.mjs", "arcade/character-stage.mjs", "arcade/characters.mjs", "arcade/chat.mjs", "arcade/classic.css", "arcade/crossword-club.mjs", "arcade/engine.mjs", "arcade/game-views.mjs", "arcade/golf.mjs", "arcade/impostor.mjs", "arcade/karaoke-core.mjs", "arcade/karaoke.mjs", "arcade/party-games.mjs", "arcade/party-views.mjs", "arcade/pass-impostor.mjs", "arcade/reference/animales.svg", "arcade/reference/anime.svg", "arcade/reference/banderas.svg", "arcade/reference/batman.svg", "arcade/reference/chile.svg", "arcade/reference/cine.svg", "arcade/reference/comerciales.svg", "arcade/reference/cuerpo.svg", "arcade/reference/curiosos.svg", "arcade/reference/dc.svg", "arcade/reference/deportes.svg", "arcade/reference/disney.svg", "arcade/reference/dragonball.svg", "arcade/reference/english.svg", "arcade/reference/espacio.svg", "arcade/reference/famosos.svg", "arcade/reference/farandula.svg", "arcade/reference/futbol.svg", "arcade/reference/gastronomia.svg", "arcade/reference/geek.svg", "arcade/reference/greys.svg", "arcade/reference/harrypotter.svg", "arcade/reference/hbo.svg", "arcade/reference/histchile.svg", "arcade/reference/historia.svg", "arcade/reference/learn.svg", "arcade/reference/letras.svg", "arcade/reference/lotr.svg", "arcade/reference/marvel.svg", "arcade/reference/memes.svg", "arcade/reference/netflix.svg", "arcade/reference/onepiece.svg", "arcade/reference/pixar.svg", "arcade/reference/pop.svg", "arcade/reference/prehistoria.svg", "arcade/reference/rapidos.svg", "arcade/reference/shrek.svg", "arcade/reference/simpsons.svg", "arcade/reference/spiderman.svg", "arcade/reference/starwars.svg", "arcade/reference/stranger.svg", "arcade/reference/tecnologia.svg", "arcade/reference/telenovelas.svg", "arcade/reference/terror.svg", "arcade/reference/trivia.svg", "arcade/reference/tronos.svg", "arcade/scene.mjs", "arcade/style.css", "arcade/ui.mjs", "js/app.js", "js/audio.js", "js/config.js", "js/crossword.js", "js/draw.js", "js/fun.js", "js/impostor.js", "js/karaoke.js", "js/karsync.js", "js/mojate.js", "js/mundo.js", "js/theme.js", "js/tv.js", "js/vendor/three.min.js", "css/style.css", "data/animales.json", "data/anime.json", "data/banderas.json", "data/batman.json", "data/chile.json", "data/cine.json", "data/comerciales.json", "data/cruci-chile.json", "data/cruci.json", "data/cuerpo.json", "data/curiosos.json", "data/dc.json", "data/deportes.json", "data/disney.json", "data/dragonball.json", "data/draw.json", "data/espacio.json", "data/famosos.json", "data/farandula.json", "data/futbol.json", "data/gastronomia.json", "data/geek.json", "data/greys.json", "data/harrypotter.json", "data/hbo.json", "data/histchile.json", "data/historia.json", "data/impostor.json", "data/karaoke.json", "data/letras.json", "data/lotr.json", "data/marvel.json", "data/memes.json", "data/mojate.json", "data/netflix.json", "data/onepiece.json", "data/palabras.json", "data/pixar.json", "data/pop.json", "data/prehistoria.json", "data/rapidos.json", "data/shrek.json", "data/simpsons.json", "data/spiderman.json", "data/starwars.json", "data/stranger.json", "data/tecnologia.json", "data/telenovelas.json", "data/terror.json", "data/trivia.json", "data/tronos.json", "data/tv.json", "icons/icon-192.png", "icons/icon-512.png"];
+self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)).then(()=>self.skipWaiting()));});
+self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('gamequiz-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()));});
+self.addEventListener('fetch',e=>{
+ const u=new URL(e.request.url);
+ if(e.request.method!=='GET'||u.origin!==location.origin||u.pathname.includes('/api/'))return;
+ const normalized=new Request(u.origin+u.pathname);
+ e.respondWith(fetch(e.request).then(r=>{if(r.ok){const copy=r.clone();e.waitUntil(caches.open(CACHE).then(c=>c.put(normalized,copy)));}return r;}).catch(async()=>{const cached=await caches.match(normalized);return cached||new Response('Recurso no disponible sin conexión.',{status:503});}));
 });
