@@ -1,0 +1,10 @@
+// Local effects only. No soundtrack, MP3 playlist, network event or background loop.
+let ctx,bus,volume=.45,effects=true;
+try{const p=JSON.parse(localStorage.getItem('gq4-audio'));if(p){volume=Math.max(0,Math.min(1,Number(p.volume)||0));effects=p.effects!==false;}}catch{}
+const save=()=>{try{localStorage.setItem('gq4-audio',JSON.stringify({volume,effects}));}catch{}};
+async function unlock(){try{if(!ctx){ctx=new(window.AudioContext||window.webkitAudioContext)();bus=ctx.createGain();bus.gain.value=effects?volume*.3:0;bus.connect(ctx.destination);}await ctx.resume();}catch{}}
+function note(n,t,d,v=.32,type='sine'){if(!ctx||!bus)return;const o=ctx.createOscillator(),g=ctx.createGain();o.type=type;o.frequency.value=440*2**((n-69)/12);g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(v,t+.008);g.gain.exponentialRampToValueAtTime(.001,t+d);o.connect(g).connect(bus);o.start(t);o.stop(t+d+.025);o.onended=()=>{o.disconnect();g.disconnect();};}
+function sfx(kind='tap'){if(!effects||!ctx||ctx.state!=='running')return;const tunes={tap:[79],count:[67],go:[72,79],correct:[72,76,79,84],wrong:[52,48],join:[72,79],stroke:[46,58],hole:[72,79,84,88],win:[60,64,67,72,76,79,84,88],finish:[72,76,79]};const melody=tunes[kind]||tunes.tap;melody.forEach((n,i)=>{const t=ctx.currentTime+i*(kind==='win'?.115:.065);note(n,t,kind==='tap'?.055:kind==='win'?.42:.18,.3,kind==='stroke'?'triangle':'sine');if(kind==='win')note(n-12,t,.45,.13,'triangle');});}
+document.addEventListener('visibilitychange',()=>{if(!ctx)return;if(document.hidden)ctx.suspend();else ctx.resume().catch(()=>{});});
+export const Audio={unlock,sfx,setMusic(){},get enabled(){return false;},get effects(){return effects;},get volume(){return volume;},setEffects(v){effects=!!v;if(bus)bus.gain.setTargetAtTime(effects?volume*.3:0,ctx.currentTime,.015);save();},setScene(){},setVolume(v){volume=Math.min(1,Math.max(0,+v||0));if(bus)bus.gain.setTargetAtTime(effects?volume*.3:0,ctx.currentTime,.04);save();},stop(){}};
+window.GameAudio=Audio;

@@ -1,0 +1,9 @@
+export const COLORS=['#72dbb5','#a69afa','#ffac82','#76c7f2','#f0cf62','#f594bc','#e0e6e8','#779bdf'];
+export const OUTFITS=['Sudadera','Explorador','Astronauta','Deportista','Gala','Impermeable'];
+export const EMOTES=['dance','wave','jump','spin'];
+const names=['Zorro Cometa','Panda Pixel','Tigre Solar','Rana Menta','Koala Nube','León Groove','Pulpo Disco','Búho Lunar','Unicornio Nova','Robot Bit','Conejo Flash','Pingüino Polo','Tortuga Turbo','Mariposa Brisa','Delfín Neón','Dino Lima','Abeja Beat','Lobo Órbita','Gato Jazz','Oso Miel','Ajolote Coral','Capibara Mate','Quokka Chispa','Mapache Loop','Dragón Lila','Yeti Copito','Monstruo Kiwi','Fantasma Pop','Golem Cobre','Cactus Coco','Seta Momo','Alien Zeta','Nutria Río','Flamenco Rosa','Erizo Púas','Camaleón Prisma','Pudú Bosque','Huemul Sur','Cóndor Viento','Pingüino Humboldt'];
+const icons=['🦊','🐼','🐯','🐸','🐨','🦁','🐙','🦉','🦄','🤖','🐰','🐧','🐢','🦋','🐬','🦖','🐝','🐺','🐱','🐻','🦎','🦫','🐹','🦝','🐲','⛄','👾','👻','🗿','🌵','🍄','👽','🦦','🦩','🦔','🦎','🦌','🦌','🦅','🐧'];
+export const CHARACTERS=names.map((name,i)=>({id:'c'+i,name,emoji:icons[i],shape:i%10,variant:Math.floor(i/10),color:COLORS[i%COLORS.length]}));
+export function sanitizeLook(value={}){value=value&&typeof value==='object'?value:{};return {character:CHARACTERS.some(c=>c.id===value.character)?value.character:'c0',color:COLORS.includes(value.color)?value.color:COLORS[0],outfit:OUTFITS.includes(value.outfit)?value.outfit:OUTFITS[0],accessory:['none','glasses','crown','headphones'].includes(value.accessory)?value.accessory:'none'};}
+export function reserveLook(players,look){const v=sanitizeLook(look),used=new Set(players.map(p=>p.look?.character));if(used.has(v.character))v.character=CHARACTERS.find(c=>!used.has(c.id))?.id||v.character;return v;}
+export const characterFor=look=>CHARACTERS.find(c=>c.id===look?.character)||CHARACTERS[0];
