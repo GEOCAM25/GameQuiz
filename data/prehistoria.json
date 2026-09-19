@@ -1,0 +1,2023 @@
+{
+  "cat": "prehistoria",
+  "name": "Dinosaurios y prehistoria",
+  "emoji": "🦕",
+  "edition": "4.0",
+  "sources": [
+    "https://www.nhm.ac.uk/discover/dino-directory.html",
+    "https://ucmp.berkeley.edu/diapsids/dinosaur.html",
+    "https://www.uchile.cl/noticias/182035/stegouros-el-dinosaurio-acorazado-que-habito-chile"
+  ],
+  "questions": [
+    {
+      "q": "¿En qué período vivió Tyrannosaurus rex?",
+      "o": [
+        "Jurásico tardío",
+        "Cretácico tardío",
+        "Pleistoceno",
+        "Triásico tardío"
+      ],
+      "c": 1,
+      "explanation": "Tyrannosaurus rex: Cretácico tardío. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-20183f420a69",
+      "img": "arcade/reference/prehistoria.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Tyrannosaurus rex?",
+      "o": [
+        "Estados Unidos",
+        "Países Bajos",
+        "Reino Unido",
+        "Sudáfrica"
+      ],
+      "c": 0,
+      "explanation": "Tyrannosaurus rex: Estados Unidos. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-3c5b3de10ef5"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Tyrannosaurus rex?",
+      "o": [
+        "Terópodo con un cuerno nasal prominente",
+        "Dinosaurio de bóveda craneal muy engrosada",
+        "Terópodo de gran cráneo y dos dedos en cada mano",
+        "Titanosaurio gigante de la Patagonia argentina"
+      ],
+      "c": 2,
+      "explanation": "Tyrannosaurus rex: Terópodo de gran cráneo y dos dedos en cada mano. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-c975891b2d8f"
+    },
+    {
+      "q": "¿En qué período vivió Triceratops?",
+      "o": [
+        "Pérmico temprano",
+        "Cretácico temprano",
+        "Triásico tardío",
+        "Cretácico tardío"
+      ],
+      "c": 3,
+      "explanation": "Triceratops: Cretácico tardío. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-0f3a5a77a088"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Triceratops?",
+      "o": [
+        "Tanzania",
+        "Bélgica",
+        "Sudáfrica",
+        "Estados Unidos"
+      ],
+      "c": 3,
+      "explanation": "Triceratops: Estados Unidos. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-34192dc796d2"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Triceratops?",
+      "o": [
+        "Enorme terópodo descubierto en Argentina",
+        "Terópodo temprano de cuerpo esbelto",
+        "Ceratopsio con tres cuernos faciales y gola",
+        "Saurópodo de patas delanteras muy largas"
+      ],
+      "c": 2,
+      "explanation": "Triceratops: Ceratopsio con tres cuernos faciales y gola. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-5f7df0c360c5",
+      "img": "arcade/reference/prehistoria.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿En qué período vivió Stegosaurus?",
+      "o": [
+        "Pérmico temprano",
+        "Jurásico tardío",
+        "Cretácico tardío",
+        "Pleistoceno y Holoceno temprano"
+      ],
+      "c": 1,
+      "explanation": "Stegosaurus: Jurásico tardío. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-3424fe5f0d61"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Stegosaurus?",
+      "o": [
+        "Estados Unidos",
+        "China",
+        "Alemania",
+        "Chile"
+      ],
+      "c": 0,
+      "explanation": "Stegosaurus: Estados Unidos. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-54bc66a766ad"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Stegosaurus?",
+      "o": [
+        "Hadrosaurio con cresta semejante a un casco",
+        "Dinosaurio acorazado con maza caudal",
+        "Dinosaurio con placas dorsales y púas caudales",
+        "Proboscídeo adaptado al frío con pelaje espeso"
+      ],
+      "c": 2,
+      "explanation": "Stegosaurus: Dinosaurio con placas dorsales y púas caudales. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-f5c194532fe0"
+    },
+    {
+      "q": "¿En qué período vivió Brachiosaurus?",
+      "o": [
+        "Cretácico temprano",
+        "Devónico tardío",
+        "Pleistoceno y Holoceno temprano",
+        "Jurásico tardío"
+      ],
+      "c": 3,
+      "explanation": "Brachiosaurus: Jurásico tardío. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-753009c48b29"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Brachiosaurus?",
+      "o": [
+        "Estados Unidos",
+        "Tanzania",
+        "Antártida",
+        "Sudáfrica"
+      ],
+      "c": 0,
+      "explanation": "Brachiosaurus: Estados Unidos. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-f9262333e794",
+      "img": "arcade/reference/prehistoria.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Brachiosaurus?",
+      "o": [
+        "Saurópodo de patas delanteras muy largas",
+        "Terópodo con un cuerno nasal prominente",
+        "Hadrosaurio con larga cresta tubular",
+        "Espinosáurido con gran garra en la mano"
+      ],
+      "c": 0,
+      "explanation": "Brachiosaurus: Saurópodo de patas delanteras muy largas. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-b4b5d2337c8d"
+    },
+    {
+      "q": "¿En qué período vivió Diplodocus?",
+      "o": [
+        "Pleistoceno",
+        "Devónico tardío",
+        "Pleistoceno y Holoceno temprano",
+        "Jurásico tardío"
+      ],
+      "c": 3,
+      "explanation": "Diplodocus: Jurásico tardío. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-159151e5bae8"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Diplodocus?",
+      "o": [
+        "Canadá",
+        "Estados Unidos",
+        "Siberia (Rusia)",
+        "Mongolia"
+      ],
+      "c": 1,
+      "explanation": "Diplodocus: Estados Unidos. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-917694334f14"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Diplodocus?",
+      "o": [
+        "Saurópodo con larga cola semejante a un látigo",
+        "Ceratopsio temprano con pico parecido al de un loro",
+        "Sauropodomorfo temprano de cuello alargado",
+        "Enorme terópodo descubierto en Argentina"
+      ],
+      "c": 0,
+      "explanation": "Diplodocus: Saurópodo con larga cola semejante a un látigo. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-515af1d5ed79"
+    },
+    {
+      "q": "¿En qué período vivió Apatosaurus?",
+      "o": [
+        "Pleistoceno y Holoceno temprano",
+        "Devónico tardío",
+        "Jurásico tardío",
+        "Jurásico temprano"
+      ],
+      "c": 2,
+      "explanation": "Apatosaurus: Jurásico tardío. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-8f300225c5ef",
+      "img": "arcade/reference/prehistoria.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Apatosaurus?",
+      "o": [
+        "Chile",
+        "Estados Unidos",
+        "Países Bajos",
+        "Argentina"
+      ],
+      "c": 1,
+      "explanation": "Apatosaurus: Estados Unidos. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-3b91ab836617"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Apatosaurus?",
+      "o": [
+        "Ceratopsio temprano con pico parecido al de un loro",
+        "Ornitópodo con espolón en el pulgar",
+        "Saurópodo robusto de cuello largo",
+        "Terópodo con dos crestas craneales"
+      ],
+      "c": 2,
+      "explanation": "Apatosaurus: Saurópodo robusto de cuello largo. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-d8a0f9fa893e"
+    },
+    {
+      "q": "¿En qué período vivió Allosaurus?",
+      "o": [
+        "Jurásico temprano",
+        "Jurásico tardío",
+        "Devónico tardío",
+        "Cretácico tardío"
+      ],
+      "c": 1,
+      "explanation": "Allosaurus: Jurásico tardío. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-a66baf71209e"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Allosaurus?",
+      "o": [
+        "Sudáfrica",
+        "China",
+        "Estados Unidos",
+        "Reino Unido"
+      ],
+      "c": 2,
+      "explanation": "Allosaurus: Estados Unidos. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-2b875bb76125"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Allosaurus?",
+      "o": [
+        "Ceratopsio con tres cuernos faciales y gola",
+        "Pez placodermo con placas óseas en la cabeza",
+        "Dinosaurio acorazado con maza caudal",
+        "Gran terópodo jurásico con tres dedos manuales"
+      ],
+      "c": 3,
+      "explanation": "Allosaurus: Gran terópodo jurásico con tres dedos manuales. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-7e58e268c4ec",
+      "img": "arcade/reference/prehistoria.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿En qué período vivió Velociraptor?",
+      "o": [
+        "Triásico tardío",
+        "Jurásico temprano",
+        "Cretácico tardío",
+        "Pleistoceno y Holoceno temprano"
+      ],
+      "c": 2,
+      "explanation": "Velociraptor: Cretácico tardío. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-19ed1b33d564"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Velociraptor?",
+      "o": [
+        "Siberia (Rusia)",
+        "Mongolia",
+        "Países Bajos",
+        "Tanzania"
+      ],
+      "c": 1,
+      "explanation": "Velociraptor: Mongolia. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-25afcfe646dd"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Velociraptor?",
+      "o": [
+        "Dromeosáurido pequeño con garra curva en el segundo dedo del pie",
+        "Sinápsido dicinodonte con pico y colmillos",
+        "Saurópodo de cráneo alto y dientes robustos",
+        "Dinosaurio acorazado con maza caudal"
+      ],
+      "c": 0,
+      "explanation": "Velociraptor: Dromeosáurido pequeño con garra curva en el segundo dedo del pie. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-1bc3365edf8a"
+    },
+    {
+      "q": "¿En qué período vivió Deinonychus?",
+      "o": [
+        "Pérmico tardío y Triásico temprano",
+        "Pleistoceno",
+        "Cretácico temprano",
+        "Cretácico tardío"
+      ],
+      "c": 2,
+      "explanation": "Deinonychus: Cretácico temprano. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-5574f37b5c6f"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Deinonychus?",
+      "o": [
+        "Egipto",
+        "Alemania",
+        "Antártida",
+        "Estados Unidos"
+      ],
+      "c": 3,
+      "explanation": "Deinonychus: Estados Unidos. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-4780d76f4dc6",
+      "img": "arcade/reference/prehistoria.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Deinonychus?",
+      "o": [
+        "Terópodo con un cuerno nasal prominente",
+        "Dromeosáurido cuya anatomía ayudó a replantear la actividad de los dinosaurios",
+        "Saurópodo con altas espinas bifurcadas en el cuello",
+        "Dinosaurio chileno con combinación inusual de rasgos anatómicos"
+      ],
+      "c": 1,
+      "explanation": "Deinonychus: Dromeosáurido cuya anatomía ayudó a replantear la actividad de los dinosaurios. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-bcf32167561a"
+    },
+    {
+      "q": "¿En qué período vivió Ankylosaurus?",
+      "o": [
+        "Jurásico tardío",
+        "Cretácico tardío",
+        "Pérmico tardío y Triásico temprano",
+        "Devónico tardío"
+      ],
+      "c": 1,
+      "explanation": "Ankylosaurus: Cretácico tardío. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-5dee3a1d97aa"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Ankylosaurus?",
+      "o": [
+        "Estados Unidos",
+        "China",
+        "Antártida",
+        "Siberia (Rusia)"
+      ],
+      "c": 0,
+      "explanation": "Ankylosaurus: Estados Unidos. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-a2a12fd2f5c6"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Ankylosaurus?",
+      "o": [
+        "Dinosaurio acorazado con maza caudal",
+        "Dromeosáurido pequeño con garra curva en el segundo dedo del pie",
+        "Titanosaurio gigante conocido por restos incompletos",
+        "Saurópodo robusto de cuello largo"
+      ],
+      "c": 0,
+      "explanation": "Ankylosaurus: Dinosaurio acorazado con maza caudal. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-75539929dda5"
+    },
+    {
+      "q": "¿En qué período vivió Parasaurolophus?",
+      "o": [
+        "Jurásico temprano",
+        "Cretácico tardío",
+        "Pleistoceno y Holoceno temprano",
+        "Cretácico temprano"
+      ],
+      "c": 1,
+      "explanation": "Parasaurolophus: Cretácico tardío. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-c713dc930c02",
+      "img": "arcade/reference/prehistoria.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Parasaurolophus?",
+      "o": [
+        "Siberia (Rusia)",
+        "Sudáfrica",
+        "Países Bajos",
+        "Canadá"
+      ],
+      "c": 3,
+      "explanation": "Parasaurolophus: Canadá. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-a8289ba42895"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Parasaurolophus?",
+      "o": [
+        "Terópodo con un cuerno nasal prominente",
+        "Reptil marino escamoso; no era dinosaurio",
+        "Hadrosaurio con larga cresta tubular",
+        "Dromeosáurido pequeño con garra curva en el segundo dedo del pie"
+      ],
+      "c": 2,
+      "explanation": "Parasaurolophus: Hadrosaurio con larga cresta tubular. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-ebf104b6aac7"
+    },
+    {
+      "q": "¿En qué período vivió Corythosaurus?",
+      "o": [
+        "Cretácico tardío",
+        "Jurásico tardío",
+        "Pleistoceno y Holoceno temprano",
+        "Jurásico temprano"
+      ],
+      "c": 0,
+      "explanation": "Corythosaurus: Cretácico tardío. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-0be6763a9bec"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Corythosaurus?",
+      "o": [
+        "Canadá",
+        "Países Bajos",
+        "Mongolia",
+        "Bélgica"
+      ],
+      "c": 0,
+      "explanation": "Corythosaurus: Canadá. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-6228e5e62c30"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Corythosaurus?",
+      "o": [
+        "Hadrosaurio con cresta semejante a un casco",
+        "Pequeño terópodo europeo de cuerpo ligero",
+        "Reptil marino escamoso; no era dinosaurio",
+        "Terópodo antártico con cresta transversal"
+      ],
+      "c": 0,
+      "explanation": "Corythosaurus: Hadrosaurio con cresta semejante a un casco. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-2d6c318d33dd",
+      "img": "arcade/reference/prehistoria.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿En qué período vivió Edmontosaurus?",
+      "o": [
+        "Devónico tardío",
+        "Cretácico temprano",
+        "Cretácico tardío",
+        "Pleistoceno"
+      ],
+      "c": 2,
+      "explanation": "Edmontosaurus: Cretácico tardío. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-78fc209c5265"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Edmontosaurus?",
+      "o": [
+        "Canadá",
+        "Egipto",
+        "Tanzania",
+        "Chile"
+      ],
+      "c": 0,
+      "explanation": "Edmontosaurus: Canadá. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-3c971f3a3f35"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Edmontosaurus?",
+      "o": [
+        "Titanosaurio descrito a partir de fósiles patagónicos",
+        "Hadrosaurio sin gran cresta ósea hueca",
+        "Titanosaurio con osteodermos en la piel",
+        "Dinosaurio depredador temprano de Argentina"
+      ],
+      "c": 1,
+      "explanation": "Edmontosaurus: Hadrosaurio sin gran cresta ósea hueca. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-8fcf03d0b1cf"
+    },
+    {
+      "q": "¿En qué período vivió Iguanodon?",
+      "o": [
+        "Cretácico temprano",
+        "Jurásico temprano",
+        "Cretácico tardío",
+        "Triásico tardío"
+      ],
+      "c": 0,
+      "explanation": "Iguanodon: Cretácico temprano. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-7c7e0caa090f"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Iguanodon?",
+      "o": [
+        "Tanzania",
+        "Alemania",
+        "Bélgica",
+        "Egipto"
+      ],
+      "c": 2,
+      "explanation": "Iguanodon: Bélgica. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-334f511bf032",
+      "img": "arcade/reference/prehistoria.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Iguanodon?",
+      "o": [
+        "Ceratopsio temprano con pico parecido al de un loro",
+        "Ornitópodo con espolón en el pulgar",
+        "Abelisáurido con dos cuernos sobre los ojos",
+        "Espinosáurido con gran garra en la mano"
+      ],
+      "c": 1,
+      "explanation": "Iguanodon: Ornitópodo con espolón en el pulgar. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-ca73b7d60c34"
+    },
+    {
+      "q": "¿En qué período vivió Spinosaurus?",
+      "o": [
+        "Devónico tardío",
+        "Cretácico temprano",
+        "Cretácico tardío",
+        "Jurásico tardío"
+      ],
+      "c": 2,
+      "explanation": "Spinosaurus: Cretácico tardío. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-fb6f4fc042f0"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Spinosaurus?",
+      "o": [
+        "Alemania",
+        "Egipto",
+        "Reino Unido",
+        "Sudáfrica"
+      ],
+      "c": 1,
+      "explanation": "Spinosaurus: Egipto. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-6844a9541f86"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Spinosaurus?",
+      "o": [
+        "Terópodo con altas espinas dorsales y hocico alargado",
+        "Terópodo antártico con cresta transversal",
+        "Sauropodomorfo temprano de cuello alargado",
+        "Enorme terópodo descubierto en Argentina"
+      ],
+      "c": 0,
+      "explanation": "Spinosaurus: Terópodo con altas espinas dorsales y hocico alargado. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-2d6811b76b5d"
+    },
+    {
+      "q": "¿En qué período vivió Baryonyx?",
+      "o": [
+        "Cretácico tardío",
+        "Pleistoceno",
+        "Cretácico temprano",
+        "Jurásico tardío"
+      ],
+      "c": 2,
+      "explanation": "Baryonyx: Cretácico temprano. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-3351e6d1df7c",
+      "img": "arcade/reference/prehistoria.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Baryonyx?",
+      "o": [
+        "Reino Unido",
+        "Argentina",
+        "Mongolia",
+        "Sudáfrica"
+      ],
+      "c": 0,
+      "explanation": "Baryonyx: Reino Unido. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-6046a00f1aa0"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Baryonyx?",
+      "o": [
+        "Reptil marino de cuerpo parecido al de un delfín",
+        "Espinosáurido con gran garra en la mano",
+        "Saurópodo de cuello relativamente corto",
+        "Terópodo temprano de cuerpo esbelto"
+      ],
+      "c": 1,
+      "explanation": "Baryonyx: Espinosáurido con gran garra en la mano. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-3790ec5a0679"
+    },
+    {
+      "q": "¿En qué período vivió Carnotaurus?",
+      "o": [
+        "Pleistoceno y Holoceno temprano",
+        "Pérmico tardío y Triásico temprano",
+        "Cretácico temprano",
+        "Cretácico tardío"
+      ],
+      "c": 3,
+      "explanation": "Carnotaurus: Cretácico tardío. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-c3b759293a67"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Carnotaurus?",
+      "o": [
+        "Argentina",
+        "Bélgica",
+        "China",
+        "Países Bajos"
+      ],
+      "c": 0,
+      "explanation": "Carnotaurus: Argentina. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-3797dc487c7c"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Carnotaurus?",
+      "o": [
+        "Titanosaurio con osteodermos en la piel",
+        "Hadrosaurio con larga cresta tubular",
+        "Reptil marino escamoso; no era dinosaurio",
+        "Abelisáurido con dos cuernos sobre los ojos"
+      ],
+      "c": 3,
+      "explanation": "Carnotaurus: Abelisáurido con dos cuernos sobre los ojos. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-4e56e8826576",
+      "img": "arcade/reference/prehistoria.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿En qué período vivió Giganotosaurus?",
+      "o": [
+        "Triásico tardío",
+        "Jurásico tardío",
+        "Cretácico tardío",
+        "Pérmico temprano"
+      ],
+      "c": 2,
+      "explanation": "Giganotosaurus: Cretácico tardío. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-671c42c7092d"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Giganotosaurus?",
+      "o": [
+        "Egipto",
+        "Argentina",
+        "Tanzania",
+        "China"
+      ],
+      "c": 1,
+      "explanation": "Giganotosaurus: Argentina. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-1314a963ad57"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Giganotosaurus?",
+      "o": [
+        "Titanosaurio gigante de la Patagonia argentina",
+        "Dromeosáurido pequeño con garra curva en el segundo dedo del pie",
+        "Enorme terópodo descubierto en Argentina",
+        "Dinosaurio acorazado chileno con arma caudal aplanada"
+      ],
+      "c": 2,
+      "explanation": "Giganotosaurus: Enorme terópodo descubierto en Argentina. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-7449e92d929e"
+    },
+    {
+      "q": "¿En qué período vivió Argentinosaurus?",
+      "o": [
+        "Cretácico tardío",
+        "Pleistoceno y Holoceno temprano",
+        "Triásico tardío",
+        "Jurásico temprano"
+      ],
+      "c": 0,
+      "explanation": "Argentinosaurus: Cretácico tardío. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-bfeb5bb58aff"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Argentinosaurus?",
+      "o": [
+        "Argentina",
+        "Tanzania",
+        "China",
+        "Mongolia"
+      ],
+      "c": 0,
+      "explanation": "Argentinosaurus: Argentina. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-6f5372b79651",
+      "img": "arcade/reference/prehistoria.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Argentinosaurus?",
+      "o": [
+        "Dinosaurio depredador temprano de Argentina",
+        "Titanosaurio gigante conocido por restos incompletos",
+        "Dromeosáurido cuya anatomía ayudó a replantear la actividad de los dinosaurios",
+        "Titanosaurio descrito a partir de fósiles patagónicos"
+      ],
+      "c": 1,
+      "explanation": "Argentinosaurus: Titanosaurio gigante conocido por restos incompletos. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-6c99f9d7d3db"
+    },
+    {
+      "q": "¿En qué período vivió Dreadnoughtus?",
+      "o": [
+        "Cretácico temprano",
+        "Pleistoceno y Holoceno temprano",
+        "Devónico tardío",
+        "Cretácico tardío"
+      ],
+      "c": 3,
+      "explanation": "Dreadnoughtus: Cretácico tardío. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-bb490f59dfe7"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Dreadnoughtus?",
+      "o": [
+        "Argentina",
+        "China",
+        "Sudáfrica",
+        "Chile"
+      ],
+      "c": 0,
+      "explanation": "Dreadnoughtus: Argentina. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-7c90c12e8a58"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Dreadnoughtus?",
+      "o": [
+        "Pterosaurio de larga cola",
+        "Titanosaurio descrito a partir de fósiles patagónicos",
+        "Pez placodermo con placas óseas en la cabeza",
+        "Dinosaurio de bóveda craneal muy engrosada"
+      ],
+      "c": 1,
+      "explanation": "Dreadnoughtus: Titanosaurio descrito a partir de fósiles patagónicos. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-5b7483fb764c"
+    },
+    {
+      "q": "¿En qué período vivió Patagotitan?",
+      "o": [
+        "Devónico tardío",
+        "Cretácico temprano",
+        "Pleistoceno y Holoceno temprano",
+        "Pérmico temprano"
+      ],
+      "c": 1,
+      "explanation": "Patagotitan: Cretácico temprano. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-c941fc404601",
+      "img": "arcade/reference/prehistoria.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Patagotitan?",
+      "o": [
+        "Alemania",
+        "Mongolia",
+        "Argentina",
+        "China"
+      ],
+      "c": 2,
+      "explanation": "Patagotitan: Argentina. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-4a0ee9111fe2"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Patagotitan?",
+      "o": [
+        "Titanosaurio descrito a partir de fósiles patagónicos",
+        "Titanosaurio gigante de la Patagonia argentina",
+        "Felino con enormes caninos superiores",
+        "Dinosaurio acorazado chileno con arma caudal aplanada"
+      ],
+      "c": 1,
+      "explanation": "Patagotitan: Titanosaurio gigante de la Patagonia argentina. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-7a0bc8aeed61"
+    },
+    {
+      "q": "¿En qué período vivió Saltasaurus?",
+      "o": [
+        "Triásico tardío",
+        "Cretácico tardío",
+        "Pleistoceno y Holoceno temprano",
+        "Jurásico temprano"
+      ],
+      "c": 1,
+      "explanation": "Saltasaurus: Cretácico tardío. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-4f87d2ed87a9"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Saltasaurus?",
+      "o": [
+        "Argentina",
+        "China",
+        "Chile",
+        "Mongolia"
+      ],
+      "c": 0,
+      "explanation": "Saltasaurus: Argentina. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-2c588d667c0c"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Saltasaurus?",
+      "o": [
+        "Dinosaurio acorazado con maza caudal",
+        "Titanosaurio con osteodermos en la piel",
+        "Ceratopsio temprano con pico parecido al de un loro",
+        "Terópodo con enormes garras manuales"
+      ],
+      "c": 1,
+      "explanation": "Saltasaurus: Titanosaurio con osteodermos en la piel. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-1f06f34df276",
+      "img": "arcade/reference/prehistoria.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿En qué período vivió Amargasaurus?",
+      "o": [
+        "Cretácico temprano",
+        "Pleistoceno",
+        "Jurásico temprano",
+        "Pérmico temprano"
+      ],
+      "c": 0,
+      "explanation": "Amargasaurus: Cretácico temprano. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-b6b12393fd51"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Amargasaurus?",
+      "o": [
+        "Egipto",
+        "Sudáfrica",
+        "Argentina",
+        "China"
+      ],
+      "c": 2,
+      "explanation": "Amargasaurus: Argentina. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-1b77d2da7a4f"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Amargasaurus?",
+      "o": [
+        "Dinosaurio acorazado con maza caudal",
+        "Dinosaurio de bóveda craneal muy engrosada",
+        "Dinosaurio con placas dorsales y púas caudales",
+        "Saurópodo con altas espinas bifurcadas en el cuello"
+      ],
+      "c": 3,
+      "explanation": "Amargasaurus: Saurópodo con altas espinas bifurcadas en el cuello. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-0aa94e11c239"
+    },
+    {
+      "q": "¿En qué período vivió Dicraeosaurus?",
+      "o": [
+        "Cretácico temprano",
+        "Pleistoceno y Holoceno temprano",
+        "Pérmico tardío y Triásico temprano",
+        "Jurásico tardío"
+      ],
+      "c": 3,
+      "explanation": "Dicraeosaurus: Jurásico tardío. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-a619e96a745b"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Dicraeosaurus?",
+      "o": [
+        "Reino Unido",
+        "Tanzania",
+        "Argentina",
+        "Bélgica"
+      ],
+      "c": 1,
+      "explanation": "Dicraeosaurus: Tanzania. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-f8de32436ac2",
+      "img": "arcade/reference/prehistoria.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Dicraeosaurus?",
+      "o": [
+        "Saurópodo de cuello relativamente corto",
+        "Dinosaurio depredador temprano de Argentina",
+        "Abelisáurido con dos cuernos sobre los ojos",
+        "Dinosaurio chileno con combinación inusual de rasgos anatómicos"
+      ],
+      "c": 0,
+      "explanation": "Dicraeosaurus: Saurópodo de cuello relativamente corto. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-16a2bfde9909"
+    },
+    {
+      "q": "¿En qué período vivió Camarasaurus?",
+      "o": [
+        "Cretácico tardío",
+        "Jurásico tardío",
+        "Devónico tardío",
+        "Cretácico temprano"
+      ],
+      "c": 1,
+      "explanation": "Camarasaurus: Jurásico tardío. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-1c89fcbaadb3"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Camarasaurus?",
+      "o": [
+        "China",
+        "Países Bajos",
+        "Mongolia",
+        "Estados Unidos"
+      ],
+      "c": 3,
+      "explanation": "Camarasaurus: Estados Unidos. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-eb2ed7b4c29a"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Camarasaurus?",
+      "o": [
+        "Titanosaurio con osteodermos en la piel",
+        "Saurópodo de cráneo alto y dientes robustos",
+        "Reptil marino escamoso; no era dinosaurio",
+        "Terópodo temprano de cuerpo esbelto"
+      ],
+      "c": 1,
+      "explanation": "Camarasaurus: Saurópodo de cráneo alto y dientes robustos. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-92a833d7fe4b"
+    },
+    {
+      "q": "¿En qué período vivió Coelophysis?",
+      "o": [
+        "Pérmico temprano",
+        "Cretácico temprano",
+        "Triásico tardío",
+        "Pleistoceno y Holoceno temprano"
+      ],
+      "c": 2,
+      "explanation": "Coelophysis: Triásico tardío. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-0eef6a838888",
+      "img": "arcade/reference/prehistoria.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Coelophysis?",
+      "o": [
+        "Antártida",
+        "Siberia (Rusia)",
+        "Bélgica",
+        "Estados Unidos"
+      ],
+      "c": 3,
+      "explanation": "Coelophysis: Estados Unidos. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-b4ac18d2d412"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Coelophysis?",
+      "o": [
+        "Terópodo temprano de cuerpo esbelto",
+        "Sauropodomorfo temprano de cuello alargado",
+        "Enorme terópodo descubierto en Argentina",
+        "Titanosaurio gigante de la Patagonia argentina"
+      ],
+      "c": 0,
+      "explanation": "Coelophysis: Terópodo temprano de cuerpo esbelto. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-514b12752203"
+    },
+    {
+      "q": "¿En qué período vivió Herrerasaurus?",
+      "o": [
+        "Cretácico temprano",
+        "Pérmico temprano",
+        "Cretácico tardío",
+        "Triásico tardío"
+      ],
+      "c": 3,
+      "explanation": "Herrerasaurus: Triásico tardío. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-8c9a7a1b4e3d"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Herrerasaurus?",
+      "o": [
+        "Bélgica",
+        "Canadá",
+        "Reino Unido",
+        "Argentina"
+      ],
+      "c": 3,
+      "explanation": "Herrerasaurus: Argentina. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-a01ebdc2f0b1"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Herrerasaurus?",
+      "o": [
+        "Dinosaurio depredador temprano de Argentina",
+        "Ceratopsio con tres cuernos faciales y gola",
+        "Proboscídeo adaptado al frío con pelaje espeso",
+        "Titanosaurio gigante de la Patagonia argentina"
+      ],
+      "c": 0,
+      "explanation": "Herrerasaurus: Dinosaurio depredador temprano de Argentina. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-f3773a7b09e4",
+      "img": "arcade/reference/prehistoria.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿En qué período vivió Plateosaurus?",
+      "o": [
+        "Jurásico tardío",
+        "Triásico tardío",
+        "Pleistoceno",
+        "Pérmico tardío y Triásico temprano"
+      ],
+      "c": 1,
+      "explanation": "Plateosaurus: Triásico tardío. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-98a314fdd513"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Plateosaurus?",
+      "o": [
+        "Alemania",
+        "Países Bajos",
+        "China",
+        "Canadá"
+      ],
+      "c": 0,
+      "explanation": "Plateosaurus: Alemania. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-95f1deccf97c"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Plateosaurus?",
+      "o": [
+        "Dromeosáurido pequeño con garra curva en el segundo dedo del pie",
+        "Dinosaurio acorazado chileno con arma caudal aplanada",
+        "Dinosaurio de bóveda craneal muy engrosada",
+        "Sauropodomorfo temprano de cuello alargado"
+      ],
+      "c": 3,
+      "explanation": "Plateosaurus: Sauropodomorfo temprano de cuello alargado. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-dfa6ee93f307"
+    },
+    {
+      "q": "¿En qué período vivió Dilophosaurus?",
+      "o": [
+        "Pérmico tardío y Triásico temprano",
+        "Jurásico temprano",
+        "Cretácico tardío",
+        "Cretácico temprano"
+      ],
+      "c": 1,
+      "explanation": "Dilophosaurus: Jurásico temprano. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-7963a5c60765"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Dilophosaurus?",
+      "o": [
+        "Argentina",
+        "Mongolia",
+        "Tanzania",
+        "Estados Unidos"
+      ],
+      "c": 3,
+      "explanation": "Dilophosaurus: Estados Unidos. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-370efb5affe0",
+      "img": "arcade/reference/prehistoria.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Dilophosaurus?",
+      "o": [
+        "Terópodo con dos crestas craneales",
+        "Terópodo de gran cráneo y dos dedos en cada mano",
+        "Ceratopsio pequeño con gola y sin grandes cuernos frontales",
+        "Titanosaurio gigante conocido por restos incompletos"
+      ],
+      "c": 0,
+      "explanation": "Dilophosaurus: Terópodo con dos crestas craneales. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-9e8d12704df0"
+    },
+    {
+      "q": "¿En qué período vivió Cryolophosaurus?",
+      "o": [
+        "Pérmico temprano",
+        "Jurásico temprano",
+        "Devónico tardío",
+        "Pleistoceno"
+      ],
+      "c": 1,
+      "explanation": "Cryolophosaurus: Jurásico temprano. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-75f7b4836cb1"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Cryolophosaurus?",
+      "o": [
+        "Antártida",
+        "Siberia (Rusia)",
+        "Canadá",
+        "Argentina"
+      ],
+      "c": 0,
+      "explanation": "Cryolophosaurus: Antártida. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-5211bf3b0d96"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Cryolophosaurus?",
+      "o": [
+        "Terópodo antártico con cresta transversal",
+        "Ornitópodo con espolón en el pulgar",
+        "Saurópodo con larga cola semejante a un látigo",
+        "Saurópodo de patas delanteras muy largas"
+      ],
+      "c": 0,
+      "explanation": "Cryolophosaurus: Terópodo antártico con cresta transversal. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-3d4a01f66536"
+    },
+    {
+      "q": "¿En qué período vivió Ceratosaurus?",
+      "o": [
+        "Jurásico tardío",
+        "Cretácico tardío",
+        "Jurásico temprano",
+        "Pérmico temprano"
+      ],
+      "c": 0,
+      "explanation": "Ceratosaurus: Jurásico tardío. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-8e68bffd8c90",
+      "img": "arcade/reference/prehistoria.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Ceratosaurus?",
+      "o": [
+        "Egipto",
+        "Estados Unidos",
+        "Reino Unido",
+        "Antártida"
+      ],
+      "c": 1,
+      "explanation": "Ceratosaurus: Estados Unidos. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-1cd4328616ad"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Ceratosaurus?",
+      "o": [
+        "Ceratopsio temprano con pico parecido al de un loro",
+        "Abelisáurido con dos cuernos sobre los ojos",
+        "Terópodo con un cuerno nasal prominente",
+        "Saurópodo robusto de cuello largo"
+      ],
+      "c": 2,
+      "explanation": "Ceratosaurus: Terópodo con un cuerno nasal prominente. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-cfda0a04c230"
+    },
+    {
+      "q": "¿En qué período vivió Compsognathus?",
+      "o": [
+        "Pleistoceno",
+        "Cretácico tardío",
+        "Pleistoceno y Holoceno temprano",
+        "Jurásico tardío"
+      ],
+      "c": 3,
+      "explanation": "Compsognathus: Jurásico tardío. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-1c061b859746"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Compsognathus?",
+      "o": [
+        "Alemania",
+        "Antártida",
+        "Sudáfrica",
+        "Tanzania"
+      ],
+      "c": 0,
+      "explanation": "Compsognathus: Alemania. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-ab59b31c6162"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Compsognathus?",
+      "o": [
+        "Pequeño terópodo europeo de cuerpo ligero",
+        "Hadrosaurio con cresta semejante a un casco",
+        "Hadrosaurio sin gran cresta ósea hueca",
+        "Terópodo de gran cráneo y dos dedos en cada mano"
+      ],
+      "c": 0,
+      "explanation": "Compsognathus: Pequeño terópodo europeo de cuerpo ligero. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-b10229fe42e5",
+      "img": "arcade/reference/prehistoria.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿En qué período vivió Microraptor?",
+      "o": [
+        "Jurásico temprano",
+        "Pérmico tardío y Triásico temprano",
+        "Cretácico tardío",
+        "Cretácico temprano"
+      ],
+      "c": 3,
+      "explanation": "Microraptor: Cretácico temprano. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-120a4e46e696"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Microraptor?",
+      "o": [
+        "Argentina",
+        "Estados Unidos",
+        "Siberia (Rusia)",
+        "China"
+      ],
+      "c": 3,
+      "explanation": "Microraptor: China. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-52f539176a37"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Microraptor?",
+      "o": [
+        "Dromeosáurido con largas plumas en brazos y patas",
+        "Terópodo con altas espinas dorsales y hocico alargado",
+        "Hadrosaurio con larga cresta tubular",
+        "Sauropodomorfo temprano de cuello alargado"
+      ],
+      "c": 0,
+      "explanation": "Microraptor: Dromeosáurido con largas plumas en brazos y patas. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-ba4f0dfdbf75"
+    },
+    {
+      "q": "¿En qué período vivió Sinosauropteryx?",
+      "o": [
+        "Jurásico tardío",
+        "Jurásico temprano",
+        "Cretácico temprano",
+        "Devónico tardío"
+      ],
+      "c": 2,
+      "explanation": "Sinosauropteryx: Cretácico temprano. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-5b645c4f2198"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Sinosauropteryx?",
+      "o": [
+        "China",
+        "Siberia (Rusia)",
+        "Alemania",
+        "Egipto"
+      ],
+      "c": 0,
+      "explanation": "Sinosauropteryx: China. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-578ba4c964c4",
+      "img": "arcade/reference/prehistoria.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Sinosauropteryx?",
+      "o": [
+        "Terópodo con filamentos corporales y cola anillada",
+        "Abelisáurido con dos cuernos sobre los ojos",
+        "Reptil marino de cuerpo parecido al de un delfín",
+        "Dinosaurio acorazado con maza caudal"
+      ],
+      "c": 0,
+      "explanation": "Sinosauropteryx: Terópodo con filamentos corporales y cola anillada. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-aae813e1ff95"
+    },
+    {
+      "q": "¿En qué período vivió Psittacosaurus?",
+      "o": [
+        "Cretácico temprano",
+        "Pérmico temprano",
+        "Jurásico tardío",
+        "Pérmico tardío y Triásico temprano"
+      ],
+      "c": 0,
+      "explanation": "Psittacosaurus: Cretácico temprano. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-950515ade0f0"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Psittacosaurus?",
+      "o": [
+        "Tanzania",
+        "Egipto",
+        "Sudáfrica",
+        "China"
+      ],
+      "c": 3,
+      "explanation": "Psittacosaurus: China. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-d0e374286ea7"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Psittacosaurus?",
+      "o": [
+        "Terópodo con dos crestas craneales",
+        "Dinosaurio con placas dorsales y púas caudales",
+        "Ceratopsio temprano con pico parecido al de un loro",
+        "Proboscídeo adaptado al frío con pelaje espeso"
+      ],
+      "c": 2,
+      "explanation": "Psittacosaurus: Ceratopsio temprano con pico parecido al de un loro. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-bf54612836eb"
+    },
+    {
+      "q": "¿En qué período vivió Protoceratops?",
+      "o": [
+        "Devónico tardío",
+        "Cretácico temprano",
+        "Cretácico tardío",
+        "Jurásico tardío"
+      ],
+      "c": 2,
+      "explanation": "Protoceratops: Cretácico tardío. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-2e897b8f2597",
+      "img": "arcade/reference/prehistoria.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Protoceratops?",
+      "o": [
+        "Estados Unidos",
+        "Mongolia",
+        "Canadá",
+        "Tanzania"
+      ],
+      "c": 1,
+      "explanation": "Protoceratops: Mongolia. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-a4f5312d601a"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Protoceratops?",
+      "o": [
+        "Saurópodo de cuello relativamente corto",
+        "Sauropodomorfo temprano de cuello alargado",
+        "Ceratopsio pequeño con gola y sin grandes cuernos frontales",
+        "Saurópodo robusto de cuello largo"
+      ],
+      "c": 2,
+      "explanation": "Protoceratops: Ceratopsio pequeño con gola y sin grandes cuernos frontales. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-c89c434beeea"
+    },
+    {
+      "q": "¿En qué período vivió Pachycephalosaurus?",
+      "o": [
+        "Triásico tardío",
+        "Cretácico tardío",
+        "Cretácico temprano",
+        "Jurásico temprano"
+      ],
+      "c": 1,
+      "explanation": "Pachycephalosaurus: Cretácico tardío. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-04c8054258f7"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Pachycephalosaurus?",
+      "o": [
+        "Reino Unido",
+        "Antártida",
+        "Tanzania",
+        "Estados Unidos"
+      ],
+      "c": 3,
+      "explanation": "Pachycephalosaurus: Estados Unidos. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-48aab13e7cdc"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Pachycephalosaurus?",
+      "o": [
+        "Dromeosáurido pequeño con garra curva en el segundo dedo del pie",
+        "Titanosaurio gigante de la Patagonia argentina",
+        "Pterosaurio volador sin dientes; no era dinosaurio",
+        "Dinosaurio de bóveda craneal muy engrosada"
+      ],
+      "c": 3,
+      "explanation": "Pachycephalosaurus: Dinosaurio de bóveda craneal muy engrosada. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-cb3502fdbba8",
+      "img": "arcade/reference/prehistoria.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿En qué período vivió Therizinosaurus?",
+      "o": [
+        "Jurásico temprano",
+        "Jurásico tardío",
+        "Pleistoceno y Holoceno temprano",
+        "Cretácico tardío"
+      ],
+      "c": 3,
+      "explanation": "Therizinosaurus: Cretácico tardío. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-1439ca9acb34"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Therizinosaurus?",
+      "o": [
+        "Mongolia",
+        "Alemania",
+        "Canadá",
+        "Chile"
+      ],
+      "c": 0,
+      "explanation": "Therizinosaurus: Mongolia. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-1648bb887d67"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Therizinosaurus?",
+      "o": [
+        "Terópodo con enormes garras manuales",
+        "Ceratopsio con tres cuernos faciales y gola",
+        "Gran terópodo jurásico con tres dedos manuales",
+        "Saurópodo robusto de cuello largo"
+      ],
+      "c": 0,
+      "explanation": "Therizinosaurus: Terópodo con enormes garras manuales. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-c716dcc885a5"
+    },
+    {
+      "q": "¿En qué período vivió Chilesaurus?",
+      "o": [
+        "Jurásico tardío",
+        "Pleistoceno",
+        "Cretácico temprano",
+        "Pleistoceno y Holoceno temprano"
+      ],
+      "c": 0,
+      "explanation": "Chilesaurus: Jurásico tardío. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-52cf511b1a0d"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Chilesaurus?",
+      "o": [
+        "Estados Unidos",
+        "Argentina",
+        "China",
+        "Chile"
+      ],
+      "c": 3,
+      "explanation": "Chilesaurus: Chile. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-3518d9d0b446",
+      "img": "arcade/reference/prehistoria.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Chilesaurus?",
+      "o": [
+        "Dinosaurio chileno con combinación inusual de rasgos anatómicos",
+        "Proboscídeo adaptado al frío con pelaje espeso",
+        "Saurópodo con larga cola semejante a un látigo",
+        "Saurópodo de cráneo alto y dientes robustos"
+      ],
+      "c": 0,
+      "explanation": "Chilesaurus: Dinosaurio chileno con combinación inusual de rasgos anatómicos. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-4d5c9b5045d2"
+    },
+    {
+      "q": "¿En qué período vivió Stegouros?",
+      "o": [
+        "Jurásico tardío",
+        "Cretácico temprano",
+        "Pérmico tardío y Triásico temprano",
+        "Cretácico tardío"
+      ],
+      "c": 3,
+      "explanation": "Stegouros: Cretácico tardío. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-a4ffdd8aa860"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Stegouros?",
+      "o": [
+        "Chile",
+        "Alemania",
+        "Mongolia",
+        "Estados Unidos"
+      ],
+      "c": 0,
+      "explanation": "Stegouros: Chile. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-b8905e449c8b"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Stegouros?",
+      "o": [
+        "Dinosaurio acorazado chileno con arma caudal aplanada",
+        "Dinosaurio depredador temprano de Argentina",
+        "Titanosaurio gigante conocido por restos incompletos",
+        "Dinosaurio acorazado con maza caudal"
+      ],
+      "c": 0,
+      "explanation": "Stegouros: Dinosaurio acorazado chileno con arma caudal aplanada. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-7e3746f34eb8"
+    },
+    {
+      "q": "¿En qué período vivió Dimetrodon?",
+      "o": [
+        "Pérmico temprano",
+        "Jurásico temprano",
+        "Pleistoceno",
+        "Devónico tardío"
+      ],
+      "c": 0,
+      "explanation": "Dimetrodon: Pérmico temprano. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-805e841f4163",
+      "img": "arcade/reference/prehistoria.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Dimetrodon?",
+      "o": [
+        "Estados Unidos",
+        "China",
+        "Reino Unido",
+        "Tanzania"
+      ],
+      "c": 0,
+      "explanation": "Dimetrodon: Estados Unidos. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-51ef2c18deb3"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Dimetrodon?",
+      "o": [
+        "Sinápsido con vela dorsal; no era dinosaurio",
+        "Ornitópodo con espolón en el pulgar",
+        "Reptil marino de cuerpo parecido al de un delfín",
+        "Gran terópodo jurásico con tres dedos manuales"
+      ],
+      "c": 0,
+      "explanation": "Dimetrodon: Sinápsido con vela dorsal; no era dinosaurio. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-f1b06680127a"
+    },
+    {
+      "q": "¿En qué período vivió Lystrosaurus?",
+      "o": [
+        "Pérmico temprano",
+        "Pleistoceno y Holoceno temprano",
+        "Cretácico tardío",
+        "Pérmico tardío y Triásico temprano"
+      ],
+      "c": 3,
+      "explanation": "Lystrosaurus: Pérmico tardío y Triásico temprano. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-9e3c18762256"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Lystrosaurus?",
+      "o": [
+        "Tanzania",
+        "Egipto",
+        "Sudáfrica",
+        "Países Bajos"
+      ],
+      "c": 2,
+      "explanation": "Lystrosaurus: Sudáfrica. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-6bc92f5bc2be"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Lystrosaurus?",
+      "o": [
+        "Terópodo con un cuerno nasal prominente",
+        "Ornitópodo con espolón en el pulgar",
+        "Dinosaurio chileno con combinación inusual de rasgos anatómicos",
+        "Sinápsido dicinodonte con pico y colmillos"
+      ],
+      "c": 3,
+      "explanation": "Lystrosaurus: Sinápsido dicinodonte con pico y colmillos. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-f33a39587187",
+      "img": "arcade/reference/prehistoria.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿En qué período vivió Pteranodon?",
+      "o": [
+        "Pleistoceno y Holoceno temprano",
+        "Cretácico tardío",
+        "Triásico tardío",
+        "Pérmico tardío y Triásico temprano"
+      ],
+      "c": 1,
+      "explanation": "Pteranodon: Cretácico tardío. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-d0572c0d1e84"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Pteranodon?",
+      "o": [
+        "Chile",
+        "Siberia (Rusia)",
+        "Egipto",
+        "Estados Unidos"
+      ],
+      "c": 3,
+      "explanation": "Pteranodon: Estados Unidos. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-c2577aa88de6"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Pteranodon?",
+      "o": [
+        "Pterosaurio volador sin dientes; no era dinosaurio",
+        "Sinápsido con vela dorsal; no era dinosaurio",
+        "Ceratopsio pequeño con gola y sin grandes cuernos frontales",
+        "Hadrosaurio con larga cresta tubular"
+      ],
+      "c": 0,
+      "explanation": "Pteranodon: Pterosaurio volador sin dientes; no era dinosaurio. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-1c667b76ebd1"
+    },
+    {
+      "q": "¿En qué período vivió Rhamphorhynchus?",
+      "o": [
+        "Triásico tardío",
+        "Jurásico temprano",
+        "Jurásico tardío",
+        "Pérmico temprano"
+      ],
+      "c": 2,
+      "explanation": "Rhamphorhynchus: Jurásico tardío. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-c539f382e3f7"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Rhamphorhynchus?",
+      "o": [
+        "Alemania",
+        "Antártida",
+        "Mongolia",
+        "Bélgica"
+      ],
+      "c": 0,
+      "explanation": "Rhamphorhynchus: Alemania. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-8e6674de6ba8",
+      "img": "arcade/reference/prehistoria.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Rhamphorhynchus?",
+      "o": [
+        "Dromeosáurido cuya anatomía ayudó a replantear la actividad de los dinosaurios",
+        "Abelisáurido con dos cuernos sobre los ojos",
+        "Ornitópodo con espolón en el pulgar",
+        "Pterosaurio de larga cola"
+      ],
+      "c": 3,
+      "explanation": "Rhamphorhynchus: Pterosaurio de larga cola. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-13670d20509f"
+    },
+    {
+      "q": "¿En qué período vivió Mosasaurus?",
+      "o": [
+        "Cretácico temprano",
+        "Cretácico tardío",
+        "Pleistoceno",
+        "Pleistoceno y Holoceno temprano"
+      ],
+      "c": 1,
+      "explanation": "Mosasaurus: Cretácico tardío. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-74305ee084e7"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Mosasaurus?",
+      "o": [
+        "Siberia (Rusia)",
+        "Sudáfrica",
+        "Países Bajos",
+        "Mongolia"
+      ],
+      "c": 2,
+      "explanation": "Mosasaurus: Países Bajos. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-c01f4a6d3779"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Mosasaurus?",
+      "o": [
+        "Saurópodo de cuello relativamente corto",
+        "Reptil marino escamoso; no era dinosaurio",
+        "Titanosaurio gigante de la Patagonia argentina",
+        "Ceratopsio pequeño con gola y sin grandes cuernos frontales"
+      ],
+      "c": 1,
+      "explanation": "Mosasaurus: Reptil marino escamoso; no era dinosaurio. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-9abd59042eea"
+    },
+    {
+      "q": "¿En qué período vivió Ichthyosaurus?",
+      "o": [
+        "Jurásico temprano",
+        "Pérmico tardío y Triásico temprano",
+        "Pérmico temprano",
+        "Jurásico tardío"
+      ],
+      "c": 0,
+      "explanation": "Ichthyosaurus: Jurásico temprano. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-12ca11d2f802",
+      "img": "arcade/reference/prehistoria.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Ichthyosaurus?",
+      "o": [
+        "Siberia (Rusia)",
+        "Países Bajos",
+        "Mongolia",
+        "Reino Unido"
+      ],
+      "c": 3,
+      "explanation": "Ichthyosaurus: Reino Unido. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-861ed39ac597"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Ichthyosaurus?",
+      "o": [
+        "Ornitópodo con espolón en el pulgar",
+        "Dinosaurio chileno con combinación inusual de rasgos anatómicos",
+        "Terópodo con un cuerno nasal prominente",
+        "Reptil marino de cuerpo parecido al de un delfín"
+      ],
+      "c": 3,
+      "explanation": "Ichthyosaurus: Reptil marino de cuerpo parecido al de un delfín. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-fdb3b18d4bd5"
+    },
+    {
+      "q": "¿En qué período vivió Smilodon fatalis?",
+      "o": [
+        "Cretácico tardío",
+        "Pleistoceno",
+        "Devónico tardío",
+        "Pérmico tardío y Triásico temprano"
+      ],
+      "c": 1,
+      "explanation": "Smilodon fatalis: Pleistoceno. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-01edc1abda2c"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Smilodon fatalis?",
+      "o": [
+        "Estados Unidos",
+        "Mongolia",
+        "Siberia (Rusia)",
+        "Argentina"
+      ],
+      "c": 0,
+      "explanation": "Smilodon fatalis: Estados Unidos. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-6892c32bbe44"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Smilodon fatalis?",
+      "o": [
+        "Saurópodo de cuello relativamente corto",
+        "Felino con enormes caninos superiores",
+        "Pequeño terópodo europeo de cuerpo ligero",
+        "Sauropodomorfo temprano de cuello alargado"
+      ],
+      "c": 1,
+      "explanation": "Smilodon fatalis: Felino con enormes caninos superiores. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-61a15610dd92",
+      "img": "arcade/reference/prehistoria.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿En qué período vivió mamut lanudo?",
+      "o": [
+        "Cretácico tardío",
+        "Pleistoceno y Holoceno temprano",
+        "Triásico tardío",
+        "Devónico tardío"
+      ],
+      "c": 1,
+      "explanation": "mamut lanudo: Pleistoceno y Holoceno temprano. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-b51191da2fc1"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para mamut lanudo?",
+      "o": [
+        "Tanzania",
+        "Siberia (Rusia)",
+        "Bélgica",
+        "Argentina"
+      ],
+      "c": 1,
+      "explanation": "mamut lanudo: Siberia (Rusia). Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-aa393f550c39"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a mamut lanudo?",
+      "o": [
+        "Proboscídeo adaptado al frío con pelaje espeso",
+        "Terópodo con enormes garras manuales",
+        "Dinosaurio acorazado con maza caudal",
+        "Reptil marino de cuerpo parecido al de un delfín"
+      ],
+      "c": 0,
+      "explanation": "mamut lanudo: Proboscídeo adaptado al frío con pelaje espeso. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-b574ea073ef5"
+    },
+    {
+      "q": "¿En qué período vivió Megatherium americanum?",
+      "o": [
+        "Triásico tardío",
+        "Jurásico temprano",
+        "Pleistoceno y Holoceno temprano",
+        "Pleistoceno"
+      ],
+      "c": 3,
+      "explanation": "Megatherium americanum: Pleistoceno. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-23050d00bbf7"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Megatherium americanum?",
+      "o": [
+        "Reino Unido",
+        "Egipto",
+        "Argentina",
+        "Bélgica"
+      ],
+      "c": 2,
+      "explanation": "Megatherium americanum: Argentina. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-d74209c2fb73",
+      "img": "arcade/reference/prehistoria.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Megatherium americanum?",
+      "o": [
+        "Perezoso terrestre gigante sudamericano",
+        "Sinápsido dicinodonte con pico y colmillos",
+        "Ornitópodo con espolón en el pulgar",
+        "Ceratopsio temprano con pico parecido al de un loro"
+      ],
+      "c": 0,
+      "explanation": "Megatherium americanum: Perezoso terrestre gigante sudamericano. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-511aef519a70"
+    },
+    {
+      "q": "¿En qué período vivió Dunkleosteus?",
+      "o": [
+        "Devónico tardío",
+        "Pérmico temprano",
+        "Cretácico tardío",
+        "Triásico tardío"
+      ],
+      "c": 0,
+      "explanation": "Dunkleosteus: Devónico tardío. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-69b209de408c"
+    },
+    {
+      "q": "¿Qué territorio es una referencia paleontológica reconocida para Dunkleosteus?",
+      "o": [
+        "Chile",
+        "Egipto",
+        "Estados Unidos",
+        "Reino Unido"
+      ],
+      "c": 2,
+      "explanation": "Dunkleosteus: Estados Unidos. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-f7a169e8df38"
+    },
+    {
+      "q": "¿Qué rasgo o grupo describe a Dunkleosteus?",
+      "o": [
+        "Hadrosaurio sin gran cresta ósea hueca",
+        "Pez placodermo con placas óseas en la cabeza",
+        "Saurópodo con larga cola semejante a un látigo",
+        "Ceratopsio temprano con pico parecido al de un loro"
+      ],
+      "c": 1,
+      "explanation": "Dunkleosteus: Pez placodermo con placas óseas en la cabeza. Las dietas se infieren de fósiles y pueden revisarse. Dinosaurio, pterosaurio y reptil marino no son términos equivalentes.",
+      "e": "🦕",
+      "id": "prehistoria-79908a09265e"
+    }
+  ]
+}

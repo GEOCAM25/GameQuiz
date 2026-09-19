@@ -1,0 +1,2022 @@
+{
+  "cat": "onepiece",
+  "name": "One Piece",
+  "emoji": "🏴‍☠️",
+  "edition": "4.0",
+  "sources": [
+    "https://one-piece.com/character/",
+    "https://www.onepiece-movie.jp/"
+  ],
+  "questions": [
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Monkey D. Luffy?",
+      "o": [
+        "Piratas Kuja",
+        "Piratas de Sombrero de Paja",
+        "Piratas de Barbablanca",
+        "Marina"
+      ],
+      "c": 1,
+      "explanation": "Monkey D. Luffy: Piratas de Sombrero de Paja. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-3cb554c745fc",
+      "img": "arcade/reference/onepiece.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Monkey D. Luffy?",
+      "o": [
+        "Tirachinas y puntería",
+        "Yomi Yomi no Mi",
+        "Cuerpo con propiedades elásticas",
+        "Goro Goro no Mi"
+      ],
+      "c": 2,
+      "explanation": "Monkey D. Luffy: Cuerpo con propiedades elásticas. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-7259f23d2e7e"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Monkey D. Luffy?",
+      "o": [
+        "Fue aprendiz en la tripulación de Roger",
+        "Comanda el Ejército del Este",
+        "Sueña con ser el Rey de los Piratas",
+        "Fue almirante de flota antes de Sakazuki"
+      ],
+      "c": 2,
+      "explanation": "Monkey D. Luffy: Sueña con ser el Rey de los Piratas. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-778865e4ca34"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Roronoa Zoro?",
+      "o": [
+        "Piratas de Sombrero de Paja",
+        "CP9 / CP0",
+        "Seguidores de Enel",
+        "Ejército Revolucionario"
+      ],
+      "c": 0,
+      "explanation": "Roronoa Zoro: Piratas de Sombrero de Paja. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-2775b9840f8f"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Roronoa Zoro?",
+      "o": [
+        "Zoan de leopardo",
+        "Hojas curvas giratorias",
+        "Estilo de tres espadas",
+        "Rifle"
+      ],
+      "c": 2,
+      "explanation": "Roronoa Zoro: Estilo de tres espadas. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-2cb1210a7cef"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Roronoa Zoro?",
+      "o": [
+        "Busca el All Blue",
+        "Busca ser el mejor espadachín del mundo",
+        "Es una figura principal de Kamabakka",
+        "Fue criado como hermano de Luffy"
+      ],
+      "c": 1,
+      "explanation": "Roronoa Zoro: Busca ser el mejor espadachín del mundo. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-58a6abc9636f",
+      "img": "arcade/reference/onepiece.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Nami?",
+      "o": [
+        "CP9 / CP0",
+        "Piratas de Buggy / Cross Guild",
+        "Piratas de Sombrero de Paja",
+        "Cross Guild"
+      ],
+      "c": 2,
+      "explanation": "Nami: Piratas de Sombrero de Paja. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-753486ba81f9"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Nami?",
+      "o": [
+        "Horo Horo no Mi",
+        "Clima-Tact",
+        "Ito Ito no Mi",
+        "Suna Suna no Mi"
+      ],
+      "c": 1,
+      "explanation": "Nami: Clima-Tact. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-1a63642e1de0"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Nami?",
+      "o": [
+        "Usa una jitte con punta de kairoseki",
+        "Sueña con dibujar un mapa del mundo",
+        "Fue convertido en un arma humana",
+        "Trabajó encubierto en Galley-La"
+      ],
+      "c": 1,
+      "explanation": "Nami: Sueña con dibujar un mapa del mundo. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-f8446d0a2f68"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Usopp?",
+      "o": [
+        "Piratas Kid",
+        "Piratas Heart",
+        "Piratas de Sombrero de Paja",
+        "Piratas de las Bestias"
+      ],
+      "c": 2,
+      "explanation": "Usopp: Piratas de Sombrero de Paja. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-7203945c300b"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Usopp?",
+      "o": [
+        "Tirachinas y puntería",
+        "Clima-Tact",
+        "Zoan de pteranodón",
+        "Yami Yami no Mi"
+      ],
+      "c": 0,
+      "explanation": "Usopp: Tirachinas y puntería. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-2f9fc14b52c1",
+      "img": "arcade/reference/onepiece.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Usopp?",
+      "o": [
+        "Es conocido como Cirujano de la Muerte",
+        "Es una figura principal de Kamabakka",
+        "Sueña con dibujar un mapa del mundo",
+        "Es hijo de Yasopp"
+      ],
+      "c": 3,
+      "explanation": "Usopp: Es hijo de Yasopp. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-d0551d37fbfd"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Sanji?",
+      "o": [
+        "Piratas de Sombrero de Paja",
+        "Piratas de Big Mom",
+        "Piratas Heart",
+        "CP9"
+      ],
+      "c": 0,
+      "explanation": "Sanji: Piratas de Sombrero de Paja. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-09f8d94dfcd3"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Sanji?",
+      "o": [
+        "Combate basado en patadas",
+        "Zoan de leopardo",
+        "Goro Goro no Mi",
+        "Zoan de pteranodón"
+      ],
+      "c": 0,
+      "explanation": "Sanji: Combate basado en patadas. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-eec96feec0ba"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Sanji?",
+      "o": [
+        "Comenzó la historia bajo el mando de Alvida",
+        "Prometió reencontrarse con Laboon",
+        "Recibía el apodo de Barbablanca",
+        "Busca el All Blue"
+      ],
+      "c": 3,
+      "explanation": "Sanji: Busca el All Blue. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-cc4c7abdde27"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Tony Tony Chopper?",
+      "o": [
+        "Piratas de Sombrero de Paja",
+        "Cross Guild",
+        "Piratas Kid",
+        "Piratas de Barbablanca"
+      ],
+      "c": 0,
+      "explanation": "Tony Tony Chopper: Piratas de Sombrero de Paja. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-81ed1be2a80d",
+      "img": "arcade/reference/onepiece.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Tony Tony Chopper?",
+      "o": [
+        "Hana Hana no Mi",
+        "Zoan de jirafa",
+        "Hito Hito no Mi",
+        "Yami Yami no Mi"
+      ],
+      "c": 2,
+      "explanation": "Tony Tony Chopper: Hito Hito no Mi. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-001806075e2f"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Tony Tony Chopper?",
+      "o": [
+        "Dirige la familia Charlotte",
+        "Sueña con ser el Rey de los Piratas",
+        "Busca el All Blue",
+        "Es un reno que ejerce de médico"
+      ],
+      "c": 3,
+      "explanation": "Tony Tony Chopper: Es un reno que ejerce de médico. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-91577bdc4a3e"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Nico Robin?",
+      "o": [
+        "Piratas de Sombrero de Paja",
+        "Piratas de Big Mom",
+        "Seguidores de Enel",
+        "Piratas de Thriller Bark"
+      ],
+      "c": 0,
+      "explanation": "Nico Robin: Piratas de Sombrero de Paja. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-4527948bc0b5"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Nico Robin?",
+      "o": [
+        "Kage Kage no Mi",
+        "Hana Hana no Mi",
+        "Goro Goro no Mi",
+        "Zoan de pteranodón"
+      ],
+      "c": 1,
+      "explanation": "Nico Robin: Hana Hana no Mi. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-b9b00f90bc21"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Nico Robin?",
+      "o": [
+        "Pertenece al pueblo lunaria",
+        "Es un reno que ejerce de médico",
+        "Tiene conocimientos científicos y cuerpo modificado",
+        "Puede leer los poneglyphs"
+      ],
+      "c": 3,
+      "explanation": "Nico Robin: Puede leer los poneglyphs. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-d21b217c298a",
+      "img": "arcade/reference/onepiece.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Franky?",
+      "o": [
+        "Piratas de Sombrero de Paja",
+        "Ejército Revolucionario",
+        "Piratas de Big Mom",
+        "Piratas del Pelirrojo"
+      ],
+      "c": 0,
+      "explanation": "Franky: Piratas de Sombrero de Paja. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-f458a2af3c5a"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Franky?",
+      "o": [
+        "Yami Yami no Mi",
+        "Zoan de braquiosaurio",
+        "Suna Suna no Mi",
+        "Cuerpo de cíborg"
+      ],
+      "c": 3,
+      "explanation": "Franky: Cuerpo de cíborg. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-c6065e2dee89"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Franky?",
+      "o": [
+        "Es una figura principal de Kamabakka",
+        "Es hijo de Yasopp",
+        "Construyó el Thousand Sunny",
+        "Usaba el alias Joker"
+      ],
+      "c": 2,
+      "explanation": "Franky: Construyó el Thousand Sunny. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-b3d9aab61a3c"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Brook?",
+      "o": [
+        "Piratas del Pelirrojo",
+        "Piratas Heart",
+        "CP9 / CP0",
+        "Piratas de Sombrero de Paja"
+      ],
+      "c": 3,
+      "explanation": "Brook: Piratas de Sombrero de Paja. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-1e7438c5b52a"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Brook?",
+      "o": [
+        "Mochi Mochi no Mi",
+        "Espada negra Yoru",
+        "Yomi Yomi no Mi",
+        "Karate gyojin"
+      ],
+      "c": 2,
+      "explanation": "Brook: Yomi Yomi no Mi. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-85b33abfa2ff",
+      "img": "arcade/reference/onepiece.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Brook?",
+      "o": [
+        "Prometió reencontrarse con Laboon",
+        "Es hijo de Yasopp",
+        "Era comandante de la primera división",
+        "Puede leer los poneglyphs"
+      ],
+      "c": 0,
+      "explanation": "Brook: Prometió reencontrarse con Laboon. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-405a5e7c130b"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Jinbe?",
+      "o": [
+        "Marina",
+        "Piratas de las Bestias",
+        "Piratas del Pelirrojo",
+        "Piratas de Sombrero de Paja"
+      ],
+      "c": 3,
+      "explanation": "Jinbe: Piratas de Sombrero de Paja. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-8c5a1e37b0bf"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Jinbe?",
+      "o": [
+        "Karate gyojin",
+        "Zoan mitológica del fénix",
+        "Estilo de tres espadas",
+        "Soru Soru no Mi"
+      ],
+      "c": 0,
+      "explanation": "Jinbe: Karate gyojin. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-978214d13b74"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Jinbe?",
+      "o": [
+        "Fue secretaria de Iceburg",
+        "Le confió un sombrero de paja a Luffy",
+        "Es un gyojin tiburón ballena",
+        "Su alias es Fujitora"
+      ],
+      "c": 2,
+      "explanation": "Jinbe: Es un gyojin tiburón ballena. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-5dd4762c2b66"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Shanks?",
+      "o": [
+        "Piratas de Big Mom",
+        "Piratas Kid",
+        "Piratas del Pelirrojo",
+        "CP9 / CP0"
+      ],
+      "c": 2,
+      "explanation": "Shanks: Piratas del Pelirrojo. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-d69305e85f88",
+      "img": "arcade/reference/onepiece.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Shanks?",
+      "o": [
+        "Haki del conquistador muy poderoso",
+        "Rifle",
+        "Kage Kage no Mi",
+        "Nikyu Nikyu no Mi"
+      ],
+      "c": 0,
+      "explanation": "Shanks: Haki del conquistador muy poderoso. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-f87e6a9dff2b"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Shanks?",
+      "o": [
+        "Combate habitualmente con una máscara",
+        "Le confió un sombrero de paja a Luffy",
+        "Fue convertido en un arma humana",
+        "Busca ser el mejor espadachín del mundo"
+      ],
+      "c": 1,
+      "explanation": "Shanks: Le confió un sombrero de paja a Luffy. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-250aba47df82"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Benn Beckman?",
+      "o": [
+        "Seguidores de Enel",
+        "Piratas de Thriller Bark",
+        "Piratas Heart",
+        "Piratas del Pelirrojo"
+      ],
+      "c": 3,
+      "explanation": "Benn Beckman: Piratas del Pelirrojo. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-efa2fbb323ac"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Benn Beckman?",
+      "o": [
+        "Gura Gura no Mi",
+        "Zoan mitológica de dragón azul",
+        "Rifle",
+        "Espada negra Yoru"
+      ],
+      "c": 2,
+      "explanation": "Benn Beckman: Rifle. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-4e107fb6735a"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Benn Beckman?",
+      "o": [
+        "Crea soldados de galleta",
+        "Es conocido como la Sequía",
+        "Es hijo de Yasopp",
+        "Es el primer oficial de Shanks"
+      ],
+      "c": 3,
+      "explanation": "Benn Beckman: Es el primer oficial de Shanks. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-ea5454bd105c",
+      "img": "arcade/reference/onepiece.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Yasopp?",
+      "o": [
+        "Piratas de Big Mom",
+        "Piratas del Pelirrojo",
+        "Piratas Kuja",
+        "Cross Guild"
+      ],
+      "c": 1,
+      "explanation": "Yasopp: Piratas del Pelirrojo. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-75eff04466b5"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Yasopp?",
+      "o": [
+        "Estilo de tres espadas",
+        "Hojas curvas giratorias",
+        "Cuerpo con propiedades elásticas",
+        "Gran puntería como francotirador"
+      ],
+      "c": 3,
+      "explanation": "Yasopp: Gran puntería como francotirador. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-8fa89b917b65"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Yasopp?",
+      "o": [
+        "Prometió reencontrarse con Laboon",
+        "Tiene conocimientos científicos y cuerpo modificado",
+        "Es el padre de Usopp",
+        "Combate habitualmente con una máscara"
+      ],
+      "c": 2,
+      "explanation": "Yasopp: Es el padre de Usopp. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-91293e3f3c91"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Buggy?",
+      "o": [
+        "Piratas Donquixote",
+        "Piratas de Buggy / Cross Guild",
+        "Seguidores de Enel",
+        "Piratas de Big Mom"
+      ],
+      "c": 1,
+      "explanation": "Buggy: Piratas de Buggy / Cross Guild. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-d196fdb1ac59"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Buggy?",
+      "o": [
+        "Horo Horo no Mi",
+        "Yomi Yomi no Mi",
+        "Bara Bara no Mi",
+        "Pika Pika no Mi"
+      ],
+      "c": 2,
+      "explanation": "Buggy: Bara Bara no Mi. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-ba7088aa7093",
+      "img": "arcade/reference/onepiece.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Buggy?",
+      "o": [
+        "Su base de operaciones estuvo en Onigashima",
+        "Fue aprendiz en la tripulación de Roger",
+        "Es el jefe de Estado Mayor revolucionario",
+        "Su alias es Kizaru"
+      ],
+      "c": 1,
+      "explanation": "Buggy: Fue aprendiz en la tripulación de Roger. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-8b0ddcaa5249"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Dracule Mihawk?",
+      "o": [
+        "Piratas de Buggy / Cross Guild",
+        "Cross Guild",
+        "CP9",
+        "Piratas de Barbablanca"
+      ],
+      "c": 1,
+      "explanation": "Dracule Mihawk: Cross Guild. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-37d3ad2d5df8"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Dracule Mihawk?",
+      "o": [
+        "Espada negra Yoru",
+        "Zoan mitológica del fénix",
+        "Ope Ope no Mi",
+        "Ito Ito no Mi"
+      ],
+      "c": 0,
+      "explanation": "Dracule Mihawk: Espada negra Yoru. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-56b856f538b6"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Dracule Mihawk?",
+      "o": [
+        "Fue secretaria de Iceburg",
+        "Puede leer los poneglyphs",
+        "Su alias es Fujitora",
+        "Es conocido como Ojos de Halcón"
+      ],
+      "c": 3,
+      "explanation": "Dracule Mihawk: Es conocido como Ojos de Halcón. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-bd6ec663255a"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Crocodile?",
+      "o": [
+        "Piratas de Sombrero de Paja",
+        "Piratas Heart",
+        "Baroque Works / Cross Guild",
+        "Ejército Revolucionario"
+      ],
+      "c": 2,
+      "explanation": "Crocodile: Baroque Works / Cross Guild. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-0cba47239975",
+      "img": "arcade/reference/onepiece.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Crocodile?",
+      "o": [
+        "Suna Suna no Mi",
+        "Zoan de pteranodón",
+        "Zoan mitológica de Buda",
+        "Kage Kage no Mi"
+      ],
+      "c": 0,
+      "explanation": "Crocodile: Suna Suna no Mi. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-964b65b5a3e7"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Crocodile?",
+      "o": [
+        "Fue el jefe secreto Mr. 0",
+        "Combate habitualmente con una máscara",
+        "Es conocido como Cirujano de la Muerte",
+        "Fue secretaria de Iceburg"
+      ],
+      "c": 0,
+      "explanation": "Crocodile: Fue el jefe secreto Mr. 0. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-20e9312669c7"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Portgas D. Ace?",
+      "o": [
+        "Piratas de Sombrero de Paja",
+        "Marina",
+        "Piratas de Barbablanca",
+        "Baroque Works / Cross Guild"
+      ],
+      "c": 2,
+      "explanation": "Portgas D. Ace: Piratas de Barbablanca. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-95bca5e7a84f"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Portgas D. Ace?",
+      "o": [
+        "Rifle",
+        "Mera Mera no Mi",
+        "Horo Horo no Mi",
+        "Moku Moku no Mi"
+      ],
+      "c": 1,
+      "explanation": "Portgas D. Ace: Mera Mera no Mi. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-1ff6de21cd6c"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Portgas D. Ace?",
+      "o": [
+        "Gobernó Skypiea como un supuesto dios",
+        "Fue criado como hermano de Luffy",
+        "Sueña con ser el Rey de los Piratas",
+        "Su alias es Kizaru"
+      ],
+      "c": 1,
+      "explanation": "Portgas D. Ace: Fue criado como hermano de Luffy. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-e24cdd68fb03",
+      "img": "arcade/reference/onepiece.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Marco?",
+      "o": [
+        "Piratas Kuja",
+        "CP9",
+        "Piratas de Barbablanca",
+        "Piratas de Thriller Bark"
+      ],
+      "c": 2,
+      "explanation": "Marco: Piratas de Barbablanca. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-4eba6235173e"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Marco?",
+      "o": [
+        "Puños reforzados con haki",
+        "Zoan de pteranodón",
+        "Zoan mitológica del fénix",
+        "Nikyu Nikyu no Mi"
+      ],
+      "c": 2,
+      "explanation": "Marco: Zoan mitológica del fénix. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-0ce7babd18bb"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Marco?",
+      "o": [
+        "Su alias es Fujitora",
+        "Es el padre de Usopp",
+        "Era comandante de la primera división",
+        "Es el primer oficial de Shanks"
+      ],
+      "c": 2,
+      "explanation": "Marco: Era comandante de la primera división. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-203d087b84f8"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Edward Newgate?",
+      "o": [
+        "Cross Guild",
+        "Piratas de Barbablanca",
+        "Piratas Kid",
+        "Piratas de Sombrero de Paja"
+      ],
+      "c": 1,
+      "explanation": "Edward Newgate: Piratas de Barbablanca. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-308362cdc51b"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Edward Newgate?",
+      "o": [
+        "Rifle",
+        "Zoan mitológica del fénix",
+        "Gura Gura no Mi",
+        "Ope Ope no Mi"
+      ],
+      "c": 2,
+      "explanation": "Edward Newgate: Gura Gura no Mi. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-6c19eff95cf4",
+      "img": "arcade/reference/onepiece.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Edward Newgate?",
+      "o": [
+        "Le confió un sombrero de paja a Luffy",
+        "Recibía el apodo de Barbablanca",
+        "Su haki de observación le permite ver brevemente el futuro",
+        "Su alias es Fujitora"
+      ],
+      "c": 1,
+      "explanation": "Edward Newgate: Recibía el apodo de Barbablanca. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-090fa722222b"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Marshall D. Teach?",
+      "o": [
+        "Piratas Kid",
+        "CP9 / CP0",
+        "Piratas de Barbanegra",
+        "Piratas de Big Mom"
+      ],
+      "c": 2,
+      "explanation": "Marshall D. Teach: Piratas de Barbanegra. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-d63a7b037d9d"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Marshall D. Teach?",
+      "o": [
+        "Haki del conquistador muy poderoso",
+        "Combate basado en patadas",
+        "Awa Awa no Mi",
+        "Yami Yami no Mi"
+      ],
+      "c": 3,
+      "explanation": "Marshall D. Teach: Yami Yami no Mi. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-c395dacc164a"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Marshall D. Teach?",
+      "o": [
+        "Gobernó Skypiea como un supuesto dios",
+        "Recibía el apodo de Barbablanca",
+        "Fue el jefe secreto Mr. 0",
+        "Recibe el apodo de Barbanegra"
+      ],
+      "c": 3,
+      "explanation": "Marshall D. Teach: Recibe el apodo de Barbanegra. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-195cf4d575ff"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Trafalgar Law?",
+      "o": [
+        "Piratas Heart",
+        "CP9 / CP0",
+        "Piratas Kid",
+        "Piratas Kuja"
+      ],
+      "c": 0,
+      "explanation": "Trafalgar Law: Piratas Heart. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-388ac6525130",
+      "img": "arcade/reference/onepiece.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Trafalgar Law?",
+      "o": [
+        "Combate basado en patadas",
+        "Zoan de mamut",
+        "Ope Ope no Mi",
+        "Goro Goro no Mi"
+      ],
+      "c": 2,
+      "explanation": "Trafalgar Law: Ope Ope no Mi. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-bce912c4501f"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Trafalgar Law?",
+      "o": [
+        "Reunía un ejército de zombis",
+        "Comenzó la historia bajo el mando de Alvida",
+        "Dirige la familia Charlotte",
+        "Es conocido como Cirujano de la Muerte"
+      ],
+      "c": 3,
+      "explanation": "Trafalgar Law: Es conocido como Cirujano de la Muerte. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-0bc65476ff6f"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Eustass Kid?",
+      "o": [
+        "Piratas Kuja",
+        "Piratas de Thriller Bark",
+        "Piratas Kid",
+        "Piratas Donquixote"
+      ],
+      "c": 2,
+      "explanation": "Eustass Kid: Piratas Kid. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-1dc7ea0e2b9b"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Eustass Kid?",
+      "o": [
+        "Jiki Jiki no Mi",
+        "Bisu Bisu no Mi",
+        "Awa Awa no Mi",
+        "Zoan de leopardo"
+      ],
+      "c": 0,
+      "explanation": "Eustass Kid: Jiki Jiki no Mi. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-cc344691b66f"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Eustass Kid?",
+      "o": [
+        "Usa poderes magnéticos",
+        "Su alias es Akainu",
+        "Recibía el apodo de Barbablanca",
+        "Es el abuelo de Luffy"
+      ],
+      "c": 0,
+      "explanation": "Eustass Kid: Usa poderes magnéticos. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-adcaf1329776",
+      "img": "arcade/reference/onepiece.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Killer?",
+      "o": [
+        "Ejército Revolucionario",
+        "Piratas de Thriller Bark",
+        "Piratas Kid",
+        "Piratas de Sombrero de Paja"
+      ],
+      "c": 2,
+      "explanation": "Killer: Piratas Kid. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-ef11a97c3312"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Killer?",
+      "o": [
+        "Zoan de leopardo",
+        "Hojas curvas giratorias",
+        "Zoan mitológica del fénix",
+        "Karate gyojin"
+      ],
+      "c": 1,
+      "explanation": "Killer: Hojas curvas giratorias. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-6bff7c30835e"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Killer?",
+      "o": [
+        "Es el jefe de Estado Mayor revolucionario",
+        "Puede leer los poneglyphs",
+        "Combate habitualmente con una máscara",
+        "Era comandante de la primera división"
+      ],
+      "c": 2,
+      "explanation": "Killer: Combate habitualmente con una máscara. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-b95358d03dfd"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Boa Hancock?",
+      "o": [
+        "Piratas de las Bestias",
+        "Piratas Kuja",
+        "Piratas de Barbanegra",
+        "Marina"
+      ],
+      "c": 1,
+      "explanation": "Boa Hancock: Piratas Kuja. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-07eeed242ca1"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Boa Hancock?",
+      "o": [
+        "Zoan de pteranodón",
+        "Zoan de leopardo",
+        "Mero Mero no Mi",
+        "Bara Bara no Mi"
+      ],
+      "c": 2,
+      "explanation": "Boa Hancock: Mero Mero no Mi. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-351d26110aec",
+      "img": "arcade/reference/onepiece.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Boa Hancock?",
+      "o": [
+        "Es conocido como Cirujano de la Muerte",
+        "Gobierna Amazon Lily",
+        "Es un reno que ejerce de médico",
+        "Pertenece al pueblo lunaria"
+      ],
+      "c": 1,
+      "explanation": "Boa Hancock: Gobierna Amazon Lily. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-8f73c445c448"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Donquixote Doflamingo?",
+      "o": [
+        "Piratas Kuja",
+        "CP9",
+        "Piratas Donquixote",
+        "CP9 / CP0"
+      ],
+      "c": 2,
+      "explanation": "Donquixote Doflamingo: Piratas Donquixote. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-ef86281eb49d"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Donquixote Doflamingo?",
+      "o": [
+        "Ito Ito no Mi",
+        "Combate basado en patadas",
+        "Zoan mitológica de Buda",
+        "Kage Kage no Mi"
+      ],
+      "c": 0,
+      "explanation": "Donquixote Doflamingo: Ito Ito no Mi. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-b52ecc05789f"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Donquixote Doflamingo?",
+      "o": [
+        "Es conocido como Cirujano de la Muerte",
+        "Su alias es Fujitora",
+        "Su alias es Kizaru",
+        "Usaba el alias Joker"
+      ],
+      "c": 3,
+      "explanation": "Donquixote Doflamingo: Usaba el alias Joker. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-dae2037450b7"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Kaido?",
+      "o": [
+        "Piratas de las Bestias",
+        "Cross Guild",
+        "Piratas de Big Mom",
+        "Piratas de Barbablanca"
+      ],
+      "c": 0,
+      "explanation": "Kaido: Piratas de las Bestias. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-ed865a389dcb",
+      "img": "arcade/reference/onepiece.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Kaido?",
+      "o": [
+        "Zoan mitológica de dragón azul",
+        "Tirachinas y puntería",
+        "Bara Bara no Mi",
+        "Entrenamiento físico y haki"
+      ],
+      "c": 0,
+      "explanation": "Kaido: Zoan mitológica de dragón azul. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-c785c033342f"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Kaido?",
+      "o": [
+        "Combate habitualmente con una máscara",
+        "Su base de operaciones estuvo en Onigashima",
+        "Prometió reencontrarse con Laboon",
+        "Fue criado como hermano de Luffy"
+      ],
+      "c": 1,
+      "explanation": "Kaido: Su base de operaciones estuvo en Onigashima. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-a914dfbfa295"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a King?",
+      "o": [
+        "Ejército Revolucionario",
+        "Piratas Heart",
+        "Piratas Kid",
+        "Piratas de las Bestias"
+      ],
+      "c": 3,
+      "explanation": "King: Piratas de las Bestias. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-e7d49be1ab28"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a King?",
+      "o": [
+        "Estilo de tres espadas",
+        "Cuerpo de cíborg",
+        "Goro Goro no Mi",
+        "Zoan de pteranodón"
+      ],
+      "c": 3,
+      "explanation": "King: Zoan de pteranodón. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-8986e69190a5"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a King?",
+      "o": [
+        "Pertenece al pueblo lunaria",
+        "Busca ser el mejor espadachín del mundo",
+        "Trabajó encubierto en Galley-La",
+        "Fue almirante de flota antes de Sakazuki"
+      ],
+      "c": 0,
+      "explanation": "King: Pertenece al pueblo lunaria. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-979821f1b4ae",
+      "img": "arcade/reference/onepiece.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Queen?",
+      "o": [
+        "Piratas de las Bestias",
+        "CP9",
+        "Seguidores de Enel",
+        "Piratas Kid"
+      ],
+      "c": 0,
+      "explanation": "Queen: Piratas de las Bestias. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-66d74fee43cc"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Queen?",
+      "o": [
+        "Zoan de braquiosaurio",
+        "Kage Kage no Mi",
+        "Estilo de tres espadas",
+        "Mochi Mochi no Mi"
+      ],
+      "c": 0,
+      "explanation": "Queen: Zoan de braquiosaurio. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-ba21272c5250"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Queen?",
+      "o": [
+        "Busca el All Blue",
+        "Es el abuelo de Luffy",
+        "Tiene conocimientos científicos y cuerpo modificado",
+        "Le confió un sombrero de paja a Luffy"
+      ],
+      "c": 2,
+      "explanation": "Queen: Tiene conocimientos científicos y cuerpo modificado. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-4fddd6841ce9"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Jack?",
+      "o": [
+        "Piratas de las Bestias",
+        "Seguidores de Enel",
+        "Ejército Revolucionario",
+        "Piratas Kuja"
+      ],
+      "c": 0,
+      "explanation": "Jack: Piratas de las Bestias. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-84df53ea328d"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Jack?",
+      "o": [
+        "Zoan de mamut",
+        "Zoan mitológica de Buda",
+        "Ito Ito no Mi",
+        "Zoan mitológica del fénix"
+      ],
+      "c": 0,
+      "explanation": "Jack: Zoan de mamut. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-13992e6c5e8a",
+      "img": "arcade/reference/onepiece.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Jack?",
+      "o": [
+        "Pertenece al pueblo lunaria",
+        "Era comandante de la primera división",
+        "Es conocido como la Sequía",
+        "Es el jefe de Estado Mayor revolucionario"
+      ],
+      "c": 2,
+      "explanation": "Jack: Es conocido como la Sequía. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-198aa5018ae6"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Charlotte Linlin?",
+      "o": [
+        "Seguidores de Enel",
+        "Piratas de Big Mom",
+        "Marina",
+        "Piratas Heart"
+      ],
+      "c": 1,
+      "explanation": "Charlotte Linlin: Piratas de Big Mom. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-d1b5a85d5b7e"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Charlotte Linlin?",
+      "o": [
+        "Zoan de leopardo",
+        "Soru Soru no Mi",
+        "Mochi Mochi no Mi",
+        "Tirachinas y puntería"
+      ],
+      "c": 1,
+      "explanation": "Charlotte Linlin: Soru Soru no Mi. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-90bb5daf7fa7"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Charlotte Linlin?",
+      "o": [
+        "Recibe el apodo de Barbanegra",
+        "Usa poderes magnéticos",
+        "Dirige la familia Charlotte",
+        "Es el abuelo de Luffy"
+      ],
+      "c": 2,
+      "explanation": "Charlotte Linlin: Dirige la familia Charlotte. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-613672ab39a2"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Charlotte Katakuri?",
+      "o": [
+        "Piratas Kid",
+        "Ejército Revolucionario",
+        "Piratas de Big Mom",
+        "CP9"
+      ],
+      "c": 2,
+      "explanation": "Charlotte Katakuri: Piratas de Big Mom. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-52f8588c5ab5",
+      "img": "arcade/reference/onepiece.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Charlotte Katakuri?",
+      "o": [
+        "Rifle",
+        "Horu Horu no Mi",
+        "Combate basado en patadas",
+        "Mochi Mochi no Mi"
+      ],
+      "c": 3,
+      "explanation": "Charlotte Katakuri: Mochi Mochi no Mi. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-a91404ee73b5"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Charlotte Katakuri?",
+      "o": [
+        "Busca ser el mejor espadachín del mundo",
+        "Su haki de observación le permite ver brevemente el futuro",
+        "Usa poderes magnéticos",
+        "Era comandante de la primera división"
+      ],
+      "c": 1,
+      "explanation": "Charlotte Katakuri: Su haki de observación le permite ver brevemente el futuro. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-dc9b892f16a5"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Charlotte Cracker?",
+      "o": [
+        "Piratas de Big Mom",
+        "Ejército Revolucionario",
+        "Piratas de Barbanegra",
+        "CP9 / CP0"
+      ],
+      "c": 0,
+      "explanation": "Charlotte Cracker: Piratas de Big Mom. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-aab72692edb1"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Charlotte Cracker?",
+      "o": [
+        "Kobu Kobu no Mi",
+        "Bisu Bisu no Mi",
+        "Zoan de braquiosaurio",
+        "Zoan mitológica del fénix"
+      ],
+      "c": 1,
+      "explanation": "Charlotte Cracker: Bisu Bisu no Mi. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-9169a0ebf8bd"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Charlotte Cracker?",
+      "o": [
+        "Fue el jefe secreto Mr. 0",
+        "Pertenece al pueblo lunaria",
+        "Crea soldados de galleta",
+        "Puede crear fantasmas negativos"
+      ],
+      "c": 2,
+      "explanation": "Charlotte Cracker: Crea soldados de galleta. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-f357c80a783c",
+      "img": "arcade/reference/onepiece.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Charlotte Perospero?",
+      "o": [
+        "Piratas de Big Mom",
+        "Piratas Kuja",
+        "Seguidores de Enel",
+        "Piratas de las Bestias"
+      ],
+      "c": 0,
+      "explanation": "Charlotte Perospero: Piratas de Big Mom. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-c5ee887bb31c"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Charlotte Perospero?",
+      "o": [
+        "Pero Pero no Mi",
+        "Kage Kage no Mi",
+        "Karate gyojin",
+        "Goro Goro no Mi"
+      ],
+      "c": 0,
+      "explanation": "Charlotte Perospero: Pero Pero no Mi. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-17a5c12a69b7"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Charlotte Perospero?",
+      "o": [
+        "Es el hijo mayor de Big Mom",
+        "Fue criado como hermano de Luffy",
+        "Fue convertido en un arma humana",
+        "Usa poderes magnéticos"
+      ],
+      "c": 0,
+      "explanation": "Charlotte Perospero: Es el hijo mayor de Big Mom. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-3727ed6036bc"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Rob Lucci?",
+      "o": [
+        "Piratas Donquixote",
+        "CP9 / CP0",
+        "Piratas Kid",
+        "Piratas del Pelirrojo"
+      ],
+      "c": 1,
+      "explanation": "Rob Lucci: CP9 / CP0. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-405f6cbb57cd"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Rob Lucci?",
+      "o": [
+        "Hana Hana no Mi",
+        "Zoan de leopardo",
+        "Espada negra Yoru",
+        "Yami Yami no Mi"
+      ],
+      "c": 1,
+      "explanation": "Rob Lucci: Zoan de leopardo. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-ac9e0f192deb",
+      "img": "arcade/reference/onepiece.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Rob Lucci?",
+      "o": [
+        "Le confió un sombrero de paja a Luffy",
+        "Fue criado como hermano de Luffy",
+        "Trabajó encubierto en Galley-La",
+        "Es el abuelo de Luffy"
+      ],
+      "c": 2,
+      "explanation": "Rob Lucci: Trabajó encubierto en Galley-La. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-02c1a4b4491a"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Kaku?",
+      "o": [
+        "Piratas de Barbanegra",
+        "Piratas de Buggy / Cross Guild",
+        "CP9 / CP0",
+        "Piratas Kid"
+      ],
+      "c": 2,
+      "explanation": "Kaku: CP9 / CP0. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-78930206128a"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Kaku?",
+      "o": [
+        "Zoan mitológica del fénix",
+        "Jiki Jiki no Mi",
+        "Moku Moku no Mi",
+        "Zoan de jirafa"
+      ],
+      "c": 3,
+      "explanation": "Kaku: Zoan de jirafa. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-f275398198cb"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Kaku?",
+      "o": [
+        "Se infiltró como carpintero en Water 7",
+        "Comanda el Ejército del Este",
+        "Gobierna Amazon Lily",
+        "Usa poderes magnéticos"
+      ],
+      "c": 0,
+      "explanation": "Kaku: Se infiltró como carpintero en Water 7. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-b36dbc2eced4"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Kalifa?",
+      "o": [
+        "Seguidores de Enel",
+        "Piratas Heart",
+        "Piratas Kuja",
+        "CP9"
+      ],
+      "c": 3,
+      "explanation": "Kalifa: CP9. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-84644f1a710e",
+      "img": "arcade/reference/onepiece.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Kalifa?",
+      "o": [
+        "Awa Awa no Mi",
+        "Mochi Mochi no Mi",
+        "Yomi Yomi no Mi",
+        "Rifle"
+      ],
+      "c": 0,
+      "explanation": "Kalifa: Awa Awa no Mi. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-a7b492e52808"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Kalifa?",
+      "o": [
+        "Se infiltró como carpintero en Water 7",
+        "Construyó el Thousand Sunny",
+        "Trabajó encubierto en Galley-La",
+        "Fue secretaria de Iceburg"
+      ],
+      "c": 3,
+      "explanation": "Kalifa: Fue secretaria de Iceburg. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-def12e7100b7"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Smoker?",
+      "o": [
+        "Piratas Donquixote",
+        "CP9",
+        "Marina",
+        "Piratas de Barbablanca"
+      ],
+      "c": 2,
+      "explanation": "Smoker: Marina. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-654e6ca1dd00"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Smoker?",
+      "o": [
+        "Suna Suna no Mi",
+        "Cuerpo con propiedades elásticas",
+        "Moku Moku no Mi",
+        "Mera Mera no Mi"
+      ],
+      "c": 2,
+      "explanation": "Smoker: Moku Moku no Mi. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-da7b8cc693ef"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Smoker?",
+      "o": [
+        "Dirige la familia Charlotte",
+        "Busca ser el mejor espadachín del mundo",
+        "Es el abuelo de Luffy",
+        "Usa una jitte con punta de kairoseki"
+      ],
+      "c": 3,
+      "explanation": "Smoker: Usa una jitte con punta de kairoseki. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-0b6b7d6ec298",
+      "img": "arcade/reference/onepiece.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Sakazuki?",
+      "o": [
+        "Piratas Donquixote",
+        "Piratas Kid",
+        "Marina",
+        "Seguidores de Enel"
+      ],
+      "c": 2,
+      "explanation": "Sakazuki: Marina. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-9ff978d2ad65"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Sakazuki?",
+      "o": [
+        "Magu Magu no Mi",
+        "Gran puntería como francotirador",
+        "Zoan mitológica de dragón azul",
+        "Espada negra Yoru"
+      ],
+      "c": 0,
+      "explanation": "Sakazuki: Magu Magu no Mi. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-111f4925ee92"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Sakazuki?",
+      "o": [
+        "Dirige la familia Charlotte",
+        "Puede leer los poneglyphs",
+        "Su alias es Akainu",
+        "Sueña con ser el Rey de los Piratas"
+      ],
+      "c": 2,
+      "explanation": "Sakazuki: Su alias es Akainu. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-bc6d84ada6df"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Borsalino?",
+      "o": [
+        "Marina",
+        "Piratas Kid",
+        "Piratas de Barbanegra",
+        "Piratas Donquixote"
+      ],
+      "c": 0,
+      "explanation": "Borsalino: Marina. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-80a939a9350a"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Borsalino?",
+      "o": [
+        "Zoan de braquiosaurio",
+        "Pika Pika no Mi",
+        "Bisu Bisu no Mi",
+        "Horo Horo no Mi"
+      ],
+      "c": 1,
+      "explanation": "Borsalino: Pika Pika no Mi. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-759f50d0de66",
+      "img": "arcade/reference/onepiece.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Borsalino?",
+      "o": [
+        "Es el jefe de Estado Mayor revolucionario",
+        "Es conocido como la Sequía",
+        "Fue convertido en un arma humana",
+        "Su alias es Kizaru"
+      ],
+      "c": 3,
+      "explanation": "Borsalino: Su alias es Kizaru. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-6912ca7d2a0f"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Issho?",
+      "o": [
+        "Piratas de Thriller Bark",
+        "Marina",
+        "Piratas de Buggy / Cross Guild",
+        "Piratas de Sombrero de Paja"
+      ],
+      "c": 1,
+      "explanation": "Issho: Marina. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-230cce06c80d"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Issho?",
+      "o": [
+        "Ope Ope no Mi",
+        "Bara Bara no Mi",
+        "Horu Horu no Mi",
+        "Zushi Zushi no Mi"
+      ],
+      "c": 3,
+      "explanation": "Issho: Zushi Zushi no Mi. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-5713392c5813"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Issho?",
+      "o": [
+        "Gobierna Amazon Lily",
+        "Sueña con dibujar un mapa del mundo",
+        "Es hijo de Yasopp",
+        "Su alias es Fujitora"
+      ],
+      "c": 3,
+      "explanation": "Issho: Su alias es Fujitora. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-fcb04adda471"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Sengoku?",
+      "o": [
+        "Piratas de Buggy / Cross Guild",
+        "Piratas Kid",
+        "Piratas del Pelirrojo",
+        "Marina"
+      ],
+      "c": 3,
+      "explanation": "Sengoku: Marina. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-ddc62c16e662",
+      "img": "arcade/reference/onepiece.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Sengoku?",
+      "o": [
+        "Zoan mitológica de Buda",
+        "Zoan de braquiosaurio",
+        "Zoan de mamut",
+        "Combate basado en patadas"
+      ],
+      "c": 0,
+      "explanation": "Sengoku: Zoan mitológica de Buda. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-eb639573818d"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Sengoku?",
+      "o": [
+        "Su haki de observación le permite ver brevemente el futuro",
+        "Fue criado como hermano de Luffy",
+        "Fue almirante de flota antes de Sakazuki",
+        "Su alias es Fujitora"
+      ],
+      "c": 2,
+      "explanation": "Sengoku: Fue almirante de flota antes de Sakazuki. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-eb949781a23f"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Garp?",
+      "o": [
+        "Piratas Donquixote",
+        "Piratas Heart",
+        "Marina",
+        "CP9"
+      ],
+      "c": 2,
+      "explanation": "Garp: Marina. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-4fc8cecaf915"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Garp?",
+      "o": [
+        "Puños reforzados con haki",
+        "Zoan de pteranodón",
+        "Goro Goro no Mi",
+        "Suna Suna no Mi"
+      ],
+      "c": 0,
+      "explanation": "Garp: Puños reforzados con haki. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-084e7349a269"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Garp?",
+      "o": [
+        "Es el abuelo de Luffy",
+        "Puede crear fantasmas negativos",
+        "Sueña con ser el Rey de los Piratas",
+        "Le confió un sombrero de paja a Luffy"
+      ],
+      "c": 0,
+      "explanation": "Garp: Es el abuelo de Luffy. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-d81c4a64faa0",
+      "img": "arcade/reference/onepiece.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Koby?",
+      "o": [
+        "Piratas de Buggy / Cross Guild",
+        "Piratas Kid",
+        "Marina",
+        "Piratas Heart"
+      ],
+      "c": 2,
+      "explanation": "Koby: Marina. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-c5634853b7c3"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Koby?",
+      "o": [
+        "Entrenamiento físico y haki",
+        "Kage Kage no Mi",
+        "Espada negra Yoru",
+        "Mochi Mochi no Mi"
+      ],
+      "c": 0,
+      "explanation": "Koby: Entrenamiento físico y haki. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-877d4ea7c57d"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Koby?",
+      "o": [
+        "Es el jefe de Estado Mayor revolucionario",
+        "Comenzó la historia bajo el mando de Alvida",
+        "Pertenece al pueblo lunaria",
+        "Tiene conocimientos científicos y cuerpo modificado"
+      ],
+      "c": 1,
+      "explanation": "Koby: Comenzó la historia bajo el mando de Alvida. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-6abe79cb09e9"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Sabo?",
+      "o": [
+        "Piratas Kid",
+        "Piratas de Barbablanca",
+        "Piratas Heart",
+        "Ejército Revolucionario"
+      ],
+      "c": 3,
+      "explanation": "Sabo: Ejército Revolucionario. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-71d42f6c1ddc"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Sabo?",
+      "o": [
+        "Bisu Bisu no Mi",
+        "Soru Soru no Mi",
+        "Mero Mero no Mi",
+        "Mera Mera no Mi"
+      ],
+      "c": 3,
+      "explanation": "Sabo: Mera Mera no Mi. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-53cb08e923bf",
+      "img": "arcade/reference/onepiece.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Sabo?",
+      "o": [
+        "Sueña con dibujar un mapa del mundo",
+        "Reunía un ejército de zombis",
+        "Recibe el apodo de Barbanegra",
+        "Es el jefe de Estado Mayor revolucionario"
+      ],
+      "c": 3,
+      "explanation": "Sabo: Es el jefe de Estado Mayor revolucionario. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-9d0f68c14e2e"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Emporio Ivankov?",
+      "o": [
+        "Piratas Heart",
+        "Piratas de Sombrero de Paja",
+        "Ejército Revolucionario",
+        "Piratas de Barbablanca"
+      ],
+      "c": 2,
+      "explanation": "Emporio Ivankov: Ejército Revolucionario. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-7a27ef66486f"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Emporio Ivankov?",
+      "o": [
+        "Pero Pero no Mi",
+        "Clima-Tact",
+        "Horu Horu no Mi",
+        "Soru Soru no Mi"
+      ],
+      "c": 2,
+      "explanation": "Emporio Ivankov: Horu Horu no Mi. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-0a73453162a5"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Emporio Ivankov?",
+      "o": [
+        "Es el jefe de Estado Mayor revolucionario",
+        "Es una figura principal de Kamabakka",
+        "Fue el jefe secreto Mr. 0",
+        "Usaba el alias Joker"
+      ],
+      "c": 1,
+      "explanation": "Emporio Ivankov: Es una figura principal de Kamabakka. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-d76b152b1cb1"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Bartholomew Kuma?",
+      "o": [
+        "Marina",
+        "CP9 / CP0",
+        "Ejército Revolucionario",
+        "Piratas Heart"
+      ],
+      "c": 2,
+      "explanation": "Bartholomew Kuma: Ejército Revolucionario. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-549c7af9ceaf",
+      "img": "arcade/reference/onepiece.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Bartholomew Kuma?",
+      "o": [
+        "Clima-Tact",
+        "Yami Yami no Mi",
+        "Nikyu Nikyu no Mi",
+        "Awa Awa no Mi"
+      ],
+      "c": 2,
+      "explanation": "Bartholomew Kuma: Nikyu Nikyu no Mi. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-48957f5e390f"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Bartholomew Kuma?",
+      "o": [
+        "Gobernó Skypiea como un supuesto dios",
+        "Su alias es Kizaru",
+        "Sueña con ser el Rey de los Piratas",
+        "Fue convertido en un arma humana"
+      ],
+      "c": 3,
+      "explanation": "Bartholomew Kuma: Fue convertido en un arma humana. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-bd06bc7bf795"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Belo Betty?",
+      "o": [
+        "Piratas de Buggy / Cross Guild",
+        "Piratas de Big Mom",
+        "CP9 / CP0",
+        "Ejército Revolucionario"
+      ],
+      "c": 3,
+      "explanation": "Belo Betty: Ejército Revolucionario. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-c642b5b15f40"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Belo Betty?",
+      "o": [
+        "Bisu Bisu no Mi",
+        "Gura Gura no Mi",
+        "Kobu Kobu no Mi",
+        "Hana Hana no Mi"
+      ],
+      "c": 2,
+      "explanation": "Belo Betty: Kobu Kobu no Mi. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-977949c75a03"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Belo Betty?",
+      "o": [
+        "Comanda el Ejército del Este",
+        "Es el abuelo de Luffy",
+        "Crea soldados de galleta",
+        "Usa poderes magnéticos"
+      ],
+      "c": 0,
+      "explanation": "Belo Betty: Comanda el Ejército del Este. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-1e5909a89eb9",
+      "img": "arcade/reference/onepiece.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Enel?",
+      "o": [
+        "Piratas Kid",
+        "Seguidores de Enel",
+        "Piratas de Sombrero de Paja",
+        "Piratas Kuja"
+      ],
+      "c": 1,
+      "explanation": "Enel: Seguidores de Enel. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-de3717d8c1cd"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Enel?",
+      "o": [
+        "Goro Goro no Mi",
+        "Rifle",
+        "Puños reforzados con haki",
+        "Zoan mitológica de Buda"
+      ],
+      "c": 0,
+      "explanation": "Enel: Goro Goro no Mi. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-88c7fee3d4db"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Enel?",
+      "o": [
+        "Gobernó Skypiea como un supuesto dios",
+        "Es el jefe de Estado Mayor revolucionario",
+        "Su alias es Kizaru",
+        "Su alias es Fujitora"
+      ],
+      "c": 0,
+      "explanation": "Enel: Gobernó Skypiea como un supuesto dios. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-145eaede8dd4"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Gecko Moria?",
+      "o": [
+        "Piratas de Barbanegra",
+        "Cross Guild",
+        "CP9",
+        "Piratas de Thriller Bark"
+      ],
+      "c": 3,
+      "explanation": "Gecko Moria: Piratas de Thriller Bark. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-3a9a2cc34059"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Gecko Moria?",
+      "o": [
+        "Suna Suna no Mi",
+        "Magu Magu no Mi",
+        "Kage Kage no Mi",
+        "Puños reforzados con haki"
+      ],
+      "c": 2,
+      "explanation": "Gecko Moria: Kage Kage no Mi. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-cf78b1d938a0",
+      "img": "arcade/reference/onepiece.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Gecko Moria?",
+      "o": [
+        "Reunía un ejército de zombis",
+        "Fue secretaria de Iceburg",
+        "Es un gyojin tiburón ballena",
+        "Le confió un sombrero de paja a Luffy"
+      ],
+      "c": 0,
+      "explanation": "Gecko Moria: Reunía un ejército de zombis. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-f940738c1915"
+    },
+    {
+      "q": "En One Piece, ¿qué afiliación identifica a Perona?",
+      "o": [
+        "Piratas de Sombrero de Paja",
+        "Piratas de Big Mom",
+        "Piratas de Thriller Bark",
+        "Piratas Kuja"
+      ],
+      "c": 2,
+      "explanation": "Perona: Piratas de Thriller Bark. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-0c29f67ed282"
+    },
+    {
+      "q": "¿Qué habilidad o arma distingue a Perona?",
+      "o": [
+        "Magu Magu no Mi",
+        "Kage Kage no Mi",
+        "Kobu Kobu no Mi",
+        "Horo Horo no Mi"
+      ],
+      "c": 3,
+      "explanation": "Perona: Horo Horo no Mi. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-5cd0533aff1a"
+    },
+    {
+      "q": "¿Qué rasgo de la historia corresponde a Perona?",
+      "o": [
+        "Puede crear fantasmas negativos",
+        "Recibe el apodo de Barbanegra",
+        "Es hijo de Yasopp",
+        "Busca ser el mejor espadachín del mundo"
+      ],
+      "c": 0,
+      "explanation": "Perona: Puede crear fantasmas negativos. Se indican afiliaciones e hitos reconocibles del manga y anime; algunas afiliaciones corresponden a etapas anteriores.",
+      "e": "🏴‍☠️",
+      "id": "onepiece-f331d6df41e5"
+    }
+  ]
+}

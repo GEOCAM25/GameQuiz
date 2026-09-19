@@ -1,0 +1,2043 @@
+{
+  "cat": "comerciales",
+  "name": "Comerciales y marcas en Chile",
+  "emoji": "📺",
+  "edition": "4.0",
+  "sources": [
+    "https://www.memoriachilena.gob.cl/",
+    "https://www.carozzi.cl/",
+    "https://www.nestle.cl/brands",
+    "https://www.colun.cl/",
+    "https://museopublicidad.udp.cl/coleccion/comerciales-chilenos/",
+    "https://museopublicidad.udp.cl/coleccion/comerciales-chilenos/page/2/",
+    "https://museopublicidad.udp.cl/pieza/le-saco-la-sal/",
+    "https://museopublicidad.udp.cl/pieza/oso-ambrosoli/",
+    "https://museopublicidad.udp.cl/pieza/chao-jefe/",
+    "https://museopublicidad.udp.cl/pieza/buenas-senales/",
+    "https://museopublicidad.udp.cl/pieza/camaleon/",
+    "https://museopublicidad.udp.cl/pieza/nuevo-y-mucho-mas-economico/",
+    "https://museopublicidad.udp.cl/pieza/esa-nina-tiene-pep/",
+    "https://museopublicidad.udp.cl/pieza/refrescante-y-natural/",
+    "https://museopublicidad.udp.cl/pieza/enchula-tu-celular/",
+    "https://museopublicidad.udp.cl/pieza/subete-a-una-oxford/",
+    "https://museopublicidad.udp.cl/pieza/monterrey-un-cafe-a-toda-prueba/",
+    "https://museopublicidad.udp.cl/pieza/falabella-primavera-verano/",
+    "https://museopublicidad.udp.cl/pieza/clos-de-pirque-la-calidad-va-por-dentro/",
+    "https://museopublicidad.udp.cl/pieza/salsa-dampezzo-tonino-a-mangiare/",
+    "https://museopublicidad.udp.cl/pieza/mckay-tengo-susto/",
+    "https://museopublicidad.udp.cl/pieza/firestone-si-camino-no-hablar/",
+    "https://museopublicidad.udp.cl/pieza/milo-te-hace-grande/"
+  ],
+  "questions": [
+    {
+      "q": "En la publicidad vista en Chile, ¿qué producto o servicio identifica a Super 8?",
+      "o": [
+        "Bebidas gaseosas",
+        "Gomitas",
+        "Confites",
+        "Oblea bañada en chocolate"
+      ],
+      "c": 3,
+      "explanation": "Super 8: Oblea bañada en chocolate. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-2f99033ddbad",
+      "img": "arcade/reference/comerciales.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué rasgo reconoce a Super 8?",
+      "o": [
+        "Capas crujientes de oblea",
+        "Sabores frutales",
+        "Textura quebradiza",
+        "Almendras enteras"
+      ],
+      "c": 0,
+      "explanation": "Super 8: Capas crujientes de oblea. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-73790cfc27e8"
+    },
+    {
+      "q": "¿Qué elemento corresponde a la comunicación o presentación de Super 8?",
+      "o": [
+        "Bloques o barras de dulce de maní",
+        "Marca cuyo nombre se vincula a una sociedad de productores de leche",
+        "Identidad visual asociada al verde",
+        "Formato de barra individual"
+      ],
+      "c": 3,
+      "explanation": "Super 8: Formato de barra individual. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-7246424531c0"
+    },
+    {
+      "q": "En la publicidad vista en Chile, ¿qué producto o servicio identifica a Chocman?",
+      "o": [
+        "Bizcocho relleno bañado",
+        "Helados",
+        "Lácteos",
+        "Galleta bañada en chocolate"
+      ],
+      "c": 0,
+      "explanation": "Chocman: Bizcocho relleno bañado. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-4792e96be411"
+    },
+    {
+      "q": "¿Qué rasgo reconoce a Chocman?",
+      "o": [
+        "Cooperativa con base en La Unión",
+        "Marca de helados de Nestlé en Chile",
+        "Relleno asociado al manjar",
+        "Marca asociada al alivio de síntomas"
+      ],
+      "c": 2,
+      "explanation": "Chocman: Relleno asociado al manjar. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-1ac8233821e6"
+    },
+    {
+      "q": "¿Qué elemento corresponde a la comunicación o presentación de Chocman?",
+      "o": [
+        "Leches y yogures",
+        "La combinación publicitaria de rojo y amarillo",
+        "Marca cuyo nombre se vincula a una sociedad de productores de leche",
+        "Presentación individual de colación dulce"
+      ],
+      "c": 3,
+      "explanation": "Chocman: Presentación individual de colación dulce. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-ffc50a5d8957",
+      "img": "arcade/reference/comerciales.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "En la publicidad vista en Chile, ¿qué producto o servicio identifica a Manjarate?",
+      "o": [
+        "Postre refrigerado",
+        "Confites",
+        "Medicamento de venta comercial",
+        "Lácteos"
+      ],
+      "c": 0,
+      "explanation": "Manjarate: Postre refrigerado. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-d9d17f262014"
+    },
+    {
+      "q": "¿Qué rasgo reconoce a Manjarate?",
+      "o": [
+        "Mousse de manjar con chocolate",
+        "Marca de caramelos y chocolates",
+        "Nombre formado por números",
+        "Nombre que alude al sur"
+      ],
+      "c": 0,
+      "explanation": "Manjarate: Mousse de manjar con chocolate. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-c9a80083954b"
+    },
+    {
+      "q": "¿Qué elemento corresponde a la comunicación o presentación de Manjarate?",
+      "o": [
+        "Identidad visual amarilla",
+        "Un punto de chocolate en el fondo del envase clásico",
+        "La combinación publicitaria de rojo y amarillo",
+        "Identidad visual asociada al verde"
+      ],
+      "c": 1,
+      "explanation": "Manjarate: Un punto de chocolate en el fondo del envase clásico. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-9fadf99ffaf2"
+    },
+    {
+      "q": "En la publicidad vista en Chile, ¿qué producto o servicio identifica a Tritón?",
+      "o": [
+        "Galletas sándwich",
+        "Oblea bañada en chocolate",
+        "Postre refrigerado",
+        "Lácteos"
+      ],
+      "c": 0,
+      "explanation": "Tritón: Galletas sándwich. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-ce37f5118576"
+    },
+    {
+      "q": "¿Qué rasgo reconoce a Tritón?",
+      "o": [
+        "Variante de Kem orientada a un sabor intenso",
+        "Agua embotellada",
+        "Dos galletas con relleno",
+        "Marca histórica de confitería en Chile"
+      ],
+      "c": 2,
+      "explanation": "Tritón: Dos galletas con relleno. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-d71059de4005",
+      "img": "arcade/reference/comerciales.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué elemento corresponde a la comunicación o presentación de Tritón?",
+      "o": [
+        "Identidad de marca asociada al agua",
+        "El contraste entre galleta oscura y crema clara",
+        "Amplia presencia en almacenes y quioscos",
+        "Formato de barra individual"
+      ],
+      "c": 1,
+      "explanation": "Tritón: El contraste entre galleta oscura y crema clara. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-acb6e6d62d2d"
+    },
+    {
+      "q": "En la publicidad vista en Chile, ¿qué producto o servicio identifica a Sahne-Nuss?",
+      "o": [
+        "Confites y chicles",
+        "Bebidas gaseosas",
+        "Gomitas",
+        "Chocolate"
+      ],
+      "c": 3,
+      "explanation": "Sahne-Nuss: Chocolate. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-e135933f8692"
+    },
+    {
+      "q": "¿Qué rasgo reconoce a Sahne-Nuss?",
+      "o": [
+        "Mousse de manjar con chocolate",
+        "Nombre formado por números",
+        "Marca chilena popular de golosinas",
+        "Almendras enteras"
+      ],
+      "c": 3,
+      "explanation": "Sahne-Nuss: Almendras enteras. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-a3ac565cf553"
+    },
+    {
+      "q": "¿Qué elemento corresponde a la comunicación o presentación de Sahne-Nuss?",
+      "o": [
+        "Cambió su nombre comercial a Chokita",
+        "El envoltorio rojo del chocolate con almendras",
+        "Identidad visual asociada al verde",
+        "Versiones con y sin gas"
+      ],
+      "c": 1,
+      "explanation": "Sahne-Nuss: El envoltorio rojo del chocolate con almendras. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-d26c86eafcd4"
+    },
+    {
+      "q": "En la publicidad vista en Chile, ¿qué producto o servicio identifica a Mantecol?",
+      "o": [
+        "Agua mineral",
+        "Gomitas",
+        "Confites y chicles",
+        "Dulce a base de maní"
+      ],
+      "c": 3,
+      "explanation": "Mantecol: Dulce a base de maní. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-5c8888f6fcab",
+      "img": "arcade/reference/comerciales.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué rasgo reconoce a Mantecol?",
+      "o": [
+        "Sabores frutales",
+        "Textura quebradiza",
+        "Sabor naranja",
+        "Marca histórica de confitería en Chile"
+      ],
+      "c": 1,
+      "explanation": "Mantecol: Textura quebradiza. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-71ba784ba319"
+    },
+    {
+      "q": "¿Qué elemento corresponde a la comunicación o presentación de Mantecol?",
+      "o": [
+        "Productos dulces de múltiples formatos",
+        "Bloques o barras de dulce de maní",
+        "El contraste entre galleta oscura y crema clara",
+        "Identidad de marca asociada al agua"
+      ],
+      "c": 1,
+      "explanation": "Mantecol: Bloques o barras de dulce de maní. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-5db51645a5bc"
+    },
+    {
+      "q": "En la publicidad vista en Chile, ¿qué producto o servicio identifica a Negrita / Chokita?",
+      "o": [
+        "Bebidas gaseosas",
+        "Bizcocho relleno bañado",
+        "Helados",
+        "Galleta bañada en chocolate"
+      ],
+      "c": 3,
+      "explanation": "Negrita / Chokita: Galleta bañada en chocolate. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-4ee5c8ff0e59"
+    },
+    {
+      "q": "¿Qué rasgo reconoce a Negrita / Chokita?",
+      "o": [
+        "Dos galletas con relleno",
+        "Marca de caramelos y chocolates",
+        "Galleta con relleno de crema",
+        "Cooperativa con base en La Unión"
+      ],
+      "c": 2,
+      "explanation": "Negrita / Chokita: Galleta con relleno de crema. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-4bee1a8953a7"
+    },
+    {
+      "q": "¿Qué elemento corresponde a la comunicación o presentación de Negrita / Chokita?",
+      "o": [
+        "Cambió su nombre comercial a Chokita",
+        "Identidad vinculada al sur de Chile",
+        "Leches y yogures",
+        "El contraste entre galleta oscura y crema clara"
+      ],
+      "c": 0,
+      "explanation": "Negrita / Chokita: Cambió su nombre comercial a Chokita. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-6edd73fb643b",
+      "img": "arcade/reference/comerciales.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "En la publicidad vista en Chile, ¿qué producto o servicio identifica a Frugelé?",
+      "o": [
+        "Dulce a base de maní",
+        "Galletas y chocolates",
+        "Gomitas",
+        "Lácteos"
+      ],
+      "c": 2,
+      "explanation": "Frugelé: Gomitas. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-87a4a4365c68"
+    },
+    {
+      "q": "¿Qué rasgo reconoce a Frugelé?",
+      "o": [
+        "Marca tradicional de helados",
+        "Sabores frutales",
+        "Leche, yogures y postres",
+        "Sabor naranja"
+      ],
+      "c": 1,
+      "explanation": "Frugelé: Sabores frutales. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-b77bf69c5eb7"
+    },
+    {
+      "q": "¿Qué elemento corresponde a la comunicación o presentación de Frugelé?",
+      "o": [
+        "Marca cuyo nombre se vincula a una sociedad de productores de leche",
+        "El contraste entre galleta oscura y crema clara",
+        "Identidad vinculada al sur de Chile",
+        "Piezas pequeñas de colores"
+      ],
+      "c": 3,
+      "explanation": "Frugelé: Piezas pequeñas de colores. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-151ddb7f3624"
+    },
+    {
+      "q": "En la publicidad vista en Chile, ¿qué producto o servicio identifica a Ambrosoli?",
+      "o": [
+        "Confites",
+        "Confites y chicles",
+        "Chocolate",
+        "Bebidas gaseosas"
+      ],
+      "c": 0,
+      "explanation": "Ambrosoli: Confites. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-2fab34b2ede6"
+    },
+    {
+      "q": "¿Qué rasgo reconoce a Ambrosoli?",
+      "o": [
+        "Sabor piña",
+        "Marca de caramelos y chocolates",
+        "Marca de agua purificada",
+        "Dos bebidas identificadas juntas"
+      ],
+      "c": 1,
+      "explanation": "Ambrosoli: Marca de caramelos y chocolates. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-a4f5d8320720",
+      "img": "arcade/reference/comerciales.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué elemento corresponde a la comunicación o presentación de Ambrosoli?",
+      "o": [
+        "Uso de la palabra Zero en el nombre",
+        "El nombre de una familia de origen italiano",
+        "Botellas de distintos tamaños",
+        "Identidad de marca asociada al agua"
+      ],
+      "c": 1,
+      "explanation": "Ambrosoli: El nombre de una familia de origen italiano. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-42c717ac2025"
+    },
+    {
+      "q": "En la publicidad vista en Chile, ¿qué producto o servicio identifica a Costa?",
+      "o": [
+        "Oblea bañada en chocolate",
+        "Chocolate",
+        "Galletas y chocolates",
+        "Medicamento de venta comercial"
+      ],
+      "c": 2,
+      "explanation": "Costa: Galletas y chocolates. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-4c5714557550"
+    },
+    {
+      "q": "¿Qué rasgo reconoce a Costa?",
+      "o": [
+        "Marca asociada al alivio de síntomas",
+        "Marca histórica de confitería en Chile",
+        "Variante sin azúcar de Kem",
+        "Sabor jengibre"
+      ],
+      "c": 1,
+      "explanation": "Costa: Marca histórica de confitería en Chile. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-4d8a994270dd"
+    },
+    {
+      "q": "¿Qué elemento corresponde a la comunicación o presentación de Costa?",
+      "o": [
+        "Uso destacado de la palabra Xtreme",
+        "Productos dulces de múltiples formatos",
+        "La combinación publicitaria de rojo y amarillo",
+        "Identidad de marca asociada al agua"
+      ],
+      "c": 1,
+      "explanation": "Costa: Productos dulces de múltiples formatos. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-0caaa4383f4a"
+    },
+    {
+      "q": "En la publicidad vista en Chile, ¿qué producto o servicio identifica a Calaf?",
+      "o": [
+        "Postre refrigerado",
+        "Bebidas gaseosas",
+        "Bebida gaseosa",
+        "Confites"
+      ],
+      "c": 3,
+      "explanation": "Calaf: Confites. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-79f5c6197cd8",
+      "img": "arcade/reference/comerciales.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué rasgo reconoce a Calaf?",
+      "o": [
+        "Sabor naranja",
+        "Marca de agua purificada",
+        "Sabor piña",
+        "Marca vinculada históricamente a Talca"
+      ],
+      "c": 3,
+      "explanation": "Calaf: Marca vinculada históricamente a Talca. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-5b8a504ec59b"
+    },
+    {
+      "q": "¿Qué elemento corresponde a la comunicación o presentación de Calaf?",
+      "o": [
+        "El nombre Ginger Ale en el envase",
+        "Caramelos y otros dulces",
+        "Identidad de marca asociada al agua",
+        "Identidad visual asociada al naranja"
+      ],
+      "c": 1,
+      "explanation": "Calaf: Caramelos y otros dulces. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-0b638996ccbf"
+    },
+    {
+      "q": "En la publicidad vista en Chile, ¿qué producto o servicio identifica a Dos en Uno?",
+      "o": [
+        "Gomitas",
+        "Confites y alimentos dulces",
+        "Confites",
+        "Confites y chicles"
+      ],
+      "c": 3,
+      "explanation": "Dos en Uno: Confites y chicles. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-3a891d1a0ef2"
+    },
+    {
+      "q": "¿Qué rasgo reconoce a Dos en Uno?",
+      "o": [
+        "Sabor lima-limón",
+        "Marca de agua purificada",
+        "Nombre formado por números",
+        "Dos bebidas identificadas juntas"
+      ],
+      "c": 2,
+      "explanation": "Dos en Uno: Nombre formado por números. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-e0d86d40febb"
+    },
+    {
+      "q": "¿Qué elemento corresponde a la comunicación o presentación de Dos en Uno?",
+      "o": [
+        "La combinación publicitaria de rojo y amarillo",
+        "Marca chilena de golosinas",
+        "Uso de la palabra Zero en el nombre",
+        "Versiones con y sin gas"
+      ],
+      "c": 1,
+      "explanation": "Dos en Uno: Marca chilena de golosinas. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-ca2434948a81",
+      "img": "arcade/reference/comerciales.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "En la publicidad vista en Chile, ¿qué producto o servicio identifica a Savory?",
+      "o": [
+        "Dulce a base de maní",
+        "Helados",
+        "Bebidas gaseosas",
+        "Oblea bañada en chocolate"
+      ],
+      "c": 1,
+      "explanation": "Savory: Helados. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-7edd790d14b7"
+    },
+    {
+      "q": "¿Qué rasgo reconoce a Savory?",
+      "o": [
+        "Dos bebidas identificadas juntas",
+        "Variante sin azúcar de Kem",
+        "Almendras enteras",
+        "Marca de helados de Nestlé en Chile"
+      ],
+      "c": 3,
+      "explanation": "Savory: Marca de helados de Nestlé en Chile. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-4265ed7a0240"
+    },
+    {
+      "q": "¿Qué elemento corresponde a la comunicación o presentación de Savory?",
+      "o": [
+        "El envoltorio rojo del chocolate con almendras",
+        "Productos congelados de palito y pote",
+        "Uso destacado de la palabra Xtreme",
+        "Productos dulces de múltiples formatos"
+      ],
+      "c": 1,
+      "explanation": "Savory: Productos congelados de palito y pote. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-dd34664c5ce8"
+    },
+    {
+      "q": "En la publicidad vista en Chile, ¿qué producto o servicio identifica a Bresler?",
+      "o": [
+        "Helados",
+        "Chocolate",
+        "Confites y chicles",
+        "Medicamento de venta comercial"
+      ],
+      "c": 0,
+      "explanation": "Bresler: Helados. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-d5a0a1025f71"
+    },
+    {
+      "q": "¿Qué rasgo reconoce a Bresler?",
+      "o": [
+        "Marca histórica de yogures y postres",
+        "Agua embotellada",
+        "Marca tradicional de helados",
+        "Nombre que alude al sur"
+      ],
+      "c": 2,
+      "explanation": "Bresler: Marca tradicional de helados. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-9c0b14951365",
+      "img": "arcade/reference/comerciales.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué elemento corresponde a la comunicación o presentación de Bresler?",
+      "o": [
+        "Identidad visual amarilla",
+        "Presentación individual de colación dulce",
+        "La combinación publicitaria de rojo y amarillo",
+        "Venta de helados en formatos familiares e individuales"
+      ],
+      "c": 3,
+      "explanation": "Bresler: Venta de helados en formatos familiares e individuales. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-4ea5441f8eea"
+    },
+    {
+      "q": "En la publicidad vista en Chile, ¿qué producto o servicio identifica a Trendy?",
+      "o": [
+        "Galletas sándwich",
+        "Chocolate",
+        "Oblea bañada en chocolate",
+        "Helados"
+      ],
+      "c": 3,
+      "explanation": "Trendy: Helados. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-29e3be356b38"
+    },
+    {
+      "q": "¿Qué rasgo reconoce a Trendy?",
+      "o": [
+        "Mousse de manjar con chocolate",
+        "Marca asociada al alivio de síntomas",
+        "Sabor jengibre",
+        "Marca chilena de productos congelados"
+      ],
+      "c": 3,
+      "explanation": "Trendy: Marca chilena de productos congelados. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-bc772d5e8470"
+    },
+    {
+      "q": "¿Qué elemento corresponde a la comunicación o presentación de Trendy?",
+      "o": [
+        "Paletas y postres helados",
+        "Marca cuyo nombre se vincula a una sociedad de productores de leche",
+        "La combinación publicitaria de rojo y amarillo",
+        "Bloques o barras de dulce de maní"
+      ],
+      "c": 0,
+      "explanation": "Trendy: Paletas y postres helados. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-f7d35348ac89"
+    },
+    {
+      "q": "En la publicidad vista en Chile, ¿qué producto o servicio identifica a Soprole?",
+      "o": [
+        "Confites y chicles",
+        "Galletas y chocolates",
+        "Galletas sándwich",
+        "Lácteos"
+      ],
+      "c": 3,
+      "explanation": "Soprole: Lácteos. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-7992d0ce4524",
+      "img": "arcade/reference/comerciales.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué rasgo reconoce a Soprole?",
+      "o": [
+        "Agua embotellada",
+        "Leche, yogures y postres",
+        "Marca chilena de productos congelados",
+        "Marca de agua purificada"
+      ],
+      "c": 1,
+      "explanation": "Soprole: Leche, yogures y postres. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-38770ee0821d"
+    },
+    {
+      "q": "¿Qué elemento corresponde a la comunicación o presentación de Soprole?",
+      "o": [
+        "Marca cuyo nombre se vincula a una sociedad de productores de leche",
+        "El contraste entre galleta oscura y crema clara",
+        "Paletas y postres helados",
+        "El nombre Ginger Ale en el envase"
+      ],
+      "c": 0,
+      "explanation": "Soprole: Marca cuyo nombre se vincula a una sociedad de productores de leche. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-62fd5501b0ea"
+    },
+    {
+      "q": "En la publicidad vista en Chile, ¿qué producto o servicio identifica a Colun?",
+      "o": [
+        "Confites",
+        "Lácteos",
+        "Postre refrigerado",
+        "Galleta bañada en chocolate"
+      ],
+      "c": 1,
+      "explanation": "Colun: Lácteos. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-3ce88294fd23"
+    },
+    {
+      "q": "¿Qué rasgo reconoce a Colun?",
+      "o": [
+        "Cooperativa con base en La Unión",
+        "Mousse de manjar con chocolate",
+        "Sabor lima-limón",
+        "Marca de caramelos y chocolates"
+      ],
+      "c": 0,
+      "explanation": "Colun: Cooperativa con base en La Unión. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-98a126de9b8a"
+    },
+    {
+      "q": "¿Qué elemento corresponde a la comunicación o presentación de Colun?",
+      "o": [
+        "Identidad vinculada al sur de Chile",
+        "El envoltorio rojo del chocolate con almendras",
+        "Piezas pequeñas de colores",
+        "Versiones con y sin gas"
+      ],
+      "c": 0,
+      "explanation": "Colun: Identidad vinculada al sur de Chile. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-1d7506ee6730",
+      "img": "arcade/reference/comerciales.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "En la publicidad vista en Chile, ¿qué producto o servicio identifica a Surlat?",
+      "o": [
+        "Confites y chicles",
+        "Oblea bañada en chocolate",
+        "Lácteos",
+        "Galletas sándwich"
+      ],
+      "c": 2,
+      "explanation": "Surlat: Lácteos. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-f8b1a7d4c198"
+    },
+    {
+      "q": "¿Qué rasgo reconoce a Surlat?",
+      "o": [
+        "Sabor piña",
+        "Dos galletas con relleno",
+        "Sabores frutales",
+        "Nombre que alude al sur"
+      ],
+      "c": 3,
+      "explanation": "Surlat: Nombre que alude al sur. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-d54c73e2c444"
+    },
+    {
+      "q": "¿Qué elemento corresponde a la comunicación o presentación de Surlat?",
+      "o": [
+        "Amplia presencia en almacenes y quioscos",
+        "Venta de helados en formatos familiares e individuales",
+        "Bloques o barras de dulce de maní",
+        "Leches y yogures"
+      ],
+      "c": 3,
+      "explanation": "Surlat: Leches y yogures. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-38e94bafe8b2"
+    },
+    {
+      "q": "En la publicidad vista en Chile, ¿qué producto o servicio identifica a Loncoleche?",
+      "o": [
+        "Galletas y chocolates",
+        "Gomitas",
+        "Lácteos",
+        "Galletas sándwich"
+      ],
+      "c": 2,
+      "explanation": "Loncoleche: Lácteos. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-a5e360baec0e"
+    },
+    {
+      "q": "¿Qué rasgo reconoce a Loncoleche?",
+      "o": [
+        "Marca de agua purificada",
+        "Marca tradicional de leche",
+        "Dos bebidas identificadas juntas",
+        "Marca vinculada históricamente a Talca"
+      ],
+      "c": 1,
+      "explanation": "Loncoleche: Marca tradicional de leche. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-dfe245f6c972",
+      "img": "arcade/reference/comerciales.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué elemento corresponde a la comunicación o presentación de Loncoleche?",
+      "o": [
+        "Presentación individual de colación dulce",
+        "El nombre Ginger Ale en el envase",
+        "Caramelos y otros dulces",
+        "Envases para productos de origen lácteo"
+      ],
+      "c": 3,
+      "explanation": "Loncoleche: Envases para productos de origen lácteo. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-d3709e15277c"
+    },
+    {
+      "q": "En la publicidad vista en Chile, ¿qué producto o servicio identifica a Chambourcy?",
+      "o": [
+        "Lácteos",
+        "Gomitas",
+        "Galletas sándwich",
+        "Galletas y chocolates"
+      ],
+      "c": 0,
+      "explanation": "Chambourcy: Lácteos. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-4104b1343d46"
+    },
+    {
+      "q": "¿Qué rasgo reconoce a Chambourcy?",
+      "o": [
+        "Marca histórica de yogures y postres",
+        "Sabor naranja",
+        "Sabor piña",
+        "Marca de agua purificada"
+      ],
+      "c": 0,
+      "explanation": "Chambourcy: Marca histórica de yogures y postres. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-997acd77e873"
+    },
+    {
+      "q": "¿Qué elemento corresponde a la comunicación o presentación de Chambourcy?",
+      "o": [
+        "El nombre de una familia de origen italiano",
+        "Identidad visual amarilla",
+        "Productos congelados de palito y pote",
+        "Publicidad chilena recordada de décadas pasadas"
+      ],
+      "c": 3,
+      "explanation": "Chambourcy: Publicidad chilena recordada de décadas pasadas. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-c92ef0093892"
+    },
+    {
+      "q": "En la publicidad vista en Chile, ¿qué producto o servicio identifica a Cachantun?",
+      "o": [
+        "Oblea bañada en chocolate",
+        "Confites y alimentos dulces",
+        "Agua mineral",
+        "Gomitas"
+      ],
+      "c": 2,
+      "explanation": "Cachantun: Agua mineral. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-36ca93d824b2",
+      "img": "arcade/reference/comerciales.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué rasgo reconoce a Cachantun?",
+      "o": [
+        "Agua embotellada",
+        "Leche, yogures y postres",
+        "Marca histórica de yogures y postres",
+        "Nombre que alude al sur"
+      ],
+      "c": 0,
+      "explanation": "Cachantun: Agua embotellada. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-e47afe3eba08"
+    },
+    {
+      "q": "¿Qué elemento corresponde a la comunicación o presentación de Cachantun?",
+      "o": [
+        "Uso destacado de la palabra Xtreme",
+        "Bloques o barras de dulce de maní",
+        "Botellas de distintos tamaños",
+        "Versiones con y sin gas"
+      ],
+      "c": 3,
+      "explanation": "Cachantun: Versiones con y sin gas. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-7678645c5699"
+    },
+    {
+      "q": "En la publicidad vista en Chile, ¿qué producto o servicio identifica a Benedictino?",
+      "o": [
+        "Helados",
+        "Agua envasada",
+        "Bebidas gaseosas",
+        "Gomitas"
+      ],
+      "c": 1,
+      "explanation": "Benedictino: Agua envasada. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-6e0e1ac5d78b"
+    },
+    {
+      "q": "¿Qué rasgo reconoce a Benedictino?",
+      "o": [
+        "Agua embotellada",
+        "Marca chilena de productos congelados",
+        "Dos bebidas identificadas juntas",
+        "Marca de agua purificada"
+      ],
+      "c": 3,
+      "explanation": "Benedictino: Marca de agua purificada. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-aaaa749f654b"
+    },
+    {
+      "q": "¿Qué elemento corresponde a la comunicación o presentación de Benedictino?",
+      "o": [
+        "Botellas de distintos tamaños",
+        "Presentación individual de colación dulce",
+        "Avisos con información y advertencias del producto",
+        "Leches y yogures"
+      ],
+      "c": 0,
+      "explanation": "Benedictino: Botellas de distintos tamaños. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-9e613c21b387",
+      "img": "arcade/reference/comerciales.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "En la publicidad vista en Chile, ¿qué producto o servicio identifica a Vital?",
+      "o": [
+        "Agua mineral",
+        "Galletas y chocolates",
+        "Bebida gaseosa",
+        "Medicamento de venta comercial"
+      ],
+      "c": 0,
+      "explanation": "Vital: Agua mineral. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-594f94fe913e"
+    },
+    {
+      "q": "¿Qué rasgo reconoce a Vital?",
+      "o": [
+        "Agua embotellada",
+        "Marca chilena popular de golosinas",
+        "Textura quebradiza",
+        "Mousse de manjar con chocolate"
+      ],
+      "c": 0,
+      "explanation": "Vital: Agua embotellada. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-f39ab714735d"
+    },
+    {
+      "q": "¿Qué elemento corresponde a la comunicación o presentación de Vital?",
+      "o": [
+        "Identidad de marca asociada al agua",
+        "Botellas de distintos tamaños",
+        "Cambió su nombre comercial a Chokita",
+        "El nombre Ginger Ale en el envase"
+      ],
+      "c": 0,
+      "explanation": "Vital: Identidad de marca asociada al agua. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-67443cefec44"
+    },
+    {
+      "q": "En la publicidad vista en Chile, ¿qué producto o servicio identifica a Bilz y Pap?",
+      "o": [
+        "Chocolate",
+        "Bebidas gaseosas",
+        "Postre refrigerado",
+        "Gomitas"
+      ],
+      "c": 1,
+      "explanation": "Bilz y Pap: Bebidas gaseosas. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-fb76d7bf8ea8"
+    },
+    {
+      "q": "¿Qué rasgo reconoce a Bilz y Pap?",
+      "o": [
+        "Dos bebidas identificadas juntas",
+        "Marca vinculada históricamente a Talca",
+        "Marca asociada al alivio de síntomas",
+        "Variante de Kem orientada a un sabor intenso"
+      ],
+      "c": 0,
+      "explanation": "Bilz y Pap: Dos bebidas identificadas juntas. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-f099075ce08a",
+      "img": "arcade/reference/comerciales.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué elemento corresponde a la comunicación o presentación de Bilz y Pap?",
+      "o": [
+        "Productos congelados de palito y pote",
+        "Caramelos y otros dulces",
+        "La combinación publicitaria de rojo y amarillo",
+        "Productos dulces de múltiples formatos"
+      ],
+      "c": 2,
+      "explanation": "Bilz y Pap: La combinación publicitaria de rojo y amarillo. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-95c245f7132f"
+    },
+    {
+      "q": "En la publicidad vista en Chile, ¿qué producto o servicio identifica a Kem Piña?",
+      "o": [
+        "Bebida gaseosa",
+        "Postre refrigerado",
+        "Galletas sándwich",
+        "Lácteos"
+      ],
+      "c": 0,
+      "explanation": "Kem Piña: Bebida gaseosa. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-ca720b37a528"
+    },
+    {
+      "q": "¿Qué rasgo reconoce a Kem Piña?",
+      "o": [
+        "Galleta con relleno de crema",
+        "Dos bebidas identificadas juntas",
+        "Sabor piña",
+        "Sabores frutales"
+      ],
+      "c": 2,
+      "explanation": "Kem Piña: Sabor piña. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-a5599509fac9"
+    },
+    {
+      "q": "¿Qué elemento corresponde a la comunicación o presentación de Kem Piña?",
+      "o": [
+        "Avisos con información y advertencias del producto",
+        "Amplia presencia en almacenes y quioscos",
+        "El contraste entre galleta oscura y crema clara",
+        "Identidad visual amarilla"
+      ],
+      "c": 3,
+      "explanation": "Kem Piña: Identidad visual amarilla. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-2ecf37db21e3"
+    },
+    {
+      "q": "En la publicidad vista en Chile, ¿qué producto o servicio identifica a Kem Xtreme?",
+      "o": [
+        "Postre refrigerado",
+        "Bebida gaseosa",
+        "Oblea bañada en chocolate",
+        "Galletas sándwich"
+      ],
+      "c": 1,
+      "explanation": "Kem Xtreme: Bebida gaseosa. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-5119edb033b4",
+      "img": "arcade/reference/comerciales.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué rasgo reconoce a Kem Xtreme?",
+      "o": [
+        "Marca tradicional de helados",
+        "Variante de Kem orientada a un sabor intenso",
+        "Galleta con relleno de crema",
+        "Marca de caramelos y chocolates"
+      ],
+      "c": 1,
+      "explanation": "Kem Xtreme: Variante de Kem orientada a un sabor intenso. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-b898a606d56f"
+    },
+    {
+      "q": "¿Qué elemento corresponde a la comunicación o presentación de Kem Xtreme?",
+      "o": [
+        "Marca chilena de golosinas",
+        "Uso destacado de la palabra Xtreme",
+        "Productos congelados de palito y pote",
+        "Formato de barra individual"
+      ],
+      "c": 1,
+      "explanation": "Kem Xtreme: Uso destacado de la palabra Xtreme. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-3e77bb8d3ce5"
+    },
+    {
+      "q": "En la publicidad vista en Chile, ¿qué producto o servicio identifica a Kem Zero?",
+      "o": [
+        "Bebidas gaseosas",
+        "Agua envasada",
+        "Confites",
+        "Bebida gaseosa"
+      ],
+      "c": 3,
+      "explanation": "Kem Zero: Bebida gaseosa. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-ef4c02de3a21"
+    },
+    {
+      "q": "¿Qué rasgo reconoce a Kem Zero?",
+      "o": [
+        "Galleta con relleno de crema",
+        "Marca chilena de productos congelados",
+        "Marca de caramelos y chocolates",
+        "Variante sin azúcar de Kem"
+      ],
+      "c": 3,
+      "explanation": "Kem Zero: Variante sin azúcar de Kem. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-30bc9880989a"
+    },
+    {
+      "q": "¿Qué elemento corresponde a la comunicación o presentación de Kem Zero?",
+      "o": [
+        "Un punto de chocolate en el fondo del envase clásico",
+        "Uso de la palabra Zero en el nombre",
+        "Versiones con y sin gas",
+        "Avisos con información y advertencias del producto"
+      ],
+      "c": 1,
+      "explanation": "Kem Zero: Uso de la palabra Zero en el nombre. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-d34a7170bd4a",
+      "img": "arcade/reference/comerciales.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "En la publicidad vista en Chile, ¿qué producto o servicio identifica a Canada Dry Ginger Ale?",
+      "o": [
+        "Confites y alimentos dulces",
+        "Bebida gaseosa",
+        "Lácteos",
+        "Oblea bañada en chocolate"
+      ],
+      "c": 1,
+      "explanation": "Canada Dry Ginger Ale: Bebida gaseosa. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-43202e357362"
+    },
+    {
+      "q": "¿Qué rasgo reconoce a Canada Dry Ginger Ale?",
+      "o": [
+        "Sabor jengibre",
+        "Sabores frutales",
+        "Textura quebradiza",
+        "Marca asociada al alivio de síntomas"
+      ],
+      "c": 0,
+      "explanation": "Canada Dry Ginger Ale: Sabor jengibre. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-577c89d7481a"
+    },
+    {
+      "q": "¿Qué elemento corresponde a la comunicación o presentación de Canada Dry Ginger Ale?",
+      "o": [
+        "Publicidad chilena recordada de décadas pasadas",
+        "Marca cuyo nombre se vincula a una sociedad de productores de leche",
+        "Leches y yogures",
+        "El nombre Ginger Ale en el envase"
+      ],
+      "c": 3,
+      "explanation": "Canada Dry Ginger Ale: El nombre Ginger Ale en el envase. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-c677271cad78"
+    },
+    {
+      "q": "En la publicidad vista en Chile, ¿qué producto o servicio identifica a Sprite?",
+      "o": [
+        "Lácteos",
+        "Galleta bañada en chocolate",
+        "Bebida gaseosa",
+        "Agua envasada"
+      ],
+      "c": 2,
+      "explanation": "Sprite: Bebida gaseosa. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-30b0ea331a97"
+    },
+    {
+      "q": "¿Qué rasgo reconoce a Sprite?",
+      "o": [
+        "Sabor lima-limón",
+        "Dos galletas con relleno",
+        "Marca tradicional de leche",
+        "Mousse de manjar con chocolate"
+      ],
+      "c": 0,
+      "explanation": "Sprite: Sabor lima-limón. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-3997b148b5bf",
+      "img": "arcade/reference/comerciales.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué elemento corresponde a la comunicación o presentación de Sprite?",
+      "o": [
+        "Marca cuyo nombre se vincula a una sociedad de productores de leche",
+        "Envases para productos de origen lácteo",
+        "El envoltorio rojo del chocolate con almendras",
+        "Identidad visual asociada al verde"
+      ],
+      "c": 3,
+      "explanation": "Sprite: Identidad visual asociada al verde. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-49eae5fcc4e3"
+    },
+    {
+      "q": "En la publicidad vista en Chile, ¿qué producto o servicio identifica a Fanta Naranja?",
+      "o": [
+        "Bebida gaseosa",
+        "Bebidas gaseosas",
+        "Oblea bañada en chocolate",
+        "Galleta bañada en chocolate"
+      ],
+      "c": 0,
+      "explanation": "Fanta Naranja: Bebida gaseosa. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-02d97c6f0986"
+    },
+    {
+      "q": "¿Qué rasgo reconoce a Fanta Naranja?",
+      "o": [
+        "Sabor naranja",
+        "Sabores frutales",
+        "Dos bebidas identificadas juntas",
+        "Nombre que alude al sur"
+      ],
+      "c": 0,
+      "explanation": "Fanta Naranja: Sabor naranja. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-e9ae738836af"
+    },
+    {
+      "q": "¿Qué elemento corresponde a la comunicación o presentación de Fanta Naranja?",
+      "o": [
+        "Presentación individual de colación dulce",
+        "La combinación publicitaria de rojo y amarillo",
+        "Versiones con y sin gas",
+        "Identidad visual asociada al naranja"
+      ],
+      "c": 3,
+      "explanation": "Fanta Naranja: Identidad visual asociada al naranja. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-3856d5160e74"
+    },
+    {
+      "q": "En la publicidad vista en Chile, ¿qué producto o servicio identifica a Fruna?",
+      "o": [
+        "Bebida gaseosa",
+        "Agua envasada",
+        "Confites y alimentos dulces",
+        "Dulce a base de maní"
+      ],
+      "c": 2,
+      "explanation": "Fruna: Confites y alimentos dulces. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-5e5969ef49fe",
+      "img": "arcade/reference/comerciales.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué rasgo reconoce a Fruna?",
+      "o": [
+        "Sabor naranja",
+        "Agua embotellada",
+        "Variante sin azúcar de Kem",
+        "Marca chilena popular de golosinas"
+      ],
+      "c": 3,
+      "explanation": "Fruna: Marca chilena popular de golosinas. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-a2f561919833"
+    },
+    {
+      "q": "¿Qué elemento corresponde a la comunicación o presentación de Fruna?",
+      "o": [
+        "Uso de la palabra Zero en el nombre",
+        "Avisos con información y advertencias del producto",
+        "Identidad visual amarilla",
+        "Amplia presencia en almacenes y quioscos"
+      ],
+      "c": 3,
+      "explanation": "Fruna: Amplia presencia en almacenes y quioscos. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-aec2e8519b01"
+    },
+    {
+      "q": "En la publicidad vista en Chile, ¿qué producto o servicio identifica a Tapsin?",
+      "o": [
+        "Medicamento de venta comercial",
+        "Bebida gaseosa",
+        "Gomitas",
+        "Dulce a base de maní"
+      ],
+      "c": 0,
+      "explanation": "Tapsin: Medicamento de venta comercial. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-78cc36963ed3"
+    },
+    {
+      "q": "¿Qué rasgo reconoce a Tapsin?",
+      "o": [
+        "Marca de agua purificada",
+        "Marca chilena popular de golosinas",
+        "Marca tradicional de helados",
+        "Marca asociada al alivio de síntomas"
+      ],
+      "c": 3,
+      "explanation": "Tapsin: Marca asociada al alivio de síntomas. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-446fea6d3ef2"
+    },
+    {
+      "q": "¿Qué elemento corresponde a la comunicación o presentación de Tapsin?",
+      "o": [
+        "Avisos con información y advertencias del producto",
+        "Caramelos y otros dulces",
+        "Formato de barra individual",
+        "La combinación publicitaria de rojo y amarillo"
+      ],
+      "c": 0,
+      "explanation": "Tapsin: Avisos con información y advertencias del producto. Reconocimiento de marcas y productos presentes en la publicidad chilena. No son recomendaciones de compra ni indicaciones de uso de medicamentos.",
+      "e": "📺",
+      "id": "comerciales-1a32f08b0801",
+      "img": "arcade/reference/comerciales.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué marca protagoniza el comercial chileno «Oso Ambrosoli»?",
+      "o": [
+        "Kino / Lotería",
+        "Falabella",
+        "Ambrosoli",
+        "Milo / Nestlé"
+      ],
+      "c": 2,
+      "explanation": "Oso Ambrosoli: Ambrosoli. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-71be01f6dbc1"
+    },
+    {
+      "q": "Según la colección del Museo de la Publicidad UDP, ¿qué año corresponde a «Oso Ambrosoli»?",
+      "o": [
+        "1978",
+        "1989",
+        "2000",
+        "2009"
+      ],
+      "c": 2,
+      "explanation": "Oso Ambrosoli: 2000. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-d95cd21109c4"
+    },
+    {
+      "q": "¿Qué tipo de producto o servicio anuncia «Oso Ambrosoli»?",
+      "o": [
+        "Salsa de tomate",
+        "Confites",
+        "Café",
+        "Galletas"
+      ],
+      "c": 1,
+      "explanation": "Oso Ambrosoli: Confites. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-4df1f8ffe7f8"
+    },
+    {
+      "q": "¿Qué marca protagoniza el comercial chileno «Chao Jefe»?",
+      "o": [
+        "Pepsodent",
+        "Kino / Lotería",
+        "Cachantún",
+        "Sutil"
+      ],
+      "c": 1,
+      "explanation": "Chao Jefe: Kino / Lotería. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-8171767f96a0"
+    },
+    {
+      "q": "Según la colección del Museo de la Publicidad UDP, ¿qué año corresponde a «Chao Jefe»?",
+      "o": [
+        "1987",
+        "1980",
+        "2011",
+        "1993"
+      ],
+      "c": 2,
+      "explanation": "Chao Jefe: 2011. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-7065b6b7f265",
+      "img": "arcade/reference/comerciales.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué tipo de producto o servicio anuncia «Chao Jefe»?",
+      "o": [
+        "Juego de lotería",
+        "Alimento para mascotas",
+        "Alimentos dulces",
+        "Vino"
+      ],
+      "c": 0,
+      "explanation": "Chao Jefe: Juego de lotería. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-346272d079a4"
+    },
+    {
+      "q": "¿Qué marca protagoniza el comercial chileno «Nuevo y mucho más económico»?",
+      "o": [
+        "Oxford",
+        "Sutil",
+        "Monterrey",
+        "Ambrosoli"
+      ],
+      "c": 1,
+      "explanation": "Nuevo y mucho más económico: Sutil. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-e43ea7701886"
+    },
+    {
+      "q": "Según la colección del Museo de la Publicidad UDP, ¿qué año corresponde a «Nuevo y mucho más económico»?",
+      "o": [
+        "2020",
+        "2011",
+        "1978",
+        "1980"
+      ],
+      "c": 3,
+      "explanation": "Nuevo y mucho más económico: 1980. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-341666d8c180"
+    },
+    {
+      "q": "¿Qué tipo de producto o servicio anuncia «Nuevo y mucho más económico»?",
+      "o": [
+        "Confites",
+        "Limpieza e higiene",
+        "Galletas",
+        "Agua embotellada"
+      ],
+      "c": 1,
+      "explanation": "Nuevo y mucho más económico: Limpieza e higiene. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-33e510fc4f9d"
+    },
+    {
+      "q": "¿Qué marca protagoniza el comercial chileno «Buenas señales»?",
+      "o": [
+        "Milo / Nestlé",
+        "Entel",
+        "McKay",
+        "Pepsodent"
+      ],
+      "c": 1,
+      "explanation": "Buenas señales: Entel. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-e3322ac17c00",
+      "img": "arcade/reference/comerciales.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "Según la colección del Museo de la Publicidad UDP, ¿qué año corresponde a «Buenas señales»?",
+      "o": [
+        "2000",
+        "1986",
+        "2020",
+        "2011"
+      ],
+      "c": 2,
+      "explanation": "Buenas señales: 2020. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-e0575d4851f1"
+    },
+    {
+      "q": "¿Qué tipo de producto o servicio anuncia «Buenas señales»?",
+      "o": [
+        "Telecomunicaciones",
+        "Tienda por departamentos",
+        "Limpieza e higiene",
+        "Higiene dental"
+      ],
+      "c": 0,
+      "explanation": "Buenas señales: Telecomunicaciones. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-a96fbb741f07"
+    },
+    {
+      "q": "¿Qué marca protagoniza el comercial chileno «Esa niña tiene Pep»?",
+      "o": [
+        "Cachantún",
+        "McKay",
+        "Marinela",
+        "Pepsodent"
+      ],
+      "c": 3,
+      "explanation": "Esa niña tiene Pep: Pepsodent. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-1b4a022389d3"
+    },
+    {
+      "q": "Según la colección del Museo de la Publicidad UDP, ¿qué año corresponde a «Esa niña tiene Pep»?",
+      "o": [
+        "1984",
+        "1989",
+        "2009",
+        "1988"
+      ],
+      "c": 0,
+      "explanation": "Esa niña tiene Pep: 1984. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-5a1037e25f38"
+    },
+    {
+      "q": "¿Qué tipo de producto o servicio anuncia «Esa niña tiene Pep»?",
+      "o": [
+        "Higiene dental",
+        "Confites",
+        "Tienda por departamentos",
+        "Alimento para mascotas"
+      ],
+      "c": 0,
+      "explanation": "Esa niña tiene Pep: Higiene dental. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-bb1e0134a22b",
+      "img": "arcade/reference/comerciales.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué marca protagoniza el comercial chileno «Refrescante y Natural»?",
+      "o": [
+        "Cachantún",
+        "Kino / Lotería",
+        "Milo / Nestlé",
+        "Sutil"
+      ],
+      "c": 0,
+      "explanation": "Refrescante y Natural: Cachantún. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-3f0de2fb3944"
+    },
+    {
+      "q": "Según la colección del Museo de la Publicidad UDP, ¿qué año corresponde a «Refrescante y Natural»?",
+      "o": [
+        "1993",
+        "1987",
+        "2009",
+        "1990"
+      ],
+      "c": 1,
+      "explanation": "Refrescante y Natural: 1987. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-01288cc67881"
+    },
+    {
+      "q": "¿Qué tipo de producto o servicio anuncia «Refrescante y Natural»?",
+      "o": [
+        "Agua embotellada",
+        "Productos farmacéuticos",
+        "Café",
+        "Alimentos dulces"
+      ],
+      "c": 0,
+      "explanation": "Refrescante y Natural: Agua embotellada. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-726fbb10477e"
+    },
+    {
+      "q": "¿Qué marca protagoniza el comercial chileno «Camaleón»?",
+      "o": [
+        "Falabella",
+        "Cachantún",
+        "Doko",
+        "Pepsodent"
+      ],
+      "c": 2,
+      "explanation": "Camaleón: Doko. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-302233e4dda8"
+    },
+    {
+      "q": "Según la colección del Museo de la Publicidad UDP, ¿qué año corresponde a «Camaleón»?",
+      "o": [
+        "1998",
+        "1988",
+        "1993",
+        "1980"
+      ],
+      "c": 0,
+      "explanation": "Camaleón: 1998. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-d7d57374737a",
+      "img": "arcade/reference/comerciales.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué tipo de producto o servicio anuncia «Camaleón»?",
+      "o": [
+        "Alimento para mascotas",
+        "Café",
+        "Confites",
+        "Telecomunicaciones"
+      ],
+      "c": 0,
+      "explanation": "Camaleón: Alimento para mascotas. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-05d7a0d15fe1"
+    },
+    {
+      "q": "¿Qué marca protagoniza el comercial chileno «Enchula tu celular»?",
+      "o": [
+        "Oxford",
+        "Marinela",
+        "Cachantún",
+        "Ambrosoli"
+      ],
+      "c": 1,
+      "explanation": "Enchula tu celular: Marinela. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-9bda5cea2c7b"
+    },
+    {
+      "q": "Según la colección del Museo de la Publicidad UDP, ¿qué año corresponde a «Enchula tu celular»?",
+      "o": [
+        "2000",
+        "1988",
+        "2009",
+        "1993"
+      ],
+      "c": 2,
+      "explanation": "Enchula tu celular: 2009. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-03d600d8458a"
+    },
+    {
+      "q": "¿Qué tipo de producto o servicio anuncia «Enchula tu celular»?",
+      "o": [
+        "Vino",
+        "Bicicletas",
+        "Alimentos dulces",
+        "Agua embotellada"
+      ],
+      "c": 2,
+      "explanation": "Enchula tu celular: Alimentos dulces. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-e05ffb3560ee"
+    },
+    {
+      "q": "¿Qué marca protagoniza el comercial chileno «Súbete a una Oxford»?",
+      "o": [
+        "Oxford",
+        "Milo / Nestlé",
+        "Pepsodent",
+        "Firestone"
+      ],
+      "c": 0,
+      "explanation": "Súbete a una Oxford: Oxford. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-bae6bf2d3048",
+      "img": "arcade/reference/comerciales.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "Según la colección del Museo de la Publicidad UDP, ¿qué año corresponde a «Súbete a una Oxford»?",
+      "o": [
+        "2009",
+        "1978",
+        "1979",
+        "1984"
+      ],
+      "c": 2,
+      "explanation": "Súbete a una Oxford: 1979. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-96fc8421471c"
+    },
+    {
+      "q": "¿Qué tipo de producto o servicio anuncia «Súbete a una Oxford»?",
+      "o": [
+        "Bicicletas",
+        "Café",
+        "Productos farmacéuticos",
+        "Telecomunicaciones"
+      ],
+      "c": 0,
+      "explanation": "Súbete a una Oxford: Bicicletas. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-80c9469523d5"
+    },
+    {
+      "q": "¿Qué marca protagoniza el comercial chileno «Le saco la sal»?",
+      "o": [
+        "Marinela",
+        "Oxford",
+        "Entel",
+        "Tapsin"
+      ],
+      "c": 3,
+      "explanation": "Le saco la sal: Tapsin. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-da2d5fe616c2"
+    },
+    {
+      "q": "Según la colección del Museo de la Publicidad UDP, ¿qué año corresponde a «Le saco la sal»?",
+      "o": [
+        "2011",
+        "2000",
+        "2020",
+        "1979"
+      ],
+      "c": 1,
+      "explanation": "Le saco la sal: 2000. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-ba490ee9e076"
+    },
+    {
+      "q": "¿Qué tipo de producto o servicio anuncia «Le saco la sal»?",
+      "o": [
+        "Productos farmacéuticos",
+        "Alimento para mascotas",
+        "Bebida de cacao y malta",
+        "Higiene dental"
+      ],
+      "c": 0,
+      "explanation": "Le saco la sal: Productos farmacéuticos. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-c206177b7cea",
+      "img": "arcade/reference/comerciales.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué marca protagoniza el comercial chileno «El arte de vivir (spot de multitienda)»?",
+      "o": [
+        "D’Ampezzo",
+        "Firestone",
+        "Cachantún",
+        "Falabella"
+      ],
+      "c": 3,
+      "explanation": "El arte de vivir (spot de multitienda): Falabella. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-08bed216251f"
+    },
+    {
+      "q": "Según la colección del Museo de la Publicidad UDP, ¿qué año corresponde a «El arte de vivir (spot de multitienda)»?",
+      "o": [
+        "1998",
+        "2020",
+        "2000",
+        "1984"
+      ],
+      "c": 2,
+      "explanation": "El arte de vivir (spot de multitienda): 2000. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-f878c0bda325"
+    },
+    {
+      "q": "¿Qué tipo de producto o servicio anuncia «El arte de vivir (spot de multitienda)»?",
+      "o": [
+        "Vino",
+        "Telecomunicaciones",
+        "Tienda por departamentos",
+        "Productos farmacéuticos"
+      ],
+      "c": 2,
+      "explanation": "El arte de vivir (spot de multitienda): Tienda por departamentos. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-35fccfd69f6c"
+    },
+    {
+      "q": "¿Qué marca protagoniza el comercial chileno «Un café a toda prueba»?",
+      "o": [
+        "Firestone",
+        "Monterrey",
+        "Tapsin",
+        "Cachantún"
+      ],
+      "c": 1,
+      "explanation": "Un café a toda prueba: Monterrey. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-cf5a5b6cee89"
+    },
+    {
+      "q": "Según la colección del Museo de la Publicidad UDP, ¿qué año corresponde a «Un café a toda prueba»?",
+      "o": [
+        "2000",
+        "1988",
+        "1990",
+        "1998"
+      ],
+      "c": 2,
+      "explanation": "Un café a toda prueba: 1990. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-f81dd6bf3331",
+      "img": "arcade/reference/comerciales.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué tipo de producto o servicio anuncia «Un café a toda prueba»?",
+      "o": [
+        "Vino",
+        "Café",
+        "Salsa de tomate",
+        "Telecomunicaciones"
+      ],
+      "c": 1,
+      "explanation": "Un café a toda prueba: Café. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-b2d4e113acaf"
+    },
+    {
+      "q": "¿Qué marca protagoniza el comercial chileno «Primavera – Verano (spot de multitienda de 2000)»?",
+      "o": [
+        "McKay",
+        "Firestone",
+        "Falabella",
+        "Ambrosoli"
+      ],
+      "c": 2,
+      "explanation": "Primavera – Verano (spot de multitienda de 2000): Falabella. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-216ba681287e"
+    },
+    {
+      "q": "Según la colección del Museo de la Publicidad UDP, ¿qué año corresponde a «Primavera – Verano (spot de multitienda de 2000)»?",
+      "o": [
+        "2011",
+        "2000",
+        "1993",
+        "1978"
+      ],
+      "c": 1,
+      "explanation": "Primavera – Verano (spot de multitienda de 2000): 2000. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-fca3a2fbbd3b"
+    },
+    {
+      "q": "¿Qué tipo de producto o servicio anuncia «Primavera – Verano (spot de multitienda de 2000)»?",
+      "o": [
+        "Alimento para mascotas",
+        "Tienda por departamentos",
+        "Telecomunicaciones",
+        "Productos farmacéuticos"
+      ],
+      "c": 1,
+      "explanation": "Primavera – Verano (spot de multitienda de 2000): Tienda por departamentos. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-762d2a92eeb2"
+    },
+    {
+      "q": "¿Qué marca protagoniza el comercial chileno «La calidad va por dentro»?",
+      "o": [
+        "Clos de Pirque",
+        "Entel",
+        "Firestone",
+        "McKay"
+      ],
+      "c": 0,
+      "explanation": "La calidad va por dentro: Clos de Pirque. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-9979b6afc6bf",
+      "img": "arcade/reference/comerciales.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "Según la colección del Museo de la Publicidad UDP, ¿qué año corresponde a «La calidad va por dentro»?",
+      "o": [
+        "1984",
+        "2009",
+        "1988",
+        "1990"
+      ],
+      "c": 2,
+      "explanation": "La calidad va por dentro: 1988. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-2356b61ab982"
+    },
+    {
+      "q": "¿Qué tipo de producto o servicio anuncia «La calidad va por dentro»?",
+      "o": [
+        "Telecomunicaciones",
+        "Salsa de tomate",
+        "Vino",
+        "Productos farmacéuticos"
+      ],
+      "c": 2,
+      "explanation": "La calidad va por dentro: Vino. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-007a28ef0221"
+    },
+    {
+      "q": "¿Qué marca protagoniza el comercial chileno «Tonino, a mangiare»?",
+      "o": [
+        "Tapsin",
+        "Monterrey",
+        "D’Ampezzo",
+        "Marinela"
+      ],
+      "c": 2,
+      "explanation": "Tonino, a mangiare: D’Ampezzo. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-a34943608d4b"
+    },
+    {
+      "q": "Según la colección del Museo de la Publicidad UDP, ¿qué año corresponde a «Tonino, a mangiare»?",
+      "o": [
+        "1988",
+        "1998",
+        "1979",
+        "1993"
+      ],
+      "c": 3,
+      "explanation": "Tonino, a mangiare: 1993. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-11626e77407c"
+    },
+    {
+      "q": "¿Qué tipo de producto o servicio anuncia «Tonino, a mangiare»?",
+      "o": [
+        "Tienda por departamentos",
+        "Bicicletas",
+        "Salsa de tomate",
+        "Neumáticos"
+      ],
+      "c": 2,
+      "explanation": "Tonino, a mangiare: Salsa de tomate. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-b1e7815682c6",
+      "img": "arcade/reference/comerciales.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué marca protagoniza el comercial chileno «Tengo susto (spot de galletas)»?",
+      "o": [
+        "Tapsin",
+        "Milo / Nestlé",
+        "McKay",
+        "Sutil"
+      ],
+      "c": 2,
+      "explanation": "Tengo susto (spot de galletas): McKay. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-d4c140a11213"
+    },
+    {
+      "q": "Según la colección del Museo de la Publicidad UDP, ¿qué año corresponde a «Tengo susto (spot de galletas)»?",
+      "o": [
+        "1998",
+        "1987",
+        "1989",
+        "1978"
+      ],
+      "c": 2,
+      "explanation": "Tengo susto (spot de galletas): 1989. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-1e58302cfb73"
+    },
+    {
+      "q": "¿Qué tipo de producto o servicio anuncia «Tengo susto (spot de galletas)»?",
+      "o": [
+        "Salsa de tomate",
+        "Galletas",
+        "Juego de lotería",
+        "Higiene dental"
+      ],
+      "c": 1,
+      "explanation": "Tengo susto (spot de galletas): Galletas. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-8f28433ef5bf"
+    },
+    {
+      "q": "¿Qué marca protagoniza el comercial chileno «Si camino no hablar»?",
+      "o": [
+        "Monterrey",
+        "Firestone",
+        "Marinela",
+        "Falabella"
+      ],
+      "c": 1,
+      "explanation": "Si camino no hablar: Firestone. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-ec21f4989097"
+    },
+    {
+      "q": "Según la colección del Museo de la Publicidad UDP, ¿qué año corresponde a «Si camino no hablar»?",
+      "o": [
+        "2011",
+        "1986",
+        "2020",
+        "1990"
+      ],
+      "c": 1,
+      "explanation": "Si camino no hablar: 1986. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-bea20868bfbe",
+      "img": "arcade/reference/comerciales.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué tipo de producto o servicio anuncia «Si camino no hablar»?",
+      "o": [
+        "Limpieza e higiene",
+        "Juego de lotería",
+        "Neumáticos",
+        "Productos farmacéuticos"
+      ],
+      "c": 2,
+      "explanation": "Si camino no hablar: Neumáticos. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-aaf5ece723a4"
+    },
+    {
+      "q": "¿Qué marca protagoniza el comercial chileno «Milo te hace grande»?",
+      "o": [
+        "Milo / Nestlé",
+        "Sutil",
+        "Pepsodent",
+        "Kino / Lotería"
+      ],
+      "c": 0,
+      "explanation": "Milo te hace grande: Milo / Nestlé. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-b706443fa4aa"
+    },
+    {
+      "q": "Según la colección del Museo de la Publicidad UDP, ¿qué año corresponde a «Milo te hace grande»?",
+      "o": [
+        "1988",
+        "1978",
+        "1984",
+        "1998"
+      ],
+      "c": 1,
+      "explanation": "Milo te hace grande: 1978. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-8688cec10410"
+    },
+    {
+      "q": "¿Qué tipo de producto o servicio anuncia «Milo te hace grande»?",
+      "o": [
+        "Bicicletas",
+        "Bebida de cacao y malta",
+        "Café",
+        "Higiene dental"
+      ],
+      "c": 1,
+      "explanation": "Milo te hace grande: Bebida de cacao y malta. Referencia: colección Comerciales chilenos del Museo de la Publicidad UDP. El año corresponde a la catalogación de la pieza.",
+      "e": "📺",
+      "id": "comerciales-81f613f9db61"
+    }
+  ]
+}

@@ -1,0 +1,2024 @@
+{
+  "cat": "telenovelas",
+  "name": "Telenovelas en Chile",
+  "emoji": "💘",
+  "edition": "4.0",
+  "sources": [
+    "https://www.tvn.cl/teleseries",
+    "https://www.13.cl/programas/teleseries",
+    "https://www.mega.cl/teleseries/",
+    "https://memoriaglobo.globo.com/entretenimento/novelas/"
+  ],
+  "questions": [
+    {
+      "q": "¿En qué país se produjo originalmente La madrastra (versión de 1981)?",
+      "o": [
+        "Turquía",
+        "Venezuela",
+        "Chile",
+        "Argentina"
+      ],
+      "c": 2,
+      "explanation": "La madrastra (versión de 1981): Chile. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-31de6a37a60b",
+      "img": "arcade/reference/telenovelas.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente La madrastra (versión de 1981)?",
+      "o": [
+        "2008",
+        "1999",
+        "1981",
+        "2016"
+      ],
+      "c": 2,
+      "explanation": "La madrastra (versión de 1981): 1981. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-cf40f37c550f"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con La madrastra (versión de 1981)?",
+      "o": [
+        "Claudia Di Girolamo como Artemisa",
+        "Natalia Oreiro como Milagros",
+        "Marcia Espínola, interpretada por Jael Unger",
+        "Claudia Di Girolamo como sor Angélica"
+      ],
+      "c": 2,
+      "explanation": "La madrastra (versión de 1981): Marcia Espínola, interpretada por Jael Unger. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-2d562a1ac974"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Amanda?",
+      "o": [
+        "Colombia",
+        "Chile",
+        "Turquía",
+        "Venezuela"
+      ],
+      "c": 1,
+      "explanation": "Amanda: Chile. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-74b8f6f0ca67"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Amanda?",
+      "o": [
+        "1999",
+        "2016",
+        "2006",
+        "2012"
+      ],
+      "c": 1,
+      "explanation": "Amanda: 2016. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-1e90793ea670"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Amanda?",
+      "o": [
+        "Carolina Arregui como Nice",
+        "Natalia Oreiro como Milagros",
+        "Daniela Ramírez como Amanda",
+        "Julio Milostich como José Luis Echeñique"
+      ],
+      "c": 2,
+      "explanation": "Amanda: Daniela Ramírez como Amanda. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-db4885ad3884",
+      "img": "arcade/reference/telenovelas.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Ángel malo (versión chilena)?",
+      "o": [
+        "Colombia",
+        "México",
+        "Venezuela",
+        "Chile"
+      ],
+      "c": 3,
+      "explanation": "Ángel malo (versión chilena): Chile. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-88ed028943f7"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Ángel malo (versión chilena)?",
+      "o": [
+        "1998",
+        "2005",
+        "1986",
+        "2009"
+      ],
+      "c": 2,
+      "explanation": "Ángel malo (versión chilena): 1986. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-d0ebd53d594c"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Ángel malo (versión chilena)?",
+      "o": [
+        "Claudia Di Girolamo como Catalina Chamorro",
+        "Carolina Arregui como Nice",
+        "Ana María Orozco como Beatriz Pinzón",
+        "Mariana Ximenes como Ana Francisca"
+      ],
+      "c": 1,
+      "explanation": "Ángel malo (versión chilena): Carolina Arregui como Nice. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-b78903212d5f"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Los títeres?",
+      "o": [
+        "Brasil",
+        "México",
+        "Chile",
+        "Venezuela"
+      ],
+      "c": 2,
+      "explanation": "Los títeres: Chile. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-6a817c6a78c4"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Los títeres?",
+      "o": [
+        "1992",
+        "1984",
+        "2005",
+        "1999"
+      ],
+      "c": 1,
+      "explanation": "Los títeres: 1984. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-3609dc95f667",
+      "img": "arcade/reference/telenovelas.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Los títeres?",
+      "o": [
+        "Coraima Torres como Kassandra",
+        "Sigrid Alegría como Emilia",
+        "Claudia Di Girolamo como Artemisa",
+        "Emilia Attias como Cielo"
+      ],
+      "c": 2,
+      "explanation": "Los títeres: Claudia Di Girolamo como Artemisa. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-969e52423dba"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Señores papis (versión chilena)?",
+      "o": [
+        "Argentina",
+        "Brasil",
+        "Chile",
+        "México"
+      ],
+      "c": 2,
+      "explanation": "Señores papis (versión chilena): Chile. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-4b1365ac6ab4"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Señores papis (versión chilena)?",
+      "o": [
+        "2016",
+        "2017",
+        "1981",
+        "2010"
+      ],
+      "c": 0,
+      "explanation": "Señores papis (versión chilena): 2016. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-d5207094fdc0"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Señores papis (versión chilena)?",
+      "o": [
+        "María Rubio como Catalina Creel",
+        "Francisco Melo como Raimundo Domínguez",
+        "Claudia Di Girolamo como Natalia Sotomayor",
+        "Jorge Zabaleta como Ignacio Moreno"
+      ],
+      "c": 3,
+      "explanation": "Señores papis (versión chilena): Jorge Zabaleta como Ignacio Moreno. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-88f562b2de6d"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Somos los Carmona?",
+      "o": [
+        "México",
+        "Brasil",
+        "Turquía",
+        "Chile"
+      ],
+      "c": 3,
+      "explanation": "Somos los Carmona: Chile. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-a3271c3cbc18",
+      "img": "arcade/reference/telenovelas.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Somos los Carmona?",
+      "o": [
+        "2017",
+        "2013",
+        "2010",
+        "1994"
+      ],
+      "c": 1,
+      "explanation": "Somos los Carmona: 2013. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-24a503bf831b"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Somos los Carmona?",
+      "o": [
+        "Claudia Di Girolamo como Inés Clark",
+        "Carolina Arregui como Nice",
+        "Álvaro Rudolphy como José Carmona",
+        "María Rubio como Catalina Creel"
+      ],
+      "c": 2,
+      "explanation": "Somos los Carmona: Álvaro Rudolphy como José Carmona. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-7e87453612ec"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Trampas y caretas?",
+      "o": [
+        "México",
+        "Chile",
+        "Colombia",
+        "Venezuela"
+      ],
+      "c": 1,
+      "explanation": "Trampas y caretas: Chile. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-b06922448c89"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Trampas y caretas?",
+      "o": [
+        "1979",
+        "1992",
+        "2014",
+        "1997"
+      ],
+      "c": 1,
+      "explanation": "Trampas y caretas: 1992. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-b5e3738fca4e"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Trampas y caretas?",
+      "o": [
+        "Francisco Reyes y Bastián Bodenhöfer en su elenco",
+        "Anahí como Mía Colucci",
+        "Miguel Varoni como Pedro Coral",
+        "Marcia Espínola, interpretada por Jael Unger"
+      ],
+      "c": 0,
+      "explanation": "Trampas y caretas: Francisco Reyes y Bastián Bodenhöfer en su elenco. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-d3053d513a02",
+      "img": "arcade/reference/telenovelas.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Amores de mercado?",
+      "o": [
+        "México",
+        "Chile",
+        "Brasil",
+        "Turquía"
+      ],
+      "c": 1,
+      "explanation": "Amores de mercado: Chile. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-90ac8db48048"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Amores de mercado?",
+      "o": [
+        "2007",
+        "2003",
+        "1976",
+        "2001"
+      ],
+      "c": 3,
+      "explanation": "Amores de mercado: 2001. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-45959130c015"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Amores de mercado?",
+      "o": [
+        "Francisco Reyes como Fernando y Ariki",
+        "Álvaro Rudolphy como Pelluco y Rodolfo",
+        "Halit Ergenç como Solimán",
+        "Claudia Di Girolamo como Artemisa"
+      ],
+      "c": 1,
+      "explanation": "Amores de mercado: Álvaro Rudolphy como Pelluco y Rodolfo. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-f45c7ffe4492"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Romané?",
+      "o": [
+        "México",
+        "Brasil",
+        "Chile",
+        "Colombia"
+      ],
+      "c": 2,
+      "explanation": "Romané: Chile. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-2bb086c4ddfe"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Romané?",
+      "o": [
+        "1981",
+        "2016",
+        "2000",
+        "1999"
+      ],
+      "c": 2,
+      "explanation": "Romané: 2000. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-cc9a7944b2fd",
+      "img": "arcade/reference/telenovelas.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Romané?",
+      "o": [
+        "Claudia Di Girolamo como Jovanka",
+        "Héctor Noguera como Federico Valdivieso",
+        "Lucélia Santos como Isaura",
+        "Beren Saat como Fatmagül"
+      ],
+      "c": 0,
+      "explanation": "Romané: Claudia Di Girolamo como Jovanka. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-f9c295a5e175"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Pampa Ilusión?",
+      "o": [
+        "Turquía",
+        "Chile",
+        "Brasil",
+        "México"
+      ],
+      "c": 1,
+      "explanation": "Pampa Ilusión: Chile. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-f8b8e8a6464c"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Pampa Ilusión?",
+      "o": [
+        "1992",
+        "2012",
+        "1995",
+        "2001"
+      ],
+      "c": 3,
+      "explanation": "Pampa Ilusión: 2001. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-43804778318c"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Pampa Ilusión?",
+      "o": [
+        "Coraima Torres como Kassandra",
+        "Claudia Di Girolamo como Inés Clark",
+        "Francisco Reyes como Miguel Molina",
+        "Ana Paula Arósio como Giuliana"
+      ],
+      "c": 1,
+      "explanation": "Pampa Ilusión: Claudia Di Girolamo como Inés Clark. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-95bfc05fbc25"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Sucupira?",
+      "o": [
+        "México",
+        "Turquía",
+        "Chile",
+        "Brasil"
+      ],
+      "c": 2,
+      "explanation": "Sucupira: Chile. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-7841f1d3b9ad",
+      "img": "arcade/reference/telenovelas.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Sucupira?",
+      "o": [
+        "2005",
+        "1976",
+        "1996",
+        "1979"
+      ],
+      "c": 2,
+      "explanation": "Sucupira: 1996. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-0c64f249a6d6"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Sucupira?",
+      "o": [
+        "Francisco Reyes como Fernando y Ariki",
+        "Miguel Varoni como Pedro Coral",
+        "Héctor Noguera como Federico Valdivieso",
+        "Giovanna Antonelli como Jade"
+      ],
+      "c": 2,
+      "explanation": "Sucupira: Héctor Noguera como Federico Valdivieso. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-6b2c56bc3587"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente La fiera?",
+      "o": [
+        "Colombia",
+        "Chile",
+        "Argentina",
+        "Turquía"
+      ],
+      "c": 1,
+      "explanation": "La fiera: Chile. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-660731761477"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente La fiera?",
+      "o": [
+        "2006",
+        "1999",
+        "1996",
+        "2004"
+      ],
+      "c": 1,
+      "explanation": "La fiera: 1999. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-5e8424de762d"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con La fiera?",
+      "o": [
+        "Claudia Di Girolamo como Natalia Sotomayor",
+        "Claudia Di Girolamo como Catalina Chamorro",
+        "Francisco Reyes como Fernando y Ariki",
+        "Francisco Reyes y Bastián Bodenhöfer en su elenco"
+      ],
+      "c": 1,
+      "explanation": "La fiera: Claudia Di Girolamo como Catalina Chamorro. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-2171a7f30dde",
+      "img": "arcade/reference/telenovelas.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Iorana?",
+      "o": [
+        "Chile",
+        "Brasil",
+        "México",
+        "Colombia"
+      ],
+      "c": 0,
+      "explanation": "Iorana: Chile. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-556ba6f25482"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Iorana?",
+      "o": [
+        "2009",
+        "1998",
+        "1996",
+        "2010"
+      ],
+      "c": 1,
+      "explanation": "Iorana: 1998. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-448fbc5fabe2"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Iorana?",
+      "o": [
+        "Emilia Attias como Cielo",
+        "Coraima Torres como Kassandra",
+        "Francisco Reyes como Fernando y Ariki",
+        "Halit Ergenç como Solimán"
+      ],
+      "c": 2,
+      "explanation": "Iorana: Francisco Reyes como Fernando y Ariki. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-0db5b60d766a"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Oro verde?",
+      "o": [
+        "Turquía",
+        "Argentina",
+        "Chile",
+        "Colombia"
+      ],
+      "c": 2,
+      "explanation": "Oro verde: Chile. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-e384ac58d6c6"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Oro verde?",
+      "o": [
+        "2007",
+        "2016",
+        "1997",
+        "2014"
+      ],
+      "c": 2,
+      "explanation": "Oro verde: 1997. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-84dfeed606d8",
+      "img": "arcade/reference/telenovelas.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Oro verde?",
+      "o": [
+        "Sigrid Alegría como Emilia",
+        "Claudia Di Girolamo como Natalia Sotomayor",
+        "Francisco Reyes como Miguel Molina",
+        "Francisco Reyes como Fernando y Ariki"
+      ],
+      "c": 1,
+      "explanation": "Oro verde: Claudia Di Girolamo como Natalia Sotomayor. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-58743c539e8f"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Estúpido cupido?",
+      "o": [
+        "México",
+        "Venezuela",
+        "Turquía",
+        "Chile"
+      ],
+      "c": 3,
+      "explanation": "Estúpido cupido: Chile. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-7a6c8a0f9bd4"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Estúpido cupido?",
+      "o": [
+        "1995",
+        "2004",
+        "2006",
+        "1999"
+      ],
+      "c": 0,
+      "explanation": "Estúpido cupido: 1995. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-430c1dd20d0e"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Estúpido cupido?",
+      "o": [
+        "Francisco Reyes como Miguel Molina",
+        "Claudia Di Girolamo como sor Angélica",
+        "Emilia Attias como Cielo",
+        "Claudia Di Girolamo como Artemisa"
+      ],
+      "c": 1,
+      "explanation": "Estúpido cupido: Claudia Di Girolamo como sor Angélica. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-f2c4ae4fa6fc"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Aquelarre?",
+      "o": [
+        "Brasil",
+        "México",
+        "Venezuela",
+        "Chile"
+      ],
+      "c": 3,
+      "explanation": "Aquelarre: Chile. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-d43d8ce305c4",
+      "img": "arcade/reference/telenovelas.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Aquelarre?",
+      "o": [
+        "1984",
+        "1999",
+        "2005",
+        "2017"
+      ],
+      "c": 1,
+      "explanation": "Aquelarre: 1999. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-32218bbe3de1"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Aquelarre?",
+      "o": [
+        "Jorge Zabaleta como Ignacio Moreno",
+        "Sigrid Alegría como Emilia",
+        "Mario Cimarro como Juan Reyes",
+        "Adriana Esteves como Carminha"
+      ],
+      "c": 1,
+      "explanation": "Aquelarre: Sigrid Alegría como Emilia. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-38a225124671"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Machos?",
+      "o": [
+        "Chile",
+        "Argentina",
+        "Colombia",
+        "Brasil"
+      ],
+      "c": 0,
+      "explanation": "Machos: Chile. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-0d35b19720ed"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Machos?",
+      "o": [
+        "1994",
+        "1980",
+        "2003",
+        "1999"
+      ],
+      "c": 2,
+      "explanation": "Machos: 2003. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-c78ada331a27"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Machos?",
+      "o": [
+        "Miguel Varoni como Pedro Coral",
+        "Daniela Ramírez como Amanda",
+        "Sigrid Alegría como Emilia",
+        "Héctor Noguera como Ángel Mercader"
+      ],
+      "c": 3,
+      "explanation": "Machos: Héctor Noguera como Ángel Mercader. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-d68fcd010b60",
+      "img": "arcade/reference/telenovelas.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Brujas?",
+      "o": [
+        "Argentina",
+        "Turquía",
+        "Colombia",
+        "Chile"
+      ],
+      "c": 3,
+      "explanation": "Brujas: Chile. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-80d2fcd2b98c"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Brujas?",
+      "o": [
+        "2006",
+        "1992",
+        "2005",
+        "1990"
+      ],
+      "c": 2,
+      "explanation": "Brujas: 2005. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-e5348c0069a7"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Brujas?",
+      "o": [
+        "Anahí como Mía Colucci",
+        "Gabriela Spanic como Paola y Paulina",
+        "Daniela Ramírez como Amanda",
+        "Carolina Arregui como Beatriz"
+      ],
+      "c": 3,
+      "explanation": "Brujas: Carolina Arregui como Beatriz. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-e6c87fac859f"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Los Pincheira?",
+      "o": [
+        "Brasil",
+        "Chile",
+        "México",
+        "Colombia"
+      ],
+      "c": 1,
+      "explanation": "Los Pincheira: Chile. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-eed29446fa14"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Los Pincheira?",
+      "o": [
+        "2004",
+        "1994",
+        "1999",
+        "2013"
+      ],
+      "c": 0,
+      "explanation": "Los Pincheira: 2004. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-6fb43c657697",
+      "img": "arcade/reference/telenovelas.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Los Pincheira?",
+      "o": [
+        "Francisco Melo como Raimundo Domínguez",
+        "Lucélia Santos como Isaura",
+        "Francisco Reyes como Miguel Molina",
+        "Sigrid Alegría como Emilia"
+      ],
+      "c": 2,
+      "explanation": "Los Pincheira: Francisco Reyes como Miguel Molina. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-1d9fba962eee"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente El señor de la Querencia (versión de TVN)?",
+      "o": [
+        "Brasil",
+        "Chile",
+        "México",
+        "Turquía"
+      ],
+      "c": 1,
+      "explanation": "El señor de la Querencia (versión de TVN): Chile. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-c41c8c022376"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente El señor de la Querencia (versión de TVN)?",
+      "o": [
+        "1981",
+        "2000",
+        "1994",
+        "2008"
+      ],
+      "c": 3,
+      "explanation": "El señor de la Querencia (versión de TVN): 2008. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-06b6cd690305"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con El señor de la Querencia (versión de TVN)?",
+      "o": [
+        "Anahí como Mía Colucci",
+        "Claudia Di Girolamo como Jovanka",
+        "Gabriela Spanic como Paola y Paulina",
+        "Julio Milostich como José Luis Echeñique"
+      ],
+      "c": 3,
+      "explanation": "El señor de la Querencia (versión de TVN): Julio Milostich como José Luis Echeñique. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-26a178cecd9a"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente ¿Dónde está Elisa??",
+      "o": [
+        "Colombia",
+        "Venezuela",
+        "México",
+        "Chile"
+      ],
+      "c": 3,
+      "explanation": "¿Dónde está Elisa?: Chile. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-eb81fed3febf",
+      "img": "arcade/reference/telenovelas.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente ¿Dónde está Elisa??",
+      "o": [
+        "1995",
+        "2009",
+        "2004",
+        "1981"
+      ],
+      "c": 1,
+      "explanation": "¿Dónde está Elisa?: 2009. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-45d1df438584"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con ¿Dónde está Elisa??",
+      "o": [
+        "Claudia Di Girolamo como Natalia Sotomayor",
+        "Héctor Noguera como Federico Valdivieso",
+        "Francisco Melo como Raimundo Domínguez",
+        "Francisco Reyes como Fernando y Ariki"
+      ],
+      "c": 2,
+      "explanation": "¿Dónde está Elisa?: Francisco Melo como Raimundo Domínguez. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-ce160e975018"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Alguien te mira (versión chilena)?",
+      "o": [
+        "Colombia",
+        "Turquía",
+        "Chile",
+        "Argentina"
+      ],
+      "c": 2,
+      "explanation": "Alguien te mira (versión chilena): Chile. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-2626c54712d7"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Alguien te mira (versión chilena)?",
+      "o": [
+        "1998",
+        "2007",
+        "1999",
+        "2010"
+      ],
+      "c": 1,
+      "explanation": "Alguien te mira (versión chilena): 2007. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-51ef049bd331"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Alguien te mira (versión chilena)?",
+      "o": [
+        "Jorge Zabaleta como Ignacio Moreno",
+        "Francisco Reyes como Miguel Molina",
+        "Carolina Arregui como Nice",
+        "Álvaro Rudolphy como Julián García"
+      ],
+      "c": 3,
+      "explanation": "Alguien te mira (versión chilena): Álvaro Rudolphy como Julián García. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-26631b6884f9",
+      "img": "arcade/reference/telenovelas.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Pituca sin lucas?",
+      "o": [
+        "Turquía",
+        "Chile",
+        "Venezuela",
+        "Argentina"
+      ],
+      "c": 1,
+      "explanation": "Pituca sin lucas: Chile. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-39ac6398df6e"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Pituca sin lucas?",
+      "o": [
+        "2001",
+        "1986",
+        "1981",
+        "2014"
+      ],
+      "c": 3,
+      "explanation": "Pituca sin lucas: 2014. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-cc567673034b"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Pituca sin lucas?",
+      "o": [
+        "Ana Paula Arósio como Giuliana",
+        "Álvaro Rudolphy como Julián García",
+        "Verónica Castro como Mariana Villarreal",
+        "Paola Volpato como Tichi Achondo"
+      ],
+      "c": 3,
+      "explanation": "Pituca sin lucas: Paola Volpato como Tichi Achondo. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-89ebf4320de4"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Perdona nuestros pecados?",
+      "o": [
+        "Chile",
+        "Brasil",
+        "Turquía",
+        "Venezuela"
+      ],
+      "c": 0,
+      "explanation": "Perdona nuestros pecados: Chile. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-20216f548542"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Perdona nuestros pecados?",
+      "o": [
+        "2017",
+        "2014",
+        "1979",
+        "1994"
+      ],
+      "c": 0,
+      "explanation": "Perdona nuestros pecados: 2017. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-0e1073e239fb",
+      "img": "arcade/reference/telenovelas.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Perdona nuestros pecados?",
+      "o": [
+        "Daniela Ramírez como Amanda",
+        "Claudia Di Girolamo como Jovanka",
+        "Ana María Orozco como Beatriz Pinzón",
+        "Álvaro Rudolphy como Armando Quiroga"
+      ],
+      "c": 3,
+      "explanation": "Perdona nuestros pecados: Álvaro Rudolphy como Armando Quiroga. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-4f96b227b783"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Verdades ocultas?",
+      "o": [
+        "Chile",
+        "Turquía",
+        "Colombia",
+        "Argentina"
+      ],
+      "c": 0,
+      "explanation": "Verdades ocultas: Chile. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-021d7b64c6fa"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Verdades ocultas?",
+      "o": [
+        "1995",
+        "2017",
+        "1997",
+        "2009"
+      ],
+      "c": 1,
+      "explanation": "Verdades ocultas: 2017. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-84ccd8173c07"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Verdades ocultas?",
+      "o": [
+        "Daniela Ramírez como Amanda",
+        "Camila Hirane como Rocío Verdugo",
+        "Ana María Orozco como Beatriz Pinzón",
+        "Margarita Rosa de Francisco como Gaviota"
+      ],
+      "c": 1,
+      "explanation": "Verdades ocultas: Camila Hirane como Rocío Verdugo. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-73506651f513"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Avenida Brasil?",
+      "o": [
+        "Chile",
+        "Brasil",
+        "Argentina",
+        "Venezuela"
+      ],
+      "c": 1,
+      "explanation": "Avenida Brasil: Brasil. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-cfeb9750b393",
+      "img": "arcade/reference/telenovelas.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Avenida Brasil?",
+      "o": [
+        "1986",
+        "2008",
+        "2012",
+        "1980"
+      ],
+      "c": 2,
+      "explanation": "Avenida Brasil: 2012. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-dbbb38f4b5a4"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Avenida Brasil?",
+      "o": [
+        "Álvaro Rudolphy como Armando Quiroga",
+        "Adriana Esteves como Carminha",
+        "Mariana Ximenes como Ana Francisca",
+        "Lucélia Santos como Isaura"
+      ],
+      "c": 1,
+      "explanation": "Avenida Brasil: Adriana Esteves como Carminha. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-d879537820cf"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente El clon?",
+      "o": [
+        "Argentina",
+        "Brasil",
+        "Chile",
+        "Colombia"
+      ],
+      "c": 1,
+      "explanation": "El clon: Brasil. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-f36bd54628ad"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente El clon?",
+      "o": [
+        "1994",
+        "2009",
+        "2003",
+        "2001"
+      ],
+      "c": 3,
+      "explanation": "El clon: 2001. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-0d93ca414ed4"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con El clon?",
+      "o": [
+        "Marcia Espínola, interpretada por Jael Unger",
+        "María Rubio como Catalina Creel",
+        "Giovanna Antonelli como Jade",
+        "Daniela Ramírez como Amanda"
+      ],
+      "c": 2,
+      "explanation": "El clon: Giovanna Antonelli como Jade. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-d24abc2ae8cf",
+      "img": "arcade/reference/telenovelas.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Terra Nostra?",
+      "o": [
+        "Turquía",
+        "Brasil",
+        "Chile",
+        "Argentina"
+      ],
+      "c": 1,
+      "explanation": "Terra Nostra: Brasil. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-c7dc1491c1b6"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Terra Nostra?",
+      "o": [
+        "1995",
+        "2003",
+        "1999",
+        "1980"
+      ],
+      "c": 2,
+      "explanation": "Terra Nostra: 1999. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-9f6163fb6d00"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Terra Nostra?",
+      "o": [
+        "Ana Paula Arósio como Giuliana",
+        "Héctor Noguera como Federico Valdivieso",
+        "Carolina Arregui como Beatriz",
+        "Claudia Di Girolamo como Catalina Chamorro"
+      ],
+      "c": 0,
+      "explanation": "Terra Nostra: Ana Paula Arósio como Giuliana. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-9ec94bb85c21"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Xica da Silva?",
+      "o": [
+        "Turquía",
+        "Argentina",
+        "Brasil",
+        "Venezuela"
+      ],
+      "c": 2,
+      "explanation": "Xica da Silva: Brasil. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-203aef0f1f34"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Xica da Silva?",
+      "o": [
+        "1997",
+        "2010",
+        "2007",
+        "1996"
+      ],
+      "c": 3,
+      "explanation": "Xica da Silva: 1996. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-f4f3b6a02b86",
+      "img": "arcade/reference/telenovelas.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Xica da Silva?",
+      "o": [
+        "Taís Araújo como Xica",
+        "Claudia Di Girolamo como Natalia Sotomayor",
+        "Regina Duarte como Helena",
+        "Thalía como Marimar Pérez"
+      ],
+      "c": 0,
+      "explanation": "Xica da Silva: Taís Araújo como Xica. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-a20aa81b1484"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente La esclava Isaura (versión de 1976)?",
+      "o": [
+        "Colombia",
+        "Venezuela",
+        "Argentina",
+        "Brasil"
+      ],
+      "c": 3,
+      "explanation": "La esclava Isaura (versión de 1976): Brasil. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-c23fc2e366fe"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente La esclava Isaura (versión de 1976)?",
+      "o": [
+        "1999",
+        "1996",
+        "1976",
+        "1984"
+      ],
+      "c": 2,
+      "explanation": "La esclava Isaura (versión de 1976): 1976. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-820264feea89"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con La esclava Isaura (versión de 1976)?",
+      "o": [
+        "Cristiana Oliveira como Juma",
+        "Lucélia Santos como Isaura",
+        "Jorge Zabaleta como Ignacio Moreno",
+        "Carolina Arregui como Nice"
+      ],
+      "c": 1,
+      "explanation": "La esclava Isaura (versión de 1976): Lucélia Santos como Isaura. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-f5db7ffe9499"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Pantanal (versión de 1990)?",
+      "o": [
+        "Colombia",
+        "México",
+        "Argentina",
+        "Brasil"
+      ],
+      "c": 3,
+      "explanation": "Pantanal (versión de 1990): Brasil. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-ecdbfdc9db85",
+      "img": "arcade/reference/telenovelas.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Pantanal (versión de 1990)?",
+      "o": [
+        "2011",
+        "2016",
+        "1984",
+        "1990"
+      ],
+      "c": 3,
+      "explanation": "Pantanal (versión de 1990): 1990. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-3957111a0eee"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Pantanal (versión de 1990)?",
+      "o": [
+        "Cristiana Oliveira como Juma",
+        "Ana Paula Arósio como Giuliana",
+        "Lucélia Santos como Isaura",
+        "Sigrid Alegría como Emilia"
+      ],
+      "c": 0,
+      "explanation": "Pantanal (versión de 1990): Cristiana Oliveira como Juma. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-470a9e582605"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Por amor?",
+      "o": [
+        "Colombia",
+        "México",
+        "Venezuela",
+        "Brasil"
+      ],
+      "c": 3,
+      "explanation": "Por amor: Brasil. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-25e0796bca54"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Por amor?",
+      "o": [
+        "1999",
+        "2003",
+        "1997",
+        "2004"
+      ],
+      "c": 2,
+      "explanation": "Por amor: 1997. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-d9796e7cafee"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Por amor?",
+      "o": [
+        "Claudia Di Girolamo como sor Angélica",
+        "Claudia Di Girolamo como Natalia Sotomayor",
+        "Margarita Rosa de Francisco como Gaviota",
+        "Regina Duarte como Helena"
+      ],
+      "c": 3,
+      "explanation": "Por amor: Regina Duarte como Helena. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-ce52da785ce6",
+      "img": "arcade/reference/telenovelas.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Chocolate con pimienta?",
+      "o": [
+        "Chile",
+        "Venezuela",
+        "México",
+        "Brasil"
+      ],
+      "c": 3,
+      "explanation": "Chocolate con pimienta: Brasil. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-94df4621608a"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Chocolate con pimienta?",
+      "o": [
+        "1986",
+        "2003",
+        "1995",
+        "1981"
+      ],
+      "c": 1,
+      "explanation": "Chocolate con pimienta: 2003. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-7ee65d2966a4"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Chocolate con pimienta?",
+      "o": [
+        "Ana María Orozco como Beatriz Pinzón",
+        "Claudia Di Girolamo como Natalia Sotomayor",
+        "Mariana Ximenes como Ana Francisca",
+        "Ana Paula Arósio como Giuliana"
+      ],
+      "c": 2,
+      "explanation": "Chocolate con pimienta: Mariana Ximenes como Ana Francisca. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-31baea1a631a"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Yo soy Betty, la fea?",
+      "o": [
+        "Argentina",
+        "Brasil",
+        "Colombia",
+        "México"
+      ],
+      "c": 2,
+      "explanation": "Yo soy Betty, la fea: Colombia. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-7098263f6b5c"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Yo soy Betty, la fea?",
+      "o": [
+        "1996",
+        "2012",
+        "1999",
+        "2005"
+      ],
+      "c": 2,
+      "explanation": "Yo soy Betty, la fea: 1999. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-2f4fa48b3d37",
+      "img": "arcade/reference/telenovelas.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Yo soy Betty, la fea?",
+      "o": [
+        "Sigrid Alegría como Emilia",
+        "Cristiana Oliveira como Juma",
+        "Halit Ergenç como Solimán",
+        "Ana María Orozco como Beatriz Pinzón"
+      ],
+      "c": 3,
+      "explanation": "Yo soy Betty, la fea: Ana María Orozco como Beatriz Pinzón. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-9902e531701a"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Pasión de gavilanes (primera temporada)?",
+      "o": [
+        "Argentina",
+        "Colombia",
+        "Chile",
+        "Turquía"
+      ],
+      "c": 1,
+      "explanation": "Pasión de gavilanes (primera temporada): Colombia. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-16365a5eed4d"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Pasión de gavilanes (primera temporada)?",
+      "o": [
+        "1995",
+        "1999",
+        "1980",
+        "2003"
+      ],
+      "c": 3,
+      "explanation": "Pasión de gavilanes (primera temporada): 2003. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-59382da93373"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Pasión de gavilanes (primera temporada)?",
+      "o": [
+        "Héctor Noguera como Ángel Mercader",
+        "Thalía como María Hernández",
+        "Mario Cimarro como Juan Reyes",
+        "Gabriela Spanic como Paola y Paulina"
+      ],
+      "c": 2,
+      "explanation": "Pasión de gavilanes (primera temporada): Mario Cimarro como Juan Reyes. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-87b57c96bd82"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Café, con aroma de mujer (versión de 1994)?",
+      "o": [
+        "Colombia",
+        "Argentina",
+        "Venezuela",
+        "Brasil"
+      ],
+      "c": 0,
+      "explanation": "Café, con aroma de mujer (versión de 1994): Colombia. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-71295e0cdc79",
+      "img": "arcade/reference/telenovelas.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Café, con aroma de mujer (versión de 1994)?",
+      "o": [
+        "1994",
+        "2005",
+        "1986",
+        "1995"
+      ],
+      "c": 0,
+      "explanation": "Café, con aroma de mujer (versión de 1994): 1994. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-39398b63f998"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Café, con aroma de mujer (versión de 1994)?",
+      "o": [
+        "Camila Hirane como Rocío Verdugo",
+        "Margarita Rosa de Francisco como Gaviota",
+        "Sigrid Alegría como Emilia",
+        "Claudia Di Girolamo como Catalina Chamorro"
+      ],
+      "c": 1,
+      "explanation": "Café, con aroma de mujer (versión de 1994): Margarita Rosa de Francisco como Gaviota. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-ecf302ca3000"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Pedro el escamoso?",
+      "o": [
+        "Venezuela",
+        "Turquía",
+        "México",
+        "Colombia"
+      ],
+      "c": 3,
+      "explanation": "Pedro el escamoso: Colombia. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-b874eb405f09"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Pedro el escamoso?",
+      "o": [
+        "2001",
+        "2016",
+        "2017",
+        "1979"
+      ],
+      "c": 0,
+      "explanation": "Pedro el escamoso: 2001. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-cd061f55dfe4"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Pedro el escamoso?",
+      "o": [
+        "Claudia Di Girolamo como Inés Clark",
+        "Beren Saat como Fatmagül",
+        "Julio Milostich como José Luis Echeñique",
+        "Miguel Varoni como Pedro Coral"
+      ],
+      "c": 3,
+      "explanation": "Pedro el escamoso: Miguel Varoni como Pedro Coral. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-a95348373343",
+      "img": "arcade/reference/telenovelas.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿En qué país se produjo originalmente La usurpadora (versión de 1998)?",
+      "o": [
+        "Turquía",
+        "Chile",
+        "México",
+        "Argentina"
+      ],
+      "c": 2,
+      "explanation": "La usurpadora (versión de 1998): México. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-79f87eba4b12"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente La usurpadora (versión de 1998)?",
+      "o": [
+        "2000",
+        "1990",
+        "1998",
+        "1994"
+      ],
+      "c": 2,
+      "explanation": "La usurpadora (versión de 1998): 1998. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-edf6c5830c87"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con La usurpadora (versión de 1998)?",
+      "o": [
+        "Mariana Ximenes como Ana Francisca",
+        "Adriana Esteves como Carminha",
+        "Ana Paula Arósio como Giuliana",
+        "Gabriela Spanic como Paola y Paulina"
+      ],
+      "c": 3,
+      "explanation": "La usurpadora (versión de 1998): Gabriela Spanic como Paola y Paulina. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-a13907425e7f"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente María la del barrio?",
+      "o": [
+        "Venezuela",
+        "Turquía",
+        "México",
+        "Argentina"
+      ],
+      "c": 2,
+      "explanation": "María la del barrio: México. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-9e4b83deb1f0"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente María la del barrio?",
+      "o": [
+        "1999",
+        "1976",
+        "1984",
+        "1995"
+      ],
+      "c": 3,
+      "explanation": "María la del barrio: 1995. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-03b41edcc348",
+      "img": "arcade/reference/telenovelas.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con María la del barrio?",
+      "o": [
+        "Carolina Arregui como Beatriz",
+        "Thalía como María Hernández",
+        "Regina Duarte como Helena",
+        "Verónica Castro como Mariana Villarreal"
+      ],
+      "c": 1,
+      "explanation": "María la del barrio: Thalía como María Hernández. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-16318a2809c4"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Marimar?",
+      "o": [
+        "Venezuela",
+        "Colombia",
+        "México",
+        "Turquía"
+      ],
+      "c": 2,
+      "explanation": "Marimar: México. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-9bb4dfb4109c"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Marimar?",
+      "o": [
+        "2001",
+        "2005",
+        "2011",
+        "1994"
+      ],
+      "c": 3,
+      "explanation": "Marimar: 1994. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-0a32f4ccb8a0"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Marimar?",
+      "o": [
+        "Thalía como Marimar Pérez",
+        "Carolina Arregui como Nice",
+        "Julio Milostich como José Luis Echeñique",
+        "Ana María Orozco como Beatriz Pinzón"
+      ],
+      "c": 0,
+      "explanation": "Marimar: Thalía como Marimar Pérez. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-1165a805aace"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Los ricos también lloran (versión de 1979)?",
+      "o": [
+        "México",
+        "Chile",
+        "Colombia",
+        "Argentina"
+      ],
+      "c": 0,
+      "explanation": "Los ricos también lloran (versión de 1979): México. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-35f4c89876e3",
+      "img": "arcade/reference/telenovelas.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Los ricos también lloran (versión de 1979)?",
+      "o": [
+        "1984",
+        "1995",
+        "2008",
+        "1979"
+      ],
+      "c": 3,
+      "explanation": "Los ricos también lloran (versión de 1979): 1979. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-d4acb4d8535a"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Los ricos también lloran (versión de 1979)?",
+      "o": [
+        "Francisco Reyes como Fernando y Ariki",
+        "Verónica Castro como Mariana Villarreal",
+        "Thalía como Marimar Pérez",
+        "Ana María Orozco como Beatriz Pinzón"
+      ],
+      "c": 1,
+      "explanation": "Los ricos también lloran (versión de 1979): Verónica Castro como Mariana Villarreal. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-c425a3517fa9"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Cuna de lobos (versión de 1986)?",
+      "o": [
+        "Brasil",
+        "Chile",
+        "México",
+        "Turquía"
+      ],
+      "c": 2,
+      "explanation": "Cuna de lobos (versión de 1986): México. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-7ba47d144a6b"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Cuna de lobos (versión de 1986)?",
+      "o": [
+        "2003",
+        "1986",
+        "1981",
+        "2011"
+      ],
+      "c": 1,
+      "explanation": "Cuna de lobos (versión de 1986): 1986. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-6245b4c05e89"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Cuna de lobos (versión de 1986)?",
+      "o": [
+        "Paola Volpato como Tichi Achondo",
+        "Camila Hirane como Rocío Verdugo",
+        "María Rubio como Catalina Creel",
+        "Álvaro Rudolphy como Pelluco y Rodolfo"
+      ],
+      "c": 2,
+      "explanation": "Cuna de lobos (versión de 1986): María Rubio como Catalina Creel. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-6a95b3fea8a4",
+      "img": "arcade/reference/telenovelas.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Rebelde (versión mexicana)?",
+      "o": [
+        "Venezuela",
+        "México",
+        "Colombia",
+        "Argentina"
+      ],
+      "c": 1,
+      "explanation": "Rebelde (versión mexicana): México. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-6047928734b5"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Rebelde (versión mexicana)?",
+      "o": [
+        "2004",
+        "2008",
+        "1998",
+        "2000"
+      ],
+      "c": 0,
+      "explanation": "Rebelde (versión mexicana): 2004. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-08d9e57de4f1"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Rebelde (versión mexicana)?",
+      "o": [
+        "Francisco Melo como Raimundo Domínguez",
+        "Anahí como Mía Colucci",
+        "Claudia Di Girolamo como Natalia Sotomayor",
+        "Verónica Castro como Mariana Villarreal"
+      ],
+      "c": 1,
+      "explanation": "Rebelde (versión mexicana): Anahí como Mía Colucci. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-8f1314bc0155"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Muñeca brava?",
+      "o": [
+        "Brasil",
+        "México",
+        "Colombia",
+        "Argentina"
+      ],
+      "c": 3,
+      "explanation": "Muñeca brava: Argentina. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-3c72f6243a47"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Muñeca brava?",
+      "o": [
+        "2006",
+        "1999",
+        "1998",
+        "1976"
+      ],
+      "c": 2,
+      "explanation": "Muñeca brava: 1998. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-d1b90550539c",
+      "img": "arcade/reference/telenovelas.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Muñeca brava?",
+      "o": [
+        "Jorge Zabaleta como Ignacio Moreno",
+        "Natalia Oreiro como Milagros",
+        "Héctor Noguera como Federico Valdivieso",
+        "Ana María Orozco como Beatriz Pinzón"
+      ],
+      "c": 1,
+      "explanation": "Muñeca brava: Natalia Oreiro como Milagros. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-3c448264ae36"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Casi ángeles?",
+      "o": [
+        "Turquía",
+        "Brasil",
+        "México",
+        "Argentina"
+      ],
+      "c": 3,
+      "explanation": "Casi ángeles: Argentina. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-d36f8850b5ca"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Casi ángeles?",
+      "o": [
+        "2017",
+        "2007",
+        "2008",
+        "1976"
+      ],
+      "c": 1,
+      "explanation": "Casi ángeles: 2007. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-918022449eee"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Casi ángeles?",
+      "o": [
+        "Regina Duarte como Helena",
+        "Emilia Attias como Cielo",
+        "Margarita Rosa de Francisco como Gaviota",
+        "Álvaro Rudolphy como Armando Quiroga"
+      ],
+      "c": 1,
+      "explanation": "Casi ángeles: Emilia Attias como Cielo. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-0407fed2cc07"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Rosa de lejos?",
+      "o": [
+        "Brasil",
+        "México",
+        "Argentina",
+        "Chile"
+      ],
+      "c": 2,
+      "explanation": "Rosa de lejos: Argentina. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-ac0d3fccc04c",
+      "img": "arcade/reference/telenovelas.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Rosa de lejos?",
+      "o": [
+        "1980",
+        "2001",
+        "1986",
+        "2007"
+      ],
+      "c": 0,
+      "explanation": "Rosa de lejos: 1980. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-87ee8f53171a"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Rosa de lejos?",
+      "o": [
+        "Cristiana Oliveira como Juma",
+        "Ana Paula Arósio como Giuliana",
+        "Thalía como Marimar Pérez",
+        "Leonor Benedetto como Rosa"
+      ],
+      "c": 3,
+      "explanation": "Rosa de lejos: Leonor Benedetto como Rosa. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-9f38fead2a65"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Kassandra?",
+      "o": [
+        "Chile",
+        "Argentina",
+        "Venezuela",
+        "México"
+      ],
+      "c": 2,
+      "explanation": "Kassandra: Venezuela. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-c48222a26795"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Kassandra?",
+      "o": [
+        "2011",
+        "1992",
+        "2013",
+        "2001"
+      ],
+      "c": 1,
+      "explanation": "Kassandra: 1992. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-c379052f54c0"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Kassandra?",
+      "o": [
+        "Thalía como Marimar Pérez",
+        "Beren Saat como Fatmagül",
+        "Francisco Melo como Raimundo Domínguez",
+        "Coraima Torres como Kassandra"
+      ],
+      "c": 3,
+      "explanation": "Kassandra: Coraima Torres como Kassandra. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-991d32739e4f",
+      "img": "arcade/reference/telenovelas.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿En qué país se produjo originalmente Las mil y una noches?",
+      "o": [
+        "Argentina",
+        "Turquía",
+        "Chile",
+        "Brasil"
+      ],
+      "c": 1,
+      "explanation": "Las mil y una noches: Turquía. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-19d330485e27"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente Las mil y una noches?",
+      "o": [
+        "1981",
+        "2016",
+        "1995",
+        "2006"
+      ],
+      "c": 3,
+      "explanation": "Las mil y una noches: 2006. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-ec920f930531"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con Las mil y una noches?",
+      "o": [
+        "Claudia Di Girolamo como Artemisa",
+        "Mariana Ximenes como Ana Francisca",
+        "Bergüzar Korel como Sherezade",
+        "Camila Hirane como Rocío Verdugo"
+      ],
+      "c": 2,
+      "explanation": "Las mil y una noches: Bergüzar Korel como Sherezade. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-e2035ccc288f"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente ¿Qué culpa tiene Fatmagül??",
+      "o": [
+        "Colombia",
+        "Brasil",
+        "Turquía",
+        "Chile"
+      ],
+      "c": 2,
+      "explanation": "¿Qué culpa tiene Fatmagül?: Turquía. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-ba8c5075eb84"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente ¿Qué culpa tiene Fatmagül??",
+      "o": [
+        "2009",
+        "2010",
+        "2017",
+        "2003"
+      ],
+      "c": 1,
+      "explanation": "¿Qué culpa tiene Fatmagül?: 2010. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-0824af984d99",
+      "img": "arcade/reference/telenovelas.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con ¿Qué culpa tiene Fatmagül??",
+      "o": [
+        "Beren Saat como Fatmagül",
+        "Bergüzar Korel como Sherezade",
+        "Taís Araújo como Xica",
+        "Jorge Zabaleta como Ignacio Moreno"
+      ],
+      "c": 0,
+      "explanation": "¿Qué culpa tiene Fatmagül?: Beren Saat como Fatmagül. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-54c5dd65bea3"
+    },
+    {
+      "q": "¿En qué país se produjo originalmente El sultán?",
+      "o": [
+        "Venezuela",
+        "Argentina",
+        "Turquía",
+        "México"
+      ],
+      "c": 2,
+      "explanation": "El sultán: Turquía. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-cd09fab3b9dc"
+    },
+    {
+      "q": "¿En qué año se estrenó originalmente El sultán?",
+      "o": [
+        "2009",
+        "2011",
+        "2016",
+        "1992"
+      ],
+      "c": 1,
+      "explanation": "El sultán: 2011. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-ceae667ea299"
+    },
+    {
+      "q": "¿Qué personaje o intérprete se asocia con El sultán?",
+      "o": [
+        "Mariana Ximenes como Ana Francisca",
+        "Héctor Noguera como Ángel Mercader",
+        "Halit Ergenç como Solimán",
+        "Álvaro Rudolphy como Julián García"
+      ],
+      "c": 2,
+      "explanation": "El sultán: Halit Ergenç como Solimán. Años de estreno original, no de emisión en Chile. Selección de telenovelas conocidas por la televisión chilena; no es un ranking de audiencia. Algunas producciones tuvieron socios internacionales.",
+      "e": "💘",
+      "id": "telenovelas-2f36c3f2d926"
+    }
+  ]
+}

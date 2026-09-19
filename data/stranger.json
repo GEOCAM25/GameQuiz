@@ -1,0 +1,2022 @@
+{
+  "cat": "stranger",
+  "name": "Stranger Things · temporadas 1–4",
+  "emoji": "🔦",
+  "edition": "4.0",
+  "sources": [
+    "https://www.netflix.com/tudum/stranger-things",
+    "https://www.netflix.com/tudum/articles/stranger-things-season-4-recap"
+  ],
+  "questions": [
+    {
+      "q": "¿Quién interpreta a Eleven / Once en Stranger Things (temporadas 1–4)?",
+      "o": [
+        "Cara Buono",
+        "Jamie Campbell Bower",
+        "Millie Bobby Brown",
+        "Maya Hawke"
+      ],
+      "c": 2,
+      "explanation": "Eleven / Once: Millie Bobby Brown. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-bc9b365bb519",
+      "img": "arcade/reference/stranger.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué vínculo o función identifica a Eleven / Once?",
+      "o": [
+        "Es hija de Terry Ives",
+        "Es dueño de una cafetería",
+        "Es hermanastro de Max",
+        "Es hermano de Nancy"
+      ],
+      "c": 0,
+      "explanation": "Eleven / Once: Es hija de Terry Ives. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-ffbd0cf58fe0"
+    },
+    {
+      "q": "¿Qué hecho se asocia con Eleven / Once hasta la temporada 4?",
+      "o": [
+        "Usa el nombre de Enzo al contactar con Joyce",
+        "La música ayuda a rescatarla de Vecna",
+        "Se convierte en el antagonista llamado Vecna",
+        "Tiene poderes de telequinesis"
+      ],
+      "c": 3,
+      "explanation": "Eleven / Once: Tiene poderes de telequinesis. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-39283d4b7567"
+    },
+    {
+      "q": "¿Quién interpreta a Mike Wheeler en Stranger Things (temporadas 1–4)?",
+      "o": [
+        "Caleb McLaughlin",
+        "Noah Schnapp",
+        "Dacre Montgomery",
+        "Finn Wolfhard"
+      ],
+      "c": 3,
+      "explanation": "Mike Wheeler: Finn Wolfhard. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-dc0be136c76a"
+    },
+    {
+      "q": "¿Qué vínculo o función identifica a Mike Wheeler?",
+      "o": [
+        "Es hijo de Joyce",
+        "Es hermanastra de Billy",
+        "Es hermano de Nancy",
+        "Es hermanastro de Max"
+      ],
+      "c": 2,
+      "explanation": "Mike Wheeler: Es hermano de Nancy. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-70bdf04d1277"
+    },
+    {
+      "q": "¿Qué hecho se asocia con Mike Wheeler hasta la temporada 4?",
+      "o": [
+        "Es aficionado a la fotografía",
+        "Ayuda a proteger a Eleven",
+        "La música ayuda a rescatarla de Vecna",
+        "Forma parte del grupo original de amigos de Will"
+      ],
+      "c": 3,
+      "explanation": "Mike Wheeler: Forma parte del grupo original de amigos de Will. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-72e66ff92f2f",
+      "img": "arcade/reference/stranger.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Quién interpreta a Dustin Henderson en Stranger Things (temporadas 1–4)?",
+      "o": [
+        "Maya Hawke",
+        "Jamie Campbell Bower",
+        "Gaten Matarazzo",
+        "Millie Bobby Brown"
+      ],
+      "c": 2,
+      "explanation": "Dustin Henderson: Gaten Matarazzo. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-d42342bb4c0e"
+    },
+    {
+      "q": "¿Qué vínculo o función identifica a Dustin Henderson?",
+      "o": [
+        "Es amigo de Steve",
+        "Fue el sujeto 001 del laboratorio",
+        "Es hijo de Joyce",
+        "Es pareja de Joyce"
+      ],
+      "c": 0,
+      "explanation": "Dustin Henderson: Es amigo de Steve. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-8bdfc55af7e6"
+    },
+    {
+      "q": "¿Qué hecho se asocia con Dustin Henderson hasta la temporada 4?",
+      "o": [
+        "Adopta temporalmente a una criatura llamada Dart",
+        "La música ayuda a rescatarla de Vecna",
+        "Toca guitarra en el Mundo del Revés",
+        "Los niños del laboratorio lo llaman Papá"
+      ],
+      "c": 0,
+      "explanation": "Dustin Henderson: Adopta temporalmente a una criatura llamada Dart. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-a2faaaac5b55"
+    },
+    {
+      "q": "¿Quién interpreta a Lucas Sinclair en Stranger Things (temporadas 1–4)?",
+      "o": [
+        "Millie Bobby Brown",
+        "Caleb McLaughlin",
+        "Randy Havens",
+        "Natalia Dyer"
+      ],
+      "c": 1,
+      "explanation": "Lucas Sinclair: Caleb McLaughlin. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-1dcab2044ae7"
+    },
+    {
+      "q": "¿Qué vínculo o función identifica a Lucas Sinclair?",
+      "o": [
+        "Es científico vinculado al laboratorio",
+        "Es hermano de Nancy",
+        "Es hermano de Erica",
+        "Fue el sujeto 001 del laboratorio"
+      ],
+      "c": 2,
+      "explanation": "Lucas Sinclair: Es hermano de Erica. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-4bdcd8bf48ef",
+      "img": "arcade/reference/stranger.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué hecho se asocia con Lucas Sinclair hasta la temporada 4?",
+      "o": [
+        "Adopta temporalmente a una criatura llamada Dart",
+        "Se incorpora al equipo de básquetbol escolar",
+        "Vive en Salt Lake City",
+        "Es aficionado a la fotografía"
+      ],
+      "c": 1,
+      "explanation": "Lucas Sinclair: Se incorpora al equipo de básquetbol escolar. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-6c8a203c60e5"
+    },
+    {
+      "q": "¿Quién interpreta a Will Byers en Stranger Things (temporadas 1–4)?",
+      "o": [
+        "Gaten Matarazzo",
+        "Tom Wlaschiha",
+        "Noah Schnapp",
+        "Cara Buono"
+      ],
+      "c": 2,
+      "explanation": "Will Byers: Noah Schnapp. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-e934f82c3e62"
+    },
+    {
+      "q": "¿Qué vínculo o función identifica a Will Byers?",
+      "o": [
+        "Es científico vinculado al laboratorio",
+        "Es hermanastro de Max",
+        "Es amiga de Nancy",
+        "Es hermano de Jonathan"
+      ],
+      "c": 3,
+      "explanation": "Will Byers: Es hermano de Jonathan. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-a87a0918f96e"
+    },
+    {
+      "q": "¿Qué hecho se asocia con Will Byers hasta la temporada 4?",
+      "o": [
+        "Toca guitarra en el Mundo del Revés",
+        "Adopta temporalmente a una criatura llamada Dart",
+        "Participa en la operación bajo el centro comercial",
+        "Su desaparición desencadena la primera temporada"
+      ],
+      "c": 3,
+      "explanation": "Will Byers: Su desaparición desencadena la primera temporada. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-39319585768a"
+    },
+    {
+      "q": "¿Quién interpreta a Max Mayfield en Stranger Things (temporadas 1–4)?",
+      "o": [
+        "Sean Astin",
+        "Sadie Sink",
+        "Shannon Purser",
+        "Gaten Matarazzo"
+      ],
+      "c": 1,
+      "explanation": "Max Mayfield: Sadie Sink. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-8b61bc01abb8",
+      "img": "arcade/reference/stranger.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué vínculo o función identifica a Max Mayfield?",
+      "o": [
+        "Es hermana de Mike",
+        "Es guardia de prisión en la Unión Soviética",
+        "Es hermanastra de Billy",
+        "Es madre de Mike, Nancy y Holly"
+      ],
+      "c": 2,
+      "explanation": "Max Mayfield: Es hermanastra de Billy. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-93e00efa8349"
+    },
+    {
+      "q": "¿Qué hecho se asocia con Max Mayfield hasta la temporada 4?",
+      "o": [
+        "Vive en Salt Lake City",
+        "La música ayuda a rescatarla de Vecna",
+        "Ayuda a descifrar una transmisión rusa",
+        "Trabaja para Surfer Boy Pizza"
+      ],
+      "c": 1,
+      "explanation": "Max Mayfield: La música ayuda a rescatarla de Vecna. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-eac1f03d7492"
+    },
+    {
+      "q": "¿Quién interpreta a Nancy Wheeler en Stranger Things (temporadas 1–4)?",
+      "o": [
+        "David Harbour",
+        "Cara Buono",
+        "Natalia Dyer",
+        "Joe Chrest"
+      ],
+      "c": 2,
+      "explanation": "Nancy Wheeler: Natalia Dyer. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-68536c02e3a5"
+    },
+    {
+      "q": "¿Qué vínculo o función identifica a Nancy Wheeler?",
+      "o": [
+        "Es hijo de Joyce",
+        "Es hermana de Mike",
+        "Es novia de Dustin",
+        "Trabaja en Scoops Ahoy"
+      ],
+      "c": 1,
+      "explanation": "Nancy Wheeler: Es hermana de Mike. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-ba4b4bffa6ae"
+    },
+    {
+      "q": "¿Qué hecho se asocia con Nancy Wheeler hasta la temporada 4?",
+      "o": [
+        "Habla ruso",
+        "Usa el nombre de Enzo al contactar con Joyce",
+        "Es una víctima de Vecna en la cuarta temporada",
+        "Investiga la desaparición de Barb"
+      ],
+      "c": 3,
+      "explanation": "Nancy Wheeler: Investiga la desaparición de Barb. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-91df689833cd",
+      "img": "arcade/reference/stranger.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Quién interpreta a Jonathan Byers en Stranger Things (temporadas 1–4)?",
+      "o": [
+        "Charlie Heaton",
+        "Mason Dye",
+        "Matthew Modine",
+        "Noah Schnapp"
+      ],
+      "c": 0,
+      "explanation": "Jonathan Byers: Charlie Heaton. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-c4c790483941"
+    },
+    {
+      "q": "¿Qué vínculo o función identifica a Jonathan Byers?",
+      "o": [
+        "Es jefe de policía de Hawkins",
+        "Es hija de Terry Ives",
+        "Es hijo de Joyce",
+        "Es capitán del equipo de básquetbol"
+      ],
+      "c": 2,
+      "explanation": "Jonathan Byers: Es hijo de Joyce. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-6ef61dd0f2ac"
+    },
+    {
+      "q": "¿Qué hecho se asocia con Jonathan Byers hasta la temporada 4?",
+      "o": [
+        "Se convierte en el antagonista llamado Vecna",
+        "Es esposo de Karen",
+        "Es aficionado a la fotografía",
+        "Habla ruso"
+      ],
+      "c": 2,
+      "explanation": "Jonathan Byers: Es aficionado a la fotografía. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-b61619cd0d64"
+    },
+    {
+      "q": "¿Quién interpreta a Steve Harrington en Stranger Things (temporadas 1–4)?",
+      "o": [
+        "Eduardo Franco",
+        "Millie Bobby Brown",
+        "Randy Havens",
+        "Joe Keery"
+      ],
+      "c": 3,
+      "explanation": "Steve Harrington: Joe Keery. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-d0b4496ce26b"
+    },
+    {
+      "q": "¿Qué vínculo o función identifica a Steve Harrington?",
+      "o": [
+        "Es hermano de Nancy",
+        "Es madre de Mike, Nancy y Holly",
+        "Es madre de Will y Jonathan",
+        "Trabaja con Robin"
+      ],
+      "c": 3,
+      "explanation": "Steve Harrington: Trabaja con Robin. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-235d23e46833",
+      "img": "arcade/reference/stranger.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué hecho se asocia con Steve Harrington hasta la temporada 4?",
+      "o": [
+        "La música ayuda a rescatarla de Vecna",
+        "Ayuda a Eleven al inicio de la serie",
+        "Trabaja en RadioShack",
+        "Es recordado por usar un bate con clavos"
+      ],
+      "c": 3,
+      "explanation": "Steve Harrington: Es recordado por usar un bate con clavos. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-419f004cdfa5"
+    },
+    {
+      "q": "¿Quién interpreta a Robin Buckley en Stranger Things (temporadas 1–4)?",
+      "o": [
+        "Caleb McLaughlin",
+        "Noah Schnapp",
+        "Joe Chrest",
+        "Maya Hawke"
+      ],
+      "c": 3,
+      "explanation": "Robin Buckley: Maya Hawke. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-3ea2b9afedf8"
+    },
+    {
+      "q": "¿Qué vínculo o función identifica a Robin Buckley?",
+      "o": [
+        "Trabaja en Scoops Ahoy",
+        "Dirige el Hellfire Club",
+        "Es hermano de Erica",
+        "Es investigador y teórico de conspiraciones"
+      ],
+      "c": 0,
+      "explanation": "Robin Buckley: Trabaja en Scoops Ahoy. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-8852975cdfc6"
+    },
+    {
+      "q": "¿Qué hecho se asocia con Robin Buckley hasta la temporada 4?",
+      "o": [
+        "Trabaja para Surfer Boy Pizza",
+        "Ayuda a descifrar una transmisión rusa",
+        "Desaparece tras una fiesta en casa de Steve",
+        "Habla ruso"
+      ],
+      "c": 1,
+      "explanation": "Robin Buckley: Ayuda a descifrar una transmisión rusa. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-59b7ecede00e"
+    },
+    {
+      "q": "¿Quién interpreta a Jim Hopper en Stranger Things (temporadas 1–4)?",
+      "o": [
+        "David Harbour",
+        "Gaten Matarazzo",
+        "Joseph Quinn",
+        "Caleb McLaughlin"
+      ],
+      "c": 0,
+      "explanation": "Jim Hopper: David Harbour. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-88c28c5d2e18",
+      "img": "arcade/reference/stranger.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué vínculo o función identifica a Jim Hopper?",
+      "o": [
+        "Es padre de Mike, Nancy y Holly",
+        "Es jefe de policía de Hawkins",
+        "Es hija de Terry Ives",
+        "Es hermano de Jonathan"
+      ],
+      "c": 1,
+      "explanation": "Jim Hopper: Es jefe de policía de Hawkins. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-772350e6efba"
+    },
+    {
+      "q": "¿Qué hecho se asocia con Jim Hopper hasta la temporada 4?",
+      "o": [
+        "Es aficionado a la fotografía",
+        "Habla ruso",
+        "Se convierte en figura paterna para Eleven",
+        "Ayuda a descifrar una transmisión rusa"
+      ],
+      "c": 2,
+      "explanation": "Jim Hopper: Se convierte en figura paterna para Eleven. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-f12ac0915643"
+    },
+    {
+      "q": "¿Quién interpreta a Joyce Byers en Stranger Things (temporadas 1–4)?",
+      "o": [
+        "Randy Havens",
+        "Mason Dye",
+        "Winona Ryder",
+        "Caleb McLaughlin"
+      ],
+      "c": 2,
+      "explanation": "Joyce Byers: Winona Ryder. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-4c703935f85a"
+    },
+    {
+      "q": "¿Qué vínculo o función identifica a Joyce Byers?",
+      "o": [
+        "Es amiga de Nancy",
+        "Es científico vinculado al laboratorio",
+        "Es profesor de ciencias",
+        "Es madre de Will y Jonathan"
+      ],
+      "c": 3,
+      "explanation": "Joyce Byers: Es madre de Will y Jonathan. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-918c2973d230"
+    },
+    {
+      "q": "¿Qué hecho se asocia con Joyce Byers hasta la temporada 4?",
+      "o": [
+        "Ayuda a proteger a Eleven",
+        "Sospecha injustamente del Hellfire Club",
+        "Investiga la desaparición de Barb",
+        "Usa luces de Navidad para comunicarse con Will"
+      ],
+      "c": 3,
+      "explanation": "Joyce Byers: Usa luces de Navidad para comunicarse con Will. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-5213ce88cd4e",
+      "img": "arcade/reference/stranger.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Quién interpreta a Eddie Munson en Stranger Things (temporadas 1–4)?",
+      "o": [
+        "David Harbour",
+        "Joseph Quinn",
+        "Tom Wlaschiha",
+        "Finn Wolfhard"
+      ],
+      "c": 1,
+      "explanation": "Eddie Munson: Joseph Quinn. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-a8a335484fc3"
+    },
+    {
+      "q": "¿Qué vínculo o función identifica a Eddie Munson?",
+      "o": [
+        "Dirige el Hellfire Club",
+        "Es amigo de Steve",
+        "Es amigo de Jonathan en California",
+        "Es investigador y teórico de conspiraciones"
+      ],
+      "c": 0,
+      "explanation": "Eddie Munson: Dirige el Hellfire Club. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-5f16ccaddb43"
+    },
+    {
+      "q": "¿Qué hecho se asocia con Eddie Munson hasta la temporada 4?",
+      "o": [
+        "Explica a los chicos ideas sobre otras dimensiones",
+        "Su desaparición desencadena la primera temporada",
+        "Trabaja en RadioShack",
+        "Toca guitarra en el Mundo del Revés"
+      ],
+      "c": 3,
+      "explanation": "Eddie Munson: Toca guitarra en el Mundo del Revés. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-1d50dec92bd4"
+    },
+    {
+      "q": "¿Quién interpreta a Billy Hargrove en Stranger Things (temporadas 1–4)?",
+      "o": [
+        "Priah Ferguson",
+        "Sadie Sink",
+        "Eduardo Franco",
+        "Dacre Montgomery"
+      ],
+      "c": 3,
+      "explanation": "Billy Hargrove: Dacre Montgomery. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-6578c032a546"
+    },
+    {
+      "q": "¿Qué vínculo o función identifica a Billy Hargrove?",
+      "o": [
+        "Es amigo de Steve",
+        "Es hermanastro de Max",
+        "Es investigador y teórico de conspiraciones",
+        "Trabaja con Robin"
+      ],
+      "c": 1,
+      "explanation": "Billy Hargrove: Es hermanastro de Max. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-c97b5113b0ab",
+      "img": "arcade/reference/stranger.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué hecho se asocia con Billy Hargrove hasta la temporada 4?",
+      "o": [
+        "Participa en la operación bajo el centro comercial",
+        "Trabaja como salvavidas en la tercera temporada",
+        "Es recordado por usar un bate con clavos",
+        "Se convierte en el antagonista llamado Vecna"
+      ],
+      "c": 1,
+      "explanation": "Billy Hargrove: Trabaja como salvavidas en la tercera temporada. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-fe7f5b30c14d"
+    },
+    {
+      "q": "¿Quién interpreta a Erica Sinclair en Stranger Things (temporadas 1–4)?",
+      "o": [
+        "Millie Bobby Brown",
+        "Paul Reiser",
+        "Finn Wolfhard",
+        "Priah Ferguson"
+      ],
+      "c": 3,
+      "explanation": "Erica Sinclair: Priah Ferguson. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-59a5238a4dff"
+    },
+    {
+      "q": "¿Qué vínculo o función identifica a Erica Sinclair?",
+      "o": [
+        "Es hermano de Jonathan",
+        "Es hermana de Lucas",
+        "Es madre de Will y Jonathan",
+        "Es hija de Terry Ives"
+      ],
+      "c": 1,
+      "explanation": "Erica Sinclair: Es hermana de Lucas. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-1c426a978ba0"
+    },
+    {
+      "q": "¿Qué hecho se asocia con Erica Sinclair hasta la temporada 4?",
+      "o": [
+        "Ayuda a descifrar una transmisión rusa",
+        "Participa en la operación bajo el centro comercial",
+        "Toca guitarra en el Mundo del Revés",
+        "Se convierte en el antagonista llamado Vecna"
+      ],
+      "c": 1,
+      "explanation": "Erica Sinclair: Participa en la operación bajo el centro comercial. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-ae7cb2ba9773"
+    },
+    {
+      "q": "¿Quién interpreta a Murray Bauman en Stranger Things (temporadas 1–4)?",
+      "o": [
+        "Brett Gelman",
+        "Grace Van Dien",
+        "Paul Reiser",
+        "Gabriella Pizzolo"
+      ],
+      "c": 0,
+      "explanation": "Murray Bauman: Brett Gelman. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-220461992078",
+      "img": "arcade/reference/stranger.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué vínculo o función identifica a Murray Bauman?",
+      "o": [
+        "Es padre de Mike, Nancy y Holly",
+        "Es investigador y teórico de conspiraciones",
+        "Fue el sujeto 001 del laboratorio",
+        "Es pareja de Joyce"
+      ],
+      "c": 1,
+      "explanation": "Murray Bauman: Es investigador y teórico de conspiraciones. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-0ea5454ed57a"
+    },
+    {
+      "q": "¿Qué hecho se asocia con Murray Bauman hasta la temporada 4?",
+      "o": [
+        "Se convierte en el antagonista llamado Vecna",
+        "Usa el nombre de Enzo al contactar con Joyce",
+        "Habla ruso",
+        "Adopta temporalmente a una criatura llamada Dart"
+      ],
+      "c": 2,
+      "explanation": "Murray Bauman: Habla ruso. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-3f2a7cbfe592"
+    },
+    {
+      "q": "¿Quién interpreta a Martin Brenner en Stranger Things (temporadas 1–4)?",
+      "o": [
+        "Matthew Modine",
+        "Joe Keery",
+        "Finn Wolfhard",
+        "David Harbour"
+      ],
+      "c": 0,
+      "explanation": "Martin Brenner: Matthew Modine. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-5ed141723ec2"
+    },
+    {
+      "q": "¿Qué vínculo o función identifica a Martin Brenner?",
+      "o": [
+        "Dirige experimentos en el laboratorio",
+        "Es hermanastro de Max",
+        "Es hermana de Lucas",
+        "Es hijo de Joyce"
+      ],
+      "c": 0,
+      "explanation": "Martin Brenner: Dirige experimentos en el laboratorio. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-dcdc297bde37"
+    },
+    {
+      "q": "¿Qué hecho se asocia con Martin Brenner hasta la temporada 4?",
+      "o": [
+        "Es una víctima de Vecna en la cuarta temporada",
+        "Los niños del laboratorio lo llaman Papá",
+        "Trabaja para Surfer Boy Pizza",
+        "Se convierte en el antagonista llamado Vecna"
+      ],
+      "c": 1,
+      "explanation": "Martin Brenner: Los niños del laboratorio lo llaman Papá. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-bfe6a996384c",
+      "img": "arcade/reference/stranger.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Quién interpreta a Sam Owens en Stranger Things (temporadas 1–4)?",
+      "o": [
+        "Finn Wolfhard",
+        "Eduardo Franco",
+        "Paul Reiser",
+        "Gaten Matarazzo"
+      ],
+      "c": 2,
+      "explanation": "Sam Owens: Paul Reiser. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-2b8963473577"
+    },
+    {
+      "q": "¿Qué vínculo o función identifica a Sam Owens?",
+      "o": [
+        "Es pareja de Joyce",
+        "Es jefe de policía de Hawkins",
+        "Es novia de Dustin",
+        "Es científico vinculado al laboratorio"
+      ],
+      "c": 3,
+      "explanation": "Sam Owens: Es científico vinculado al laboratorio. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-5651130b878b"
+    },
+    {
+      "q": "¿Qué hecho se asocia con Sam Owens hasta la temporada 4?",
+      "o": [
+        "Toca guitarra en el Mundo del Revés",
+        "Ayuda a proteger a Eleven",
+        "Vive en Salt Lake City",
+        "Trabaja para Surfer Boy Pizza"
+      ],
+      "c": 1,
+      "explanation": "Sam Owens: Ayuda a proteger a Eleven. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-11192e86912e"
+    },
+    {
+      "q": "¿Quién interpreta a Bob Newby en Stranger Things (temporadas 1–4)?",
+      "o": [
+        "Sadie Sink",
+        "Sean Astin",
+        "Noah Schnapp",
+        "Cara Buono"
+      ],
+      "c": 1,
+      "explanation": "Bob Newby: Sean Astin. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-b5727b608b57"
+    },
+    {
+      "q": "¿Qué vínculo o función identifica a Bob Newby?",
+      "o": [
+        "Es animadora de Hawkins High",
+        "Trabaja con Robin",
+        "Fue el sujeto 001 del laboratorio",
+        "Es pareja de Joyce"
+      ],
+      "c": 3,
+      "explanation": "Bob Newby: Es pareja de Joyce. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-baeddb49568f",
+      "img": "arcade/reference/stranger.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué hecho se asocia con Bob Newby hasta la temporada 4?",
+      "o": [
+        "Es una víctima de Vecna en la cuarta temporada",
+        "Trabaja en RadioShack",
+        "Forma parte del grupo original de amigos de Will",
+        "Desaparece tras una fiesta en casa de Steve"
+      ],
+      "c": 1,
+      "explanation": "Bob Newby: Trabaja en RadioShack. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-7c0966748338"
+    },
+    {
+      "q": "¿Quién interpreta a Barbara Holland en Stranger Things (temporadas 1–4)?",
+      "o": [
+        "Caleb McLaughlin",
+        "Mason Dye",
+        "Tom Wlaschiha",
+        "Shannon Purser"
+      ],
+      "c": 3,
+      "explanation": "Barbara Holland: Shannon Purser. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-964d599e3180"
+    },
+    {
+      "q": "¿Qué vínculo o función identifica a Barbara Holland?",
+      "o": [
+        "Es profesor de ciencias",
+        "Es madre de Mike, Nancy y Holly",
+        "Es amiga de Nancy",
+        "Es capitán del equipo de básquetbol"
+      ],
+      "c": 2,
+      "explanation": "Barbara Holland: Es amiga de Nancy. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-9d3f2dd3259f"
+    },
+    {
+      "q": "¿Qué hecho se asocia con Barbara Holland hasta la temporada 4?",
+      "o": [
+        "Tiene poderes de telequinesis",
+        "Ayuda a Eleven al inicio de la serie",
+        "Desaparece tras una fiesta en casa de Steve",
+        "Ayuda a descifrar una transmisión rusa"
+      ],
+      "c": 2,
+      "explanation": "Barbara Holland: Desaparece tras una fiesta en casa de Steve. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-b47f452e31ce"
+    },
+    {
+      "q": "¿Quién interpreta a Karen Wheeler en Stranger Things (temporadas 1–4)?",
+      "o": [
+        "Cara Buono",
+        "Charlie Heaton",
+        "Mason Dye",
+        "Dacre Montgomery"
+      ],
+      "c": 0,
+      "explanation": "Karen Wheeler: Cara Buono. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-c5cc34eb9f27",
+      "img": "arcade/reference/stranger.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué vínculo o función identifica a Karen Wheeler?",
+      "o": [
+        "Es profesor de ciencias",
+        "Es madre de Mike, Nancy y Holly",
+        "Es amigo de Steve",
+        "Fue el sujeto 001 del laboratorio"
+      ],
+      "c": 1,
+      "explanation": "Karen Wheeler: Es madre de Mike, Nancy y Holly. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-7416090934a3"
+    },
+    {
+      "q": "¿Qué hecho se asocia con Karen Wheeler hasta la temporada 4?",
+      "o": [
+        "Ayuda a Eleven al inicio de la serie",
+        "La música ayuda a rescatarla de Vecna",
+        "Vive en la casa de los Wheeler",
+        "Desaparece tras una fiesta en casa de Steve"
+      ],
+      "c": 2,
+      "explanation": "Karen Wheeler: Vive en la casa de los Wheeler. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-c0a72ce710cc"
+    },
+    {
+      "q": "¿Quién interpreta a Ted Wheeler en Stranger Things (temporadas 1–4)?",
+      "o": [
+        "Joe Chrest",
+        "Joseph Quinn",
+        "Natalia Dyer",
+        "Maya Hawke"
+      ],
+      "c": 0,
+      "explanation": "Ted Wheeler: Joe Chrest. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-57c92dd0a9ff"
+    },
+    {
+      "q": "¿Qué vínculo o función identifica a Ted Wheeler?",
+      "o": [
+        "Es animadora de Hawkins High",
+        "Trabaja con Robin",
+        "Es padre de Mike, Nancy y Holly",
+        "Es hijo de Joyce"
+      ],
+      "c": 2,
+      "explanation": "Ted Wheeler: Es padre de Mike, Nancy y Holly. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-aad08c0ec274"
+    },
+    {
+      "q": "¿Qué hecho se asocia con Ted Wheeler hasta la temporada 4?",
+      "o": [
+        "Vive en la casa de los Wheeler",
+        "Ayuda a descifrar una transmisión rusa",
+        "Es esposo de Karen",
+        "Participa en la operación bajo el centro comercial"
+      ],
+      "c": 2,
+      "explanation": "Ted Wheeler: Es esposo de Karen. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-8fb86a594c8f",
+      "img": "arcade/reference/stranger.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Quién interpreta a Scott Clarke en Stranger Things (temporadas 1–4)?",
+      "o": [
+        "Randy Havens",
+        "Shannon Purser",
+        "Grace Van Dien",
+        "Eduardo Franco"
+      ],
+      "c": 0,
+      "explanation": "Scott Clarke: Randy Havens. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-db381a00bf20"
+    },
+    {
+      "q": "¿Qué vínculo o función identifica a Scott Clarke?",
+      "o": [
+        "Fue el sujeto 001 del laboratorio",
+        "Es profesor de ciencias",
+        "Es jefe de policía de Hawkins",
+        "Es pareja de Joyce"
+      ],
+      "c": 1,
+      "explanation": "Scott Clarke: Es profesor de ciencias. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-f387ad8f7ec0"
+    },
+    {
+      "q": "¿Qué hecho se asocia con Scott Clarke hasta la temporada 4?",
+      "o": [
+        "Explica a los chicos ideas sobre otras dimensiones",
+        "Tiene poderes de telequinesis",
+        "Su desaparición desencadena la primera temporada",
+        "Trabaja en RadioShack"
+      ],
+      "c": 0,
+      "explanation": "Scott Clarke: Explica a los chicos ideas sobre otras dimensiones. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-e7ca5a585f11"
+    },
+    {
+      "q": "¿Quién interpreta a Benny Hammond en Stranger Things (temporadas 1–4)?",
+      "o": [
+        "Chris Sullivan",
+        "Cara Buono",
+        "Brett Gelman",
+        "Eduardo Franco"
+      ],
+      "c": 0,
+      "explanation": "Benny Hammond: Chris Sullivan. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-d3d604e6c436"
+    },
+    {
+      "q": "¿Qué vínculo o función identifica a Benny Hammond?",
+      "o": [
+        "Es animadora de Hawkins High",
+        "Es madre de Mike, Nancy y Holly",
+        "Es dueño de una cafetería",
+        "Es hija de Terry Ives"
+      ],
+      "c": 2,
+      "explanation": "Benny Hammond: Es dueño de una cafetería. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-32f0e5374fb6",
+      "img": "arcade/reference/stranger.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué hecho se asocia con Benny Hammond hasta la temporada 4?",
+      "o": [
+        "Vive en la casa de los Wheeler",
+        "Ayuda a proteger a Eleven",
+        "Se convierte en el antagonista llamado Vecna",
+        "Ayuda a Eleven al inicio de la serie"
+      ],
+      "c": 3,
+      "explanation": "Benny Hammond: Ayuda a Eleven al inicio de la serie. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-a534185593b4"
+    },
+    {
+      "q": "¿Quién interpreta a Argyle en Stranger Things (temporadas 1–4)?",
+      "o": [
+        "Jamie Campbell Bower",
+        "Eduardo Franco",
+        "Tom Wlaschiha",
+        "Noah Schnapp"
+      ],
+      "c": 1,
+      "explanation": "Argyle: Eduardo Franco. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-b6dfa5dcc4cb"
+    },
+    {
+      "q": "¿Qué vínculo o función identifica a Argyle?",
+      "o": [
+        "Es amigo de Jonathan en California",
+        "Es hermana de Lucas",
+        "Es guardia de prisión en la Unión Soviética",
+        "Es hermano de Jonathan"
+      ],
+      "c": 0,
+      "explanation": "Argyle: Es amigo de Jonathan en California. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-8fe3510f664e"
+    },
+    {
+      "q": "¿Qué hecho se asocia con Argyle hasta la temporada 4?",
+      "o": [
+        "Sospecha injustamente del Hellfire Club",
+        "Trabaja para Surfer Boy Pizza",
+        "Vive en Salt Lake City",
+        "Tiene poderes de telequinesis"
+      ],
+      "c": 1,
+      "explanation": "Argyle: Trabaja para Surfer Boy Pizza. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-7b088c5ac4a1"
+    },
+    {
+      "q": "¿Quién interpreta a Suzie en Stranger Things (temporadas 1–4)?",
+      "o": [
+        "Gabriella Pizzolo",
+        "Priah Ferguson",
+        "David Harbour",
+        "Joe Keery"
+      ],
+      "c": 0,
+      "explanation": "Suzie: Gabriella Pizzolo. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-bb4c7c2523c9",
+      "img": "arcade/reference/stranger.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué vínculo o función identifica a Suzie?",
+      "o": [
+        "Es hija de Terry Ives",
+        "Es novia de Dustin",
+        "Es madre de Will y Jonathan",
+        "Dirige experimentos en el laboratorio"
+      ],
+      "c": 1,
+      "explanation": "Suzie: Es novia de Dustin. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-77b3ad2a8228"
+    },
+    {
+      "q": "¿Qué hecho se asocia con Suzie hasta la temporada 4?",
+      "o": [
+        "Vive en Salt Lake City",
+        "Trabaja para Surfer Boy Pizza",
+        "Trabaja en RadioShack",
+        "Habla ruso"
+      ],
+      "c": 0,
+      "explanation": "Suzie: Vive en Salt Lake City. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-6c3b47992109"
+    },
+    {
+      "q": "¿Quién interpreta a Jason Carver en Stranger Things (temporadas 1–4)?",
+      "o": [
+        "Mason Dye",
+        "Matthew Modine",
+        "Tom Wlaschiha",
+        "Gaten Matarazzo"
+      ],
+      "c": 0,
+      "explanation": "Jason Carver: Mason Dye. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-aa2ed1fb9109"
+    },
+    {
+      "q": "¿Qué vínculo o función identifica a Jason Carver?",
+      "o": [
+        "Trabaja en Scoops Ahoy",
+        "Es hijo de Joyce",
+        "Dirige el Hellfire Club",
+        "Es capitán del equipo de básquetbol"
+      ],
+      "c": 3,
+      "explanation": "Jason Carver: Es capitán del equipo de básquetbol. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-0ac1d3b1fbb7"
+    },
+    {
+      "q": "¿Qué hecho se asocia con Jason Carver hasta la temporada 4?",
+      "o": [
+        "Trabaja en RadioShack",
+        "Sospecha injustamente del Hellfire Club",
+        "Ayuda a proteger a Eleven",
+        "Se convierte en el antagonista llamado Vecna"
+      ],
+      "c": 1,
+      "explanation": "Jason Carver: Sospecha injustamente del Hellfire Club. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-5049126f36b3",
+      "img": "arcade/reference/stranger.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Quién interpreta a Chrissy Cunningham en Stranger Things (temporadas 1–4)?",
+      "o": [
+        "Jamie Campbell Bower",
+        "Priah Ferguson",
+        "Grace Van Dien",
+        "Eduardo Franco"
+      ],
+      "c": 2,
+      "explanation": "Chrissy Cunningham: Grace Van Dien. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-edd0afd98eb3"
+    },
+    {
+      "q": "¿Qué vínculo o función identifica a Chrissy Cunningham?",
+      "o": [
+        "Es hermana de Mike",
+        "Fue el sujeto 001 del laboratorio",
+        "Es animadora de Hawkins High",
+        "Es guardia de prisión en la Unión Soviética"
+      ],
+      "c": 2,
+      "explanation": "Chrissy Cunningham: Es animadora de Hawkins High. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-73cfee7e9026"
+    },
+    {
+      "q": "¿Qué hecho se asocia con Chrissy Cunningham hasta la temporada 4?",
+      "o": [
+        "Tiene poderes de telequinesis",
+        "Es una víctima de Vecna en la cuarta temporada",
+        "Ayuda a proteger a Eleven",
+        "Forma parte del grupo original de amigos de Will"
+      ],
+      "c": 1,
+      "explanation": "Chrissy Cunningham: Es una víctima de Vecna en la cuarta temporada. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-66b7d80409d8"
+    },
+    {
+      "q": "¿Quién interpreta a Henry Creel / Vecna en Stranger Things (temporadas 1–4)?",
+      "o": [
+        "Jamie Campbell Bower",
+        "Natalia Dyer",
+        "Mason Dye",
+        "Gabriella Pizzolo"
+      ],
+      "c": 0,
+      "explanation": "Henry Creel / Vecna: Jamie Campbell Bower. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-1483fb46cbd9"
+    },
+    {
+      "q": "¿Qué vínculo o función identifica a Henry Creel / Vecna?",
+      "o": [
+        "Fue el sujeto 001 del laboratorio",
+        "Es investigador y teórico de conspiraciones",
+        "Es amigo de Jonathan en California",
+        "Dirige experimentos en el laboratorio"
+      ],
+      "c": 0,
+      "explanation": "Henry Creel / Vecna: Fue el sujeto 001 del laboratorio. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-11c0c3e630a8",
+      "img": "arcade/reference/stranger.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué hecho se asocia con Henry Creel / Vecna hasta la temporada 4?",
+      "o": [
+        "Su desaparición desencadena la primera temporada",
+        "Es aficionado a la fotografía",
+        "Se convierte en el antagonista llamado Vecna",
+        "Participa en la operación bajo el centro comercial"
+      ],
+      "c": 2,
+      "explanation": "Henry Creel / Vecna: Se convierte en el antagonista llamado Vecna. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-4cffcff0c18d"
+    },
+    {
+      "q": "¿Quién interpreta a Dmitri Antonov en Stranger Things (temporadas 1–4)?",
+      "o": [
+        "Finn Wolfhard",
+        "Tom Wlaschiha",
+        "Shannon Purser",
+        "Charlie Heaton"
+      ],
+      "c": 1,
+      "explanation": "Dmitri Antonov: Tom Wlaschiha. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-ecd9f5ba9d0a"
+    },
+    {
+      "q": "¿Qué vínculo o función identifica a Dmitri Antonov?",
+      "o": [
+        "Es guardia de prisión en la Unión Soviética",
+        "Es pareja de Joyce",
+        "Es novia de Dustin",
+        "Es investigador y teórico de conspiraciones"
+      ],
+      "c": 0,
+      "explanation": "Dmitri Antonov: Es guardia de prisión en la Unión Soviética. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-39bcb8fa89ac"
+    },
+    {
+      "q": "¿Qué hecho se asocia con Dmitri Antonov hasta la temporada 4?",
+      "o": [
+        "Usa el nombre de Enzo al contactar con Joyce",
+        "Su desaparición desencadena la primera temporada",
+        "Los niños del laboratorio lo llaman Papá",
+        "Forma parte del grupo original de amigos de Will"
+      ],
+      "c": 0,
+      "explanation": "Dmitri Antonov: Usa el nombre de Enzo al contactar con Joyce. Las preguntas se limitan a las temporadas 1–4 para evitar mezclar tramas de temporadas posteriores.",
+      "e": "🔦",
+      "id": "stranger-b3a4e66620b2"
+    },
+    {
+      "q": "¿Qué clase de elemento es Hawkins en Stranger Things?",
+      "o": [
+        "Baile escolar",
+        "Salón de videojuegos",
+        "Localidad ficticia",
+        "Juego de rol"
+      ],
+      "c": 2,
+      "explanation": "Hawkins: Localidad ficticia. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-2041e1a9ff28",
+      "img": "arcade/reference/stranger.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué detalle corresponde a Hawkins?",
+      "o": [
+        "Su cabeza se abre como una flor",
+        "Es una construcción en el bosque",
+        "Se encuentra en California",
+        "Está en Indiana"
+      ],
+      "c": 3,
+      "explanation": "Hawkins: Está en Indiana. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-478e63059345"
+    },
+    {
+      "q": "¿En qué contexto destaca Hawkins?",
+      "o": [
+        "Es la principal amenaza física de la primera temporada",
+        "Argyle conduce para esta empresa",
+        "Es el centro de los sucesos de las primeras temporadas",
+        "Cierra la segunda temporada con una reunión de los chicos"
+      ],
+      "c": 2,
+      "explanation": "Hawkins: Es el centro de los sucesos de las primeras temporadas. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-17083edbbdb1"
+    },
+    {
+      "q": "¿Qué clase de elemento es Mundo del Revés en Stranger Things?",
+      "o": [
+        "Familia",
+        "Dimensión paralela",
+        "Instalación científica",
+        "Antena de radio"
+      ],
+      "c": 1,
+      "explanation": "Mundo del Revés: Dimensión paralela. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-cda6b73c6102"
+    },
+    {
+      "q": "¿Qué detalle corresponde a Mundo del Revés?",
+      "o": [
+        "Fue construida por Dustin",
+        "Alberga una base rusa secreta bajo tierra",
+        "Se dedica a Dungeons & Dragons",
+        "Refleja una versión oscura de Hawkins"
+      ],
+      "c": 3,
+      "explanation": "Mundo del Revés: Refleja una versión oscura de Hawkins. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-049820f5a5a9"
+    },
+    {
+      "q": "¿En qué contexto destaca Mundo del Revés?",
+      "o": [
+        "Eleven escapa de allí al comienzo de la historia",
+        "Will queda atrapado allí en la primera temporada",
+        "Argyle conduce para esta empresa",
+        "Cierra la segunda temporada con una reunión de los chicos"
+      ],
+      "c": 1,
+      "explanation": "Mundo del Revés: Will queda atrapado allí en la primera temporada. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-ded3ac5b724b",
+      "img": "arcade/reference/stranger.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué clase de elemento es Demogorgon en Stranger Things?",
+      "o": [
+        "Localidad ficticia",
+        "Criatura",
+        "Juego de rol",
+        "Antena de radio"
+      ],
+      "c": 1,
+      "explanation": "Demogorgon: Criatura. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-db78d0d2e541"
+    },
+    {
+      "q": "¿Qué detalle corresponde a Demogorgon?",
+      "o": [
+        "Empieza pareciendo un pequeño anfibio",
+        "Su cabeza se abre como una flor",
+        "Tiene un reloj de pie relevante",
+        "Se representa como una enorme figura de humo con forma arácnida"
+      ],
+      "c": 1,
+      "explanation": "Demogorgon: Su cabeza se abre como una flor. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-fc1aeb81d620"
+    },
+    {
+      "q": "¿En qué contexto destaca Demogorgon?",
+      "o": [
+        "Argyle conduce para esta empresa",
+        "Eleven vive un conflicto con Angela allí",
+        "Es la principal amenaza física de la primera temporada",
+        "Busca que Eleven recupere sus poderes"
+      ],
+      "c": 2,
+      "explanation": "Demogorgon: Es la principal amenaza física de la primera temporada. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-d2bc967b6a36"
+    },
+    {
+      "q": "¿Qué clase de elemento es Azotamentes / Mind Flayer en Stranger Things?",
+      "o": [
+        "Heladería",
+        "Baile escolar",
+        "Vivienda",
+        "Entidad del Mundo del Revés"
+      ],
+      "c": 3,
+      "explanation": "Azotamentes / Mind Flayer: Entidad del Mundo del Revés. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-8b27ecdb0c58"
+    },
+    {
+      "q": "¿Qué detalle corresponde a Azotamentes / Mind Flayer?",
+      "o": [
+        "Empieza pareciendo un pequeño anfibio",
+        "Se representa como una enorme figura de humo con forma arácnida",
+        "Refleja una versión oscura de Hawkins",
+        "Tiene un reloj de pie relevante"
+      ],
+      "c": 1,
+      "explanation": "Azotamentes / Mind Flayer: Se representa como una enorme figura de humo con forma arácnida. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-8a413d2fc327",
+      "img": "arcade/reference/stranger.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿En qué contexto destaca Azotamentes / Mind Flayer?",
+      "o": [
+        "El pasado de Eleven conduce a investigar a Terry",
+        "Eddie dirige sus partidas en la cuarta temporada",
+        "Posee a Will en la segunda temporada",
+        "Es un escenario central de la tercera temporada"
+      ],
+      "c": 2,
+      "explanation": "Azotamentes / Mind Flayer: Posee a Will en la segunda temporada. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-2b1840f6b585"
+    },
+    {
+      "q": "¿Qué clase de elemento es Dart en Stranger Things?",
+      "o": [
+        "Club escolar",
+        "Centro comercial",
+        "Dimensión paralela",
+        "Criatura"
+      ],
+      "c": 3,
+      "explanation": "Dart: Criatura. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-6ec17c520e54"
+    },
+    {
+      "q": "¿Qué detalle corresponde a Dart?",
+      "o": [
+        "Es una construcción en el bosque",
+        "Está asociado a experimentos con niños",
+        "Empieza pareciendo un pequeño anfibio",
+        "Utiliza experiencias y recuerdos de Eleven"
+      ],
+      "c": 2,
+      "explanation": "Dart: Empieza pareciendo un pequeño anfibio. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-1c9c36cf17b4"
+    },
+    {
+      "q": "¿En qué contexto destaca Dart?",
+      "o": [
+        "Es un escenario central de la tercera temporada",
+        "Los Byers y Eleven viven allí en la cuarta temporada",
+        "Dustin lo esconde antes de descubrir su naturaleza",
+        "Argyle conduce para esta empresa"
+      ],
+      "c": 2,
+      "explanation": "Dart: Dustin lo esconde antes de descubrir su naturaleza. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-e980575cd82e"
+    },
+    {
+      "q": "¿Qué clase de elemento es Starcourt en Stranger Things?",
+      "o": [
+        "Antena de radio",
+        "Instalación científica",
+        "Refugio infantil",
+        "Centro comercial"
+      ],
+      "c": 3,
+      "explanation": "Starcourt: Centro comercial. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-c8a3b3d77326",
+      "img": "arcade/reference/stranger.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué detalle corresponde a Starcourt?",
+      "o": [
+        "Está en Indiana",
+        "Terry es la madre biológica de Eleven",
+        "Utiliza experiencias y recuerdos de Eleven",
+        "Alberga una base rusa secreta bajo tierra"
+      ],
+      "c": 3,
+      "explanation": "Starcourt: Alberga una base rusa secreta bajo tierra. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-c859ad15f817"
+    },
+    {
+      "q": "¿En qué contexto destaca Starcourt?",
+      "o": [
+        "Allí trabajan Steve y Robin",
+        "Es el centro de los sucesos de las primeras temporadas",
+        "Es un escenario central de la tercera temporada",
+        "Permite comunicarse con Suzie"
+      ],
+      "c": 2,
+      "explanation": "Starcourt: Es un escenario central de la tercera temporada. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-d20d06cfeb7a"
+    },
+    {
+      "q": "¿Qué clase de elemento es Scoops Ahoy en Stranger Things?",
+      "o": [
+        "Heladería",
+        "Pista de patinaje",
+        "Antena de radio",
+        "Juego de rol"
+      ],
+      "c": 0,
+      "explanation": "Scoops Ahoy: Heladería. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-cd4580bf5152"
+    },
+    {
+      "q": "¿Qué detalle corresponde a Scoops Ahoy?",
+      "o": [
+        "Fue construida por Dustin",
+        "Sus empleados llevan uniformes de marinero",
+        "Alberga una base rusa secreta bajo tierra",
+        "Su cabeza se abre como una flor"
+      ],
+      "c": 1,
+      "explanation": "Scoops Ahoy: Sus empleados llevan uniformes de marinero. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-3f7ae7c3f921"
+    },
+    {
+      "q": "¿En qué contexto destaca Scoops Ahoy?",
+      "o": [
+        "Da nombres que los chicos usan para describir las amenazas",
+        "Es investigada por el grupo durante la cuarta temporada",
+        "Allí trabajan Steve y Robin",
+        "Max destaca en los récords de sus máquinas"
+      ],
+      "c": 2,
+      "explanation": "Scoops Ahoy: Allí trabajan Steve y Robin. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-707d0e4f9a75",
+      "img": "arcade/reference/stranger.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué clase de elemento es Hellfire Club en Stranger Things?",
+      "o": [
+        "Dimensión paralela",
+        "Proyecto de investigación",
+        "Instalación científica",
+        "Club escolar"
+      ],
+      "c": 3,
+      "explanation": "Hellfire Club: Club escolar. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-7078ff487cd1"
+    },
+    {
+      "q": "¿Qué detalle corresponde a Hellfire Club?",
+      "o": [
+        "Terry es la madre biológica de Eleven",
+        "Su cabeza se abre como una flor",
+        "Se dedica a Dungeons & Dragons",
+        "Su vehículo de reparto es una furgoneta"
+      ],
+      "c": 2,
+      "explanation": "Hellfire Club: Se dedica a Dungeons & Dragons. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-d8c0b2d6e7b9"
+    },
+    {
+      "q": "¿En qué contexto destaca Hellfire Club?",
+      "o": [
+        "Dustin lo esconde antes de descubrir su naturaleza",
+        "Will queda atrapado allí en la primera temporada",
+        "Max destaca en los récords de sus máquinas",
+        "Eddie dirige sus partidas en la cuarta temporada"
+      ],
+      "c": 3,
+      "explanation": "Hellfire Club: Eddie dirige sus partidas en la cuarta temporada. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-061f309b8e2d"
+    },
+    {
+      "q": "¿Qué clase de elemento es Palace Arcade en Stranger Things?",
+      "o": [
+        "Dimensión paralela",
+        "Centro comercial",
+        "Salón de videojuegos",
+        "Vivienda"
+      ],
+      "c": 2,
+      "explanation": "Palace Arcade: Salón de videojuegos. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-ed508b9c7c0d"
+    },
+    {
+      "q": "¿Qué detalle corresponde a Palace Arcade?",
+      "o": [
+        "Tiene máquinas como Dig Dug",
+        "Se juega con personajes, dados y un director de partida",
+        "Alberga una base rusa secreta bajo tierra",
+        "Es una construcción en el bosque"
+      ],
+      "c": 0,
+      "explanation": "Palace Arcade: Tiene máquinas como Dig Dug. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-0d3137f930cc",
+      "img": "arcade/reference/stranger.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿En qué contexto destaca Palace Arcade?",
+      "o": [
+        "Eleven vive un conflicto con Angela allí",
+        "Busca que Eleven recupere sus poderes",
+        "Posee a Will en la segunda temporada",
+        "Max destaca en los récords de sus máquinas"
+      ],
+      "c": 3,
+      "explanation": "Palace Arcade: Max destaca en los récords de sus máquinas. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-dcadf6a10223"
+    },
+    {
+      "q": "¿Qué clase de elemento es Laboratorio de Hawkins en Stranger Things?",
+      "o": [
+        "Instalación científica",
+        "Familia",
+        "Pista de patinaje",
+        "Localidad ficticia"
+      ],
+      "c": 0,
+      "explanation": "Laboratorio de Hawkins: Instalación científica. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-083523d789f5"
+    },
+    {
+      "q": "¿Qué detalle corresponde a Laboratorio de Hawkins?",
+      "o": [
+        "Está asociado a experimentos con niños",
+        "Fue construida por Dustin",
+        "Alberga una base rusa secreta bajo tierra",
+        "Terry es la madre biológica de Eleven"
+      ],
+      "c": 0,
+      "explanation": "Laboratorio de Hawkins: Está asociado a experimentos con niños. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-4c2ba1188c3c"
+    },
+    {
+      "q": "¿En qué contexto destaca Laboratorio de Hawkins?",
+      "o": [
+        "Eddie dirige sus partidas en la cuarta temporada",
+        "Es la principal amenaza física de la primera temporada",
+        "Cierra la segunda temporada con una reunión de los chicos",
+        "Eleven escapa de allí al comienzo de la historia"
+      ],
+      "c": 3,
+      "explanation": "Laboratorio de Hawkins: Eleven escapa de allí al comienzo de la historia. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-718e681bdfa5"
+    },
+    {
+      "q": "¿Qué clase de elemento es Castillo Byers en Stranger Things?",
+      "o": [
+        "Instalación científica",
+        "Refugio infantil",
+        "Localidad ficticia",
+        "Pista de patinaje"
+      ],
+      "c": 1,
+      "explanation": "Castillo Byers: Refugio infantil. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-575fbf5c485d",
+      "img": "arcade/reference/stranger.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué detalle corresponde a Castillo Byers?",
+      "o": [
+        "Su vehículo de reparto es una furgoneta",
+        "Su cabeza se abre como una flor",
+        "Es una construcción en el bosque",
+        "Se representa como una enorme figura de humo con forma arácnida"
+      ],
+      "c": 2,
+      "explanation": "Castillo Byers: Es una construcción en el bosque. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-45d14ae1cbbe"
+    },
+    {
+      "q": "¿En qué contexto destaca Castillo Byers?",
+      "o": [
+        "Está asociado a Will y su infancia",
+        "Dustin lo esconde antes de descubrir su naturaleza",
+        "Eleven escapa de allí al comienzo de la historia",
+        "Eddie dirige sus partidas en la cuarta temporada"
+      ],
+      "c": 0,
+      "explanation": "Castillo Byers: Está asociado a Will y su infancia. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-e4bce7313bd7"
+    },
+    {
+      "q": "¿Qué clase de elemento es Casa Creel en Stranger Things?",
+      "o": [
+        "Pista de patinaje",
+        "Proyecto de investigación",
+        "Refugio infantil",
+        "Vivienda"
+      ],
+      "c": 3,
+      "explanation": "Casa Creel: Vivienda. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-4ade4137e314"
+    },
+    {
+      "q": "¿Qué detalle corresponde a Casa Creel?",
+      "o": [
+        "Es una construcción en el bosque",
+        "Tiene máquinas como Dig Dug",
+        "Se juega con personajes, dados y un director de partida",
+        "Tiene un reloj de pie relevante"
+      ],
+      "c": 3,
+      "explanation": "Casa Creel: Tiene un reloj de pie relevante. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-84a98b32b5d2"
+    },
+    {
+      "q": "¿En qué contexto destaca Casa Creel?",
+      "o": [
+        "Posee a Will en la segunda temporada",
+        "Es investigada por el grupo durante la cuarta temporada",
+        "Los Byers y Eleven viven allí en la cuarta temporada",
+        "Eleven escapa de allí al comienzo de la historia"
+      ],
+      "c": 1,
+      "explanation": "Casa Creel: Es investigada por el grupo durante la cuarta temporada. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-2a8c96247f24",
+      "img": "arcade/reference/stranger.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué clase de elemento es Cerebro en Stranger Things?",
+      "o": [
+        "Juego de rol",
+        "Entidad del Mundo del Revés",
+        "Antena de radio",
+        "Instalación científica"
+      ],
+      "c": 2,
+      "explanation": "Cerebro: Antena de radio. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-8475671208b6"
+    },
+    {
+      "q": "¿Qué detalle corresponde a Cerebro?",
+      "o": [
+        "Fue construida por Dustin",
+        "Se juega con personajes, dados y un director de partida",
+        "Está asociado a experimentos con niños",
+        "Alberga una base rusa secreta bajo tierra"
+      ],
+      "c": 0,
+      "explanation": "Cerebro: Fue construida por Dustin. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-1c6c1e660f7a"
+    },
+    {
+      "q": "¿En qué contexto destaca Cerebro?",
+      "o": [
+        "Busca que Eleven recupere sus poderes",
+        "Argyle conduce para esta empresa",
+        "Permite comunicarse con Suzie",
+        "Es un escenario central de la tercera temporada"
+      ],
+      "c": 2,
+      "explanation": "Cerebro: Permite comunicarse con Suzie. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-d7e27bfc92bd"
+    },
+    {
+      "q": "¿Qué clase de elemento es NINA en Stranger Things?",
+      "o": [
+        "Salón de videojuegos",
+        "Pista de patinaje",
+        "Proyecto de investigación",
+        "Centro comercial"
+      ],
+      "c": 2,
+      "explanation": "NINA: Proyecto de investigación. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-8bcd4f7ce493"
+    },
+    {
+      "q": "¿Qué detalle corresponde a NINA?",
+      "o": [
+        "Su vehículo de reparto es una furgoneta",
+        "Utiliza experiencias y recuerdos de Eleven",
+        "Se dedica a Dungeons & Dragons",
+        "Refleja una versión oscura de Hawkins"
+      ],
+      "c": 1,
+      "explanation": "NINA: Utiliza experiencias y recuerdos de Eleven. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-69a246196134",
+      "img": "arcade/reference/stranger.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿En qué contexto destaca NINA?",
+      "o": [
+        "El pasado de Eleven conduce a investigar a Terry",
+        "Busca que Eleven recupere sus poderes",
+        "Dustin lo esconde antes de descubrir su naturaleza",
+        "Posee a Will en la segunda temporada"
+      ],
+      "c": 1,
+      "explanation": "NINA: Busca que Eleven recupere sus poderes. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-88b611eed09a"
+    },
+    {
+      "q": "¿Qué clase de elemento es Lenora Hills en Stranger Things?",
+      "o": [
+        "Instalación científica",
+        "Localidad ficticia",
+        "Criatura",
+        "Club escolar"
+      ],
+      "c": 1,
+      "explanation": "Lenora Hills: Localidad ficticia. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-4829ad1686cf"
+    },
+    {
+      "q": "¿Qué detalle corresponde a Lenora Hills?",
+      "o": [
+        "Se encuentra en California",
+        "Se representa como una enorme figura de humo con forma arácnida",
+        "Tiene máquinas como Dig Dug",
+        "Está en Indiana"
+      ],
+      "c": 0,
+      "explanation": "Lenora Hills: Se encuentra en California. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-4a3fbe90f5b4"
+    },
+    {
+      "q": "¿En qué contexto destaca Lenora Hills?",
+      "o": [
+        "Allí trabajan Steve y Robin",
+        "Los Byers y Eleven viven allí en la cuarta temporada",
+        "Está asociado a Will y su infancia",
+        "Da nombres que los chicos usan para describir las amenazas"
+      ],
+      "c": 1,
+      "explanation": "Lenora Hills: Los Byers y Eleven viven allí en la cuarta temporada. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-c2e8b20121bb"
+    },
+    {
+      "q": "¿Qué clase de elemento es Surfer Boy Pizza en Stranger Things?",
+      "o": [
+        "Pizzería",
+        "Heladería",
+        "Entidad del Mundo del Revés",
+        "Centro comercial"
+      ],
+      "c": 0,
+      "explanation": "Surfer Boy Pizza: Pizzería. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-8d89096e02cf",
+      "img": "arcade/reference/stranger.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué detalle corresponde a Surfer Boy Pizza?",
+      "o": [
+        "Tiene máquinas como Dig Dug",
+        "Su vehículo de reparto es una furgoneta",
+        "Sus empleados llevan uniformes de marinero",
+        "Fue construida por Dustin"
+      ],
+      "c": 1,
+      "explanation": "Surfer Boy Pizza: Su vehículo de reparto es una furgoneta. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-277ea0808587"
+    },
+    {
+      "q": "¿En qué contexto destaca Surfer Boy Pizza?",
+      "o": [
+        "Eleven escapa de allí al comienzo de la historia",
+        "Dustin lo esconde antes de descubrir su naturaleza",
+        "Es un escenario central de la tercera temporada",
+        "Argyle conduce para esta empresa"
+      ],
+      "c": 3,
+      "explanation": "Surfer Boy Pizza: Argyle conduce para esta empresa. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-fe2e7d50c26c"
+    },
+    {
+      "q": "¿Qué clase de elemento es Rink-O-Mania en Stranger Things?",
+      "o": [
+        "Pista de patinaje",
+        "Entidad del Mundo del Revés",
+        "Vivienda",
+        "Pizzería"
+      ],
+      "c": 0,
+      "explanation": "Rink-O-Mania: Pista de patinaje. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-2c0b5553cdea"
+    },
+    {
+      "q": "¿Qué detalle corresponde a Rink-O-Mania?",
+      "o": [
+        "Es un lugar de ocio en California",
+        "Tiene máquinas como Dig Dug",
+        "Se celebra en la escuela de Hawkins",
+        "Empieza pareciendo un pequeño anfibio"
+      ],
+      "c": 0,
+      "explanation": "Rink-O-Mania: Es un lugar de ocio en California. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-a9591359e914"
+    },
+    {
+      "q": "¿En qué contexto destaca Rink-O-Mania?",
+      "o": [
+        "Dustin lo esconde antes de descubrir su naturaleza",
+        "Eleven vive un conflicto con Angela allí",
+        "Max destaca en los récords de sus máquinas",
+        "Allí trabajan Steve y Robin"
+      ],
+      "c": 1,
+      "explanation": "Rink-O-Mania: Eleven vive un conflicto con Angela allí. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-ebeb9b5e9026",
+      "img": "arcade/reference/stranger.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué clase de elemento es Familia Ives en Stranger Things?",
+      "o": [
+        "Club escolar",
+        "Familia",
+        "Instalación científica",
+        "Refugio infantil"
+      ],
+      "c": 1,
+      "explanation": "Familia Ives: Familia. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-e081bed10d12"
+    },
+    {
+      "q": "¿Qué detalle corresponde a Familia Ives?",
+      "o": [
+        "Terry es la madre biológica de Eleven",
+        "Se celebra en la escuela de Hawkins",
+        "Se juega con personajes, dados y un director de partida",
+        "Su cabeza se abre como una flor"
+      ],
+      "c": 0,
+      "explanation": "Familia Ives: Terry es la madre biológica de Eleven. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-002f9ec4b752"
+    },
+    {
+      "q": "¿En qué contexto destaca Familia Ives?",
+      "o": [
+        "El pasado de Eleven conduce a investigar a Terry",
+        "Dustin lo esconde antes de descubrir su naturaleza",
+        "Will queda atrapado allí en la primera temporada",
+        "Allí trabajan Steve y Robin"
+      ],
+      "c": 0,
+      "explanation": "Familia Ives: El pasado de Eleven conduce a investigar a Terry. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-d2422ebfff36"
+    },
+    {
+      "q": "¿Qué clase de elemento es Snow Ball en Stranger Things?",
+      "o": [
+        "Baile escolar",
+        "Proyecto de investigación",
+        "Instalación científica",
+        "Centro comercial"
+      ],
+      "c": 0,
+      "explanation": "Snow Ball: Baile escolar. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-df68da27c98d"
+    },
+    {
+      "q": "¿Qué detalle corresponde a Snow Ball?",
+      "o": [
+        "Empieza pareciendo un pequeño anfibio",
+        "Se encuentra en California",
+        "Se celebra en la escuela de Hawkins",
+        "Está asociado a experimentos con niños"
+      ],
+      "c": 2,
+      "explanation": "Snow Ball: Se celebra en la escuela de Hawkins. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-c1e39c7ad098",
+      "img": "arcade/reference/stranger.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿En qué contexto destaca Snow Ball?",
+      "o": [
+        "Está asociado a Will y su infancia",
+        "Cierra la segunda temporada con una reunión de los chicos",
+        "Es investigada por el grupo durante la cuarta temporada",
+        "Posee a Will en la segunda temporada"
+      ],
+      "c": 1,
+      "explanation": "Snow Ball: Cierra la segunda temporada con una reunión de los chicos. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-f2ead273617e"
+    },
+    {
+      "q": "¿Qué clase de elemento es Dungeons & Dragons en Stranger Things?",
+      "o": [
+        "Heladería",
+        "Vivienda",
+        "Juego de rol",
+        "Centro comercial"
+      ],
+      "c": 2,
+      "explanation": "Dungeons & Dragons: Juego de rol. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-1bacee4e5a76"
+    },
+    {
+      "q": "¿Qué detalle corresponde a Dungeons & Dragons?",
+      "o": [
+        "Se dedica a Dungeons & Dragons",
+        "Terry es la madre biológica de Eleven",
+        "Fue construida por Dustin",
+        "Se juega con personajes, dados y un director de partida"
+      ],
+      "c": 3,
+      "explanation": "Dungeons & Dragons: Se juega con personajes, dados y un director de partida. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-7a1a72aa0a7c"
+    },
+    {
+      "q": "¿En qué contexto destaca Dungeons & Dragons?",
+      "o": [
+        "Es investigada por el grupo durante la cuarta temporada",
+        "Da nombres que los chicos usan para describir las amenazas",
+        "Max destaca en los récords de sus máquinas",
+        "Eleven escapa de allí al comienzo de la historia"
+      ],
+      "c": 1,
+      "explanation": "Dungeons & Dragons: Da nombres que los chicos usan para describir las amenazas. Se describen elementos de ficción de las temporadas 1–4.",
+      "e": "🔦",
+      "id": "stranger-9cc3008d6b30"
+    }
+  ]
+}

@@ -1,1 +1,715 @@
-{"cat": "banderas", "name": "Banderas y Capitales", "emoji": "🌍", "questions": [{"q": "¿Cuál es la capital de Chile?", "o": ["Santiago", "Concepción", "Valparaíso", "La Serena"], "c": 0, "e": "🗿"}, {"q": "¿Cuántas estrellas tiene la bandera de Chile?", "o": ["Una", "Tres", "Dos", "Ninguna"], "c": 0, "e": "🗻"}, {"q": "¿Cuál es la capital de Australia?", "o": ["Sídney", "Perth", "Melbourne", "Canberra"], "c": 3, "e": "🦘"}, {"q": "¿Cuál es la capital de Canadá?", "o": ["Ottawa", "Toronto", "Vancouver", "Montreal"], "c": 0, "e": "🍁"}, {"q": "¿Cuál es la capital de Brasil?", "o": ["Salvador", "Río de Janeiro", "Brasilia", "São Paulo"], "c": 2, "e": "🌴"}, {"q": "¿Qué país tiene una hoja de arce en su bandera?", "o": ["Nueva Zelanda", "Canadá", "Estados Unidos", "Suiza"], "c": 1, "e": "🏒"}, {"q": "¿Qué país tiene un círculo rojo sobre fondo blanco en su bandera?", "o": ["Vietnam", "China", "Corea del Sur", "Japón"], "c": 3, "e": "🍣"}, {"q": "¿Cuál es la capital de Japón?", "o": ["Kioto", "Osaka", "Tokio", "Nagoya"], "c": 2, "e": "🚅"}, {"q": "¿Cuál es la capital de Argentina?", "o": ["Córdoba", "Buenos Aires", "Mendoza", "Rosario"], "c": 1, "e": "🥩"}, {"q": "¿Cuántas franjas tiene la bandera de Estados Unidos?", "o": ["11", "13", "50", "15"], "c": 1, "e": "🦅"}, {"q": "¿Qué representan las 50 estrellas de la bandera de EE.UU.?", "o": ["Sus colonias", "Sus estados", "Sus presidentes", "Sus victorias"], "c": 1, "e": "🌟"}, {"q": "¿Cuál es la capital de Perú?", "o": ["Cusco", "Lima", "Arequipa", "Trujillo"], "c": 1, "e": "🦙"}, {"q": "¿Cuál es la capital de Egipto?", "o": ["Alejandría", "El Cairo", "Guiza", "Luxor"], "c": 1, "e": "🐪"}, {"q": "¿Qué país tiene la bandera con un dragón?", "o": ["Nepal", "Tailandia", "Bután", "China"], "c": 2, "e": "⛰️"}, {"q": "¿Cuál es el único país con bandera no rectangular ni cuadrada?", "o": ["Nepal", "Suiza", "Mónaco", "Vaticano"], "c": 0, "e": "🏔️"}, {"q": "¿Cuál es la capital de España?", "o": ["Madrid", "Sevilla", "Valencia", "Barcelona"], "c": 0, "e": "🥘"}, {"q": "¿Cuál es la capital de Italia?", "o": ["Milán", "Roma", "Venecia", "Nápoles"], "c": 1, "e": "🍕"}, {"q": "¿Cuál es la capital de Alemania?", "o": ["Múnich", "Berlín", "Fráncfort", "Hamburgo"], "c": 1, "e": "🥨"}, {"q": "¿Cuál es la capital de Rusia?", "o": ["San Petersburgo", "Sochi", "Kazán", "Moscú"], "c": 3, "e": "🪆"}, {"q": "¿Qué colores comparten las banderas de Colombia, Ecuador y Venezuela?", "o": ["Amarillo, azul y rojo", "Verde, blanco y rojo", "Rojo, blanco y azul", "Azul, blanco y celeste"], "c": 0, "e": "🦜"}, {"q": "¿Cuál es la capital de Sudáfrica (sede del gobierno)?", "o": ["Pretoria", "Durban", "Johannesburgo", "Ciudad del Cabo"], "c": 0, "e": "🦁"}, {"q": "¿Cuál es la capital de Turquía?", "o": ["Bursa", "Estambul", "Ankara", "Esmirna"], "c": 2, "e": "🎈"}, {"q": "¿Cuál es la capital de Estados Unidos?", "o": ["Washington D.C.", "Chicago", "Los Ángeles", "Nueva York"], "c": 0, "e": "🏛️"}, {"q": "¿Qué país tiene una estrella de David en su bandera?", "o": ["Israel", "Chipre", "Líbano", "Jordania"], "c": 0, "e": "✡️"}, {"q": "¿Cuál es la capital de China?", "o": ["Hong Kong", "Cantón", "Pekín", "Shanghái"], "c": 2, "e": "🐉"}, {"q": "¿Cuál es la capital de Nueva Zelanda?", "o": ["Hamilton", "Auckland", "Christchurch", "Wellington"], "c": 3, "e": "🥝"}, {"q": "¿Qué país sudamericano tiene un sol con rostro en su bandera y solo 9 franjas?", "o": ["Paraguay", "Ecuador", "Uruguay", "Bolivia"], "c": 2, "e": "🧉"}, {"q": "¿Cuál es la capital de México?", "o": ["Cancún", "Guadalajara", "Monterrey", "Ciudad de México"], "c": 3, "e": "🌮"}, {"q": "¿Qué bandera es famosa por ser la única con dos triángulos apilados?", "o": ["Nepal", "Baréin", "Bután", "Catar"], "c": 0, "e": "🧗"}, {"q": "¿Cuál es la capital de Francia?", "o": ["Lyon", "París", "Marsella", "Niza"], "c": 1, "e": "🥐"}, {"q": "¿Cuál es la capital de Portugal?", "o": ["Oporto", "Coímbra", "Braga", "Lisboa"], "c": 3, "e": "🐟"}, {"q": "¿Cuál es la capital de Grecia?", "o": ["Atenas", "Esparta", "Corinto", "Tesalónica"], "c": 0, "e": "🏛️"}, {"q": "¿Cuál es la capital de Colombia?", "o": ["Medellín", "Bogotá", "Cartagena", "Cali"], "c": 1, "e": "☕"}, {"q": "¿Cuál es la capital de Venezuela?", "o": ["Mérida", "Maracaibo", "Caracas", "Valencia"], "c": 2, "e": "🛢️"}, {"q": "¿Cuál es la capital de Ecuador?", "o": ["Quito", "Guayaquil", "Cuenca", "Loja"], "c": 0, "e": "🏔️"}, {"q": "¿Cuál es la capital de Bolivia (sede de gobierno)?", "o": ["Sucre", "Santa Cruz", "La Paz", "Cochabamba"], "c": 2, "e": "🦙"}, {"q": "¿Cuál es la capital de Uruguay?", "o": ["Colonia", "Punta del Este", "Montevideo", "Salto"], "c": 2, "e": "🧉"}, {"q": "¿Cuál es la capital de Paraguay?", "o": ["Encarnación", "Luque", "Ciudad del Este", "Asunción"], "c": 3, "e": "🌿"}, {"q": "¿Qué país tiene un cedro verde en el centro de su bandera?", "o": ["Líbano", "Chipre", "Jamaica", "Canadá"], "c": 0, "e": "🌲"}, {"q": "¿Cuál es la capital de India?", "o": ["Nueva Delhi", "Calcuta", "Bangalore", "Bombay"], "c": 0, "e": "🕌"}, {"q": "¿Cuál es la capital de Corea del Sur?", "o": ["Daegu", "Seúl", "Busan", "Incheon"], "c": 1, "e": "🎎"}, {"q": "¿Cuál es la capital de Tailandia?", "o": ["Pattaya", "Phuket", "Bangkok", "Chiang Mai"], "c": 2, "e": "🛕"}, {"q": "¿Cuál es la capital de Suecia?", "o": ["Estocolmo", "Malmö", "Gotemburgo", "Uppsala"], "c": 0, "e": "❄️"}, {"q": "¿Cuál es la capital de Noruega?", "o": ["Bergen", "Stavanger", "Oslo", "Trondheim"], "c": 2, "e": "🎣"}, {"q": "¿Cuál es la capital de Países Bajos (Holanda)?", "o": ["La Haya", "Róterdam", "Ámsterdam", "Utrecht"], "c": 2, "e": "🌷"}, {"q": "¿Qué país tiene una hoja de arce roja en su bandera?", "o": ["Austria", "Canadá", "Estados Unidos", "Suiza"], "c": 1, "e": "🍁"}, {"q": "¿Cuál es la capital de Irlanda?", "o": ["Belfast", "Dublín", "Galway", "Cork"], "c": 1, "e": "🍀"}, {"q": "¿Cuál es la capital de Suiza?", "o": ["Ginebra", "Berna", "Zúrich", "Basilea"], "c": 1, "e": "⛰️"}, {"q": "¿Cuál es la capital de Cuba?", "o": ["La Habana", "Santiago", "Holguín", "Varadero"], "c": 0, "e": "🚬"}, {"q": "¿Qué colores tiene la bandera de Chile?", "o": ["Verde, blanco y rojo", "Rojo, blanco y azul", "Solo rojo y blanco", "Amarillo, azul y rojo"], "c": 1, "e": "⭐"}, {"q": "¿Cuál es la capital de Marruecos?", "o": ["Fez", "Marrakech", "Casablanca", "Rabat"], "c": 3, "e": "🐫"}, {"q": "¿Cuál es la capital de Kenia?", "o": ["Mombasa", "Nairobi", "Nakuru", "Kisumu"], "c": 1, "e": "🦁"}, {"q": "¿Qué país tiene la bandera con más colores (arcoíris) de Sudáfrica?", "o": ["Sudáfrica", "Namibia", "Zimbabue", "Botsuana"], "c": 0, "e": "🌈"}, {"q": "¿Cuál es la capital de Polonia?", "o": ["Gdansk", "Lodz", "Varsovia", "Cracovia"], "c": 2, "e": "🏰"}, {"q": "¿Cuál es la capital de Indonesia (hasta el traslado)?", "o": ["Yakarta", "Surabaya", "Bali", "Bandung"], "c": 0, "e": "🏝️"}, {"q": "¿Cuál es la capital de Reino Unido?", "o": ["Liverpool", "Mánchester", "Edimburgo", "Londres"], "c": 3, "e": "☂️"}, {"q": "¿Qué país tiene la bandera con un sol naciente rojo?", "o": ["Japón", "China", "Corea del Sur", "Bangladés"], "c": 0, "e": "🎌"}, {"q": "¿Qué país tiene la bandera con la hoja de arce?", "o": ["Noruega", "Líbano", "Canadá", "Suiza"], "c": 2, "e": "🍁"}, {"q": "¿Qué país tiene la bandera roja con estrellas amarillas (una grande y cuatro pequeñas)?", "o": ["Turquía", "Corea del Norte", "China", "Vietnam"], "c": 2, "e": "⭐"}, {"q": "¿Qué país tiene la Torre Eiffel?", "o": ["Francia", "Bélgica", "Italia", "España"], "c": 0, "e": "🗼"}, {"q": "¿Qué país tiene forma de bota en Europa?", "o": ["Portugal", "Italia", "Grecia", "España"], "c": 1, "e": "👢"}, {"q": "¿Qué país africano tiene las pirámides de Guiza?", "o": ["Libia", "Marruecos", "Egipto", "Sudán"], "c": 2, "e": "🏜️"}]}
+{
+  "cat": "banderas",
+  "name": "Banderas y Capitales",
+  "emoji": "🌍",
+  "questions": [
+    {
+      "q": "¿Cuál es la capital de Chile?",
+      "o": [
+        "Santiago",
+        "Concepción",
+        "Valparaíso",
+        "La Serena"
+      ],
+      "c": 0,
+      "e": "🗿",
+      "img": "arcade/reference/banderas.svg",
+      "imgAlt": "Ilustración ambiental, sin pistas sobre la respuesta."
+    },
+    {
+      "q": "¿Cuántas estrellas tiene la bandera de Chile?",
+      "o": [
+        "Una",
+        "Tres",
+        "Dos",
+        "Ninguna"
+      ],
+      "c": 0,
+      "e": "🗻"
+    },
+    {
+      "q": "¿Cuál es la capital de Australia?",
+      "o": [
+        "Sídney",
+        "Perth",
+        "Melbourne",
+        "Canberra"
+      ],
+      "c": 3,
+      "e": "🦘"
+    },
+    {
+      "q": "¿Cuál es la capital de Canadá?",
+      "o": [
+        "Ottawa",
+        "Toronto",
+        "Vancouver",
+        "Montreal"
+      ],
+      "c": 0,
+      "e": "🍁"
+    },
+    {
+      "q": "¿Cuál es la capital de Brasil?",
+      "o": [
+        "Salvador",
+        "Río de Janeiro",
+        "Brasilia",
+        "São Paulo"
+      ],
+      "c": 2,
+      "e": "🌴"
+    },
+    {
+      "q": "¿Qué país tiene una hoja de arce en su bandera?",
+      "o": [
+        "Nueva Zelanda",
+        "Canadá",
+        "Estados Unidos",
+        "Suiza"
+      ],
+      "c": 1,
+      "e": "🏒",
+      "img": "arcade/reference/banderas.svg",
+      "imgAlt": "Ilustración ambiental, sin pistas sobre la respuesta."
+    },
+    {
+      "q": "¿Qué país tiene un círculo rojo sobre fondo blanco en su bandera?",
+      "o": [
+        "Vietnam",
+        "China",
+        "Corea del Sur",
+        "Japón"
+      ],
+      "c": 3,
+      "e": "🍣"
+    },
+    {
+      "q": "¿Cuál es la capital de Japón?",
+      "o": [
+        "Kioto",
+        "Osaka",
+        "Tokio",
+        "Nagoya"
+      ],
+      "c": 2,
+      "e": "🚅"
+    },
+    {
+      "q": "¿Cuál es la capital de Argentina?",
+      "o": [
+        "Córdoba",
+        "Buenos Aires",
+        "Mendoza",
+        "Rosario"
+      ],
+      "c": 1,
+      "e": "🥩"
+    },
+    {
+      "q": "¿Cuántas franjas tiene la bandera de Estados Unidos?",
+      "o": [
+        "11",
+        "13",
+        "50",
+        "15"
+      ],
+      "c": 1,
+      "e": "🦅"
+    },
+    {
+      "q": "¿Qué representan las 50 estrellas de la bandera de EE.UU.?",
+      "o": [
+        "Sus colonias",
+        "Sus estados",
+        "Sus presidentes",
+        "Sus victorias"
+      ],
+      "c": 1,
+      "e": "🌟",
+      "img": "arcade/reference/banderas.svg",
+      "imgAlt": "Ilustración ambiental, sin pistas sobre la respuesta."
+    },
+    {
+      "q": "¿Cuál es la capital de Perú?",
+      "o": [
+        "Cusco",
+        "Lima",
+        "Arequipa",
+        "Trujillo"
+      ],
+      "c": 1,
+      "e": "🦙"
+    },
+    {
+      "q": "¿Cuál es la capital de Egipto?",
+      "o": [
+        "Alejandría",
+        "El Cairo",
+        "Guiza",
+        "Luxor"
+      ],
+      "c": 1,
+      "e": "🐪"
+    },
+    {
+      "q": "¿Qué país tiene la bandera con un dragón?",
+      "o": [
+        "Nepal",
+        "Tailandia",
+        "Bután",
+        "China"
+      ],
+      "c": 2,
+      "e": "⛰️"
+    },
+    {
+      "q": "¿Cuál es el único país con bandera no rectangular ni cuadrada?",
+      "o": [
+        "Nepal",
+        "Suiza",
+        "Mónaco",
+        "Vaticano"
+      ],
+      "c": 0,
+      "e": "🏔️"
+    },
+    {
+      "q": "¿Cuál es la capital de España?",
+      "o": [
+        "Madrid",
+        "Sevilla",
+        "Valencia",
+        "Barcelona"
+      ],
+      "c": 0,
+      "e": "🥘",
+      "img": "arcade/reference/banderas.svg",
+      "imgAlt": "Ilustración ambiental, sin pistas sobre la respuesta."
+    },
+    {
+      "q": "¿Cuál es la capital de Italia?",
+      "o": [
+        "Milán",
+        "Roma",
+        "Venecia",
+        "Nápoles"
+      ],
+      "c": 1,
+      "e": "🍕"
+    },
+    {
+      "q": "¿Cuál es la capital de Alemania?",
+      "o": [
+        "Múnich",
+        "Berlín",
+        "Fráncfort",
+        "Hamburgo"
+      ],
+      "c": 1,
+      "e": "🥨"
+    },
+    {
+      "q": "¿Cuál es la capital de Rusia?",
+      "o": [
+        "San Petersburgo",
+        "Sochi",
+        "Kazán",
+        "Moscú"
+      ],
+      "c": 3,
+      "e": "🪆"
+    },
+    {
+      "q": "¿Qué colores comparten las banderas de Colombia, Ecuador y Venezuela?",
+      "o": [
+        "Amarillo, azul y rojo",
+        "Verde, blanco y rojo",
+        "Rojo, blanco y azul",
+        "Azul, blanco y celeste"
+      ],
+      "c": 0,
+      "e": "🦜"
+    },
+    {
+      "q": "¿Cuál es la capital de Sudáfrica (sede del gobierno)?",
+      "o": [
+        "Pretoria",
+        "Durban",
+        "Johannesburgo",
+        "Ciudad del Cabo"
+      ],
+      "c": 0,
+      "e": "🦁",
+      "img": "arcade/reference/banderas.svg",
+      "imgAlt": "Ilustración ambiental, sin pistas sobre la respuesta."
+    },
+    {
+      "q": "¿Cuál es la capital de Turquía?",
+      "o": [
+        "Bursa",
+        "Estambul",
+        "Ankara",
+        "Esmirna"
+      ],
+      "c": 2,
+      "e": "🎈"
+    },
+    {
+      "q": "¿Cuál es la capital de Estados Unidos?",
+      "o": [
+        "Washington D.C.",
+        "Chicago",
+        "Los Ángeles",
+        "Nueva York"
+      ],
+      "c": 0,
+      "e": "🏛️"
+    },
+    {
+      "q": "¿Qué país tiene una estrella de David en su bandera?",
+      "o": [
+        "Israel",
+        "Chipre",
+        "Líbano",
+        "Jordania"
+      ],
+      "c": 0,
+      "e": "✡️"
+    },
+    {
+      "q": "¿Cuál es la capital de China?",
+      "o": [
+        "Hong Kong",
+        "Cantón",
+        "Pekín",
+        "Shanghái"
+      ],
+      "c": 2,
+      "e": "🐉"
+    },
+    {
+      "q": "¿Cuál es la capital de Nueva Zelanda?",
+      "o": [
+        "Hamilton",
+        "Auckland",
+        "Christchurch",
+        "Wellington"
+      ],
+      "c": 3,
+      "e": "🥝",
+      "img": "arcade/reference/banderas.svg",
+      "imgAlt": "Ilustración ambiental, sin pistas sobre la respuesta."
+    },
+    {
+      "q": "¿Qué país sudamericano tiene un sol con rostro en su bandera y solo 9 franjas?",
+      "o": [
+        "Paraguay",
+        "Ecuador",
+        "Uruguay",
+        "Bolivia"
+      ],
+      "c": 2,
+      "e": "🧉"
+    },
+    {
+      "q": "¿Cuál es la capital de México?",
+      "o": [
+        "Cancún",
+        "Guadalajara",
+        "Monterrey",
+        "Ciudad de México"
+      ],
+      "c": 3,
+      "e": "🌮"
+    },
+    {
+      "q": "¿Qué bandera es famosa por ser la única con dos triángulos apilados?",
+      "o": [
+        "Nepal",
+        "Baréin",
+        "Bután",
+        "Catar"
+      ],
+      "c": 0,
+      "e": "🧗"
+    },
+    {
+      "q": "¿Cuál es la capital de Francia?",
+      "o": [
+        "Lyon",
+        "París",
+        "Marsella",
+        "Niza"
+      ],
+      "c": 1,
+      "e": "🥐"
+    },
+    {
+      "q": "¿Cuál es la capital de Portugal?",
+      "o": [
+        "Oporto",
+        "Coímbra",
+        "Braga",
+        "Lisboa"
+      ],
+      "c": 3,
+      "e": "🐟",
+      "img": "arcade/reference/banderas.svg",
+      "imgAlt": "Ilustración ambiental, sin pistas sobre la respuesta."
+    },
+    {
+      "q": "¿Cuál es la capital de Grecia?",
+      "o": [
+        "Atenas",
+        "Esparta",
+        "Corinto",
+        "Tesalónica"
+      ],
+      "c": 0,
+      "e": "🏛️"
+    },
+    {
+      "q": "¿Cuál es la capital de Colombia?",
+      "o": [
+        "Medellín",
+        "Bogotá",
+        "Cartagena",
+        "Cali"
+      ],
+      "c": 1,
+      "e": "☕"
+    },
+    {
+      "q": "¿Cuál es la capital de Venezuela?",
+      "o": [
+        "Mérida",
+        "Maracaibo",
+        "Caracas",
+        "Valencia"
+      ],
+      "c": 2,
+      "e": "🛢️"
+    },
+    {
+      "q": "¿Cuál es la capital de Ecuador?",
+      "o": [
+        "Quito",
+        "Guayaquil",
+        "Cuenca",
+        "Loja"
+      ],
+      "c": 0,
+      "e": "🏔️"
+    },
+    {
+      "q": "¿Cuál es la capital de Bolivia (sede de gobierno)?",
+      "o": [
+        "Sucre",
+        "Santa Cruz",
+        "La Paz",
+        "Cochabamba"
+      ],
+      "c": 2,
+      "e": "🦙",
+      "img": "arcade/reference/banderas.svg",
+      "imgAlt": "Ilustración ambiental, sin pistas sobre la respuesta."
+    },
+    {
+      "q": "¿Cuál es la capital de Uruguay?",
+      "o": [
+        "Colonia",
+        "Punta del Este",
+        "Montevideo",
+        "Salto"
+      ],
+      "c": 2,
+      "e": "🧉"
+    },
+    {
+      "q": "¿Cuál es la capital de Paraguay?",
+      "o": [
+        "Encarnación",
+        "Luque",
+        "Ciudad del Este",
+        "Asunción"
+      ],
+      "c": 3,
+      "e": "🌿"
+    },
+    {
+      "q": "¿Qué país tiene un cedro verde en el centro de su bandera?",
+      "o": [
+        "Líbano",
+        "Chipre",
+        "Jamaica",
+        "Canadá"
+      ],
+      "c": 0,
+      "e": "🌲"
+    },
+    {
+      "q": "¿Cuál es la capital de India?",
+      "o": [
+        "Nueva Delhi",
+        "Calcuta",
+        "Bangalore",
+        "Bombay"
+      ],
+      "c": 0,
+      "e": "🕌"
+    },
+    {
+      "q": "¿Cuál es la capital de Corea del Sur?",
+      "o": [
+        "Daegu",
+        "Seúl",
+        "Busan",
+        "Incheon"
+      ],
+      "c": 1,
+      "e": "🎎",
+      "img": "arcade/reference/banderas.svg",
+      "imgAlt": "Ilustración ambiental, sin pistas sobre la respuesta."
+    },
+    {
+      "q": "¿Cuál es la capital de Tailandia?",
+      "o": [
+        "Pattaya",
+        "Phuket",
+        "Bangkok",
+        "Chiang Mai"
+      ],
+      "c": 2,
+      "e": "🛕"
+    },
+    {
+      "q": "¿Cuál es la capital de Suecia?",
+      "o": [
+        "Estocolmo",
+        "Malmö",
+        "Gotemburgo",
+        "Uppsala"
+      ],
+      "c": 0,
+      "e": "❄️"
+    },
+    {
+      "q": "¿Cuál es la capital de Noruega?",
+      "o": [
+        "Bergen",
+        "Stavanger",
+        "Oslo",
+        "Trondheim"
+      ],
+      "c": 2,
+      "e": "🎣"
+    },
+    {
+      "q": "¿Cuál es la capital de Países Bajos (Holanda)?",
+      "o": [
+        "La Haya",
+        "Róterdam",
+        "Ámsterdam",
+        "Utrecht"
+      ],
+      "c": 2,
+      "e": "🌷"
+    },
+    {
+      "q": "¿Qué país tiene una hoja de arce roja en su bandera?",
+      "o": [
+        "Austria",
+        "Canadá",
+        "Estados Unidos",
+        "Suiza"
+      ],
+      "c": 1,
+      "e": "🍁",
+      "img": "arcade/reference/banderas.svg",
+      "imgAlt": "Ilustración ambiental, sin pistas sobre la respuesta."
+    },
+    {
+      "q": "¿Cuál es la capital de Irlanda?",
+      "o": [
+        "Belfast",
+        "Dublín",
+        "Galway",
+        "Cork"
+      ],
+      "c": 1,
+      "e": "🍀"
+    },
+    {
+      "q": "¿Cuál es la capital de Suiza?",
+      "o": [
+        "Ginebra",
+        "Berna",
+        "Zúrich",
+        "Basilea"
+      ],
+      "c": 1,
+      "e": "⛰️"
+    },
+    {
+      "q": "¿Cuál es la capital de Cuba?",
+      "o": [
+        "La Habana",
+        "Santiago",
+        "Holguín",
+        "Varadero"
+      ],
+      "c": 0,
+      "e": "🚬"
+    },
+    {
+      "q": "¿Qué colores tiene la bandera de Chile?",
+      "o": [
+        "Verde, blanco y rojo",
+        "Rojo, blanco y azul",
+        "Solo rojo y blanco",
+        "Amarillo, azul y rojo"
+      ],
+      "c": 1,
+      "e": "⭐"
+    },
+    {
+      "q": "¿Cuál es la capital de Marruecos?",
+      "o": [
+        "Fez",
+        "Marrakech",
+        "Casablanca",
+        "Rabat"
+      ],
+      "c": 3,
+      "e": "🐫",
+      "img": "arcade/reference/banderas.svg",
+      "imgAlt": "Ilustración ambiental, sin pistas sobre la respuesta."
+    },
+    {
+      "q": "¿Cuál es la capital de Kenia?",
+      "o": [
+        "Mombasa",
+        "Nairobi",
+        "Nakuru",
+        "Kisumu"
+      ],
+      "c": 1,
+      "e": "🦁"
+    },
+    {
+      "q": "¿Qué país tiene la bandera con más colores (arcoíris) de Sudáfrica?",
+      "o": [
+        "Sudáfrica",
+        "Namibia",
+        "Zimbabue",
+        "Botsuana"
+      ],
+      "c": 0,
+      "e": "🌈"
+    },
+    {
+      "q": "¿Cuál es la capital de Polonia?",
+      "o": [
+        "Gdansk",
+        "Lodz",
+        "Varsovia",
+        "Cracovia"
+      ],
+      "c": 2,
+      "e": "🏰"
+    },
+    {
+      "q": "¿Cuál es la capital de Indonesia (hasta el traslado)?",
+      "o": [
+        "Yakarta",
+        "Surabaya",
+        "Bali",
+        "Bandung"
+      ],
+      "c": 0,
+      "e": "🏝️"
+    },
+    {
+      "q": "¿Cuál es la capital de Reino Unido?",
+      "o": [
+        "Liverpool",
+        "Mánchester",
+        "Edimburgo",
+        "Londres"
+      ],
+      "c": 3,
+      "e": "☂️",
+      "img": "arcade/reference/banderas.svg",
+      "imgAlt": "Ilustración ambiental, sin pistas sobre la respuesta."
+    },
+    {
+      "q": "¿Qué país tiene la bandera con un sol naciente rojo?",
+      "o": [
+        "Japón",
+        "China",
+        "Corea del Sur",
+        "Bangladés"
+      ],
+      "c": 0,
+      "e": "🎌"
+    },
+    {
+      "q": "¿Qué país tiene la bandera con la hoja de arce?",
+      "o": [
+        "Noruega",
+        "Líbano",
+        "Canadá",
+        "Suiza"
+      ],
+      "c": 2,
+      "e": "🍁"
+    },
+    {
+      "q": "¿Qué país tiene la bandera roja con estrellas amarillas (una grande y cuatro pequeñas)?",
+      "o": [
+        "Turquía",
+        "Corea del Norte",
+        "China",
+        "Vietnam"
+      ],
+      "c": 2,
+      "e": "⭐"
+    },
+    {
+      "q": "¿Qué país tiene la Torre Eiffel?",
+      "o": [
+        "Francia",
+        "Bélgica",
+        "Italia",
+        "España"
+      ],
+      "c": 0,
+      "e": "🗼"
+    },
+    {
+      "q": "¿Qué país tiene forma de bota en Europa?",
+      "o": [
+        "Portugal",
+        "Italia",
+        "Grecia",
+        "España"
+      ],
+      "c": 1,
+      "e": "👢",
+      "img": "arcade/reference/banderas.svg",
+      "imgAlt": "Ilustración ambiental, sin pistas sobre la respuesta."
+    },
+    {
+      "q": "¿Qué país africano tiene las pirámides de Guiza?",
+      "o": [
+        "Libia",
+        "Marruecos",
+        "Egipto",
+        "Sudán"
+      ],
+      "c": 2,
+      "e": "🏜️"
+    }
+  ]
+}

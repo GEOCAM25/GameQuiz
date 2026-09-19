@@ -1,0 +1,2023 @@
+{
+  "cat": "chile",
+  "name": "Chile de norte a sur",
+  "emoji": "🇨🇱",
+  "edition": "4.0",
+  "sources": [
+    "https://www.bcn.cl/siit/nuestropais/",
+    "https://www.memoriachilena.gob.cl/",
+    "https://www.nobelprize.org/prizes/literature/1945/mistral/facts/"
+  ],
+  "questions": [
+    {
+      "q": "¿Cuál es la capital regional de Arica y Parinacota?",
+      "o": [
+        "Antofagasta",
+        "Arica",
+        "Chillán",
+        "La Serena"
+      ],
+      "c": 1,
+      "explanation": "Arica y Parinacota: Arica. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-02d70d526cec",
+      "img": "arcade/reference/chile.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué número romano o sigla se asoció tradicionalmente a Arica y Parinacota?",
+      "o": [
+        "XV",
+        "XIV",
+        "VIII",
+        "XI"
+      ],
+      "c": 0,
+      "explanation": "Arica y Parinacota: XV. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-436e67e10422"
+    },
+    {
+      "q": "¿Qué lugar o rasgo está en Arica y Parinacota?",
+      "o": [
+        "Reserva Nacional Radal Siete Tazas",
+        "Lago Chungará",
+        "Archipiélago de Chiloé",
+        "Sewell"
+      ],
+      "c": 1,
+      "explanation": "Arica y Parinacota: Lago Chungará. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-e450c08f001a"
+    },
+    {
+      "q": "¿Cuál es la capital regional de Tarapacá?",
+      "o": [
+        "Iquique",
+        "Temuco",
+        "Puerto Montt",
+        "Punta Arenas"
+      ],
+      "c": 0,
+      "explanation": "Tarapacá: Iquique. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-773a051c4f11"
+    },
+    {
+      "q": "¿Qué número romano o sigla se asoció tradicionalmente a Tarapacá?",
+      "o": [
+        "XIV",
+        "VII",
+        "RM",
+        "I"
+      ],
+      "c": 3,
+      "explanation": "Tarapacá: I. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-a40cd04bd03c"
+    },
+    {
+      "q": "¿Qué lugar o rasgo está en Tarapacá?",
+      "o": [
+        "Humberstone",
+        "Reserva Nacional Radal Siete Tazas",
+        "Torres del Paine",
+        "Laguna San Rafael"
+      ],
+      "c": 0,
+      "explanation": "Tarapacá: Humberstone. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-846f47471749",
+      "img": "arcade/reference/chile.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Cuál es la capital regional de Antofagasta?",
+      "o": [
+        "Antofagasta",
+        "Iquique",
+        "Punta Arenas",
+        "Temuco"
+      ],
+      "c": 0,
+      "explanation": "Antofagasta: Antofagasta. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-4d5edfba9258"
+    },
+    {
+      "q": "¿Qué número romano o sigla se asoció tradicionalmente a Antofagasta?",
+      "o": [
+        "XII",
+        "V",
+        "II",
+        "I"
+      ],
+      "c": 2,
+      "explanation": "Antofagasta: II. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-d2ea7e55c326"
+    },
+    {
+      "q": "¿Qué lugar o rasgo está en Antofagasta?",
+      "o": [
+        "Parque Nacional Conguillío",
+        "Humberstone",
+        "Valle de la Luna de San Pedro",
+        "Bahía Inglesa"
+      ],
+      "c": 2,
+      "explanation": "Antofagasta: Valle de la Luna de San Pedro. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-46809ab3758a"
+    },
+    {
+      "q": "¿Cuál es la capital regional de Atacama?",
+      "o": [
+        "Concepción",
+        "Copiapó",
+        "Antofagasta",
+        "Coyhaique"
+      ],
+      "c": 1,
+      "explanation": "Atacama: Copiapó. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-97115742ea41"
+    },
+    {
+      "q": "¿Qué número romano o sigla se asoció tradicionalmente a Atacama?",
+      "o": [
+        "XVI",
+        "III",
+        "I",
+        "XII"
+      ],
+      "c": 1,
+      "explanation": "Atacama: III. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-1ea22ef61aec",
+      "img": "arcade/reference/chile.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué lugar o rasgo está en Atacama?",
+      "o": [
+        "Rapa Nui",
+        "Bahía Inglesa",
+        "Desembocadura del río Biobío",
+        "Sewell"
+      ],
+      "c": 1,
+      "explanation": "Atacama: Bahía Inglesa. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-78e48d6f9c76"
+    },
+    {
+      "q": "¿Cuál es la capital regional de Coquimbo?",
+      "o": [
+        "Copiapó",
+        "Antofagasta",
+        "Chillán",
+        "La Serena"
+      ],
+      "c": 3,
+      "explanation": "Coquimbo: La Serena. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-374ffb5faa4c"
+    },
+    {
+      "q": "¿Qué número romano o sigla se asoció tradicionalmente a Coquimbo?",
+      "o": [
+        "IV",
+        "V",
+        "RM",
+        "III"
+      ],
+      "c": 0,
+      "explanation": "Coquimbo: IV. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-f194a901b005"
+    },
+    {
+      "q": "¿Qué lugar o rasgo está en Coquimbo?",
+      "o": [
+        "Nevados de Chillán",
+        "Lago Chungará",
+        "Sewell",
+        "Valle del Elqui"
+      ],
+      "c": 3,
+      "explanation": "Coquimbo: Valle del Elqui. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-e463b7a4d788"
+    },
+    {
+      "q": "¿Cuál es la capital regional de Valparaíso?",
+      "o": [
+        "Valparaíso",
+        "Antofagasta",
+        "Iquique",
+        "Concepción"
+      ],
+      "c": 0,
+      "explanation": "Valparaíso: Valparaíso. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-39dbb95eb660",
+      "img": "arcade/reference/chile.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué número romano o sigla se asoció tradicionalmente a Valparaíso?",
+      "o": [
+        "XI",
+        "I",
+        "RM",
+        "V"
+      ],
+      "c": 3,
+      "explanation": "Valparaíso: V. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-a5c9f5b421ba"
+    },
+    {
+      "q": "¿Qué lugar o rasgo está en Valparaíso?",
+      "o": [
+        "Torres del Paine",
+        "Rapa Nui",
+        "Reserva Nacional Radal Siete Tazas",
+        "Sewell"
+      ],
+      "c": 1,
+      "explanation": "Valparaíso: Rapa Nui. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-d99f454309b6"
+    },
+    {
+      "q": "¿Cuál es la capital regional de Metropolitana de Santiago?",
+      "o": [
+        "Iquique",
+        "Santiago",
+        "La Serena",
+        "Punta Arenas"
+      ],
+      "c": 1,
+      "explanation": "Metropolitana de Santiago: Santiago. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-b267b8404a7d"
+    },
+    {
+      "q": "¿Qué número romano o sigla se asoció tradicionalmente a Metropolitana de Santiago?",
+      "o": [
+        "VII",
+        "XVI",
+        "RM",
+        "XV"
+      ],
+      "c": 2,
+      "explanation": "Metropolitana de Santiago: RM. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-6d93bb733a87"
+    },
+    {
+      "q": "¿Qué lugar o rasgo está en Metropolitana de Santiago?",
+      "o": [
+        "Cajón del Maipo",
+        "Sewell",
+        "Rapa Nui",
+        "Archipiélago de Chiloé"
+      ],
+      "c": 0,
+      "explanation": "Metropolitana de Santiago: Cajón del Maipo. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-1ad9e4e01491",
+      "img": "arcade/reference/chile.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Cuál es la capital regional de Libertador General Bernardo O'Higgins?",
+      "o": [
+        "Rancagua",
+        "Antofagasta",
+        "Puerto Montt",
+        "Valparaíso"
+      ],
+      "c": 0,
+      "explanation": "Libertador General Bernardo O'Higgins: Rancagua. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-50e1a4b17e19"
+    },
+    {
+      "q": "¿Qué número romano o sigla se asoció tradicionalmente a Libertador General Bernardo O'Higgins?",
+      "o": [
+        "V",
+        "VIII",
+        "VI",
+        "II"
+      ],
+      "c": 2,
+      "explanation": "Libertador General Bernardo O'Higgins: VI. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-0126d6babe3a"
+    },
+    {
+      "q": "¿Qué lugar o rasgo está en Libertador General Bernardo O'Higgins?",
+      "o": [
+        "Laguna San Rafael",
+        "Desembocadura del río Biobío",
+        "Sewell",
+        "Cajón del Maipo"
+      ],
+      "c": 2,
+      "explanation": "Libertador General Bernardo O'Higgins: Sewell. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-2200da95c2cb"
+    },
+    {
+      "q": "¿Cuál es la capital regional de Maule?",
+      "o": [
+        "Talca",
+        "Valparaíso",
+        "Punta Arenas",
+        "Santiago"
+      ],
+      "c": 0,
+      "explanation": "Maule: Talca. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-ef7c78c1befd"
+    },
+    {
+      "q": "¿Qué número romano o sigla se asoció tradicionalmente a Maule?",
+      "o": [
+        "VI",
+        "VII",
+        "III",
+        "V"
+      ],
+      "c": 1,
+      "explanation": "Maule: VII. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-f750386ea70b",
+      "img": "arcade/reference/chile.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué lugar o rasgo está en Maule?",
+      "o": [
+        "Parque Nacional Conguillío",
+        "Torres del Paine",
+        "Reserva Nacional Radal Siete Tazas",
+        "Desembocadura del río Biobío"
+      ],
+      "c": 2,
+      "explanation": "Maule: Reserva Nacional Radal Siete Tazas. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-70453a8430d4"
+    },
+    {
+      "q": "¿Cuál es la capital regional de Ñuble?",
+      "o": [
+        "Iquique",
+        "La Serena",
+        "Valdivia",
+        "Chillán"
+      ],
+      "c": 3,
+      "explanation": "Ñuble: Chillán. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-d52de1c902f1"
+    },
+    {
+      "q": "¿Qué número romano o sigla se asoció tradicionalmente a Ñuble?",
+      "o": [
+        "XVI",
+        "VIII",
+        "V",
+        "IX"
+      ],
+      "c": 0,
+      "explanation": "Ñuble: XVI. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-92067b13229a"
+    },
+    {
+      "q": "¿Qué lugar o rasgo está en Ñuble?",
+      "o": [
+        "Valle de la Luna de San Pedro",
+        "Valle del Elqui",
+        "Nevados de Chillán",
+        "Torres del Paine"
+      ],
+      "c": 2,
+      "explanation": "Ñuble: Nevados de Chillán. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-584935642e30"
+    },
+    {
+      "q": "¿Cuál es la capital regional de Biobío?",
+      "o": [
+        "Antofagasta",
+        "Concepción",
+        "Rancagua",
+        "Temuco"
+      ],
+      "c": 1,
+      "explanation": "Biobío: Concepción. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-15b368f62432",
+      "img": "arcade/reference/chile.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué número romano o sigla se asoció tradicionalmente a Biobío?",
+      "o": [
+        "VIII",
+        "XI",
+        "III",
+        "XVI"
+      ],
+      "c": 0,
+      "explanation": "Biobío: VIII. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-5c28df9fa7ab"
+    },
+    {
+      "q": "¿Qué lugar o rasgo está en Biobío?",
+      "o": [
+        "Laguna San Rafael",
+        "Nevados de Chillán",
+        "Parque Nacional Conguillío",
+        "Desembocadura del río Biobío"
+      ],
+      "c": 3,
+      "explanation": "Biobío: Desembocadura del río Biobío. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-3db2b238410f"
+    },
+    {
+      "q": "¿Cuál es la capital regional de La Araucanía?",
+      "o": [
+        "Temuco",
+        "Punta Arenas",
+        "Valdivia",
+        "Iquique"
+      ],
+      "c": 0,
+      "explanation": "La Araucanía: Temuco. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-e07937a8d8df"
+    },
+    {
+      "q": "¿Qué número romano o sigla se asoció tradicionalmente a La Araucanía?",
+      "o": [
+        "IX",
+        "VIII",
+        "XII",
+        "VI"
+      ],
+      "c": 0,
+      "explanation": "La Araucanía: IX. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-63d2f1d49ee8"
+    },
+    {
+      "q": "¿Qué lugar o rasgo está en La Araucanía?",
+      "o": [
+        "Parque Nacional Conguillío",
+        "Rapa Nui",
+        "Sewell",
+        "Laguna San Rafael"
+      ],
+      "c": 0,
+      "explanation": "La Araucanía: Parque Nacional Conguillío. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-8f825eee8c25",
+      "img": "arcade/reference/chile.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Cuál es la capital regional de Los Ríos?",
+      "o": [
+        "Valparaíso",
+        "Valdivia",
+        "La Serena",
+        "Temuco"
+      ],
+      "c": 1,
+      "explanation": "Los Ríos: Valdivia. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-08a5aa8e1683"
+    },
+    {
+      "q": "¿Qué número romano o sigla se asoció tradicionalmente a Los Ríos?",
+      "o": [
+        "VIII",
+        "XIV",
+        "V",
+        "RM"
+      ],
+      "c": 1,
+      "explanation": "Los Ríos: XIV. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-10d604fffe52"
+    },
+    {
+      "q": "¿Qué lugar o rasgo está en Los Ríos?",
+      "o": [
+        "Lago Chungará",
+        "Lago Ranco",
+        "Archipiélago de Chiloé",
+        "Sewell"
+      ],
+      "c": 1,
+      "explanation": "Los Ríos: Lago Ranco. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-faf43704b482"
+    },
+    {
+      "q": "¿Cuál es la capital regional de Los Lagos?",
+      "o": [
+        "Puerto Montt",
+        "Iquique",
+        "Chillán",
+        "Antofagasta"
+      ],
+      "c": 0,
+      "explanation": "Los Lagos: Puerto Montt. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-bc8833a06fa8"
+    },
+    {
+      "q": "¿Qué número romano o sigla se asoció tradicionalmente a Los Lagos?",
+      "o": [
+        "XVI",
+        "VI",
+        "IX",
+        "X"
+      ],
+      "c": 3,
+      "explanation": "Los Lagos: X. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-b90a5f57e494",
+      "img": "arcade/reference/chile.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué lugar o rasgo está en Los Lagos?",
+      "o": [
+        "Sewell",
+        "Archipiélago de Chiloé",
+        "Valle de la Luna de San Pedro",
+        "Nevados de Chillán"
+      ],
+      "c": 1,
+      "explanation": "Los Lagos: Archipiélago de Chiloé. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-8d3496095b88"
+    },
+    {
+      "q": "¿Cuál es la capital regional de Aysén del General Carlos Ibáñez del Campo?",
+      "o": [
+        "Arica",
+        "Valparaíso",
+        "Coyhaique",
+        "Puerto Montt"
+      ],
+      "c": 2,
+      "explanation": "Aysén del General Carlos Ibáñez del Campo: Coyhaique. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-357f0cccfff2"
+    },
+    {
+      "q": "¿Qué número romano o sigla se asoció tradicionalmente a Aysén del General Carlos Ibáñez del Campo?",
+      "o": [
+        "XI",
+        "V",
+        "VIII",
+        "IX"
+      ],
+      "c": 0,
+      "explanation": "Aysén del General Carlos Ibáñez del Campo: XI. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-49d4efd24bab"
+    },
+    {
+      "q": "¿Qué lugar o rasgo está en Aysén del General Carlos Ibáñez del Campo?",
+      "o": [
+        "Laguna San Rafael",
+        "Valle de la Luna de San Pedro",
+        "Rapa Nui",
+        "Humberstone"
+      ],
+      "c": 0,
+      "explanation": "Aysén del General Carlos Ibáñez del Campo: Laguna San Rafael. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-05d8507e8a76"
+    },
+    {
+      "q": "¿Cuál es la capital regional de Magallanes y de la Antártica Chilena?",
+      "o": [
+        "Punta Arenas",
+        "Arica",
+        "Coyhaique",
+        "Santiago"
+      ],
+      "c": 0,
+      "explanation": "Magallanes y de la Antártica Chilena: Punta Arenas. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-ad56ae225f54",
+      "img": "arcade/reference/chile.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué número romano o sigla se asoció tradicionalmente a Magallanes y de la Antártica Chilena?",
+      "o": [
+        "III",
+        "XV",
+        "VII",
+        "XII"
+      ],
+      "c": 3,
+      "explanation": "Magallanes y de la Antártica Chilena: XII. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-1c9ac236273d"
+    },
+    {
+      "q": "¿Qué lugar o rasgo está en Magallanes y de la Antártica Chilena?",
+      "o": [
+        "Desembocadura del río Biobío",
+        "Cajón del Maipo",
+        "Torres del Paine",
+        "Reserva Nacional Radal Siete Tazas"
+      ],
+      "c": 2,
+      "explanation": "Magallanes y de la Antártica Chilena: Torres del Paine. La numeración romana es una referencia histórica: actualmente se privilegian los nombres de las regiones.",
+      "e": "🇨🇱",
+      "id": "chile-81b74102d5f7"
+    },
+    {
+      "q": "¿Qué ámbito se asocia especialmente con Gabriela Mistral?",
+      "o": [
+        "Pintura",
+        "Cine y artes escénicas",
+        "Acción social",
+        "Poesía"
+      ],
+      "c": 3,
+      "explanation": "Gabriela Mistral: Poesía. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-69e33fb3ce66"
+    },
+    {
+      "q": "¿Qué dato identifica a Gabriela Mistral?",
+      "o": [
+        "Lideró fuerzas mapuches contra los españoles",
+        "Educadora y defensora de derechos de las mujeres",
+        "Ganó dos oros olímpicos en Atenas 2004",
+        "Premio Nobel de Literatura de 1945"
+      ],
+      "c": 3,
+      "explanation": "Gabriela Mistral: Premio Nobel de Literatura de 1945. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-e7de71db6c93"
+    },
+    {
+      "q": "¿Qué otro dato corresponde a Gabriela Mistral?",
+      "o": [
+        "Se llamaba Lucila Godoy Alcayaga",
+        "Fue sacerdote jesuita",
+        "Fue director teatral",
+        "Se asocia con la victoria de Tucapel"
+      ],
+      "c": 0,
+      "explanation": "Gabriela Mistral: Se llamaba Lucila Godoy Alcayaga. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-edc9c55e6a95",
+      "img": "arcade/reference/chile.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué ámbito se asocia especialmente con Pablo Neruda?",
+      "o": [
+        "Acción social",
+        "Fútbol",
+        "Historia política",
+        "Poesía"
+      ],
+      "c": 3,
+      "explanation": "Pablo Neruda: Poesía. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-5feffd3ada0e"
+    },
+    {
+      "q": "¿Qué dato identifica a Pablo Neruda?",
+      "o": [
+        "Mineralogista de origen polaco",
+        "Fue finalista olímpico en Londres 2012",
+        "Ganó plata individual en Pekín 2008",
+        "Premio Nobel de Literatura de 1971"
+      ],
+      "c": 3,
+      "explanation": "Pablo Neruda: Premio Nobel de Literatura de 1971. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-a64b289bcc3d"
+    },
+    {
+      "q": "¿Qué otro dato corresponde a Pablo Neruda?",
+      "o": [
+        "Autor de Canto general",
+        "Fue médico además de dramaturgo",
+        "Nació en Tocopilla",
+        "Obtuvo su título en 1887"
+      ],
+      "c": 0,
+      "explanation": "Pablo Neruda: Autor de Canto general. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-a421d2a12be3"
+    },
+    {
+      "q": "¿Qué ámbito se asocia especialmente con Violeta Parra?",
+      "o": [
+        "Teatro",
+        "Música y artes visuales",
+        "Tenis",
+        "Medicina"
+      ],
+      "c": 1,
+      "explanation": "Violeta Parra: Música y artes visuales. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-589744225db3"
+    },
+    {
+      "q": "¿Qué dato identifica a Violeta Parra?",
+      "o": [
+        "Dirigió La batalla de Chile",
+        "Educadora y defensora de derechos de las mujeres",
+        "Autora de La casa de los espíritus",
+        "Autora de Gracias a la vida"
+      ],
+      "c": 3,
+      "explanation": "Violeta Parra: Autora de Gracias a la vida. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-dcfb23c7b1db",
+      "img": "arcade/reference/chile.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué otro dato corresponde a Violeta Parra?",
+      "o": [
+        "Participó en la redacción del Código Civil chileno",
+        "Se asocia con la victoria de Tucapel",
+        "Desarrolló la recopilación del folclore chileno",
+        "Fue director teatral"
+      ],
+      "c": 2,
+      "explanation": "Violeta Parra: Desarrolló la recopilación del folclore chileno. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-a1fbf9cf89f0"
+    },
+    {
+      "q": "¿Qué ámbito se asocia especialmente con Víctor Jara?",
+      "o": [
+        "Tenis",
+        "Cine documental",
+        "Música y teatro",
+        "Cine"
+      ],
+      "c": 2,
+      "explanation": "Víctor Jara: Música y teatro. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-c60d4cd0fa99"
+    },
+    {
+      "q": "¿Qué dato identifica a Víctor Jara?",
+      "o": [
+        "Ganó plata individual en Pekín 2008",
+        "Educadora y defensora de derechos de las mujeres",
+        "Investigadora y maestra de danzas tradicionales",
+        "Autor de Te recuerdo Amanda"
+      ],
+      "c": 3,
+      "explanation": "Víctor Jara: Autor de Te recuerdo Amanda. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-596bb4cac3f4"
+    },
+    {
+      "q": "¿Qué otro dato corresponde a Víctor Jara?",
+      "o": [
+        "Participó en la redacción del Código Civil chileno",
+        "Fue director teatral",
+        "Desarrolló la antipoesía",
+        "Ganó oro de dobles con Massú en 2004"
+      ],
+      "c": 1,
+      "explanation": "Víctor Jara: Fue director teatral. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-7a704a1846d2"
+    },
+    {
+      "q": "¿Qué ámbito se asocia especialmente con Nicanor Parra?",
+      "o": [
+        "Independencia",
+        "Gimnasia artística",
+        "Música y teatro",
+        "Poesía"
+      ],
+      "c": 3,
+      "explanation": "Nicanor Parra: Poesía. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-baa4a63f14ae",
+      "img": "arcade/reference/chile.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué dato identifica a Nicanor Parra?",
+      "o": [
+        "Autor de Poemas y antipoemas",
+        "Destacó como guerrillero y organizador",
+        "Primera médica titulada de Chile",
+        "Fue número uno del ranking ATP en 1998"
+      ],
+      "c": 0,
+      "explanation": "Nicanor Parra: Autor de Poemas y antipoemas. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-4c1b47f7ce50"
+    },
+    {
+      "q": "¿Qué otro dato corresponde a Nicanor Parra?",
+      "o": [
+        "Dirigió Nostalgia de la luz",
+        "Publicó Eva Luna",
+        "Recibió el apodo de Chino",
+        "Desarrolló la antipoesía"
+      ],
+      "c": 3,
+      "explanation": "Nicanor Parra: Desarrolló la antipoesía. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-89a6be3c63c0"
+    },
+    {
+      "q": "¿Qué ámbito se asocia especialmente con Isabel Allende?",
+      "o": [
+        "Medicina",
+        "Literatura narrativa",
+        "Pintura",
+        "Teatro y medicina"
+      ],
+      "c": 1,
+      "explanation": "Isabel Allende: Literatura narrativa. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-f782b0f031b9"
+    },
+    {
+      "q": "¿Qué dato identifica a Isabel Allende?",
+      "o": [
+        "Autor de El tony chico",
+        "Autora de La casa de los espíritus",
+        "Premio Nobel de Literatura de 1945",
+        "Nació en Tocopilla"
+      ],
+      "c": 1,
+      "explanation": "Isabel Allende: Autora de La casa de los espíritus. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-26b0dea407bd"
+    },
+    {
+      "q": "¿Qué otro dato corresponde a Isabel Allende?",
+      "o": [
+        "Destacó en suelo y salto",
+        "Publicó Eva Luna",
+        "Se asocia con la victoria de Tucapel",
+        "Fue rector de la Universidad de Chile"
+      ],
+      "c": 1,
+      "explanation": "Isabel Allende: Publicó Eva Luna. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-e40098e0777b",
+      "img": "arcade/reference/chile.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué ámbito se asocia especialmente con Roberto Matta?",
+      "o": [
+        "Cine y artes escénicas",
+        "Pintura",
+        "Gimnasia artística",
+        "Historia naval"
+      ],
+      "c": 1,
+      "explanation": "Roberto Matta: Pintura. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-5dd218cf5afa"
+    },
+    {
+      "q": "¿Qué dato identifica a Roberto Matta?",
+      "o": [
+        "Fue número uno del ranking ATP en 1998",
+        "Figura vinculada al surrealismo",
+        "Dirigió La montaña sagrada",
+        "Capitán de la Esmeralda en 1879"
+      ],
+      "c": 1,
+      "explanation": "Roberto Matta: Figura vinculada al surrealismo. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-a57709e5e6e2"
+    },
+    {
+      "q": "¿Qué otro dato corresponde a Roberto Matta?",
+      "o": [
+        "Nació en Viña del Mar",
+        "Ganó oro de dobles con Massú en 2004",
+        "Murió tras la batalla de Tucapel",
+        "Nació en Santiago en 1911"
+      ],
+      "c": 3,
+      "explanation": "Roberto Matta: Nació en Santiago en 1911. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-2da0adc4a5b1"
+    },
+    {
+      "q": "¿Qué ámbito se asocia especialmente con Claudio Arrau?",
+      "o": [
+        "Música clásica",
+        "Pintura",
+        "Gimnasia artística",
+        "Independencia"
+      ],
+      "c": 0,
+      "explanation": "Claudio Arrau: Música clásica. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-a6db2b60d805"
+    },
+    {
+      "q": "¿Qué dato identifica a Claudio Arrau?",
+      "o": [
+        "Ganó dos oros olímpicos en Atenas 2004",
+        "Pianista nacido en Chillán",
+        "Autor de Poemas y antipoemas",
+        "Investigadora y maestra de danzas tradicionales"
+      ],
+      "c": 1,
+      "explanation": "Claudio Arrau: Pianista nacido en Chillán. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-a3042b4e85c1",
+      "img": "arcade/reference/chile.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué otro dato corresponde a Claudio Arrau?",
+      "o": [
+        "Fue médico además de dramaturgo",
+        "Destacó interpretando a Beethoven",
+        "Murió tras la batalla de Tucapel",
+        "Nació en Viña del Mar"
+      ],
+      "c": 1,
+      "explanation": "Claudio Arrau: Destacó interpretando a Beethoven. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-010b904de0e6"
+    },
+    {
+      "q": "¿Qué ámbito se asocia especialmente con Margot Loyola?",
+      "o": [
+        "Pintura",
+        "Folclore",
+        "Independencia",
+        "Música clásica"
+      ],
+      "c": 1,
+      "explanation": "Margot Loyola: Folclore. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-5b08515938c1"
+    },
+    {
+      "q": "¿Qué dato identifica a Margot Loyola?",
+      "o": [
+        "Premio Nobel de Literatura de 1945",
+        "Investigadora y maestra de danzas tradicionales",
+        "Pianista nacido en Chillán",
+        "Ministro influyente en la década de 1830"
+      ],
+      "c": 1,
+      "explanation": "Margot Loyola: Investigadora y maestra de danzas tradicionales. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-a056e8ab6ce5"
+    },
+    {
+      "q": "¿Qué otro dato corresponde a Margot Loyola?",
+      "o": [
+        "Recibió el Premio Nacional de Artes Musicales en 1994",
+        "Nació en Santiago en 1911",
+        "Se asocia con la victoria de Tucapel",
+        "Recibió el apodo de Chino"
+      ],
+      "c": 0,
+      "explanation": "Margot Loyola: Recibió el Premio Nacional de Artes Musicales en 1994. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-f95b7e7b107f"
+    },
+    {
+      "q": "¿Qué ámbito se asocia especialmente con Arturo Prat?",
+      "o": [
+        "Música clásica",
+        "Teatro y medicina",
+        "Cine documental",
+        "Historia naval"
+      ],
+      "c": 3,
+      "explanation": "Arturo Prat: Historia naval. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-f0007e8324ff",
+      "img": "arcade/reference/chile.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué dato identifica a Arturo Prat?",
+      "o": [
+        "Ganó plata individual en Pekín 2008",
+        "Capitán de la Esmeralda en 1879",
+        "Autora de La casa de los espíritus",
+        "Ganó plata olímpica en Melbourne 1956"
+      ],
+      "c": 1,
+      "explanation": "Arturo Prat: Capitán de la Esmeralda en 1879. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-624b41ddc62c"
+    },
+    {
+      "q": "¿Qué otro dato corresponde a Arturo Prat?",
+      "o": [
+        "Nació en Tocopilla",
+        "Fue sacerdote jesuita",
+        "Nació en Viña del Mar",
+        "Murió en el combate naval de Iquique"
+      ],
+      "c": 3,
+      "explanation": "Arturo Prat: Murió en el combate naval de Iquique. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-814b26ddbd91"
+    },
+    {
+      "q": "¿Qué ámbito se asocia especialmente con Bernardo O'Higgins?",
+      "o": [
+        "Cine",
+        "Conquista española",
+        "Cine y artes escénicas",
+        "Independencia"
+      ],
+      "c": 3,
+      "explanation": "Bernardo O'Higgins: Independencia. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-aa90d3ccaad9"
+    },
+    {
+      "q": "¿Qué dato identifica a Bernardo O'Higgins?",
+      "o": [
+        "Investigadora y maestra de danzas tradicionales",
+        "Mineralogista de origen polaco",
+        "Fue Director Supremo de Chile",
+        "Nació en Tocopilla"
+      ],
+      "c": 2,
+      "explanation": "Bernardo O'Higgins: Fue Director Supremo de Chile. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-b85c81216e77"
+    },
+    {
+      "q": "¿Qué otro dato corresponde a Bernardo O'Higgins?",
+      "o": [
+        "Su padre fue Ambrosio O'Higgins",
+        "Ganó The Best de porteras de 2021",
+        "Compitió en lanzamiento de jabalina",
+        "Se llamaba Lucila Godoy Alcayaga"
+      ],
+      "c": 0,
+      "explanation": "Bernardo O'Higgins: Su padre fue Ambrosio O'Higgins. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-ec3452541009",
+      "img": "arcade/reference/chile.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué ámbito se asocia especialmente con José Miguel Carrera?",
+      "o": [
+        "Cine",
+        "Poesía",
+        "Acción social",
+        "Independencia"
+      ],
+      "c": 3,
+      "explanation": "José Miguel Carrera: Independencia. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-c5fc8ca51431"
+    },
+    {
+      "q": "¿Qué dato identifica a José Miguel Carrera?",
+      "o": [
+        "Dirigió Tres tristes tigres",
+        "Destacó como guerrillero y organizador",
+        "Gobernó durante la Patria Vieja",
+        "Escribió y dirigió Gladys"
+      ],
+      "c": 2,
+      "explanation": "José Miguel Carrera: Gobernó durante la Patria Vieja. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-1aa4a5fae603"
+    },
+    {
+      "q": "¿Qué otro dato corresponde a José Miguel Carrera?",
+      "o": [
+        "Murió durante el motín de Quillota",
+        "Se asocia con la primera bandera nacional",
+        "Es actriz y dramaturga",
+        "Anotó el penal decisivo de la Copa América 2015"
+      ],
+      "c": 1,
+      "explanation": "José Miguel Carrera: Se asocia con la primera bandera nacional. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-822b84eacf01"
+    },
+    {
+      "q": "¿Qué ámbito se asocia especialmente con Manuel Rodríguez?",
+      "o": [
+        "Historia naval",
+        "Música y artes visuales",
+        "Independencia",
+        "Fútbol"
+      ],
+      "c": 2,
+      "explanation": "Manuel Rodríguez: Independencia. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-698be7c856ed"
+    },
+    {
+      "q": "¿Qué dato identifica a Manuel Rodríguez?",
+      "o": [
+        "Dirigió Tres tristes tigres",
+        "Destacó como guerrillero y organizador",
+        "Fundó el Hogar de Cristo",
+        "Pianista nacido en Chillán"
+      ],
+      "c": 1,
+      "explanation": "Manuel Rodríguez: Destacó como guerrillero y organizador. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-60b258fc369c",
+      "img": "arcade/reference/chile.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué otro dato corresponde a Manuel Rodríguez?",
+      "o": [
+        "Murió en Tiltil en 1818",
+        "Fue rector de la Universidad de Chile",
+        "Dirigió Nostalgia de la luz",
+        "Nació en Viña del Mar"
+      ],
+      "c": 0,
+      "explanation": "Manuel Rodríguez: Murió en Tiltil en 1818. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-29b3947a9ec6"
+    },
+    {
+      "q": "¿Qué ámbito se asocia especialmente con Pedro de Valdivia?",
+      "o": [
+        "Música y artes visuales",
+        "Conquista española",
+        "Acción social",
+        "Ciencia y educación"
+      ],
+      "c": 1,
+      "explanation": "Pedro de Valdivia: Conquista española. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-62dbe1181cc1"
+    },
+    {
+      "q": "¿Qué dato identifica a Pedro de Valdivia?",
+      "o": [
+        "Autor de Hijo de ladrón",
+        "Figura vinculada al surrealismo",
+        "Ganó plata olímpica en Melbourne 1956",
+        "Fundó Santiago en 1541"
+      ],
+      "c": 3,
+      "explanation": "Pedro de Valdivia: Fundó Santiago en 1541. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-c357da44f6ff"
+    },
+    {
+      "q": "¿Qué otro dato corresponde a Pedro de Valdivia?",
+      "o": [
+        "Murió tras la batalla de Tucapel",
+        "Desarrolló buena parte de su carrera en Francia",
+        "Murió durante el motín de Quillota",
+        "Publicó Eva Luna"
+      ],
+      "c": 0,
+      "explanation": "Pedro de Valdivia: Murió tras la batalla de Tucapel. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-67ca292b9534"
+    },
+    {
+      "q": "¿Qué ámbito se asocia especialmente con Lautaro?",
+      "o": [
+        "Historia política",
+        "Pintura",
+        "Ciencia y educación",
+        "Historia mapuche"
+      ],
+      "c": 3,
+      "explanation": "Lautaro: Historia mapuche. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-22cbe0e8fb16",
+      "img": "arcade/reference/chile.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué dato identifica a Lautaro?",
+      "o": [
+        "Autora de La casa de los espíritus",
+        "Figura vinculada al surrealismo",
+        "Lideró fuerzas mapuches contra los españoles",
+        "Ministro influyente en la década de 1830"
+      ],
+      "c": 2,
+      "explanation": "Lautaro: Lideró fuerzas mapuches contra los españoles. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-57c9623b5709"
+    },
+    {
+      "q": "¿Qué otro dato corresponde a Lautaro?",
+      "o": [
+        "Participó en la redacción del Código Civil chileno",
+        "Recibió el apodo de Chino",
+        "Se asocia con la victoria de Tucapel",
+        "Ganó oro de dobles con Massú en 2004"
+      ],
+      "c": 2,
+      "explanation": "Lautaro: Se asocia con la victoria de Tucapel. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-5f1b00a3b285"
+    },
+    {
+      "q": "¿Qué ámbito se asocia especialmente con Diego Portales?",
+      "o": [
+        "Medicina",
+        "Acción social",
+        "Historia política",
+        "Cine documental"
+      ],
+      "c": 2,
+      "explanation": "Diego Portales: Historia política. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-8b0515d8cb8b"
+    },
+    {
+      "q": "¿Qué dato identifica a Diego Portales?",
+      "o": [
+        "Ganó plata individual en Pekín 2008",
+        "Dirigió La montaña sagrada",
+        "Ministro influyente en la década de 1830",
+        "Premio Nobel de Literatura de 1945"
+      ],
+      "c": 2,
+      "explanation": "Diego Portales: Ministro influyente en la década de 1830. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-21965e556dbd"
+    },
+    {
+      "q": "¿Qué otro dato corresponde a Diego Portales?",
+      "o": [
+        "Se asocia con la victoria de Tucapel",
+        "Es actriz y dramaturga",
+        "Murió en el combate naval de Iquique",
+        "Murió durante el motín de Quillota"
+      ],
+      "c": 3,
+      "explanation": "Diego Portales: Murió durante el motín de Quillota. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-d3af964361bc",
+      "img": "arcade/reference/chile.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué ámbito se asocia especialmente con Andrés Bello?",
+      "o": [
+        "Gimnasia artística",
+        "Pintura",
+        "Folclore",
+        "Educación y derecho"
+      ],
+      "c": 3,
+      "explanation": "Andrés Bello: Educación y derecho. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-d0e5e283e53a"
+    },
+    {
+      "q": "¿Qué dato identifica a Andrés Bello?",
+      "o": [
+        "Lideró fuerzas mapuches contra los españoles",
+        "Primer rector de la Universidad de Chile",
+        "Autora de La casa de los espíritus",
+        "Nació en Tocopilla"
+      ],
+      "c": 1,
+      "explanation": "Andrés Bello: Primer rector de la Universidad de Chile. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-c4abaf174fdb"
+    },
+    {
+      "q": "¿Qué otro dato corresponde a Andrés Bello?",
+      "o": [
+        "Participó en la redacción del Código Civil chileno",
+        "Nació en Tocopilla",
+        "Obtuvo su título en 1887",
+        "Dirigió Nostalgia de la luz"
+      ],
+      "c": 0,
+      "explanation": "Andrés Bello: Participó en la redacción del Código Civil chileno. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-fe9b72e67a86"
+    },
+    {
+      "q": "¿Qué ámbito se asocia especialmente con Ignacio Domeyko?",
+      "o": [
+        "Ciencia y educación",
+        "Literatura narrativa",
+        "Pintura",
+        "Tenis"
+      ],
+      "c": 0,
+      "explanation": "Ignacio Domeyko: Ciencia y educación. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-554bdbaead1d"
+    },
+    {
+      "q": "¿Qué dato identifica a Ignacio Domeyko?",
+      "o": [
+        "Figura vinculada al surrealismo",
+        "Fundó Santiago en 1541",
+        "Ganó dos oros olímpicos en Atenas 2004",
+        "Mineralogista de origen polaco"
+      ],
+      "c": 3,
+      "explanation": "Ignacio Domeyko: Mineralogista de origen polaco. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-842a47935827",
+      "img": "arcade/reference/chile.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué otro dato corresponde a Ignacio Domeyko?",
+      "o": [
+        "Se llamaba Lucila Godoy Alcayaga",
+        "Compitió en lanzamiento de jabalina",
+        "Recibió el Premio Nacional de Literatura en 1957",
+        "Fue rector de la Universidad de Chile"
+      ],
+      "c": 3,
+      "explanation": "Ignacio Domeyko: Fue rector de la Universidad de Chile. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-35fb96f3b8a7"
+    },
+    {
+      "q": "¿Qué ámbito se asocia especialmente con Eloísa Díaz?",
+      "o": [
+        "Independencia",
+        "Educación",
+        "Música y teatro",
+        "Medicina"
+      ],
+      "c": 3,
+      "explanation": "Eloísa Díaz: Medicina. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-e07cae2314de"
+    },
+    {
+      "q": "¿Qué dato identifica a Eloísa Díaz?",
+      "o": [
+        "Ministro influyente en la década de 1830",
+        "Ganó plata olímpica en Melbourne 1956",
+        "Autora de La casa de los espíritus",
+        "Primera médica titulada de Chile"
+      ],
+      "c": 3,
+      "explanation": "Eloísa Díaz: Primera médica titulada de Chile. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-b2b37bb5194d"
+    },
+    {
+      "q": "¿Qué otro dato corresponde a Eloísa Díaz?",
+      "o": [
+        "Autor de Canto general",
+        "Obtuvo su título en 1887",
+        "Su padre fue Ambrosio O'Higgins",
+        "Murió en el combate naval de Iquique"
+      ],
+      "c": 1,
+      "explanation": "Eloísa Díaz: Obtuvo su título en 1887. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-3bddf7a09a4e"
+    },
+    {
+      "q": "¿Qué ámbito se asocia especialmente con Amanda Labarca?",
+      "o": [
+        "Educación",
+        "Música y artes visuales",
+        "Tenis",
+        "Cine y artes escénicas"
+      ],
+      "c": 0,
+      "explanation": "Amanda Labarca: Educación. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-904edcaa8570",
+      "img": "arcade/reference/chile.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué dato identifica a Amanda Labarca?",
+      "o": [
+        "Educadora y defensora de derechos de las mujeres",
+        "Dirigió La montaña sagrada",
+        "Investigadora y maestra de danzas tradicionales",
+        "Ganó plata olímpica en Melbourne 1956"
+      ],
+      "c": 0,
+      "explanation": "Amanda Labarca: Educadora y defensora de derechos de las mujeres. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-1b7cd39d01c3"
+    },
+    {
+      "q": "¿Qué otro dato corresponde a Amanda Labarca?",
+      "o": [
+        "Fundó el Círculo de Lectura de Señoras",
+        "Compitió en lanzamiento de jabalina",
+        "Autor de Canto general",
+        "Desarrolló la recopilación del folclore chileno"
+      ],
+      "c": 0,
+      "explanation": "Amanda Labarca: Fundó el Círculo de Lectura de Señoras. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-82c2a9b0dd50"
+    },
+    {
+      "q": "¿Qué ámbito se asocia especialmente con Luis Alberto Heiremans?",
+      "o": [
+        "Teatro y medicina",
+        "Ciencia y educación",
+        "Educación y derecho",
+        "Historia política"
+      ],
+      "c": 0,
+      "explanation": "Luis Alberto Heiremans: Teatro y medicina. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-c743f74cef5a"
+    },
+    {
+      "q": "¿Qué dato identifica a Luis Alberto Heiremans?",
+      "o": [
+        "Autor de El tony chico",
+        "Escribió y dirigió Gladys",
+        "Fue finalista olímpico en Londres 2012",
+        "Primera médica titulada de Chile"
+      ],
+      "c": 0,
+      "explanation": "Luis Alberto Heiremans: Autor de El tony chico. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-60158339ddeb"
+    },
+    {
+      "q": "¿Qué otro dato corresponde a Luis Alberto Heiremans?",
+      "o": [
+        "Nació en Tocopilla",
+        "Fue médico además de dramaturgo",
+        "Anotó el penal decisivo de la Copa América 2015",
+        "Destacó interpretando a Beethoven"
+      ],
+      "c": 1,
+      "explanation": "Luis Alberto Heiremans: Fue médico además de dramaturgo. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-885ae4b384a8",
+      "img": "arcade/reference/chile.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué ámbito se asocia especialmente con Alejandro Jodorowsky?",
+      "o": [
+        "Atletismo",
+        "Cine y artes escénicas",
+        "Gimnasia artística",
+        "Tenis"
+      ],
+      "c": 1,
+      "explanation": "Alejandro Jodorowsky: Cine y artes escénicas. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-33d62b539f18"
+    },
+    {
+      "q": "¿Qué dato identifica a Alejandro Jodorowsky?",
+      "o": [
+        "Dirigió La montaña sagrada",
+        "Fue Director Supremo de Chile",
+        "Destacó como guerrillero y organizador",
+        "Dirigió Tres tristes tigres"
+      ],
+      "c": 0,
+      "explanation": "Alejandro Jodorowsky: Dirigió La montaña sagrada. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-e9dd30c313a5"
+    },
+    {
+      "q": "¿Qué otro dato corresponde a Alejandro Jodorowsky?",
+      "o": [
+        "Desarrolló la antipoesía",
+        "Su padre fue Ambrosio O'Higgins",
+        "Nació en Tocopilla",
+        "Anotó el penal decisivo de la Copa América 2015"
+      ],
+      "c": 2,
+      "explanation": "Alejandro Jodorowsky: Nació en Tocopilla. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-a628d56d5069"
+    },
+    {
+      "q": "¿Qué ámbito se asocia especialmente con Raúl Ruiz?",
+      "o": [
+        "Ciencia y educación",
+        "Historia mapuche",
+        "Cine",
+        "Pintura"
+      ],
+      "c": 2,
+      "explanation": "Raúl Ruiz: Cine. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-da9afd95a1bb"
+    },
+    {
+      "q": "¿Qué dato identifica a Raúl Ruiz?",
+      "o": [
+        "Dirigió Tres tristes tigres",
+        "Educadora y defensora de derechos de las mujeres",
+        "Ganó plata individual en Pekín 2008",
+        "Fundó Santiago en 1541"
+      ],
+      "c": 0,
+      "explanation": "Raúl Ruiz: Dirigió Tres tristes tigres. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-970787e02e65",
+      "img": "arcade/reference/chile.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué otro dato corresponde a Raúl Ruiz?",
+      "o": [
+        "Es actriz y dramaturga",
+        "Murió en el combate naval de Iquique",
+        "Desarrolló buena parte de su carrera en Francia",
+        "Nació en Tocopilla"
+      ],
+      "c": 2,
+      "explanation": "Raúl Ruiz: Desarrolló buena parte de su carrera en Francia. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-4d5e9137d0c2"
+    },
+    {
+      "q": "¿Qué ámbito se asocia especialmente con Patricio Guzmán?",
+      "o": [
+        "Tenis",
+        "Cine documental",
+        "Atletismo",
+        "Música y artes visuales"
+      ],
+      "c": 1,
+      "explanation": "Patricio Guzmán: Cine documental. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-95dba3b6c3d2"
+    },
+    {
+      "q": "¿Qué dato identifica a Patricio Guzmán?",
+      "o": [
+        "Dirigió La batalla de Chile",
+        "Premio Nobel de Literatura de 1971",
+        "Ministro influyente en la década de 1830",
+        "Fundó el Hogar de Cristo"
+      ],
+      "c": 0,
+      "explanation": "Patricio Guzmán: Dirigió La batalla de Chile. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-b610292ea91f"
+    },
+    {
+      "q": "¿Qué otro dato corresponde a Patricio Guzmán?",
+      "o": [
+        "Dirigió Nostalgia de la luz",
+        "Nació en Viña del Mar",
+        "Recibió el Premio Nacional de Literatura en 1957",
+        "Autor de Canto general"
+      ],
+      "c": 0,
+      "explanation": "Patricio Guzmán: Dirigió Nostalgia de la luz. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-56e7267360c9"
+    },
+    {
+      "q": "¿Qué ámbito se asocia especialmente con Elisa Zulueta?",
+      "o": [
+        "Música clásica",
+        "Teatro",
+        "Cine y artes escénicas",
+        "Medicina"
+      ],
+      "c": 1,
+      "explanation": "Elisa Zulueta: Teatro. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-a8d7effdcb5e",
+      "img": "arcade/reference/chile.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué dato identifica a Elisa Zulueta?",
+      "o": [
+        "Gobernó durante la Patria Vieja",
+        "Fundó Santiago en 1541",
+        "Escribió y dirigió Gladys",
+        "Educadora y defensora de derechos de las mujeres"
+      ],
+      "c": 2,
+      "explanation": "Elisa Zulueta: Escribió y dirigió Gladys. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-91cfbd0278b9"
+    },
+    {
+      "q": "¿Qué otro dato corresponde a Elisa Zulueta?",
+      "o": [
+        "Fue sacerdote jesuita",
+        "Murió en Tiltil en 1818",
+        "Recibió el apodo de Chino",
+        "Es actriz y dramaturga"
+      ],
+      "c": 3,
+      "explanation": "Elisa Zulueta: Es actriz y dramaturga. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-14a3be204b4a"
+    },
+    {
+      "q": "¿Qué ámbito se asocia especialmente con Marcelo Ríos?",
+      "o": [
+        "Pintura",
+        "Tenis",
+        "Ciencia y educación",
+        "Historia naval"
+      ],
+      "c": 1,
+      "explanation": "Marcelo Ríos: Tenis. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-87510a4d4dbd"
+    },
+    {
+      "q": "¿Qué dato identifica a Marcelo Ríos?",
+      "o": [
+        "Fue número uno del ranking ATP en 1998",
+        "Pianista nacido en Chillán",
+        "Primer rector de la Universidad de Chile",
+        "Gobernó durante la Patria Vieja"
+      ],
+      "c": 0,
+      "explanation": "Marcelo Ríos: Fue número uno del ranking ATP en 1998. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-09775dad51f8"
+    },
+    {
+      "q": "¿Qué otro dato corresponde a Marcelo Ríos?",
+      "o": [
+        "Recibió el apodo de Chino",
+        "Fundó el Círculo de Lectura de Señoras",
+        "Publicó Eva Luna",
+        "Murió tras la batalla de Tucapel"
+      ],
+      "c": 0,
+      "explanation": "Marcelo Ríos: Recibió el apodo de Chino. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-6b42c52ae7ee",
+      "img": "arcade/reference/chile.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué ámbito se asocia especialmente con Nicolás Massú?",
+      "o": [
+        "Tenis",
+        "Educación y derecho",
+        "Cine y artes escénicas",
+        "Cine documental"
+      ],
+      "c": 0,
+      "explanation": "Nicolás Massú: Tenis. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-66bd9fde03b8"
+    },
+    {
+      "q": "¿Qué dato identifica a Nicolás Massú?",
+      "o": [
+        "Gobernó durante la Patria Vieja",
+        "Ganó dos oros olímpicos en Atenas 2004",
+        "Investigadora y maestra de danzas tradicionales",
+        "Mineralogista de origen polaco"
+      ],
+      "c": 1,
+      "explanation": "Nicolás Massú: Ganó dos oros olímpicos en Atenas 2004. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-0ce2a0bc6cf8"
+    },
+    {
+      "q": "¿Qué otro dato corresponde a Nicolás Massú?",
+      "o": [
+        "Fue sacerdote jesuita",
+        "Nació en Viña del Mar",
+        "Dirigió Nostalgia de la luz",
+        "Murió en Tiltil en 1818"
+      ],
+      "c": 1,
+      "explanation": "Nicolás Massú: Nació en Viña del Mar. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-c19e0b70886f"
+    },
+    {
+      "q": "¿Qué ámbito se asocia especialmente con Fernando González?",
+      "o": [
+        "Conquista española",
+        "Tenis",
+        "Cine y artes escénicas",
+        "Teatro"
+      ],
+      "c": 1,
+      "explanation": "Fernando González: Tenis. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-350e9ad7400e"
+    },
+    {
+      "q": "¿Qué dato identifica a Fernando González?",
+      "o": [
+        "Educadora y defensora de derechos de las mujeres",
+        "Mineralogista de origen polaco",
+        "Ganó plata individual en Pekín 2008",
+        "Ganó dos oros olímpicos en Atenas 2004"
+      ],
+      "c": 2,
+      "explanation": "Fernando González: Ganó plata individual en Pekín 2008. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-fdc4625c947c",
+      "img": "arcade/reference/chile.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué otro dato corresponde a Fernando González?",
+      "o": [
+        "Murió tras la batalla de Tucapel",
+        "Ganó oro de dobles con Massú en 2004",
+        "Nació en Viña del Mar",
+        "Murió en Tiltil en 1818"
+      ],
+      "c": 1,
+      "explanation": "Fernando González: Ganó oro de dobles con Massú en 2004. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-c8ac78ee7b57"
+    },
+    {
+      "q": "¿Qué ámbito se asocia especialmente con Marlene Ahrens?",
+      "o": [
+        "Tenis",
+        "Medicina",
+        "Atletismo",
+        "Cine"
+      ],
+      "c": 2,
+      "explanation": "Marlene Ahrens: Atletismo. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-aa7e03c7c383"
+    },
+    {
+      "q": "¿Qué dato identifica a Marlene Ahrens?",
+      "o": [
+        "Ganó plata individual en Pekín 2008",
+        "Ganó plata olímpica en Melbourne 1956",
+        "Nació en Tocopilla",
+        "Autor de Te recuerdo Amanda"
+      ],
+      "c": 1,
+      "explanation": "Marlene Ahrens: Ganó plata olímpica en Melbourne 1956. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-183e0d90294e"
+    },
+    {
+      "q": "¿Qué otro dato corresponde a Marlene Ahrens?",
+      "o": [
+        "Anotó el penal decisivo de la Copa América 2015",
+        "Fue director teatral",
+        "Dirigió Nostalgia de la luz",
+        "Compitió en lanzamiento de jabalina"
+      ],
+      "c": 3,
+      "explanation": "Marlene Ahrens: Compitió en lanzamiento de jabalina. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-7111e51b06b9"
+    },
+    {
+      "q": "¿Qué ámbito se asocia especialmente con Tomás González?",
+      "o": [
+        "Conquista española",
+        "Gimnasia artística",
+        "Pintura",
+        "Cine"
+      ],
+      "c": 1,
+      "explanation": "Tomás González: Gimnasia artística. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-769f70bc714e",
+      "img": "arcade/reference/chile.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué dato identifica a Tomás González?",
+      "o": [
+        "Mineralogista de origen polaco",
+        "Primera médica titulada de Chile",
+        "Es arquera",
+        "Fue finalista olímpico en Londres 2012"
+      ],
+      "c": 3,
+      "explanation": "Tomás González: Fue finalista olímpico en Londres 2012. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-3bdfa7c00b0d"
+    },
+    {
+      "q": "¿Qué otro dato corresponde a Tomás González?",
+      "o": [
+        "Destacó en suelo y salto",
+        "Se asocia con la primera bandera nacional",
+        "Recibió el apodo de Chino",
+        "Desarrolló la recopilación del folclore chileno"
+      ],
+      "c": 0,
+      "explanation": "Tomás González: Destacó en suelo y salto. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-20bee3c0f6c2"
+    },
+    {
+      "q": "¿Qué ámbito se asocia especialmente con Christiane Endler?",
+      "o": [
+        "Independencia",
+        "Cine documental",
+        "Atletismo",
+        "Fútbol"
+      ],
+      "c": 3,
+      "explanation": "Christiane Endler: Fútbol. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-f0090f6d1703"
+    },
+    {
+      "q": "¿Qué dato identifica a Christiane Endler?",
+      "o": [
+        "Fue Director Supremo de Chile",
+        "Es arquera",
+        "Autora de Gracias a la vida",
+        "Fundó Santiago en 1541"
+      ],
+      "c": 1,
+      "explanation": "Christiane Endler: Es arquera. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-3e25a526d4f3"
+    },
+    {
+      "q": "¿Qué otro dato corresponde a Christiane Endler?",
+      "o": [
+        "Murió en Tiltil en 1818",
+        "Ganó The Best de porteras de 2021",
+        "Publicó Eva Luna",
+        "Fue director teatral"
+      ],
+      "c": 1,
+      "explanation": "Christiane Endler: Ganó The Best de porteras de 2021. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-9c9fd9cd17f5",
+      "img": "arcade/reference/chile.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué ámbito se asocia especialmente con Alexis Sánchez?",
+      "o": [
+        "Cine documental",
+        "Gimnasia artística",
+        "Educación y derecho",
+        "Fútbol"
+      ],
+      "c": 3,
+      "explanation": "Alexis Sánchez: Fútbol. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-95a528b7c4af"
+    },
+    {
+      "q": "¿Qué dato identifica a Alexis Sánchez?",
+      "o": [
+        "Es arquera",
+        "Fundó Santiago en 1541",
+        "Fue Director Supremo de Chile",
+        "Nació en Tocopilla"
+      ],
+      "c": 3,
+      "explanation": "Alexis Sánchez: Nació en Tocopilla. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-bbcbbd289c3d"
+    },
+    {
+      "q": "¿Qué otro dato corresponde a Alexis Sánchez?",
+      "o": [
+        "Anotó el penal decisivo de la Copa América 2015",
+        "Se asocia con la victoria de Tucapel",
+        "Ganó oro de dobles con Massú en 2004",
+        "Recibió el Premio Nacional de Artes Musicales en 1994"
+      ],
+      "c": 0,
+      "explanation": "Alexis Sánchez: Anotó el penal decisivo de la Copa América 2015. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-1affd518d053"
+    },
+    {
+      "q": "¿Qué ámbito se asocia especialmente con Alberto Hurtado?",
+      "o": [
+        "Historia mapuche",
+        "Acción social",
+        "Folclore",
+        "Conquista española"
+      ],
+      "c": 1,
+      "explanation": "Alberto Hurtado: Acción social. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-de4415cd0632"
+    },
+    {
+      "q": "¿Qué dato identifica a Alberto Hurtado?",
+      "o": [
+        "Fundó el Hogar de Cristo",
+        "Premio Nobel de Literatura de 1971",
+        "Mineralogista de origen polaco",
+        "Capitán de la Esmeralda en 1879"
+      ],
+      "c": 0,
+      "explanation": "Alberto Hurtado: Fundó el Hogar de Cristo. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-6cfd7cb0ca54",
+      "img": "arcade/reference/chile.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué otro dato corresponde a Alberto Hurtado?",
+      "o": [
+        "Nació en Tocopilla",
+        "Fue sacerdote jesuita",
+        "Murió durante el motín de Quillota",
+        "Fue director teatral"
+      ],
+      "c": 1,
+      "explanation": "Alberto Hurtado: Fue sacerdote jesuita. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-cf5cb2139bc8"
+    },
+    {
+      "q": "¿Qué ámbito se asocia especialmente con Manuel Rojas?",
+      "o": [
+        "Gimnasia artística",
+        "Literatura narrativa",
+        "Cine",
+        "Poesía"
+      ],
+      "c": 1,
+      "explanation": "Manuel Rojas: Literatura narrativa. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-1fdddc498c32"
+    },
+    {
+      "q": "¿Qué dato identifica a Manuel Rojas?",
+      "o": [
+        "Pianista nacido en Chillán",
+        "Autor de Hijo de ladrón",
+        "Figura vinculada al surrealismo",
+        "Primera médica titulada de Chile"
+      ],
+      "c": 1,
+      "explanation": "Manuel Rojas: Autor de Hijo de ladrón. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-04d414e1bb69"
+    },
+    {
+      "q": "¿Qué otro dato corresponde a Manuel Rojas?",
+      "o": [
+        "Recibió el Premio Nacional de Literatura en 1957",
+        "Su padre fue Ambrosio O'Higgins",
+        "Nació en Santiago en 1911",
+        "Compitió en lanzamiento de jabalina"
+      ],
+      "c": 0,
+      "explanation": "Manuel Rojas: Recibió el Premio Nacional de Literatura en 1957. Se incluyen hitos históricos y culturales; no cargos ni rankings actuales.",
+      "e": "🇨🇱",
+      "id": "chile-2f35145abed3"
+    }
+  ]
+}

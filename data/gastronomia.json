@@ -1,0 +1,2023 @@
+{
+  "cat": "gastronomia",
+  "name": "Gastronomía",
+  "emoji": "🍳",
+  "edition": "4.0",
+  "sources": [
+    "https://chile.travel/blog/",
+    "https://www.peru.travel/es/gastronomia",
+    "https://ich.unesco.org/en/RL/art-of-neapolitan-pizzaiuolo-00722"
+  ],
+  "questions": [
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente empanada de pino chilena?",
+      "o": [
+        "Japón",
+        "Oriente Medio",
+        "Italia",
+        "Chile"
+      ],
+      "c": 3,
+      "explanation": "empanada de pino chilena: Chile. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-f888d14e91bb",
+      "img": "arcade/reference/gastronomia.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué ingrediente es característico de empanada de pino chilena?",
+      "o": [
+        "Lentejas u otras legumbres partidas",
+        "Filete de vacuno",
+        "Carne y cebolla",
+        "Ave y ají amarillo"
+      ],
+      "c": 2,
+      "explanation": "empanada de pino chilena: Carne y cebolla. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-35cbd7b11e91"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a empanada de pino chilena?",
+      "o": [
+        "Postre en capas refrigerado",
+        "Masa rellena y horneada o frita",
+        "Sopa con trozos grandes de carne y vegetales",
+        "Cocción tradicional en hoyo con piedras calientes"
+      ],
+      "c": 1,
+      "explanation": "empanada de pino chilena: Masa rellena y horneada o frita. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-670064468da9"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente pastel de choclo?",
+      "o": [
+        "México",
+        "Vietnam",
+        "Francia",
+        "Chile"
+      ],
+      "c": 3,
+      "explanation": "pastel de choclo: Chile. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-163e984dfefe"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de pastel de choclo?",
+      "o": [
+        "Ave y ají amarillo",
+        "Fideos de arroz",
+        "Masa, tomate y mozzarella",
+        "Maíz tierno"
+      ],
+      "c": 3,
+      "explanation": "pastel de choclo: Maíz tierno. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-854de4a562cc"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a pastel de choclo?",
+      "o": [
+        "Carne de un trompo servida en tortilla",
+        "Cocción del arroz en recipiente ancho y poco profundo",
+        "Cubierta de maíz gratinada sobre un relleno",
+        "Alimentos sumergidos en una mezcla caliente"
+      ],
+      "c": 2,
+      "explanation": "pastel de choclo: Cubierta de maíz gratinada sobre un relleno. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-90ada8f6509b",
+      "img": "arcade/reference/gastronomia.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente humita chilena?",
+      "o": [
+        "Japón",
+        "Chile",
+        "Corea",
+        "India"
+      ],
+      "c": 1,
+      "explanation": "humita chilena: Chile. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-1bc18733a27a"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de humita chilena?",
+      "o": [
+        "Papa amarilla y ají amarillo",
+        "Masa, tomate y mozzarella",
+        "Choclo molido",
+        "Fideos de arroz"
+      ],
+      "c": 2,
+      "explanation": "humita chilena: Choclo molido. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-a0d76ad18a12"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a humita chilena?",
+      "o": [
+        "Pasta de maíz cocida dentro de sus hojas",
+        "Cocción del arroz en recipiente ancho y poco profundo",
+        "Postre en capas refrigerado",
+        "Ave deshilachada en una salsa cremosa"
+      ],
+      "c": 0,
+      "explanation": "humita chilena: Pasta de maíz cocida dentro de sus hojas. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-90fb25ad2960"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente curanto chilote?",
+      "o": [
+        "Venezuela y Colombia",
+        "Chile",
+        "Italia",
+        "Perú"
+      ],
+      "c": 1,
+      "explanation": "curanto chilote: Chile. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-ffb7339520a4"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de curanto chilote?",
+      "o": [
+        "Carne de ternera",
+        "Zapallo en la masa",
+        "Mariscos, carnes y papas",
+        "Papas y zapallo"
+      ],
+      "c": 2,
+      "explanation": "curanto chilote: Mariscos, carnes y papas. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-88fbe534537d",
+      "img": "arcade/reference/gastronomia.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a curanto chilote?",
+      "o": [
+        "Guiso prolongado de legumbres y carnes",
+        "Alimentos sumergidos en una mezcla caliente",
+        "Pan alargado con vienesa y coberturas",
+        "Cocción tradicional en hoyo con piedras calientes"
+      ],
+      "c": 3,
+      "explanation": "curanto chilote: Cocción tradicional en hoyo con piedras calientes. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-fbe17b4d8f24"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente porotos granados?",
+      "o": [
+        "Vietnam",
+        "Uruguay",
+        "México",
+        "Chile"
+      ],
+      "c": 3,
+      "explanation": "porotos granados: Chile. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-c75be3184913"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de porotos granados?",
+      "o": [
+        "Fideos de trigo",
+        "Arroz, conejo y pollo",
+        "Almidón de mandioca y queso",
+        "Porotos frescos y zapallo"
+      ],
+      "c": 3,
+      "explanation": "porotos granados: Porotos frescos y zapallo. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-737b087bcbe5"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a porotos granados?",
+      "o": [
+        "Sándwich abundante con carne y acompañamientos",
+        "Salsa triturada sin cocción prolongada",
+        "Guiso de legumbres de verano",
+        "Carne de un trompo servida en tortilla"
+      ],
+      "c": 2,
+      "explanation": "porotos granados: Guiso de legumbres de verano. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-015a6370181b"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente charquicán chileno?",
+      "o": [
+        "India y Asia central",
+        "Chile",
+        "Vietnam",
+        "Corea"
+      ],
+      "c": 1,
+      "explanation": "charquicán chileno: Chile. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-01cfc07b02dd",
+      "img": "arcade/reference/gastronomia.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué ingrediente es característico de charquicán chileno?",
+      "o": [
+        "Porotos frescos y zapallo",
+        "Pescado y cítricos",
+        "Porotos negros y cerdo",
+        "Papas y zapallo"
+      ],
+      "c": 3,
+      "explanation": "charquicán chileno: Papas y zapallo. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-250486dc5322"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a charquicán chileno?",
+      "o": [
+        "Disco de masa frito",
+        "Bebida dulce fría con granos y fruta",
+        "Salsa compleja molida y cocida",
+        "Guiso de verduras parcialmente molidas"
+      ],
+      "c": 3,
+      "explanation": "charquicán chileno: Guiso de verduras parcialmente molidas. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-0d856974e3e6"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente mote con huesillos?",
+      "o": [
+        "Japón",
+        "Corea",
+        "Oriente Medio",
+        "Chile"
+      ],
+      "c": 3,
+      "explanation": "mote con huesillos: Chile. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-dfd15138f939"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de mote con huesillos?",
+      "o": [
+        "Papa y huevo",
+        "Carne de vacuno",
+        "Col y ají",
+        "Trigo mote y duraznos deshidratados"
+      ],
+      "c": 3,
+      "explanation": "mote con huesillos: Trigo mote y duraznos deshidratados. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-e589f83bdc66"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a mote con huesillos?",
+      "o": [
+        "Bebida dulce fría con granos y fruta",
+        "Pequeñas porciones, muchas cocidas al vapor",
+        "Sopa con trozos grandes de carne y vegetales",
+        "Bolitas o croquetas fritas de legumbres"
+      ],
+      "c": 0,
+      "explanation": "mote con huesillos: Bebida dulce fría con granos y fruta. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-12aa68a7eec1",
+      "img": "arcade/reference/gastronomia.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente sopaipilla chilena con zapallo?",
+      "o": [
+        "Austria",
+        "Argentina y Uruguay",
+        "Corea",
+        "Chile"
+      ],
+      "c": 3,
+      "explanation": "sopaipilla chilena con zapallo: Chile. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-47f1eef52f74"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de sopaipilla chilena con zapallo?",
+      "o": [
+        "Quesos fundidos",
+        "Zapallo en la masa",
+        "Harina de maíz",
+        "Garbanzos o habas"
+      ],
+      "c": 1,
+      "explanation": "sopaipilla chilena con zapallo: Zapallo en la masa. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-a471752748a2"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a sopaipilla chilena con zapallo?",
+      "o": [
+        "Cocción del arroz en recipiente ancho y poco profundo",
+        "Disco de masa frito",
+        "Fermentación de hortalizas",
+        "Guiso de legumbres de verano"
+      ],
+      "c": 1,
+      "explanation": "sopaipilla chilena con zapallo: Disco de masa frito. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-34b3ac4b6ecd"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente cazuela de vacuno chilena?",
+      "o": [
+        "Chile",
+        "Venezuela y Colombia",
+        "México",
+        "Uruguay"
+      ],
+      "c": 0,
+      "explanation": "cazuela de vacuno chilena: Chile. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-105c79f8e6fb"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de cazuela de vacuno chilena?",
+      "o": [
+        "Huevo, crema y tocino",
+        "Vacuno y verduras",
+        "Fideos de arroz",
+        "Porotos negros y cerdo"
+      ],
+      "c": 1,
+      "explanation": "cazuela de vacuno chilena: Vacuno y verduras. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-c00c13f20286",
+      "img": "arcade/reference/gastronomia.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a cazuela de vacuno chilena?",
+      "o": [
+        "Cubierta de maíz gratinada sobre un relleno",
+        "Sopa con trozos grandes de carne y vegetales",
+        "Preparación molida y mezclada en frío",
+        "Rebozado ligero y fritura rápida"
+      ],
+      "c": 1,
+      "explanation": "cazuela de vacuno chilena: Sopa con trozos grandes de carne y vegetales. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-2a6c60ba53fe"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente completo italiano?",
+      "o": [
+        "México",
+        "Francia",
+        "Chile",
+        "España"
+      ],
+      "c": 2,
+      "explanation": "completo italiano: Chile. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-33383376b8ca"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de completo italiano?",
+      "o": [
+        "Arroz y verduras",
+        "Palta, tomate y mayonesa",
+        "Porotos, arroz y chicharrón",
+        "Zapallo en la masa"
+      ],
+      "c": 1,
+      "explanation": "completo italiano: Palta, tomate y mayonesa. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-9faab073c4f1"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a completo italiano?",
+      "o": [
+        "Adición gradual de caldo durante la cocción",
+        "Postre en capas refrigerado",
+        "Ave deshilachada en una salsa cremosa",
+        "Pan alargado con vienesa y coberturas"
+      ],
+      "c": 3,
+      "explanation": "completo italiano: Pan alargado con vienesa y coberturas. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-929f89bbeafa"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente ceviche peruano?",
+      "o": [
+        "España",
+        "Perú",
+        "Vietnam",
+        "Japón"
+      ],
+      "c": 1,
+      "explanation": "ceviche peruano: Perú. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-f975c933f2f5",
+      "img": "arcade/reference/gastronomia.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué ingrediente es característico de ceviche peruano?",
+      "o": [
+        "Palta o aguacate",
+        "Zapallo en la masa",
+        "Fideos de trigo",
+        "Pescado y cítricos"
+      ],
+      "c": 3,
+      "explanation": "ceviche peruano: Pescado y cítricos. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-ca3f9a321159"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a ceviche peruano?",
+      "o": [
+        "Pequeñas porciones, muchas cocidas al vapor",
+        "Escalopa apanada y frita",
+        "Pescado crudo marinado en jugo ácido",
+        "Sopa con fideos y coberturas"
+      ],
+      "c": 2,
+      "explanation": "ceviche peruano: Pescado crudo marinado en jugo ácido. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-978584ad5044"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente lomo saltado?",
+      "o": [
+        "Argentina y Uruguay",
+        "Perú",
+        "India",
+        "Japón"
+      ],
+      "c": 1,
+      "explanation": "lomo saltado: Perú. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-395f8d8291cf"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de lomo saltado?",
+      "o": [
+        "Masa, tomate y mozzarella",
+        "Arroz aliñado con vinagre",
+        "Porotos, arroz y chicharrón",
+        "Vacuno, cebolla y tomate"
+      ],
+      "c": 3,
+      "explanation": "lomo saltado: Vacuno, cebolla y tomate. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-b77e045da2df"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a lomo saltado?",
+      "o": [
+        "Salteado a fuego fuerte",
+        "Ave deshilachada en una salsa cremosa",
+        "Sopa fría triturada",
+        "Pequeñas porciones, muchas cocidas al vapor"
+      ],
+      "c": 0,
+      "explanation": "lomo saltado: Salteado a fuego fuerte. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-3e725c39885d",
+      "img": "arcade/reference/gastronomia.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente causa limeña?",
+      "o": [
+        "Colombia",
+        "Chile",
+        "Venezuela y Colombia",
+        "Perú"
+      ],
+      "c": 3,
+      "explanation": "causa limeña: Perú. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-5d7331e5d541"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de causa limeña?",
+      "o": [
+        "Tomate y otras hortalizas",
+        "Papas y zapallo",
+        "Papa amarilla y ají amarillo",
+        "Pescado y cítricos"
+      ],
+      "c": 2,
+      "explanation": "causa limeña: Papa amarilla y ají amarillo. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-a8333369d24b"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a causa limeña?",
+      "o": [
+        "Adición gradual de caldo durante la cocción",
+        "Verduras cocinadas en un guiso",
+        "Salteado a fuego fuerte",
+        "Capas frías de papa y relleno"
+      ],
+      "c": 3,
+      "explanation": "causa limeña: Capas frías de papa y relleno. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-a11114cbf39b"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente ají de gallina?",
+      "o": [
+        "Suiza",
+        "Brasil",
+        "Perú",
+        "Argentina y Uruguay"
+      ],
+      "c": 2,
+      "explanation": "ají de gallina: Perú. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-bea1b96f9d94"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de ají de gallina?",
+      "o": [
+        "Papas y zapallo",
+        "Ave y ají amarillo",
+        "Trigo mote y duraznos deshidratados",
+        "Fideos de arroz"
+      ],
+      "c": 1,
+      "explanation": "ají de gallina: Ave y ají amarillo. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-e2342977cde1",
+      "img": "arcade/reference/gastronomia.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a ají de gallina?",
+      "o": [
+        "Sopa con fideos y coberturas",
+        "Ave deshilachada en una salsa cremosa",
+        "Cocción lenta sobre brasas",
+        "Sopa con trozos grandes de carne y vegetales"
+      ],
+      "c": 1,
+      "explanation": "ají de gallina: Ave deshilachada en una salsa cremosa. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-4fe351db8e1b"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente feijoada brasileña?",
+      "o": [
+        "España",
+        "Japón",
+        "China",
+        "Brasil"
+      ],
+      "c": 3,
+      "explanation": "feijoada brasileña: Brasil. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-9b879f3da6af"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de feijoada brasileña?",
+      "o": [
+        "Mascarpone y café",
+        "Carne de ternera",
+        "Porotos negros y cerdo",
+        "Harina de trigo"
+      ],
+      "c": 2,
+      "explanation": "feijoada brasileña: Porotos negros y cerdo. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-64d1a83a6c59"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a feijoada brasileña?",
+      "o": [
+        "Guiso prolongado de legumbres y carnes",
+        "Pasta de maíz cocida dentro de sus hojas",
+        "Salsa compleja molida y cocida",
+        "Legumbres cocidas con especias"
+      ],
+      "c": 0,
+      "explanation": "feijoada brasileña: Guiso prolongado de legumbres y carnes. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-783d0d1dcaa9"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente pão de queijo?",
+      "o": [
+        "Brasil",
+        "Japón",
+        "Venezuela y Colombia",
+        "México"
+      ],
+      "c": 0,
+      "explanation": "pão de queijo: Brasil. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-edd4a546d2fa",
+      "img": "arcade/reference/gastronomia.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué ingrediente es característico de pão de queijo?",
+      "o": [
+        "Masa de maíz",
+        "Almidón de mandioca y queso",
+        "Poroto carita",
+        "Zapallo en la masa"
+      ],
+      "c": 1,
+      "explanation": "pão de queijo: Almidón de mandioca y queso. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-1fe5fd6fb248"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a pão de queijo?",
+      "o": [
+        "Pan plano, tradicionalmente cocido en tandoor",
+        "Sopa aromática servida con hierbas",
+        "Pequeños panes horneados",
+        "Masa rellena y horneada o frita"
+      ],
+      "c": 2,
+      "explanation": "pão de queijo: Pequeños panes horneados. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-271e2c10b100"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente acarajé?",
+      "o": [
+        "México",
+        "Brasil",
+        "Corea",
+        "Vietnam"
+      ],
+      "c": 1,
+      "explanation": "acarajé: Brasil. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-f0609f6754eb"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de acarajé?",
+      "o": [
+        "Poroto carita",
+        "Lentejas u otras legumbres partidas",
+        "Maíz tierno",
+        "Garbanzos y tahini"
+      ],
+      "c": 0,
+      "explanation": "acarajé: Poroto carita. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-c91f319f222e"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a acarajé?",
+      "o": [
+        "Buñuelo frito tradicionalmente en aceite de dendê",
+        "Pan alargado con vienesa y coberturas",
+        "Carne de un trompo servida en tortilla",
+        "Asado con piel crujiente"
+      ],
+      "c": 0,
+      "explanation": "acarajé: Buñuelo frito tradicionalmente en aceite de dendê. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-f38398f77704",
+      "img": "arcade/reference/gastronomia.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente asado rioplatense?",
+      "o": [
+        "Argentina y Uruguay",
+        "Vietnam",
+        "Venezuela y Colombia",
+        "Italia"
+      ],
+      "c": 0,
+      "explanation": "asado rioplatense: Argentina y Uruguay. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-28e32503363a"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de asado rioplatense?",
+      "o": [
+        "Cerdo marinado",
+        "Fideos de arroz y caldo",
+        "Garbanzos o habas",
+        "Carne de vacuno"
+      ],
+      "c": 3,
+      "explanation": "asado rioplatense: Carne de vacuno. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-d4382e4499eb"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a asado rioplatense?",
+      "o": [
+        "Fermentación de hortalizas",
+        "Disco de masa frito",
+        "Cocción lenta sobre brasas",
+        "Guiso prolongado de legumbres y carnes"
+      ],
+      "c": 2,
+      "explanation": "asado rioplatense: Cocción lenta sobre brasas. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-587db64791ca"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente chivito uruguayo?",
+      "o": [
+        "Chile",
+        "Tailandia",
+        "Uruguay",
+        "India y Asia central"
+      ],
+      "c": 2,
+      "explanation": "chivito uruguayo: Uruguay. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-97c1a380e340"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de chivito uruguayo?",
+      "o": [
+        "Carne de vacuno",
+        "Filete de vacuno",
+        "Choclo molido",
+        "Masa, tomate y mozzarella"
+      ],
+      "c": 1,
+      "explanation": "chivito uruguayo: Filete de vacuno. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-cdcdb157b850",
+      "img": "arcade/reference/gastronomia.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a chivito uruguayo?",
+      "o": [
+        "Sándwich abundante con carne y acompañamientos",
+        "Sopa con trozos grandes de carne y vegetales",
+        "Pan alargado con vienesa y coberturas",
+        "Guiso de legumbres de verano"
+      ],
+      "c": 0,
+      "explanation": "chivito uruguayo: Sándwich abundante con carne y acompañamientos. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-a3bd173e2dc6"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente arepa?",
+      "o": [
+        "Venezuela y Colombia",
+        "Brasil",
+        "Francia",
+        "México"
+      ],
+      "c": 0,
+      "explanation": "arepa: Venezuela y Colombia. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-c599711919ca"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de arepa?",
+      "o": [
+        "Vacuno, cebolla y tomate",
+        "Arroz y caldo",
+        "Maíz tierno",
+        "Harina de maíz"
+      ],
+      "c": 3,
+      "explanation": "arepa: Harina de maíz. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-e900b144ac45"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a arepa?",
+      "o": [
+        "Salsa compleja molida y cocida",
+        "Sopa con fideos y coberturas",
+        "Cubierta de maíz gratinada sobre un relleno",
+        "Disco de masa asado o frito"
+      ],
+      "c": 3,
+      "explanation": "arepa: Disco de masa asado o frito. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-2d7de04b414b"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente bandeja paisa?",
+      "o": [
+        "Perú",
+        "Colombia",
+        "Chile",
+        "Oriente Medio"
+      ],
+      "c": 1,
+      "explanation": "bandeja paisa: Colombia. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-8b18e02e8b3e",
+      "img": "arcade/reference/gastronomia.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué ingrediente es característico de bandeja paisa?",
+      "o": [
+        "Porotos, arroz y chicharrón",
+        "Fideos de arroz y caldo",
+        "Pato",
+        "Masa de maíz"
+      ],
+      "c": 0,
+      "explanation": "bandeja paisa: Porotos, arroz y chicharrón. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-9ff9b5f8b374"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a bandeja paisa?",
+      "o": [
+        "Pequeños panes horneados",
+        "Rebozado ligero y fritura rápida",
+        "Tarta salada horneada",
+        "Plato abundante con varios componentes separados"
+      ],
+      "c": 3,
+      "explanation": "bandeja paisa: Plato abundante con varios componentes separados. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-811874d36786"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente taco al pastor?",
+      "o": [
+        "Japón",
+        "Brasil",
+        "India y Asia central",
+        "México"
+      ],
+      "c": 3,
+      "explanation": "taco al pastor: México. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-f5e12e0aebd3"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de taco al pastor?",
+      "o": [
+        "Carne de ternera",
+        "Choclo molido",
+        "Fideos de arroz",
+        "Cerdo marinado"
+      ],
+      "c": 3,
+      "explanation": "taco al pastor: Cerdo marinado. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-5e104f56aa8a"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a taco al pastor?",
+      "o": [
+        "Carne de un trompo servida en tortilla",
+        "Sopa aromática servida con hierbas",
+        "Postre en capas refrigerado",
+        "Adición gradual de caldo durante la cocción"
+      ],
+      "c": 0,
+      "explanation": "taco al pastor: Carne de un trompo servida en tortilla. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-69464b59bb1a",
+      "img": "arcade/reference/gastronomia.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente guacamole?",
+      "o": [
+        "México",
+        "Oriente Medio",
+        "India",
+        "Suiza"
+      ],
+      "c": 0,
+      "explanation": "guacamole: México. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-f3d22c0265e6"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de guacamole?",
+      "o": [
+        "Palta o aguacate",
+        "Tomate y otras hortalizas",
+        "Arroz y verduras",
+        "Garbanzos y tahini"
+      ],
+      "c": 0,
+      "explanation": "guacamole: Palta o aguacate. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-f576e28184e5"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a guacamole?",
+      "o": [
+        "Disco de masa asado o frito",
+        "Preparación molida y mezclada en frío",
+        "Pequeños panes horneados",
+        "Capas frías de papa y relleno"
+      ],
+      "c": 1,
+      "explanation": "guacamole: Preparación molida y mezclada en frío. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-b876d94d29b3"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente tamal mexicano?",
+      "o": [
+        "Italia",
+        "México",
+        "China",
+        "Suiza"
+      ],
+      "c": 1,
+      "explanation": "tamal mexicano: México. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-9eca82fdeb65"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de tamal mexicano?",
+      "o": [
+        "Masa de maíz",
+        "Arroz y caldo",
+        "Porotos negros y cerdo",
+        "Garbanzos y tahini"
+      ],
+      "c": 0,
+      "explanation": "tamal mexicano: Masa de maíz. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-182bac42d1c2",
+      "img": "arcade/reference/gastronomia.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a tamal mexicano?",
+      "o": [
+        "Postre en capas refrigerado",
+        "Relleno envuelto y cocido al vapor",
+        "Sándwich abundante con carne y acompañamientos",
+        "Fermentación de hortalizas"
+      ],
+      "c": 1,
+      "explanation": "tamal mexicano: Relleno envuelto y cocido al vapor. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-6469d860f06b"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente mole poblano?",
+      "o": [
+        "India y Asia central",
+        "China",
+        "Colombia",
+        "México"
+      ],
+      "c": 3,
+      "explanation": "mole poblano: México. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-869bc081e211"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de mole poblano?",
+      "o": [
+        "Lentejas u otras legumbres partidas",
+        "Fideos de arroz",
+        "Chiles y especias",
+        "Col y ají"
+      ],
+      "c": 2,
+      "explanation": "mole poblano: Chiles y especias. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-f7b55fec7516"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a mole poblano?",
+      "o": [
+        "Pasta de maíz cocida dentro de sus hojas",
+        "Buñuelo frito tradicionalmente en aceite de dendê",
+        "Salsa compleja molida y cocida",
+        "Bolitas o croquetas fritas de legumbres"
+      ],
+      "c": 2,
+      "explanation": "mole poblano: Salsa compleja molida y cocida. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-26f2a56242ed"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente paella valenciana tradicional?",
+      "o": [
+        "México",
+        "Austria",
+        "España",
+        "Suiza"
+      ],
+      "c": 2,
+      "explanation": "paella valenciana tradicional: España. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-02b21b6559d0",
+      "img": "arcade/reference/gastronomia.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué ingrediente es característico de paella valenciana tradicional?",
+      "o": [
+        "Vacuno y verduras",
+        "Porotos frescos y zapallo",
+        "Arroz, conejo y pollo",
+        "Palta, tomate y mayonesa"
+      ],
+      "c": 2,
+      "explanation": "paella valenciana tradicional: Arroz, conejo y pollo. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-baf6534eb632"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a paella valenciana tradicional?",
+      "o": [
+        "Cocción del arroz en recipiente ancho y poco profundo",
+        "Postre en capas refrigerado",
+        "Ingredientes dispuestos sobre arroz y mezclados al comer",
+        "Crema cocida con superficie de azúcar caramelizada"
+      ],
+      "c": 0,
+      "explanation": "paella valenciana tradicional: Cocción del arroz en recipiente ancho y poco profundo. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-322eaf62a20f"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente gazpacho andaluz?",
+      "o": [
+        "España",
+        "China",
+        "Argentina y Uruguay",
+        "Levante mediterráneo"
+      ],
+      "c": 0,
+      "explanation": "gazpacho andaluz: España. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-a9842a41b524"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de gazpacho andaluz?",
+      "o": [
+        "Tomate y otras hortalizas",
+        "Lentejas u otras legumbres partidas",
+        "Pescado y cítricos",
+        "Porotos, arroz y chicharrón"
+      ],
+      "c": 0,
+      "explanation": "gazpacho andaluz: Tomate y otras hortalizas. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-3799fa454f85"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a gazpacho andaluz?",
+      "o": [
+        "Cocción tradicional en hoyo con piedras calientes",
+        "Puré condimentado servido como dip",
+        "Guiso de legumbres de verano",
+        "Sopa fría triturada"
+      ],
+      "c": 3,
+      "explanation": "gazpacho andaluz: Sopa fría triturada. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-b7547f7a9d2b",
+      "img": "arcade/reference/gastronomia.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente tortilla española clásica?",
+      "o": [
+        "Italia",
+        "Venezuela y Colombia",
+        "España",
+        "Colombia"
+      ],
+      "c": 2,
+      "explanation": "tortilla española clásica: España. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-3ba72dceec0c"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de tortilla española clásica?",
+      "o": [
+        "Garbanzos o habas",
+        "Papa amarilla y ají amarillo",
+        "Mariscos, carnes y papas",
+        "Papa y huevo"
+      ],
+      "c": 3,
+      "explanation": "tortilla española clásica: Papa y huevo. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-7c517ae5f158"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a tortilla española clásica?",
+      "o": [
+        "Carne de un trompo servida en tortilla",
+        "Rebozado ligero y fritura rápida",
+        "Mezcla cuajada en sartén",
+        "Capas frías de papa y relleno"
+      ],
+      "c": 2,
+      "explanation": "tortilla española clásica: Mezcla cuajada en sartén. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-ae020ca2d287"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente risotto?",
+      "o": [
+        "Italia",
+        "México",
+        "Oriente Medio",
+        "Tailandia"
+      ],
+      "c": 0,
+      "explanation": "risotto: Italia. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-4de9d8a11f5b"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de risotto?",
+      "o": [
+        "Palta o aguacate",
+        "Almidón de mandioca y queso",
+        "Arroz y caldo",
+        "Cerdo marinado"
+      ],
+      "c": 2,
+      "explanation": "risotto: Arroz y caldo. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-662440040925",
+      "img": "arcade/reference/gastronomia.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a risotto?",
+      "o": [
+        "Capas frías de papa y relleno",
+        "Alimentos sumergidos en una mezcla caliente",
+        "Adición gradual de caldo durante la cocción",
+        "Masa rellena y horneada o frita"
+      ],
+      "c": 2,
+      "explanation": "risotto: Adición gradual de caldo durante la cocción. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-8d5b52d2edd7"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente pizza napolitana?",
+      "o": [
+        "Italia",
+        "China",
+        "Perú",
+        "Argentina y Uruguay"
+      ],
+      "c": 0,
+      "explanation": "pizza napolitana: Italia. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-646dc3be6a8f"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de pizza napolitana?",
+      "o": [
+        "Masa, tomate y mozzarella",
+        "Papas y zapallo",
+        "Harina de maíz",
+        "Pescado y cítricos"
+      ],
+      "c": 0,
+      "explanation": "pizza napolitana: Masa, tomate y mozzarella. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-ba767d617dec"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a pizza napolitana?",
+      "o": [
+        "Masa horneada a temperatura muy alta",
+        "Preparación molida y mezclada en frío",
+        "Masa rellena y horneada o frita",
+        "Escalopa apanada y frita"
+      ],
+      "c": 0,
+      "explanation": "pizza napolitana: Masa horneada a temperatura muy alta. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-978256fe2895"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente pesto genovés?",
+      "o": [
+        "India y Asia central",
+        "Italia",
+        "España",
+        "China"
+      ],
+      "c": 1,
+      "explanation": "pesto genovés: Italia. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-f09bafb4d977",
+      "img": "arcade/reference/gastronomia.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué ingrediente es característico de pesto genovés?",
+      "o": [
+        "Albahaca y piñones",
+        "Crema y yemas",
+        "Mariscos, carnes y papas",
+        "Huevo, crema y tocino"
+      ],
+      "c": 0,
+      "explanation": "pesto genovés: Albahaca y piñones. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-d5c7f1534d1c"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a pesto genovés?",
+      "o": [
+        "Salsa triturada sin cocción prolongada",
+        "Guiso de verduras parcialmente molidas",
+        "Pan plano, tradicionalmente cocido en tandoor",
+        "Fermentación de hortalizas"
+      ],
+      "c": 0,
+      "explanation": "pesto genovés: Salsa triturada sin cocción prolongada. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-ce7a15729500"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente tiramisú?",
+      "o": [
+        "Brasil",
+        "India",
+        "Italia",
+        "China"
+      ],
+      "c": 2,
+      "explanation": "tiramisú: Italia. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-f4ded89aecbb"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de tiramisú?",
+      "o": [
+        "Poroto carita",
+        "Arroz y caldo",
+        "Mascarpone y café",
+        "Fideos de arroz"
+      ],
+      "c": 2,
+      "explanation": "tiramisú: Mascarpone y café. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-db5c1d280098"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a tiramisú?",
+      "o": [
+        "Capas frías de papa y relleno",
+        "Verduras cocinadas en un guiso",
+        "Bolitas o croquetas fritas de legumbres",
+        "Postre en capas refrigerado"
+      ],
+      "c": 3,
+      "explanation": "tiramisú: Postre en capas refrigerado. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-6a293adb3e20",
+      "img": "arcade/reference/gastronomia.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente ratatouille?",
+      "o": [
+        "Suiza",
+        "Francia",
+        "China",
+        "Argentina y Uruguay"
+      ],
+      "c": 1,
+      "explanation": "ratatouille: Francia. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-ff93abb7e37a"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de ratatouille?",
+      "o": [
+        "Carne de vacuno",
+        "Poroto carita",
+        "Berenjena y zapallito italiano",
+        "Vacuno y verduras"
+      ],
+      "c": 2,
+      "explanation": "ratatouille: Berenjena y zapallito italiano. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-c0651d3fe7b9"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a ratatouille?",
+      "o": [
+        "Masa horneada a temperatura muy alta",
+        "Sopa con fideos y coberturas",
+        "Verduras cocinadas en un guiso",
+        "Puré condimentado servido como dip"
+      ],
+      "c": 2,
+      "explanation": "ratatouille: Verduras cocinadas en un guiso. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-c0f280da048f"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente crème brûlée?",
+      "o": [
+        "India",
+        "China",
+        "Levante mediterráneo",
+        "Francia"
+      ],
+      "c": 3,
+      "explanation": "crème brûlée: Francia. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-3cba97a3f56a"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de crème brûlée?",
+      "o": [
+        "Palta, tomate y mayonesa",
+        "Mariscos, carnes y papas",
+        "Crema y yemas",
+        "Arroz y caldo"
+      ],
+      "c": 2,
+      "explanation": "crème brûlée: Crema y yemas. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-24b0355b19d0",
+      "img": "arcade/reference/gastronomia.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a crème brûlée?",
+      "o": [
+        "Crema cocida con superficie de azúcar caramelizada",
+        "Salteado a fuego fuerte",
+        "Verduras cocinadas en un guiso",
+        "Puré condimentado servido como dip"
+      ],
+      "c": 0,
+      "explanation": "crème brûlée: Crema cocida con superficie de azúcar caramelizada. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-ccf53b8c9932"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente quiche lorraine?",
+      "o": [
+        "Uruguay",
+        "Vietnam",
+        "China",
+        "Francia"
+      ],
+      "c": 3,
+      "explanation": "quiche lorraine: Francia. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-a62ff26e7657"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de quiche lorraine?",
+      "o": [
+        "Fideos de arroz",
+        "Huevo, crema y tocino",
+        "Pescado y cítricos",
+        "Filete de vacuno"
+      ],
+      "c": 1,
+      "explanation": "quiche lorraine: Huevo, crema y tocino. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-af322a837492"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a quiche lorraine?",
+      "o": [
+        "Guiso prolongado de legumbres y carnes",
+        "Tarta salada horneada",
+        "Sopa con trozos grandes de carne y vegetales",
+        "Ingredientes dispuestos sobre arroz y mezclados al comer"
+      ],
+      "c": 1,
+      "explanation": "quiche lorraine: Tarta salada horneada. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-fca0a241ac6e"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente fondue de queso?",
+      "o": [
+        "China",
+        "Colombia",
+        "Perú",
+        "Suiza"
+      ],
+      "c": 3,
+      "explanation": "fondue de queso: Suiza. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-9a10bc1b540a",
+      "img": "arcade/reference/gastronomia.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué ingrediente es característico de fondue de queso?",
+      "o": [
+        "Fideos de trigo",
+        "Quesos fundidos",
+        "Papa amarilla y ají amarillo",
+        "Choclo molido"
+      ],
+      "c": 1,
+      "explanation": "fondue de queso: Quesos fundidos. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-1cea39bdb141"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a fondue de queso?",
+      "o": [
+        "Fermentación de hortalizas",
+        "Alimentos sumergidos en una mezcla caliente",
+        "Cubierta de maíz gratinada sobre un relleno",
+        "Plato abundante con varios componentes separados"
+      ],
+      "c": 1,
+      "explanation": "fondue de queso: Alimentos sumergidos en una mezcla caliente. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-201067fd7342"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente schnitzel vienés tradicional?",
+      "o": [
+        "India",
+        "Austria",
+        "Suiza",
+        "Francia"
+      ],
+      "c": 1,
+      "explanation": "schnitzel vienés tradicional: Austria. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-921e35918420"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de schnitzel vienés tradicional?",
+      "o": [
+        "Carne de ternera",
+        "Arroz y caldo",
+        "Crema y yemas",
+        "Pato"
+      ],
+      "c": 0,
+      "explanation": "schnitzel vienés tradicional: Carne de ternera. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-178271eba53a"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a schnitzel vienés tradicional?",
+      "o": [
+        "Guiso prolongado de legumbres y carnes",
+        "Masa rellena y horneada o frita",
+        "Cocción tradicional en hoyo con piedras calientes",
+        "Escalopa apanada y frita"
+      ],
+      "c": 3,
+      "explanation": "schnitzel vienés tradicional: Escalopa apanada y frita. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-7e65a0f36c8f",
+      "img": "arcade/reference/gastronomia.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente sushi?",
+      "o": [
+        "India y Asia central",
+        "Japón",
+        "Francia",
+        "Italia"
+      ],
+      "c": 1,
+      "explanation": "sushi: Japón. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-179faa92e58f"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de sushi?",
+      "o": [
+        "Papa amarilla y ají amarillo",
+        "Palta, tomate y mayonesa",
+        "Vacuno, cebolla y tomate",
+        "Arroz aliñado con vinagre"
+      ],
+      "c": 3,
+      "explanation": "sushi: Arroz aliñado con vinagre. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-8af3cf0529dc"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a sushi?",
+      "o": [
+        "Cocción del arroz en recipiente ancho y poco profundo",
+        "Disco de masa asado o frito",
+        "Sopa con fideos y coberturas",
+        "Arroz combinado con distintas coberturas o rellenos"
+      ],
+      "c": 3,
+      "explanation": "sushi: Arroz combinado con distintas coberturas o rellenos. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-36de5fd834b1"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente tempura?",
+      "o": [
+        "Japón",
+        "Suiza",
+        "Oriente Medio",
+        "Uruguay"
+      ],
+      "c": 0,
+      "explanation": "tempura: Japón. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-8d30b976b881"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de tempura?",
+      "o": [
+        "Berenjena y zapallito italiano",
+        "Fideos de arroz y caldo",
+        "Verduras o mariscos",
+        "Carne y cebolla"
+      ],
+      "c": 2,
+      "explanation": "tempura: Verduras o mariscos. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-844d7e2f2d75",
+      "img": "arcade/reference/gastronomia.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a tempura?",
+      "o": [
+        "Ingredientes dispuestos sobre arroz y mezclados al comer",
+        "Pescado crudo marinado en jugo ácido",
+        "Salteado con salsa y acompañamientos",
+        "Rebozado ligero y fritura rápida"
+      ],
+      "c": 3,
+      "explanation": "tempura: Rebozado ligero y fritura rápida. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-41a181d8823b"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente ramen?",
+      "o": [
+        "Perú",
+        "Brasil",
+        "Japón",
+        "Italia"
+      ],
+      "c": 2,
+      "explanation": "ramen: Japón. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-5457716c17b2"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de ramen?",
+      "o": [
+        "Fideos de trigo",
+        "Palta, tomate y mayonesa",
+        "Cerdo marinado",
+        "Masa, tomate y mozzarella"
+      ],
+      "c": 0,
+      "explanation": "ramen: Fideos de trigo. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-bd2b722289fa"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a ramen?",
+      "o": [
+        "Pan alargado con vienesa y coberturas",
+        "Fermentación de hortalizas",
+        "Salsa compleja molida y cocida",
+        "Sopa con fideos y coberturas"
+      ],
+      "c": 3,
+      "explanation": "ramen: Sopa con fideos y coberturas. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-2c8af18c9840"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente kimchi de col?",
+      "o": [
+        "Chile",
+        "China",
+        "Corea",
+        "Uruguay"
+      ],
+      "c": 2,
+      "explanation": "kimchi de col: Corea. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-d094bd5ef4b0",
+      "img": "arcade/reference/gastronomia.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué ingrediente es característico de kimchi de col?",
+      "o": [
+        "Palta, tomate y mayonesa",
+        "Pescado y cítricos",
+        "Col y ají",
+        "Papa amarilla y ají amarillo"
+      ],
+      "c": 2,
+      "explanation": "kimchi de col: Col y ají. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-2a22550a076b"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a kimchi de col?",
+      "o": [
+        "Fermentación de hortalizas",
+        "Postre en capas refrigerado",
+        "Salsa compleja molida y cocida",
+        "Puré condimentado servido como dip"
+      ],
+      "c": 0,
+      "explanation": "kimchi de col: Fermentación de hortalizas. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-2d18f9294862"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente bibimbap?",
+      "o": [
+        "Vietnam",
+        "Francia",
+        "Chile",
+        "Corea"
+      ],
+      "c": 3,
+      "explanation": "bibimbap: Corea. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-8a57b691f38d"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de bibimbap?",
+      "o": [
+        "Col y ají",
+        "Arroz y verduras",
+        "Pescado y cítricos",
+        "Berenjena y zapallito italiano"
+      ],
+      "c": 1,
+      "explanation": "bibimbap: Arroz y verduras. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-79fee2be7fe0"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a bibimbap?",
+      "o": [
+        "Sopa fría triturada",
+        "Ingredientes dispuestos sobre arroz y mezclados al comer",
+        "Puré condimentado servido como dip",
+        "Pan alargado con vienesa y coberturas"
+      ],
+      "c": 1,
+      "explanation": "bibimbap: Ingredientes dispuestos sobre arroz y mezclados al comer. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-50eed8ef78be",
+      "img": "arcade/reference/gastronomia.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente pato pekinés?",
+      "o": [
+        "Francia",
+        "China",
+        "Vietnam",
+        "Austria"
+      ],
+      "c": 1,
+      "explanation": "pato pekinés: China. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-900a2580f497"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de pato pekinés?",
+      "o": [
+        "Mascarpone y café",
+        "Cerdo marinado",
+        "Pato",
+        "Masa, tomate y mozzarella"
+      ],
+      "c": 2,
+      "explanation": "pato pekinés: Pato. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-d9cfd34f72ce"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a pato pekinés?",
+      "o": [
+        "Disco de masa asado o frito",
+        "Disco de masa frito",
+        "Asado con piel crujiente",
+        "Legumbres cocidas con especias"
+      ],
+      "c": 2,
+      "explanation": "pato pekinés: Asado con piel crujiente. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-2eb9da3b4235"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente dim sum?",
+      "o": [
+        "Venezuela y Colombia",
+        "Francia",
+        "China",
+        "Italia"
+      ],
+      "c": 2,
+      "explanation": "dim sum: China. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-13f04b4be97a"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de dim sum?",
+      "o": [
+        "Palta o aguacate",
+        "Masas y rellenos variados",
+        "Pato",
+        "Fideos de arroz y caldo"
+      ],
+      "c": 1,
+      "explanation": "dim sum: Masas y rellenos variados. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-2e9db1980e03",
+      "img": "arcade/reference/gastronomia.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a dim sum?",
+      "o": [
+        "Postre en capas refrigerado",
+        "Sopa fría triturada",
+        "Pequeñas porciones, muchas cocidas al vapor",
+        "Bebida dulce fría con granos y fruta"
+      ],
+      "c": 2,
+      "explanation": "dim sum: Pequeñas porciones, muchas cocidas al vapor. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-90a926306ce7"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente pad thai?",
+      "o": [
+        "Italia",
+        "Perú",
+        "Tailandia",
+        "Uruguay"
+      ],
+      "c": 2,
+      "explanation": "pad thai: Tailandia. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-61787381b966"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de pad thai?",
+      "o": [
+        "Fideos de arroz",
+        "Porotos negros y cerdo",
+        "Tomate y otras hortalizas",
+        "Porotos, arroz y chicharrón"
+      ],
+      "c": 0,
+      "explanation": "pad thai: Fideos de arroz. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-1d467c11e2b3"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a pad thai?",
+      "o": [
+        "Pequeñas porciones, muchas cocidas al vapor",
+        "Salteado con salsa y acompañamientos",
+        "Plato abundante con varios componentes separados",
+        "Relleno envuelto y cocido al vapor"
+      ],
+      "c": 1,
+      "explanation": "pad thai: Salteado con salsa y acompañamientos. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-b13741dfd8ca"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente pho?",
+      "o": [
+        "Vietnam",
+        "Italia",
+        "Argentina y Uruguay",
+        "Chile"
+      ],
+      "c": 0,
+      "explanation": "pho: Vietnam. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-4f61dd1ac452",
+      "img": "arcade/reference/gastronomia.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué ingrediente es característico de pho?",
+      "o": [
+        "Carne y cebolla",
+        "Arroz, conejo y pollo",
+        "Harina de maíz",
+        "Fideos de arroz y caldo"
+      ],
+      "c": 3,
+      "explanation": "pho: Fideos de arroz y caldo. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-79bb26085715"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a pho?",
+      "o": [
+        "Preparación molida y mezclada en frío",
+        "Sopa aromática servida con hierbas",
+        "Guiso de legumbres de verano",
+        "Capas frías de papa y relleno"
+      ],
+      "c": 1,
+      "explanation": "pho: Sopa aromática servida con hierbas. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-95c8616142a7"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente dal?",
+      "o": [
+        "Perú",
+        "India",
+        "Suiza",
+        "España"
+      ],
+      "c": 1,
+      "explanation": "dal: India. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-12e7e2f1a5d8"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de dal?",
+      "o": [
+        "Fideos de trigo",
+        "Porotos frescos y zapallo",
+        "Papas y zapallo",
+        "Lentejas u otras legumbres partidas"
+      ],
+      "c": 3,
+      "explanation": "dal: Lentejas u otras legumbres partidas. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-7bf143449ee7"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a dal?",
+      "o": [
+        "Mezcla cuajada en sartén",
+        "Salsa triturada sin cocción prolongada",
+        "Legumbres cocidas con especias",
+        "Escalopa apanada y frita"
+      ],
+      "c": 2,
+      "explanation": "dal: Legumbres cocidas con especias. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-49d0f2b4b009",
+      "img": "arcade/reference/gastronomia.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente naan?",
+      "o": [
+        "Perú",
+        "India y Asia central",
+        "Colombia",
+        "China"
+      ],
+      "c": 1,
+      "explanation": "naan: India y Asia central. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-6610f893526a"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de naan?",
+      "o": [
+        "Pescado y cítricos",
+        "Papa amarilla y ají amarillo",
+        "Harina de trigo",
+        "Masa de maíz"
+      ],
+      "c": 2,
+      "explanation": "naan: Harina de trigo. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-012e9ae1e669"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a naan?",
+      "o": [
+        "Masa rellena y horneada o frita",
+        "Pan plano, tradicionalmente cocido en tandoor",
+        "Guiso prolongado de legumbres y carnes",
+        "Escalopa apanada y frita"
+      ],
+      "c": 1,
+      "explanation": "naan: Pan plano, tradicionalmente cocido en tandoor. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-87cfb8a8d964"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente hummus?",
+      "o": [
+        "India y Asia central",
+        "Brasil",
+        "Levante mediterráneo",
+        "Vietnam"
+      ],
+      "c": 2,
+      "explanation": "hummus: Levante mediterráneo. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-9e9c26cffff5"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de hummus?",
+      "o": [
+        "Garbanzos y tahini",
+        "Lentejas u otras legumbres partidas",
+        "Fideos de arroz y caldo",
+        "Chiles y especias"
+      ],
+      "c": 0,
+      "explanation": "hummus: Garbanzos y tahini. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-b38b63d8997d",
+      "img": "arcade/reference/gastronomia.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a hummus?",
+      "o": [
+        "Puré condimentado servido como dip",
+        "Cocción del arroz en recipiente ancho y poco profundo",
+        "Bebida dulce fría con granos y fruta",
+        "Sopa aromática servida con hierbas"
+      ],
+      "c": 0,
+      "explanation": "hummus: Puré condimentado servido como dip. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-c06b75eb29a3"
+    },
+    {
+      "q": "¿Con qué tradición culinaria se asocia especialmente falafel?",
+      "o": [
+        "Chile",
+        "Oriente Medio",
+        "Levante mediterráneo",
+        "Venezuela y Colombia"
+      ],
+      "c": 1,
+      "explanation": "falafel: Oriente Medio. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-bb4cadb7d62e"
+    },
+    {
+      "q": "¿Qué ingrediente es característico de falafel?",
+      "o": [
+        "Ave y ají amarillo",
+        "Vacuno, cebolla y tomate",
+        "Garbanzos o habas",
+        "Papa y huevo"
+      ],
+      "c": 2,
+      "explanation": "falafel: Garbanzos o habas. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-899c87dae261"
+    },
+    {
+      "q": "¿Qué técnica o presentación caracteriza a falafel?",
+      "o": [
+        "Relleno envuelto y cocido al vapor",
+        "Sopa con fideos y coberturas",
+        "Disco de masa frito",
+        "Bolitas o croquetas fritas de legumbres"
+      ],
+      "c": 3,
+      "explanation": "falafel: Bolitas o croquetas fritas de legumbres. Las recetas tienen variantes regionales. La pregunta se refiere a la versión indicada en el nombre.",
+      "e": "🍳",
+      "id": "gastronomia-fb4d16838472"
+    }
+  ]
+}

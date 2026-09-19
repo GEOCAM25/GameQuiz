@@ -1,0 +1,2022 @@
+{
+  "cat": "rapidos",
+  "name": "Rápido y Furioso",
+  "emoji": "🏁",
+  "edition": "4.0",
+  "sources": [
+    "https://www.universalpictures.com/movies/fast-x",
+    "https://www.fastxmovie.com/"
+  ],
+  "questions": [
+    {
+      "q": "¿Qué intérprete encarna a Dominic Toretto en Rápido y Furioso?",
+      "o": [
+        "Idris Elba",
+        "Ludacris",
+        "Sonny Chiba",
+        "Vin Diesel"
+      ],
+      "c": 3,
+      "explanation": "Dominic Toretto: Vin Diesel. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-c946b04cd952",
+      "img": "arcade/reference/rapidos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Dominic Toretto?",
+      "o": [
+        "Es madre de Deckard y Owen",
+        "Es un mercenario",
+        "Es hermano de Mia",
+        "Es especialista técnico del equipo"
+      ],
+      "c": 2,
+      "explanation": "Dominic Toretto: Es hermano de Mia. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-462265d5c7d3"
+    },
+    {
+      "q": "¿Qué hecho identifica a Dominic Toretto en la saga?",
+      "o": [
+        "Es madre del hijo de Dominic",
+        "Considera a su equipo una familia",
+        "Persigue a Ramsey y el Ojo de Dios",
+        "Aparece en la octava película"
+      ],
+      "c": 1,
+      "explanation": "Dominic Toretto: Considera a su equipo una familia. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-e8ea339eab25"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Brian O’Conner en Rápido y Furioso?",
+      "o": [
+        "Vanessa Kirby",
+        "Paul Walker",
+        "Eva Mendes",
+        "Chad Lindberg"
+      ],
+      "c": 1,
+      "explanation": "Brian O’Conner: Paul Walker. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-a2ea62420e92"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Brian O’Conner?",
+      "o": [
+        "Es hermano de Dominic y Mia",
+        "Es agente del DSS",
+        "Es compañero de Rico Santos",
+        "Forma pareja con Mia"
+      ],
+      "c": 3,
+      "explanation": "Brian O’Conner: Forma pareja con Mia. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-c94f31d0b1c6"
+    },
+    {
+      "q": "¿Qué hecho identifica a Brian O’Conner en la saga?",
+      "o": [
+        "Empieza como policía encubierto",
+        "Tiene mejoras cibernéticas",
+        "Aparece en la reunión familiar de Fast X",
+        "Persigue a Ramsey y el Ojo de Dios"
+      ],
+      "c": 0,
+      "explanation": "Brian O’Conner: Empieza como policía encubierto. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-ef254da26e91",
+      "img": "arcade/reference/rapidos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué intérprete encarna a Letty Ortiz en Rápido y Furioso?",
+      "o": [
+        "Michelle Rodriguez",
+        "Eva Mendes",
+        "Noel Gugliemi",
+        "Sonny Chiba"
+      ],
+      "c": 0,
+      "explanation": "Letty Ortiz: Michelle Rodriguez. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-c6870f8332d3"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Letty Ortiz?",
+      "o": [
+        "Es corredor de Los Ángeles",
+        "Es pareja de Dominic",
+        "Es hermano de Deckard",
+        "Es sobrino de un jefe yakuza"
+      ],
+      "c": 1,
+      "explanation": "Letty Ortiz: Es pareja de Dominic. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-87067f40900d"
+    },
+    {
+      "q": "¿Qué hecho identifica a Letty Ortiz en la saga?",
+      "o": [
+        "Tiene mejoras cibernéticas",
+        "Aparece en la primera película organizando autos para competir",
+        "Organiza carreras en Miami en la segunda película",
+        "Reaparece con amnesia"
+      ],
+      "c": 3,
+      "explanation": "Letty Ortiz: Reaparece con amnesia. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-246a37fed452"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Mia Toretto en Rápido y Furioso?",
+      "o": [
+        "Sonny Chiba",
+        "Jordana Brewster",
+        "Matt Schulze",
+        "Vanessa Kirby"
+      ],
+      "c": 1,
+      "explanation": "Mia Toretto: Jordana Brewster. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-60fa30d035ff"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Mia Toretto?",
+      "o": [
+        "Es hijo de Hernán Reyes",
+        "Trabaja con los mercenarios de Jakande",
+        "Es rival de Dominic en Los Ángeles",
+        "Es hermana de Dominic"
+      ],
+      "c": 3,
+      "explanation": "Mia Toretto: Es hermana de Dominic. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-3bee074f091c",
+      "img": "arcade/reference/rapidos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué hecho identifica a Mia Toretto en la saga?",
+      "o": [
+        "Participa en los robos de camiones de la primera película",
+        "Forma una familia con Brian",
+        "Recluta al equipo para recuperar Ojo de Dios",
+        "Compite contra Jesse en Race Wars"
+      ],
+      "c": 1,
+      "explanation": "Mia Toretto: Forma una familia con Brian. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-d40efd286aed"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Roman Pearce en Rápido y Furioso?",
+      "o": [
+        "Scott Eastwood",
+        "Nathalie Kelley",
+        "Tyrese Gibson",
+        "Ludacris"
+      ],
+      "c": 2,
+      "explanation": "Roman Pearce: Tyrese Gibson. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-0159a58dc101"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Roman Pearce?",
+      "o": [
+        "Es rival de Dominic en Los Ángeles",
+        "Es amigo de infancia de Brian",
+        "Es una ciberterrorista",
+        "Es compañero de Tego Leo"
+      ],
+      "c": 1,
+      "explanation": "Roman Pearce: Es amigo de infancia de Brian. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-16c8f604c485"
+    },
+    {
+      "q": "¿Qué hecho identifica a Roman Pearce en la saga?",
+      "o": [
+        "Es una agente perseguida por Brixton",
+        "Aprende a hacer drift con Han",
+        "Opera desde Miami",
+        "Se suma a la misión de Miami en la segunda película"
+      ],
+      "c": 3,
+      "explanation": "Roman Pearce: Se suma a la misión de Miami en la segunda película. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-a1e4f324f7cb"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Tej Parker en Rápido y Furioso?",
+      "o": [
+        "Matt Schulze",
+        "John Ortiz",
+        "Ludacris",
+        "Noel Gugliemi"
+      ],
+      "c": 2,
+      "explanation": "Tej Parker: Ludacris. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-ef6d1198611d",
+      "img": "arcade/reference/rapidos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Tej Parker?",
+      "o": [
+        "Es alumno y corredor en Tokio",
+        "Es especialista técnico del equipo",
+        "Trabaja para Braga",
+        "Es agente del DSS"
+      ],
+      "c": 1,
+      "explanation": "Tej Parker: Es especialista técnico del equipo. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-5066fa00e53f"
+    },
+    {
+      "q": "¿Qué hecho identifica a Tej Parker en la saga?",
+      "o": [
+        "Forma una familia con Brian",
+        "Oculta su identidad bajo el nombre de Ramón Campos",
+        "Guarda su dinero en una caja fuerte policial",
+        "Organiza carreras en Miami en la segunda película"
+      ],
+      "c": 3,
+      "explanation": "Tej Parker: Organiza carreras en Miami en la segunda película. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-b007a7096460"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Han Lue en Rápido y Furioso?",
+      "o": [
+        "Djimon Hounsou",
+        "Sung Kang",
+        "Brian Tee",
+        "Celestino Cornielle"
+      ],
+      "c": 1,
+      "explanation": "Han Lue: Sung Kang. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-d0d429fd03c2"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Han Lue?",
+      "o": [
+        "Es mentor de Sean",
+        "Se relaciona con Sean y Takashi",
+        "Es hermana de Elena",
+        "Es hija de Mr. Nobody"
+      ],
+      "c": 0,
+      "explanation": "Han Lue: Es mentor de Sean. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-614e8b208c03"
+    },
+    {
+      "q": "¿Qué hecho identifica a Han Lue en la saga?",
+      "o": [
+        "Se le asocia con las carreras de derrape en Tokio",
+        "Se suma a la misión de Miami en la segunda película",
+        "Se enfrenta a Brian en la séptima película",
+        "Ayuda al equipo tras trabajar para Braga"
+      ],
+      "c": 0,
+      "explanation": "Han Lue: Se le asocia con las carreras de derrape en Tokio. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-846ec0873785",
+      "img": "arcade/reference/rapidos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué intérprete encarna a Gisele Yashar en Rápido y Furioso?",
+      "o": [
+        "Kurt Russell",
+        "Gal Gadot",
+        "Eva Mendes",
+        "Devon Aoki"
+      ],
+      "c": 1,
+      "explanation": "Gisele Yashar: Gal Gadot. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-db1d0be5ec83"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Gisele Yashar?",
+      "o": [
+        "Se vincula sentimentalmente con Han",
+        "Es un mercenario",
+        "Es hermano de Mia",
+        "Forma pareja con Mia"
+      ],
+      "c": 0,
+      "explanation": "Gisele Yashar: Se vincula sentimentalmente con Han. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-c9f3b5076b0d"
+    },
+    {
+      "q": "¿Qué hecho identifica a Gisele Yashar en la saga?",
+      "o": [
+        "Se suma a la misión de Miami en la segunda película",
+        "Ayuda al equipo tras trabajar para Braga",
+        "Aparece en el equipo que roba combustible al inicio de la cuarta película",
+        "Aparece en la octava película"
+      ],
+      "c": 1,
+      "explanation": "Gisele Yashar: Ayuda al equipo tras trabajar para Braga. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-778cc6fb4fa9"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Luke Hobbs en Rápido y Furioso?",
+      "o": [
+        "Gal Gadot",
+        "Johnny Strong",
+        "Tego Calderón",
+        "Dwayne Johnson"
+      ],
+      "c": 3,
+      "explanation": "Luke Hobbs: Dwayne Johnson. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-52c19ee694c4"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Luke Hobbs?",
+      "o": [
+        "Es agente del DSS",
+        "Es mentor de Sean",
+        "Es una hacker",
+        "Es jefa de seguridad"
+      ],
+      "c": 0,
+      "explanation": "Luke Hobbs: Es agente del DSS. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-e21f8bb94c60",
+      "img": "arcade/reference/rapidos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué hecho identifica a Luke Hobbs en la saga?",
+      "o": [
+        "Persigue al equipo en Río antes de colaborar",
+        "Aprende a hacer drift con Han",
+        "Aparece en la reunión familiar de Fast X",
+        "Es una agente perseguida por Brixton"
+      ],
+      "c": 0,
+      "explanation": "Luke Hobbs: Persigue al equipo en Río antes de colaborar. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-91bc7d45d1e6"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Deckard Shaw en Rápido y Furioso?",
+      "o": [
+        "Jason Statham",
+        "Luke Evans",
+        "Matt Schulze",
+        "Scott Eastwood"
+      ],
+      "c": 0,
+      "explanation": "Deckard Shaw: Jason Statham. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-9141d338d6ce"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Deckard Shaw?",
+      "o": [
+        "Es especialista técnico del equipo",
+        "Es compañero de Rico Santos",
+        "Es corredor en Cuba",
+        "Es hermano de Owen"
+      ],
+      "c": 3,
+      "explanation": "Deckard Shaw: Es hermano de Owen. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-ec6af87e936f"
+    },
+    {
+      "q": "¿Qué hecho identifica a Deckard Shaw en la saga?",
+      "o": [
+        "Compite contra Dominic en La Habana",
+        "Su apodo es DK",
+        "Busca vengar lo ocurrido a su hermano",
+        "Colabora en la investigación contra Carter Verone"
+      ],
+      "c": 2,
+      "explanation": "Deckard Shaw: Busca vengar lo ocurrido a su hermano. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-b1192bd5fd13"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Owen Shaw en Rápido y Furioso?",
+      "o": [
+        "Luke Evans",
+        "Daniela Melchior",
+        "Tyrese Gibson",
+        "Laz Alonso"
+      ],
+      "c": 0,
+      "explanation": "Owen Shaw: Luke Evans. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-989b368fa8b4",
+      "img": "arcade/reference/rapidos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Owen Shaw?",
+      "o": [
+        "Trabaja para Braga",
+        "Es hermano de Owen",
+        "Trabaja para Hernán Reyes",
+        "Es hermano de Deckard"
+      ],
+      "c": 3,
+      "explanation": "Owen Shaw: Es hermano de Deckard. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-646f396db8bc"
+    },
+    {
+      "q": "¿Qué hecho identifica a Owen Shaw en la saga?",
+      "o": [
+        "Es su principal hombre armado",
+        "Persigue a Ramsey y el Ojo de Dios",
+        "Lidera el equipo antagonista de la sexta película",
+        "Colabora en la investigación contra Carter Verone"
+      ],
+      "c": 2,
+      "explanation": "Owen Shaw: Lidera el equipo antagonista de la sexta película. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-253150d49ec6"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Hattie Shaw en Rápido y Furioso?",
+      "o": [
+        "Devon Aoki",
+        "Laz Alonso",
+        "Eva Mendes",
+        "Vanessa Kirby"
+      ],
+      "c": 3,
+      "explanation": "Hattie Shaw: Vanessa Kirby. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-4db7f5e14287"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Hattie Shaw?",
+      "o": [
+        "Es el antagonista de la segunda película",
+        "Es policía en Brasil",
+        "Es hermana de Deckard",
+        "Es hermano de Mia"
+      ],
+      "c": 2,
+      "explanation": "Hattie Shaw: Es hermana de Deckard. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-9eccf2198f6d"
+    },
+    {
+      "q": "¿Qué hecho identifica a Hattie Shaw en la saga?",
+      "o": [
+        "Vive en Tokio en Tokyo Drift",
+        "Persigue a Ramsey y el Ojo de Dios",
+        "Compite contra Dominic en La Habana",
+        "Es una agente perseguida por Brixton"
+      ],
+      "c": 3,
+      "explanation": "Hattie Shaw: Es una agente perseguida por Brixton. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-5c8f35e29e65",
+      "img": "arcade/reference/rapidos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué intérprete encarna a Brixton Lore en Rápido y Furioso?",
+      "o": [
+        "Idris Elba",
+        "Luke Evans",
+        "Brie Larson",
+        "John Ortiz"
+      ],
+      "c": 0,
+      "explanation": "Brixton Lore: Idris Elba. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-8e4d890aceb8"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Brixton Lore?",
+      "o": [
+        "Es policía en Brasil",
+        "Es tío de Takashi",
+        "Es hermano de Owen",
+        "Trabaja para Eteon"
+      ],
+      "c": 3,
+      "explanation": "Brixton Lore: Trabaja para Eteon. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-80bddb3d4e53"
+    },
+    {
+      "q": "¿Qué hecho identifica a Brixton Lore en la saga?",
+      "o": [
+        "Persigue a Dominic y su equipo",
+        "Busca vengar lo ocurrido a su hermano",
+        "Tiene mejoras cibernéticas",
+        "Persigue a Ramsey y el Ojo de Dios"
+      ],
+      "c": 2,
+      "explanation": "Brixton Lore: Tiene mejoras cibernéticas. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-d0c729ef91aa"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Cipher en Rápido y Furioso?",
+      "o": [
+        "Michelle Rodriguez",
+        "Tony Jaa",
+        "Brie Larson",
+        "Charlize Theron"
+      ],
+      "c": 3,
+      "explanation": "Cipher: Charlize Theron. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-b9076e12945c"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Cipher?",
+      "o": [
+        "Es ayudante de Mr. Nobody",
+        "Es una ciberterrorista",
+        "Es hijo de Hernán Reyes",
+        "Es un mercenario"
+      ],
+      "c": 1,
+      "explanation": "Cipher: Es una ciberterrorista. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-36616da3e24b",
+      "img": "arcade/reference/rapidos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué hecho identifica a Cipher en la saga?",
+      "o": [
+        "Guarda su dinero en una caja fuerte policial",
+        "Organiza carreras en Miami en la segunda película",
+        "Chantajea a Dominic en la octava película",
+        "Aparece en la primera y la segunda película"
+      ],
+      "c": 2,
+      "explanation": "Cipher: Chantajea a Dominic en la octava película. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-e87a4de8c64c"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Jakob Toretto en Rápido y Furioso?",
+      "o": [
+        "Brie Larson",
+        "John Cena",
+        "Lucas Black",
+        "Luke Evans"
+      ],
+      "c": 1,
+      "explanation": "Jakob Toretto: John Cena. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-7dd1669cb5f3"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Jakob Toretto?",
+      "o": [
+        "Es hermano de Mia",
+        "Es hermano de Dominic y Mia",
+        "Es tío de Takashi",
+        "Es jefa de seguridad"
+      ],
+      "c": 1,
+      "explanation": "Jakob Toretto: Es hermano de Dominic y Mia. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-12079ac9fcc6"
+    },
+    {
+      "q": "¿Qué hecho identifica a Jakob Toretto en la saga?",
+      "o": [
+        "Se enfrenta a Dominic en F9",
+        "Opera desde Miami",
+        "Oculta su identidad bajo el nombre de Ramón Campos",
+        "Forma parte del equipo del golpe de Río"
+      ],
+      "c": 0,
+      "explanation": "Jakob Toretto: Se enfrenta a Dominic en F9. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-7d92bd2c4e9c"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Ramsey en Rápido y Furioso?",
+      "o": [
+        "Paul Walker",
+        "Rita Moreno",
+        "Nathalie Emmanuel",
+        "Daniela Melchior"
+      ],
+      "c": 2,
+      "explanation": "Ramsey: Nathalie Emmanuel. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-3cd7bef73f81",
+      "img": "arcade/reference/rapidos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Ramsey?",
+      "o": [
+        "Es amigo de Sean",
+        "Es una hacker",
+        "Es rival de Dominic en Los Ángeles",
+        "Es un agente gubernamental"
+      ],
+      "c": 1,
+      "explanation": "Ramsey: Es una hacker. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-e339dc9607a1"
+    },
+    {
+      "q": "¿Qué hecho identifica a Ramsey en la saga?",
+      "o": [
+        "Reaparece con amnesia",
+        "Creó el programa Ojo de Dios",
+        "Aparece en el equipo que roba combustible al inicio de la cuarta película",
+        "Persigue a Dominic y su equipo"
+      ],
+      "c": 1,
+      "explanation": "Ramsey: Creó el programa Ojo de Dios. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-f05333e384e6"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Mr. Nobody en Rápido y Furioso?",
+      "o": [
+        "Jordana Brewster",
+        "Charlize Theron",
+        "Johnny Strong",
+        "Kurt Russell"
+      ],
+      "c": 3,
+      "explanation": "Mr. Nobody: Kurt Russell. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-1ac1f2595156"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Mr. Nobody?",
+      "o": [
+        "Es un agente gubernamental",
+        "Es hermana de Deckard",
+        "Es compañero de Rico Santos",
+        "Es un mercenario"
+      ],
+      "c": 0,
+      "explanation": "Mr. Nobody: Es un agente gubernamental. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-cf5d62dca4d6"
+    },
+    {
+      "q": "¿Qué hecho identifica a Mr. Nobody en la saga?",
+      "o": [
+        "Participa en el grupo original de Los Ángeles",
+        "Pierde una carrera contra Johnny Tran",
+        "Recluta al equipo para recuperar Ojo de Dios",
+        "Colabora en la investigación contra Carter Verone"
+      ],
+      "c": 2,
+      "explanation": "Mr. Nobody: Recluta al equipo para recuperar Ojo de Dios. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-7ce80db3ad6a",
+      "img": "arcade/reference/rapidos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué intérprete encarna a Little Nobody en Rápido y Furioso?",
+      "o": [
+        "Ronda Rousey",
+        "Michelle Rodriguez",
+        "Scott Eastwood",
+        "Alan Ritchson"
+      ],
+      "c": 2,
+      "explanation": "Little Nobody: Scott Eastwood. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-0781d0792e9d"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Little Nobody?",
+      "o": [
+        "Es corredor en Cuba",
+        "Es amigo de Dominic",
+        "Es ayudante de Mr. Nobody",
+        "Es hermano de Deckard"
+      ],
+      "c": 2,
+      "explanation": "Little Nobody: Es ayudante de Mr. Nobody. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-7753552d5e24"
+    },
+    {
+      "q": "¿Qué hecho identifica a Little Nobody en la saga?",
+      "o": [
+        "Participa en el grupo original de Los Ángeles",
+        "Recluta al equipo para recuperar Ojo de Dios",
+        "Aparece en la octava película",
+        "Lidera el equipo antagonista de la sexta película"
+      ],
+      "c": 2,
+      "explanation": "Little Nobody: Aparece en la octava película. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-13f3db76e4ba"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Elena Neves en Rápido y Furioso?",
+      "o": [
+        "Elsa Pataky",
+        "Joaquim de Almeida",
+        "Daniela Melchior",
+        "Sonny Chiba"
+      ],
+      "c": 0,
+      "explanation": "Elena Neves: Elsa Pataky. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-6dfd2ca5d97c"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Elena Neves?",
+      "o": [
+        "Se relaciona con Sean y Takashi",
+        "Es policía en Brasil",
+        "Es especialista técnico del equipo",
+        "Es un mercenario"
+      ],
+      "c": 1,
+      "explanation": "Elena Neves: Es policía en Brasil. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-10d37d393dd3",
+      "img": "arcade/reference/rapidos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué hecho identifica a Elena Neves en la saga?",
+      "o": [
+        "Es madre del hijo de Dominic",
+        "Participa en los robos de camiones de la primera película",
+        "Representa a la yakuza en Tokyo Drift",
+        "Busca vengar lo ocurrido a su hermano"
+      ],
+      "c": 0,
+      "explanation": "Elena Neves: Es madre del hijo de Dominic. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-a1d504560dfd"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Vince en Rápido y Furioso?",
+      "o": [
+        "Gina Carano",
+        "Dwayne Johnson",
+        "Matt Schulze",
+        "Charlize Theron"
+      ],
+      "c": 2,
+      "explanation": "Vince: Matt Schulze. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-49bc3c693a4e"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Vince?",
+      "o": [
+        "Se vincula sentimentalmente con Han",
+        "Es hermana de Elena",
+        "Es un narcotraficante",
+        "Es amigo de Dominic"
+      ],
+      "c": 3,
+      "explanation": "Vince: Es amigo de Dominic. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-f73fd9f0bcfb"
+    },
+    {
+      "q": "¿Qué hecho identifica a Vince en la saga?",
+      "o": [
+        "Busca vengar lo ocurrido a su hermano",
+        "Participa en el grupo original de Los Ángeles",
+        "Su apodo es DK",
+        "Conduce una Volkswagen Touran modificada"
+      ],
+      "c": 1,
+      "explanation": "Vince: Participa en el grupo original de Los Ángeles. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-23da13dafa61"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Jesse en Rápido y Furioso?",
+      "o": [
+        "Bow Wow",
+        "Gal Gadot",
+        "Celestino Cornielle",
+        "Chad Lindberg"
+      ],
+      "c": 3,
+      "explanation": "Jesse: Chad Lindberg. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-8e07cf9bf504",
+      "img": "arcade/reference/rapidos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Jesse?",
+      "o": [
+        "Es mecánico del grupo original",
+        "Es el antagonista de la segunda película",
+        "Es un agente que supervisa a Brian",
+        "Es un poderoso criminal de Río"
+      ],
+      "c": 0,
+      "explanation": "Jesse: Es mecánico del grupo original. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-05e058929ea1"
+    },
+    {
+      "q": "¿Qué hecho identifica a Jesse en la saga?",
+      "o": [
+        "Oculta su identidad bajo el nombre de Ramón Campos",
+        "Persigue a Dominic y su equipo",
+        "Pierde una carrera contra Johnny Tran",
+        "Se le asocia con las carreras de derrape en Tokio"
+      ],
+      "c": 2,
+      "explanation": "Jesse: Pierde una carrera contra Johnny Tran. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-6d0b74f8b1b1"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Leon en Rápido y Furioso?",
+      "o": [
+        "Bow Wow",
+        "Laz Alonso",
+        "Johnny Strong",
+        "Brian Tee"
+      ],
+      "c": 2,
+      "explanation": "Leon: Johnny Strong. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-5984dff470f5"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Leon?",
+      "o": [
+        "Es amigo de Dominic",
+        "Es policía en Brasil",
+        "Es integrante del grupo original",
+        "Es hermana de Elena"
+      ],
+      "c": 2,
+      "explanation": "Leon: Es integrante del grupo original. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-9a3eaf78da68"
+    },
+    {
+      "q": "¿Qué hecho identifica a Leon en la saga?",
+      "o": [
+        "Aprende a hacer drift con Han",
+        "Busca vengarse del equipo en Fast X",
+        "Participa en los robos de camiones de la primera película",
+        "Persigue a Dominic y su equipo"
+      ],
+      "c": 2,
+      "explanation": "Leon: Participa en los robos de camiones de la primera película. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-ae2394993f5e",
+      "img": "arcade/reference/rapidos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué intérprete encarna a Johnny Tran en Rápido y Furioso?",
+      "o": [
+        "Lucas Black",
+        "Nathalie Emmanuel",
+        "Idris Elba",
+        "Rick Yune"
+      ],
+      "c": 3,
+      "explanation": "Johnny Tran: Rick Yune. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-9d6334bf6638"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Johnny Tran?",
+      "o": [
+        "Es sobrino de un jefe yakuza",
+        "Es rival de Dominic en Los Ángeles",
+        "Es ayudante de Mr. Nobody",
+        "Es tío de Takashi"
+      ],
+      "c": 1,
+      "explanation": "Johnny Tran: Es rival de Dominic en Los Ángeles. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-159dd7ae0964"
+    },
+    {
+      "q": "¿Qué hecho identifica a Johnny Tran en la saga?",
+      "o": [
+        "Creó el programa Ojo de Dios",
+        "Es conocida como Queenie",
+        "Reaparece con amnesia",
+        "Compite contra Jesse en Race Wars"
+      ],
+      "c": 3,
+      "explanation": "Johnny Tran: Compite contra Jesse en Race Wars. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-e263602a3212"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Hector en Rápido y Furioso?",
+      "o": [
+        "Scott Eastwood",
+        "Tony Jaa",
+        "Noel Gugliemi",
+        "Idris Elba"
+      ],
+      "c": 2,
+      "explanation": "Hector: Noel Gugliemi. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-9eeb5de89d5d"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Hector?",
+      "o": [
+        "Es corredora de Miami",
+        "Es jefa de seguridad",
+        "Es hija de Mr. Nobody",
+        "Es corredor de Los Ángeles"
+      ],
+      "c": 3,
+      "explanation": "Hector: Es corredor de Los Ángeles. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-154ac201effa",
+      "img": "arcade/reference/rapidos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué hecho identifica a Hector en la saga?",
+      "o": [
+        "Se enfrenta a Dominic en F9",
+        "Se le asocia con las carreras de derrape en Tokio",
+        "Se enfrenta a Brian en la séptima película",
+        "Aparece en la primera película organizando autos para competir"
+      ],
+      "c": 3,
+      "explanation": "Hector: Aparece en la primera película organizando autos para competir. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-e3078c00f30a"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Monica Fuentes en Rápido y Furioso?",
+      "o": [
+        "Michelle Rodriguez",
+        "Eva Mendes",
+        "Bow Wow",
+        "Nathalie Kelley"
+      ],
+      "c": 1,
+      "explanation": "Monica Fuentes: Eva Mendes. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-d1bfab91bd4b"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Monica Fuentes?",
+      "o": [
+        "Es hermana de Deckard",
+        "Es agente de aduanas encubierta",
+        "Trabaja con los mercenarios de Jakande",
+        "Es compañero de Tego Leo"
+      ],
+      "c": 1,
+      "explanation": "Monica Fuentes: Es agente de aduanas encubierta. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-8b50497f309c"
+    },
+    {
+      "q": "¿Qué hecho identifica a Monica Fuentes en la saga?",
+      "o": [
+        "Colabora en la investigación contra Carter Verone",
+        "Oculta su identidad bajo el nombre de Ramón Campos",
+        "Aparece en la octava película",
+        "Opera desde Miami"
+      ],
+      "c": 0,
+      "explanation": "Monica Fuentes: Colabora en la investigación contra Carter Verone. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-e4c65f06553a"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Carter Verone en Rápido y Furioso?",
+      "o": [
+        "Djimon Hounsou",
+        "Noel Gugliemi",
+        "Devon Aoki",
+        "Cole Hauser"
+      ],
+      "c": 3,
+      "explanation": "Carter Verone: Cole Hauser. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-95918d525863",
+      "img": "arcade/reference/rapidos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Carter Verone?",
+      "o": [
+        "Es el antagonista de la segunda película",
+        "Es hermana de Dominic",
+        "Es un agente gubernamental",
+        "Es corredora de Miami"
+      ],
+      "c": 0,
+      "explanation": "Carter Verone: Es el antagonista de la segunda película. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-3c5a5a9f9667"
+    },
+    {
+      "q": "¿Qué hecho identifica a Carter Verone en la saga?",
+      "o": [
+        "Opera desde Miami",
+        "Compite contra Jesse en Race Wars",
+        "Es una agente perseguida por Brixton",
+        "Aparece en la primera y la segunda película"
+      ],
+      "c": 0,
+      "explanation": "Carter Verone: Opera desde Miami. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-25ad11811db0"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Suki en Rápido y Furioso?",
+      "o": [
+        "Brian Tee",
+        "Bow Wow",
+        "Don Omar",
+        "Devon Aoki"
+      ],
+      "c": 3,
+      "explanation": "Suki: Devon Aoki. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-b2598b46f17f"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Suki?",
+      "o": [
+        "Es compañero de Tego Leo",
+        "Es corredora de Miami",
+        "Es abuela de la familia Toretto",
+        "Es hermana de Dominic"
+      ],
+      "c": 1,
+      "explanation": "Suki: Es corredora de Miami. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-a9909b75ca45"
+    },
+    {
+      "q": "¿Qué hecho identifica a Suki en la saga?",
+      "o": [
+        "Conduce un Honda S2000 rosa",
+        "Compite contra Dominic en La Habana",
+        "Busca vengarse del equipo en Fast X",
+        "Es madre del hijo de Dominic"
+      ],
+      "c": 0,
+      "explanation": "Suki: Conduce un Honda S2000 rosa. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-e74657c262f3",
+      "img": "arcade/reference/rapidos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué intérprete encarna a Sean Boswell en Rápido y Furioso?",
+      "o": [
+        "Helen Mirren",
+        "Vin Diesel",
+        "Lucas Black",
+        "Celestino Cornielle"
+      ],
+      "c": 2,
+      "explanation": "Sean Boswell: Lucas Black. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-8b00aeab0083"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Sean Boswell?",
+      "o": [
+        "Es hijo de Hernán Reyes",
+        "Es hija de Mr. Nobody",
+        "Es alumno y corredor en Tokio",
+        "Es un agente gubernamental"
+      ],
+      "c": 2,
+      "explanation": "Sean Boswell: Es alumno y corredor en Tokio. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-899fdbeb963f"
+    },
+    {
+      "q": "¿Qué hecho identifica a Sean Boswell en la saga?",
+      "o": [
+        "Es un antagonista de la cuarta película",
+        "Persigue a Ramsey y el Ojo de Dios",
+        "Oculta su identidad bajo el nombre de Ramón Campos",
+        "Aprende a hacer drift con Han"
+      ],
+      "c": 3,
+      "explanation": "Sean Boswell: Aprende a hacer drift con Han. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-a4870600a485"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Twinkie en Rápido y Furioso?",
+      "o": [
+        "Bow Wow",
+        "Scott Eastwood",
+        "Charlize Theron",
+        "Idris Elba"
+      ],
+      "c": 0,
+      "explanation": "Twinkie: Bow Wow. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-0659746c80c4"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Twinkie?",
+      "o": [
+        "Es pareja de Dominic",
+        "Es hermano de Dominic y Mia",
+        "Es amigo de Sean",
+        "Es tío de Takashi"
+      ],
+      "c": 2,
+      "explanation": "Twinkie: Es amigo de Sean. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-1fb0931532ef",
+      "img": "arcade/reference/rapidos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué hecho identifica a Twinkie en la saga?",
+      "o": [
+        "Conduce una Volkswagen Touran modificada",
+        "Oculta su identidad bajo el nombre de Ramón Campos",
+        "Se enfrenta a Brian en la séptima película",
+        "Reaparece con amnesia"
+      ],
+      "c": 0,
+      "explanation": "Twinkie: Conduce una Volkswagen Touran modificada. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-a977914487d6"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Neela en Rápido y Furioso?",
+      "o": [
+        "Noel Gugliemi",
+        "Sonny Chiba",
+        "Nathalie Emmanuel",
+        "Nathalie Kelley"
+      ],
+      "c": 3,
+      "explanation": "Neela: Nathalie Kelley. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-3f8c08b4a8ab"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Neela?",
+      "o": [
+        "Es especialista técnico del equipo",
+        "Se relaciona con Sean y Takashi",
+        "Es hermana de Deckard",
+        "Se vincula sentimentalmente con Han"
+      ],
+      "c": 1,
+      "explanation": "Neela: Se relaciona con Sean y Takashi. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-ad69ce390f3b"
+    },
+    {
+      "q": "¿Qué hecho identifica a Neela en la saga?",
+      "o": [
+        "Vive en Tokio en Tokyo Drift",
+        "Se suma a la misión de Miami en la segunda película",
+        "Chantajea a Dominic en la octava película",
+        "Organiza carreras en Miami en la segunda película"
+      ],
+      "c": 0,
+      "explanation": "Neela: Vive en Tokio en Tokyo Drift. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-e225f496bdf8"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Takashi en Rápido y Furioso?",
+      "o": [
+        "Laz Alonso",
+        "Vin Diesel",
+        "Nathalie Emmanuel",
+        "Brian Tee"
+      ],
+      "c": 3,
+      "explanation": "Takashi: Brian Tee. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-49bb83933ce5",
+      "img": "arcade/reference/rapidos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Takashi?",
+      "o": [
+        "Se vincula sentimentalmente con Han",
+        "Es jefa de seguridad",
+        "Es hija de Mr. Nobody",
+        "Es sobrino de un jefe yakuza"
+      ],
+      "c": 3,
+      "explanation": "Takashi: Es sobrino de un jefe yakuza. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-0a9b148d4367"
+    },
+    {
+      "q": "¿Qué hecho identifica a Takashi en la saga?",
+      "o": [
+        "Participa en los robos de camiones de la primera película",
+        "Su apodo es DK",
+        "Aparece en el equipo que roba combustible al inicio de la cuarta película",
+        "Persigue a Dominic y su equipo"
+      ],
+      "c": 1,
+      "explanation": "Takashi: Su apodo es DK. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-e6bd8bca2fd3"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Kamata en Rápido y Furioso?",
+      "o": [
+        "Nathalie Emmanuel",
+        "Sung Kang",
+        "Vanessa Kirby",
+        "Sonny Chiba"
+      ],
+      "c": 3,
+      "explanation": "Kamata: Sonny Chiba. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-014bed3de7e9"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Kamata?",
+      "o": [
+        "Trabaja para Eteon",
+        "Es tío de Takashi",
+        "Es hermano de Deckard",
+        "Es ayudante de Mr. Nobody"
+      ],
+      "c": 1,
+      "explanation": "Kamata: Es tío de Takashi. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-40fc3cfd394b"
+    },
+    {
+      "q": "¿Qué hecho identifica a Kamata en la saga?",
+      "o": [
+        "Se enfrenta a Dominic en F9",
+        "Representa a la yakuza en Tokyo Drift",
+        "Empieza como policía encubierto",
+        "Guarda su dinero en una caja fuerte policial"
+      ],
+      "c": 1,
+      "explanation": "Kamata: Representa a la yakuza en Tokyo Drift. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-4894f9664c7d",
+      "img": "arcade/reference/rapidos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué intérprete encarna a Arturo Braga en Rápido y Furioso?",
+      "o": [
+        "Devon Aoki",
+        "John Ortiz",
+        "Brie Larson",
+        "Vanessa Kirby"
+      ],
+      "c": 1,
+      "explanation": "Arturo Braga: John Ortiz. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-a29c3101d1e0"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Arturo Braga?",
+      "o": [
+        "Es un narcotraficante",
+        "Es abuela de la familia Toretto",
+        "Es el antagonista de la segunda película",
+        "Trabaja con Hobbs al inicio de la sexta película"
+      ],
+      "c": 0,
+      "explanation": "Arturo Braga: Es un narcotraficante. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-79a29465616d"
+    },
+    {
+      "q": "¿Qué hecho identifica a Arturo Braga en la saga?",
+      "o": [
+        "Compite contra Jesse en Race Wars",
+        "Oculta su identidad bajo el nombre de Ramón Campos",
+        "Se le asocia con las carreras de derrape en Tokio",
+        "Persigue a Dominic y su equipo"
+      ],
+      "c": 1,
+      "explanation": "Arturo Braga: Oculta su identidad bajo el nombre de Ramón Campos. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-97568d51ee35"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Fenix Calderon en Rápido y Furioso?",
+      "o": [
+        "Laz Alonso",
+        "Rita Moreno",
+        "Kurt Russell",
+        "Dwayne Johnson"
+      ],
+      "c": 0,
+      "explanation": "Fenix Calderon: Laz Alonso. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-1886c961d9e1"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Fenix Calderon?",
+      "o": [
+        "Es un mercenario",
+        "Es el antagonista de la segunda película",
+        "Trabaja para Braga",
+        "Es hermano de Dominic y Mia"
+      ],
+      "c": 2,
+      "explanation": "Fenix Calderon: Trabaja para Braga. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-cb0c9d1893cd",
+      "img": "arcade/reference/rapidos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué hecho identifica a Fenix Calderon en la saga?",
+      "o": [
+        "Es un antagonista de la cuarta película",
+        "Colabora en la investigación contra Carter Verone",
+        "Conduce una Volkswagen Touran modificada",
+        "Se suma a la misión de Miami en la segunda película"
+      ],
+      "c": 0,
+      "explanation": "Fenix Calderon: Es un antagonista de la cuarta película. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-ac3cddda4173"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Tego Leo en Rápido y Furioso?",
+      "o": [
+        "Scott Eastwood",
+        "Jordana Brewster",
+        "Chad Lindberg",
+        "Tego Calderón"
+      ],
+      "c": 3,
+      "explanation": "Tego Leo: Tego Calderón. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-cc9aa715eef3"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Tego Leo?",
+      "o": [
+        "Es agente de aduanas encubierta",
+        "Es alumno y corredor en Tokio",
+        "Es un agente gubernamental",
+        "Es compañero de Rico Santos"
+      ],
+      "c": 3,
+      "explanation": "Tego Leo: Es compañero de Rico Santos. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-04aaa76e9b5e"
+    },
+    {
+      "q": "¿Qué hecho identifica a Tego Leo en la saga?",
+      "o": [
+        "Creó el programa Ojo de Dios",
+        "Lidera el equipo antagonista de la sexta película",
+        "Aparece en el equipo que roba combustible al inicio de la cuarta película",
+        "Forma parte del equipo del golpe de Río"
+      ],
+      "c": 3,
+      "explanation": "Tego Leo: Forma parte del equipo del golpe de Río. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-4061ab4f91b1"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Rico Santos en Rápido y Furioso?",
+      "o": [
+        "Don Omar",
+        "Jordana Brewster",
+        "Bow Wow",
+        "Eva Mendes"
+      ],
+      "c": 0,
+      "explanation": "Rico Santos: Don Omar. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-e23498e3c920",
+      "img": "arcade/reference/rapidos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Rico Santos?",
+      "o": [
+        "Es ayudante de Mr. Nobody",
+        "Es especialista técnico del equipo",
+        "Es madre de Deckard y Owen",
+        "Es compañero de Tego Leo"
+      ],
+      "c": 3,
+      "explanation": "Rico Santos: Es compañero de Tego Leo. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-0053fafc3510"
+    },
+    {
+      "q": "¿Qué hecho identifica a Rico Santos en la saga?",
+      "o": [
+        "Participa en los robos de camiones de la primera película",
+        "Guarda su dinero en una caja fuerte policial",
+        "Aparece en el equipo que roba combustible al inicio de la cuarta película",
+        "Es su principal hombre armado"
+      ],
+      "c": 2,
+      "explanation": "Rico Santos: Aparece en el equipo que roba combustible al inicio de la cuarta película. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-99f673050d86"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Hernán Reyes en Rápido y Furioso?",
+      "o": [
+        "Bow Wow",
+        "Gina Carano",
+        "Thom Barry",
+        "Joaquim de Almeida"
+      ],
+      "c": 3,
+      "explanation": "Hernán Reyes: Joaquim de Almeida. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-2b3cdd753fe7"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Hernán Reyes?",
+      "o": [
+        "Es rival de Dominic en Los Ángeles",
+        "Es hermano de Dominic y Mia",
+        "Es madre de Deckard y Owen",
+        "Es un poderoso criminal de Río"
+      ],
+      "c": 3,
+      "explanation": "Hernán Reyes: Es un poderoso criminal de Río. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-e9139184f21c"
+    },
+    {
+      "q": "¿Qué hecho identifica a Hernán Reyes en la saga?",
+      "o": [
+        "Conduce una Volkswagen Touran modificada",
+        "Se revela su alianza con Owen Shaw",
+        "Guarda su dinero en una caja fuerte policial",
+        "Forma una familia con Brian"
+      ],
+      "c": 2,
+      "explanation": "Hernán Reyes: Guarda su dinero en una caja fuerte policial. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-60ffe69726ba",
+      "img": "arcade/reference/rapidos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué intérprete encarna a Zizi en Rápido y Furioso?",
+      "o": [
+        "Rick Yune",
+        "Noel Gugliemi",
+        "Michael Irby",
+        "Rita Moreno"
+      ],
+      "c": 2,
+      "explanation": "Zizi: Michael Irby. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-792651da9f5b"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Zizi?",
+      "o": [
+        "Es amigo de Dominic",
+        "Se vincula sentimentalmente con Han",
+        "Trabaja para Hernán Reyes",
+        "Es amigo de infancia de Brian"
+      ],
+      "c": 2,
+      "explanation": "Zizi: Trabaja para Hernán Reyes. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-46e2539b9a3a"
+    },
+    {
+      "q": "¿Qué hecho identifica a Zizi en la saga?",
+      "o": [
+        "Conoce a Dominic en Brasil en Fast X",
+        "Se suma a la misión de Miami en la segunda película",
+        "Es su principal hombre armado",
+        "Se enfrenta a Brian en la séptima película"
+      ],
+      "c": 2,
+      "explanation": "Zizi: Es su principal hombre armado. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-d51f2ca6e99d"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Riley Hicks en Rápido y Furioso?",
+      "o": [
+        "Elsa Pataky",
+        "Vin Diesel",
+        "Gina Carano",
+        "Helen Mirren"
+      ],
+      "c": 2,
+      "explanation": "Riley Hicks: Gina Carano. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-ee252df23ecd"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Riley Hicks?",
+      "o": [
+        "Es un agente gubernamental",
+        "Trabaja con Hobbs al inicio de la sexta película",
+        "Es el antagonista de la segunda película",
+        "Forma pareja con Mia"
+      ],
+      "c": 1,
+      "explanation": "Riley Hicks: Trabaja con Hobbs al inicio de la sexta película. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-28dce704f559",
+      "img": "arcade/reference/rapidos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué hecho identifica a Riley Hicks en la saga?",
+      "o": [
+        "Se revela su alianza con Owen Shaw",
+        "Es madre del hijo de Dominic",
+        "Pierde una carrera contra Johnny Tran",
+        "Es su principal hombre armado"
+      ],
+      "c": 0,
+      "explanation": "Riley Hicks: Se revela su alianza con Owen Shaw. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-20b795438c88"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Mose Jakande en Rápido y Furioso?",
+      "o": [
+        "Helen Mirren",
+        "Sung Kang",
+        "Djimon Hounsou",
+        "Vanessa Kirby"
+      ],
+      "c": 2,
+      "explanation": "Mose Jakande: Djimon Hounsou. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-982f210268f1"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Mose Jakande?",
+      "o": [
+        "Es un mercenario",
+        "Es hija de Mr. Nobody",
+        "Se vincula sentimentalmente con Han",
+        "Es agente de aduanas encubierta"
+      ],
+      "c": 0,
+      "explanation": "Mose Jakande: Es un mercenario. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-41b42118dc50"
+    },
+    {
+      "q": "¿Qué hecho identifica a Mose Jakande en la saga?",
+      "o": [
+        "Aparece en la reunión familiar de Fast X",
+        "Forma parte del equipo del golpe de Río",
+        "Ayuda al equipo en Fast X",
+        "Persigue a Ramsey y el Ojo de Dios"
+      ],
+      "c": 3,
+      "explanation": "Mose Jakande: Persigue a Ramsey y el Ojo de Dios. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-c2ade4e318be"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Kiet en Rápido y Furioso?",
+      "o": [
+        "Ludacris",
+        "Tony Jaa",
+        "Idris Elba",
+        "Brian Tee"
+      ],
+      "c": 1,
+      "explanation": "Kiet: Tony Jaa. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-7394c252b2c0",
+      "img": "arcade/reference/rapidos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Kiet?",
+      "o": [
+        "Es hermano de Mia",
+        "Trabaja para Hernán Reyes",
+        "Es un agente gubernamental",
+        "Trabaja con los mercenarios de Jakande"
+      ],
+      "c": 3,
+      "explanation": "Kiet: Trabaja con los mercenarios de Jakande. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-2843635c49e6"
+    },
+    {
+      "q": "¿Qué hecho identifica a Kiet en la saga?",
+      "o": [
+        "Participa en los robos de camiones de la primera película",
+        "Se enfrenta a Brian en la séptima película",
+        "Organiza carreras en Miami en la segunda película",
+        "Guarda su dinero en una caja fuerte policial"
+      ],
+      "c": 1,
+      "explanation": "Kiet: Se enfrenta a Brian en la séptima película. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-df4457729b72"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Kara en Rápido y Furioso?",
+      "o": [
+        "Michael Irby",
+        "Gina Carano",
+        "Ronda Rousey",
+        "Daniela Melchior"
+      ],
+      "c": 2,
+      "explanation": "Kara: Ronda Rousey. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-e65f1a0a4d86"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Kara?",
+      "o": [
+        "Es jefa de seguridad",
+        "Es pareja de Dominic",
+        "Es un narcotraficante",
+        "Es especialista técnico del equipo"
+      ],
+      "c": 0,
+      "explanation": "Kara: Es jefa de seguridad. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-6562fbcec03b"
+    },
+    {
+      "q": "¿Qué hecho identifica a Kara en la saga?",
+      "o": [
+        "Se enfrenta a Brian en la séptima película",
+        "Es una agente perseguida por Brixton",
+        "Colabora en la investigación contra Carter Verone",
+        "Combate con Letty en Abu Dabi"
+      ],
+      "c": 3,
+      "explanation": "Kara: Combate con Letty en Abu Dabi. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-ec272629a82f",
+      "img": "arcade/reference/rapidos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué intérprete encarna a Magdalene Shaw en Rápido y Furioso?",
+      "o": [
+        "Michael Irby",
+        "Tony Jaa",
+        "Helen Mirren",
+        "Cole Hauser"
+      ],
+      "c": 2,
+      "explanation": "Magdalene Shaw: Helen Mirren. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-1c3b5fc33907"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Magdalene Shaw?",
+      "o": [
+        "Es amigo de Sean",
+        "Es un agente gubernamental",
+        "Es madre de Deckard y Owen",
+        "Es el antagonista de la segunda película"
+      ],
+      "c": 2,
+      "explanation": "Magdalene Shaw: Es madre de Deckard y Owen. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-2ab179e835bc"
+    },
+    {
+      "q": "¿Qué hecho identifica a Magdalene Shaw en la saga?",
+      "o": [
+        "Ayuda al equipo en Fast X",
+        "Busca vengar lo ocurrido a su hermano",
+        "Es conocida como Queenie",
+        "Persigue al equipo en Río antes de colaborar"
+      ],
+      "c": 2,
+      "explanation": "Magdalene Shaw: Es conocida como Queenie. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-54b50225fb83"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Raldo en Rápido y Furioso?",
+      "o": [
+        "Gina Carano",
+        "Celestino Cornielle",
+        "Rick Yune",
+        "Luke Evans"
+      ],
+      "c": 1,
+      "explanation": "Raldo: Celestino Cornielle. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-a30c0aaca0a5"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Raldo?",
+      "o": [
+        "Es hermano de Deckard",
+        "Es amigo de infancia de Brian",
+        "Es corredor en Cuba",
+        "Es compañero de Tego Leo"
+      ],
+      "c": 2,
+      "explanation": "Raldo: Es corredor en Cuba. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-a5ddf93a0560",
+      "img": "arcade/reference/rapidos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué hecho identifica a Raldo en la saga?",
+      "o": [
+        "Persigue a Dominic y su equipo",
+        "Creó el programa Ojo de Dios",
+        "Aparece en la primera película organizando autos para competir",
+        "Compite contra Dominic en La Habana"
+      ],
+      "c": 3,
+      "explanation": "Raldo: Compite contra Dominic en La Habana. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-aa93eae0921c"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Dante Reyes en Rápido y Furioso?",
+      "o": [
+        "Michelle Rodriguez",
+        "Don Omar",
+        "Gina Carano",
+        "Jason Momoa"
+      ],
+      "c": 3,
+      "explanation": "Dante Reyes: Jason Momoa. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-a3d90773e16c"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Dante Reyes?",
+      "o": [
+        "Es hermano de Deckard",
+        "Es mecánico del grupo original",
+        "Es compañero de Rico Santos",
+        "Es hijo de Hernán Reyes"
+      ],
+      "c": 3,
+      "explanation": "Dante Reyes: Es hijo de Hernán Reyes. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-4c4eb9af0aa8"
+    },
+    {
+      "q": "¿Qué hecho identifica a Dante Reyes en la saga?",
+      "o": [
+        "Se enfrenta a Brian en la séptima película",
+        "Es una agente perseguida por Brixton",
+        "Ayuda al equipo tras trabajar para Braga",
+        "Busca vengarse del equipo en Fast X"
+      ],
+      "c": 3,
+      "explanation": "Dante Reyes: Busca vengarse del equipo en Fast X. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-7abba19fd3f5"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Aimes en Rápido y Furioso?",
+      "o": [
+        "Laz Alonso",
+        "Rita Moreno",
+        "Nathalie Emmanuel",
+        "Alan Ritchson"
+      ],
+      "c": 3,
+      "explanation": "Aimes: Alan Ritchson. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-89a40d55cde4",
+      "img": "arcade/reference/rapidos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Aimes?",
+      "o": [
+        "Es abuela de la familia Toretto",
+        "Dirige la Agencia durante Fast X",
+        "Es ayudante de Mr. Nobody",
+        "Se relaciona con Sean y Takashi"
+      ],
+      "c": 1,
+      "explanation": "Aimes: Dirige la Agencia durante Fast X. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-80a4b9a990a9"
+    },
+    {
+      "q": "¿Qué hecho identifica a Aimes en la saga?",
+      "o": [
+        "Creó el programa Ojo de Dios",
+        "Persigue a Dominic y su equipo",
+        "Vive en Tokio en Tokyo Drift",
+        "Oculta su identidad bajo el nombre de Ramón Campos"
+      ],
+      "c": 1,
+      "explanation": "Aimes: Persigue a Dominic y su equipo. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-dd9221a3c909"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Tess en Rápido y Furioso?",
+      "o": [
+        "Brie Larson",
+        "John Cena",
+        "Jason Momoa",
+        "Idris Elba"
+      ],
+      "c": 0,
+      "explanation": "Tess: Brie Larson. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-f51092fa258d"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Tess?",
+      "o": [
+        "Es pareja de Dominic",
+        "Es mentor de Sean",
+        "Es hija de Mr. Nobody",
+        "Es hermana de Dominic"
+      ],
+      "c": 2,
+      "explanation": "Tess: Es hija de Mr. Nobody. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-5555f49f7512"
+    },
+    {
+      "q": "¿Qué hecho identifica a Tess en la saga?",
+      "o": [
+        "Organiza carreras en Miami en la segunda película",
+        "Aparece en la reunión familiar de Fast X",
+        "Ayuda al equipo en Fast X",
+        "Tiene mejoras cibernéticas"
+      ],
+      "c": 2,
+      "explanation": "Tess: Ayuda al equipo en Fast X. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-8516155e8daa",
+      "img": "arcade/reference/rapidos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué intérprete encarna a Isabel Neves en Rápido y Furioso?",
+      "o": [
+        "Chad Lindberg",
+        "Nathalie Kelley",
+        "Daniela Melchior",
+        "Bow Wow"
+      ],
+      "c": 2,
+      "explanation": "Isabel Neves: Daniela Melchior. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-90c49ad07763"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Isabel Neves?",
+      "o": [
+        "Es sobrino de un jefe yakuza",
+        "Trabaja con Hobbs al inicio de la sexta película",
+        "Es hermana de Deckard",
+        "Es hermana de Elena"
+      ],
+      "c": 3,
+      "explanation": "Isabel Neves: Es hermana de Elena. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-9be91b7bb89c"
+    },
+    {
+      "q": "¿Qué hecho identifica a Isabel Neves en la saga?",
+      "o": [
+        "Persigue a Ramsey y el Ojo de Dios",
+        "Tiene mejoras cibernéticas",
+        "Conoce a Dominic en Brasil en Fast X",
+        "Persigue al equipo en Río antes de colaborar"
+      ],
+      "c": 2,
+      "explanation": "Isabel Neves: Conoce a Dominic en Brasil en Fast X. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-9d2a90016351"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Abuelita Toretto en Rápido y Furioso?",
+      "o": [
+        "Michelle Rodriguez",
+        "Eva Mendes",
+        "Rita Moreno",
+        "Daniela Melchior"
+      ],
+      "c": 2,
+      "explanation": "Abuelita Toretto: Rita Moreno. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-839910f3df96"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Abuelita Toretto?",
+      "o": [
+        "Es abuela de la familia Toretto",
+        "Es especialista técnico del equipo",
+        "Es hermano de Mia",
+        "Es agente del DSS"
+      ],
+      "c": 0,
+      "explanation": "Abuelita Toretto: Es abuela de la familia Toretto. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-5bebc7a8189d",
+      "img": "arcade/reference/rapidos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué hecho identifica a Abuelita Toretto en la saga?",
+      "o": [
+        "Aparece en la octava película",
+        "Organiza carreras en Miami en la segunda película",
+        "Aparece en la reunión familiar de Fast X",
+        "Compite contra Jesse en Race Wars"
+      ],
+      "c": 2,
+      "explanation": "Abuelita Toretto: Aparece en la reunión familiar de Fast X. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-b14928903529"
+    },
+    {
+      "q": "¿Qué intérprete encarna a Agent Bilkins en Rápido y Furioso?",
+      "o": [
+        "Lucas Black",
+        "Dwayne Johnson",
+        "Thom Barry",
+        "Scott Eastwood"
+      ],
+      "c": 2,
+      "explanation": "Agent Bilkins: Thom Barry. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-f81d44aab29c"
+    },
+    {
+      "q": "¿Qué vínculo o función corresponde a Agent Bilkins?",
+      "o": [
+        "Es un agente que supervisa a Brian",
+        "Es ayudante de Mr. Nobody",
+        "Es amigo de Dominic",
+        "Es compañero de Rico Santos"
+      ],
+      "c": 0,
+      "explanation": "Agent Bilkins: Es un agente que supervisa a Brian. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-1d950b1f7d74"
+    },
+    {
+      "q": "¿Qué hecho identifica a Agent Bilkins en la saga?",
+      "o": [
+        "Aparece en la primera y la segunda película",
+        "Combate con Letty en Abu Dabi",
+        "Forma parte del equipo del golpe de Río",
+        "Compite contra Dominic en La Habana"
+      ],
+      "c": 0,
+      "explanation": "Agent Bilkins: Aparece en la primera y la segunda película. La selección abarca las películas hasta Fast X y el derivado Hobbs & Shaw; no presupone entregas posteriores.",
+      "e": "🏁",
+      "id": "rapidos-11a06a290810"
+    }
+  ]
+}

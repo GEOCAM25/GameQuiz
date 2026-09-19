@@ -1,0 +1,2022 @@
+{
+  "cat": "harrypotter",
+  "name": "Harry Potter",
+  "emoji": "🪄",
+  "edition": "4.0",
+  "sources": [
+    "https://www.harrypotter.com/fact-file/characters-and-pets/hermione-granger",
+    "https://www.harrypotter.com/fact-file"
+  ],
+  "questions": [
+    {
+      "q": "¿Qué papel o afiliación corresponde a Harry Potter en Harry Potter?",
+      "o": [
+        "Líder de los mortífagos",
+        "Alumno de Gryffindor",
+        "Funcionario del Ministerio",
+        "Celador de Hogwarts"
+      ],
+      "c": 1,
+      "explanation": "Harry Potter: Alumno de Gryffindor. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-602858d89873",
+      "img": "arcade/reference/harrypotter.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Harry Potter?",
+      "o": [
+        "Su lechuza se llama Hedwig",
+        "Es hijo de Molly y Arthur",
+        "Harry lo libera mediante un calcetín",
+        "Dirige la casa Ravenclaw"
+      ],
+      "c": 0,
+      "explanation": "Harry Potter: Su lechuza se llama Hedwig. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-bc2229877202"
+    },
+    {
+      "q": "¿Qué hecho identifica a Harry Potter?",
+      "o": [
+        "Sostiene que la varita elige al mago",
+        "Fue derrotado por Dumbledore en 1945",
+        "Fue llamado el Príncipe Mestizo",
+        "Sobrevivió de bebé a la maldición de Voldemort"
+      ],
+      "c": 3,
+      "explanation": "Harry Potter: Sobrevivió de bebé a la maldición de Voldemort. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-e69d57416aca"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Hermione Granger en Harry Potter?",
+      "o": [
+        "Alumno de Gryffindor",
+        "Líder de los mortífagos",
+        "Alumna de Gryffindor",
+        "Rompedor de maldiciones"
+      ],
+      "c": 2,
+      "explanation": "Hermione Granger: Alumna de Gryffindor. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-d25c4a87c6ae"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Hermione Granger?",
+      "o": [
+        "Su gato se llama Crookshanks",
+        "Es gemelo de Fred",
+        "Es padrino de Harry",
+        "Es la hermana menor de Ron"
+      ],
+      "c": 0,
+      "explanation": "Hermione Granger: Su gato se llama Crookshanks. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-5a543c4b56c9"
+    },
+    {
+      "q": "¿Qué hecho identifica a Hermione Granger?",
+      "o": [
+        "Puede transformarse en gato",
+        "Trabaja para Gringotts",
+        "Trabajó protegiendo al primer ministro muggle",
+        "Sus padres son dentistas muggles"
+      ],
+      "c": 3,
+      "explanation": "Hermione Granger: Sus padres son dentistas muggles. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-61e04d452c27",
+      "img": "arcade/reference/harrypotter.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Ron Weasley en Harry Potter?",
+      "o": [
+        "Mortífago que se rebeló contra Voldemort",
+        "Profesora de Herbología",
+        "Alumno de Gryffindor",
+        "Profesor de Pociones"
+      ],
+      "c": 2,
+      "explanation": "Ron Weasley: Alumno de Gryffindor. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-91ef4cdd2c1b"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Ron Weasley?",
+      "o": [
+        "Representa a Hogwarts en el Torneo de los Tres Magos",
+        "Es hijo de Molly y Arthur",
+        "Harry lo libera mediante un calcetín",
+        "Dirige la casa Gryffindor"
+      ],
+      "c": 1,
+      "explanation": "Ron Weasley: Es hijo de Molly y Arthur. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-c5c40f648271"
+    },
+    {
+      "q": "¿Qué hecho identifica a Ron Weasley?",
+      "o": [
+        "Es especialmente hábil en ajedrez mágico",
+        "Intentó destruir el horrocrux del guardapelo",
+        "Traicionó el escondite de los Potter",
+        "Fue propietario de la Varita de Saúco"
+      ],
+      "c": 0,
+      "explanation": "Ron Weasley: Es especialmente hábil en ajedrez mágico. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-40bcc15e7a51"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Ginny Weasley en Harry Potter?",
+      "o": [
+        "Alumna de Gryffindor",
+        "Miembro de la Orden del Fénix",
+        "Ministro de Magia durante varios libros",
+        "Rompedor de maldiciones"
+      ],
+      "c": 0,
+      "explanation": "Ginny Weasley: Alumna de Gryffindor. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-8df996310322"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Ginny Weasley?",
+      "o": [
+        "Dirige la casa Gryffindor",
+        "Es esposa de Remus Lupin",
+        "Es hijo de Lucius y Narcissa",
+        "Es la hermana menor de Ron"
+      ],
+      "c": 3,
+      "explanation": "Ginny Weasley: Es la hermana menor de Ron. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-477e33a7246b",
+      "img": "arcade/reference/harrypotter.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué hecho identifica a Ginny Weasley?",
+      "o": [
+        "Fue derrotado por Dumbledore en 1945",
+        "Juega como buscadora en quidditch",
+        "Fue poseída mediante el diario de Tom Riddle",
+        "Muere durante la batalla de Hogwarts"
+      ],
+      "c": 2,
+      "explanation": "Ginny Weasley: Fue poseída mediante el diario de Tom Riddle. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-1bcf356515d3"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Fred Weasley en Harry Potter?",
+      "o": [
+        "Fabricante de varitas",
+        "Alumno de Gryffindor",
+        "Profesor de Pociones",
+        "Ministro de Magia durante la guerra"
+      ],
+      "c": 1,
+      "explanation": "Fred Weasley: Alumno de Gryffindor. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-8fe3a169f8ab"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Fred Weasley?",
+      "o": [
+        "Vivió disfrazado de la rata Scabbers",
+        "Representa a Hogwarts en el Torneo de los Tres Magos",
+        "Enseña en una torre de Hogwarts",
+        "Es gemelo de George"
+      ],
+      "c": 3,
+      "explanation": "Fred Weasley: Es gemelo de George. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-ec1121c073fd"
+    },
+    {
+      "q": "¿Qué hecho identifica a Fred Weasley?",
+      "o": [
+        "Juega como buscadora en quidditch",
+        "Muere durante la batalla de Hogwarts",
+        "Puede ver thestrals",
+        "Intenta conseguir el apoyo público de Harry"
+      ],
+      "c": 1,
+      "explanation": "Fred Weasley: Muere durante la batalla de Hogwarts. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-c9d869a1bbfe"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a George Weasley en Harry Potter?",
+      "o": [
+        "Mortífago que se rebeló contra Voldemort",
+        "Alumno de Gryffindor",
+        "Profesor de Encantamientos",
+        "Funcionaria del Ministerio"
+      ],
+      "c": 1,
+      "explanation": "George Weasley: Alumno de Gryffindor. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-4d627f12fde3",
+      "img": "arcade/reference/harrypotter.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con George Weasley?",
+      "o": [
+        "Es gemelo de Fred",
+        "Organiza el Club de las Eminencias",
+        "Es hija de Xenophilius",
+        "Es gemelo de George"
+      ],
+      "c": 0,
+      "explanation": "George Weasley: Es gemelo de Fred. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-628e28d7b812"
+    },
+    {
+      "q": "¿Qué hecho identifica a George Weasley?",
+      "o": [
+        "Trabajó protegiendo al primer ministro muggle",
+        "Sus padres son dentistas muggles",
+        "Pierde una oreja antes de la batalla final",
+        "Creó varios horrocruxes"
+      ],
+      "c": 2,
+      "explanation": "George Weasley: Pierde una oreja antes de la batalla final. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-668c1c370533"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Percy Weasley en Harry Potter?",
+      "o": [
+        "Director de Hogwarts",
+        "Rompedor de maldiciones",
+        "Funcionario del Ministerio",
+        "Profesor de Pociones"
+      ],
+      "c": 2,
+      "explanation": "Percy Weasley: Funcionario del Ministerio. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-e83963bbfffe"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Percy Weasley?",
+      "o": [
+        "Es hermano de Bill y Charlie",
+        "Es padre de Draco",
+        "Es hermano de Bill y Percy",
+        "Su gata se llama Señora Norris"
+      ],
+      "c": 0,
+      "explanation": "Percy Weasley: Es hermano de Bill y Charlie. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-0597c63522fc"
+    },
+    {
+      "q": "¿Qué hecho identifica a Percy Weasley?",
+      "o": [
+        "Puede transformarse en gato",
+        "Es metamorfomaga",
+        "Es un squib",
+        "Fue prefecto de Gryffindor"
+      ],
+      "c": 3,
+      "explanation": "Percy Weasley: Fue prefecto de Gryffindor. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-d949ae6aad36",
+      "img": "arcade/reference/harrypotter.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Bill Weasley en Harry Potter?",
+      "o": [
+        "Ministro de Magia durante la guerra",
+        "Rompedor de maldiciones",
+        "Celador de Hogwarts",
+        "Profesora de Herbología"
+      ],
+      "c": 1,
+      "explanation": "Bill Weasley: Rompedor de maldiciones. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-c40dca86f641"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Bill Weasley?",
+      "o": [
+        "Se casa con Fleur Delacour",
+        "Es padre de Draco",
+        "Su sapo se llama Trevor",
+        "Fue amigo de James Potter"
+      ],
+      "c": 0,
+      "explanation": "Bill Weasley: Se casa con Fleur Delacour. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-aff7c08d13e3"
+    },
+    {
+      "q": "¿Qué hecho identifica a Bill Weasley?",
+      "o": [
+        "Trabaja para Gringotts",
+        "Robaba méritos modificando recuerdos ajenos",
+        "Pierde una oreja antes de la batalla final",
+        "Miente a Voldemort sobre la muerte de Harry"
+      ],
+      "c": 0,
+      "explanation": "Bill Weasley: Trabaja para Gringotts. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-881b98480a00"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Charlie Weasley en Harry Potter?",
+      "o": [
+        "Especialista en dragones",
+        "Director de Hogwarts",
+        "Mortífago",
+        "Elfo doméstico"
+      ],
+      "c": 0,
+      "explanation": "Charlie Weasley: Especialista en dragones. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-885ff8b6c5ba"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Charlie Weasley?",
+      "o": [
+        "Es esposa de Remus Lupin",
+        "Representa a Hogwarts en el Torneo de los Tres Magos",
+        "Su gato se llama Crookshanks",
+        "Es hermano de Bill y Percy"
+      ],
+      "c": 3,
+      "explanation": "Charlie Weasley: Es hermano de Bill y Percy. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-84a98fdc0778",
+      "img": "arcade/reference/harrypotter.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué hecho identifica a Charlie Weasley?",
+      "o": [
+        "Lleva correspondencia de Harry",
+        "Conservó el guardapelo relacionado con Regulus",
+        "Su sacrificio protegió a su hijo",
+        "Trabaja con dragones en Rumania"
+      ],
+      "c": 3,
+      "explanation": "Charlie Weasley: Trabaja con dragones en Rumania. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-db86b2e191c7"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Molly Weasley en Harry Potter?",
+      "o": [
+        "Profesor de Pociones",
+        "Miembro de la Orden del Fénix",
+        "Miembro de la familia Black por nacimiento",
+        "Funcionario del Ministerio"
+      ],
+      "c": 1,
+      "explanation": "Molly Weasley: Miembro de la Orden del Fénix. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-8074a2f86403"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Molly Weasley?",
+      "o": [
+        "Fue amigo de James Potter",
+        "Es madre de siete hijos",
+        "Juega para la selección búlgara",
+        "Su perro se llama Fang"
+      ],
+      "c": 1,
+      "explanation": "Molly Weasley: Es madre de siete hijos. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-681c5c79822d"
+    },
+    {
+      "q": "¿Qué hecho identifica a Molly Weasley?",
+      "o": [
+        "Derrota a Bellatrix Lestrange",
+        "Desarma a Dumbledore en la torre de Astronomía",
+        "Sostiene que la varita elige al mago",
+        "Fue llamado el Príncipe Mestizo"
+      ],
+      "c": 0,
+      "explanation": "Molly Weasley: Derrota a Bellatrix Lestrange. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-8f445bba8ac7"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Arthur Weasley en Harry Potter?",
+      "o": [
+        "Funcionario del Ministerio",
+        "Auror",
+        "Profesora de Herbología",
+        "Líder de los mortífagos"
+      ],
+      "c": 0,
+      "explanation": "Arthur Weasley: Funcionario del Ministerio. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-f2a5071d39b3",
+      "img": "arcade/reference/harrypotter.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Arthur Weasley?",
+      "o": [
+        "Es autor de libros sobre supuestas hazañas",
+        "Es esposo de Molly",
+        "Fue amigo de James Potter",
+        "Se casa con Fleur Delacour"
+      ],
+      "c": 1,
+      "explanation": "Arthur Weasley: Es esposo de Molly. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-d1829c4de9eb"
+    },
+    {
+      "q": "¿Qué hecho identifica a Arthur Weasley?",
+      "o": [
+        "Muere durante la batalla de Hogwarts",
+        "Siente fascinación por los objetos muggles",
+        "Conserva un recuerdo clave sobre Tom Riddle",
+        "Su forma de animago es un perro negro"
+      ],
+      "c": 1,
+      "explanation": "Arthur Weasley: Siente fascinación por los objetos muggles. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-dcdb301b83d7"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Albus Dumbledore en Harry Potter?",
+      "o": [
+        "Profesor de Encantamientos",
+        "Director de Hogwarts",
+        "Mago oscuro",
+        "Alumna de Beauxbatons"
+      ],
+      "c": 1,
+      "explanation": "Albus Dumbledore: Director de Hogwarts. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-45e715d94d32"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Albus Dumbledore?",
+      "o": [
+        "Su fénix se llama Fawkes",
+        "Tiene un ojo mágico",
+        "Antes dirigía la Oficina de Aurores",
+        "Es la hermana menor de Ron"
+      ],
+      "c": 0,
+      "explanation": "Albus Dumbledore: Su fénix se llama Fawkes. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-e090b86fa70d"
+    },
+    {
+      "q": "¿Qué hecho identifica a Albus Dumbledore?",
+      "o": [
+        "Cultiva mandrágoras para una cura",
+        "Fue propietario de la Varita de Saúco",
+        "Es medio gigante",
+        "Es una seguidora fanática de Voldemort"
+      ],
+      "c": 1,
+      "explanation": "Albus Dumbledore: Fue propietario de la Varita de Saúco. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-4032b39bf04a",
+      "img": "arcade/reference/harrypotter.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Minerva McGonagall en Harry Potter?",
+      "o": [
+        "Celador de Hogwarts",
+        "Profesor de Pociones",
+        "Profesor de Encantamientos",
+        "Profesora de Transformaciones"
+      ],
+      "c": 3,
+      "explanation": "Minerva McGonagall: Profesora de Transformaciones. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-77854f7fa92f"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Minerva McGonagall?",
+      "o": [
+        "Es hermano de Bill y Charlie",
+        "Se relaciona con el Ministerio británico",
+        "Es madre de Harry",
+        "Dirige la casa Gryffindor"
+      ],
+      "c": 3,
+      "explanation": "Minerva McGonagall: Dirige la casa Gryffindor. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-cf7aea315a86"
+    },
+    {
+      "q": "¿Qué hecho identifica a Minerva McGonagall?",
+      "o": [
+        "Fue poseída mediante el diario de Tom Riddle",
+        "Puede transformarse en gato",
+        "Su forma de animago es un perro negro",
+        "Fue llamado el Príncipe Mestizo"
+      ],
+      "c": 1,
+      "explanation": "Minerva McGonagall: Puede transformarse en gato. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-cf5fc1a5ca0f"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Severus Snape en Harry Potter?",
+      "o": [
+        "Ministro de Magia durante varios libros",
+        "Ministro de Magia durante la guerra",
+        "Mortífago",
+        "Profesor de Pociones"
+      ],
+      "c": 3,
+      "explanation": "Severus Snape: Profesor de Pociones. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-21906b8bdce1"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Severus Snape?",
+      "o": [
+        "Tiene un ojo mágico",
+        "Fue novia de Cedric",
+        "Se relaciona con el Ministerio británico",
+        "Su Patronus tiene forma de cierva"
+      ],
+      "c": 3,
+      "explanation": "Severus Snape: Su Patronus tiene forma de cierva. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-ae16d9551ce2",
+      "img": "arcade/reference/harrypotter.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué hecho identifica a Severus Snape?",
+      "o": [
+        "Fue prefecto de Gryffindor",
+        "Sus padres son dentistas muggles",
+        "Conservó el guardapelo relacionado con Regulus",
+        "Fue llamado el Príncipe Mestizo"
+      ],
+      "c": 3,
+      "explanation": "Severus Snape: Fue llamado el Príncipe Mestizo. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-0bb8f7611863"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Rubeus Hagrid en Harry Potter?",
+      "o": [
+        "Alumno de Durmstrang",
+        "Director de Hogwarts",
+        "Especialista en dragones",
+        "Guardabosques de Hogwarts"
+      ],
+      "c": 3,
+      "explanation": "Rubeus Hagrid: Guardabosques de Hogwarts. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-002444c1261c"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Rubeus Hagrid?",
+      "o": [
+        "Su sapo se llama Trevor",
+        "Tiene un ojo mágico",
+        "Su perro se llama Fang",
+        "Usa un turbante"
+      ],
+      "c": 2,
+      "explanation": "Rubeus Hagrid: Su perro se llama Fang. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-0645b61c8fbd"
+    },
+    {
+      "q": "¿Qué hecho identifica a Rubeus Hagrid?",
+      "o": [
+        "Trabaja con dragones en Rumania",
+        "Es medio gigante",
+        "Fue poseída mediante el diario de Tom Riddle",
+        "Cultiva mandrágoras para una cura"
+      ],
+      "c": 1,
+      "explanation": "Rubeus Hagrid: Es medio gigante. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-7fb0b44a0c4a"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Neville Longbottom en Harry Potter?",
+      "o": [
+        "Lechuza de Harry",
+        "Alumno de Hufflepuff",
+        "Alumno de Gryffindor",
+        "Alumna de Ravenclaw"
+      ],
+      "c": 2,
+      "explanation": "Neville Longbottom: Alumno de Gryffindor. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-9990193689a8",
+      "img": "arcade/reference/harrypotter.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Neville Longbottom?",
+      "o": [
+        "Se relaciona con el Ministerio británico",
+        "Es autor de libros sobre supuestas hazañas",
+        "Es gemelo de George",
+        "Su sapo se llama Trevor"
+      ],
+      "c": 3,
+      "explanation": "Neville Longbottom: Su sapo se llama Trevor. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-ea26ce4b9fc6"
+    },
+    {
+      "q": "¿Qué hecho identifica a Neville Longbottom?",
+      "o": [
+        "Destruye a Nagini con la espada de Gryffindor",
+        "Puede transformarse en gato",
+        "Pronunció la profecía sobre Harry y Voldemort",
+        "Intentó destruir el horrocrux del guardapelo"
+      ],
+      "c": 0,
+      "explanation": "Neville Longbottom: Destruye a Nagini con la espada de Gryffindor. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-33a7d63f4319"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Luna Lovegood en Harry Potter?",
+      "o": [
+        "Fabricante de varitas",
+        "Auror",
+        "Alumna de Ravenclaw",
+        "Funcionaria del Ministerio"
+      ],
+      "c": 2,
+      "explanation": "Luna Lovegood: Alumna de Ravenclaw. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-a576a61c6154"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Luna Lovegood?",
+      "o": [
+        "Es autor de libros sobre supuestas hazañas",
+        "Utiliza una pluma que deja heridas",
+        "Es hija de Xenophilius",
+        "Es hermano de Bill y Percy"
+      ],
+      "c": 2,
+      "explanation": "Luna Lovegood: Es hija de Xenophilius. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-268167a9a3e9"
+    },
+    {
+      "q": "¿Qué hecho identifica a Luna Lovegood?",
+      "o": [
+        "Es una seguidora fanática de Voldemort",
+        "Puede ver thestrals",
+        "Su forma de animago es un perro negro",
+        "Robaba méritos modificando recuerdos ajenos"
+      ],
+      "c": 1,
+      "explanation": "Luna Lovegood: Puede ver thestrals. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-17a7e457eaeb",
+      "img": "arcade/reference/harrypotter.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Draco Malfoy en Harry Potter?",
+      "o": [
+        "Lechuza de Harry",
+        "Miembro de la Orden del Fénix",
+        "Alumno de Slytherin",
+        "Rompedor de maldiciones"
+      ],
+      "c": 2,
+      "explanation": "Draco Malfoy: Alumno de Slytherin. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-6d05b221e786"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Draco Malfoy?",
+      "o": [
+        "Es padre de Draco",
+        "Es hijo de Molly y Arthur",
+        "Es hijo de Lucius y Narcissa",
+        "Es hermano de Sirius"
+      ],
+      "c": 2,
+      "explanation": "Draco Malfoy: Es hijo de Lucius y Narcissa. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-93bc61964a60"
+    },
+    {
+      "q": "¿Qué hecho identifica a Draco Malfoy?",
+      "o": [
+        "Fue poseída mediante el diario de Tom Riddle",
+        "Robaba méritos modificando recuerdos ajenos",
+        "Desarma a Dumbledore en la torre de Astronomía",
+        "Oculta a Voldemort detrás de su cabeza"
+      ],
+      "c": 2,
+      "explanation": "Draco Malfoy: Desarma a Dumbledore en la torre de Astronomía. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-c7cbdc28e719"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Lucius Malfoy en Harry Potter?",
+      "o": [
+        "Mortífago que se rebeló contra Voldemort",
+        "Rompedor de maldiciones",
+        "Alumno de Gryffindor",
+        "Mortífago"
+      ],
+      "c": 3,
+      "explanation": "Lucius Malfoy: Mortífago. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-bbd67b5f38be"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Lucius Malfoy?",
+      "o": [
+        "Es gemelo de Fred",
+        "Es padre de Draco",
+        "Tuvo una relación cercana con Dumbledore",
+        "Su gato se llama Crookshanks"
+      ],
+      "c": 1,
+      "explanation": "Lucius Malfoy: Es padre de Draco. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-a22f95014dc2",
+      "img": "arcade/reference/harrypotter.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué hecho identifica a Lucius Malfoy?",
+      "o": [
+        "Lleva correspondencia de Harry",
+        "Sobrevivió de bebé a la maldición de Voldemort",
+        "Se niega inicialmente a aceptar el regreso de Voldemort",
+        "Tenía a Dobby como elfo doméstico"
+      ],
+      "c": 3,
+      "explanation": "Lucius Malfoy: Tenía a Dobby como elfo doméstico. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-35f6df39cf10"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Narcissa Malfoy en Harry Potter?",
+      "o": [
+        "Miembro de la familia Black por nacimiento",
+        "Director de Hogwarts",
+        "Mago oscuro",
+        "Alumno de Hufflepuff"
+      ],
+      "c": 0,
+      "explanation": "Narcissa Malfoy: Miembro de la familia Black por nacimiento. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-e962ef927de3"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Narcissa Malfoy?",
+      "o": [
+        "Es madre de Draco",
+        "Dirige la casa Hufflepuff",
+        "Fue novia de Cedric",
+        "Se casa con Fleur Delacour"
+      ],
+      "c": 0,
+      "explanation": "Narcissa Malfoy: Es madre de Draco. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-6ed2d5b25547"
+    },
+    {
+      "q": "¿Qué hecho identifica a Narcissa Malfoy?",
+      "o": [
+        "Es un squib",
+        "Miente a Voldemort sobre la muerte de Harry",
+        "Cultiva mandrágoras para una cura",
+        "Muere en el cementerio de Little Hangleton"
+      ],
+      "c": 1,
+      "explanation": "Narcissa Malfoy: Miente a Voldemort sobre la muerte de Harry. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-7f10609dc776"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Bellatrix Lestrange en Harry Potter?",
+      "o": [
+        "Miembro de la Orden del Fénix",
+        "Mortífaga",
+        "Alumno de Hufflepuff",
+        "Profesor de Defensa contra las Artes Oscuras"
+      ],
+      "c": 1,
+      "explanation": "Bellatrix Lestrange: Mortífaga. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-f4ae635aecc3",
+      "img": "arcade/reference/harrypotter.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Bellatrix Lestrange?",
+      "o": [
+        "Es la hermana menor de Ron",
+        "Es hermana de Narcissa",
+        "Juega para la selección búlgara",
+        "Es gemelo de George"
+      ],
+      "c": 1,
+      "explanation": "Bellatrix Lestrange: Es hermana de Narcissa. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-c67ac670dfd0"
+    },
+    {
+      "q": "¿Qué hecho identifica a Bellatrix Lestrange?",
+      "o": [
+        "Representa a Beauxbatons en el Torneo de los Tres Magos",
+        "Robaba méritos modificando recuerdos ajenos",
+        "Es una seguidora fanática de Voldemort",
+        "Sus padres son dentistas muggles"
+      ],
+      "c": 2,
+      "explanation": "Bellatrix Lestrange: Es una seguidora fanática de Voldemort. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-934e74e9c805"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Sirius Black en Harry Potter?",
+      "o": [
+        "Fabricante de varitas",
+        "Profesor de Encantamientos",
+        "Rompedor de maldiciones",
+        "Miembro de la Orden del Fénix"
+      ],
+      "c": 3,
+      "explanation": "Sirius Black: Miembro de la Orden del Fénix. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-70bfe945eeff"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Sirius Black?",
+      "o": [
+        "Dirige la casa Hufflepuff",
+        "Es padrino de Harry",
+        "Dirige la casa Ravenclaw",
+        "Es padre de Draco"
+      ],
+      "c": 1,
+      "explanation": "Sirius Black: Es padrino de Harry. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-b7c36e0e4aff"
+    },
+    {
+      "q": "¿Qué hecho identifica a Sirius Black?",
+      "o": [
+        "Ayuda a escapar de la mansión Malfoy",
+        "Su forma de animago es un perro negro",
+        "Impone decretos autoritarios en Hogwarts",
+        "Su sacrificio protegió a su hijo"
+      ],
+      "c": 1,
+      "explanation": "Sirius Black: Su forma de animago es un perro negro. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-454389a64411",
+      "img": "arcade/reference/harrypotter.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Remus Lupin en Harry Potter?",
+      "o": [
+        "Profesor de Defensa contra las Artes Oscuras",
+        "Especialista en dragones",
+        "Profesora de Adivinación",
+        "Miembro de la familia Black por nacimiento"
+      ],
+      "c": 0,
+      "explanation": "Remus Lupin: Profesor de Defensa contra las Artes Oscuras. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-281156d43903"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Remus Lupin?",
+      "o": [
+        "Es esposa de Remus Lupin",
+        "Fue amigo de James Potter",
+        "Su tienda está en el Callejón Diagon",
+        "Su fénix se llama Fawkes"
+      ],
+      "c": 1,
+      "explanation": "Remus Lupin: Fue amigo de James Potter. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-349d59608d0e"
+    },
+    {
+      "q": "¿Qué hecho identifica a Remus Lupin?",
+      "o": [
+        "Sus padres son dentistas muggles",
+        "Sostiene que la varita elige al mago",
+        "Conservó el guardapelo relacionado con Regulus",
+        "Es un hombre lobo"
+      ],
+      "c": 3,
+      "explanation": "Remus Lupin: Es un hombre lobo. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-6ec72f5095f1"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a James Potter en Harry Potter?",
+      "o": [
+        "Alumno de Hufflepuff",
+        "Profesor de Defensa contra las Artes Oscuras",
+        "Mortífaga",
+        "Miembro de la Orden del Fénix"
+      ],
+      "c": 3,
+      "explanation": "James Potter: Miembro de la Orden del Fénix. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-3829487d4d18"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con James Potter?",
+      "o": [
+        "Se casa con Bill Weasley",
+        "Es esposo de Molly",
+        "Es gemelo de George",
+        "Es padre de Harry"
+      ],
+      "c": 3,
+      "explanation": "James Potter: Es padre de Harry. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-3c4cc63f3175",
+      "img": "arcade/reference/harrypotter.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué hecho identifica a James Potter?",
+      "o": [
+        "Su forma de animago era un ciervo",
+        "Es un squib",
+        "Traicionó el escondite de los Potter",
+        "Fue derrotado por Dumbledore en 1945"
+      ],
+      "c": 0,
+      "explanation": "James Potter: Su forma de animago era un ciervo. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-6bf7d4df27a7"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Lily Potter en Harry Potter?",
+      "o": [
+        "Mortífaga",
+        "Profesor de Pociones",
+        "Lechuza de Harry",
+        "Miembro de la Orden del Fénix"
+      ],
+      "c": 3,
+      "explanation": "Lily Potter: Miembro de la Orden del Fénix. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-a87689cb7745"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Lily Potter?",
+      "o": [
+        "Usa un turbante",
+        "Su sapo se llama Trevor",
+        "Es madre de Harry",
+        "Servía a la familia Black"
+      ],
+      "c": 2,
+      "explanation": "Lily Potter: Es madre de Harry. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-b190ef15d93e"
+    },
+    {
+      "q": "¿Qué hecho identifica a Lily Potter?",
+      "o": [
+        "Su sacrificio protegió a su hijo",
+        "Muere en el cementerio de Little Hangleton",
+        "Es metamorfomaga",
+        "Sus padres son dentistas muggles"
+      ],
+      "c": 0,
+      "explanation": "Lily Potter: Su sacrificio protegió a su hijo. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-d497923b189e"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Peter Pettigrew en Harry Potter?",
+      "o": [
+        "Profesor de Encantamientos",
+        "Alumno de Slytherin",
+        "Mortífago",
+        "Fabricante de varitas"
+      ],
+      "c": 2,
+      "explanation": "Peter Pettigrew: Mortífago. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-fb5e5551f0b9",
+      "img": "arcade/reference/harrypotter.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Peter Pettigrew?",
+      "o": [
+        "Vivió disfrazado de la rata Scabbers",
+        "Fue amigo de James Potter",
+        "Dirige la casa Hufflepuff",
+        "Es gemelo de George"
+      ],
+      "c": 0,
+      "explanation": "Peter Pettigrew: Vivió disfrazado de la rata Scabbers. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-576bcadf3266"
+    },
+    {
+      "q": "¿Qué hecho identifica a Peter Pettigrew?",
+      "o": [
+        "Traicionó el escondite de los Potter",
+        "Sostiene que la varita elige al mago",
+        "Muere durante la batalla de Hogwarts",
+        "Es metamorfomaga"
+      ],
+      "c": 0,
+      "explanation": "Peter Pettigrew: Traicionó el escondite de los Potter. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-36b481c9102c"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Lord Voldemort en Harry Potter?",
+      "o": [
+        "Funcionaria del Ministerio",
+        "Alumno de Gryffindor",
+        "Alumna de Gryffindor",
+        "Líder de los mortífagos"
+      ],
+      "c": 3,
+      "explanation": "Lord Voldemort: Líder de los mortífagos. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-faabcdbc5bc3"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Lord Voldemort?",
+      "o": [
+        "Utiliza una pluma que deja heridas",
+        "Se casa con Fleur Delacour",
+        "Es padre de Harry",
+        "Su nombre original es Tom Riddle"
+      ],
+      "c": 3,
+      "explanation": "Lord Voldemort: Su nombre original es Tom Riddle. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-1cbd5967e6ba"
+    },
+    {
+      "q": "¿Qué hecho identifica a Lord Voldemort?",
+      "o": [
+        "Creó varios horrocruxes",
+        "Representa a Beauxbatons en el Torneo de los Tres Magos",
+        "Derrota a Bellatrix Lestrange",
+        "Traicionó el escondite de los Potter"
+      ],
+      "c": 0,
+      "explanation": "Lord Voldemort: Creó varios horrocruxes. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-158f0c06ab77",
+      "img": "arcade/reference/harrypotter.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Alastor Moody en Harry Potter?",
+      "o": [
+        "Funcionario del Ministerio",
+        "Elfo doméstico",
+        "Aurora",
+        "Auror"
+      ],
+      "c": 3,
+      "explanation": "Alastor Moody: Auror. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-cb065109b533"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Alastor Moody?",
+      "o": [
+        "Fue amigo de James Potter",
+        "Es hermana de Narcissa",
+        "Tiene un ojo mágico",
+        "Su nombre original es Tom Riddle"
+      ],
+      "c": 2,
+      "explanation": "Alastor Moody: Tiene un ojo mágico. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-bb9e3e400a94"
+    },
+    {
+      "q": "¿Qué hecho identifica a Alastor Moody?",
+      "o": [
+        "Derrota a Bellatrix Lestrange",
+        "Fue prefecto de Gryffindor",
+        "Sobrevivió de bebé a la maldición de Voldemort",
+        "Su apodo es Ojoloco"
+      ],
+      "c": 3,
+      "explanation": "Alastor Moody: Su apodo es Ojoloco. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-48af71efc23c"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Nymphadora Tonks en Harry Potter?",
+      "o": [
+        "Alumna de Ravenclaw",
+        "Rompedor de maldiciones",
+        "Aurora",
+        "Profesora de Herbología"
+      ],
+      "c": 2,
+      "explanation": "Nymphadora Tonks: Aurora. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-40ea24c33ee8"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Nymphadora Tonks?",
+      "o": [
+        "Es hermano de Sirius",
+        "Usa un turbante",
+        "Es esposa de Remus Lupin",
+        "Fue amigo de James Potter"
+      ],
+      "c": 2,
+      "explanation": "Nymphadora Tonks: Es esposa de Remus Lupin. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-cee599dd787a",
+      "img": "arcade/reference/harrypotter.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué hecho identifica a Nymphadora Tonks?",
+      "o": [
+        "Es metamorfomaga",
+        "Muere en el cementerio de Little Hangleton",
+        "Puede ver thestrals",
+        "Tenía a Dobby como elfo doméstico"
+      ],
+      "c": 0,
+      "explanation": "Nymphadora Tonks: Es metamorfomaga. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-8824de104d26"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Kingsley Shacklebolt en Harry Potter?",
+      "o": [
+        "Alumno de Gryffindor",
+        "Auror",
+        "Profesor de Pociones",
+        "Elfo doméstico"
+      ],
+      "c": 1,
+      "explanation": "Kingsley Shacklebolt: Auror. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-b380a65548ad"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Kingsley Shacklebolt?",
+      "o": [
+        "Es hijo de Lucius y Narcissa",
+        "Participa en la Orden del Fénix",
+        "Enseña en una torre de Hogwarts",
+        "Dirige la casa Gryffindor"
+      ],
+      "c": 1,
+      "explanation": "Kingsley Shacklebolt: Participa en la Orden del Fénix. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-944e90c7e3eb"
+    },
+    {
+      "q": "¿Qué hecho identifica a Kingsley Shacklebolt?",
+      "o": [
+        "Fue propietario de la Varita de Saúco",
+        "Lleva correspondencia de Harry",
+        "Impone decretos autoritarios en Hogwarts",
+        "Trabajó protegiendo al primer ministro muggle"
+      ],
+      "c": 3,
+      "explanation": "Kingsley Shacklebolt: Trabajó protegiendo al primer ministro muggle. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-531014666d67"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Cedric Diggory en Harry Potter?",
+      "o": [
+        "Mortífago que se rebeló contra Voldemort",
+        "Guardabosques de Hogwarts",
+        "Alumno de Hufflepuff",
+        "Alumno de Slytherin"
+      ],
+      "c": 2,
+      "explanation": "Cedric Diggory: Alumno de Hufflepuff. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-51e056376b8c",
+      "img": "arcade/reference/harrypotter.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Cedric Diggory?",
+      "o": [
+        "Es padre de Harry",
+        "Servía a la familia Black",
+        "Representa a Hogwarts en el Torneo de los Tres Magos",
+        "Es hermana de Narcissa"
+      ],
+      "c": 2,
+      "explanation": "Cedric Diggory: Representa a Hogwarts en el Torneo de los Tres Magos. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-769ba5d1ffbe"
+    },
+    {
+      "q": "¿Qué hecho identifica a Cedric Diggory?",
+      "o": [
+        "Fue poseída mediante el diario de Tom Riddle",
+        "Muere en el cementerio de Little Hangleton",
+        "Su sacrificio protegió a su hijo",
+        "Su forma de animago era un ciervo"
+      ],
+      "c": 1,
+      "explanation": "Cedric Diggory: Muere en el cementerio de Little Hangleton. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-94559b2ffb93"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Cho Chang en Harry Potter?",
+      "o": [
+        "Alumno de Slytherin",
+        "Profesora de Transformaciones",
+        "Fabricante de varitas",
+        "Alumna de Ravenclaw"
+      ],
+      "c": 3,
+      "explanation": "Cho Chang: Alumna de Ravenclaw. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-7191295dde33"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Cho Chang?",
+      "o": [
+        "Fue novia de Cedric",
+        "Antes dirigía la Oficina de Aurores",
+        "Es hijo de Molly y Arthur",
+        "Es padrino de Harry"
+      ],
+      "c": 0,
+      "explanation": "Cho Chang: Fue novia de Cedric. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-5f0bcabf0504"
+    },
+    {
+      "q": "¿Qué hecho identifica a Cho Chang?",
+      "o": [
+        "Pierde una oreja antes de la batalla final",
+        "Enseña el encantamiento de levitación",
+        "Es especialmente hábil en ajedrez mágico",
+        "Juega como buscadora en quidditch"
+      ],
+      "c": 3,
+      "explanation": "Cho Chang: Juega como buscadora en quidditch. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-4bf36a3fc14d",
+      "img": "arcade/reference/harrypotter.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Fleur Delacour en Harry Potter?",
+      "o": [
+        "Ministro de Magia durante la guerra",
+        "Profesora de Adivinación",
+        "Alumna de Beauxbatons",
+        "Profesor de Defensa contra las Artes Oscuras"
+      ],
+      "c": 2,
+      "explanation": "Fleur Delacour: Alumna de Beauxbatons. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-23b68c663791"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Fleur Delacour?",
+      "o": [
+        "Se casa con Bill Weasley",
+        "Su gato se llama Crookshanks",
+        "Dirige la casa Ravenclaw",
+        "Harry lo libera mediante un calcetín"
+      ],
+      "c": 0,
+      "explanation": "Fleur Delacour: Se casa con Bill Weasley. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-74da119fb3e0"
+    },
+    {
+      "q": "¿Qué hecho identifica a Fleur Delacour?",
+      "o": [
+        "Es metamorfomaga",
+        "Desarma a Dumbledore en la torre de Astronomía",
+        "Representa a Beauxbatons en el Torneo de los Tres Magos",
+        "Enseña el encantamiento de levitación"
+      ],
+      "c": 2,
+      "explanation": "Fleur Delacour: Representa a Beauxbatons en el Torneo de los Tres Magos. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-811967f3b325"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Viktor Krum en Harry Potter?",
+      "o": [
+        "Alumno de Durmstrang",
+        "Alumna de Gryffindor",
+        "Mortífago",
+        "Profesor de Pociones"
+      ],
+      "c": 0,
+      "explanation": "Viktor Krum: Alumno de Durmstrang. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-aa694474b4d1"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Viktor Krum?",
+      "o": [
+        "Juega para la selección búlgara",
+        "Tiene un ojo mágico",
+        "Es hermano de Bill y Percy",
+        "Su perro se llama Fang"
+      ],
+      "c": 0,
+      "explanation": "Viktor Krum: Juega para la selección búlgara. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-df0d064047e7",
+      "img": "arcade/reference/harrypotter.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué hecho identifica a Viktor Krum?",
+      "o": [
+        "Oculta a Voldemort detrás de su cabeza",
+        "Intenta conseguir el apoyo público de Harry",
+        "Robaba méritos modificando recuerdos ajenos",
+        "Es buscador de quidditch"
+      ],
+      "c": 3,
+      "explanation": "Viktor Krum: Es buscador de quidditch. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-596131e6bb9f"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Dolores Umbridge en Harry Potter?",
+      "o": [
+        "Profesor de Pociones",
+        "Funcionaria del Ministerio",
+        "Alumna de Beauxbatons",
+        "Celador de Hogwarts"
+      ],
+      "c": 1,
+      "explanation": "Dolores Umbridge: Funcionaria del Ministerio. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-a386ee77f70e"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Dolores Umbridge?",
+      "o": [
+        "Es hijo de Lucius y Narcissa",
+        "Utiliza una pluma que deja heridas",
+        "Es madre de Harry",
+        "Es padrino de Harry"
+      ],
+      "c": 1,
+      "explanation": "Dolores Umbridge: Utiliza una pluma que deja heridas. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-5f85c6753115"
+    },
+    {
+      "q": "¿Qué hecho identifica a Dolores Umbridge?",
+      "o": [
+        "Impone decretos autoritarios en Hogwarts",
+        "Se niega inicialmente a aceptar el regreso de Voldemort",
+        "Es buscador de quidditch",
+        "Su forma de animago es un perro negro"
+      ],
+      "c": 0,
+      "explanation": "Dolores Umbridge: Impone decretos autoritarios en Hogwarts. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-cbf74496ef1b"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Cornelius Fudge en Harry Potter?",
+      "o": [
+        "Ministro de Magia durante varios libros",
+        "Profesora de Herbología",
+        "Alumna de Gryffindor",
+        "Profesor de Encantamientos"
+      ],
+      "c": 0,
+      "explanation": "Cornelius Fudge: Ministro de Magia durante varios libros. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-3fde483d74c3",
+      "img": "arcade/reference/harrypotter.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Cornelius Fudge?",
+      "o": [
+        "Usa un turbante",
+        "Se relaciona con el Ministerio británico",
+        "Dirige la casa Ravenclaw",
+        "Fue amigo de James Potter"
+      ],
+      "c": 1,
+      "explanation": "Cornelius Fudge: Se relaciona con el Ministerio británico. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-94a673b0f9a9"
+    },
+    {
+      "q": "¿Qué hecho identifica a Cornelius Fudge?",
+      "o": [
+        "Fue llamado el Príncipe Mestizo",
+        "Intentó destruir el horrocrux del guardapelo",
+        "Fue derrotado por Dumbledore en 1945",
+        "Se niega inicialmente a aceptar el regreso de Voldemort"
+      ],
+      "c": 3,
+      "explanation": "Cornelius Fudge: Se niega inicialmente a aceptar el regreso de Voldemort. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-ce2029601f07"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Rufus Scrimgeour en Harry Potter?",
+      "o": [
+        "Alumna de Ravenclaw",
+        "Miembro de la familia Black por nacimiento",
+        "Ministro de Magia durante la guerra",
+        "Especialista en dragones"
+      ],
+      "c": 2,
+      "explanation": "Rufus Scrimgeour: Ministro de Magia durante la guerra. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-f8e951166b2c"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Rufus Scrimgeour?",
+      "o": [
+        "Servía a la familia Black",
+        "Su fénix se llama Fawkes",
+        "Dirige la casa Gryffindor",
+        "Antes dirigía la Oficina de Aurores"
+      ],
+      "c": 3,
+      "explanation": "Rufus Scrimgeour: Antes dirigía la Oficina de Aurores. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-16db3fab57fb"
+    },
+    {
+      "q": "¿Qué hecho identifica a Rufus Scrimgeour?",
+      "o": [
+        "Intenta conseguir el apoyo público de Harry",
+        "Derrota a Bellatrix Lestrange",
+        "Puede transformarse en gato",
+        "Ayuda a escapar de la mansión Malfoy"
+      ],
+      "c": 0,
+      "explanation": "Rufus Scrimgeour: Intenta conseguir el apoyo público de Harry. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-596e59d4177d",
+      "img": "arcade/reference/harrypotter.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Gilderoy Lockhart en Harry Potter?",
+      "o": [
+        "Profesor de Defensa contra las Artes Oscuras",
+        "Mortífago que se rebeló contra Voldemort",
+        "Alumno de Hufflepuff",
+        "Alumno de Gryffindor"
+      ],
+      "c": 0,
+      "explanation": "Gilderoy Lockhart: Profesor de Defensa contra las Artes Oscuras. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-3df8122798a7"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Gilderoy Lockhart?",
+      "o": [
+        "Es autor de libros sobre supuestas hazañas",
+        "Servía a la familia Black",
+        "Participa en la Orden del Fénix",
+        "Es padre de Harry"
+      ],
+      "c": 0,
+      "explanation": "Gilderoy Lockhart: Es autor de libros sobre supuestas hazañas. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-9c7ce90853e7"
+    },
+    {
+      "q": "¿Qué hecho identifica a Gilderoy Lockhart?",
+      "o": [
+        "Siente fascinación por los objetos muggles",
+        "Robaba méritos modificando recuerdos ajenos",
+        "Su forma de animago era un ciervo",
+        "Derrota a Bellatrix Lestrange"
+      ],
+      "c": 1,
+      "explanation": "Gilderoy Lockhart: Robaba méritos modificando recuerdos ajenos. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-b8960c42522e"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Quirinus Quirrell en Harry Potter?",
+      "o": [
+        "Profesor de Defensa contra las Artes Oscuras",
+        "Especialista en dragones",
+        "Director de Hogwarts",
+        "Funcionario del Ministerio"
+      ],
+      "c": 0,
+      "explanation": "Quirinus Quirrell: Profesor de Defensa contra las Artes Oscuras. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-97fd3fe439e3"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Quirinus Quirrell?",
+      "o": [
+        "Usa un turbante",
+        "Es autor de libros sobre supuestas hazañas",
+        "Utiliza una pluma que deja heridas",
+        "Es padrino de Harry"
+      ],
+      "c": 0,
+      "explanation": "Quirinus Quirrell: Usa un turbante. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-f6ed79d74f50",
+      "img": "arcade/reference/harrypotter.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué hecho identifica a Quirinus Quirrell?",
+      "o": [
+        "Oculta a Voldemort detrás de su cabeza",
+        "Trabaja con dragones en Rumania",
+        "Es una seguidora fanática de Voldemort",
+        "Es un hombre lobo"
+      ],
+      "c": 0,
+      "explanation": "Quirinus Quirrell: Oculta a Voldemort detrás de su cabeza. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-f3c32969a2d2"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Horace Slughorn en Harry Potter?",
+      "o": [
+        "Fabricante de varitas",
+        "Profesor de Pociones",
+        "Ministro de Magia durante varios libros",
+        "Elfo doméstico"
+      ],
+      "c": 1,
+      "explanation": "Horace Slughorn: Profesor de Pociones. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-83759117abf2"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Horace Slughorn?",
+      "o": [
+        "Tuvo una relación cercana con Dumbledore",
+        "Es gemelo de George",
+        "Organiza el Club de las Eminencias",
+        "Es padrino de Harry"
+      ],
+      "c": 2,
+      "explanation": "Horace Slughorn: Organiza el Club de las Eminencias. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-cc1de4e11f2b"
+    },
+    {
+      "q": "¿Qué hecho identifica a Horace Slughorn?",
+      "o": [
+        "Representa a Beauxbatons en el Torneo de los Tres Magos",
+        "Puede ver thestrals",
+        "Conserva un recuerdo clave sobre Tom Riddle",
+        "Ayuda a escapar de la mansión Malfoy"
+      ],
+      "c": 2,
+      "explanation": "Horace Slughorn: Conserva un recuerdo clave sobre Tom Riddle. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-925af2bfd24d"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Sybill Trelawney en Harry Potter?",
+      "o": [
+        "Profesora de Adivinación",
+        "Alumna de Beauxbatons",
+        "Alumna de Gryffindor",
+        "Lechuza de Harry"
+      ],
+      "c": 0,
+      "explanation": "Sybill Trelawney: Profesora de Adivinación. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-e44dc2fc6604",
+      "img": "arcade/reference/harrypotter.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Sybill Trelawney?",
+      "o": [
+        "Organiza el Club de las Eminencias",
+        "Usa un turbante",
+        "Es la hermana menor de Ron",
+        "Enseña en una torre de Hogwarts"
+      ],
+      "c": 3,
+      "explanation": "Sybill Trelawney: Enseña en una torre de Hogwarts. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-ef7bdce2c826"
+    },
+    {
+      "q": "¿Qué hecho identifica a Sybill Trelawney?",
+      "o": [
+        "Pronunció la profecía sobre Harry y Voldemort",
+        "Se niega inicialmente a aceptar el regreso de Voldemort",
+        "Trabajó protegiendo al primer ministro muggle",
+        "Muere en el cementerio de Little Hangleton"
+      ],
+      "c": 0,
+      "explanation": "Sybill Trelawney: Pronunció la profecía sobre Harry y Voldemort. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-19bcd23c2883"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Pomona Sprout en Harry Potter?",
+      "o": [
+        "Rompedor de maldiciones",
+        "Funcionaria del Ministerio",
+        "Funcionario del Ministerio",
+        "Profesora de Herbología"
+      ],
+      "c": 3,
+      "explanation": "Pomona Sprout: Profesora de Herbología. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-82207e70150e"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Pomona Sprout?",
+      "o": [
+        "Organiza el Club de las Eminencias",
+        "Dirige la casa Hufflepuff",
+        "Es hijo de Molly y Arthur",
+        "Tuvo una relación cercana con Dumbledore"
+      ],
+      "c": 1,
+      "explanation": "Pomona Sprout: Dirige la casa Hufflepuff. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-23192f23bae2"
+    },
+    {
+      "q": "¿Qué hecho identifica a Pomona Sprout?",
+      "o": [
+        "Muere durante la batalla de Hogwarts",
+        "Cultiva mandrágoras para una cura",
+        "Siente fascinación por los objetos muggles",
+        "Conservó el guardapelo relacionado con Regulus"
+      ],
+      "c": 1,
+      "explanation": "Pomona Sprout: Cultiva mandrágoras para una cura. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-4b6d569ed633",
+      "img": "arcade/reference/harrypotter.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Filius Flitwick en Harry Potter?",
+      "o": [
+        "Profesor de Encantamientos",
+        "Alumno de Gryffindor",
+        "Alumno de Hufflepuff",
+        "Alumna de Gryffindor"
+      ],
+      "c": 0,
+      "explanation": "Filius Flitwick: Profesor de Encantamientos. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-4b7bc790bdf2"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Filius Flitwick?",
+      "o": [
+        "Su fénix se llama Fawkes",
+        "Es hijo de Lucius y Narcissa",
+        "Dirige la casa Ravenclaw",
+        "Es padrino de Harry"
+      ],
+      "c": 2,
+      "explanation": "Filius Flitwick: Dirige la casa Ravenclaw. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-0e95e0f03ec7"
+    },
+    {
+      "q": "¿Qué hecho identifica a Filius Flitwick?",
+      "o": [
+        "Enseña el encantamiento de levitación",
+        "Siente fascinación por los objetos muggles",
+        "Es un hombre lobo",
+        "Pronunció la profecía sobre Harry y Voldemort"
+      ],
+      "c": 0,
+      "explanation": "Filius Flitwick: Enseña el encantamiento de levitación. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-96881d08dff9"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Argus Filch en Harry Potter?",
+      "o": [
+        "Director de Hogwarts",
+        "Profesora de Adivinación",
+        "Celador de Hogwarts",
+        "Fabricante de varitas"
+      ],
+      "c": 2,
+      "explanation": "Argus Filch: Celador de Hogwarts. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-0b21e7d2c129"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Argus Filch?",
+      "o": [
+        "Es padre de Harry",
+        "Fue un regalo de Hagrid",
+        "Su gata se llama Señora Norris",
+        "Su nombre original es Tom Riddle"
+      ],
+      "c": 2,
+      "explanation": "Argus Filch: Su gata se llama Señora Norris. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-ef1f22f13d37",
+      "img": "arcade/reference/harrypotter.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué hecho identifica a Argus Filch?",
+      "o": [
+        "Su forma de animago era un ciervo",
+        "Puede transformarse en gato",
+        "Es un squib",
+        "Es una seguidora fanática de Voldemort"
+      ],
+      "c": 2,
+      "explanation": "Argus Filch: Es un squib. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-03ef5eea78f8"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Dobby en Harry Potter?",
+      "o": [
+        "Mortífago que se rebeló contra Voldemort",
+        "Profesora de Adivinación",
+        "Profesora de Transformaciones",
+        "Elfo doméstico"
+      ],
+      "c": 3,
+      "explanation": "Dobby: Elfo doméstico. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-62c906fdcc3d"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Dobby?",
+      "o": [
+        "Su sapo se llama Trevor",
+        "Harry lo libera mediante un calcetín",
+        "Se casa con Fleur Delacour",
+        "Enseña en una torre de Hogwarts"
+      ],
+      "c": 1,
+      "explanation": "Dobby: Harry lo libera mediante un calcetín. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-75f8709b43a8"
+    },
+    {
+      "q": "¿Qué hecho identifica a Dobby?",
+      "o": [
+        "Ayuda a escapar de la mansión Malfoy",
+        "Es un hombre lobo",
+        "Puede ver thestrals",
+        "Su sacrificio protegió a su hijo"
+      ],
+      "c": 0,
+      "explanation": "Dobby: Ayuda a escapar de la mansión Malfoy. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-ad0e071a95b8"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Kreacher en Harry Potter?",
+      "o": [
+        "Elfo doméstico",
+        "Aurora",
+        "Mago oscuro",
+        "Auror"
+      ],
+      "c": 0,
+      "explanation": "Kreacher: Elfo doméstico. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-47484c0139fc",
+      "img": "arcade/reference/harrypotter.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Kreacher?",
+      "o": [
+        "Dirige la casa Gryffindor",
+        "Servía a la familia Black",
+        "Participa en la Orden del Fénix",
+        "Usa un turbante"
+      ],
+      "c": 1,
+      "explanation": "Kreacher: Servía a la familia Black. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-57b1c8ffe9df"
+    },
+    {
+      "q": "¿Qué hecho identifica a Kreacher?",
+      "o": [
+        "Derrota a Bellatrix Lestrange",
+        "Conservó el guardapelo relacionado con Regulus",
+        "Puede transformarse en gato",
+        "Pronunció la profecía sobre Harry y Voldemort"
+      ],
+      "c": 1,
+      "explanation": "Kreacher: Conservó el guardapelo relacionado con Regulus. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-12d4dd96e4ba"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Hedwig en Harry Potter?",
+      "o": [
+        "Funcionaria del Ministerio",
+        "Ministro de Magia durante la guerra",
+        "Profesora de Transformaciones",
+        "Lechuza de Harry"
+      ],
+      "c": 3,
+      "explanation": "Hedwig: Lechuza de Harry. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-ab3469041143"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Hedwig?",
+      "o": [
+        "Es hijo de Lucius y Narcissa",
+        "Enseña en una torre de Hogwarts",
+        "Es padrino de Harry",
+        "Fue un regalo de Hagrid"
+      ],
+      "c": 3,
+      "explanation": "Hedwig: Fue un regalo de Hagrid. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-f3ae18c519b7"
+    },
+    {
+      "q": "¿Qué hecho identifica a Hedwig?",
+      "o": [
+        "Lleva correspondencia de Harry",
+        "Siente fascinación por los objetos muggles",
+        "Su apodo es Ojoloco",
+        "Fue propietario de la Varita de Saúco"
+      ],
+      "c": 0,
+      "explanation": "Hedwig: Lleva correspondencia de Harry. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-9d6c31199879",
+      "img": "arcade/reference/harrypotter.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Garrick Ollivander en Harry Potter?",
+      "o": [
+        "Profesor de Defensa contra las Artes Oscuras",
+        "Mortífago que se rebeló contra Voldemort",
+        "Ministro de Magia durante varios libros",
+        "Fabricante de varitas"
+      ],
+      "c": 3,
+      "explanation": "Garrick Ollivander: Fabricante de varitas. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-3d15cb6e1e0c"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Garrick Ollivander?",
+      "o": [
+        "Su tienda está en el Callejón Diagon",
+        "Se casa con Fleur Delacour",
+        "Es esposo de Molly",
+        "Dirige la casa Gryffindor"
+      ],
+      "c": 0,
+      "explanation": "Garrick Ollivander: Su tienda está en el Callejón Diagon. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-cd2f070d77ca"
+    },
+    {
+      "q": "¿Qué hecho identifica a Garrick Ollivander?",
+      "o": [
+        "Se niega inicialmente a aceptar el regreso de Voldemort",
+        "Desarma a Dumbledore en la torre de Astronomía",
+        "Sostiene que la varita elige al mago",
+        "Oculta a Voldemort detrás de su cabeza"
+      ],
+      "c": 2,
+      "explanation": "Garrick Ollivander: Sostiene que la varita elige al mago. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-868430679457"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Gellert Grindelwald en Harry Potter?",
+      "o": [
+        "Lechuza de Harry",
+        "Alumna de Gryffindor",
+        "Líder de los mortífagos",
+        "Mago oscuro"
+      ],
+      "c": 3,
+      "explanation": "Gellert Grindelwald: Mago oscuro. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-fe4250624c4e"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Gellert Grindelwald?",
+      "o": [
+        "Tuvo una relación cercana con Dumbledore",
+        "Es hija de Xenophilius",
+        "Es esposa de Remus Lupin",
+        "Dirige la casa Ravenclaw"
+      ],
+      "c": 0,
+      "explanation": "Gellert Grindelwald: Tuvo una relación cercana con Dumbledore. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-23b8cd63deb0",
+      "img": "arcade/reference/harrypotter.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué hecho identifica a Gellert Grindelwald?",
+      "o": [
+        "Intenta conseguir el apoyo público de Harry",
+        "Miente a Voldemort sobre la muerte de Harry",
+        "Es medio gigante",
+        "Fue derrotado por Dumbledore en 1945"
+      ],
+      "c": 3,
+      "explanation": "Gellert Grindelwald: Fue derrotado por Dumbledore en 1945. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-838b4479b95a"
+    },
+    {
+      "q": "¿Qué papel o afiliación corresponde a Regulus Black en Harry Potter?",
+      "o": [
+        "Lechuza de Harry",
+        "Guardabosques de Hogwarts",
+        "Miembro de la familia Black por nacimiento",
+        "Mortífago que se rebeló contra Voldemort"
+      ],
+      "c": 3,
+      "explanation": "Regulus Black: Mortífago que se rebeló contra Voldemort. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-43ea664acf4e"
+    },
+    {
+      "q": "¿Qué vínculo u objeto se asocia con Regulus Black?",
+      "o": [
+        "Es hermano de Sirius",
+        "Es padre de Harry",
+        "Es gemelo de George",
+        "Usa un turbante"
+      ],
+      "c": 0,
+      "explanation": "Regulus Black: Es hermano de Sirius. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-bad1d3fcfbc8"
+    },
+    {
+      "q": "¿Qué hecho identifica a Regulus Black?",
+      "o": [
+        "Es buscador de quidditch",
+        "Fue propietario de la Varita de Saúco",
+        "Creó varios horrocruxes",
+        "Intentó destruir el horrocrux del guardapelo"
+      ],
+      "c": 3,
+      "explanation": "Regulus Black: Intentó destruir el horrocrux del guardapelo. Referencia a los siete libros y sus adaptaciones. Las afiliaciones pueden corresponder a etapas distintas de la historia.",
+      "e": "🪄",
+      "id": "harrypotter-1489f48e1887"
+    }
+  ]
+}

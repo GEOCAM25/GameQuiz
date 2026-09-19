@@ -1,0 +1,2023 @@
+{
+  "cat": "letras",
+  "name": "Completa la letra y la canción",
+  "emoji": "🎤",
+  "edition": "4.0",
+  "sources": [
+    "https://www.musicapopular.cl/",
+    "https://www.losbunkers.cl/",
+    "https://www.monlaferte.com/"
+  ],
+  "questions": [
+    {
+      "q": "Completa este fragmento breve de «Tren al sur»: «Siete y media en la ___».",
+      "o": [
+        "mañana",
+        "plaza",
+        "noche",
+        "tarde"
+      ],
+      "c": 0,
+      "explanation": "mañana. ",
+      "e": "🎤",
+      "id": "letras-11875157b3d6",
+      "img": "arcade/reference/letras.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Tren al sur» incluida en este reto? (Clásico chileno)",
+      "o": [
+        "Lucybell",
+        "Los Prisioneros",
+        "Víctor Jara",
+        "Celia Cruz"
+      ],
+      "c": 1,
+      "explanation": "Los Prisioneros. ",
+      "e": "🎤",
+      "id": "letras-f2c307884601"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Tren al sur» de Los Prisioneros?",
+      "o": [
+        "Una mezcla de agitación, resistencia y lamento",
+        "Un viaje ferroviario hacia el sur",
+        "Una afirmación sobre beber",
+        "Un acercamiento romántico gradual"
+      ],
+      "c": 1,
+      "explanation": "Un viaje ferroviario hacia el sur. ",
+      "e": "🎤",
+      "id": "letras-ce4474168592"
+    },
+    {
+      "q": "Completa este fragmento breve de «El baile de los que sobran»: «Nos dijeron cuando ___».",
+      "o": [
+        "viejos",
+        "grandes",
+        "solos",
+        "chicos"
+      ],
+      "c": 3,
+      "explanation": "chicos. ",
+      "e": "🎤",
+      "id": "letras-aedda8c73fe6"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «El baile de los que sobran» incluida en este reto? (Clásico chileno)",
+      "o": [
+        "Los Bunkers",
+        "Karol G con Nicki Minaj",
+        "Los Prisioneros",
+        "Juan Gabriel"
+      ],
+      "c": 2,
+      "explanation": "Los Prisioneros. ",
+      "e": "🎤",
+      "id": "letras-1af8fe46ee79"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «El baile de los que sobran» de Los Prisioneros?",
+      "o": [
+        "Un encuentro y coqueteo en lenguaje urbano",
+        "Una evocación del amor ligada a la música",
+        "El deseo de un vínculo amoroso intenso",
+        "La exclusión que persiste después de la etapa escolar"
+      ],
+      "c": 3,
+      "explanation": "La exclusión que persiste después de la etapa escolar. ",
+      "e": "🎤",
+      "id": "letras-dc28d0ed63be",
+      "img": "arcade/reference/letras.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "Completa este fragmento breve de «Estrechez de corazón»: «No te pares frente a ___».",
+      "o": [
+        "él",
+        "ella",
+        "ti",
+        "mí"
+      ],
+      "c": 3,
+      "explanation": "mí. ",
+      "e": "🎤",
+      "id": "letras-3e7e55a2db29"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Estrechez de corazón» incluida en este reto? (Clásico chileno)",
+      "o": [
+        "Fito Páez",
+        "Los Prisioneros",
+        "Los Abuelos de la Nada",
+        "Mon Laferte con Enrique Bunbury"
+      ],
+      "c": 1,
+      "explanation": "Los Prisioneros. ",
+      "e": "🎤",
+      "id": "letras-1f693e7b67d2"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Estrechez de corazón» de Los Prisioneros?",
+      "o": [
+        "Un enamoramiento intenso desde el primer encuentro",
+        "Una invitación a soltar el control",
+        "Un sentimiento de soledad intensificado",
+        "La falta de amplitud emocional en una relación"
+      ],
+      "c": 3,
+      "explanation": "La falta de amplitud emocional en una relación. ",
+      "e": "🎤",
+      "id": "letras-d9cb730a07c5"
+    },
+    {
+      "q": "Completa este fragmento breve de «Paramar»: «Recuerdo cuando dije que este ___».",
+      "o": [
+        "verano",
+        "día",
+        "otoño",
+        "invierno"
+      ],
+      "c": 3,
+      "explanation": "invierno. ",
+      "e": "🎤",
+      "id": "letras-eda99c6fd85e"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Paramar» incluida en este reto? (Clásico chileno)",
+      "o": [
+        "Los Jaivas",
+        "Enrique Iglesias con Descemer Bueno y Gente de Zona",
+        "Karol G",
+        "Los Prisioneros"
+      ],
+      "c": 3,
+      "explanation": "Los Prisioneros. ",
+      "e": "🎤",
+      "id": "letras-d11023e8d249",
+      "img": "arcade/reference/letras.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Paramar» de Los Prisioneros?",
+      "o": [
+        "Una espera larga bajo la lluvia",
+        "Una petición de besos suaves",
+        "El amor comparado con aprender a nadar",
+        "Una afirmación sobre beber"
+      ],
+      "c": 2,
+      "explanation": "El amor comparado con aprender a nadar. ",
+      "e": "🎤",
+      "id": "letras-363f35928d9a"
+    },
+    {
+      "q": "Completa este fragmento breve de «Déjate caer»: «Déjate ___».",
+      "o": [
+        "cantar",
+        "soñar",
+        "caer",
+        "volver"
+      ],
+      "c": 2,
+      "explanation": "caer. ",
+      "e": "🎤",
+      "id": "letras-bac311ccc511"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Déjate caer» incluida en este reto? (Rock chileno)",
+      "o": [
+        "Los Abuelos de la Nada",
+        "Los Tres",
+        "Santana con Maná",
+        "Víctor Jara"
+      ],
+      "c": 1,
+      "explanation": "Los Tres. ",
+      "e": "🎤",
+      "id": "letras-6436df560ce0"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Déjate caer» de Los Tres?",
+      "o": [
+        "El recuerdo de aprendizajes que dejó un amor",
+        "La atracción de observar a alguien tras una persiana",
+        "La intimidad expresada a través de la respiración",
+        "Una invitación a soltar el control"
+      ],
+      "c": 3,
+      "explanation": "Una invitación a soltar el control. ",
+      "e": "🎤",
+      "id": "letras-8065a0ffc153"
+    },
+    {
+      "q": "Completa este fragmento breve de «La espada y la pared»: «Entre la espada y la ___».",
+      "o": [
+        "calle",
+        "pared",
+        "puerta",
+        "luna"
+      ],
+      "c": 1,
+      "explanation": "pared. ",
+      "e": "🎤",
+      "id": "letras-3a19a93fe28a",
+      "img": "arcade/reference/letras.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Quién interpreta la versión de «La espada y la pared» incluida en este reto? (Rock chileno)",
+      "o": [
+        "Los Tres",
+        "Enanitos Verdes",
+        "Celia Cruz",
+        "Los Jaivas"
+      ],
+      "c": 0,
+      "explanation": "Los Tres. ",
+      "e": "🎤",
+      "id": "letras-b259bccd4dfd"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «La espada y la pared» de Los Tres?",
+      "o": [
+        "Un viaje ferroviario hacia el sur",
+        "Estar atrapado entre presiones opuestas",
+        "Peticiones por seres queridos y la vida",
+        "Una espera larga bajo la lluvia"
+      ],
+      "c": 1,
+      "explanation": "Estar atrapado entre presiones opuestas. ",
+      "e": "🎤",
+      "id": "letras-dbe3c137e55e"
+    },
+    {
+      "q": "Completa el título de Los Tres: «Un amor ___».",
+      "o": [
+        "violento",
+        "tranquilo",
+        "perdido",
+        "secreto"
+      ],
+      "c": 0,
+      "explanation": "violento. ",
+      "e": "🎤",
+      "id": "letras-657760d8084b"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Un amor violento» incluida en este reto? (Rock chileno)",
+      "o": [
+        "Los Jaivas",
+        "Cris MJ",
+        "Los Tres",
+        "Santana con Maná"
+      ],
+      "c": 2,
+      "explanation": "Los Tres. ",
+      "e": "🎤",
+      "id": "letras-91c92a6825d4"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Un amor violento» de Los Tres?",
+      "o": [
+        "La exclusión que persiste después de la etapa escolar",
+        "La celebración mediante una cumbia",
+        "Un enamoramiento intenso desde el primer encuentro",
+        "Un amor que exige reciprocidad y no solo espera"
+      ],
+      "c": 2,
+      "explanation": "Un enamoramiento intenso desde el primer encuentro. ",
+      "e": "🎤",
+      "id": "letras-c2567f7506e9",
+      "img": "arcade/reference/letras.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "Completa este fragmento breve de «Tu cariño se me va»: «Tu cariño se me ___».",
+      "o": [
+        "va",
+        "cae",
+        "duerme",
+        "queda"
+      ],
+      "c": 0,
+      "explanation": "va. ",
+      "e": "🎤",
+      "id": "letras-11a421a234ef"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Tu cariño se me va» incluida en este reto? (Clásico chileno)",
+      "o": [
+        "Hernán Gallardo / versión Tommy Rey",
+        "Buddy Richard",
+        "Los Tres",
+        "Karol G con Nicki Minaj"
+      ],
+      "c": 1,
+      "explanation": "Buddy Richard. ",
+      "e": "🎤",
+      "id": "letras-bfa73fb33d8d"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Tu cariño se me va» de Buddy Richard?",
+      "o": [
+        "La invitación a superar las penas con alegría",
+        "Un viaje ferroviario hacia el sur",
+        "El temor a que el afecto de la pareja desaparezca",
+        "La intimidad expresada a través de la respiración"
+      ],
+      "c": 2,
+      "explanation": "El temor a que el afecto de la pareja desaparezca. ",
+      "e": "🎤",
+      "id": "letras-34ff93292f60"
+    },
+    {
+      "q": "Completa este fragmento breve de «Mentira»: «Mentira, lo nuestro siempre fue una ___».",
+      "o": [
+        "ilusión",
+        "promesa",
+        "mentira",
+        "fiesta"
+      ],
+      "c": 2,
+      "explanation": "mentira. ",
+      "e": "🎤",
+      "id": "letras-04dc1e899250"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Mentira» incluida en este reto? (Clásico chileno)",
+      "o": [
+        "Celia Cruz",
+        "Cris MJ",
+        "Marc Anthony",
+        "Buddy Richard"
+      ],
+      "c": 3,
+      "explanation": "Buddy Richard. ",
+      "e": "🎤",
+      "id": "letras-0b201f5ce5e4",
+      "img": "arcade/reference/letras.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Mentira» de Buddy Richard?",
+      "o": [
+        "Una relación vivida como un engaño",
+        "Una espera larga bajo la lluvia",
+        "La atracción de observar a alguien tras una persiana",
+        "El dolor por la pérdida del amor de la pareja"
+      ],
+      "c": 0,
+      "explanation": "Una relación vivida como un engaño. ",
+      "e": "🎤",
+      "id": "letras-811cd5757808"
+    },
+    {
+      "q": "Completa este fragmento breve de «Te recuerdo Amanda»: «Te recuerdo Amanda, la calle ___».",
+      "o": [
+        "cerrada",
+        "oscura",
+        "mojada",
+        "vacía"
+      ],
+      "c": 2,
+      "explanation": "mojada. ",
+      "e": "🎤",
+      "id": "letras-031051ab0c10"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Te recuerdo Amanda» incluida en este reto? (Canción chilena)",
+      "o": [
+        "Luis Fonsi con Daddy Yankee",
+        "Víctor Jara",
+        "Buddy Richard",
+        "Enrique Iglesias con Descemer Bueno y Gente de Zona"
+      ],
+      "c": 1,
+      "explanation": "Víctor Jara. ",
+      "e": "🎤",
+      "id": "letras-b5d00a5d55ab"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Te recuerdo Amanda» de Víctor Jara?",
+      "o": [
+        "Disfrutar la vida a pesar de los problemas",
+        "La intimidad expresada a través de la respiración",
+        "Una petición de besos suaves",
+        "El recuerdo de Amanda y Manuel en un contexto obrero"
+      ],
+      "c": 3,
+      "explanation": "El recuerdo de Amanda y Manuel en un contexto obrero. ",
+      "e": "🎤",
+      "id": "letras-50e7ebd08c80"
+    },
+    {
+      "q": "Completa este fragmento breve de «Gracias a la vida»: «Gracias a la vida que me ha dado ___».",
+      "o": [
+        "tanto",
+        "sueños",
+        "poco",
+        "todo"
+      ],
+      "c": 0,
+      "explanation": "tanto. ",
+      "e": "🎤",
+      "id": "letras-6daada9102f0",
+      "img": "arcade/reference/letras.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Gracias a la vida» incluida en este reto? (Canción chilena)",
+      "o": [
+        "FloyyMenor con Cris MJ",
+        "Mon Laferte con Enrique Bunbury",
+        "Violeta Parra",
+        "Luis Fonsi con Daddy Yankee"
+      ],
+      "c": 2,
+      "explanation": "Violeta Parra. ",
+      "e": "🎤",
+      "id": "letras-f943e4d46dab"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Gracias a la vida» de Violeta Parra?",
+      "o": [
+        "El amor comparado con aprender a nadar",
+        "La atracción de observar a alguien tras una persiana",
+        "Una mezcla de agitación, resistencia y lamento",
+        "Gratitud por las experiencias de estar vivo"
+      ],
+      "c": 3,
+      "explanation": "Gratitud por las experiencias de estar vivo. ",
+      "e": "🎤",
+      "id": "letras-ab50bd6300cd"
+    },
+    {
+      "q": "Completa este fragmento breve de «Volver a los diecisiete»: «Volver a los diecisiete después de vivir un ___».",
+      "o": [
+        "año",
+        "día",
+        "mes",
+        "siglo"
+      ],
+      "c": 3,
+      "explanation": "siglo. ",
+      "e": "🎤",
+      "id": "letras-1732b1524961"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Volver a los diecisiete» incluida en este reto? (Canción chilena)",
+      "o": [
+        "Violeta Parra",
+        "Fito Páez",
+        "Los Prisioneros",
+        "Los Bunkers"
+      ],
+      "c": 0,
+      "explanation": "Violeta Parra. ",
+      "e": "🎤",
+      "id": "letras-358856b36655"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Volver a los diecisiete» de Violeta Parra?",
+      "o": [
+        "Una espera larga bajo la lluvia",
+        "Una ciudad bajo la lluvia y una pérdida afectiva",
+        "La capacidad del amor de devolver una sensibilidad juvenil",
+        "La soledad expresada mediante la imagen del baile"
+      ],
+      "c": 2,
+      "explanation": "La capacidad del amor de devolver una sensibilidad juvenil. ",
+      "e": "🎤",
+      "id": "letras-1560e9814ab0",
+      "img": "arcade/reference/letras.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "Completa este fragmento breve de «Todos juntos»: «Hace mucho tiempo que yo vivo ___».",
+      "o": [
+        "olvidándome",
+        "cantándote",
+        "esperándote",
+        "preguntándome"
+      ],
+      "c": 3,
+      "explanation": "preguntándome. ",
+      "e": "🎤",
+      "id": "letras-bbabf1c1a3b5"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Todos juntos» incluida en este reto? (Rock chileno)",
+      "o": [
+        "Fito Páez",
+        "Los Jaivas",
+        "Mon Laferte",
+        "Lucybell"
+      ],
+      "c": 1,
+      "explanation": "Los Jaivas. ",
+      "e": "🎤",
+      "id": "letras-f5860399c0f5"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Todos juntos» de Los Jaivas?",
+      "o": [
+        "La convivencia y unión entre las personas",
+        "El paso del tiempo y un nuevo año",
+        "La celebración mediante una cumbia",
+        "La exclusión que persiste después de la etapa escolar"
+      ],
+      "c": 0,
+      "explanation": "La convivencia y unión entre las personas. ",
+      "e": "🎤",
+      "id": "letras-8e5c2916512e"
+    },
+    {
+      "q": "Completa este fragmento breve de «Mira niñita»: «Mira niñita, te voy a ___».",
+      "o": [
+        "buscar",
+        "esperar",
+        "llevar",
+        "llamar"
+      ],
+      "c": 2,
+      "explanation": "llevar. ",
+      "e": "🎤",
+      "id": "letras-1df34c004391"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Mira niñita» incluida en este reto? (Rock chileno)",
+      "o": [
+        "Mon Laferte con Enrique Bunbury",
+        "Los Bunkers",
+        "Violeta Parra",
+        "Los Jaivas"
+      ],
+      "c": 3,
+      "explanation": "Los Jaivas. ",
+      "e": "🎤",
+      "id": "letras-17d328808c0c",
+      "img": "arcade/reference/letras.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Mira niñita» de Los Jaivas?",
+      "o": [
+        "El dolor amoroso comparado con espinas",
+        "Gratitud por las experiencias de estar vivo",
+        "Una invitación afectuosa dirigida a una niña",
+        "Una mezcla de agitación, resistencia y lamento"
+      ],
+      "c": 2,
+      "explanation": "Una invitación afectuosa dirigida a una niña. ",
+      "e": "🎤",
+      "id": "letras-2e17f0d70443"
+    },
+    {
+      "q": "Completa el título de Lucybell: «Cuando respiro en tu ___». (Rock chileno)",
+      "o": [
+        "boca",
+        "sombra",
+        "casa",
+        "mano"
+      ],
+      "c": 0,
+      "explanation": "boca. ",
+      "e": "🎤",
+      "id": "letras-b73ccada794e"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Cuando respiro en tu boca» incluida en este reto? (Rock chileno)",
+      "o": [
+        "Polimá Westcoast con Pailita",
+        "Lucybell",
+        "Celia Cruz",
+        "Karol G con Nicki Minaj"
+      ],
+      "c": 1,
+      "explanation": "Lucybell. ",
+      "e": "🎤",
+      "id": "letras-a6f7513e4c4d"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Cuando respiro en tu boca» de Lucybell?",
+      "o": [
+        "El deseo de un vínculo amoroso intenso",
+        "Disfrutar la vida a pesar de los problemas",
+        "La exclusión que persiste después de la etapa escolar",
+        "La intimidad expresada a través de la respiración"
+      ],
+      "c": 3,
+      "explanation": "La intimidad expresada a través de la respiración. ",
+      "e": "🎤",
+      "id": "letras-e26a42ca88cf"
+    },
+    {
+      "q": "Completa este fragmento breve de «Mujer»: «Mujer, si puedes tú con Dios ___».",
+      "o": [
+        "soñar",
+        "bailar",
+        "cantar",
+        "hablar"
+      ],
+      "c": 3,
+      "explanation": "hablar. ",
+      "e": "🎤",
+      "id": "letras-a4ddfceb6475",
+      "img": "arcade/reference/letras.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Mujer» incluida en este reto? (Versión de Los Bunkers)",
+      "o": [
+        "Karol G",
+        "Los Bunkers",
+        "Chico Trujillo",
+        "Enrique Iglesias con Descemer Bueno y Gente de Zona"
+      ],
+      "c": 1,
+      "explanation": "Los Bunkers. ",
+      "e": "🎤",
+      "id": "letras-b63087876a91"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Mujer» de Los Bunkers?",
+      "o": [
+        "Una relación vivida como un engaño",
+        "El temor a que el afecto de la pareja desaparezca",
+        "Una petición a una mujer para interceder ante Dios",
+        "Una invitación afectuosa dirigida a una niña"
+      ],
+      "c": 2,
+      "explanation": "Una petición a una mujer para interceder ante Dios. ",
+      "e": "🎤",
+      "id": "letras-1a1f0bf0c54a"
+    },
+    {
+      "q": "Completa este fragmento breve de «Llueve sobre la ciudad»: «Llueve sobre la ___».",
+      "o": [
+        "ventana",
+        "montaña",
+        "ciudad",
+        "playa"
+      ],
+      "c": 2,
+      "explanation": "ciudad. ",
+      "e": "🎤",
+      "id": "letras-f427d4e56cc5"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Llueve sobre la ciudad» incluida en este reto? (Rock chileno)",
+      "o": [
+        "Karol G con Nicki Minaj",
+        "Los Bunkers",
+        "Hernán Gallardo / versión Tommy Rey",
+        "Los Abuelos de la Nada"
+      ],
+      "c": 1,
+      "explanation": "Los Bunkers. ",
+      "e": "🎤",
+      "id": "letras-6802933bdc4f"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Llueve sobre la ciudad» de Los Bunkers?",
+      "o": [
+        "La súplica por el regreso de una persona amada",
+        "Una ciudad bajo la lluvia y una pérdida afectiva",
+        "Un viaje ferroviario hacia el sur",
+        "El recuerdo de conocer a alguien en enero"
+      ],
+      "c": 1,
+      "explanation": "Una ciudad bajo la lluvia y una pérdida afectiva. ",
+      "e": "🎤",
+      "id": "letras-5c14eb9681cf",
+      "img": "arcade/reference/letras.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "Completa el título de Los Bunkers: «Mi___». (Rock chileno)",
+      "o": [
+        "ño",
+        "temor",
+        "dolor",
+        "valor"
+      ],
+      "c": 0,
+      "explanation": "ño. ",
+      "e": "🎤",
+      "id": "letras-0fd322b41ae8"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Miño» incluida en este reto? (Rock chileno)",
+      "o": [
+        "Los Bunkers",
+        "Violeta Parra",
+        "Shakira con Wyclef Jean",
+        "Luis Fonsi con Daddy Yankee"
+      ],
+      "c": 0,
+      "explanation": "Los Bunkers. ",
+      "e": "🎤",
+      "id": "letras-750a1b4c2a66"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Miño» de Los Bunkers?",
+      "o": [
+        "Una referencia al apellido de Eduardo Miño",
+        "El dolor amoroso comparado con espinas",
+        "El amor comparado con aprender a nadar",
+        "La intimidad expresada a través de la respiración"
+      ],
+      "c": 0,
+      "explanation": "Una referencia al apellido de Eduardo Miño. ",
+      "e": "🎤",
+      "id": "letras-799cfd38aac8"
+    },
+    {
+      "q": "Completa este fragmento breve de «Bailando solo»: «Bailando ___».",
+      "o": [
+        "solo",
+        "juntos",
+        "lento",
+        "lejos"
+      ],
+      "c": 0,
+      "explanation": "solo. ",
+      "e": "🎤",
+      "id": "letras-602e4b68d11f"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Bailando solo» incluida en este reto? (Rock chileno)",
+      "o": [
+        "Soda Stereo",
+        "Los Bunkers",
+        "Hernán Gallardo / versión Tommy Rey",
+        "Fito Páez"
+      ],
+      "c": 1,
+      "explanation": "Los Bunkers. ",
+      "e": "🎤",
+      "id": "letras-8cddf4455f0d",
+      "img": "arcade/reference/letras.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Bailando solo» de Los Bunkers?",
+      "o": [
+        "La convivencia y unión entre las personas",
+        "La soledad expresada mediante la imagen del baile",
+        "Un amor que exige reciprocidad y no solo espera",
+        "Una invitación a soltar el control"
+      ],
+      "c": 1,
+      "explanation": "La soledad expresada mediante la imagen del baile. ",
+      "e": "🎤",
+      "id": "letras-df4d959f5ffa"
+    },
+    {
+      "q": "Completa este fragmento breve de «Amárrame»: «Amárrame, ay, ___».",
+      "o": [
+        "espérame",
+        "olvídame",
+        "perdóname",
+        "amárrame"
+      ],
+      "c": 3,
+      "explanation": "amárrame. ",
+      "e": "🎤",
+      "id": "letras-aba7864f7acc"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Amárrame» incluida en este reto? (Pop chileno)",
+      "o": [
+        "Marc Anthony",
+        "Buddy Richard",
+        "Mon Laferte con Juanes",
+        "Los Jaivas"
+      ],
+      "c": 2,
+      "explanation": "Mon Laferte con Juanes. ",
+      "e": "🎤",
+      "id": "letras-d6a86e856683"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Amárrame» de Mon Laferte con Juanes?",
+      "o": [
+        "Una invitación afectuosa dirigida a una niña",
+        "Una petición a una mujer para interceder ante Dios",
+        "Una petición de besos suaves",
+        "El deseo de un vínculo amoroso intenso"
+      ],
+      "c": 3,
+      "explanation": "El deseo de un vínculo amoroso intenso. ",
+      "e": "🎤",
+      "id": "letras-08694ed3648c"
+    },
+    {
+      "q": "Completa este fragmento breve de «Tu falta de querer»: «Hoy volví a dormir en nuestra ___».",
+      "o": [
+        "calle",
+        "sala",
+        "cama",
+        "casa"
+      ],
+      "c": 2,
+      "explanation": "cama. ",
+      "e": "🎤",
+      "id": "letras-7519965a823b",
+      "img": "arcade/reference/letras.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Tu falta de querer» incluida en este reto? (Pop chileno)",
+      "o": [
+        "Shakira con Wyclef Jean",
+        "Mon Laferte",
+        "Fito Páez",
+        "Elvis Crespo"
+      ],
+      "c": 1,
+      "explanation": "Mon Laferte. ",
+      "e": "🎤",
+      "id": "letras-ba469833346e"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Tu falta de querer» de Mon Laferte?",
+      "o": [
+        "Una referencia al apellido de Eduardo Miño",
+        "El dolor por la pérdida del amor de la pareja",
+        "El reencuentro y el deseo de verse de nuevo",
+        "La expresión corporal del baile"
+      ],
+      "c": 1,
+      "explanation": "El dolor por la pérdida del amor de la pareja. ",
+      "e": "🎤",
+      "id": "letras-bb73d7972a96"
+    },
+    {
+      "q": "Completa este fragmento breve de «Mi buen amor»: «Mi buen ___».",
+      "o": [
+        "destino",
+        "amor",
+        "amigo",
+        "camino"
+      ],
+      "c": 1,
+      "explanation": "amor. ",
+      "e": "🎤",
+      "id": "letras-ccdb47cbd07c"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Mi buen amor» incluida en este reto? (Pop chileno)",
+      "o": [
+        "Karol G",
+        "Mon Laferte con Enrique Bunbury",
+        "Buddy Richard",
+        "La Noche"
+      ],
+      "c": 1,
+      "explanation": "Mon Laferte con Enrique Bunbury. ",
+      "e": "🎤",
+      "id": "letras-24aa4f655ade"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Mi buen amor» de Mon Laferte con Enrique Bunbury?",
+      "o": [
+        "El deseo de un vínculo amoroso intenso",
+        "Un amor que exige reciprocidad y no solo espera",
+        "Una mezcla de agitación, resistencia y lamento",
+        "La invitación a superar las penas con alegría"
+      ],
+      "c": 1,
+      "explanation": "Un amor que exige reciprocidad y no solo espera. ",
+      "e": "🎤",
+      "id": "letras-15f00ade822d",
+      "img": "arcade/reference/letras.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "Completa este fragmento breve de «Un año más»: «Un año más, qué más ___».",
+      "o": [
+        "da",
+        "hay",
+        "fue",
+        "va"
+      ],
+      "c": 0,
+      "explanation": "da. ",
+      "e": "🎤",
+      "id": "letras-e120bacbda4c"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Un año más» incluida en este reto? (Cumbia de celebración)",
+      "o": [
+        "Luis Fonsi con Daddy Yankee",
+        "Hernán Gallardo / versión Tommy Rey",
+        "Celia Cruz",
+        "Los Prisioneros"
+      ],
+      "c": 1,
+      "explanation": "Hernán Gallardo / versión Tommy Rey. ",
+      "e": "🎤",
+      "id": "letras-c5842d0fe859"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Un año más» de Hernán Gallardo / versión Tommy Rey?",
+      "o": [
+        "La exclusión que persiste después de la etapa escolar",
+        "Una ciudad bajo la lluvia y una pérdida afectiva",
+        "El paso del tiempo y un nuevo año",
+        "La búsqueda insistente de un amor ausente"
+      ],
+      "c": 2,
+      "explanation": "El paso del tiempo y un nuevo año. ",
+      "e": "🎤",
+      "id": "letras-d29871c9d8b1"
+    },
+    {
+      "q": "Completa el título de Chico Trujillo: «Un ___». (Cumbia chilena)",
+      "o": [
+        "cumbión",
+        "vals",
+        "bolero",
+        "tango"
+      ],
+      "c": 0,
+      "explanation": "cumbión. ",
+      "e": "🎤",
+      "id": "letras-76eae0fcc902"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Un cumbión» incluida en este reto? (Cumbia chilena)",
+      "o": [
+        "Chico Trujillo",
+        "Cris MJ",
+        "Shakira",
+        "Fito Páez"
+      ],
+      "c": 0,
+      "explanation": "Chico Trujillo. ",
+      "e": "🎤",
+      "id": "letras-ddbaca5d10b9",
+      "img": "arcade/reference/letras.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Un cumbión» de Chico Trujillo?",
+      "o": [
+        "La celebración mediante una cumbia",
+        "El paso del tiempo y un nuevo año",
+        "El reencuentro y el deseo de verse de nuevo",
+        "La atracción de observar a alguien tras una persiana"
+      ],
+      "c": 0,
+      "explanation": "La celebración mediante una cumbia. ",
+      "e": "🎤",
+      "id": "letras-e34ccc32f9f3"
+    },
+    {
+      "q": "Completa el título de La Noche: «Yo ___». (Cumbia chilena)",
+      "o": [
+        "vuelo",
+        "vuelvo",
+        "tomo",
+        "bailo"
+      ],
+      "c": 2,
+      "explanation": "tomo. ",
+      "e": "🎤",
+      "id": "letras-682aa34d7729"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Yo tomo» incluida en este reto? (Cumbia chilena)",
+      "o": [
+        "FloyyMenor con Cris MJ",
+        "La Noche",
+        "Santana con Maná",
+        "Los Bunkers"
+      ],
+      "c": 1,
+      "explanation": "La Noche. ",
+      "e": "🎤",
+      "id": "letras-6ab19607828e"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Yo tomo» de La Noche?",
+      "o": [
+        "Una afirmación sobre beber",
+        "El duelo amoroso representado por una prenda oscura",
+        "La celebración mediante una cumbia",
+        "Una invitación a soltar el control"
+      ],
+      "c": 0,
+      "explanation": "Una afirmación sobre beber. ",
+      "e": "🎤",
+      "id": "letras-0451b8135a5e"
+    },
+    {
+      "q": "Completa el título de FloyyMenor con Cris MJ: «Gata ___».",
+      "o": [
+        "Dance",
+        "Forever",
+        "Alone",
+        "Only"
+      ],
+      "c": 3,
+      "explanation": "Only. ",
+      "e": "🎤",
+      "id": "letras-6b1c74d81f1f",
+      "img": "arcade/reference/letras.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Gata Only» incluida en este reto? (Urbano chileno · 2024)",
+      "o": [
+        "Los Jaivas",
+        "FloyyMenor con Cris MJ",
+        "Mon Laferte con Enrique Bunbury",
+        "Fito Páez"
+      ],
+      "c": 1,
+      "explanation": "FloyyMenor con Cris MJ. ",
+      "e": "🎤",
+      "id": "letras-f8db00cfe9e5"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Gata Only» de FloyyMenor con Cris MJ?",
+      "o": [
+        "Un encuentro y coqueteo en lenguaje urbano",
+        "Una espera larga bajo la lluvia",
+        "El dolor por la pérdida del amor de la pareja",
+        "La soledad expresada mediante la imagen del baile"
+      ],
+      "c": 0,
+      "explanation": "Un encuentro y coqueteo en lenguaje urbano. ",
+      "e": "🎤",
+      "id": "letras-e91b62e3de3e"
+    },
+    {
+      "q": "Completa este fragmento breve de «Una noche en Medellín»: «Una noche en ___».",
+      "o": [
+        "Madrid",
+        "Santiago",
+        "Caracas",
+        "Medellín"
+      ],
+      "c": 3,
+      "explanation": "Medellín. ",
+      "e": "🎤",
+      "id": "letras-5908972350f8"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Una noche en Medellín» incluida en este reto? (Urbano chileno · 2022)",
+      "o": [
+        "Elvis Crespo",
+        "Cris MJ",
+        "Mon Laferte",
+        "Buddy Richard"
+      ],
+      "c": 1,
+      "explanation": "Cris MJ. ",
+      "e": "🎤",
+      "id": "letras-76f4b0820f3a"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Una noche en Medellín» de Cris MJ?",
+      "o": [
+        "La falta de amplitud emocional en una relación",
+        "Una noche situada en la ciudad colombiana de Medellín",
+        "El dolor por la pérdida del amor de la pareja",
+        "La invitación a superar las penas con alegría"
+      ],
+      "c": 1,
+      "explanation": "Una noche situada en la ciudad colombiana de Medellín. ",
+      "e": "🎤",
+      "id": "letras-46e921ce3d03",
+      "img": "arcade/reference/letras.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "Completa este fragmento breve de «Ultra solo»: «Ultra ___».",
+      "o": [
+        "lejos",
+        "solo",
+        "lento",
+        "alto"
+      ],
+      "c": 1,
+      "explanation": "solo. ",
+      "e": "🎤",
+      "id": "letras-f3697463818c"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Ultra solo» incluida en este reto? (Urbano chileno · 2022)",
+      "o": [
+        "Elvis Crespo",
+        "Los Jaivas",
+        "Juan Gabriel",
+        "Polimá Westcoast con Pailita"
+      ],
+      "c": 3,
+      "explanation": "Polimá Westcoast con Pailita. ",
+      "e": "🎤",
+      "id": "letras-9cc875050da4"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Ultra solo» de Polimá Westcoast con Pailita?",
+      "o": [
+        "El despecho que revive al escuchar una canción",
+        "Un sentimiento de soledad intensificado",
+        "La capacidad del amor de devolver una sensibilidad juvenil",
+        "El recuerdo de Amanda y Manuel en un contexto obrero"
+      ],
+      "c": 1,
+      "explanation": "Un sentimiento de soledad intensificado. ",
+      "e": "🎤",
+      "id": "letras-b23fc5342a19"
+    },
+    {
+      "q": "Completa el título de Enrique Iglesias con Marco Antonio Solís: «El ___». (Pop latino)",
+      "o": [
+        "soñador",
+        "vencedor",
+        "ganador",
+        "perdedor"
+      ],
+      "c": 3,
+      "explanation": "perdedor. ",
+      "e": "🎤",
+      "id": "letras-e193e2f297b1"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «El perdedor» incluida en este reto? (Pop latino)",
+      "o": [
+        "Chico Trujillo",
+        "Enrique Iglesias con Marco Antonio Solís",
+        "Mon Laferte con Enrique Bunbury",
+        "Santana con Maná"
+      ],
+      "c": 1,
+      "explanation": "Enrique Iglesias con Marco Antonio Solís. ",
+      "e": "🎤",
+      "id": "letras-c07a2de483a1",
+      "img": "arcade/reference/letras.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «El perdedor» de Enrique Iglesias con Marco Antonio Solís?",
+      "o": [
+        "El sufrimiento de quedar como la parte que pierde en el amor",
+        "El dolor por la pérdida del amor de la pareja",
+        "Gratitud por las experiencias de estar vivo",
+        "La intimidad expresada a través de la respiración"
+      ],
+      "c": 0,
+      "explanation": "El sufrimiento de quedar como la parte que pierde en el amor. ",
+      "e": "🎤",
+      "id": "letras-9e5766151a10"
+    },
+    {
+      "q": "Completa este fragmento breve de «Despacito»: «Pasito a ___».",
+      "o": [
+        "golpe",
+        "rato",
+        "salto",
+        "pasito"
+      ],
+      "c": 3,
+      "explanation": "pasito. ",
+      "e": "🎤",
+      "id": "letras-f7984db27736"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Despacito» incluida en este reto? (Pop latino)",
+      "o": [
+        "Violeta Parra",
+        "Luis Fonsi con Daddy Yankee",
+        "Mon Laferte con Enrique Bunbury",
+        "Lucybell"
+      ],
+      "c": 1,
+      "explanation": "Luis Fonsi con Daddy Yankee. ",
+      "e": "🎤",
+      "id": "letras-c13e0b2dfee9"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Despacito» de Luis Fonsi con Daddy Yankee?",
+      "o": [
+        "Un acercamiento romántico gradual",
+        "Disfrutar la vida a pesar de los problemas",
+        "La intimidad expresada a través de la respiración",
+        "Una referencia al apellido de Eduardo Miño"
+      ],
+      "c": 0,
+      "explanation": "Un acercamiento romántico gradual. ",
+      "e": "🎤",
+      "id": "letras-164a9338c8c1"
+    },
+    {
+      "q": "Completa este fragmento breve de «Bailando»: «Yo te miro y se me corta la ___».",
+      "o": [
+        "dirección",
+        "respiración",
+        "canción",
+        "ilusión"
+      ],
+      "c": 1,
+      "explanation": "respiración. ",
+      "e": "🎤",
+      "id": "letras-0d1b9d74d863",
+      "img": "arcade/reference/letras.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Bailando» incluida en este reto? (Pop latino)",
+      "o": [
+        "Los Tres",
+        "Lucybell",
+        "Los Bunkers",
+        "Enrique Iglesias con Descemer Bueno y Gente de Zona"
+      ],
+      "c": 3,
+      "explanation": "Enrique Iglesias con Descemer Bueno y Gente de Zona. ",
+      "e": "🎤",
+      "id": "letras-d90c8dbb6a1e"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Bailando» de Enrique Iglesias con Descemer Bueno y Gente de Zona?",
+      "o": [
+        "La atracción y el deseo de bailar con alguien",
+        "La celebración mediante una cumbia",
+        "Un viaje ferroviario hacia el sur",
+        "La expresión corporal del baile"
+      ],
+      "c": 0,
+      "explanation": "La atracción y el deseo de bailar con alguien. ",
+      "e": "🎤",
+      "id": "letras-55a676c9afb1"
+    },
+    {
+      "q": "Completa este fragmento breve de «Vivir mi vida»: «Voy a reír, voy a ___».",
+      "o": [
+        "viajar",
+        "soñar",
+        "llorar",
+        "bailar"
+      ],
+      "c": 3,
+      "explanation": "bailar. ",
+      "e": "🎤",
+      "id": "letras-66343810235a"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Vivir mi vida» incluida en este reto? (Salsa)",
+      "o": [
+        "Shakira",
+        "Mon Laferte con Enrique Bunbury",
+        "Marc Anthony",
+        "Luis Miguel"
+      ],
+      "c": 2,
+      "explanation": "Marc Anthony. ",
+      "e": "🎤",
+      "id": "letras-4e3a3beeae57"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Vivir mi vida» de Marc Anthony?",
+      "o": [
+        "Una invitación a soltar el control",
+        "El recuerdo de conocer a alguien en enero",
+        "Disfrutar la vida a pesar de los problemas",
+        "Una evocación colorida de recuerdos y experiencias"
+      ],
+      "c": 2,
+      "explanation": "Disfrutar la vida a pesar de los problemas. ",
+      "e": "🎤",
+      "id": "letras-2630b1ad6df3",
+      "img": "arcade/reference/letras.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "Completa este fragmento breve de «La camisa negra»: «Tengo la camisa ___».",
+      "o": [
+        "azul",
+        "negra",
+        "roja",
+        "blanca"
+      ],
+      "c": 1,
+      "explanation": "negra. ",
+      "e": "🎤",
+      "id": "letras-7f4918905f64"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «La camisa negra» incluida en este reto? (Pop latino)",
+      "o": [
+        "Violeta Parra",
+        "Luis Fonsi con Daddy Yankee",
+        "Karol G",
+        "Juanes"
+      ],
+      "c": 3,
+      "explanation": "Juanes. ",
+      "e": "🎤",
+      "id": "letras-070aa61983cc"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «La camisa negra» de Juanes?",
+      "o": [
+        "La intimidad expresada a través de la respiración",
+        "Un encuentro y coqueteo en lenguaje urbano",
+        "El duelo amoroso representado por una prenda oscura",
+        "Una petición a una mujer para interceder ante Dios"
+      ],
+      "c": 2,
+      "explanation": "El duelo amoroso representado por una prenda oscura. ",
+      "e": "🎤",
+      "id": "letras-60d1c075358a"
+    },
+    {
+      "q": "Completa este fragmento breve de «A Dios le pido»: «Que mis ojos se despierten con la ___».",
+      "o": [
+        "luna",
+        "luz",
+        "lluvia",
+        "brisa"
+      ],
+      "c": 1,
+      "explanation": "luz. ",
+      "e": "🎤",
+      "id": "letras-7eb7ea4cb403"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «A Dios le pido» incluida en este reto? (Pop latino)",
+      "o": [
+        "Víctor Jara",
+        "Elvis Crespo",
+        "Juanes",
+        "Enanitos Verdes"
+      ],
+      "c": 2,
+      "explanation": "Juanes. ",
+      "e": "🎤",
+      "id": "letras-c1037f476439",
+      "img": "arcade/reference/letras.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «A Dios le pido» de Juanes?",
+      "o": [
+        "Una referencia al apellido de Eduardo Miño",
+        "El recuerdo de aprendizajes que dejó un amor",
+        "Gratitud por las experiencias de estar vivo",
+        "Peticiones por seres queridos y la vida"
+      ],
+      "c": 3,
+      "explanation": "Peticiones por seres queridos y la vida. ",
+      "e": "🎤",
+      "id": "letras-c8d585983b43"
+    },
+    {
+      "q": "Completa este fragmento breve de «Antología»: «Para amarte necesito una ___».",
+      "o": [
+        "señal",
+        "ocasión",
+        "canción",
+        "razón"
+      ],
+      "c": 3,
+      "explanation": "razón. ",
+      "e": "🎤",
+      "id": "letras-e1e2b1724975"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Antología» incluida en este reto? (Pop latino)",
+      "o": [
+        "Los Tres",
+        "Karol G",
+        "Shakira",
+        "Juan Gabriel"
+      ],
+      "c": 2,
+      "explanation": "Shakira. ",
+      "e": "🎤",
+      "id": "letras-41b2843ae93c"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Antología» de Shakira?",
+      "o": [
+        "El recuerdo de aprendizajes que dejó un amor",
+        "Una invitación afectuosa dirigida a una niña",
+        "Una invitación a soltar el control",
+        "Una mezcla de agitación, resistencia y lamento"
+      ],
+      "c": 0,
+      "explanation": "El recuerdo de aprendizajes que dejó un amor. ",
+      "e": "🎤",
+      "id": "letras-bef92c3b407b"
+    },
+    {
+      "q": "Completa este fragmento breve de «Día de enero»: «Te conocí un día de ___».",
+      "o": [
+        "enero",
+        "febrero",
+        "marzo",
+        "abril"
+      ],
+      "c": 0,
+      "explanation": "enero. ",
+      "e": "🎤",
+      "id": "letras-80666cbee7dc",
+      "img": "arcade/reference/letras.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Día de enero» incluida en este reto? (Pop latino)",
+      "o": [
+        "Elvis Crespo",
+        "Cris MJ",
+        "Mon Laferte",
+        "Shakira"
+      ],
+      "c": 3,
+      "explanation": "Shakira. ",
+      "e": "🎤",
+      "id": "letras-41560cec7083"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Día de enero» de Shakira?",
+      "o": [
+        "El recuerdo de conocer a alguien en enero",
+        "Un acercamiento romántico gradual",
+        "El sufrimiento de quedar como la parte que pierde en el amor",
+        "La celebración mediante una cumbia"
+      ],
+      "c": 0,
+      "explanation": "El recuerdo de conocer a alguien en enero. ",
+      "e": "🎤",
+      "id": "letras-105402bac0d4"
+    },
+    {
+      "q": "Completa el título de Shakira con Wyclef Jean: «Hips Don’t ___».",
+      "o": [
+        "Cry",
+        "Fly",
+        "Lie",
+        "Try"
+      ],
+      "c": 2,
+      "explanation": "Lie. ",
+      "e": "🎤",
+      "id": "letras-6b9ac84f3113"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Hips Don’t Lie» incluida en este reto? (Pop latino en inglés)",
+      "o": [
+        "Los Bunkers",
+        "Cris MJ",
+        "Mon Laferte con Enrique Bunbury",
+        "Shakira con Wyclef Jean"
+      ],
+      "c": 3,
+      "explanation": "Shakira con Wyclef Jean. ",
+      "e": "🎤",
+      "id": "letras-8e63353bb12e"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Hips Don’t Lie» de Shakira con Wyclef Jean?",
+      "o": [
+        "La búsqueda insistente de un amor ausente",
+        "El recuerdo de Amanda y Manuel en un contexto obrero",
+        "El rechazo de una pareja que no fue sincera",
+        "La expresión corporal del baile"
+      ],
+      "c": 3,
+      "explanation": "La expresión corporal del baile. ",
+      "e": "🎤",
+      "id": "letras-d0fe4138552a",
+      "img": "arcade/reference/letras.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "Completa este fragmento breve de «Corazón espinado»: «Ese corazón ___».",
+      "o": [
+        "perdido",
+        "cansado",
+        "herido",
+        "espinado"
+      ],
+      "c": 3,
+      "explanation": "espinado. ",
+      "e": "🎤",
+      "id": "letras-5d4265ecb6e8"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Corazón espinado» incluida en este reto? (Rock latino)",
+      "o": [
+        "Los Prisioneros",
+        "Polimá Westcoast con Pailita",
+        "Luis Miguel",
+        "Santana con Maná"
+      ],
+      "c": 3,
+      "explanation": "Santana con Maná. ",
+      "e": "🎤",
+      "id": "letras-3b001ff526ce"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Corazón espinado» de Santana con Maná?",
+      "o": [
+        "El despecho que revive al escuchar una canción",
+        "Gratitud por las experiencias de estar vivo",
+        "Un amor que exige reciprocidad y no solo espera",
+        "El dolor amoroso comparado con espinas"
+      ],
+      "c": 3,
+      "explanation": "El dolor amoroso comparado con espinas. ",
+      "e": "🎤",
+      "id": "letras-d010d860d0b9"
+    },
+    {
+      "q": "Completa este fragmento breve de «Rayando el sol»: «Rayando el ___».",
+      "o": [
+        "mar",
+        "cielo",
+        "sol",
+        "suelo"
+      ],
+      "c": 2,
+      "explanation": "sol. ",
+      "e": "🎤",
+      "id": "letras-9206a2d6f382"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Rayando el sol» incluida en este reto? (Rock latino)",
+      "o": [
+        "Maná",
+        "Mon Laferte",
+        "Luis Miguel",
+        "Mon Laferte con Juanes"
+      ],
+      "c": 0,
+      "explanation": "Maná. ",
+      "e": "🎤",
+      "id": "letras-28a6351f8382",
+      "img": "arcade/reference/letras.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Rayando el sol» de Maná?",
+      "o": [
+        "La falta de amplitud emocional en una relación",
+        "Estar atrapado entre presiones opuestas",
+        "La exclusión que persiste después de la etapa escolar",
+        "La búsqueda insistente de un amor ausente"
+      ],
+      "c": 3,
+      "explanation": "La búsqueda insistente de un amor ausente. ",
+      "e": "🎤",
+      "id": "letras-23978906147d"
+    },
+    {
+      "q": "Completa este fragmento breve de «De música ligera»: «Ella durmió al calor de las ___».",
+      "o": [
+        "brasas",
+        "casas",
+        "nubes",
+        "masas"
+      ],
+      "c": 3,
+      "explanation": "masas. ",
+      "e": "🎤",
+      "id": "letras-53940428ab96"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «De música ligera» incluida en este reto? (Rock en español)",
+      "o": [
+        "Soda Stereo",
+        "Mon Laferte con Juanes",
+        "Karol G con Nicki Minaj",
+        "Buddy Richard"
+      ],
+      "c": 0,
+      "explanation": "Soda Stereo. ",
+      "e": "🎤",
+      "id": "letras-acc974eee70c"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «De música ligera» de Soda Stereo?",
+      "o": [
+        "Una petición a una mujer para interceder ante Dios",
+        "Una mezcla de agitación, resistencia y lamento",
+        "Una evocación del amor ligada a la música",
+        "Peticiones por seres queridos y la vida"
+      ],
+      "c": 2,
+      "explanation": "Una evocación del amor ligada a la música. ",
+      "e": "🎤",
+      "id": "letras-27f088753ae2"
+    },
+    {
+      "q": "Completa este fragmento breve de «Persiana americana»: «Te prefiero fuera de ___».",
+      "o": [
+        "tiempo",
+        "foco",
+        "lugar",
+        "casa"
+      ],
+      "c": 1,
+      "explanation": "foco. ",
+      "e": "🎤",
+      "id": "letras-77a0b15b8e22",
+      "img": "arcade/reference/letras.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Persiana americana» incluida en este reto? (Rock en español)",
+      "o": [
+        "FloyyMenor con Cris MJ",
+        "Soda Stereo",
+        "Polimá Westcoast con Pailita",
+        "Cris MJ"
+      ],
+      "c": 1,
+      "explanation": "Soda Stereo. ",
+      "e": "🎤",
+      "id": "letras-b2a23e78cef1"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Persiana americana» de Soda Stereo?",
+      "o": [
+        "La soledad expresada mediante la imagen del baile",
+        "La atracción de observar a alguien tras una persiana",
+        "Disfrutar la vida a pesar de los problemas",
+        "El paso del tiempo y un nuevo año"
+      ],
+      "c": 1,
+      "explanation": "La atracción de observar a alguien tras una persiana. ",
+      "e": "🎤",
+      "id": "letras-da1900a2dad6"
+    },
+    {
+      "q": "Completa este fragmento breve de «Lamento boliviano»: «Me quieren ___».",
+      "o": [
+        "agitar",
+        "llamar",
+        "buscar",
+        "cambiar"
+      ],
+      "c": 0,
+      "explanation": "agitar. ",
+      "e": "🎤",
+      "id": "letras-421627ba3a06"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Lamento boliviano» incluida en este reto? (Rock en español)",
+      "o": [
+        "Enanitos Verdes",
+        "Celia Cruz",
+        "Maná",
+        "Elvis Crespo"
+      ],
+      "c": 0,
+      "explanation": "Enanitos Verdes. ",
+      "e": "🎤",
+      "id": "letras-8c808346aac0"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Lamento boliviano» de Enanitos Verdes?",
+      "o": [
+        "El dolor amoroso comparado con espinas",
+        "El duelo amoroso representado por una prenda oscura",
+        "Una mezcla de agitación, resistencia y lamento",
+        "Una invitación a soltar el control"
+      ],
+      "c": 2,
+      "explanation": "Una mezcla de agitación, resistencia y lamento. ",
+      "e": "🎤",
+      "id": "letras-a063d30c26b2",
+      "img": "arcade/reference/letras.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "Completa este fragmento breve de «Mil horas»: «Hace frío y estoy lejos de ___».",
+      "o": [
+        "aquí",
+        "todo",
+        "ti",
+        "casa"
+      ],
+      "c": 3,
+      "explanation": "casa. ",
+      "e": "🎤",
+      "id": "letras-608a1a85688a"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Mil horas» incluida en este reto? (Rock en español)",
+      "o": [
+        "Celia Cruz",
+        "Marc Anthony",
+        "Los Abuelos de la Nada",
+        "FloyyMenor con Cris MJ"
+      ],
+      "c": 2,
+      "explanation": "Los Abuelos de la Nada. ",
+      "e": "🎤",
+      "id": "letras-560b699904a4"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Mil horas» de Los Abuelos de la Nada?",
+      "o": [
+        "Disfrutar la vida a pesar de los problemas",
+        "Una espera larga bajo la lluvia",
+        "Una mezcla de agitación, resistencia y lamento",
+        "El paso del tiempo y un nuevo año"
+      ],
+      "c": 1,
+      "explanation": "Una espera larga bajo la lluvia. ",
+      "e": "🎤",
+      "id": "letras-602b848ab31a"
+    },
+    {
+      "q": "Completa este fragmento breve de «Mariposa tecknicolor»: «Todas las mañanas que ___».",
+      "o": [
+        "canté",
+        "viví",
+        "perdí",
+        "soñé"
+      ],
+      "c": 1,
+      "explanation": "viví. ",
+      "e": "🎤",
+      "id": "letras-0b2712f3fe56"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Mariposa tecknicolor» incluida en este reto? (Rock en español)",
+      "o": [
+        "Karol G con Nicki Minaj",
+        "Fito Páez",
+        "Enanitos Verdes",
+        "Los Bunkers"
+      ],
+      "c": 1,
+      "explanation": "Fito Páez. ",
+      "e": "🎤",
+      "id": "letras-529ff4df67c5",
+      "img": "arcade/reference/letras.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Mariposa tecknicolor» de Fito Páez?",
+      "o": [
+        "Disfrutar la vida a pesar de los problemas",
+        "Una invitación a soltar el control",
+        "Gratitud por las experiencias de estar vivo",
+        "Una evocación colorida de recuerdos y experiencias"
+      ],
+      "c": 3,
+      "explanation": "Una evocación colorida de recuerdos y experiencias. ",
+      "e": "🎤",
+      "id": "letras-107f99fc5e9f"
+    },
+    {
+      "q": "Completa este fragmento breve de «Querida»: «Querida, cada momento de mi ___».",
+      "o": [
+        "sueño",
+        "vida",
+        "alma",
+        "casa"
+      ],
+      "c": 1,
+      "explanation": "vida. ",
+      "e": "🎤",
+      "id": "letras-66f6556dedbd"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Querida» incluida en este reto? (Balada latinoamericana)",
+      "o": [
+        "Enanitos Verdes",
+        "Juan Gabriel",
+        "Shakira con Wyclef Jean",
+        "Maná"
+      ],
+      "c": 1,
+      "explanation": "Juan Gabriel. ",
+      "e": "🎤",
+      "id": "letras-e7c76f2480e3"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Querida» de Juan Gabriel?",
+      "o": [
+        "Un acercamiento romántico gradual",
+        "La súplica por el regreso de una persona amada",
+        "La soledad expresada mediante la imagen del baile",
+        "El recuerdo de Amanda y Manuel en un contexto obrero"
+      ],
+      "c": 1,
+      "explanation": "La súplica por el regreso de una persona amada. ",
+      "e": "🎤",
+      "id": "letras-da2bbd7490f7"
+    },
+    {
+      "q": "Completa este fragmento breve de «Ahora te puedes marchar»: «Si tú me hubieras dicho siempre la ___».",
+      "o": [
+        "señal",
+        "razón",
+        "verdad",
+        "historia"
+      ],
+      "c": 2,
+      "explanation": "verdad. ",
+      "e": "🎤",
+      "id": "letras-783e9f1f5f2e",
+      "img": "arcade/reference/letras.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Ahora te puedes marchar» incluida en este reto? (Pop latino)",
+      "o": [
+        "Enanitos Verdes",
+        "FloyyMenor con Cris MJ",
+        "Cris MJ",
+        "Luis Miguel"
+      ],
+      "c": 3,
+      "explanation": "Luis Miguel. ",
+      "e": "🎤",
+      "id": "letras-ea6c2314aa16"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Ahora te puedes marchar» de Luis Miguel?",
+      "o": [
+        "El sufrimiento de quedar como la parte que pierde en el amor",
+        "Una mezcla de agitación, resistencia y lamento",
+        "El rechazo de una pareja que no fue sincera",
+        "La súplica por el regreso de una persona amada"
+      ],
+      "c": 2,
+      "explanation": "El rechazo de una pareja que no fue sincera. ",
+      "e": "🎤",
+      "id": "letras-8fbf15abbdad"
+    },
+    {
+      "q": "Completa este fragmento breve de «Suavemente»: «Suavemente, ___».",
+      "o": [
+        "mírame",
+        "bésame",
+        "háblame",
+        "llámame"
+      ],
+      "c": 1,
+      "explanation": "bésame. ",
+      "e": "🎤",
+      "id": "letras-eba34c48af85"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Suavemente» incluida en este reto? (Merengue)",
+      "o": [
+        "Elvis Crespo",
+        "Lucybell",
+        "Mon Laferte",
+        "Luis Fonsi con Daddy Yankee"
+      ],
+      "c": 0,
+      "explanation": "Elvis Crespo. ",
+      "e": "🎤",
+      "id": "letras-f7fa341f49dc"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Suavemente» de Elvis Crespo?",
+      "o": [
+        "La invitación a superar las penas con alegría",
+        "El duelo amoroso representado por una prenda oscura",
+        "Una afirmación sobre beber",
+        "Una petición de besos suaves"
+      ],
+      "c": 3,
+      "explanation": "Una petición de besos suaves. ",
+      "e": "🎤",
+      "id": "letras-37792eecc95a",
+      "img": "arcade/reference/letras.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "Completa este fragmento breve de «La vida es un carnaval»: «La vida es un ___».",
+      "o": [
+        "carnaval",
+        "camino",
+        "misterio",
+        "sueño"
+      ],
+      "c": 0,
+      "explanation": "carnaval. ",
+      "e": "🎤",
+      "id": "letras-0477129e9753"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «La vida es un carnaval» incluida en este reto? (Salsa)",
+      "o": [
+        "FloyyMenor con Cris MJ",
+        "Víctor Jara",
+        "Celia Cruz",
+        "Los Bunkers"
+      ],
+      "c": 2,
+      "explanation": "Celia Cruz. ",
+      "e": "🎤",
+      "id": "letras-6ebec7c0441f"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «La vida es un carnaval» de Celia Cruz?",
+      "o": [
+        "La invitación a superar las penas con alegría",
+        "Estar atrapado entre presiones opuestas",
+        "El deseo de un vínculo amoroso intenso",
+        "Una mezcla de agitación, resistencia y lamento"
+      ],
+      "c": 0,
+      "explanation": "La invitación a superar las penas con alegría. ",
+      "e": "🎤",
+      "id": "letras-edb18d97f459"
+    },
+    {
+      "q": "Completa este fragmento breve de «Tusa»: «Pero si le ponen la ___».",
+      "o": [
+        "radio",
+        "voz",
+        "canción",
+        "música"
+      ],
+      "c": 2,
+      "explanation": "canción. ",
+      "e": "🎤",
+      "id": "letras-57b7b07f9fb8"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Tusa» incluida en este reto? (Urbano latino · 2019)",
+      "o": [
+        "Víctor Jara",
+        "Buddy Richard",
+        "Enrique Iglesias con Marco Antonio Solís",
+        "Karol G con Nicki Minaj"
+      ],
+      "c": 3,
+      "explanation": "Karol G con Nicki Minaj. ",
+      "e": "🎤",
+      "id": "letras-2f2663975a24",
+      "img": "arcade/reference/letras.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Tusa» de Karol G con Nicki Minaj?",
+      "o": [
+        "El despecho que revive al escuchar una canción",
+        "Una petición a una mujer para interceder ante Dios",
+        "La falta de amplitud emocional en una relación",
+        "La búsqueda insistente de un amor ausente"
+      ],
+      "c": 0,
+      "explanation": "El despecho que revive al escuchar una canción. ",
+      "e": "🎤",
+      "id": "letras-c5c73e8f6306"
+    },
+    {
+      "q": "Completa el título de Karol G: «Pro___». (Urbano latino · 2022)",
+      "o": [
+        "bien",
+        "venza",
+        "ya",
+        "más"
+      ],
+      "c": 1,
+      "explanation": "venza. ",
+      "e": "🎤",
+      "id": "letras-b8196a8578fb"
+    },
+    {
+      "q": "¿Quién interpreta la versión de «Provenza» incluida en este reto? (Urbano latino · 2022)",
+      "o": [
+        "Luis Miguel",
+        "Polimá Westcoast con Pailita",
+        "Santana con Maná",
+        "Karol G"
+      ],
+      "c": 3,
+      "explanation": "Karol G. ",
+      "e": "🎤",
+      "id": "letras-c9a3e12ff6d5"
+    },
+    {
+      "q": "¿Qué idea o referencia corresponde a «Provenza» de Karol G?",
+      "o": [
+        "La atracción de observar a alguien tras una persiana",
+        "El paso del tiempo y un nuevo año",
+        "El amor comparado con aprender a nadar",
+        "El reencuentro y el deseo de verse de nuevo"
+      ],
+      "c": 3,
+      "explanation": "El reencuentro y el deseo de verse de nuevo. ",
+      "e": "🎤",
+      "id": "letras-d0f2573836ea"
+    }
+  ]
+}

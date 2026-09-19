@@ -1,0 +1,781 @@
+{
+  "name": "Cruci Quiz Chile",
+  "version": 1,
+  "levels": [
+    {
+      "id": 1,
+      "name": "Primeros pasos",
+      "secret": "CHILE",
+      "words": [
+        {
+          "answer": "PEUCO",
+          "clue": "Ave rapaz chilena asociada popularmente con la caza de aves de corral.",
+          "cross": 3
+        },
+        {
+          "answer": "CHOROY",
+          "clue": "Loro nativo del sur de Chile de cuerpo principalmente verde.",
+          "cross": 1
+        },
+        {
+          "answer": "REINETA",
+          "clue": "Pescado de carne blanca frecuente en restaurantes chilenos.",
+          "cross": 2
+        },
+        {
+          "answer": "MEDALLA",
+          "clue": "Distinción que se entrega a deportistas premiados.",
+          "cross": 5
+        },
+        {
+          "answer": "ESTERO",
+          "clue": "Curso de agua generalmente menor que un río, según el uso chileno.",
+          "cross": 0
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "De fonda en fonda",
+      "secret": "CUECA",
+      "words": [
+        {
+          "answer": "CONDOR",
+          "clue": "Ave andina presente en el escudo de Chile.",
+          "cross": 0
+        },
+        {
+          "answer": "MERQUEN",
+          "clue": "Condimento mapuche a base de ají seco y ahumado.",
+          "cross": 4
+        },
+        {
+          "answer": "MOTE",
+          "clue": "Trigo cocido que acompaña a los huesillos.",
+          "cross": 3
+        },
+        {
+          "answer": "PONCHO",
+          "clue": "Prenda de abrigo con una abertura central para la cabeza.",
+          "cross": 3
+        },
+        {
+          "answer": "PARRA",
+          "clue": "Apellido de Violeta y de Nicanor.",
+          "cross": 4
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Nuestro bosque",
+      "secret": "COPIHUE",
+      "words": [
+        {
+          "answer": "TURCA",
+          "clue": "Ave endémica de Chile que corre entre matorrales.",
+          "cross": 3
+        },
+        {
+          "answer": "TROMPO",
+          "clue": "Juguete que gira sobre una punta al lanzarlo con cuerda.",
+          "cross": 5
+        },
+        {
+          "answer": "PUMA",
+          "clue": "Gran felino nativo de América, también presente en Chile.",
+          "cross": 0
+        },
+        {
+          "answer": "MOAI",
+          "clue": "Gran escultura de piedra característica de Rapa Nui.",
+          "cross": 3
+        },
+        {
+          "answer": "QUELTEHUE",
+          "clue": "Ave de campo que alerta con un grito fuerte.",
+          "cross": 6
+        },
+        {
+          "answer": "MAQUI",
+          "clue": "Arbusto nativo de pequeños frutos oscuros comestibles.",
+          "cross": 3
+        },
+        {
+          "answer": "PEGA",
+          "clue": "Forma coloquial chilena de decir trabajo.",
+          "cross": 1
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Vida de campo",
+      "secret": "HUASO",
+      "words": [
+        {
+          "answer": "CHAMANTO",
+          "clue": "Prenda tejida tradicional del huaso, asociada a Doñihue.",
+          "cross": 1
+        },
+        {
+          "answer": "HUMEDAL",
+          "clue": "Ecosistema con suelo inundado o saturado de agua.",
+          "cross": 1
+        },
+        {
+          "answer": "PALTA",
+          "clue": "Nombre que usamos en Chile para el aguacate.",
+          "cross": 4
+        },
+        {
+          "answer": "SANFERNANDO",
+          "clue": "Capital de la provincia de Colchagua, escrita sin espacio.",
+          "cross": 0
+        },
+        {
+          "answer": "MARATON",
+          "clue": "Carrera atlética de 42,195 kilómetros.",
+          "cross": 5
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Alas andinas",
+      "secret": "CONDOR",
+      "words": [
+        {
+          "answer": "RECREO",
+          "clue": "Pausa entre clases para descansar y jugar.",
+          "cross": 2
+        },
+        {
+          "answer": "PROFESOR",
+          "clue": "Persona que enseña una asignatura.",
+          "cross": 6
+        },
+        {
+          "answer": "RANCAGUA",
+          "clue": "Capital de la Región de O’Higgins.",
+          "cross": 2
+        },
+        {
+          "answer": "PARADERO",
+          "clue": "Lugar donde esperamos la micro.",
+          "cross": 4
+        },
+        {
+          "answer": "FLAMENCO",
+          "clue": "Ave de patas largas y plumaje rosado frecuente en salares.",
+          "cross": 7
+        },
+        {
+          "answer": "QUEBRADA",
+          "clue": "Cauce o valle estrecho entre laderas.",
+          "cross": 4
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Pequeñas maravillas",
+      "secret": "PUDU",
+      "words": [
+        {
+          "answer": "BIP",
+          "clue": "Nombre de la tarjeta de transporte de Santiago.",
+          "cross": 2
+        },
+        {
+          "answer": "HUMITA",
+          "clue": "Preparación de choclo molido envuelta en sus propias hojas.",
+          "cross": 1
+        },
+        {
+          "answer": "VALDIVIA",
+          "clue": "Capital de la Región de Los Ríos.",
+          "cross": 3
+        },
+        {
+          "answer": "TEMUCO",
+          "clue": "Capital de la Región de La Araucanía.",
+          "cross": 3
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Rumbo al sur",
+      "secret": "CHILOE",
+      "words": [
+        {
+          "answer": "COIGUE",
+          "clue": "Gran árbol nativo de hojas perennes del sur.",
+          "cross": 0
+        },
+        {
+          "answer": "CHILLAN",
+          "clue": "Capital de la Región de Ñuble.",
+          "cross": 1
+        },
+        {
+          "answer": "ISLA",
+          "clue": "Porción de tierra rodeada de agua.",
+          "cross": 0
+        },
+        {
+          "answer": "TALCA",
+          "clue": "Capital de la Región del Maule.",
+          "cross": 2
+        },
+        {
+          "answer": "COBRE",
+          "clue": "Metal rojizo muy importante en las exportaciones chilenas.",
+          "cross": 1
+        },
+        {
+          "answer": "PESCADOR",
+          "clue": "Persona que se dedica a capturar peces.",
+          "cross": 1
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Bajo las estrellas",
+      "secret": "ATACAMA",
+      "words": [
+        {
+          "answer": "ZAMPOÑA",
+          "clue": "Instrumento andino formado por varios tubos de distinta longitud.",
+          "cross": 6
+        },
+        {
+          "answer": "CASTRO",
+          "clue": "Ciudad chilota conocida por sus palafitos.",
+          "cross": 3
+        },
+        {
+          "answer": "HUASO",
+          "clue": "Figura tradicional del campo chileno.",
+          "cross": 2
+        },
+        {
+          "answer": "CURICO",
+          "clue": "Ciudad maulina cuyo nombre significa agua negra según una interpretación mapuche.",
+          "cross": 0
+        },
+        {
+          "answer": "CHARANGO",
+          "clue": "Instrumento andino pequeño de cuerdas dobles.",
+          "cross": 4
+        },
+        {
+          "answer": "PEUMO",
+          "clue": "Árbol nativo de frutos rojizos y hojas aromáticas.",
+          "cross": 3
+        },
+        {
+          "answer": "CHINCHILLA",
+          "clue": "Roedor andino de pelaje muy denso.",
+          "cross": 9
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Entre ríos",
+      "secret": "VALDIVIA",
+      "words": [
+        {
+          "answer": "CICLOVIA",
+          "clue": "Vía destinada a la circulación de bicicletas.",
+          "cross": 5
+        },
+        {
+          "answer": "ESPUELA",
+          "clue": "Pieza que se lleva en el talón en ciertas actividades ecuestres.",
+          "cross": 6
+        },
+        {
+          "answer": "DELFIN",
+          "clue": "Mamífero marino de cuerpo estilizado y gran capacidad de nado.",
+          "cross": 2
+        },
+        {
+          "answer": "ASADO",
+          "clue": "Comida preparada sobre brasas, frecuente en reuniones familiares.",
+          "cross": 3
+        },
+        {
+          "answer": "QUIQUE",
+          "clue": "Mamífero alargado y carnívoro de Sudamérica.",
+          "cross": 2
+        },
+        {
+          "answer": "VOLCAN",
+          "clue": "Montaña por la que pueden salir lava y gases.",
+          "cross": 0
+        },
+        {
+          "answer": "FERIANTE",
+          "clue": "Persona que vende en una feria libre.",
+          "cross": 3
+        },
+        {
+          "answer": "CHANCACA",
+          "clue": "Bloque oscuro de azúcar usado en salsas dulces tradicionales.",
+          "cross": 2
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Palabras que vuelan",
+      "secret": "NERUDA",
+      "words": [
+        {
+          "answer": "CHUNCHO",
+          "clue": "Pequeña ave rapaz nocturna chilena.",
+          "cross": 3
+        },
+        {
+          "answer": "ESTUCHE",
+          "clue": "Objeto donde guardamos lápices y otros útiles.",
+          "cross": 0
+        },
+        {
+          "answer": "GLACIAR",
+          "clue": "Gran masa de hielo que se desplaza lentamente.",
+          "cross": 6
+        },
+        {
+          "answer": "RAYUELA",
+          "clue": "Juego tradicional chileno en que se lanzan tejos.",
+          "cross": 3
+        },
+        {
+          "answer": "ESTADIO",
+          "clue": "Recinto con cancha y graderías para eventos deportivos.",
+          "cross": 4
+        },
+        {
+          "answer": "SOPAIPILLA",
+          "clue": "Masa redonda frita que puede servirse pasada en chancaca.",
+          "cross": 3
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Voces de Chile",
+      "secret": "MISTRAL",
+      "words": [
+        {
+          "answer": "MINERO",
+          "clue": "Trabajador que extrae minerales.",
+          "cross": 0
+        },
+        {
+          "answer": "PACIFICO",
+          "clue": "Océano que baña la costa continental chilena.",
+          "cross": 5
+        },
+        {
+          "answer": "ARTESANO",
+          "clue": "Persona que crea objetos principalmente con trabajo manual.",
+          "cross": 4
+        },
+        {
+          "answer": "RANITA",
+          "clue": "Nombre diminutivo del anfibio de Darwin.",
+          "cross": 4
+        },
+        {
+          "answer": "RAPANUI",
+          "clue": "Nombre del pueblo y de la isla de Pascua, escrito sin espacio.",
+          "cross": 0
+        },
+        {
+          "answer": "NUTRIA",
+          "clue": "Mamífero semiacuático de pelaje denso.",
+          "cross": 5
+        },
+        {
+          "answer": "CHILCO",
+          "clue": "Arbusto de flores colgantes rojas y violetas del sur.",
+          "cross": 3
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Sabores de casa",
+      "secret": "EMPANADA",
+      "words": [
+        {
+          "answer": "COPIHUE",
+          "clue": "Flor nacional de Chile, con forma de campana.",
+          "cross": 6
+        },
+        {
+          "answer": "MACHAS",
+          "clue": "Mariscos conocidos por servirse a la parmesana.",
+          "cross": 0
+        },
+        {
+          "answer": "ESPINO",
+          "clue": "Árbol de flores amarillas y ramas espinosas de Chile central.",
+          "cross": 2
+        },
+        {
+          "answer": "CHURRASCO",
+          "clue": "Lámina de vacuno usada en un popular sándwich chileno.",
+          "cross": 5
+        },
+        {
+          "answer": "MINGA",
+          "clue": "Trabajo comunitario tradicional; en Chiloé puede incluir mover una casa.",
+          "cross": 2
+        },
+        {
+          "answer": "MURTA",
+          "clue": "Arbusto del sur también llamado murtilla.",
+          "cross": 4
+        },
+        {
+          "answer": "RAMADA",
+          "clue": "Instalación festiva tradicional, originalmente cubierta con ramas.",
+          "cross": 4
+        },
+        {
+          "answer": "ANTOFAGASTA",
+          "clue": "Capital de la región minera del mismo nombre.",
+          "cross": 7
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Tiempo de cosecha",
+      "secret": "HUMITA",
+      "words": [
+        {
+          "answer": "ARCHIPIELAGO",
+          "clue": "Conjunto de islas, como Chiloé.",
+          "cross": 3
+        },
+        {
+          "answer": "TRUTRUCA",
+          "clue": "Instrumento mapuche de viento, largo y de sonido potente.",
+          "cross": 5
+        },
+        {
+          "answer": "PICHILEMU",
+          "clue": "Ciudad costera de O’Higgins famosa por el surf.",
+          "cross": 7
+        },
+        {
+          "answer": "SALITRE",
+          "clue": "Recurso que impulsó históricamente oficinas mineras del norte.",
+          "cross": 3
+        },
+        {
+          "answer": "HUMBERSTONE",
+          "clue": "Antigua oficina salitrera de Tarapacá, hoy patrimonio mundial.",
+          "cross": 7
+        },
+        {
+          "answer": "GUANACO",
+          "clue": "Camélido silvestre sudamericano de cuello largo.",
+          "cross": 4
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Islas y tradiciones",
+      "secret": "CURANTO",
+      "words": [
+        {
+          "answer": "MAPUCHE",
+          "clue": "Pueblo originario cuyo nombre suele traducirse como gente de la tierra.",
+          "cross": 4
+        },
+        {
+          "answer": "HUESILLO",
+          "clue": "Durazno deshidratado de una bebida chilena tradicional.",
+          "cross": 1
+        },
+        {
+          "answer": "KULTRUN",
+          "clue": "Tambor ceremonial mapuche de forma semiesférica.",
+          "cross": 4
+        },
+        {
+          "answer": "QUILLAY",
+          "clue": "Árbol nativo cuya corteza contiene saponinas.",
+          "cross": 5
+        },
+        {
+          "answer": "ONCE",
+          "clue": "Comida de la tarde en Chile con té, pan y acompañamientos.",
+          "cross": 1
+        },
+        {
+          "answer": "ZAPATILLA",
+          "clue": "Calzado deportivo; en Chile también puede ser un alargador eléctrico.",
+          "cross": 4
+        },
+        {
+          "answer": "LOICA",
+          "clue": "Ave cuyo pecho rojo es muy reconocible.",
+          "cross": 1
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "La gran ciudad",
+      "secret": "SANTIAGO",
+      "words": [
+        {
+          "answer": "VENTISQUERO",
+          "clue": "Nombre usado para un glaciar en Chile austral.",
+          "cross": 5
+        },
+        {
+          "answer": "DIUCA",
+          "clue": "Ave chilena gris con garganta y vientre claros.",
+          "cross": 4
+        },
+        {
+          "answer": "CHUNGUNGO",
+          "clue": "Nutria marina de las costas sudamericanas.",
+          "cross": 3
+        },
+        {
+          "answer": "PUERTOMONTT",
+          "clue": "Capital de Los Lagos, escrita sin espacio.",
+          "cross": 10
+        },
+        {
+          "answer": "ELQUI",
+          "clue": "Valle nortino asociado al pisco, observatorios y Gabriela Mistral.",
+          "cross": 4
+        },
+        {
+          "answer": "CHAGUAL",
+          "clue": "Planta de largas hojas espinosas y gran vara floral.",
+          "cross": 5
+        },
+        {
+          "answer": "GEISER",
+          "clue": "Surgencia que expulsa periódicamente agua caliente y vapor.",
+          "cross": 0
+        },
+        {
+          "answer": "BOLDO",
+          "clue": "Árbol nativo de hojas aromáticas usado en infusiones.",
+          "cross": 4
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Mirando el océano",
+      "secret": "RAPANUI",
+      "words": [
+        {
+          "answer": "PUCARA",
+          "clue": "Fortificación de piedra andina.",
+          "cross": 4
+        },
+        {
+          "answer": "PUNTAARENAS",
+          "clue": "Capital de Magallanes, escrita sin espacio.",
+          "cross": 5
+        },
+        {
+          "answer": "PEBRE",
+          "clue": "Salsa chilena con tomate, cebolla, cilantro y ají.",
+          "cross": 0
+        },
+        {
+          "answer": "ANCUD",
+          "clue": "Ciudad del norte de la isla grande de Chiloé.",
+          "cross": 0
+        },
+        {
+          "answer": "PANTRUCAS",
+          "clue": "Trocitos de masa cocidos dentro de un caldo.",
+          "cross": 2
+        },
+        {
+          "answer": "DUNA",
+          "clue": "Montículo de arena formado por el viento.",
+          "cross": 1
+        },
+        {
+          "answer": "MICRO",
+          "clue": "Nombre coloquial chileno del autobús urbano.",
+          "cross": 1
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Cuidar lo nuestro",
+      "secret": "HUEMUL",
+      "words": [
+        {
+          "answer": "CHAPALELE",
+          "clue": "Masa chilota preparada con papa y harina.",
+          "cross": 1
+        },
+        {
+          "answer": "CUADERNO",
+          "clue": "Conjunto de hojas unidas usado para tomar apuntes.",
+          "cross": 1
+        },
+        {
+          "answer": "LASERENA",
+          "clue": "Capital de Coquimbo, escrita sin espacio.",
+          "cross": 3
+        },
+        {
+          "answer": "MISTRAL",
+          "clue": "Apellido literario de la poeta chilena que obtuvo el Nobel en 1945.",
+          "cross": 0
+        },
+        {
+          "answer": "LUCHE",
+          "clue": "Alga comestible usada, por ejemplo, en guisos y tortillas.",
+          "cross": 1
+        },
+        {
+          "answer": "VOLANTIN",
+          "clue": "Nombre chileno de la cometa de papel que se eleva con viento.",
+          "cross": 2
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Mesa compartida",
+      "secret": "PEBRE",
+      "words": [
+        {
+          "answer": "PIZARRA",
+          "clue": "Superficie en la que el profesor escribe para la clase.",
+          "cross": 0
+        },
+        {
+          "answer": "ASCENSOR",
+          "clue": "Transporte inclinado emblemático de los cerros de Valparaíso.",
+          "cross": 3
+        },
+        {
+          "answer": "CABRO",
+          "clue": "Palabra coloquial chilena para un niño o joven.",
+          "cross": 2
+        },
+        {
+          "answer": "ZORRO",
+          "clue": "Cánido silvestre de hocico fino y cola larga.",
+          "cross": 2
+        },
+        {
+          "answer": "BALLENA",
+          "clue": "Gran mamífero marino que respira aire.",
+          "cross": 4
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Viento de septiembre",
+      "secret": "VOLANTIN",
+      "words": [
+        {
+          "answer": "VALPARAISO",
+          "clue": "Ciudad portuaria famosa por sus cerros y ascensores.",
+          "cross": 0
+        },
+        {
+          "answer": "ALFAJOR",
+          "clue": "Dulce de dos tapas unidas por un relleno.",
+          "cross": 5
+        },
+        {
+          "answer": "MOCHILA",
+          "clue": "Bolso que se lleva sobre la espalda.",
+          "cross": 5
+        },
+        {
+          "answer": "SANTIAGO",
+          "clue": "Capital de Chile.",
+          "cross": 5
+        },
+        {
+          "answer": "NERUDA",
+          "clue": "Apellido del poeta chileno que obtuvo el Nobel en 1971.",
+          "cross": 0
+        },
+        {
+          "answer": "GUITARRA",
+          "clue": "Instrumento de seis cuerdas habitual en la música popular chilena.",
+          "cross": 3
+        },
+        {
+          "answer": "IQUIQUE",
+          "clue": "Capital de la Región de Tarapacá.",
+          "cross": 0
+        },
+        {
+          "answer": "QUENA",
+          "clue": "Instrumento andino de viento, abierto y con muesca.",
+          "cross": 3
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "La gran celebración",
+      "secret": "CHOCLO",
+      "words": [
+        {
+          "answer": "CHUCAO",
+          "clue": "Ave de bosque del sur, conocida por su canto fuerte.",
+          "cross": 3
+        },
+        {
+          "answer": "CHARQUICAN",
+          "clue": "Guiso de papas y verduras parcialmente molidas.",
+          "cross": 1
+        },
+        {
+          "answer": "CURANTO",
+          "clue": "Preparación chilota tradicional con mariscos, carnes y papas.",
+          "cross": 6
+        },
+        {
+          "answer": "CHORIPAN",
+          "clue": "Pan con una longaniza o chorizo asado.",
+          "cross": 0
+        },
+        {
+          "answer": "LAPIZ",
+          "clue": "Útil escolar para escribir o dibujar.",
+          "cross": 0
+        },
+        {
+          "answer": "MUSEO",
+          "clue": "Institución que conserva y exhibe colecciones.",
+          "cross": 4
+        }
+      ]
+    }
+  ]
+}

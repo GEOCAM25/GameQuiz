@@ -1,0 +1,2023 @@
+{
+  "cat": "tronos",
+  "name": "Juego de Tronos / Casa del Dragón",
+  "emoji": "🐉",
+  "edition": "4.0",
+  "sources": [
+    "https://www.hbo.com/game-of-thrones/cast-and-crew",
+    "https://www.hbo.com/house-of-the-dragon/cast-and-crew",
+    "https://en.wikipedia.org/wiki/House_of_the_Dragon"
+  ],
+  "questions": [
+    {
+      "q": "¿Quién interpreta a Ned Stark en las series de HBO?",
+      "o": [
+        "Emilia Clarke",
+        "Ewan Mitchell",
+        "Sean Bean",
+        "Harry Lloyd"
+      ],
+      "c": 2,
+      "explanation": "Ned Stark: Sean Bean. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-db121de07dba",
+      "img": "arcade/reference/tronos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Ned Stark?",
+      "o": [
+        "Stark",
+        "Martell",
+        "Greyjoy",
+        "Baelish"
+      ],
+      "c": 0,
+      "explanation": "Ned Stark: Stark. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-1ac92044232d"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Ned Stark en la adaptación televisiva?",
+      "o": [
+        "Muere en la Boda Roja",
+        "Sirve como Mano de Daenerys",
+        "Es madre de tres dragones nacidos de huevos petrificados",
+        "Es ejecutado tras ser acusado de traición en Desembarco del Rey"
+      ],
+      "c": 3,
+      "explanation": "Ned Stark: Es ejecutado tras ser acusado de traición en Desembarco del Rey. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-e2de0235f584"
+    },
+    {
+      "q": "¿Quién interpreta a Catelyn Stark en las series de HBO?",
+      "o": [
+        "Aidan Gillen",
+        "Michelle Fairley",
+        "Liam Cunningham",
+        "Natalie Dormer"
+      ],
+      "c": 1,
+      "explanation": "Catelyn Stark: Michelle Fairley. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-69768849d236"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Catelyn Stark?",
+      "o": [
+        "Seaworth",
+        "Velaryon por nombre oficial",
+        "Cole",
+        "Tully por nacimiento"
+      ],
+      "c": 3,
+      "explanation": "Catelyn Stark: Tully por nacimiento. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-e0c5b99a4a94"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Catelyn Stark en la adaptación televisiva?",
+      "o": [
+        "Es conocido como Meñique",
+        "Muere en la Boda Roja",
+        "Monta a Dreamfyre",
+        "Nombra heredera a Rhaenyra"
+      ],
+      "c": 1,
+      "explanation": "Catelyn Stark: Muere en la Boda Roja. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-8437fd81a59a",
+      "img": "arcade/reference/tronos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Quién interpreta a Robb Stark en las series de HBO?",
+      "o": [
+        "Rory McCann",
+        "Richard Madden",
+        "Sean Bean",
+        "Finn Jones"
+      ],
+      "c": 1,
+      "explanation": "Robb Stark: Richard Madden. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-e6cfafec615d"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Robb Stark?",
+      "o": [
+        "Tarly",
+        "Stark",
+        "Tyrell",
+        "Lannister"
+      ],
+      "c": 1,
+      "explanation": "Robb Stark: Stark. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-0b0509532088"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Robb Stark en la adaptación televisiva?",
+      "o": [
+        "Es madre de tres dragones nacidos de huevos petrificados",
+        "Se convierte en el Cuervo de Tres Ojos",
+        "Es proclamado Rey en el Norte",
+        "Muere envenenado durante su boda"
+      ],
+      "c": 2,
+      "explanation": "Robb Stark: Es proclamado Rey en el Norte. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-1296ec981d46"
+    },
+    {
+      "q": "¿Quién interpreta a Sansa Stark en las series de HBO?",
+      "o": [
+        "Sophie Turner",
+        "Phia Saban",
+        "Pedro Pascal",
+        "Liam Cunningham"
+      ],
+      "c": 0,
+      "explanation": "Sansa Stark: Sophie Turner. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-1744bb4a64f4"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Sansa Stark?",
+      "o": [
+        "Origen extranjero en Poniente",
+        "Stark",
+        "Baelish",
+        "Hightower"
+      ],
+      "c": 1,
+      "explanation": "Sansa Stark: Stark. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-5d89589aed49",
+      "img": "arcade/reference/tronos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué hecho corresponde a Sansa Stark en la adaptación televisiva?",
+      "o": [
+        "Es conocido como el Caballero de las Flores",
+        "Es el hermano menor de Robert y Stannis",
+        "Se compromete a proteger a las hijas de Catelyn",
+        "Termina coronada Reina en el Norte"
+      ],
+      "c": 3,
+      "explanation": "Sansa Stark: Termina coronada Reina en el Norte. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-6d7f31692a69"
+    },
+    {
+      "q": "¿Quién interpreta a Arya Stark en las series de HBO?",
+      "o": [
+        "Maisie Williams",
+        "Phia Saban",
+        "Michelle Fairley",
+        "Elliot Grihault"
+      ],
+      "c": 0,
+      "explanation": "Arya Stark: Maisie Williams. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-248447810218"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Arya Stark?",
+      "o": [
+        "Velaryon",
+        "Lannister",
+        "Stark",
+        "Baelish"
+      ],
+      "c": 2,
+      "explanation": "Arya Stark: Stark. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-a70d67c59665"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Arya Stark en la adaptación televisiva?",
+      "o": [
+        "Monta a Vermax",
+        "Entrena con los Hombres sin Rostro",
+        "Es conocido como la Serpiente Marina",
+        "Monta a Caraxes"
+      ],
+      "c": 1,
+      "explanation": "Arya Stark: Entrena con los Hombres sin Rostro. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-dd8f3f930c63"
+    },
+    {
+      "q": "¿Quién interpreta a Bran Stark en las series de HBO?",
+      "o": [
+        "Isaac Hempstead Wright",
+        "Liam Cunningham",
+        "Matthew Needham",
+        "Maisie Williams"
+      ],
+      "c": 0,
+      "explanation": "Bran Stark: Isaac Hempstead Wright. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-a1fe379a3ea9",
+      "img": "arcade/reference/tronos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Bran Stark?",
+      "o": [
+        "Stark",
+        "Tarly",
+        "Arryn",
+        "Seaworth"
+      ],
+      "c": 0,
+      "explanation": "Bran Stark: Stark. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-258018381d89"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Bran Stark en la adaptación televisiva?",
+      "o": [
+        "Es conocida como la Reina de las Espinas",
+        "Es conocido como la Serpiente Marina",
+        "Se convierte en el Cuervo de Tres Ojos",
+        "Monta a Vhagar"
+      ],
+      "c": 2,
+      "explanation": "Bran Stark: Se convierte en el Cuervo de Tres Ojos. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-6da51c28987b"
+    },
+    {
+      "q": "¿Quién interpreta a Jon Snow en las series de HBO?",
+      "o": [
+        "Ryan Corr",
+        "Eve Best",
+        "Kit Harington",
+        "Stephen Dillane"
+      ],
+      "c": 2,
+      "explanation": "Jon Snow: Kit Harington. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-dc7f3d669e14"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Jon Snow?",
+      "o": [
+        "Arryn",
+        "Criado por los Stark",
+        "Seaworth",
+        "Clegane"
+      ],
+      "c": 1,
+      "explanation": "Jon Snow: Criado por los Stark. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-090d189d618a"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Jon Snow en la adaptación televisiva?",
+      "o": [
+        "Es hijo de Lyanna Stark y Rhaegar Targaryen",
+        "Es el hermano menor de Robert y Stannis",
+        "Muere envenenado durante su boda",
+        "Se forma en la Ciudadela"
+      ],
+      "c": 0,
+      "explanation": "Jon Snow: Es hijo de Lyanna Stark y Rhaegar Targaryen. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-29367bd3d99d",
+      "img": "arcade/reference/tronos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Quién interpreta a Daenerys Targaryen en las series de HBO?",
+      "o": [
+        "Charles Dance",
+        "Sonoya Mizuno",
+        "Emilia Clarke",
+        "Maisie Williams"
+      ],
+      "c": 2,
+      "explanation": "Daenerys Targaryen: Emilia Clarke. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-5c3e6695b0dd"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Daenerys Targaryen?",
+      "o": [
+        "Targaryen",
+        "Origen extranjero en Poniente",
+        "Criado como Baratheon",
+        "Stark"
+      ],
+      "c": 0,
+      "explanation": "Daenerys Targaryen: Targaryen. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-4ca355d8618c"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Daenerys Targaryen en la adaptación televisiva?",
+      "o": [
+        "Es madre de tres dragones nacidos de huevos petrificados",
+        "Muere en la Boda Roja",
+        "Es hermano mayor de Daenerys",
+        "Es conocida como el Gusano Blanco"
+      ],
+      "c": 0,
+      "explanation": "Daenerys Targaryen: Es madre de tres dragones nacidos de huevos petrificados. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-ff1005170244"
+    },
+    {
+      "q": "¿Quién interpreta a Viserys Targaryen de Juego de Tronos en las series de HBO?",
+      "o": [
+        "Maisie Williams",
+        "Phia Saban",
+        "Eve Best",
+        "Harry Lloyd"
+      ],
+      "c": 3,
+      "explanation": "Viserys Targaryen de Juego de Tronos: Harry Lloyd. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-a69a232f6cd1"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Viserys Targaryen de Juego de Tronos?",
+      "o": [
+        "Targaryen",
+        "Tarth",
+        "Baelish",
+        "Clegane"
+      ],
+      "c": 0,
+      "explanation": "Viserys Targaryen de Juego de Tronos: Targaryen. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-4af51e45f708",
+      "img": "arcade/reference/tronos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué hecho corresponde a Viserys Targaryen de Juego de Tronos en la adaptación televisiva?",
+      "o": [
+        "Es hermano de Harwin",
+        "Fue rey antes de la guerra entre sus sucesores",
+        "Es hermano mayor de Daenerys",
+        "Es padre de Cersei, Jaime y Tyrion"
+      ],
+      "c": 2,
+      "explanation": "Viserys Targaryen de Juego de Tronos: Es hermano mayor de Daenerys. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-46566c395269"
+    },
+    {
+      "q": "¿Quién interpreta a Tyrion Lannister en las series de HBO?",
+      "o": [
+        "Jack Gleeson",
+        "Peter Dinklage",
+        "Iain Glen",
+        "Eve Best"
+      ],
+      "c": 1,
+      "explanation": "Tyrion Lannister: Peter Dinklage. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-9825a69d519c"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Tyrion Lannister?",
+      "o": [
+        "Tyrell",
+        "Lannister",
+        "Mormont",
+        "Seaworth"
+      ],
+      "c": 1,
+      "explanation": "Tyrion Lannister: Lannister. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-e2e4934ac803"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Tyrion Lannister en la adaptación televisiva?",
+      "o": [
+        "Es conocido como Meñique",
+        "Es conocido como el Perro",
+        "Termina coronada Reina en el Norte",
+        "Sirve como Mano de Daenerys"
+      ],
+      "c": 3,
+      "explanation": "Tyrion Lannister: Sirve como Mano de Daenerys. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-e35dca6d154c"
+    },
+    {
+      "q": "¿Quién interpreta a Cersei Lannister en las series de HBO?",
+      "o": [
+        "Gavin Spokes",
+        "Lena Headey",
+        "Gwendoline Christie",
+        "Natalie Dormer"
+      ],
+      "c": 1,
+      "explanation": "Cersei Lannister: Lena Headey. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-1b6b85064f34",
+      "img": "arcade/reference/tronos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Cersei Lannister?",
+      "o": [
+        "Origen extranjero en Poniente",
+        "Tyrell",
+        "Criado como Baratheon",
+        "Lannister"
+      ],
+      "c": 3,
+      "explanation": "Cersei Lannister: Lannister. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-a8621fbefdad"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Cersei Lannister en la adaptación televisiva?",
+      "o": [
+        "Es conocido como Meñique",
+        "Sirve a Daenerys y padece psoriagris",
+        "Es madre de Joffrey, Myrcella y Tommen",
+        "Es hermano de Harwin"
+      ],
+      "c": 2,
+      "explanation": "Cersei Lannister: Es madre de Joffrey, Myrcella y Tommen. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-f32ed0e690d9"
+    },
+    {
+      "q": "¿Quién interpreta a Jaime Lannister en las series de HBO?",
+      "o": [
+        "Natalie Dormer",
+        "Nikolaj Coster-Waldau",
+        "Gavin Spokes",
+        "Maisie Williams"
+      ],
+      "c": 1,
+      "explanation": "Jaime Lannister: Nikolaj Coster-Waldau. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-2ac8aeb54d82"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Jaime Lannister?",
+      "o": [
+        "Origen extranjero en Poniente",
+        "Lannister",
+        "Martell",
+        "Tarth"
+      ],
+      "c": 1,
+      "explanation": "Jaime Lannister: Lannister. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-7c4ad9b8a2e5"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Jaime Lannister en la adaptación televisiva?",
+      "o": [
+        "Es conocido como la Serpiente Marina",
+        "Es madre de tres dragones nacidos de huevos petrificados",
+        "Se forma en la Ciudadela",
+        "Pierde la mano derecha"
+      ],
+      "c": 3,
+      "explanation": "Jaime Lannister: Pierde la mano derecha. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-cfe454879c1e",
+      "img": "arcade/reference/tronos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Quién interpreta a Tywin Lannister en las series de HBO?",
+      "o": [
+        "Alfie Allen",
+        "Ewan Mitchell",
+        "Fabien Frankel",
+        "Charles Dance"
+      ],
+      "c": 3,
+      "explanation": "Tywin Lannister: Charles Dance. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-5ed0c538edc9"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Tywin Lannister?",
+      "o": [
+        "Seaworth",
+        "Strong",
+        "Lannister",
+        "Tarth"
+      ],
+      "c": 2,
+      "explanation": "Tywin Lannister: Lannister. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-a3dafadf6d45"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Tywin Lannister en la adaptación televisiva?",
+      "o": [
+        "Monta a Vhagar",
+        "Es padre de Cersei, Jaime y Tyrion",
+        "Monta a Arrax",
+        "Es ejecutado tras ser acusado de traición en Desembarco del Rey"
+      ],
+      "c": 1,
+      "explanation": "Tywin Lannister: Es padre de Cersei, Jaime y Tyrion. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-25869d5a5920"
+    },
+    {
+      "q": "¿Quién interpreta a Robert Baratheon en las series de HBO?",
+      "o": [
+        "Mark Addy",
+        "Matthew Needham",
+        "Nikolaj Coster-Waldau",
+        "Aidan Gillen"
+      ],
+      "c": 0,
+      "explanation": "Robert Baratheon: Mark Addy. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-18d8594bc9c0"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Robert Baratheon?",
+      "o": [
+        "Mormont",
+        "Baratheon",
+        "Targaryen",
+        "Strong"
+      ],
+      "c": 1,
+      "explanation": "Robert Baratheon: Baratheon. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-eb4ccc35ec47",
+      "img": "arcade/reference/tronos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué hecho corresponde a Robert Baratheon en la adaptación televisiva?",
+      "o": [
+        "Fue rey antes de la guerra entre sus sucesores",
+        "Es tío de Theon y Yara",
+        "Monta a Vermax",
+        "Monta a Dreamfyre"
+      ],
+      "c": 0,
+      "explanation": "Robert Baratheon: Fue rey antes de la guerra entre sus sucesores. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-1ab77f255a17"
+    },
+    {
+      "q": "¿Quién interpreta a Stannis Baratheon en las series de HBO?",
+      "o": [
+        "Stephen Dillane",
+        "Peter Dinklage",
+        "Michelle Fairley",
+        "Rhys Ifans"
+      ],
+      "c": 0,
+      "explanation": "Stannis Baratheon: Stephen Dillane. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-7e45542f7539"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Stannis Baratheon?",
+      "o": [
+        "Baratheon",
+        "Martell",
+        "Arryn",
+        "Criado como Baratheon"
+      ],
+      "c": 0,
+      "explanation": "Stannis Baratheon: Baratheon. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-5f6ce49a0fd0"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Stannis Baratheon en la adaptación televisiva?",
+      "o": [
+        "Es conocida como el Gusano Blanco",
+        "Monta a Vermax",
+        "Reclama el trono apoyándose en su derecho sucesorio",
+        "Monta a Arrax"
+      ],
+      "c": 2,
+      "explanation": "Stannis Baratheon: Reclama el trono apoyándose en su derecho sucesorio. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-583c5b67bf24"
+    },
+    {
+      "q": "¿Quién interpreta a Renly Baratheon en las series de HBO?",
+      "o": [
+        "Gavin Spokes",
+        "Rhys Ifans",
+        "Gethin Anthony",
+        "Matthew Needham"
+      ],
+      "c": 2,
+      "explanation": "Renly Baratheon: Gethin Anthony. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-975325db6e37",
+      "img": "arcade/reference/tronos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Renly Baratheon?",
+      "o": [
+        "Clegane",
+        "Criado por los Stark",
+        "Origen extranjero en Poniente",
+        "Baratheon"
+      ],
+      "c": 3,
+      "explanation": "Renly Baratheon: Baratheon. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-b07e37eee123"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Renly Baratheon en la adaptación televisiva?",
+      "o": [
+        "Es el hermano menor de Robert y Stannis",
+        "Es conocido como el Caballero de las Flores",
+        "Monta a Meleys",
+        "Es conocida como la Reina de las Espinas"
+      ],
+      "c": 0,
+      "explanation": "Renly Baratheon: Es el hermano menor de Robert y Stannis. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-12b367e75b29"
+    },
+    {
+      "q": "¿Quién interpreta a Joffrey Baratheon en las series de HBO?",
+      "o": [
+        "Gavin Spokes",
+        "Jack Gleeson",
+        "Rhys Ifans",
+        "Gethin Anthony"
+      ],
+      "c": 1,
+      "explanation": "Joffrey Baratheon: Jack Gleeson. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-1a7073775856"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Joffrey Baratheon?",
+      "o": [
+        "Stark",
+        "Criado como Baratheon",
+        "Tully por nacimiento",
+        "Arryn"
+      ],
+      "c": 1,
+      "explanation": "Joffrey Baratheon: Criado como Baratheon. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-8ff612d1916f"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Joffrey Baratheon en la adaptación televisiva?",
+      "o": [
+        "Es conocido como el Caballero de las Flores",
+        "Entrena con los Hombres sin Rostro",
+        "Muere envenenado durante su boda",
+        "Monta a Moondancer"
+      ],
+      "c": 2,
+      "explanation": "Joffrey Baratheon: Muere envenenado durante su boda. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-809931bf0606",
+      "img": "arcade/reference/tronos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Quién interpreta a Margaery Tyrell en las series de HBO?",
+      "o": [
+        "Maisie Williams",
+        "Gemma Whelan",
+        "Jack Gleeson",
+        "Natalie Dormer"
+      ],
+      "c": 3,
+      "explanation": "Margaery Tyrell: Natalie Dormer. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-238d766915d2"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Margaery Tyrell?",
+      "o": [
+        "Baelish",
+        "Strong",
+        "Tyrell",
+        "Mormont"
+      ],
+      "c": 2,
+      "explanation": "Margaery Tyrell: Tyrell. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-5f4142b15274"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Margaery Tyrell en la adaptación televisiva?",
+      "o": [
+        "Es padre de Harwin y Larys",
+        "Monta a Moondancer",
+        "Se casa con Renly, Joffrey y Tommen",
+        "Es hermana de Theon"
+      ],
+      "c": 2,
+      "explanation": "Margaery Tyrell: Se casa con Renly, Joffrey y Tommen. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-4bc555e29b91"
+    },
+    {
+      "q": "¿Quién interpreta a Olenna Tyrell en las series de HBO?",
+      "o": [
+        "Nikolaj Coster-Waldau",
+        "Sean Bean",
+        "Kit Harington",
+        "Diana Rigg"
+      ],
+      "c": 3,
+      "explanation": "Olenna Tyrell: Diana Rigg. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-8bb39cc264d2"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Olenna Tyrell?",
+      "o": [
+        "Redwyne por nacimiento",
+        "Targaryen",
+        "Seaworth",
+        "Tyrell"
+      ],
+      "c": 0,
+      "explanation": "Olenna Tyrell: Redwyne por nacimiento. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-934fbf29b2ad",
+      "img": "arcade/reference/tronos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué hecho corresponde a Olenna Tyrell en la adaptación televisiva?",
+      "o": [
+        "Es conocida como la Reina de las Espinas",
+        "Es padre de Harwin y Larys",
+        "Sirve a Daenerys y padece psoriagris",
+        "Monta a Moondancer"
+      ],
+      "c": 0,
+      "explanation": "Olenna Tyrell: Es conocida como la Reina de las Espinas. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-394c3622dc9d"
+    },
+    {
+      "q": "¿Quién interpreta a Loras Tyrell en las series de HBO?",
+      "o": [
+        "Tom Glynn-Carney",
+        "Richard Madden",
+        "Finn Jones",
+        "Pedro Pascal"
+      ],
+      "c": 2,
+      "explanation": "Loras Tyrell: Finn Jones. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-5105b532eace"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Loras Tyrell?",
+      "o": [
+        "Targaryen",
+        "Criado como Baratheon",
+        "Tyrell",
+        "Mormont"
+      ],
+      "c": 2,
+      "explanation": "Loras Tyrell: Tyrell. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-9b4f300450ce"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Loras Tyrell en la adaptación televisiva?",
+      "o": [
+        "Es madre de tres dragones nacidos de huevos petrificados",
+        "Monta a Caraxes",
+        "Es hermano de Harwin",
+        "Es conocido como el Caballero de las Flores"
+      ],
+      "c": 3,
+      "explanation": "Loras Tyrell: Es conocido como el Caballero de las Flores. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-9f83fcc65c71"
+    },
+    {
+      "q": "¿Quién interpreta a Theon Greyjoy en las series de HBO?",
+      "o": [
+        "Alfie Allen",
+        "Rhys Ifans",
+        "Emilia Clarke",
+        "Aidan Gillen"
+      ],
+      "c": 0,
+      "explanation": "Theon Greyjoy: Alfie Allen. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-1c09d7bfa598",
+      "img": "arcade/reference/tronos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Theon Greyjoy?",
+      "o": [
+        "Targaryen",
+        "Greyjoy",
+        "Criado como Baratheon",
+        "Lannister"
+      ],
+      "c": 1,
+      "explanation": "Theon Greyjoy: Greyjoy. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-fd6a7f2dca3b"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Theon Greyjoy en la adaptación televisiva?",
+      "o": [
+        "Se forma en la Ciudadela",
+        "Monta a Arrax",
+        "Fue pupilo de Ned Stark",
+        "Muere envenenado durante su boda"
+      ],
+      "c": 2,
+      "explanation": "Theon Greyjoy: Fue pupilo de Ned Stark. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-5c0559e265b1"
+    },
+    {
+      "q": "¿Quién interpreta a Yara Greyjoy en las series de HBO?",
+      "o": [
+        "Nikolaj Coster-Waldau",
+        "Diana Rigg",
+        "Gemma Whelan",
+        "Alfie Allen"
+      ],
+      "c": 2,
+      "explanation": "Yara Greyjoy: Gemma Whelan. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-113d95cb3189"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Yara Greyjoy?",
+      "o": [
+        "Tully por nacimiento",
+        "Martell",
+        "Greyjoy",
+        "Seaworth"
+      ],
+      "c": 2,
+      "explanation": "Yara Greyjoy: Greyjoy. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-668f9988d6cf"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Yara Greyjoy en la adaptación televisiva?",
+      "o": [
+        "Es hermana de Theon",
+        "Es conocido como Meñique",
+        "Monta a Caraxes",
+        "Monta a Sunfyre"
+      ],
+      "c": 0,
+      "explanation": "Yara Greyjoy: Es hermana de Theon. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-d5d3c66a1d2b",
+      "img": "arcade/reference/tronos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Quién interpreta a Euron Greyjoy en las series de HBO?",
+      "o": [
+        "Peter Dinklage",
+        "Pilou Asbæk",
+        "Ewan Mitchell",
+        "Gwendoline Christie"
+      ],
+      "c": 1,
+      "explanation": "Euron Greyjoy: Pilou Asbæk. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-bce2f705f0b6"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Euron Greyjoy?",
+      "o": [
+        "Criado por los Stark",
+        "Greyjoy",
+        "Velaryon",
+        "Tarth"
+      ],
+      "c": 1,
+      "explanation": "Euron Greyjoy: Greyjoy. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-302b5f03fde8"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Euron Greyjoy en la adaptación televisiva?",
+      "o": [
+        "Es hermano de Harwin",
+        "Combate contra la Montaña en un juicio por combate",
+        "Fue rey antes de la guerra entre sus sucesores",
+        "Es tío de Theon y Yara"
+      ],
+      "c": 3,
+      "explanation": "Euron Greyjoy: Es tío de Theon y Yara. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-55352ee0803a"
+    },
+    {
+      "q": "¿Quién interpreta a Brienne de Tarth en las series de HBO?",
+      "o": [
+        "Phia Saban",
+        "Jack Gleeson",
+        "Paddy Considine",
+        "Gwendoline Christie"
+      ],
+      "c": 3,
+      "explanation": "Brienne de Tarth: Gwendoline Christie. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-b61832f59b09"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Brienne de Tarth?",
+      "o": [
+        "Tarth",
+        "Cole",
+        "Tyrell",
+        "Tully por nacimiento"
+      ],
+      "c": 0,
+      "explanation": "Brienne de Tarth: Tarth. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-83f410f99311",
+      "img": "arcade/reference/tronos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué hecho corresponde a Brienne de Tarth en la adaptación televisiva?",
+      "o": [
+        "Es tío de Theon y Yara",
+        "Es hija de Otto",
+        "Se compromete a proteger a las hijas de Catelyn",
+        "Se casa con Renly, Joffrey y Tommen"
+      ],
+      "c": 2,
+      "explanation": "Brienne de Tarth: Se compromete a proteger a las hijas de Catelyn. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-082a3e1e0f19"
+    },
+    {
+      "q": "¿Quién interpreta a Davos Seaworth en las series de HBO?",
+      "o": [
+        "Paddy Considine",
+        "Ewan Mitchell",
+        "Liam Cunningham",
+        "Stephen Dillane"
+      ],
+      "c": 2,
+      "explanation": "Davos Seaworth: Liam Cunningham. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-844c52765d70"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Davos Seaworth?",
+      "o": [
+        "Hightower",
+        "Seaworth",
+        "Stark",
+        "Tyrell"
+      ],
+      "c": 1,
+      "explanation": "Davos Seaworth: Seaworth. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-444b842bb4cd"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Davos Seaworth en la adaptación televisiva?",
+      "o": [
+        "Recibe el apodo de Caballero de la Cebolla",
+        "Muere en la Boda Roja",
+        "Entrena con los Hombres sin Rostro",
+        "Monta a Moondancer"
+      ],
+      "c": 0,
+      "explanation": "Davos Seaworth: Recibe el apodo de Caballero de la Cebolla. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-d89ee595613e"
+    },
+    {
+      "q": "¿Quién interpreta a Samwell Tarly en las series de HBO?",
+      "o": [
+        "John Bradley",
+        "Eve Best",
+        "Iain Glen",
+        "Michelle Fairley"
+      ],
+      "c": 0,
+      "explanation": "Samwell Tarly: John Bradley. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-21ba6d2963b5",
+      "img": "arcade/reference/tronos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Samwell Tarly?",
+      "o": [
+        "Criado como Baratheon",
+        "Hightower",
+        "Tarly",
+        "Seaworth"
+      ],
+      "c": 2,
+      "explanation": "Samwell Tarly: Tarly. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-8708624d3f1a"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Samwell Tarly en la adaptación televisiva?",
+      "o": [
+        "Es proclamado Rey en el Norte",
+        "Se compromete a proteger a las hijas de Catelyn",
+        "Se forma en la Ciudadela",
+        "Es hermano de Harwin"
+      ],
+      "c": 2,
+      "explanation": "Samwell Tarly: Se forma en la Ciudadela. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-5e0e116bd138"
+    },
+    {
+      "q": "¿Quién interpreta a Jorah Mormont en las series de HBO?",
+      "o": [
+        "Steve Toussaint",
+        "Iain Glen",
+        "Emilia Clarke",
+        "Gwendoline Christie"
+      ],
+      "c": 1,
+      "explanation": "Jorah Mormont: Iain Glen. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-91b94d4766dc"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Jorah Mormont?",
+      "o": [
+        "Tully por nacimiento",
+        "Lannister",
+        "Mormont",
+        "Stark"
+      ],
+      "c": 2,
+      "explanation": "Jorah Mormont: Mormont. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-1447f9308307"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Jorah Mormont en la adaptación televisiva?",
+      "o": [
+        "Es el hermano menor de Robert y Stannis",
+        "Sirve como Mano del Rey Viserys I",
+        "Se casa con Renly, Joffrey y Tommen",
+        "Sirve a Daenerys y padece psoriagris"
+      ],
+      "c": 3,
+      "explanation": "Jorah Mormont: Sirve a Daenerys y padece psoriagris. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-c73458cb5009",
+      "img": "arcade/reference/tronos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Quién interpreta a Sandor Clegane en las series de HBO?",
+      "o": [
+        "Paddy Considine",
+        "Pedro Pascal",
+        "Charles Dance",
+        "Rory McCann"
+      ],
+      "c": 3,
+      "explanation": "Sandor Clegane: Rory McCann. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-2fb4aeefa02a"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Sandor Clegane?",
+      "o": [
+        "Clegane",
+        "Hightower",
+        "Cole",
+        "Criado como Baratheon"
+      ],
+      "c": 0,
+      "explanation": "Sandor Clegane: Clegane. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-babca28e9746"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Sandor Clegane en la adaptación televisiva?",
+      "o": [
+        "Muere envenenado durante su boda",
+        "Monta a Syrax",
+        "Es conocido como el Perro",
+        "Termina coronada Reina en el Norte"
+      ],
+      "c": 2,
+      "explanation": "Sandor Clegane: Es conocido como el Perro. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-c233d5219848"
+    },
+    {
+      "q": "¿Quién interpreta a Petyr Baelish en las series de HBO?",
+      "o": [
+        "Aidan Gillen",
+        "Harry Lloyd",
+        "Maisie Williams",
+        "Rhys Ifans"
+      ],
+      "c": 0,
+      "explanation": "Petyr Baelish: Aidan Gillen. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-cffef78efd8d"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Petyr Baelish?",
+      "o": [
+        "Baelish",
+        "Tarly",
+        "Seaworth",
+        "Tarth"
+      ],
+      "c": 0,
+      "explanation": "Petyr Baelish: Baelish. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-a359fd2b3a27",
+      "img": "arcade/reference/tronos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué hecho corresponde a Petyr Baelish en la adaptación televisiva?",
+      "o": [
+        "Es hermano de Harwin",
+        "Es madre de tres dragones nacidos de huevos petrificados",
+        "Es conocido como Meñique",
+        "Sirve a Daenerys y padece psoriagris"
+      ],
+      "c": 2,
+      "explanation": "Petyr Baelish: Es conocido como Meñique. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-c2de5a8383ba"
+    },
+    {
+      "q": "¿Quién interpreta a Oberyn Martell en las series de HBO?",
+      "o": [
+        "Alfie Allen",
+        "Sonoya Mizuno",
+        "Pedro Pascal",
+        "Harry Collett"
+      ],
+      "c": 2,
+      "explanation": "Oberyn Martell: Pedro Pascal. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-7558be4f1242"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Oberyn Martell?",
+      "o": [
+        "Greyjoy",
+        "Tarly",
+        "Tully por nacimiento",
+        "Martell"
+      ],
+      "c": 3,
+      "explanation": "Oberyn Martell: Martell. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-202ff86f882c"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Oberyn Martell en la adaptación televisiva?",
+      "o": [
+        "Combate contra la Montaña en un juicio por combate",
+        "Es padre de Cersei, Jaime y Tyrion",
+        "Entrena con los Hombres sin Rostro",
+        "Es conocido como el Caballero de las Flores"
+      ],
+      "c": 0,
+      "explanation": "Oberyn Martell: Combate contra la Montaña en un juicio por combate. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-9c2ea1a5597a"
+    },
+    {
+      "q": "¿Quién interpreta a Rhaenyra Targaryen adulta en las series de HBO?",
+      "o": [
+        "Sean Bean",
+        "Emma D’Arcy",
+        "Harry Lloyd",
+        "Rhys Ifans"
+      ],
+      "c": 1,
+      "explanation": "Rhaenyra Targaryen adulta: Emma D’Arcy. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-572ae1ccd32d",
+      "img": "arcade/reference/tronos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Rhaenyra Targaryen adulta?",
+      "o": [
+        "Targaryen",
+        "Redwyne por nacimiento",
+        "Greyjoy",
+        "Arryn"
+      ],
+      "c": 0,
+      "explanation": "Rhaenyra Targaryen adulta: Targaryen. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-053c3f51b101"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Rhaenyra Targaryen adulta en la adaptación televisiva?",
+      "o": [
+        "Monta a Syrax",
+        "Fue rey antes de la guerra entre sus sucesores",
+        "Es el hermano menor de Robert y Stannis",
+        "Combate contra la Montaña en un juicio por combate"
+      ],
+      "c": 0,
+      "explanation": "Rhaenyra Targaryen adulta: Monta a Syrax. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-d511bc738e4d"
+    },
+    {
+      "q": "¿Quién interpreta a Daemon Targaryen en las series de HBO?",
+      "o": [
+        "Fabien Frankel",
+        "Olivia Cooke",
+        "Matt Smith",
+        "Stephen Dillane"
+      ],
+      "c": 2,
+      "explanation": "Daemon Targaryen: Matt Smith. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-fdebf5ccb5ca"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Daemon Targaryen?",
+      "o": [
+        "Targaryen",
+        "Seaworth",
+        "Baelish",
+        "Lannister"
+      ],
+      "c": 0,
+      "explanation": "Daemon Targaryen: Targaryen. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-d7927e407dc9"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Daemon Targaryen en la adaptación televisiva?",
+      "o": [
+        "Es tío de Theon y Yara",
+        "Monta a Caraxes",
+        "Se incorpora a la Guardia Real",
+        "Es hijo de Lyanna Stark y Rhaegar Targaryen"
+      ],
+      "c": 1,
+      "explanation": "Daemon Targaryen: Monta a Caraxes. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-b52e0aa1d616",
+      "img": "arcade/reference/tronos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Quién interpreta a Viserys I Targaryen en las series de HBO?",
+      "o": [
+        "Olivia Cooke",
+        "Gemma Whelan",
+        "Iain Glen",
+        "Paddy Considine"
+      ],
+      "c": 3,
+      "explanation": "Viserys I Targaryen: Paddy Considine. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-ea5ce74726c0"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Viserys I Targaryen?",
+      "o": [
+        "Targaryen",
+        "Baelish",
+        "Tully por nacimiento",
+        "Mormont"
+      ],
+      "c": 0,
+      "explanation": "Viserys I Targaryen: Targaryen. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-c8c0d1f7d292"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Viserys I Targaryen en la adaptación televisiva?",
+      "o": [
+        "Monta a Seasmoke",
+        "Nombra heredera a Rhaenyra",
+        "Monta a Moondancer",
+        "Fue pupilo de Ned Stark"
+      ],
+      "c": 1,
+      "explanation": "Viserys I Targaryen: Nombra heredera a Rhaenyra. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-56b4309d805d"
+    },
+    {
+      "q": "¿Quién interpreta a Alicent Hightower adulta en las series de HBO?",
+      "o": [
+        "Olivia Cooke",
+        "Matthew Needham",
+        "Charles Dance",
+        "Harry Lloyd"
+      ],
+      "c": 0,
+      "explanation": "Alicent Hightower adulta: Olivia Cooke. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-ffedcefff5ac"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Alicent Hightower adulta?",
+      "o": [
+        "Mormont",
+        "Velaryon por nombre oficial",
+        "Hightower",
+        "Tully por nacimiento"
+      ],
+      "c": 2,
+      "explanation": "Alicent Hightower adulta: Hightower. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-a6b44cd8115e",
+      "img": "arcade/reference/tronos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué hecho corresponde a Alicent Hightower adulta en la adaptación televisiva?",
+      "o": [
+        "Monta a Syrax",
+        "Es hija de Otto",
+        "Muere envenenado durante su boda",
+        "Es padre de Harwin y Larys"
+      ],
+      "c": 1,
+      "explanation": "Alicent Hightower adulta: Es hija de Otto. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-05753e262571"
+    },
+    {
+      "q": "¿Quién interpreta a Otto Hightower en las series de HBO?",
+      "o": [
+        "Matt Smith",
+        "Rhys Ifans",
+        "Finn Jones",
+        "Mark Addy"
+      ],
+      "c": 1,
+      "explanation": "Otto Hightower: Rhys Ifans. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-95839d7c96a0"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Otto Hightower?",
+      "o": [
+        "Arryn",
+        "Tully por nacimiento",
+        "Mormont",
+        "Hightower"
+      ],
+      "c": 3,
+      "explanation": "Otto Hightower: Hightower. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-f02be5c1d8b5"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Otto Hightower en la adaptación televisiva?",
+      "o": [
+        "Es conocida como la Reina de las Espinas",
+        "Es hermana de Theon",
+        "Sirve como Mano del Rey Viserys I",
+        "Monta a Seasmoke"
+      ],
+      "c": 2,
+      "explanation": "Otto Hightower: Sirve como Mano del Rey Viserys I. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-e28c60cacee6"
+    },
+    {
+      "q": "¿Quién interpreta a Corlys Velaryon en las series de HBO?",
+      "o": [
+        "Harry Collett",
+        "Maisie Williams",
+        "Steve Toussaint",
+        "Aidan Gillen"
+      ],
+      "c": 2,
+      "explanation": "Corlys Velaryon: Steve Toussaint. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-c71d1e32520a",
+      "img": "arcade/reference/tronos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Corlys Velaryon?",
+      "o": [
+        "Criado por los Stark",
+        "Arryn",
+        "Lannister",
+        "Velaryon"
+      ],
+      "c": 3,
+      "explanation": "Corlys Velaryon: Velaryon. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-02f4c82af45f"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Corlys Velaryon en la adaptación televisiva?",
+      "o": [
+        "Monta a Caraxes",
+        "Monta a Seasmoke",
+        "Entrena con los Hombres sin Rostro",
+        "Es conocido como la Serpiente Marina"
+      ],
+      "c": 3,
+      "explanation": "Corlys Velaryon: Es conocido como la Serpiente Marina. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-0c4f49a87cd3"
+    },
+    {
+      "q": "¿Quién interpreta a Rhaenys Targaryen en las series de HBO?",
+      "o": [
+        "Alfie Allen",
+        "Eve Best",
+        "John Macmillan",
+        "Phia Saban"
+      ],
+      "c": 1,
+      "explanation": "Rhaenys Targaryen: Eve Best. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-11898f38532e"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Rhaenys Targaryen?",
+      "o": [
+        "Targaryen",
+        "Tyrell",
+        "Lannister",
+        "Tully por nacimiento"
+      ],
+      "c": 0,
+      "explanation": "Rhaenys Targaryen: Targaryen. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-c9bd53254f9a"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Rhaenys Targaryen en la adaptación televisiva?",
+      "o": [
+        "Recibe el apodo de Caballero de la Cebolla",
+        "Es conocido como la Serpiente Marina",
+        "Monta a Meleys",
+        "Entrena con los Hombres sin Rostro"
+      ],
+      "c": 2,
+      "explanation": "Rhaenys Targaryen: Monta a Meleys. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-693d5216719c",
+      "img": "arcade/reference/tronos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Quién interpreta a Aegon II Targaryen adulto en las series de HBO?",
+      "o": [
+        "Rory McCann",
+        "Natalie Dormer",
+        "John Macmillan",
+        "Tom Glynn-Carney"
+      ],
+      "c": 3,
+      "explanation": "Aegon II Targaryen adulto: Tom Glynn-Carney. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-cedef3f60556"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Aegon II Targaryen adulto?",
+      "o": [
+        "Strong",
+        "Velaryon",
+        "Mormont",
+        "Targaryen"
+      ],
+      "c": 3,
+      "explanation": "Aegon II Targaryen adulto: Targaryen. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-ddf1cbfe3007"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Aegon II Targaryen adulto en la adaptación televisiva?",
+      "o": [
+        "Monta a Sunfyre",
+        "Es ejecutado tras ser acusado de traición en Desembarco del Rey",
+        "Es madre de Rhaenyra",
+        "Es madre de Joffrey, Myrcella y Tommen"
+      ],
+      "c": 0,
+      "explanation": "Aegon II Targaryen adulto: Monta a Sunfyre. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-04a27f1f7870"
+    },
+    {
+      "q": "¿Quién interpreta a Aemond Targaryen adulto en las series de HBO?",
+      "o": [
+        "Elliot Grihault",
+        "Emma D’Arcy",
+        "Alfie Allen",
+        "Ewan Mitchell"
+      ],
+      "c": 3,
+      "explanation": "Aemond Targaryen adulto: Ewan Mitchell. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-e3f501eb16fa"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Aemond Targaryen adulto?",
+      "o": [
+        "Criado como Baratheon",
+        "Baelish",
+        "Clegane",
+        "Targaryen"
+      ],
+      "c": 3,
+      "explanation": "Aemond Targaryen adulto: Targaryen. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-a3d8044d945c",
+      "img": "arcade/reference/tronos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué hecho corresponde a Aemond Targaryen adulto en la adaptación televisiva?",
+      "o": [
+        "Es hermana de Theon",
+        "Es hijo de Lyanna Stark y Rhaegar Targaryen",
+        "Monta a Vhagar",
+        "Se convierte en el Cuervo de Tres Ojos"
+      ],
+      "c": 2,
+      "explanation": "Aemond Targaryen adulto: Monta a Vhagar. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-4eb55e0dc1f5"
+    },
+    {
+      "q": "¿Quién interpreta a Helaena Targaryen adulta en las series de HBO?",
+      "o": [
+        "Phia Saban",
+        "John Bradley",
+        "Matthew Needham",
+        "Michelle Fairley"
+      ],
+      "c": 0,
+      "explanation": "Helaena Targaryen adulta: Phia Saban. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-f8ad62f8e4a5"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Helaena Targaryen adulta?",
+      "o": [
+        "Targaryen",
+        "Stark",
+        "Tarly",
+        "Cole"
+      ],
+      "c": 0,
+      "explanation": "Helaena Targaryen adulta: Targaryen. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-b8f5425f14d2"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Helaena Targaryen adulta en la adaptación televisiva?",
+      "o": [
+        "Es hermano mayor de Daenerys",
+        "Es el hermano menor de Robert y Stannis",
+        "Es hija de Otto",
+        "Monta a Dreamfyre"
+      ],
+      "c": 3,
+      "explanation": "Helaena Targaryen adulta: Monta a Dreamfyre. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-c8e03b2e60bc"
+    },
+    {
+      "q": "¿Quién interpreta a Criston Cole en las series de HBO?",
+      "o": [
+        "Nikolaj Coster-Waldau",
+        "Fabien Frankel",
+        "Bethany Antonia",
+        "Rhys Ifans"
+      ],
+      "c": 1,
+      "explanation": "Criston Cole: Fabien Frankel. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-f12e08401074",
+      "img": "arcade/reference/tronos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Criston Cole?",
+      "o": [
+        "Arryn",
+        "Cole",
+        "Tarly",
+        "Targaryen"
+      ],
+      "c": 1,
+      "explanation": "Criston Cole: Cole. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-e2b63effdd21"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Criston Cole en la adaptación televisiva?",
+      "o": [
+        "Se compromete a proteger a las hijas de Catelyn",
+        "Monta a Vhagar",
+        "Es conocida como el Gusano Blanco",
+        "Se incorpora a la Guardia Real"
+      ],
+      "c": 3,
+      "explanation": "Criston Cole: Se incorpora a la Guardia Real. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-89d809cad167"
+    },
+    {
+      "q": "¿Quién interpreta a Mysaria en las series de HBO?",
+      "o": [
+        "Sophie Turner",
+        "Isaac Hempstead Wright",
+        "Sonoya Mizuno",
+        "Rory McCann"
+      ],
+      "c": 2,
+      "explanation": "Mysaria: Sonoya Mizuno. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-633e5742212c"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Mysaria?",
+      "o": [
+        "Origen extranjero en Poniente",
+        "Tarth",
+        "Redwyne por nacimiento",
+        "Greyjoy"
+      ],
+      "c": 0,
+      "explanation": "Mysaria: Origen extranjero en Poniente. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-de87fdae4d2c"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Mysaria en la adaptación televisiva?",
+      "o": [
+        "Se compromete a proteger a las hijas de Catelyn",
+        "Es conocida como el Gusano Blanco",
+        "Es hijo de Lyanna Stark y Rhaegar Targaryen",
+        "Es padre de Cersei, Jaime y Tyrion"
+      ],
+      "c": 1,
+      "explanation": "Mysaria: Es conocida como el Gusano Blanco. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-5dbf2b288101",
+      "img": "arcade/reference/tronos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Quién interpreta a Larys Strong en las series de HBO?",
+      "o": [
+        "Matthew Needham",
+        "Sonoya Mizuno",
+        "Paddy Considine",
+        "Richard Madden"
+      ],
+      "c": 0,
+      "explanation": "Larys Strong: Matthew Needham. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-7e22b3ef4272"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Larys Strong?",
+      "o": [
+        "Strong",
+        "Targaryen",
+        "Martell",
+        "Velaryon por nombre oficial"
+      ],
+      "c": 0,
+      "explanation": "Larys Strong: Strong. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-ba8bbc2401de"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Larys Strong en la adaptación televisiva?",
+      "o": [
+        "Entrena con los Hombres sin Rostro",
+        "Se casa con Renly, Joffrey y Tommen",
+        "Es hermano de Harwin",
+        "Es el hermano menor de Robert y Stannis"
+      ],
+      "c": 2,
+      "explanation": "Larys Strong: Es hermano de Harwin. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-c0dbb620d299"
+    },
+    {
+      "q": "¿Quién interpreta a Harwin Strong en las series de HBO?",
+      "o": [
+        "Paddy Considine",
+        "Emma D’Arcy",
+        "Olivia Cooke",
+        "Ryan Corr"
+      ],
+      "c": 3,
+      "explanation": "Harwin Strong: Ryan Corr. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-4c087a466f8a"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Harwin Strong?",
+      "o": [
+        "Clegane",
+        "Strong",
+        "Velaryon",
+        "Lannister"
+      ],
+      "c": 1,
+      "explanation": "Harwin Strong: Strong. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-3789d4819df4",
+      "img": "arcade/reference/tronos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué hecho corresponde a Harwin Strong en la adaptación televisiva?",
+      "o": [
+        "Es conocida como el Gusano Blanco",
+        "Monta a Caraxes",
+        "Combate contra la Montaña en un juicio por combate",
+        "Es conocido como Rompehuesos"
+      ],
+      "c": 3,
+      "explanation": "Harwin Strong: Es conocido como Rompehuesos. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-010c392caf9c"
+    },
+    {
+      "q": "¿Quién interpreta a Lyonel Strong en las series de HBO?",
+      "o": [
+        "Gavin Spokes",
+        "Harry Lloyd",
+        "Pedro Pascal",
+        "Richard Madden"
+      ],
+      "c": 0,
+      "explanation": "Lyonel Strong: Gavin Spokes. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-780452705f0d"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Lyonel Strong?",
+      "o": [
+        "Redwyne por nacimiento",
+        "Criado como Baratheon",
+        "Clegane",
+        "Strong"
+      ],
+      "c": 3,
+      "explanation": "Lyonel Strong: Strong. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-4183a1c02909"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Lyonel Strong en la adaptación televisiva?",
+      "o": [
+        "Sirve como Mano de Daenerys",
+        "Sirve a Daenerys y padece psoriagris",
+        "Es padre de Harwin y Larys",
+        "Se compromete a proteger a las hijas de Catelyn"
+      ],
+      "c": 2,
+      "explanation": "Lyonel Strong: Es padre de Harwin y Larys. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-cce53a4266cc"
+    },
+    {
+      "q": "¿Quién interpreta a Jacaerys Velaryon adolescente en las series de HBO?",
+      "o": [
+        "Ryan Corr",
+        "Harry Collett",
+        "Maisie Williams",
+        "Harry Lloyd"
+      ],
+      "c": 1,
+      "explanation": "Jacaerys Velaryon adolescente: Harry Collett. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-287e2078bf06",
+      "img": "arcade/reference/tronos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Jacaerys Velaryon adolescente?",
+      "o": [
+        "Velaryon por nombre oficial",
+        "Redwyne por nacimiento",
+        "Hightower",
+        "Tarth"
+      ],
+      "c": 0,
+      "explanation": "Jacaerys Velaryon adolescente: Velaryon por nombre oficial. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-445a776d4dc8"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Jacaerys Velaryon adolescente en la adaptación televisiva?",
+      "o": [
+        "Es conocido como la Serpiente Marina",
+        "Muere envenenado durante su boda",
+        "Monta a Vermax",
+        "Es hermano mayor de Daenerys"
+      ],
+      "c": 2,
+      "explanation": "Jacaerys Velaryon adolescente: Monta a Vermax. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-d9ee752aae2e"
+    },
+    {
+      "q": "¿Quién interpreta a Lucerys Velaryon adolescente en las series de HBO?",
+      "o": [
+        "Liam Cunningham",
+        "Elliot Grihault",
+        "Gwendoline Christie",
+        "Eve Best"
+      ],
+      "c": 1,
+      "explanation": "Lucerys Velaryon adolescente: Elliot Grihault. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-3437edde5bd2"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Lucerys Velaryon adolescente?",
+      "o": [
+        "Tarly",
+        "Baratheon",
+        "Velaryon por nombre oficial",
+        "Tyrell"
+      ],
+      "c": 2,
+      "explanation": "Lucerys Velaryon adolescente: Velaryon por nombre oficial. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-8bd1846b4916"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Lucerys Velaryon adolescente en la adaptación televisiva?",
+      "o": [
+        "Monta a Arrax",
+        "Es padre de Harwin y Larys",
+        "Es conocido como el Perro",
+        "Es madre de Joffrey, Myrcella y Tommen"
+      ],
+      "c": 0,
+      "explanation": "Lucerys Velaryon adolescente: Monta a Arrax. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-83ed0c4bbda3",
+      "img": "arcade/reference/tronos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Quién interpreta a Baela Targaryen adolescente en las series de HBO?",
+      "o": [
+        "Bethany Antonia",
+        "John Macmillan",
+        "Gemma Whelan",
+        "Fabien Frankel"
+      ],
+      "c": 0,
+      "explanation": "Baela Targaryen adolescente: Bethany Antonia. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-1bfd530a8108"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Baela Targaryen adolescente?",
+      "o": [
+        "Velaryon",
+        "Tully por nacimiento",
+        "Targaryen",
+        "Criado por los Stark"
+      ],
+      "c": 2,
+      "explanation": "Baela Targaryen adolescente: Targaryen. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-753e994486b4"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Baela Targaryen adolescente en la adaptación televisiva?",
+      "o": [
+        "Monta a Moondancer",
+        "Es proclamado Rey en el Norte",
+        "Monta a Meleys",
+        "Es hermano de Harwin"
+      ],
+      "c": 0,
+      "explanation": "Baela Targaryen adolescente: Monta a Moondancer. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-c9033aa1bea2"
+    },
+    {
+      "q": "¿Quién interpreta a Aemma Arryn en las series de HBO?",
+      "o": [
+        "Maisie Williams",
+        "Fabien Frankel",
+        "Gemma Whelan",
+        "Sian Brooke"
+      ],
+      "c": 3,
+      "explanation": "Aemma Arryn: Sian Brooke. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-5766de744844"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Aemma Arryn?",
+      "o": [
+        "Lannister",
+        "Origen extranjero en Poniente",
+        "Arryn",
+        "Baelish"
+      ],
+      "c": 2,
+      "explanation": "Aemma Arryn: Arryn. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-2599eec117a2",
+      "img": "arcade/reference/tronos.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué hecho corresponde a Aemma Arryn en la adaptación televisiva?",
+      "o": [
+        "Es madre de Rhaenyra",
+        "Es tío de Theon y Yara",
+        "Monta a Syrax",
+        "Muere envenenado durante su boda"
+      ],
+      "c": 0,
+      "explanation": "Aemma Arryn: Es madre de Rhaenyra. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-e3ad1c62a4e7"
+    },
+    {
+      "q": "¿Quién interpreta a Laenor Velaryon adulto en las series de HBO?",
+      "o": [
+        "Fabien Frankel",
+        "Sian Brooke",
+        "John Macmillan",
+        "Ewan Mitchell"
+      ],
+      "c": 2,
+      "explanation": "Laenor Velaryon adulto: John Macmillan. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-f48929b85c92"
+    },
+    {
+      "q": "¿Qué casa o procedencia identifica a Laenor Velaryon adulto?",
+      "o": [
+        "Greyjoy",
+        "Baelish",
+        "Velaryon",
+        "Clegane"
+      ],
+      "c": 2,
+      "explanation": "Laenor Velaryon adulto: Velaryon. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-027ef39f5b58"
+    },
+    {
+      "q": "¿Qué hecho corresponde a Laenor Velaryon adulto en la adaptación televisiva?",
+      "o": [
+        "Sirve a Daenerys y padece psoriagris",
+        "Termina coronada Reina en el Norte",
+        "Monta a Seasmoke",
+        "Se casa con Renly, Joffrey y Tommen"
+      ],
+      "c": 2,
+      "explanation": "Laenor Velaryon adulto: Monta a Seasmoke. Juego de Tronos completo y Casa del Dragón hasta la temporada 2. Se especifica el intérprete adulto o adolescente cuando cambia con los saltos temporales.",
+      "e": "🐉",
+      "id": "tronos-6df40b220476"
+    }
+  ]
+}

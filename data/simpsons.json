@@ -1,0 +1,2022 @@
+{
+  "cat": "simpsons",
+  "name": "Los Simpsons",
+  "emoji": "🍩",
+  "edition": "4.0",
+  "sources": [
+    "https://www.fox.com/the-simpsons/",
+    "https://www.disneyplus.com/series/the-simpsons/3ZoBZ52QHb4x"
+  ],
+  "questions": [
+    {
+      "q": "¿Qué ocupación o papel identifica a Homero Simpson en Los Simpsons?",
+      "o": [
+        "Madre del director Skinner",
+        "Madre de octillizos",
+        "Cliente habitual de la taberna",
+        "Inspector de seguridad nuclear"
+      ],
+      "c": 3,
+      "explanation": "Homero Simpson: Inspector de seguridad nuclear. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-55222e7a8c4c",
+      "img": "arcade/reference/simpsons.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Homero Simpson?",
+      "o": [
+        "Es maestra de Bart en numerosas temporadas",
+        "Es esposo de Marge",
+        "Es madre de Rod y Todd",
+        "Trabaja en el Canal 6"
+      ],
+      "c": 1,
+      "explanation": "Homero Simpson: Es esposo de Marge. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-acb335f65483"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Homero Simpson?",
+      "o": [
+        "Vive en el asilo de Springfield",
+        "Su expresión característica es D’oh",
+        "Dirige actividades criminales con modales tranquilos",
+        "Lleva cabello que tapa parte de su rostro"
+      ],
+      "c": 1,
+      "explanation": "Homero Simpson: Su expresión característica es D’oh. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-83888566e52c"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Marge Simpson en Los Simpsons?",
+      "o": [
+        "Activista fugitiva",
+        "Alumno destacado",
+        "Científico e inventor",
+        "Madre de la familia Simpson"
+      ],
+      "c": 3,
+      "explanation": "Marge Simpson: Madre de la familia Simpson. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-5f3060ec4f32"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Marge Simpson?",
+      "o": [
+        "Es hermana de Patty y Selma",
+        "Es padre de Ralph",
+        "Es compañero de Bart",
+        "Es madre de Rod y Todd"
+      ],
+      "c": 0,
+      "explanation": "Marge Simpson: Es hermana de Patty y Selma. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-4ac96d7e050d"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Marge Simpson?",
+      "o": [
+        "Vive en el asilo de Springfield",
+        "Lleva un peinado azul muy alto",
+        "Es uno de los hijos de Ned",
+        "Su manera de hablar parodia a la familia Kennedy"
+      ],
+      "c": 1,
+      "explanation": "Marge Simpson: Lleva un peinado azul muy alto. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-2e89879bc4bf",
+      "img": "arcade/reference/simpsons.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Bart Simpson en Los Simpsons?",
+      "o": [
+        "Esposa de Ned durante las primeras temporadas",
+        "Alumno de cuarto grado",
+        "Tabernero",
+        "Trabajador de la central nuclear"
+      ],
+      "c": 1,
+      "explanation": "Bart Simpson: Alumno de cuarto grado. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-d12d42440490"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Bart Simpson?",
+      "o": [
+        "Es compañero de Bart",
+        "Vive con Seymour",
+        "Es hijo de Homero y Marge",
+        "Es médico habitual de la familia Simpson"
+      ],
+      "c": 2,
+      "explanation": "Bart Simpson: Es hijo de Homero y Marge. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-fc2760850570"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Bart Simpson?",
+      "o": [
+        "Suele andar en patineta",
+        "Su matrimonio con Apu fue concertado por sus familias",
+        "Suele aparecer con Homero en la taberna",
+        "Dirige actividades criminales con modales tranquilos"
+      ],
+      "c": 0,
+      "explanation": "Bart Simpson: Suele andar en patineta. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-b4c49c552e0d"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Lisa Simpson en Los Simpsons?",
+      "o": [
+        "Dueño de la central nuclear",
+        "Comerciante",
+        "Ayudante televisivo",
+        "Alumna y saxofonista"
+      ],
+      "c": 3,
+      "explanation": "Lisa Simpson: Alumna y saxofonista. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-cacaa60d06cd"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Lisa Simpson?",
+      "o": [
+        "Es padre de Homero",
+        "Es madre adoptiva de Ling",
+        "Es dueño de la taberna de Moe",
+        "Es hermana de Bart y Maggie"
+      ],
+      "c": 3,
+      "explanation": "Lisa Simpson: Es hermana de Bart y Maggie. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-052b751494bf",
+      "img": "arcade/reference/simpsons.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué rasgo identifica a Lisa Simpson?",
+      "o": [
+        "Tiene una iguana llamada Jub-Jub",
+        "Su matrimonio con Apu fue concertado por sus familias",
+        "Usa lentes rojos",
+        "Defiende el vegetarianismo"
+      ],
+      "c": 3,
+      "explanation": "Lisa Simpson: Defiende el vegetarianismo. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-ad8a937a35e6"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Maggie Simpson en Los Simpsons?",
+      "o": [
+        "Aficionado a la música disco",
+        "Bebé de la familia Simpson",
+        "Alumno de primaria",
+        "Activista fugitiva"
+      ],
+      "c": 1,
+      "explanation": "Maggie Simpson: Bebé de la familia Simpson. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-48cc7cf97b5b"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Maggie Simpson?",
+      "o": [
+        "Trabaja en el Kwik-E-Mart",
+        "Transporta a los alumnos de Springfield",
+        "Es la hija menor de Homero y Marge",
+        "Es hermana de Patty y Selma"
+      ],
+      "c": 2,
+      "explanation": "Maggie Simpson: Es la hija menor de Homero y Marge. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-78e1d66a1063"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Maggie Simpson?",
+      "o": [
+        "Su matrimonio con Apu fue concertado por sus familias",
+        "Lleva cabello que tapa parte de su rostro",
+        "Usa habitualmente un chupete",
+        "Suele hacer comentarios ilógicos e inocentes"
+      ],
+      "c": 2,
+      "explanation": "Maggie Simpson: Usa habitualmente un chupete. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-6ba8a95fd98b"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Abraham Simpson en Los Simpsons?",
+      "o": [
+        "Conductor de autobús escolar",
+        "Jubilado",
+        "Científico e inventor",
+        "Restaurador"
+      ],
+      "c": 1,
+      "explanation": "Abraham Simpson: Jubilado. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-d9313a224710",
+      "img": "arcade/reference/simpsons.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Abraham Simpson?",
+      "o": [
+        "Es padre de Ralph",
+        "Es hermano de Todd",
+        "Es padre de Homero",
+        "Se asocia con el restaurante The Frying Dutchman"
+      ],
+      "c": 2,
+      "explanation": "Abraham Simpson: Es padre de Homero. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-16ae079d62eb"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Abraham Simpson?",
+      "o": [
+        "Su expresión característica es D’oh",
+        "Suele andar en patineta",
+        "Vive en el asilo de Springfield",
+        "Saluda con un entusiasta Hola a todos"
+      ],
+      "c": 2,
+      "explanation": "Abraham Simpson: Vive en el asilo de Springfield. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-46a068420671"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Mona Simpson en Los Simpsons?",
+      "o": [
+        "Tabernero",
+        "Profesora de cuarto grado",
+        "Activista fugitiva",
+        "Dueño de la central nuclear"
+      ],
+      "c": 2,
+      "explanation": "Mona Simpson: Activista fugitiva. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-ce19e3760ba8"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Mona Simpson?",
+      "o": [
+        "Trabaja en la primaria de Springfield",
+        "Trabaja en el programa de Krusty",
+        "Es madre de Homero",
+        "Dirige un restaurante italiano"
+      ],
+      "c": 2,
+      "explanation": "Mona Simpson: Es madre de Homero. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-c83cd95fe595"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Mona Simpson?",
+      "o": [
+        "Recibe bromas telefónicas de Bart",
+        "Fuma con frecuencia",
+        "Su ausencia marcó la infancia de Homero",
+        "Suele aparecer con Homero en la taberna"
+      ],
+      "c": 2,
+      "explanation": "Mona Simpson: Su ausencia marcó la infancia de Homero. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-41cfc25f3520",
+      "img": "arcade/reference/simpsons.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Ned Flanders en Los Simpsons?",
+      "o": [
+        "Médico",
+        "Inspector de seguridad nuclear",
+        "Actor de televisión",
+        "Comerciante"
+      ],
+      "c": 3,
+      "explanation": "Ned Flanders: Comerciante. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-51c565ee2281"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Ned Flanders?",
+      "o": [
+        "Presenta un programa infantil",
+        "Trabaja en el Canal 6",
+        "Es vecino de los Simpson",
+        "Atiende la tienda El Calabozo del Androide"
+      ],
+      "c": 2,
+      "explanation": "Ned Flanders: Es vecino de los Simpson. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-4204f6e35523"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Ned Flanders?",
+      "o": [
+        "Suele presentarse recordando sus trabajos anteriores",
+        "Abrió una tienda para zurdos",
+        "Saluda con un entusiasta Hola a todos",
+        "Suele andar en patineta"
+      ],
+      "c": 1,
+      "explanation": "Ned Flanders: Abrió una tienda para zurdos. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-75398279e800"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Maude Flanders en Los Simpsons?",
+      "o": [
+        "Alumna y saxofonista",
+        "Esposa de Ned durante las primeras temporadas",
+        "Comerciante",
+        "Alcalde"
+      ],
+      "c": 1,
+      "explanation": "Maude Flanders: Esposa de Ned durante las primeras temporadas. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-25fb3a4dc6c8"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Maude Flanders?",
+      "o": [
+        "Suele acompañar a Jimbo y Kearney",
+        "Es madre de Rod y Todd",
+        "Forma parte del grupo de abusones",
+        "Trabaja en el programa de Krusty"
+      ],
+      "c": 1,
+      "explanation": "Maude Flanders: Es madre de Rod y Todd. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-6d765d294f2c",
+      "img": "arcade/reference/simpsons.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué rasgo identifica a Maude Flanders?",
+      "o": [
+        "Tiene una risa sarcástica característica",
+        "Muere tras caer de una tribuna",
+        "Fuma con frecuencia",
+        "Dirige la policía de Springfield"
+      ],
+      "c": 1,
+      "explanation": "Maude Flanders: Muere tras caer de una tribuna. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-14d7e9416153"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Rod Flanders en Los Simpsons?",
+      "o": [
+        "Alumno mayor",
+        "Alumno de primaria",
+        "Niño de la familia Flanders",
+        "Capitán y restaurador"
+      ],
+      "c": 2,
+      "explanation": "Rod Flanders: Niño de la familia Flanders. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-1a9f5bca4eef"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Rod Flanders?",
+      "o": [
+        "Es padre de Ralph",
+        "Vive con Seymour",
+        "Es hermano de Todd",
+        "Aparece en películas educativas"
+      ],
+      "c": 2,
+      "explanation": "Rod Flanders: Es hermano de Todd. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-b802f0f5ea71"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Rod Flanders?",
+      "o": [
+        "Es uno de los hijos de Ned",
+        "Su matrimonio con Apu fue concertado por sus familias",
+        "Parodia el estereotipo del científico excéntrico",
+        "Conduce noticieros de Springfield"
+      ],
+      "c": 0,
+      "explanation": "Rod Flanders: Es uno de los hijos de Ned. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-826cf3a8e233"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Patty Bouvier en Los Simpsons?",
+      "o": [
+        "Policía",
+        "Payaso de televisión",
+        "Alumno mayor",
+        "Empleada del departamento de vehículos"
+      ],
+      "c": 3,
+      "explanation": "Patty Bouvier: Empleada del departamento de vehículos. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-d915867efe51",
+      "img": "arcade/reference/simpsons.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Patty Bouvier?",
+      "o": [
+        "Es vecino de los Simpson",
+        "Es amigo cercano de Carl",
+        "Dirige un restaurante italiano",
+        "Es hermana gemela de Selma"
+      ],
+      "c": 3,
+      "explanation": "Patty Bouvier: Es hermana gemela de Selma. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-adb0ef605ba6"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Patty Bouvier?",
+      "o": [
+        "Conduce noticieros de Springfield",
+        "Es de origen escocés",
+        "Abrió una tienda para zurdos",
+        "Fuma con frecuencia"
+      ],
+      "c": 3,
+      "explanation": "Patty Bouvier: Fuma con frecuencia. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-6753a016c39e"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Selma Bouvier en Los Simpsons?",
+      "o": [
+        "Empleada del departamento de vehículos",
+        "Esposa de Ned durante las primeras temporadas",
+        "Capitán y restaurador",
+        "Director de escuela"
+      ],
+      "c": 0,
+      "explanation": "Selma Bouvier: Empleada del departamento de vehículos. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-240b4f355d0c"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Selma Bouvier?",
+      "o": [
+        "Es madre adoptiva de Ling",
+        "Suele acompañar a Jimbo y Dolph",
+        "Trabaja directamente para Burns",
+        "Es esposa de Apu"
+      ],
+      "c": 0,
+      "explanation": "Selma Bouvier: Es madre adoptiva de Ling. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-16b2620946d8"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Selma Bouvier?",
+      "o": [
+        "Habla de sí mismo en tercera persona",
+        "Usa lentes rojos",
+        "Saluda con un entusiasta Hola a todos",
+        "Tiene una iguana llamada Jub-Jub"
+      ],
+      "c": 3,
+      "explanation": "Selma Bouvier: Tiene una iguana llamada Jub-Jub. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-75606af4b387",
+      "img": "arcade/reference/simpsons.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Charles Montgomery Burns en Los Simpsons?",
+      "o": [
+        "Alumna y saxofonista",
+        "Dueño de la central nuclear",
+        "Cliente habitual de la taberna",
+        "Jubilado"
+      ],
+      "c": 1,
+      "explanation": "Charles Montgomery Burns: Dueño de la central nuclear. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-35e7cde337fc"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Charles Montgomery Burns?",
+      "o": [
+        "Trabaja en el programa de Krusty",
+        "Es jefe de Smithers",
+        "Forma parte de los abusones escolares",
+        "Fue ayudante de Krusty"
+      ],
+      "c": 1,
+      "explanation": "Charles Montgomery Burns: Es jefe de Smithers. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-c0f35a5ad3b2"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Charles Montgomery Burns?",
+      "o": [
+        "Tiene una iguana llamada Jub-Jub",
+        "Dirige actividades criminales con modales tranquilos",
+        "Vive bajo la fuerte influencia de Agnes",
+        "Suele juntar las yemas de los dedos al decir Excelente"
+      ],
+      "c": 3,
+      "explanation": "Charles Montgomery Burns: Suele juntar las yemas de los dedos al decir Excelente. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-7bed915a760e"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Waylon Smithers en Los Simpsons?",
+      "o": [
+        "Asistente ejecutivo",
+        "Médico",
+        "Presentador de noticias",
+        "Vendedor de cómics"
+      ],
+      "c": 0,
+      "explanation": "Waylon Smithers: Asistente ejecutivo. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-89aca83e3b23"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Waylon Smithers?",
+      "o": [
+        "Se relaciona con mafiosos de Springfield",
+        "Presenta inventos en Springfield",
+        "Es hijo del jefe Wiggum",
+        "Trabaja directamente para Burns"
+      ],
+      "c": 3,
+      "explanation": "Waylon Smithers: Trabaja directamente para Burns. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-97187a448c05",
+      "img": "arcade/reference/simpsons.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué rasgo identifica a Waylon Smithers?",
+      "o": [
+        "Lleva un hueso en el cabello",
+        "Su matrimonio con Apu fue concertado por sus familias",
+        "Es muy dominante con su hijo",
+        "Colecciona muñecas Stacy Malibu"
+      ],
+      "c": 3,
+      "explanation": "Waylon Smithers: Colecciona muñecas Stacy Malibu. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-c8fb0e2b9881"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Lenny Leonard en Los Simpsons?",
+      "o": [
+        "Trabajador de la central nuclear",
+        "Ayudante televisivo",
+        "Madre de la familia Simpson",
+        "Profesora de cuarto grado"
+      ],
+      "c": 0,
+      "explanation": "Lenny Leonard: Trabajador de la central nuclear. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-3e609a775333"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Lenny Leonard?",
+      "o": [
+        "Trabaja en la primaria de Springfield",
+        "Es amigo cercano de Carl",
+        "Se relaciona con mafiosos de Springfield",
+        "Trabaja en el programa de Krusty"
+      ],
+      "c": 1,
+      "explanation": "Lenny Leonard: Es amigo cercano de Carl. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-910445ee8b70"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Lenny Leonard?",
+      "o": [
+        "Suele aparecer con Homero en la taberna",
+        "Ganó un concurso de cortometrajes en Springfield",
+        "Saluda con un entusiasta Hola a todos",
+        "Tiene la cabeza rapada y un hijo"
+      ],
+      "c": 0,
+      "explanation": "Lenny Leonard: Suele aparecer con Homero en la taberna. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-7aa5eb413768"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Carl Carlson en Los Simpsons?",
+      "o": [
+        "Payaso de televisión",
+        "Trabajador de la central nuclear",
+        "Profesora de cuarto grado",
+        "Actor y presentador"
+      ],
+      "c": 1,
+      "explanation": "Carl Carlson: Trabajador de la central nuclear. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-f5a93c52480a",
+      "img": "arcade/reference/simpsons.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Carl Carlson?",
+      "o": [
+        "Es amigo cercano de Lenny",
+        "Gobierna Springfield",
+        "Es médico habitual de la familia Simpson",
+        "Fue ayudante de Krusty"
+      ],
+      "c": 0,
+      "explanation": "Carl Carlson: Es amigo cercano de Lenny. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-d4af402d8b37"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Carl Carlson?",
+      "o": [
+        "Su familia adoptiva vivió en Islandia",
+        "Tiene barba y pipa",
+        "Usa lentes rojos",
+        "Habla de sí mismo en tercera persona"
+      ],
+      "c": 0,
+      "explanation": "Carl Carlson: Su familia adoptiva vivió en Islandia. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-d426868ad94c"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Moe Szyslak en Los Simpsons?",
+      "o": [
+        "Presentador de noticias",
+        "Restaurador",
+        "Tabernero",
+        "Comerciante"
+      ],
+      "c": 2,
+      "explanation": "Moe Szyslak: Tabernero. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-699fbaeb8e57"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Moe Szyslak?",
+      "o": [
+        "Es amigo cercano de Carl",
+        "Es madre adoptiva de Ling",
+        "Es dueño de la taberna de Moe",
+        "Es hijo de Homero y Marge"
+      ],
+      "c": 2,
+      "explanation": "Moe Szyslak: Es dueño de la taberna de Moe. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-30c7d25b9b83"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Moe Szyslak?",
+      "o": [
+        "Tiene barba y pipa",
+        "Lleva un peinado azul muy alto",
+        "Recibe bromas telefónicas de Bart",
+        "Lleva cabello que tapa parte de su rostro"
+      ],
+      "c": 2,
+      "explanation": "Moe Szyslak: Recibe bromas telefónicas de Bart. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-89a7bb8a93f7",
+      "img": "arcade/reference/simpsons.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Barney Gumble en Los Simpsons?",
+      "o": [
+        "Jefe de policía",
+        "Niño de la familia Flanders",
+        "Director de escuela",
+        "Cliente habitual de la taberna"
+      ],
+      "c": 3,
+      "explanation": "Barney Gumble: Cliente habitual de la taberna. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-558ce06aeb79"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Barney Gumble?",
+      "o": [
+        "Trabaja con Wiggum y Eddie",
+        "Es amigo de Homero",
+        "Es compañero de Bart",
+        "Forma parte de los abusones escolares"
+      ],
+      "c": 1,
+      "explanation": "Barney Gumble: Es amigo de Homero. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-6932adc4b788"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Barney Gumble?",
+      "o": [
+        "Ganó un concurso de cortometrajes en Springfield",
+        "Colecciona muñecas Stacy Malibu",
+        "Suele juntar las yemas de los dedos al decir Excelente",
+        "Habla de sí mismo en tercera persona"
+      ],
+      "c": 0,
+      "explanation": "Barney Gumble: Ganó un concurso de cortometrajes en Springfield. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-04fd7e91172c"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Apu Nahasapeemapetilon en Los Simpsons?",
+      "o": [
+        "Profesora de cuarto grado",
+        "Niño de la familia Flanders",
+        "Payaso de televisión",
+        "Comerciante"
+      ],
+      "c": 3,
+      "explanation": "Apu Nahasapeemapetilon: Comerciante. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-19b37e3f54a6"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Apu Nahasapeemapetilon?",
+      "o": [
+        "Es madre de Homero",
+        "Es hermana de Patty y Selma",
+        "Trabaja en el Kwik-E-Mart",
+        "Es esposo de Marge"
+      ],
+      "c": 2,
+      "explanation": "Apu Nahasapeemapetilon: Trabaja en el Kwik-E-Mart. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-b0b5797738c8",
+      "img": "arcade/reference/simpsons.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué rasgo identifica a Apu Nahasapeemapetilon?",
+      "o": [
+        "Dirige actividades criminales con modales tranquilos",
+        "Dirige la policía de Springfield",
+        "Tiene octillizos con Manjula",
+        "Obtiene excelentes resultados académicos"
+      ],
+      "c": 2,
+      "explanation": "Apu Nahasapeemapetilon: Tiene octillizos con Manjula. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-75c4851704de"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Manjula en Los Simpsons?",
+      "o": [
+        "Alcalde",
+        "Madre de octillizos",
+        "Esposa de Ned durante las primeras temporadas",
+        "Jefe de la mafia local"
+      ],
+      "c": 1,
+      "explanation": "Manjula: Madre de octillizos. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-3a5b6ded9414"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Manjula?",
+      "o": [
+        "Suele acompañar a Jimbo y Dolph",
+        "Es esposa de Apu",
+        "Es maestra de Bart en numerosas temporadas",
+        "Es padre de Ralph"
+      ],
+      "c": 1,
+      "explanation": "Manjula: Es esposa de Apu. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-69a3fa07b152"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Manjula?",
+      "o": [
+        "Su manera de hablar parodia a la familia Kennedy",
+        "Su familia adoptiva vivió en Islandia",
+        "Suele hacer comentarios ilógicos e inocentes",
+        "Su matrimonio con Apu fue concertado por sus familias"
+      ],
+      "c": 3,
+      "explanation": "Manjula: Su matrimonio con Apu fue concertado por sus familias. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-5555785cac81"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Seymour Skinner en Los Simpsons?",
+      "o": [
+        "Director de escuela",
+        "Presentador de noticias",
+        "Trabajador de la central nuclear",
+        "Policía"
+      ],
+      "c": 0,
+      "explanation": "Seymour Skinner: Director de escuela. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-b68cc9cc3eeb",
+      "img": "arcade/reference/simpsons.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Seymour Skinner?",
+      "o": [
+        "Trabaja con Edna Krabappel",
+        "Es amigo cercano de Carl",
+        "Atiende la tienda El Calabozo del Androide",
+        "Es la hija menor de Homero y Marge"
+      ],
+      "c": 0,
+      "explanation": "Seymour Skinner: Trabaja con Edna Krabappel. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-5a0fe4fc75f1"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Seymour Skinner?",
+      "o": [
+        "Habla de sí mismo en tercera persona",
+        "Vive bajo la fuerte influencia de Agnes",
+        "Parodia el estereotipo del científico excéntrico",
+        "Tiene octillizos con Manjula"
+      ],
+      "c": 1,
+      "explanation": "Seymour Skinner: Vive bajo la fuerte influencia de Agnes. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-3aaec36bdb60"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Agnes Skinner en Los Simpsons?",
+      "o": [
+        "Director de escuela",
+        "Jubilado",
+        "Madre del director Skinner",
+        "Ayudante televisivo"
+      ],
+      "c": 2,
+      "explanation": "Agnes Skinner: Madre del director Skinner. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-769e127f9926"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Agnes Skinner?",
+      "o": [
+        "Es esposa de Apu",
+        "Atiende pacientes en Springfield",
+        "Vive con Seymour",
+        "Trabaja en el programa de Krusty"
+      ],
+      "c": 2,
+      "explanation": "Agnes Skinner: Vive con Seymour. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-c66347f7c8d3"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Agnes Skinner?",
+      "o": [
+        "Lleva cabello que tapa parte de su rostro",
+        "Es uno de los hijos de Ned",
+        "Es muy dominante con su hijo",
+        "Es conocido como el sujeto de las historietas"
+      ],
+      "c": 2,
+      "explanation": "Agnes Skinner: Es muy dominante con su hijo. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-e924d11d21f5",
+      "img": "arcade/reference/simpsons.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Edna Krabappel en Los Simpsons?",
+      "o": [
+        "Abogado",
+        "Actor y presentador",
+        "Profesora de cuarto grado",
+        "Alumno de cuarto grado"
+      ],
+      "c": 2,
+      "explanation": "Edna Krabappel: Profesora de cuarto grado. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-80f615ef9309"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Edna Krabappel?",
+      "o": [
+        "Se asocia con el restaurante The Frying Dutchman",
+        "Es compañero de Bart",
+        "Es maestra de Bart en numerosas temporadas",
+        "Es madre de Rod y Todd"
+      ],
+      "c": 2,
+      "explanation": "Edna Krabappel: Es maestra de Bart en numerosas temporadas. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-8bcb04d31c5f"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Edna Krabappel?",
+      "o": [
+        "Suele presentarse recordando sus trabajos anteriores",
+        "Tiene una risa sarcástica característica",
+        "Tiene octillizos con Manjula",
+        "Recibe bromas telefónicas de Bart"
+      ],
+      "c": 1,
+      "explanation": "Edna Krabappel: Tiene una risa sarcástica característica. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-022ce05a284a"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Willie en Los Simpsons?",
+      "o": [
+        "Esposa de Ned durante las primeras temporadas",
+        "Vendedor de cómics",
+        "Encargado de mantenimiento escolar",
+        "Asistente ejecutivo"
+      ],
+      "c": 2,
+      "explanation": "Willie: Encargado de mantenimiento escolar. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-f1782726812b"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Willie?",
+      "o": [
+        "Es una figura recurrente de Springfield",
+        "Trabaja directamente para Burns",
+        "Es dueño de la taberna de Moe",
+        "Trabaja en la primaria de Springfield"
+      ],
+      "c": 3,
+      "explanation": "Willie: Trabaja en la primaria de Springfield. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-3cdd8ee4a6b0",
+      "img": "arcade/reference/simpsons.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué rasgo identifica a Willie?",
+      "o": [
+        "Es muy dominante con su hijo",
+        "Vive bajo la fuerte influencia de Agnes",
+        "Es de origen escocés",
+        "Suele aparecer con Homero en la taberna"
+      ],
+      "c": 2,
+      "explanation": "Willie: Es de origen escocés. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-6a9e8366ef20"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Otto Mann en Los Simpsons?",
+      "o": [
+        "Empleada del departamento de vehículos",
+        "Conductor de autobús escolar",
+        "Jefe de la mafia local",
+        "Alumno y abusón"
+      ],
+      "c": 1,
+      "explanation": "Otto Mann: Conductor de autobús escolar. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-53e705abfeb3"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Otto Mann?",
+      "o": [
+        "Transporta a los alumnos de Springfield",
+        "Atiende pacientes en Springfield",
+        "Trabaja en el programa de Krusty",
+        "Trabaja en el Canal 6"
+      ],
+      "c": 0,
+      "explanation": "Otto Mann: Transporta a los alumnos de Springfield. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-945e6da1dfe9"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Otto Mann?",
+      "o": [
+        "Es aficionado al rock",
+        "Lleva cabello que tapa parte de su rostro",
+        "Vive bajo la fuerte influencia de Agnes",
+        "Suele juntar las yemas de los dedos al decir Excelente"
+      ],
+      "c": 0,
+      "explanation": "Otto Mann: Es aficionado al rock. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-5e99e10bb973"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Milhouse Van Houten en Los Simpsons?",
+      "o": [
+        "Alumno mayor",
+        "Médico",
+        "Alumno de primaria",
+        "Presentador de noticias"
+      ],
+      "c": 2,
+      "explanation": "Milhouse Van Houten: Alumno de primaria. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-7c45df42edc3",
+      "img": "arcade/reference/simpsons.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Milhouse Van Houten?",
+      "o": [
+        "Es jefe de Smithers",
+        "Aparece en programación en español",
+        "Suele acompañar a Jimbo y Dolph",
+        "Es el mejor amigo de Bart"
+      ],
+      "c": 3,
+      "explanation": "Milhouse Van Houten: Es el mejor amigo de Bart. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-9bd723a8816c"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Milhouse Van Houten?",
+      "o": [
+        "Tiene la cabeza rapada y un hijo",
+        "Parodia el estereotipo del científico excéntrico",
+        "Usa lentes rojos",
+        "Su expresión característica es D’oh"
+      ],
+      "c": 2,
+      "explanation": "Milhouse Van Houten: Usa lentes rojos. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-9381f43d4c58"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Nelson Muntz en Los Simpsons?",
+      "o": [
+        "Alumno de cuarto grado",
+        "Capitán y restaurador",
+        "Alumno de primaria",
+        "Cliente habitual de la taberna"
+      ],
+      "c": 2,
+      "explanation": "Nelson Muntz: Alumno de primaria. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-cf924b64ec27"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Nelson Muntz?",
+      "o": [
+        "Fue ayudante de Krusty",
+        "Forma parte de los abusones escolares",
+        "Trabaja con Wiggum y Eddie",
+        "Es compañero de Bart"
+      ],
+      "c": 1,
+      "explanation": "Nelson Muntz: Forma parte de los abusones escolares. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-96e83e4fe4f0"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Nelson Muntz?",
+      "o": [
+        "Dirige actividades criminales con modales tranquilos",
+        "Muere tras caer de una tribuna",
+        "Abrió una tienda para zurdos",
+        "Se burla con un ja-ja característico"
+      ],
+      "c": 3,
+      "explanation": "Nelson Muntz: Se burla con un ja-ja característico. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-9343c1691141",
+      "img": "arcade/reference/simpsons.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Ralph Wiggum en Los Simpsons?",
+      "o": [
+        "Alumno mayor",
+        "Alumno de primaria",
+        "Profesora de cuarto grado",
+        "Policía"
+      ],
+      "c": 1,
+      "explanation": "Ralph Wiggum: Alumno de primaria. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-93c1a23f6240"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Ralph Wiggum?",
+      "o": [
+        "Ofrece servicios legales en Springfield",
+        "Es madre de Homero",
+        "Es hijo del jefe Wiggum",
+        "Forma parte del grupo de abusones"
+      ],
+      "c": 2,
+      "explanation": "Ralph Wiggum: Es hijo del jefe Wiggum. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-910cd7c17045"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Ralph Wiggum?",
+      "o": [
+        "Recibe bromas telefónicas de Bart",
+        "Suele juntar las yemas de los dedos al decir Excelente",
+        "Su ausencia marcó la infancia de Homero",
+        "Suele hacer comentarios ilógicos e inocentes"
+      ],
+      "c": 3,
+      "explanation": "Ralph Wiggum: Suele hacer comentarios ilógicos e inocentes. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-72d0cf8387f3"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Martin Prince en Los Simpsons?",
+      "o": [
+        "Alumno destacado",
+        "Madre de octillizos",
+        "Comerciante",
+        "Actor y antiguo ayudante televisivo"
+      ],
+      "c": 0,
+      "explanation": "Martin Prince: Alumno destacado. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-182ccf6a1e29"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Martin Prince?",
+      "o": [
+        "Fue ayudante de Krusty",
+        "Trabaja en el Canal 6",
+        "Aparece en películas educativas",
+        "Es compañero de Bart"
+      ],
+      "c": 3,
+      "explanation": "Martin Prince: Es compañero de Bart. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-c1b61f1db7a3",
+      "img": "arcade/reference/simpsons.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué rasgo identifica a Martin Prince?",
+      "o": [
+        "Suele andar en patineta",
+        "Suele hacer comentarios ilógicos e inocentes",
+        "Usa un gorro tejido",
+        "Obtiene excelentes resultados académicos"
+      ],
+      "c": 3,
+      "explanation": "Martin Prince: Obtiene excelentes resultados académicos. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-72e2f49a7c33"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Jimbo Jones en Los Simpsons?",
+      "o": [
+        "Madre del director Skinner",
+        "Alumno y abusón",
+        "Abogado",
+        "Alumno mayor"
+      ],
+      "c": 3,
+      "explanation": "Jimbo Jones: Alumno mayor. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-3b0da036f88d"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Jimbo Jones?",
+      "o": [
+        "Es madre adoptiva de Ling",
+        "Atiende la tienda El Calabozo del Androide",
+        "Transporta a los alumnos de Springfield",
+        "Forma parte del grupo de abusones"
+      ],
+      "c": 3,
+      "explanation": "Jimbo Jones: Forma parte del grupo de abusones. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-63e58d3cc82c"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Jimbo Jones?",
+      "o": [
+        "Conduce noticieros de Springfield",
+        "Tiene una risa sarcástica característica",
+        "Usa un gorro tejido",
+        "Es un abogado poco competente"
+      ],
+      "c": 2,
+      "explanation": "Jimbo Jones: Usa un gorro tejido. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-a75700a38e86"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Kearney Zzyzwicz en Los Simpsons?",
+      "o": [
+        "Alumno y abusón",
+        "Vendedor de cómics",
+        "Comerciante",
+        "Alumna y saxofonista"
+      ],
+      "c": 0,
+      "explanation": "Kearney Zzyzwicz: Alumno y abusón. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-6103737f8565",
+      "img": "arcade/reference/simpsons.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Kearney Zzyzwicz?",
+      "o": [
+        "Suele acompañar a Jimbo y Dolph",
+        "Es médico habitual de la familia Simpson",
+        "Se relaciona con mafiosos de Springfield",
+        "Trabaja en el programa de Krusty"
+      ],
+      "c": 0,
+      "explanation": "Kearney Zzyzwicz: Suele acompañar a Jimbo y Dolph. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-2eb278ac7606"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Kearney Zzyzwicz?",
+      "o": [
+        "Lleva un hueso en el cabello",
+        "Tiene la cabeza rapada y un hijo",
+        "Abrió una tienda para zurdos",
+        "Vive bajo la fuerte influencia de Agnes"
+      ],
+      "c": 1,
+      "explanation": "Kearney Zzyzwicz: Tiene la cabeza rapada y un hijo. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-78304da4fb26"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Dolph Starbeam en Los Simpsons?",
+      "o": [
+        "Alumno y abusón",
+        "Payaso de televisión",
+        "Bebé de la familia Simpson",
+        "Conductor de autobús escolar"
+      ],
+      "c": 0,
+      "explanation": "Dolph Starbeam: Alumno y abusón. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-f44ea064c761"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Dolph Starbeam?",
+      "o": [
+        "Suele acompañar a Jimbo y Kearney",
+        "Dirige un restaurante italiano",
+        "Trabaja en el programa de Krusty",
+        "Aparece en programación en español"
+      ],
+      "c": 0,
+      "explanation": "Dolph Starbeam: Suele acompañar a Jimbo y Kearney. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-43e88b038cf6"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Dolph Starbeam?",
+      "o": [
+        "Dirige actividades criminales con modales tranquilos",
+        "Su familia adoptiva vivió en Islandia",
+        "Tiene octillizos con Manjula",
+        "Lleva cabello que tapa parte de su rostro"
+      ],
+      "c": 3,
+      "explanation": "Dolph Starbeam: Lleva cabello que tapa parte de su rostro. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-ab6052ab6d74",
+      "img": "arcade/reference/simpsons.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Clancy Wiggum en Los Simpsons?",
+      "o": [
+        "Jefe de policía",
+        "Policía",
+        "Madre del director Skinner",
+        "Alumno de primaria"
+      ],
+      "c": 0,
+      "explanation": "Clancy Wiggum: Jefe de policía. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-b5183ed049be"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Clancy Wiggum?",
+      "o": [
+        "Es padre de Ralph",
+        "Es el mejor amigo de Bart",
+        "Trabaja en la primaria de Springfield",
+        "Presenta inventos en Springfield"
+      ],
+      "c": 0,
+      "explanation": "Clancy Wiggum: Es padre de Ralph. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-f43226501cca"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Clancy Wiggum?",
+      "o": [
+        "Dirige la policía de Springfield",
+        "Suele juntar las yemas de los dedos al decir Excelente",
+        "Su ausencia marcó la infancia de Homero",
+        "Lleva gorro de cocinero"
+      ],
+      "c": 0,
+      "explanation": "Clancy Wiggum: Dirige la policía de Springfield. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-a86acb2dc1fe"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Lou en Los Simpsons?",
+      "o": [
+        "Encargado de mantenimiento escolar",
+        "Asistente ejecutivo",
+        "Conductor de autobús escolar",
+        "Policía"
+      ],
+      "c": 3,
+      "explanation": "Lou: Policía. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-4a4d9cdbe311"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Lou?",
+      "o": [
+        "Trabaja con Wiggum y Eddie",
+        "Es hermano de Todd",
+        "Atiende pacientes en Springfield",
+        "Es esposo de Marge"
+      ],
+      "c": 0,
+      "explanation": "Lou: Trabaja con Wiggum y Eddie. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-6f68c2875719",
+      "img": "arcade/reference/simpsons.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué rasgo identifica a Lou?",
+      "o": [
+        "Parodia el estereotipo del científico excéntrico",
+        "Suele advertir los errores del jefe",
+        "Dirige actividades criminales con modales tranquilos",
+        "Usa lentes rojos"
+      ],
+      "c": 1,
+      "explanation": "Lou: Suele advertir los errores del jefe. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-fbcea72b9f43"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Joe Quimby en Los Simpsons?",
+      "o": [
+        "Alcalde",
+        "Esposa de Ned durante las primeras temporadas",
+        "Bebé de la familia Simpson",
+        "Niño de la familia Flanders"
+      ],
+      "c": 0,
+      "explanation": "Joe Quimby: Alcalde. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-56b33b39bf9b"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Joe Quimby?",
+      "o": [
+        "Atiende la tienda El Calabozo del Androide",
+        "Gobierna Springfield",
+        "Trabaja en el Kwik-E-Mart",
+        "Es hijo de Homero y Marge"
+      ],
+      "c": 1,
+      "explanation": "Joe Quimby: Gobierna Springfield. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-c5b1cc262fda"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Joe Quimby?",
+      "o": [
+        "Su manera de hablar parodia a la familia Kennedy",
+        "Tiene octillizos con Manjula",
+        "Es conocido como el sujeto de las historietas",
+        "Saluda con un entusiasta Hola a todos"
+      ],
+      "c": 0,
+      "explanation": "Joe Quimby: Su manera de hablar parodia a la familia Kennedy. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-3f839149bfcb"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Kent Brockman en Los Simpsons?",
+      "o": [
+        "Capitán y restaurador",
+        "Vendedor de cómics",
+        "Médico",
+        "Presentador de noticias"
+      ],
+      "c": 3,
+      "explanation": "Kent Brockman: Presentador de noticias. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-367acfbac5d8",
+      "img": "arcade/reference/simpsons.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Kent Brockman?",
+      "o": [
+        "Trabaja en el Canal 6",
+        "Es jefe de Smithers",
+        "Es hijo del jefe Wiggum",
+        "Trabaja con Wiggum y Eddie"
+      ],
+      "c": 0,
+      "explanation": "Kent Brockman: Trabaja en el Canal 6. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-6abb31501cd4"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Kent Brockman?",
+      "o": [
+        "Vive en el asilo de Springfield",
+        "Suele hacer comentarios ilógicos e inocentes",
+        "Conduce noticieros de Springfield",
+        "Tiene la cabeza rapada y un hijo"
+      ],
+      "c": 2,
+      "explanation": "Kent Brockman: Conduce noticieros de Springfield. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-2e5ca8dfb0dd"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Krusty en Los Simpsons?",
+      "o": [
+        "Payaso de televisión",
+        "Alumno de cuarto grado",
+        "Asistente ejecutivo",
+        "Profesora de cuarto grado"
+      ],
+      "c": 0,
+      "explanation": "Krusty: Payaso de televisión. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-733404e74e4e"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Krusty?",
+      "o": [
+        "Es hijo del jefe Wiggum",
+        "Es hermano de Todd",
+        "Presenta un programa infantil",
+        "Es hermana de Bart y Maggie"
+      ],
+      "c": 2,
+      "explanation": "Krusty: Presenta un programa infantil. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-f6fca9b6fdcd"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Krusty?",
+      "o": [
+        "Es aficionado al rock",
+        "Lleva cabello que tapa parte de su rostro",
+        "Su nombre es Herschel Krustofsky",
+        "Lleva gorro de cocinero"
+      ],
+      "c": 2,
+      "explanation": "Krusty: Su nombre es Herschel Krustofsky. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-6137cd51778d",
+      "img": "arcade/reference/simpsons.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Bob Patiño en Los Simpsons?",
+      "o": [
+        "Actor y antiguo ayudante televisivo",
+        "Jubilado",
+        "Jefe de policía",
+        "Alumna y saxofonista"
+      ],
+      "c": 0,
+      "explanation": "Bob Patiño: Actor y antiguo ayudante televisivo. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-f409737d8ee4"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Bob Patiño?",
+      "o": [
+        "Presenta un programa infantil",
+        "Trabaja en el Canal 6",
+        "Fue ayudante de Krusty",
+        "Es una figura recurrente de Springfield"
+      ],
+      "c": 2,
+      "explanation": "Bob Patiño: Fue ayudante de Krusty. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-cc7089906a57"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Bob Patiño?",
+      "o": [
+        "Usa un gorro tejido",
+        "Busca vengarse de Bart",
+        "Su ausencia marcó la infancia de Homero",
+        "Suele presentarse recordando sus trabajos anteriores"
+      ],
+      "c": 1,
+      "explanation": "Bob Patiño: Busca vengarse de Bart. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-4266e2511297"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Mel Patiño en Los Simpsons?",
+      "o": [
+        "Director de escuela",
+        "Ayudante televisivo",
+        "Alumno y abusón",
+        "Jefe de la mafia local"
+      ],
+      "c": 1,
+      "explanation": "Mel Patiño: Ayudante televisivo. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-c43ee51f6426"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Mel Patiño?",
+      "o": [
+        "Es amigo cercano de Carl",
+        "Forma parte de los abusones escolares",
+        "Es hermano de Todd",
+        "Trabaja en el programa de Krusty"
+      ],
+      "c": 3,
+      "explanation": "Mel Patiño: Trabaja en el programa de Krusty. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-154ba8fa33e0",
+      "img": "arcade/reference/simpsons.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué rasgo identifica a Mel Patiño?",
+      "o": [
+        "Habla de sí mismo en tercera persona",
+        "Lleva un hueso en el cabello",
+        "Dirige la policía de Springfield",
+        "Es de origen escocés"
+      ],
+      "c": 1,
+      "explanation": "Mel Patiño: Lleva un hueso en el cabello. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-65f11acacbb9"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Troy McClure en Los Simpsons?",
+      "o": [
+        "Actor y presentador",
+        "Director de escuela",
+        "Capitán y restaurador",
+        "Madre del director Skinner"
+      ],
+      "c": 0,
+      "explanation": "Troy McClure: Actor y presentador. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-30f53bfc635a"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Troy McClure?",
+      "o": [
+        "Aparece en películas educativas",
+        "Es madre adoptiva de Ling",
+        "Trabaja en la primaria de Springfield",
+        "Transporta a los alumnos de Springfield"
+      ],
+      "c": 0,
+      "explanation": "Troy McClure: Aparece en películas educativas. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-37a324346b96"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Troy McClure?",
+      "o": [
+        "Lleva gorro de cocinero",
+        "Suele presentarse recordando sus trabajos anteriores",
+        "Su matrimonio con Apu fue concertado por sus familias",
+        "Obtiene excelentes resultados académicos"
+      ],
+      "c": 1,
+      "explanation": "Troy McClure: Suele presentarse recordando sus trabajos anteriores. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-5c11b77b6b1d"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Lionel Hutz en Los Simpsons?",
+      "o": [
+        "Madre del director Skinner",
+        "Encargado de mantenimiento escolar",
+        "Bebé de la familia Simpson",
+        "Abogado"
+      ],
+      "c": 3,
+      "explanation": "Lionel Hutz: Abogado. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-401fabce8c8d",
+      "img": "arcade/reference/simpsons.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Lionel Hutz?",
+      "o": [
+        "Es padre de Homero",
+        "Trabaja con Wiggum y Eddie",
+        "Es hijo de Homero y Marge",
+        "Ofrece servicios legales en Springfield"
+      ],
+      "c": 3,
+      "explanation": "Lionel Hutz: Ofrece servicios legales en Springfield. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-e9f344340ea9"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Lionel Hutz?",
+      "o": [
+        "Tiene barba y pipa",
+        "Es un abogado poco competente",
+        "Lleva un hueso en el cabello",
+        "Usa habitualmente un chupete"
+      ],
+      "c": 1,
+      "explanation": "Lionel Hutz: Es un abogado poco competente. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-2a779cec32a1"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Nick Riviera en Los Simpsons?",
+      "o": [
+        "Presentador de noticias",
+        "Profesora de cuarto grado",
+        "Esposa de Ned durante las primeras temporadas",
+        "Médico"
+      ],
+      "c": 3,
+      "explanation": "Nick Riviera: Médico. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-3d22ffa50c68"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Nick Riviera?",
+      "o": [
+        "Atiende pacientes en Springfield",
+        "Es hijo de Homero y Marge",
+        "Se relaciona con mafiosos de Springfield",
+        "Trabaja en el Kwik-E-Mart"
+      ],
+      "c": 0,
+      "explanation": "Nick Riviera: Atiende pacientes en Springfield. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-534593108d3d"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Nick Riviera?",
+      "o": [
+        "Habla de sí mismo en tercera persona",
+        "Obtiene excelentes resultados académicos",
+        "Saluda con un entusiasta Hola a todos",
+        "Su manera de hablar parodia a la familia Kennedy"
+      ],
+      "c": 2,
+      "explanation": "Nick Riviera: Saluda con un entusiasta Hola a todos. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-3e201d45d672",
+      "img": "arcade/reference/simpsons.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Julius Hibbert en Los Simpsons?",
+      "o": [
+        "Médico",
+        "Trabajador de la central nuclear",
+        "Actor y antiguo ayudante televisivo",
+        "Tabernero"
+      ],
+      "c": 0,
+      "explanation": "Julius Hibbert: Médico. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-51dc17954d1c"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Julius Hibbert?",
+      "o": [
+        "Trabaja directamente para Burns",
+        "Es médico habitual de la familia Simpson",
+        "Es jefe de Smithers",
+        "Aparece en programación en español"
+      ],
+      "c": 1,
+      "explanation": "Julius Hibbert: Es médico habitual de la familia Simpson. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-33674bdbc2bd"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Julius Hibbert?",
+      "o": [
+        "Suele hacer comentarios ilógicos e inocentes",
+        "Suele advertir los errores del jefe",
+        "Usa lentes rojos",
+        "Ríe incluso en momentos poco oportunos"
+      ],
+      "c": 3,
+      "explanation": "Julius Hibbert: Ríe incluso en momentos poco oportunos. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-101befb54c6d"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Profesor Frink en Los Simpsons?",
+      "o": [
+        "Actor y antiguo ayudante televisivo",
+        "Aficionado a la música disco",
+        "Comerciante",
+        "Científico e inventor"
+      ],
+      "c": 3,
+      "explanation": "Profesor Frink: Científico e inventor. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-b13977bd9c5f"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Profesor Frink?",
+      "o": [
+        "Trabaja directamente para Burns",
+        "Vive con Seymour",
+        "Es padre de Homero",
+        "Presenta inventos en Springfield"
+      ],
+      "c": 3,
+      "explanation": "Profesor Frink: Presenta inventos en Springfield. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-8b0195e1f526",
+      "img": "arcade/reference/simpsons.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué rasgo identifica a Profesor Frink?",
+      "o": [
+        "Su expresión característica es D’oh",
+        "Parodia el estereotipo del científico excéntrico",
+        "Busca vengarse de Bart",
+        "Ganó un concurso de cortometrajes en Springfield"
+      ],
+      "c": 1,
+      "explanation": "Profesor Frink: Parodia el estereotipo del científico excéntrico. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-d54a8b0752b6"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Jeff Albertson en Los Simpsons?",
+      "o": [
+        "Vendedor de cómics",
+        "Empleada del departamento de vehículos",
+        "Alcalde",
+        "Aficionado a la música disco"
+      ],
+      "c": 0,
+      "explanation": "Jeff Albertson: Vendedor de cómics. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-0fd94a318cf0"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Jeff Albertson?",
+      "o": [
+        "Trabaja en el Kwik-E-Mart",
+        "Trabaja en la primaria de Springfield",
+        "Forma parte del grupo de abusones",
+        "Atiende la tienda El Calabozo del Androide"
+      ],
+      "c": 3,
+      "explanation": "Jeff Albertson: Atiende la tienda El Calabozo del Androide. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-c112c6408e44"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Jeff Albertson?",
+      "o": [
+        "Es aficionado al rock",
+        "Su familia adoptiva vivió en Islandia",
+        "Es conocido como el sujeto de las historietas",
+        "Colecciona muñecas Stacy Malibu"
+      ],
+      "c": 2,
+      "explanation": "Jeff Albertson: Es conocido como el sujeto de las historietas. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-a570d7cb033a"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Hombre Abejorro en Los Simpsons?",
+      "o": [
+        "Actor de televisión",
+        "Capitán y restaurador",
+        "Jubilado",
+        "Asistente ejecutivo"
+      ],
+      "c": 0,
+      "explanation": "Hombre Abejorro: Actor de televisión. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-b02ddb4f2eaa",
+      "img": "arcade/reference/simpsons.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Hombre Abejorro?",
+      "o": [
+        "Es vecino de los Simpson",
+        "Es hermano de Todd",
+        "Aparece en películas educativas",
+        "Aparece en programación en español"
+      ],
+      "c": 3,
+      "explanation": "Hombre Abejorro: Aparece en programación en español. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-1cf98bc9f1f1"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Hombre Abejorro?",
+      "o": [
+        "Usa un gorro tejido",
+        "Viste un disfraz de abejorro",
+        "Tiene una risa sarcástica característica",
+        "Suele juntar las yemas de los dedos al decir Excelente"
+      ],
+      "c": 1,
+      "explanation": "Hombre Abejorro: Viste un disfraz de abejorro. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-5083b2a3c67f"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Disco Stu en Los Simpsons?",
+      "o": [
+        "Médico",
+        "Conductor de autobús escolar",
+        "Aficionado a la música disco",
+        "Jefe de policía"
+      ],
+      "c": 2,
+      "explanation": "Disco Stu: Aficionado a la música disco. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-87d4383f32b3"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Disco Stu?",
+      "o": [
+        "Suele acompañar a Jimbo y Dolph",
+        "Ofrece servicios legales en Springfield",
+        "Es hermana gemela de Selma",
+        "Es una figura recurrente de Springfield"
+      ],
+      "c": 3,
+      "explanation": "Disco Stu: Es una figura recurrente de Springfield. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-c73af3dd8b0d"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Disco Stu?",
+      "o": [
+        "Habla de sí mismo en tercera persona",
+        "Defiende el vegetarianismo",
+        "Lleva cabello que tapa parte de su rostro",
+        "Colecciona muñecas Stacy Malibu"
+      ],
+      "c": 0,
+      "explanation": "Disco Stu: Habla de sí mismo en tercera persona. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-15e68d540821",
+      "img": "arcade/reference/simpsons.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Capitán McCallister en Los Simpsons?",
+      "o": [
+        "Alumno y abusón",
+        "Capitán y restaurador",
+        "Asistente ejecutivo",
+        "Dueño de la central nuclear"
+      ],
+      "c": 1,
+      "explanation": "Capitán McCallister: Capitán y restaurador. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-3be16487a905"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Capitán McCallister?",
+      "o": [
+        "Es médico habitual de la familia Simpson",
+        "Se asocia con el restaurante The Frying Dutchman",
+        "Es la hija menor de Homero y Marge",
+        "Es hermano de Todd"
+      ],
+      "c": 1,
+      "explanation": "Capitán McCallister: Se asocia con el restaurante The Frying Dutchman. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-3b7f479d38f9"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Capitán McCallister?",
+      "o": [
+        "Recibe bromas telefónicas de Bart",
+        "Tiene barba y pipa",
+        "Suele advertir los errores del jefe",
+        "Tiene una risa sarcástica característica"
+      ],
+      "c": 1,
+      "explanation": "Capitán McCallister: Tiene barba y pipa. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-d4b3a8273026"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Luigi Risotto en Los Simpsons?",
+      "o": [
+        "Restaurador",
+        "Alumno y abusón",
+        "Presentador de noticias",
+        "Jubilado"
+      ],
+      "c": 0,
+      "explanation": "Luigi Risotto: Restaurador. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-edd3c34b32df"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Luigi Risotto?",
+      "o": [
+        "Dirige un restaurante italiano",
+        "Atiende la tienda El Calabozo del Androide",
+        "Es una figura recurrente de Springfield",
+        "Presenta un programa infantil"
+      ],
+      "c": 0,
+      "explanation": "Luigi Risotto: Dirige un restaurante italiano. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-cc43b125a4b6",
+      "img": "arcade/reference/simpsons.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Qué rasgo identifica a Luigi Risotto?",
+      "o": [
+        "Vive bajo la fuerte influencia de Agnes",
+        "Lleva gorro de cocinero",
+        "Suele aparecer con Homero en la taberna",
+        "Suele presentarse recordando sus trabajos anteriores"
+      ],
+      "c": 1,
+      "explanation": "Luigi Risotto: Lleva gorro de cocinero. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-290255809d42"
+    },
+    {
+      "q": "¿Qué ocupación o papel identifica a Tony el Gordo en Los Simpsons?",
+      "o": [
+        "Dueño de la central nuclear",
+        "Esposa de Ned durante las primeras temporadas",
+        "Policía",
+        "Jefe de la mafia local"
+      ],
+      "c": 3,
+      "explanation": "Tony el Gordo: Jefe de la mafia local. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-12a545e3c5c0"
+    },
+    {
+      "q": "¿Qué vínculo o entorno corresponde a Tony el Gordo?",
+      "o": [
+        "Trabaja con Edna Krabappel",
+        "Es hermana de Patty y Selma",
+        "Se relaciona con mafiosos de Springfield",
+        "Es hermana gemela de Selma"
+      ],
+      "c": 2,
+      "explanation": "Tony el Gordo: Se relaciona con mafiosos de Springfield. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-f1adf7866f51"
+    },
+    {
+      "q": "¿Qué rasgo identifica a Tony el Gordo?",
+      "o": [
+        "Es uno de los hijos de Ned",
+        "Suele aparecer con Homero en la taberna",
+        "Dirige actividades criminales con modales tranquilos",
+        "Obtiene excelentes resultados académicos"
+      ],
+      "c": 2,
+      "explanation": "Tony el Gordo: Dirige actividades criminales con modales tranquilos. Nombres habituales del doblaje latinoamericano. Se consideran principalmente episodios clásicos; los papeles pueden cambiar entre temporadas.",
+      "e": "🍩",
+      "id": "simpsons-6584130aa630"
+    }
+  ]
+}

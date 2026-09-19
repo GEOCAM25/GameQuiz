@@ -1,0 +1,2021 @@
+{
+  "cat": "cuerpo",
+  "name": "Cuerpo humano",
+  "emoji": "🫀",
+  "edition": "4.0",
+  "sources": [
+    "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction"
+  ],
+  "questions": [
+    {
+      "q": "¿A qué sistema pertenece principalmente corazón?",
+      "o": [
+        "Tegumentario",
+        "Cardiovascular",
+        "Respiratorio",
+        "Digestivo"
+      ],
+      "c": 1,
+      "explanation": "corazón: Cardiovascular. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-00bf3dc60438",
+      "img": "arcade/reference/cuerpo.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Dónde se encuentra corazón?",
+      "o": [
+        "A lo largo de los vasos linfáticos",
+        "Tórax, entre los pulmones",
+        "Oído interno",
+        "Superficie transparente delantera del ojo"
+      ],
+      "c": 1,
+      "explanation": "corazón: Tórax, entre los pulmones. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-7073c9cfcd68"
+    },
+    {
+      "q": "¿Cuál es una función de corazón?",
+      "o": [
+        "Soportar peso y articular cadera con rodilla",
+        "Producir saliva",
+        "Impulsar sangre por el cuerpo",
+        "Participar en la rotación del antebrazo"
+      ],
+      "c": 2,
+      "explanation": "corazón: Impulsar sangre por el cuerpo. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-cfff9deddccd"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente arteria aorta?",
+      "o": [
+        "Linfático e inmunitario",
+        "Muscular",
+        "Urinario",
+        "Cardiovascular"
+      ],
+      "c": 3,
+      "explanation": "arteria aorta: Cardiovascular. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-e5eaee6da9df"
+    },
+    {
+      "q": "¿Dónde se encuentra arteria aorta?",
+      "o": [
+        "Base del encéfalo, en la silla turca",
+        "Alrededor de gran parte del intestino delgado",
+        "Sale del ventrículo izquierdo",
+        "Cavidad torácica"
+      ],
+      "c": 2,
+      "explanation": "arteria aorta: Sale del ventrículo izquierdo. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-4227cc15ce94"
+    },
+    {
+      "q": "¿Cuál es una función de arteria aorta?",
+      "o": [
+        "Producir hormonas que regulan el metabolismo",
+        "Enfocar la luz sobre la retina",
+        "Distribuir sangre hacia la circulación sistémica",
+        "Extender la rodilla"
+      ],
+      "c": 2,
+      "explanation": "arteria aorta: Distribuir sangre hacia la circulación sistémica. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-4ca6250bb0b3",
+      "img": "arcade/reference/cuerpo.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente vena cava superior?",
+      "o": [
+        "Muscular",
+        "Endocrino",
+        "Cardiovascular",
+        "Nervioso"
+      ],
+      "c": 2,
+      "explanation": "vena cava superior: Cardiovascular. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-cfaca5fc24bd"
+    },
+    {
+      "q": "¿Dónde se encuentra vena cava superior?",
+      "o": [
+        "Entre el conducto auditivo y el oído medio",
+        "Brazo, entre hombro y codo",
+        "Entre cada riñón y la vejiga",
+        "Tórax, desembocando en la aurícula derecha"
+      ],
+      "c": 3,
+      "explanation": "vena cava superior: Tórax, desembocando en la aurícula derecha. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-1cda52c166db"
+    },
+    {
+      "q": "¿Cuál es una función de vena cava superior?",
+      "o": [
+        "Llevar al corazón sangre de la parte superior del cuerpo",
+        "Permitir el intercambio de sustancias con los tejidos",
+        "Transformar vibraciones en señales auditivas",
+        "Intercambiar gases con el aire"
+      ],
+      "c": 0,
+      "explanation": "vena cava superior: Llevar al corazón sangre de la parte superior del cuerpo. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-59fb8ab9606a"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente capilar sanguíneo?",
+      "o": [
+        "Cardiovascular",
+        "Urinario",
+        "Respiratorio",
+        "Nervioso"
+      ],
+      "c": 0,
+      "explanation": "capilar sanguíneo: Cardiovascular. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-ed4496109573"
+    },
+    {
+      "q": "¿Dónde se encuentra capilar sanguíneo?",
+      "o": [
+        "Tramo final del intestino grueso",
+        "Cuello, delante de la tráquea",
+        "Entre arteriolas y vénulas en los tejidos",
+        "Sale del ventrículo izquierdo"
+      ],
+      "c": 2,
+      "explanation": "capilar sanguíneo: Entre arteriolas y vénulas en los tejidos. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-deba24d3075e",
+      "img": "arcade/reference/cuerpo.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Cuál es una función de capilar sanguíneo?",
+      "o": [
+        "Flexionar el codo y ayudar a supinar el antebrazo",
+        "Permitir la maduración de linfocitos T",
+        "Permitir el intercambio de sustancias con los tejidos",
+        "Participar en la formación de recuerdos"
+      ],
+      "c": 2,
+      "explanation": "capilar sanguíneo: Permitir el intercambio de sustancias con los tejidos. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-f481aa57ce61"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente pulmón?",
+      "o": [
+        "Respiratorio",
+        "Digestivo",
+        "Urinario",
+        "Linfático e inmunitario"
+      ],
+      "c": 0,
+      "explanation": "pulmón: Respiratorio. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-08f2d98d891c"
+    },
+    {
+      "q": "¿Dónde se encuentra pulmón?",
+      "o": [
+        "A ambos lados de la columna, detrás del peritoneo",
+        "Pelvis",
+        "Parte superior izquierda del abdomen",
+        "Cavidad torácica"
+      ],
+      "c": 3,
+      "explanation": "pulmón: Cavidad torácica. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-8fef4589d907"
+    },
+    {
+      "q": "¿Cuál es una función de pulmón?",
+      "o": [
+        "Conducir aire hacia los bronquios",
+        "Intercambiar gases con el aire",
+        "Almacenar temporalmente la orina",
+        "Producir hormonas que regulan el metabolismo"
+      ],
+      "c": 1,
+      "explanation": "pulmón: Intercambiar gases con el aire. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-206e0fee737c"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente tráquea?",
+      "o": [
+        "Sensorial",
+        "Linfático e inmunitario",
+        "Nervioso",
+        "Respiratorio"
+      ],
+      "c": 3,
+      "explanation": "tráquea: Respiratorio. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-38fe1a5022a4",
+      "img": "arcade/reference/cuerpo.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Dónde se encuentra tráquea?",
+      "o": [
+        "Sale del ventrículo izquierdo",
+        "Canal vertebral",
+        "Entre la laringe y los bronquios",
+        "Pelvis, a cada lado del útero"
+      ],
+      "c": 2,
+      "explanation": "tráquea: Entre la laringe y los bronquios. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-113b29e27502"
+    },
+    {
+      "q": "¿Cuál es una función de tráquea?",
+      "o": [
+        "Secretar hormonas que regulan otras glándulas",
+        "Conducir aire hacia los bronquios",
+        "Coordinar movimientos y equilibrio",
+        "Permitir la maduración de linfocitos T"
+      ],
+      "c": 1,
+      "explanation": "tráquea: Conducir aire hacia los bronquios. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-a75ac056ea6a"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente alvéolo?",
+      "o": [
+        "Urinario",
+        "Esquelético",
+        "Respiratorio",
+        "Sensorial"
+      ],
+      "c": 2,
+      "explanation": "alvéolo: Respiratorio. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-433b1a713187"
+    },
+    {
+      "q": "¿Dónde se encuentra alvéolo?",
+      "o": [
+        "Pelvis, a cada lado del útero",
+        "Canal vertebral",
+        "Dentro de los pulmones",
+        "Detrás del esternón"
+      ],
+      "c": 2,
+      "explanation": "alvéolo: Dentro de los pulmones. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-0eb7f8fcaf32"
+    },
+    {
+      "q": "¿Cuál es una función de alvéolo?",
+      "o": [
+        "Almacenar y concentrar bilis",
+        "Convertir luz en señales nerviosas",
+        "Extender la rodilla",
+        "Intercambiar oxígeno y dióxido de carbono con los capilares"
+      ],
+      "c": 3,
+      "explanation": "alvéolo: Intercambiar oxígeno y dióxido de carbono con los capilares. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-4af94f472792",
+      "img": "arcade/reference/cuerpo.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente laringe?",
+      "o": [
+        "Esquelético",
+        "Sensorial",
+        "Digestivo",
+        "Respiratorio"
+      ],
+      "c": 3,
+      "explanation": "laringe: Respiratorio. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-171a91b8e876"
+    },
+    {
+      "q": "¿Dónde se encuentra laringe?",
+      "o": [
+        "Cuello, sobre la tráquea",
+        "Encima de cada riñón",
+        "Superficie interna del fondo del ojo",
+        "Parte anterior de la rodilla"
+      ],
+      "c": 0,
+      "explanation": "laringe: Cuello, sobre la tráquea. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-ebfec59c3477"
+    },
+    {
+      "q": "¿Cuál es una función de laringe?",
+      "o": [
+        "Producir sonidos mediante las cuerdas vocales",
+        "Participar en la rotación del antebrazo",
+        "Distribuir sangre hacia la circulación sistémica",
+        "Refractar la luz al entrar al ojo"
+      ],
+      "c": 0,
+      "explanation": "laringe: Producir sonidos mediante las cuerdas vocales. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-88e670d8a51b"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente bronquio?",
+      "o": [
+        "Respiratorio",
+        "Digestivo",
+        "Muscular",
+        "Cardiovascular"
+      ],
+      "c": 0,
+      "explanation": "bronquio: Respiratorio. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-61233f9e0fec"
+    },
+    {
+      "q": "¿Dónde se encuentra bronquio?",
+      "o": [
+        "Entre la faringe y el estómago",
+        "Entre la tráquea y el interior del pulmón",
+        "Tórax, entre los pulmones",
+        "Región medial del lóbulo temporal"
+      ],
+      "c": 1,
+      "explanation": "bronquio: Entre la tráquea y el interior del pulmón. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-73d3ebf24f99",
+      "img": "arcade/reference/cuerpo.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Cuál es una función de bronquio?",
+      "o": [
+        "Producir hormonas que regulan el metabolismo",
+        "Conducir aire hacia cada pulmón",
+        "Conducir aire hacia los bronquios",
+        "Coordinar movimientos y equilibrio"
+      ],
+      "c": 1,
+      "explanation": "bronquio: Conducir aire hacia cada pulmón. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-406b97088d91"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente diafragma?",
+      "o": [
+        "Nervioso",
+        "Muscular",
+        "Reproductor",
+        "Urinario"
+      ],
+      "c": 1,
+      "explanation": "diafragma: Muscular. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-146109ac4cb2"
+    },
+    {
+      "q": "¿Dónde se encuentra diafragma?",
+      "o": [
+        "Tramo final del intestino grueso",
+        "Debajo de los pulmones",
+        "Parte anterior de la rodilla",
+        "Parte posterior e inferior del encéfalo"
+      ],
+      "c": 1,
+      "explanation": "diafragma: Debajo de los pulmones. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-cf00cbb37f7c"
+    },
+    {
+      "q": "¿Cuál es una función de diafragma?",
+      "o": [
+        "Contraerse para facilitar la inspiración",
+        "Soportar carga en el apoyo del pie",
+        "Coordinar movimientos y equilibrio",
+        "Almacenar temporalmente la orina"
+      ],
+      "c": 0,
+      "explanation": "diafragma: Contraerse para facilitar la inspiración. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-da56b589fcc7"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente esófago?",
+      "o": [
+        "Respiratorio",
+        "Digestivo",
+        "Nervioso",
+        "Reproductor"
+      ],
+      "c": 1,
+      "explanation": "esófago: Digestivo. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-57a849b0eafa",
+      "img": "arcade/reference/cuerpo.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Dónde se encuentra esófago?",
+      "o": [
+        "Brazo, entre hombro y codo",
+        "Entre la faringe y el estómago",
+        "Base del encéfalo, en la silla turca",
+        "Cuello, sobre la tráquea"
+      ],
+      "c": 1,
+      "explanation": "esófago: Entre la faringe y el estómago. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-9c18abe7ef35"
+    },
+    {
+      "q": "¿Cuál es una función de esófago?",
+      "o": [
+        "Transformar vibraciones en señales auditivas",
+        "Participar en las articulaciones del hombro y codo",
+        "Filtrar sangre y participar en la respuesta inmunitaria",
+        "Transportar el alimento por peristaltismo"
+      ],
+      "c": 3,
+      "explanation": "esófago: Transportar el alimento por peristaltismo. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-38ea228ec63e"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente estómago?",
+      "o": [
+        "Cardiovascular",
+        "Urinario",
+        "Esquelético",
+        "Digestivo"
+      ],
+      "c": 3,
+      "explanation": "estómago: Digestivo. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-26cb497907a4"
+    },
+    {
+      "q": "¿Dónde se encuentra estómago?",
+      "o": [
+        "Parte anterior de la rodilla",
+        "Sale del ventrículo izquierdo",
+        "Parte superior del abdomen",
+        "Tórax, entre los pulmones"
+      ],
+      "c": 2,
+      "explanation": "estómago: Parte superior del abdomen. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-d7320b9b8aa4"
+    },
+    {
+      "q": "¿Cuál es una función de estómago?",
+      "o": [
+        "Permitir la maduración de linfocitos T",
+        "Transformar vibraciones en señales auditivas",
+        "Secretar hormonas que regulan otras glándulas",
+        "Mezclar alimento con ácido y enzimas"
+      ],
+      "c": 3,
+      "explanation": "estómago: Mezclar alimento con ácido y enzimas. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-b5567237542f",
+      "img": "arcade/reference/cuerpo.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente intestino delgado?",
+      "o": [
+        "Muscular",
+        "Respiratorio",
+        "Digestivo",
+        "Tegumentario"
+      ],
+      "c": 2,
+      "explanation": "intestino delgado: Digestivo. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-76a3bc9cb390"
+    },
+    {
+      "q": "¿Dónde se encuentra intestino delgado?",
+      "o": [
+        "Entre el estómago y el intestino grueso",
+        "Desde la vejiga hacia el exterior",
+        "Entre arteriolas y vénulas en los tejidos",
+        "Cavidad torácica"
+      ],
+      "c": 0,
+      "explanation": "intestino delgado: Entre el estómago y el intestino grueso. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-65ae1752186a"
+    },
+    {
+      "q": "¿Cuál es una función de intestino delgado?",
+      "o": [
+        "Refractar la luz al entrar al ojo",
+        "Absorber la mayoría de los nutrientes digeridos",
+        "Convertir luz en señales nerviosas",
+        "Producir sonidos mediante las cuerdas vocales"
+      ],
+      "c": 1,
+      "explanation": "intestino delgado: Absorber la mayoría de los nutrientes digeridos. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-e442b0ebb5ea"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente intestino grueso?",
+      "o": [
+        "Reproductor",
+        "Nervioso",
+        "Urinario",
+        "Digestivo"
+      ],
+      "c": 3,
+      "explanation": "intestino grueso: Digestivo. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-7bec7217bab7"
+    },
+    {
+      "q": "¿Dónde se encuentra intestino grueso?",
+      "o": [
+        "Alrededor de gran parte del intestino delgado",
+        "Parte superior izquierda del abdomen",
+        "Antebrazo, del lado del pulgar en posición anatómica",
+        "A lo largo de los vasos linfáticos"
+      ],
+      "c": 0,
+      "explanation": "intestino grueso: Alrededor de gran parte del intestino delgado. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-0c54dcaf9a96",
+      "img": "arcade/reference/cuerpo.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Cuál es una función de intestino grueso?",
+      "o": [
+        "Vibrar ante las ondas sonoras",
+        "Producir hormonas que regulan el metabolismo",
+        "Almacenar temporalmente la orina",
+        "Absorber agua y formar las heces"
+      ],
+      "c": 3,
+      "explanation": "intestino grueso: Absorber agua y formar las heces. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-532fce85d1b1"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente hígado?",
+      "o": [
+        "Esquelético",
+        "Respiratorio",
+        "Muscular",
+        "Digestivo"
+      ],
+      "c": 3,
+      "explanation": "hígado: Digestivo. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-db2a82b0d484"
+    },
+    {
+      "q": "¿Dónde se encuentra hígado?",
+      "o": [
+        "Sale del ventrículo izquierdo",
+        "Brazo, entre hombro y codo",
+        "Detrás del iris",
+        "Parte superior derecha del abdomen"
+      ],
+      "c": 3,
+      "explanation": "hígado: Parte superior derecha del abdomen. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-a986c763777c"
+    },
+    {
+      "q": "¿Cuál es una función de hígado?",
+      "o": [
+        "Producir bilis",
+        "Absorber la mayoría de los nutrientes digeridos",
+        "Flexionar el codo y ayudar a supinar el antebrazo",
+        "Producir sonidos mediante las cuerdas vocales"
+      ],
+      "c": 0,
+      "explanation": "hígado: Producir bilis. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-6e4ca9b11910"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente vesícula biliar?",
+      "o": [
+        "Digestivo",
+        "Cardiovascular",
+        "Reproductor",
+        "Sensorial"
+      ],
+      "c": 0,
+      "explanation": "vesícula biliar: Digestivo. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-aaf969a95205",
+      "img": "arcade/reference/cuerpo.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Dónde se encuentra vesícula biliar?",
+      "o": [
+        "Debajo del hígado",
+        "Superficie transparente delantera del ojo",
+        "Encima de cada riñón",
+        "A ambos lados de la columna, detrás del peritoneo"
+      ],
+      "c": 0,
+      "explanation": "vesícula biliar: Debajo del hígado. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-7462a763d3d9"
+    },
+    {
+      "q": "¿Cuál es una función de vesícula biliar?",
+      "o": [
+        "Almacenar y concentrar bilis",
+        "Permitir la maduración de linfocitos T",
+        "Distribuir sangre hacia la circulación sistémica",
+        "Secretar hormonas que regulan otras glándulas"
+      ],
+      "c": 0,
+      "explanation": "vesícula biliar: Almacenar y concentrar bilis. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-294a980adec0"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente glándula salival parótida?",
+      "o": [
+        "Digestivo",
+        "Muscular",
+        "Tegumentario",
+        "Nervioso"
+      ],
+      "c": 0,
+      "explanation": "glándula salival parótida: Digestivo. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-5c19b0a65549"
+    },
+    {
+      "q": "¿Dónde se encuentra glándula salival parótida?",
+      "o": [
+        "Sale del ventrículo izquierdo",
+        "Cuello, delante de la tráquea",
+        "Delante y debajo de cada oreja",
+        "Brazo, entre hombro y codo"
+      ],
+      "c": 2,
+      "explanation": "glándula salival parótida: Delante y debajo de cada oreja. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-cf8aa8d109a1"
+    },
+    {
+      "q": "¿Cuál es una función de glándula salival parótida?",
+      "o": [
+        "Participar en la rotación del antebrazo",
+        "Flexionar el codo y ayudar a supinar el antebrazo",
+        "Permitir el desarrollo del embrión y el feto",
+        "Producir saliva"
+      ],
+      "c": 3,
+      "explanation": "glándula salival parótida: Producir saliva. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-db59a6fbc665",
+      "img": "arcade/reference/cuerpo.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente recto?",
+      "o": [
+        "Linfático e inmunitario",
+        "Digestivo",
+        "Reproductor",
+        "Sensorial"
+      ],
+      "c": 1,
+      "explanation": "recto: Digestivo. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-9de0fa7511e0"
+    },
+    {
+      "q": "¿Dónde se encuentra recto?",
+      "o": [
+        "Tramo final del intestino grueso",
+        "Parte anterior de la rodilla",
+        "Muslo",
+        "Entre la laringe y los bronquios"
+      ],
+      "c": 0,
+      "explanation": "recto: Tramo final del intestino grueso. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-be05dfa041eb"
+    },
+    {
+      "q": "¿Cuál es una función de recto?",
+      "o": [
+        "Enfocar la luz sobre la retina",
+        "Soportar peso y articular cadera con rodilla",
+        "Llevar al corazón sangre de la parte superior del cuerpo",
+        "Almacenar heces antes de expulsarlas"
+      ],
+      "c": 3,
+      "explanation": "recto: Almacenar heces antes de expulsarlas. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-bccbb7fb34e9"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente riñón?",
+      "o": [
+        "Nervioso",
+        "Cardiovascular",
+        "Urinario",
+        "Sensorial"
+      ],
+      "c": 2,
+      "explanation": "riñón: Urinario. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-6ea901904151"
+    },
+    {
+      "q": "¿Dónde se encuentra riñón?",
+      "o": [
+        "Cavidad torácica",
+        "Muslo",
+        "A ambos lados de la columna, detrás del peritoneo",
+        "Tórax, entre los pulmones"
+      ],
+      "c": 2,
+      "explanation": "riñón: A ambos lados de la columna, detrás del peritoneo. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-502fa897a5d1",
+      "img": "arcade/reference/cuerpo.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Cuál es una función de riñón?",
+      "o": [
+        "Producir hormonas como cortisol y adrenalina",
+        "Filtrar sangre y formar orina",
+        "Transportar el alimento por peristaltismo",
+        "Absorber la mayoría de los nutrientes digeridos"
+      ],
+      "c": 1,
+      "explanation": "riñón: Filtrar sangre y formar orina. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-76878fe65f49"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente uréter?",
+      "o": [
+        "Endocrino",
+        "Urinario",
+        "Linfático e inmunitario",
+        "Digestivo"
+      ],
+      "c": 1,
+      "explanation": "uréter: Urinario. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-32a84761cf02"
+    },
+    {
+      "q": "¿Dónde se encuentra uréter?",
+      "o": [
+        "Entre cada riñón y la vejiga",
+        "Canal vertebral",
+        "Tórax, desembocando en la aurícula derecha",
+        "Cuello, delante de la tráquea"
+      ],
+      "c": 0,
+      "explanation": "uréter: Entre cada riñón y la vejiga. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-8f81279ad587"
+    },
+    {
+      "q": "¿Cuál es una función de uréter?",
+      "o": [
+        "Soportar carga en el apoyo del pie",
+        "Transportar orina hacia la vejiga",
+        "Distribuir sangre hacia la circulación sistémica",
+        "Mezclar alimento con ácido y enzimas"
+      ],
+      "c": 1,
+      "explanation": "uréter: Transportar orina hacia la vejiga. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-0888b6c5351b"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente vejiga urinaria?",
+      "o": [
+        "Urinario",
+        "Nervioso",
+        "Muscular",
+        "Sensorial"
+      ],
+      "c": 0,
+      "explanation": "vejiga urinaria: Urinario. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-8333c0f0a3e2",
+      "img": "arcade/reference/cuerpo.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Dónde se encuentra vejiga urinaria?",
+      "o": [
+        "Superficie interna del fondo del ojo",
+        "Parte anterior del ojo, alrededor de la pupila",
+        "Pelvis, entre la vejiga y el recto",
+        "Pelvis"
+      ],
+      "c": 3,
+      "explanation": "vejiga urinaria: Pelvis. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-08c86141b6c1"
+    },
+    {
+      "q": "¿Cuál es una función de vejiga urinaria?",
+      "o": [
+        "Almacenar heces antes de expulsarlas",
+        "Convertir luz en señales nerviosas",
+        "Almacenar temporalmente la orina",
+        "Soportar peso y articular cadera con rodilla"
+      ],
+      "c": 2,
+      "explanation": "vejiga urinaria: Almacenar temporalmente la orina. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-99a1eac1b3f2"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente uretra?",
+      "o": [
+        "Linfático e inmunitario",
+        "Urinario",
+        "Reproductor",
+        "Muscular"
+      ],
+      "c": 1,
+      "explanation": "uretra: Urinario. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-9de52d50b04c"
+    },
+    {
+      "q": "¿Dónde se encuentra uretra?",
+      "o": [
+        "Cara anterior del brazo",
+        "Tramo final del intestino grueso",
+        "Pelvis, entre la vejiga y el recto",
+        "Desde la vejiga hacia el exterior"
+      ],
+      "c": 3,
+      "explanation": "uretra: Desde la vejiga hacia el exterior. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-f41ace95c67f"
+    },
+    {
+      "q": "¿Cuál es una función de uretra?",
+      "o": [
+        "Enfocar la luz sobre la retina",
+        "Intercambiar oxígeno y dióxido de carbono con los capilares",
+        "Permitir la salida de la orina",
+        "Conducir aire hacia cada pulmón"
+      ],
+      "c": 2,
+      "explanation": "uretra: Permitir la salida de la orina. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-87036801a438",
+      "img": "arcade/reference/cuerpo.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente cerebelo?",
+      "o": [
+        "Nervioso",
+        "Muscular",
+        "Urinario",
+        "Esquelético"
+      ],
+      "c": 0,
+      "explanation": "cerebelo: Nervioso. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-b448616eaacf"
+    },
+    {
+      "q": "¿Dónde se encuentra cerebelo?",
+      "o": [
+        "Pelvis, a cada lado del útero",
+        "Sale del ventrículo izquierdo",
+        "Cavidad torácica",
+        "Parte posterior e inferior del encéfalo"
+      ],
+      "c": 3,
+      "explanation": "cerebelo: Parte posterior e inferior del encéfalo. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-a4fb2e18c4f9"
+    },
+    {
+      "q": "¿Cuál es una función de cerebelo?",
+      "o": [
+        "Filtrar linfa y facilitar respuestas inmunitarias",
+        "Conducir aire hacia cada pulmón",
+        "Coordinar movimientos y equilibrio",
+        "Producir hormonas como cortisol y adrenalina"
+      ],
+      "c": 2,
+      "explanation": "cerebelo: Coordinar movimientos y equilibrio. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-68ea36089b16"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente médula espinal?",
+      "o": [
+        "Urinario",
+        "Linfático e inmunitario",
+        "Reproductor",
+        "Nervioso"
+      ],
+      "c": 3,
+      "explanation": "médula espinal: Nervioso. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-8ed00b1d1a1d"
+    },
+    {
+      "q": "¿Dónde se encuentra médula espinal?",
+      "o": [
+        "Dentro de los pulmones",
+        "Parte superior del abdomen",
+        "Canal vertebral",
+        "Pelvis"
+      ],
+      "c": 2,
+      "explanation": "médula espinal: Canal vertebral. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-ecf99fe75ea0",
+      "img": "arcade/reference/cuerpo.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Cuál es una función de médula espinal?",
+      "o": [
+        "Comunicar encéfalo y cuerpo y participar en reflejos",
+        "Secretar hormonas que regulan otras glándulas",
+        "Almacenar heces antes de expulsarlas",
+        "Almacenar y concentrar bilis"
+      ],
+      "c": 0,
+      "explanation": "médula espinal: Comunicar encéfalo y cuerpo y participar en reflejos. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-9de2c47983ab"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente hipocampo?",
+      "o": [
+        "Linfático e inmunitario",
+        "Cardiovascular",
+        "Nervioso",
+        "Esquelético"
+      ],
+      "c": 2,
+      "explanation": "hipocampo: Nervioso. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-e357f8ca430e"
+    },
+    {
+      "q": "¿Dónde se encuentra hipocampo?",
+      "o": [
+        "Tórax, desembocando en la aurícula derecha",
+        "Desde la vejiga hacia el exterior",
+        "Región medial del lóbulo temporal",
+        "Superficie interna del fondo del ojo"
+      ],
+      "c": 2,
+      "explanation": "hipocampo: Región medial del lóbulo temporal. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-6c5c097a2323"
+    },
+    {
+      "q": "¿Cuál es una función de hipocampo?",
+      "o": [
+        "Participar en la formación de recuerdos",
+        "Refractar la luz al entrar al ojo",
+        "Transportar el alimento por peristaltismo",
+        "Conducir aire hacia los bronquios"
+      ],
+      "c": 0,
+      "explanation": "hipocampo: Participar en la formación de recuerdos. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-53cc79dfd83f"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente retina?",
+      "o": [
+        "Tegumentario",
+        "Sensorial",
+        "Endocrino",
+        "Reproductor"
+      ],
+      "c": 1,
+      "explanation": "retina: Sensorial. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-b23662e4cbd3",
+      "img": "arcade/reference/cuerpo.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Dónde se encuentra retina?",
+      "o": [
+        "Talón",
+        "Superficie interna del fondo del ojo",
+        "Muslo",
+        "Escroto"
+      ],
+      "c": 1,
+      "explanation": "retina: Superficie interna del fondo del ojo. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-4bae118a300a"
+    },
+    {
+      "q": "¿Cuál es una función de retina?",
+      "o": [
+        "Distribuir sangre hacia la circulación sistémica",
+        "Convertir luz en señales nerviosas",
+        "Mezclar alimento con ácido y enzimas",
+        "Participar en la rotación del antebrazo"
+      ],
+      "c": 1,
+      "explanation": "retina: Convertir luz en señales nerviosas. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-039539f84880"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente cóclea?",
+      "o": [
+        "Sensorial",
+        "Reproductor",
+        "Cardiovascular",
+        "Digestivo"
+      ],
+      "c": 0,
+      "explanation": "cóclea: Sensorial. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-fa68a7512d3b"
+    },
+    {
+      "q": "¿Dónde se encuentra cóclea?",
+      "o": [
+        "Antebrazo, del lado del pulgar en posición anatómica",
+        "Muslo",
+        "Oído interno",
+        "Entre el estómago y el intestino grueso"
+      ],
+      "c": 2,
+      "explanation": "cóclea: Oído interno. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-ed8bcd9453aa"
+    },
+    {
+      "q": "¿Cuál es una función de cóclea?",
+      "o": [
+        "Almacenar y concentrar bilis",
+        "Transformar vibraciones en señales auditivas",
+        "Coordinar movimientos y equilibrio",
+        "Convertir luz en señales nerviosas"
+      ],
+      "c": 1,
+      "explanation": "cóclea: Transformar vibraciones en señales auditivas. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-b10ee6cc69a9",
+      "img": "arcade/reference/cuerpo.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente iris?",
+      "o": [
+        "Sensorial",
+        "Esquelético",
+        "Tegumentario",
+        "Urinario"
+      ],
+      "c": 0,
+      "explanation": "iris: Sensorial. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-2cd3f989084e"
+    },
+    {
+      "q": "¿Dónde se encuentra iris?",
+      "o": [
+        "Parte anterior del ojo, alrededor de la pupila",
+        "Entre cada riñón y la vejiga",
+        "Detrás del iris",
+        "Entre arteriolas y vénulas en los tejidos"
+      ],
+      "c": 0,
+      "explanation": "iris: Parte anterior del ojo, alrededor de la pupila. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-74b057c492d0"
+    },
+    {
+      "q": "¿Cuál es una función de iris?",
+      "o": [
+        "Proteger la rodilla y mejorar la acción del cuádriceps",
+        "Permitir el intercambio de sustancias con los tejidos",
+        "Regular cuánta luz entra al ojo",
+        "Producir hormonas como cortisol y adrenalina"
+      ],
+      "c": 2,
+      "explanation": "iris: Regular cuánta luz entra al ojo. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-8895f65b0258"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente cristalino?",
+      "o": [
+        "Endocrino",
+        "Muscular",
+        "Sensorial",
+        "Linfático e inmunitario"
+      ],
+      "c": 2,
+      "explanation": "cristalino: Sensorial. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-9b240e4dd3a9"
+    },
+    {
+      "q": "¿Dónde se encuentra cristalino?",
+      "o": [
+        "Base del encéfalo, en la silla turca",
+        "Parte superior izquierda del abdomen",
+        "Superficie transparente delantera del ojo",
+        "Detrás del iris"
+      ],
+      "c": 3,
+      "explanation": "cristalino: Detrás del iris. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-127204c8873d",
+      "img": "arcade/reference/cuerpo.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Cuál es una función de cristalino?",
+      "o": [
+        "Enfocar la luz sobre la retina",
+        "Mezclar alimento con ácido y enzimas",
+        "Transformar vibraciones en señales auditivas",
+        "Filtrar sangre y formar orina"
+      ],
+      "c": 0,
+      "explanation": "cristalino: Enfocar la luz sobre la retina. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-82dd763d6861"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente córnea?",
+      "o": [
+        "Linfático e inmunitario",
+        "Muscular",
+        "Respiratorio",
+        "Sensorial"
+      ],
+      "c": 3,
+      "explanation": "córnea: Sensorial. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-17b1b80c901c"
+    },
+    {
+      "q": "¿Dónde se encuentra córnea?",
+      "o": [
+        "Escroto",
+        "Sale del ventrículo izquierdo",
+        "Detrás del iris",
+        "Superficie transparente delantera del ojo"
+      ],
+      "c": 3,
+      "explanation": "córnea: Superficie transparente delantera del ojo. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-3f9744923033"
+    },
+    {
+      "q": "¿Cuál es una función de córnea?",
+      "o": [
+        "Filtrar sangre y formar orina",
+        "Regular cuánta luz entra al ojo",
+        "Refractar la luz al entrar al ojo",
+        "Transformar vibraciones en señales auditivas"
+      ],
+      "c": 2,
+      "explanation": "córnea: Refractar la luz al entrar al ojo. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-60ea4dfc388a"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente tímpano?",
+      "o": [
+        "Sensorial",
+        "Endocrino",
+        "Nervioso",
+        "Linfático e inmunitario"
+      ],
+      "c": 0,
+      "explanation": "tímpano: Sensorial. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-562c8722a45f",
+      "img": "arcade/reference/cuerpo.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Dónde se encuentra tímpano?",
+      "o": [
+        "Brazo, entre hombro y codo",
+        "Entre el conducto auditivo y el oído medio",
+        "Encima de cada riñón",
+        "Base del encéfalo, en la silla turca"
+      ],
+      "c": 1,
+      "explanation": "tímpano: Entre el conducto auditivo y el oído medio. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-04a096f6be69"
+    },
+    {
+      "q": "¿Cuál es una función de tímpano?",
+      "o": [
+        "Distribuir sangre hacia la circulación sistémica",
+        "Producir sonidos mediante las cuerdas vocales",
+        "Filtrar sangre y formar orina",
+        "Vibrar ante las ondas sonoras"
+      ],
+      "c": 3,
+      "explanation": "tímpano: Vibrar ante las ondas sonoras. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-a61cf0415a40"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente hipófisis?",
+      "o": [
+        "Endocrino",
+        "Reproductor",
+        "Urinario",
+        "Sensorial"
+      ],
+      "c": 0,
+      "explanation": "hipófisis: Endocrino. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-e7910d3322fb"
+    },
+    {
+      "q": "¿Dónde se encuentra hipófisis?",
+      "o": [
+        "Entre el entorno del ovario y el útero",
+        "Parte anterior del ojo, alrededor de la pupila",
+        "Base del encéfalo, en la silla turca",
+        "Canal vertebral"
+      ],
+      "c": 2,
+      "explanation": "hipófisis: Base del encéfalo, en la silla turca. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-069cd5e64d5a"
+    },
+    {
+      "q": "¿Cuál es una función de hipófisis?",
+      "o": [
+        "Transformar vibraciones en señales auditivas",
+        "Vibrar ante las ondas sonoras",
+        "Secretar hormonas que regulan otras glándulas",
+        "Filtrar linfa y facilitar respuestas inmunitarias"
+      ],
+      "c": 2,
+      "explanation": "hipófisis: Secretar hormonas que regulan otras glándulas. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-7ed4e492d49a",
+      "img": "arcade/reference/cuerpo.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente tiroides?",
+      "o": [
+        "Nervioso",
+        "Respiratorio",
+        "Endocrino",
+        "Tegumentario"
+      ],
+      "c": 2,
+      "explanation": "tiroides: Endocrino. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-910a43349df9"
+    },
+    {
+      "q": "¿Dónde se encuentra tiroides?",
+      "o": [
+        "Encima de cada riñón",
+        "Parte superior izquierda del abdomen",
+        "Cuello, delante de la tráquea",
+        "Parte anterior del ojo, alrededor de la pupila"
+      ],
+      "c": 2,
+      "explanation": "tiroides: Cuello, delante de la tráquea. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-b3d7afc25840"
+    },
+    {
+      "q": "¿Cuál es una función de tiroides?",
+      "o": [
+        "Transportar orina hacia la vejiga",
+        "Impulsar sangre por el cuerpo",
+        "Conducir aire hacia cada pulmón",
+        "Producir hormonas que regulan el metabolismo"
+      ],
+      "c": 3,
+      "explanation": "tiroides: Producir hormonas que regulan el metabolismo. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-9523a35631f4"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente glándula suprarrenal?",
+      "o": [
+        "Endocrino",
+        "Esquelético",
+        "Digestivo",
+        "Tegumentario"
+      ],
+      "c": 0,
+      "explanation": "glándula suprarrenal: Endocrino. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-de1a2bf44d92"
+    },
+    {
+      "q": "¿Dónde se encuentra glándula suprarrenal?",
+      "o": [
+        "Detrás del esternón",
+        "Entre el estómago y el intestino grueso",
+        "Encima de cada riñón",
+        "Sale del ventrículo izquierdo"
+      ],
+      "c": 2,
+      "explanation": "glándula suprarrenal: Encima de cada riñón. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-708637d4fdf7",
+      "img": "arcade/reference/cuerpo.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Cuál es una función de glándula suprarrenal?",
+      "o": [
+        "Refractar la luz al entrar al ojo",
+        "Transportar el ovocito hacia el útero",
+        "Producir hormonas como cortisol y adrenalina",
+        "Producir sonidos mediante las cuerdas vocales"
+      ],
+      "c": 2,
+      "explanation": "glándula suprarrenal: Producir hormonas como cortisol y adrenalina. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-4e80710ebb65"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente ovario?",
+      "o": [
+        "Digestivo",
+        "Nervioso",
+        "Muscular",
+        "Reproductor"
+      ],
+      "c": 3,
+      "explanation": "ovario: Reproductor. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-e59898f8cafc"
+    },
+    {
+      "q": "¿Dónde se encuentra ovario?",
+      "o": [
+        "Pelvis, a cada lado del útero",
+        "Tórax, desembocando en la aurícula derecha",
+        "Oído interno",
+        "Delante y debajo de cada oreja"
+      ],
+      "c": 0,
+      "explanation": "ovario: Pelvis, a cada lado del útero. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-d8730fc0f5d8"
+    },
+    {
+      "q": "¿Cuál es una función de ovario?",
+      "o": [
+        "Producir ovocitos y hormonas sexuales",
+        "Extender la rodilla",
+        "Absorber la mayoría de los nutrientes digeridos",
+        "Conducir aire hacia cada pulmón"
+      ],
+      "c": 0,
+      "explanation": "ovario: Producir ovocitos y hormonas sexuales. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-c06bfc6d143f"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente testículo?",
+      "o": [
+        "Respiratorio",
+        "Reproductor",
+        "Nervioso",
+        "Linfático e inmunitario"
+      ],
+      "c": 1,
+      "explanation": "testículo: Reproductor. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-057d735ba827",
+      "img": "arcade/reference/cuerpo.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Dónde se encuentra testículo?",
+      "o": [
+        "Cara anterior del brazo",
+        "Brazo, entre hombro y codo",
+        "A ambos lados de la columna, detrás del peritoneo",
+        "Escroto"
+      ],
+      "c": 3,
+      "explanation": "testículo: Escroto. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-5696ad964fb2"
+    },
+    {
+      "q": "¿Cuál es una función de testículo?",
+      "o": [
+        "Intercambiar oxígeno y dióxido de carbono con los capilares",
+        "Coordinar movimientos y equilibrio",
+        "Producir hormonas como cortisol y adrenalina",
+        "Producir espermatozoides y testosterona"
+      ],
+      "c": 3,
+      "explanation": "testículo: Producir espermatozoides y testosterona. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-df94482fadf4"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente útero?",
+      "o": [
+        "Esquelético",
+        "Muscular",
+        "Reproductor",
+        "Digestivo"
+      ],
+      "c": 2,
+      "explanation": "útero: Reproductor. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-1a40279b4a2f"
+    },
+    {
+      "q": "¿Dónde se encuentra útero?",
+      "o": [
+        "Debajo de los pulmones",
+        "Entre el entorno del ovario y el útero",
+        "Cara anterior del brazo",
+        "Pelvis, entre la vejiga y el recto"
+      ],
+      "c": 3,
+      "explanation": "útero: Pelvis, entre la vejiga y el recto. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-55a0d5a0cbe1"
+    },
+    {
+      "q": "¿Cuál es una función de útero?",
+      "o": [
+        "Permitir el desarrollo del embrión y el feto",
+        "Flexionar el codo y ayudar a supinar el antebrazo",
+        "Secretar hormonas que regulan otras glándulas",
+        "Proteger la rodilla y mejorar la acción del cuádriceps"
+      ],
+      "c": 0,
+      "explanation": "útero: Permitir el desarrollo del embrión y el feto. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-0e68760ecd19",
+      "img": "arcade/reference/cuerpo.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente trompa uterina?",
+      "o": [
+        "Nervioso",
+        "Esquelético",
+        "Cardiovascular",
+        "Reproductor"
+      ],
+      "c": 3,
+      "explanation": "trompa uterina: Reproductor. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-920cfe350917"
+    },
+    {
+      "q": "¿Dónde se encuentra trompa uterina?",
+      "o": [
+        "Entre la faringe y el estómago",
+        "Entre el entorno del ovario y el útero",
+        "Alrededor de gran parte del intestino delgado",
+        "Parte superior izquierda del abdomen"
+      ],
+      "c": 1,
+      "explanation": "trompa uterina: Entre el entorno del ovario y el útero. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-a3a95d621bf1"
+    },
+    {
+      "q": "¿Cuál es una función de trompa uterina?",
+      "o": [
+        "Transportar el ovocito hacia el útero",
+        "Comunicar encéfalo y cuerpo y participar en reflejos",
+        "Impulsar sangre por el cuerpo",
+        "Producir saliva"
+      ],
+      "c": 0,
+      "explanation": "trompa uterina: Transportar el ovocito hacia el útero. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-ea7f012c84f3"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente bazo?",
+      "o": [
+        "Muscular",
+        "Reproductor",
+        "Respiratorio",
+        "Linfático e inmunitario"
+      ],
+      "c": 3,
+      "explanation": "bazo: Linfático e inmunitario. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-36d8a5ab964b"
+    },
+    {
+      "q": "¿Dónde se encuentra bazo?",
+      "o": [
+        "Parte posterior e inferior del encéfalo",
+        "Entre la faringe y el estómago",
+        "Entre el conducto auditivo y el oído medio",
+        "Parte superior izquierda del abdomen"
+      ],
+      "c": 3,
+      "explanation": "bazo: Parte superior izquierda del abdomen. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-8e60dabbe63c",
+      "img": "arcade/reference/cuerpo.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Cuál es una función de bazo?",
+      "o": [
+        "Filtrar sangre y participar en la respuesta inmunitaria",
+        "Intercambiar gases con el aire",
+        "Participar en las articulaciones del hombro y codo",
+        "Producir sonidos mediante las cuerdas vocales"
+      ],
+      "c": 0,
+      "explanation": "bazo: Filtrar sangre y participar en la respuesta inmunitaria. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-7fc3c99d9ca8"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente ganglio linfático?",
+      "o": [
+        "Sensorial",
+        "Reproductor",
+        "Linfático e inmunitario",
+        "Digestivo"
+      ],
+      "c": 2,
+      "explanation": "ganglio linfático: Linfático e inmunitario. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-59370031fe74"
+    },
+    {
+      "q": "¿Dónde se encuentra ganglio linfático?",
+      "o": [
+        "Parte anterior del ojo, alrededor de la pupila",
+        "Tramo final del intestino grueso",
+        "A lo largo de los vasos linfáticos",
+        "Parte superior derecha del abdomen"
+      ],
+      "c": 2,
+      "explanation": "ganglio linfático: A lo largo de los vasos linfáticos. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-a0e3c31f10b4"
+    },
+    {
+      "q": "¿Cuál es una función de ganglio linfático?",
+      "o": [
+        "Producir espermatozoides y testosterona",
+        "Filtrar linfa y facilitar respuestas inmunitarias",
+        "Filtrar sangre y formar orina",
+        "Transformar vibraciones en señales auditivas"
+      ],
+      "c": 1,
+      "explanation": "ganglio linfático: Filtrar linfa y facilitar respuestas inmunitarias. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-73a3e62d2c58"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente timo?",
+      "o": [
+        "Linfático e inmunitario",
+        "Urinario",
+        "Sensorial",
+        "Muscular"
+      ],
+      "c": 0,
+      "explanation": "timo: Linfático e inmunitario. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-bada6078af54",
+      "img": "arcade/reference/cuerpo.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Dónde se encuentra timo?",
+      "o": [
+        "Dentro de los pulmones",
+        "A lo largo de los vasos linfáticos",
+        "Pelvis",
+        "Detrás del esternón"
+      ],
+      "c": 3,
+      "explanation": "timo: Detrás del esternón. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-44f13d008d83"
+    },
+    {
+      "q": "¿Cuál es una función de timo?",
+      "o": [
+        "Permitir la maduración de linfocitos T",
+        "Producir espermatozoides y testosterona",
+        "Proteger la rodilla y mejorar la acción del cuádriceps",
+        "Filtrar linfa y facilitar respuestas inmunitarias"
+      ],
+      "c": 0,
+      "explanation": "timo: Permitir la maduración de linfocitos T. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-4305c7455e2f"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente fémur?",
+      "o": [
+        "Esquelético",
+        "Nervioso",
+        "Sensorial",
+        "Respiratorio"
+      ],
+      "c": 0,
+      "explanation": "fémur: Esquelético. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-2049963a8693"
+    },
+    {
+      "q": "¿Dónde se encuentra fémur?",
+      "o": [
+        "Entre la laringe y los bronquios",
+        "Alrededor de gran parte del intestino delgado",
+        "Muslo",
+        "Cara anterior del muslo"
+      ],
+      "c": 2,
+      "explanation": "fémur: Muslo. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-4f097e1aca57"
+    },
+    {
+      "q": "¿Cuál es una función de fémur?",
+      "o": [
+        "Soportar peso y articular cadera con rodilla",
+        "Comunicar encéfalo y cuerpo y participar en reflejos",
+        "Permitir la maduración de linfocitos T",
+        "Transportar el alimento por peristaltismo"
+      ],
+      "c": 0,
+      "explanation": "fémur: Soportar peso y articular cadera con rodilla. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-c592a2a390fb",
+      "img": "arcade/reference/cuerpo.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente rótula?",
+      "o": [
+        "Cardiovascular",
+        "Linfático e inmunitario",
+        "Tegumentario",
+        "Esquelético"
+      ],
+      "c": 3,
+      "explanation": "rótula: Esquelético. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-25639bd03d77"
+    },
+    {
+      "q": "¿Dónde se encuentra rótula?",
+      "o": [
+        "Alrededor de gran parte del intestino delgado",
+        "Parte anterior de la rodilla",
+        "Cara anterior del muslo",
+        "Encima de cada riñón"
+      ],
+      "c": 1,
+      "explanation": "rótula: Parte anterior de la rodilla. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-d1a47268bcc8"
+    },
+    {
+      "q": "¿Cuál es una función de rótula?",
+      "o": [
+        "Proteger la rodilla y mejorar la acción del cuádriceps",
+        "Enfocar la luz sobre la retina",
+        "Intercambiar oxígeno y dióxido de carbono con los capilares",
+        "Conducir aire hacia cada pulmón"
+      ],
+      "c": 0,
+      "explanation": "rótula: Proteger la rodilla y mejorar la acción del cuádriceps. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-ecfc8d9f5cf0"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente húmero?",
+      "o": [
+        "Endocrino",
+        "Reproductor",
+        "Muscular",
+        "Esquelético"
+      ],
+      "c": 3,
+      "explanation": "húmero: Esquelético. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-382a1a05d3ea"
+    },
+    {
+      "q": "¿Dónde se encuentra húmero?",
+      "o": [
+        "Pelvis, entre la vejiga y el recto",
+        "Parte superior del abdomen",
+        "Brazo, entre hombro y codo",
+        "Parte anterior de la rodilla"
+      ],
+      "c": 2,
+      "explanation": "húmero: Brazo, entre hombro y codo. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-9ab7d031688a",
+      "img": "arcade/reference/cuerpo.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Cuál es una función de húmero?",
+      "o": [
+        "Impulsar sangre por el cuerpo",
+        "Participar en las articulaciones del hombro y codo",
+        "Producir ovocitos y hormonas sexuales",
+        "Producir bilis"
+      ],
+      "c": 1,
+      "explanation": "húmero: Participar en las articulaciones del hombro y codo. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-ef3c1a45bf15"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente radio?",
+      "o": [
+        "Respiratorio",
+        "Muscular",
+        "Cardiovascular",
+        "Esquelético"
+      ],
+      "c": 3,
+      "explanation": "radio: Esquelético. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-bff26ee34ec1"
+    },
+    {
+      "q": "¿Dónde se encuentra radio?",
+      "o": [
+        "Debajo del hígado",
+        "Debajo de los pulmones",
+        "Antebrazo, del lado del pulgar en posición anatómica",
+        "Cara anterior del muslo"
+      ],
+      "c": 2,
+      "explanation": "radio: Antebrazo, del lado del pulgar en posición anatómica. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-be39f41310e9"
+    },
+    {
+      "q": "¿Cuál es una función de radio?",
+      "o": [
+        "Producir bilis",
+        "Participar en la rotación del antebrazo",
+        "Participar en las articulaciones del hombro y codo",
+        "Intercambiar gases con el aire"
+      ],
+      "c": 1,
+      "explanation": "radio: Participar en la rotación del antebrazo. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-78b472952679"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente calcáneo?",
+      "o": [
+        "Cardiovascular",
+        "Esquelético",
+        "Muscular",
+        "Nervioso"
+      ],
+      "c": 1,
+      "explanation": "calcáneo: Esquelético. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-65c34a7d523c",
+      "img": "arcade/reference/cuerpo.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Dónde se encuentra calcáneo?",
+      "o": [
+        "Detrás del iris",
+        "Sale del ventrículo izquierdo",
+        "Cavidad torácica",
+        "Talón"
+      ],
+      "c": 3,
+      "explanation": "calcáneo: Talón. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-7431bc9494ed"
+    },
+    {
+      "q": "¿Cuál es una función de calcáneo?",
+      "o": [
+        "Soportar carga en el apoyo del pie",
+        "Enfocar la luz sobre la retina",
+        "Permitir el intercambio de sustancias con los tejidos",
+        "Transportar orina hacia la vejiga"
+      ],
+      "c": 0,
+      "explanation": "calcáneo: Soportar carga en el apoyo del pie. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-0aa986965624"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente bíceps braquial?",
+      "o": [
+        "Tegumentario",
+        "Endocrino",
+        "Muscular",
+        "Urinario"
+      ],
+      "c": 2,
+      "explanation": "bíceps braquial: Muscular. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-254b2d394f9e"
+    },
+    {
+      "q": "¿Dónde se encuentra bíceps braquial?",
+      "o": [
+        "Parte anterior del ojo, alrededor de la pupila",
+        "Cuello, delante de la tráquea",
+        "Cara anterior del brazo",
+        "Cavidad torácica"
+      ],
+      "c": 2,
+      "explanation": "bíceps braquial: Cara anterior del brazo. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-e2ba6081071b"
+    },
+    {
+      "q": "¿Cuál es una función de bíceps braquial?",
+      "o": [
+        "Coordinar movimientos y equilibrio",
+        "Transportar el alimento por peristaltismo",
+        "Comunicar encéfalo y cuerpo y participar en reflejos",
+        "Flexionar el codo y ayudar a supinar el antebrazo"
+      ],
+      "c": 3,
+      "explanation": "bíceps braquial: Flexionar el codo y ayudar a supinar el antebrazo. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-b70a8c5ced86",
+      "img": "arcade/reference/cuerpo.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente cuádriceps femoral?",
+      "o": [
+        "Muscular",
+        "Sensorial",
+        "Digestivo",
+        "Reproductor"
+      ],
+      "c": 0,
+      "explanation": "cuádriceps femoral: Muscular. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-825d9ae4cb4d"
+    },
+    {
+      "q": "¿Dónde se encuentra cuádriceps femoral?",
+      "o": [
+        "Cuello, sobre la tráquea",
+        "Pelvis",
+        "Dentro de los pulmones",
+        "Cara anterior del muslo"
+      ],
+      "c": 3,
+      "explanation": "cuádriceps femoral: Cara anterior del muslo. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-f753f246cdbf"
+    },
+    {
+      "q": "¿Cuál es una función de cuádriceps femoral?",
+      "o": [
+        "Flexionar el codo y ayudar a supinar el antebrazo",
+        "Extender la rodilla",
+        "Filtrar linfa y facilitar respuestas inmunitarias",
+        "Convertir luz en señales nerviosas"
+      ],
+      "c": 1,
+      "explanation": "cuádriceps femoral: Extender la rodilla. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-ff744530953d"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente epidermis?",
+      "o": [
+        "Endocrino",
+        "Sensorial",
+        "Tegumentario",
+        "Esquelético"
+      ],
+      "c": 2,
+      "explanation": "epidermis: Tegumentario. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-fbcfceb30a5b"
+    },
+    {
+      "q": "¿Dónde se encuentra epidermis?",
+      "o": [
+        "Capa más superficial de la piel",
+        "Desde la vejiga hacia el exterior",
+        "Entre la faringe y el estómago",
+        "Dentro de los pulmones"
+      ],
+      "c": 0,
+      "explanation": "epidermis: Capa más superficial de la piel. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-cf104b42e594",
+      "img": "arcade/reference/cuerpo.svg",
+      "imgAlt": "Ilustración de ambiente; no representa la respuesta."
+    },
+    {
+      "q": "¿Cuál es una función de epidermis?",
+      "o": [
+        "Vibrar ante las ondas sonoras",
+        "Soportar peso y articular cadera con rodilla",
+        "Conducir aire hacia los bronquios",
+        "Actuar como barrera protectora externa"
+      ],
+      "c": 3,
+      "explanation": "epidermis: Actuar como barrera protectora externa. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-685fc282bcab"
+    },
+    {
+      "q": "¿A qué sistema pertenece principalmente glándula sudorípara?",
+      "o": [
+        "Tegumentario",
+        "Endocrino",
+        "Esquelético",
+        "Nervioso"
+      ],
+      "c": 0,
+      "explanation": "glándula sudorípara: Tegumentario. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-8759fec9186c"
+    },
+    {
+      "q": "¿Dónde se encuentra glándula sudorípara?",
+      "o": [
+        "Entre el conducto auditivo y el oído medio",
+        "En la piel",
+        "Delante y debajo de cada oreja",
+        "Sale del ventrículo izquierdo"
+      ],
+      "c": 1,
+      "explanation": "glándula sudorípara: En la piel. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-042dde95a682"
+    },
+    {
+      "q": "¿Cuál es una función de glándula sudorípara?",
+      "o": [
+        "Producir sudor para ayudar a regular la temperatura",
+        "Transformar vibraciones en señales auditivas",
+        "Llevar al corazón sangre de la parte superior del cuerpo",
+        "Almacenar temporalmente la orina"
+      ],
+      "c": 0,
+      "explanation": "glándula sudorípara: Producir sudor para ayudar a regular la temperatura. Las estructuras cumplen varias funciones; se pregunta una de sus funciones principales. Contenido educativo de anatomía básica.",
+      "e": "🫀",
+      "id": "cuerpo-88abf99db658"
+    }
+  ]
+}
